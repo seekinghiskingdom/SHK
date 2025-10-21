@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proverb Pairs Search (PPS)</title>
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Proverb Pairs Search (PPS)</h1>
+    <nav><a href="index.html">Home</a> · <a href="resources.html">Resources</a> · <a href="tools.html">Tools</a> · <a href="about.html">About</a></nav>
+  </header>
+  <main class="container">
+    <section class="controls">
+      <div>
+        <label>Inputs</label>
+        <select id="inputs" multiple></select>
+      </div>
+      <div>
+        <label>Outputs</label>
+        <select id="outputs" multiple></select>
+      </div>
+      <div>
+        <label>Chapter</label>
+        <select id="chapter"></select>
+      </div>
+      <div>
+        <label>Translation</label>
+        <select id="translation"></select>
+      </div>
+      <button id="btnSearch">Search</button>
+      <span id="count"></span>
+    </section>
+    <section id="results" class="results"></section>
+  </main>
+  <footer class="container footer">
+    <small id="attribution"></small>
+    <br/>
+    <a id="feedback" target="_blank" rel="noopener">Feedback (Google Form)</a>
+  </footer>
+  <script src="js/pps.stub.js"></script>
+</body>
+</html>
