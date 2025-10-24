@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Strong's Lexicon Entry",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "lemma": {
+      "type": "string"
+    },
+    "translit": {
+      "type": "string"
+    },
+    "gloss_short": {
+      "type": "string"
+    },
+    "gloss_long": {
+      "type": "string"
+    },
+    "search": {
+      "type": "object",
+      "properties": {
+        "ascii": {
+          "type": "string"
+        },
+        "strip": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "lemma"
+  ]
+}
