@@ -1,39 +1,66 @@
-import argparse
-from . import fetch, parse_strongs, parse_kjv, build_indexes, manifest
+import argparse, pathlib, json
+from shk_lit_import.fetchers.http import fetch_to
+from shk_lit_import.parsers import bible_osis_plain, bible_osis_plus_strongs, strongs_xml, general_plain
+from shk_lit_import.exporters import bible_per_book, lexicon_az, general_single
+from shk_lit_import.utils.fs import ensure_dir, write_json
+from shk_lit_import.utils.jsonio import write_jsonl
+
+def load_spec(path: str):
+    p = pathlib.Path(path); return json.loads(p.read_text(encoding='utf-8'))
 
 def main():
-    parser = argparse.ArgumentParser(prog="shk-lit", description="SHK literature import tool")
-    sub = parser.add_subparsers(dest="cmd", required=True)
+    parser = argparse.ArgumentParser(prog='shk-lit', description='SHK literature import tool')
+    parser.add_argument('--spec', required=True, help='Path to a corpus spec JSON')
+    sub = parser.add_subparsers(dest='cmd', required=True)
 
-    p_fetch = sub.add_parser("fetch", help="Download raw sources (local only)")
-    p_fetch.add_argument("--out", default="data/raw", help="Output folder for raw downloads")
-
-    p_norm = sub.add_parser("normalize", help="Parse & normalize sources")
-    p_norm.add_argument("--in-raw", default="data/raw", help="Folder with raw sources")
-    p_norm.add_argument("--out", default="data/processed", help="Output folder for normalized artifacts")
-
-    p_index = sub.add_parser("index", help="Build crosswalks and frequency tables")
-    p_index.add_argument("--in-proc", default="data/processed", help="Processed input folder")
-    p_index.add_argument("--out", default="data/processed", help="Output folder (indexes)")
-
-    p_export = sub.add_parser("export-pages", help="Export small JSON shards for GH Pages")
-    p_export.add_argument("--in-proc", default="data/processed", help="Processed input folder")
-    p_export.add_argument("--out", default="../../docs/data/v1", help="Output folder (API root)")
-
-    p_release = sub.add_parser("release-bundle", help="Create heavy artifact bundle + manifest")
-    p_release.add_argument("--in-proc", default="data/processed", help="Processed input folder")
-    p_release.add_argument("--out", default="dist", help="Output folder for zip + manifest")
+    sub.add_parser('fetch')
+    sub.add_parser('normalize')
+    sub.add_parser('index')
+    p_export = sub.add_parser('export-pages')
+    p_export.add_argument('--out', default='../../docs/data/v1', help='API root override')
 
     args = parser.parse_args()
+    spec = load_spec(args.spec)
+    corpus = spec.get('corpus_id','corpus').replace(':','_')
+    raw_root = pathlib.Path('data/raw') / corpus
+    proc_root = pathlib.Path('data/processed') / corpus
 
-    if args.cmd == "fetch":
-        fetch.run(args.out)
-    elif args.cmd == "normalize":
-        parse_strongs.run(args.in_raw, args.out)
-        parse_kjv.run(args.in_raw, args.out)
-    elif args.cmd == "index":
-        build_indexes.run(args.in_proc, args.out)
-    elif args.cmd == "export-pages":
-        build_indexes.export_pages(args.in_proc, args.out)
-    elif args.cmd == "release-bundle":
-        manifest.bundle(args.in_proc, args.out)
+    if args.cmd == 'fetch':
+        fetch_to(raw_root, spec)
+
+    elif args.cmd == 'normalize':
+        proc_root.mkdir(parents=True, exist_ok=True)
+        if spec['type'] == 'bible' and spec.get('mode') == 'plain':
+            recs, meta = bible_osis_plain.parse_to_tokens([], spec)
+            write_jsonl(proc_root / 'tokens.jsonl', recs)
+            write_json(proc_root / 'verses.meta.json', meta)
+        elif spec['type'] == 'bible' and spec.get('mode') == 'plus-strongs':
+            recs, meta = bible_osis_plus_strongs.parse_to_tokens([], spec)
+            write_jsonl(proc_root / 'tokens.jsonl', recs)
+            write_json(proc_root / 'verses.meta.json', meta)
+        elif spec['type'] == 'lexicon':
+            entries = strongs_xml.parse_to_entries([], spec)
+            write_jsonl(proc_root / 'lexicon.jsonl', entries)
+        elif spec['type'] == 'general':
+            segs, meta = general_plain.parse_to_segments([], spec)
+            write_jsonl(proc_root / 'segments.jsonl', segs)
+            write_json(proc_root / 'meta.json', meta)
+        print(f"[normalize] Wrote processed placeholders under {proc_root}")
+
+    elif args.cmd == 'index':
+        ensure_dir(proc_root / 'indexes')
+        (proc_root / 'indexes' / 'placeholder.json').write_text('{}', encoding='utf-8')
+        print(f"[index] Created placeholder index under {proc_root/'indexes'}")
+
+    elif args.cmd == 'export-pages':
+        api_root = pathlib.Path(args.out)
+        if spec['type'] == 'bible':
+            meta = json.loads((proc_root / 'verses.meta.json').read_text(encoding='utf-8')) if (proc_root / 'verses.meta.json').exists() else {'books': []}
+            bible_per_book.export(spec, proc_root, api_root, meta)
+        elif spec['type'] == 'lexicon':
+            entries_count = sum(1 for _ in (proc_root / 'lexicon.jsonl').open('r', encoding='utf-8')) if (proc_root / 'lexicon.jsonl').exists() else 0
+            lexicon_az.export(spec, proc_root, api_root, entries_count)
+        elif spec['type'] == 'general':
+            meta = json.loads((proc_root / 'meta.json').read_text(encoding='utf-8')) if (proc_root / 'meta.json').exists() else {'segments': 0}
+            general_single.export(spec, proc_root, api_root, meta)
+        print(f"[export-pages] Wrote placeholders to {api_root}")

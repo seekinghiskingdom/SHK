@@ -1,0 +1,1 @@
+BOOKS_3LTR=['GEN','EXO','LEV','NUM','DEU']
