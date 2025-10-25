@@ -20,18 +20,31 @@
   </header>
   <hr>
 
+<div style="display: flex; align-items: center; gap: 12px; padding-left: 60px; margin-bottom: 20px;">
+  <h2 style="margin: 0;">Proverb Pairs Search (PPS)</h2>
+  <button class="current-button" style="width:auto;">Direct Mode</button>
+  <button class="nav-button" style="width:auto;" onclick="window.location.href='bubblePPS.html'">
+    Bubble Mode
+  </button>
+</div>
+
+  
 
 <main class="container">
   <section class="controls-box">
     <div class="controls">
       <div>
         <label>Inputs</label>
-        <select id="inputs"></select>
+        <select id="inputs">
+          <option value="">SELECT INPUT</option>
+        </select>
       </div>
 
       <div>
         <label>Outputs</label>
-        <select id="outputs"></select>
+        <select id="outputs">
+          <option value="">SELECT INPUT</option>
+        </select>
       </div>
 
       <div>

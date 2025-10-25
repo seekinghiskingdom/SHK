@@ -325,11 +325,14 @@ button:hover {
 .results {
   flex: 1;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  min-height: 400px;
   box-sizing: border-box;
   background-color: #f8f8f8;
+  width: 100%;
+  padding: 10px;
+  min-height: 600px;   /* sets a taller minimum height */
+  overflow-y: auto;    /* allows scrolling if content exceeds height */
+  background: var(--panel); /* optional, matches your theme */
+  border-radius: 12px;
 }
 
 /* Footer */
