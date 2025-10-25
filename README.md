@@ -10,3 +10,5 @@ Monorepo for the SHK website and tools.
 - `qa/` — test cases and sample queries
 
 See `docs/README.md` for website notes, and `tools/pps/` for the PPS workbench.
+
+https://seekinghiskingdom.github.io/SHK/index.html
