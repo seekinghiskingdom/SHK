@@ -25,9 +25,10 @@ a {
 }
 
 .container {
-  max-width: 3000px;
-  margin: 0 auto;
-  padding: 16px;
+  max-width: none;     /* remove the fixed max width */
+  margin: 0;           /* remove auto centering */
+  padding: 16px 16px 16px 40px; /* optional: add left padding */
+  text-align: left;    /* ensure content is left-aligned */
 }
 
 /* ========== Header & Navigation ========== */
@@ -240,4 +241,117 @@ main.container {
   text-align: left;
   max-width: none;
   margin-left: 40px;
+}
+
+/* Rounded Image Class */
+.rounded-img {
+  border-radius: 50%; 
+  width: 100px;  /* set width and height */
+  height: 100px;
+  object-fit: cover; /* ensures the image fills the circle */
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.controls-box {
+  flex: 0 0 250px; /* left panel width */
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2b2b; /* dark gray box */
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  color: white; /* make text readable */
+}
+
+.controls div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #777;
+  background-color: #3a3a3a;
+  color: white;
+  box-sizing: border-box;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--gold);
+  border: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--dark-gold);
+  color: white;
+}
+
+.results {
+  flex: 1;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 10px;
+  min-height: 600px;   /* sets a taller minimum height */
+  overflow-y: auto;    /* allows scrolling if content exceeds height */
+  background: var(--panel); /* optional, matches your theme */
+  border-radius: 12px;
+}
+
+/* Footer */
+.footer {
+  background-color: #3a3a3a; /* slightly lighter than the controls box (#2b2b2b) */
+  color: #f0f0f0;
+  padding: 15px 20px;
+  border-top: 1px solid #555; /* even lighter separator line */
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.footer a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: var(--dark-gold);
+  text-decoration: underline;
 }
