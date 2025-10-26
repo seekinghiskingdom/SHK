@@ -4,7 +4,7 @@
     "title": "Holy Bible (KJV) — single file",
     "type": "Bible",
     "lang": "en",
-    "data_path": "./bible_kjv.min.json",
+    "data_path": "./bible/en/kjv/bible_kjv.min.json",
     "meta": { "abbr": "KJV", "year": 1769, "format": "single" }
   },
   {
@@ -13,8 +13,8 @@
     "type": "Bible",
     "lang": "en",
     "per_book": true,
-    "base_url": "./v1/lit/bible/en/kjv_strongs",
-    "book_index": "./v1/lit/bible/books.json",
+    "base_url": "./bible/en/kjv_strongs",
+    "book_index": "./bible/books.json",
     "meta": { "abbr": "KJV+Str", "format": "per_book" }
   },
   {
@@ -23,8 +23,8 @@
     "type": "Bible",
     "lang": "en",
     "per_book": true,
-    "base_url": "./v1/lit/bible/en/asv",
-    "book_index": "./v1/lit/bible/books.json",
+    "base_url": "./bible/en/asv",
+    "book_index": "./bible/books.json",
     "meta": { "abbr": "ASV", "format": "per_book" }
   },
   {
@@ -33,8 +33,8 @@
     "type": "Bible",
     "lang": "en",
     "per_book": true,
-    "base_url": "./v1/lit/bible/en/web",
-    "book_index": "./v1/lit/bible/books.json",
+    "base_url": "./bible/en/web",
+    "book_index": "./bible/books.json",
     "meta": { "abbr": "WEB", "format": "per_book" }
   }
 ]

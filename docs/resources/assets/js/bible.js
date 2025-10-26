@@ -1,14 +1,15 @@
 import { parseRef } from './ref.js';
 
 // Page lives at /docs/resources/bible/index.html
-// We read the index from ../../data/literature_index.json
+// Read the index from /docs/data/v1/lit/literature_index.json
 async function loadIndex() {
-  const idxURL = new URL('../../data/literature_index.json', document.baseURI);
+  const idxURL = new URL('../../data/v1/lit/literature_index.json', document.baseURI);
   const res = await fetch(idxURL);
   if (!res.ok) throw new Error('Failed to load literature_index.json');
   const list = await res.json();
   return { idxURL, list };
 }
+
 
 function buildBibleCatalog(idxURL, list) {
   const bibles = list.filter(x => (x.type || '').toLowerCase() === 'bible');
