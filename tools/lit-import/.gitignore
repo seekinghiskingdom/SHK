@@ -1,9 +1,0 @@
-# local artifacts not committed
-data/
-dist/
-*.parquet
-*.zip
-*.log
-__pycache__/
-.pytest_cache/
-.venv/

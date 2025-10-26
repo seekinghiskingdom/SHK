@@ -1,0 +1,25 @@
+# VS Code settings
+.vscode/
+
+# Python cache & build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+build/
+dist/
+
+# Environment folders
+.env/
+.venv/
+env/
+venv/
+*.conda/
+*.ipynb_checkpoints/
+environment.yml
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
