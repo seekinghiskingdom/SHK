@@ -1,0 +1,10 @@
+[
+{
+"id": "bible_kjv",
+"title": "Holy Bible (KJV)",
+"type": "Bible",
+"lang": "en",
+"data_path": "bible/en/kjv/bible_kjv.min.json",
+"meta": { "abbr": "KJV", "year": 1769 }
+}
+]
