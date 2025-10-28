@@ -23,3 +23,8 @@ environment.yml
 # OS-specific junk
 .DS_Store
 Thumbs.db
+
+# PPS pipeline scratch + local env
+tools/pps/data/output/
+tools/pps/**/__pycache__/
+tools/pps/.venv/
