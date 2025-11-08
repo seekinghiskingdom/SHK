@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proverb Pairs Search (PPS)</title>
+  <link rel="stylesheet" href="css/site.css" />
+  <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <img src="img/SHK-Cross.webp" alt="SHK" class="rounded-img">
+      <h1>Seeking His Kingdom</h1>
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="resources.html" class="nav-button">Resources</a>
+      <a href="tools.html" class="nav-button">Tools</a>
+      <a href="about.html" class="nav-button">About</a>
+    </nav>
+  </header>
+  <hr>
+
+<div style="display: flex; align-items: center; gap: 12px; padding-left: 60px; margin-bottom: 20px;">
+  <h2 style="margin: 0;">Proverb Pairs Search (PPS)</h2>
+  <button class="current-button" style="width:auto;">Direct Mode</button>
+  <button class="nav-button" style="width:auto;" onclick="window.location.href='bubblePPS.html'">
+    Bubble Mode
+  </button>
+</div>
+
+  
+
+<main class="container">
+  <section class="controls-box">
+    <div class="controls">
+      <div>
+        <label>Inputs</label>
+        <select id="inputs">
+          <option value="">SELECT INPUT</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Outputs</label>
+        <select id="outputs">
+          <option value="">SELECT INPUT</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Chapters</label>
+        <select id="chapter">
+          <option value="">ALL</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Translations</label>
+        <select id="translation">
+          <option value="">ALL</option>
+          <option value="KJV">KJV</option>
+        </select>
+      </div>
+
+      <button id="btnSearch">Search</button>
+      <span id="count"></span>
+    </div>
+  </section>
+
+  <section id="results" class="results"></section>
+</main>
+
+  <footer class="container footer">
+    <small>
+      <strong>Work in progress:</strong> content is experimental and non-commercial.
+      KJV courtesy; WEB Public Domain. SHK is a free, non-commercial collection of study tools and resources.
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfo19WM8z2EE3TGzH8ot1mynxnecvmi1gQj4ZOosblVRdmsJA/viewform?usp=header" target="_blank" rel="noopener">Feedback</a>
+    </small>
+  </footer>
+  <script src="js/pps.stub.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# docs/_config.yml
+title: Seeking His Kingdom
+url: https://seekinghiskingdom.github.io
+baseurl: /SHK        # change to "" if you later use a root/custom domain
+permalink: pretty
+timezone: America/Chicago
+
+# Keep non-site stuff out of the build
+exclude:
+  - resources/
+  - tools/
+  - scripts/
+  - qa/

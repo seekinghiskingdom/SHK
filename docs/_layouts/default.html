@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+
+  <link rel="icon" href="{{ site.baseurl }}/img/favicon.png">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css" />
+
+  <!-- Basic SEO -->
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow{% endif %}">
+
+  <!-- Open Graph (simple defaults) -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+</head>
+<body>
+  {% include header.html %}
+
+  <main id="content" class="container">
+    <!-- Optional breadcrumbs -->
+    {% if page.breadcrumbs %}
+      <nav aria-label="Breadcrumb" class="breadcrumbs">
+        {% for crumb in page.breadcrumbs %}
+          {% if forloop.last %}
+            <span aria-current="page">{{ crumb.label }}</span>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ crumb.href }}">{{ crumb.label }}</a> /
+          {% endif %}
+        {% endfor %}
+      </nav>
+    {% endif %}
+
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+  <script src="{{ site.baseurl }}/js/site.js" defer></script>
+</body>
+</html>
