@@ -9,8 +9,6 @@ permalink: pretty
 
 # Keep non-site stuff out of the build
 exclude:
-  - resources/
-  - tools/
   - scripts/
   - qa/
   - README.md
