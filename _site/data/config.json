@@ -1,0 +1,47 @@
+{
+  "default_translation": "KJV",
+  "display_translations": [
+    "KJV",
+    "ASV",
+    "WEB"
+  ],
+  "chapters": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "attribution": {
+    "KJV": "King James Version (public domain in the U.S.).",
+    "WEB": "World English Bible (Public Domain)."
+  },
+  "feedback_google_form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfo19WM8z2EE3TGzH8ot1mynxnecvmi1gQj4ZOosblVRdmsJA/viewform?usp=header",
+  "show_all_on_load": true
+}

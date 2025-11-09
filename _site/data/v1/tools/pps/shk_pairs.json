@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "bundleVersion": "2025.10.28.020141",
+  "builtAt": "2025-10-28T02:01:41Z",
+  "defaultTrans": "kjv",
+  "transMeta": {
+    "asv": {
+      "id": "asv"
+    },
+    "kjv": {
+      "id": "kjv"
+    },
+    "web": {
+      "id": "web"
+    }
+  },
+  "stats": {
+    "entryCount": 7,
+    "pairCount": 15,
+    "pairCountActive": 15
+  },
+  "entries": [
+    {
+      "entryId": "pro-001-007-007",
+      "ref": "Prov 1:7",
+      "osis": "Prov.1.7",
+      "chapter": 1,
+      "verses": [
+        7
+      ],
+      "text": {
+        "asv": "The fear of Jehovah is the beginning of knowledge; [But] the foolish despise wisdom and instruction.",
+        "kjv": "The fear of the LORD\nis the beginning of knowledge:\nbut\n fools despise wisdom and instruction.",
+        "web": "The fear of YahwehThe fear of Yahweh“Yahweh” is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations. is the beginning of knowledge;"
+      },
+      "pairs": [
+        {
+          "pairId": "pro-001-007-007__x-fear-of-the-lord__y-knowledge__52c7363b",
+          "pv": [
+            7
+          ],
+          "x": {
+            "key": "fear of the LORD",
+            "keys": [
+              "fear of the LORD"
+            ],
+            "root": "fear of the LORD",
+            "roots": [
+              "fear of the LORD"
+            ]
+          },
+          "y": {
+            "key": "knowledge",
+            "keys": [
+              "knowledge"
+            ],
+            "root": "beginning of knowledge",
+            "roots": [
+              "beginning of knowledge"
+            ]
+          },
+          "status": "active"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "entryId": "pro-001-023-023",
+      "ref": "Prov 1:23",
+      "osis": "Prov.1.23",
+      "chapter": 1,
+      "verses": [
+        23
+      ],
+      "text": {
+        "asv": "Turn you at my reproof: Behold, I will pour out my spirit upon you; I will make known my words unto you.",
+        "kjv": "Turn you at my reproof: behold, I will pour out my spirit unto you, I will make known my words unto you.",
+        "web": "Turn at my reproof.\nTurn at my reproof.\n“Behold”, from “הִנֵּה”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection. I will pour out my spirit on you.\nBehold,"
+      },
+      "pairs": [
+        {
+          "pairId": "pro-001-023-023__x-repentance__y-knowledge__d09ed6c0",
+          "pv": [
+            23
+          ],
+          "x": {
+            "key": "repentance",
+            "keys": [
+              "repentance"
+            ],
+            "root": "turn you at my reproof",
+            "roots": [
+              "turn you at my reproof"
+            ]
+          },
+          "y": {
+            "key": "knowledge",
+            "keys": [
+              "knowledge"
+            ],
+            "root": "make known my words",
+            "roots": [
+              "make known my words"
+            ]
+          },
+          "status": "active"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "entryId": "pro-021-011-011",
+      "ref": "Prov 21:11",
+      "osis": "Prov.21.11",
+      "chapter": 21,
+      "verses": [
+        11
+      ],
+      "text": {
+        "asv": "When the scoffer is punished, the simple is made wise; And when the wise is instructed, he receiveth knowledge.",
+        "kjv": "When the scorner is punished, the simple is made wise: and when the wise is instructed, he receiveth knowledge.",
+        "web": "When the mocker is punished, the simple gains wisdom.\nWhen the mocker is punished, the simple gains wisdom."
+      },
+      "pairs": [
+        {
+          "pairId": "pro-021-011-011__x-punishment__y-wisdom__7d3b4d72",
+          "pv": [
+            11
+          ],
+          "x": {
+            "key": "punishment",
+            "keys": [
+              "punishment"
+            ],
+            "root": "punished",
+            "roots": [
+              "punished"
+            ]
+          },
+          "y": {
+            "key": "wisdom",
+            "keys": [
+              "wisdom"
+            ],
+            "root": "wise",
+            "roots": [
+              "wise"
+            ]
+          },
+          "status": "active"
+        },
+        {
+          "pairId": "pro-021-011-011__x-instruction__y-knowledge__fa0f1696",
+          "pv": [
+            11
+          ],
+          "x": {
+            "key": "instruction",
+            "keys": [
+              "instruction"
+            ],
+            "root": "instructed",
+            "roots": [
+              "instructed"
+            ]
+          },
+          "y": {
+            "key": "knowledge",
+            "keys": [
+              "knowledge"
+            ],
+            "root": "knowledge",
+            "roots": [
+              "knowledge"
+            ]
+          },
+          "status": "active"
+        },
+        {
+          "pairId": "pro-021-011-011__x-wisdom__y-knowledge__db24088a",
+          "pv": [
+            11
+          ],
+          "x": {
+            "key": "wisdom",
+            "keys": [
+              "wisdom"
+            ],
+            "root": "wise",
+            "roots": [
+              "wise"
+            ]
+          },
+          "y": {
+            "key": "knowledge",
+            "keys": [
+              "knowledge"
+            ],
+            "root": "knowledge",
+            "roots": [
+              "knowledge"
+            ]
+          },
+          "status": "active"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "entryId": "pro-021-026-026",
+      "ref": "Prov 21:26",
+      "osis": "Prov.21.26",
+      "chapter": 21,
+      "verses": [
+        26
+      ],
+      "text": {
+        "asv": "There is that coveteth greedily all the day long; But the righteous giveth and withholdeth not.",
+        "kjv": "He coveteth greedily all the day long: but the righteous giveth and spareth not.",
+        "web": "There are those who covet greedily all day long;\nThere are those who covet greedily all day long;"
+      },
+      "pairs": [
+        {
+          "pairId": "pro-021-026-026__x-righteousness__y-generosity__bf80077d",
+          "pv": [
+            26
+          ],
+          "x": {
+            "key": "righteousness",
+            "keys": [
+              "righteousness"
+            ],
+            "root": "righteous",
+            "roots": [
+              "righteous"
+            ]
+          },
+          "y": {
+            "key": "generosity",
+            "keys": [
+              "generosity"
+            ],
+            "root": "giveth and spareth not",
+            "roots": [
+              "giveth and spareth not"
+            ]
+          },
+          "status": "active"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "entryId": "pro-022-004-004",
+      "ref": "Prov 22:4",
+      "osis": "Prov.22.4",
+      "chapter": 22,
+      "verses": [
+        4
+      ],
+      "text": {
+        "asv": "The reward of humility [and] the fear of Jehovah [Is] riches, and honor, and life.",
+        "kjv": "By humility\nand the fear of the LORD\nare riches, and honour, and life.",
+        "web": "The result of humility and the fear of Yahweh\nThe result of humility and the fear of Yahweh"
+      },
+      "pairs": [
+        {
+          "pairId": "pro-022-004-004__x-humility__y-riches__692cdc58",
+          "pv": [
+            4
+          ],
+          "x": {
+            "key": "humility",
+            "keys": [
+              "humility"
+            ],
+            "root": "humility",
+            "roots": [
+              "humility"
+            ]
+          },
+          "y": {
+            "key": "riches",
+            "keys": [
+              "riches"
+            ],
+            "root": "riches",
+            "roots": [
+              "riches"
+            ]
+          },
+          "status": "active"
+        },
+        {
+          "pairId": "pro-022-004-004__x-humility__y-honor__f357cc1a",
+          "pv": [
+            4
+          ],
+          "x": {
+            "key": "humility",
+            "keys": [
+              "humility"
+            ],
+            "root": "humility",
+            "roots": [
+              "humility"
+            ]
+          },
+          "y": {
+            "key": "honor",
+            "keys": [
+              "honor"
+            ],
+            "root": "honor",
+            "roots": [
+              "honor"
+            ]
+          },
+          "status": "active"
+        },
+        {
+          "pairId": "pro-022-004-004__x-humility__y-life__cee1a120",
+          "pv": [
+            4
+          ],
+          "x": {
+            "key": "humility",
+            "keys": [
+              "humility"
+            ],
+            "root": "humility",
+            "roots": [
+              "humility"
+            ]
+          },
+          "y": {
+            "key": "life",
+            "keys": [
+              "life"
+            ],
+            "root": "life",
+            "roots": [
+              "life"
+            ]
+          },
+          "status": "active"
+        },
+        {
+          "pairId": "pro-022-004-004__x-fear-of-the-lord__y-riches__4a47486c",
+          "pv": [
+            4
+          ],
+          "x": {
+            "key": "fear of the LORD",
+            "keys": [
+              "fear of the LORD"
+            ],
+            "root": "fear of the LORD",
+            "roots": [
+              "fear of the LORD"
+            ]
+          },
+          "y": {
+            "key": "riches",
+            "keys": [
+              "riches"
+            ],
+            "root": "riches",
+            "roots": [
+              "riches"
+            ]
+          },
+          "status": "active"
+        },
+        {
+          "pairId": "pro-022-004-004__x-fear-of-the-lord__y-honor__c4ea678f",
+          "pv": [
+            4
+          ],
+          "x": {
+            "key": "fear of the LORD",
+            "keys": [
+              "fear of the LORD"
+            ],
+            "root": "fear of the LORD",
+            "roots": [
+              "fear of the LORD"
+            ]
+          },
+          "y": {
+            "key": "honor",
+            "keys": [
+              "honor"
+            ],
+            "root": "honor",
+            "roots": [
+              "honor"
+            ]
+          },
+          "status": "active"
+        },
+        {
+          "pairId": "pro-022-004-004__x-fear-of-the-lord__y-life__603c6f31",
+          "pv": [
+            4
+          ],
+          "x": {
+            "key": "fear of the LORD",
+            "keys": [
+              "fear of the LORD"
+            ],
+            "root": "fear of the LORD",
+            "roots": [
+              "fear of the LORD"
+            ]
+          },
+          "y": {
+            "key": "life",
+            "keys": [
+              "life"
+            ],
+            "root": "life",
+            "roots": [
+              "life"
+            ]
+          },
+          "status": "active"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "entryId": "pro-022-009-009",
+      "ref": "Prov 22:9",
+      "osis": "Prov.22.9",
+      "chapter": 22,
+      "verses": [
+        9
+      ],
+      "text": {
+        "asv": "He that hath a bountiful eye shall be blessed; For he giveth of his bread to the poor.",
+        "kjv": "He that hath a bountiful eye shall be blessed; for he giveth of his bread to the poor.",
+        "web": "He who has a generous eye will be blessed;\nHe who has a generous eye will be blessed;"
+      },
+      "pairs": [
+        {
+          "pairId": "pro-022-009-009__x-generosity__y-blessing__a4b32a81",
+          "pv": [
+            9
+          ],
+          "x": {
+            "key": "generosity",
+            "keys": [
+              "generosity"
+            ],
+            "root": "hath a bountiful eye",
+            "roots": [
+              "hath a bountiful eye"
+            ]
+          },
+          "y": {
+            "key": "blessing",
+            "keys": [
+              "blessing"
+            ],
+            "root": "blessed",
+            "roots": [
+              "blessed"
+            ]
+          },
+          "status": "active"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "entryId": "pro-024-005-005",
+      "ref": "Prov 24:5",
+      "osis": "Prov.24.5",
+      "chapter": 24,
+      "verses": [
+        5
+      ],
+      "text": {
+        "asv": "A wise man is strong; Yea, a man of knowledge increaseth might",
+        "kjv": "A wise man\nis strong; yea, a man of knowledge increaseth strength.",
+        "web": "A wise man has great power;\nA wise man has great power;"
+      },
+      "pairs": [
+        {
+          "pairId": "pro-024-005-005__x-wisdom__y-strength__e2e5e1db",
+          "pv": [
+            5
+          ],
+          "x": {
+            "key": "wisdom",
+            "keys": [
+              "wisdom"
+            ],
+            "root": "wise",
+            "roots": [
+              "wise"
+            ]
+          },
+          "y": {
+            "key": "strength",
+            "keys": [
+              "strength"
+            ],
+            "root": "strong",
+            "roots": [
+              "strong"
+            ]
+          },
+          "status": "active"
+        },
+        {
+          "pairId": "pro-024-005-005__x-knowledge__y-strength__94f20e9a",
+          "pv": [
+            5
+          ],
+          "x": {
+            "key": "knowledge",
+            "keys": [
+              "knowledge"
+            ],
+            "root": "knowledge",
+            "roots": [
+              "knowledge"
+            ]
+          },
+          "y": {
+            "key": "strength",
+            "keys": [
+              "strength"
+            ],
+            "root": "increaseth strength",
+            "roots": [
+              "increaseth strength"
+            ]
+          },
+          "status": "active"
+        }
+      ],
+      "notes": ""
+    }
+  ],
+  "index": {
+    "x": {
+      "fear of the lord": [
+        "pro-001-007-007__x-fear-of-the-lord__y-knowledge__52c7363b",
+        "pro-022-004-004__x-fear-of-the-lord__y-riches__4a47486c",
+        "pro-022-004-004__x-fear-of-the-lord__y-honor__c4ea678f",
+        "pro-022-004-004__x-fear-of-the-lord__y-life__603c6f31"
+      ],
+      "repentance": [
+        "pro-001-023-023__x-repentance__y-knowledge__d09ed6c0"
+      ],
+      "punishment": [
+        "pro-021-011-011__x-punishment__y-wisdom__7d3b4d72"
+      ],
+      "instruction": [
+        "pro-021-011-011__x-instruction__y-knowledge__fa0f1696"
+      ],
+      "wisdom": [
+        "pro-021-011-011__x-wisdom__y-knowledge__db24088a",
+        "pro-024-005-005__x-wisdom__y-strength__e2e5e1db"
+      ],
+      "righteousness": [
+        "pro-021-026-026__x-righteousness__y-generosity__bf80077d"
+      ],
+      "humility": [
+        "pro-022-004-004__x-humility__y-riches__692cdc58",
+        "pro-022-004-004__x-humility__y-honor__f357cc1a",
+        "pro-022-004-004__x-humility__y-life__cee1a120"
+      ],
+      "generosity": [
+        "pro-022-009-009__x-generosity__y-blessing__a4b32a81"
+      ],
+      "knowledge": [
+        "pro-024-005-005__x-knowledge__y-strength__94f20e9a"
+      ]
+    },
+    "y": {
+      "knowledge": [
+        "pro-001-007-007__x-fear-of-the-lord__y-knowledge__52c7363b",
+        "pro-001-023-023__x-repentance__y-knowledge__d09ed6c0",
+        "pro-021-011-011__x-instruction__y-knowledge__fa0f1696",
+        "pro-021-011-011__x-wisdom__y-knowledge__db24088a"
+      ],
+      "wisdom": [
+        "pro-021-011-011__x-punishment__y-wisdom__7d3b4d72"
+      ],
+      "generosity": [
+        "pro-021-026-026__x-righteousness__y-generosity__bf80077d"
+      ],
+      "riches": [
+        "pro-022-004-004__x-humility__y-riches__692cdc58",
+        "pro-022-004-004__x-fear-of-the-lord__y-riches__4a47486c"
+      ],
+      "honor": [
+        "pro-022-004-004__x-humility__y-honor__f357cc1a",
+        "pro-022-004-004__x-fear-of-the-lord__y-honor__c4ea678f"
+      ],
+      "life": [
+        "pro-022-004-004__x-humility__y-life__cee1a120",
+        "pro-022-004-004__x-fear-of-the-lord__y-life__603c6f31"
+      ],
+      "blessing": [
+        "pro-022-009-009__x-generosity__y-blessing__a4b32a81"
+      ],
+      "strength": [
+        "pro-024-005-005__x-wisdom__y-strength__e2e5e1db",
+        "pro-024-005-005__x-knowledge__y-strength__94f20e9a"
+      ]
+    }
+  }
+}

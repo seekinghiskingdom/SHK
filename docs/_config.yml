@@ -4,6 +4,8 @@ url: https://seekinghiskingdom.github.io
 baseurl: /SHK        # change to "" if you later use a root/custom domain
 permalink: pretty
 timezone: America/Chicago
+source: docs
+permalink: pretty
 
 # Keep non-site stuff out of the build
 exclude:
@@ -11,3 +13,7 @@ exclude:
   - tools/
   - scripts/
   - qa/
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock

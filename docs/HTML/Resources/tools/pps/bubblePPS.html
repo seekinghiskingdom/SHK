@@ -1,0 +1,65 @@
+---
+layout: default
+title: Proverb Pairs Search (PPS)
+permalink: /Resources/PPS/Bubble
+---
+
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+  <h2 style="margin: 0;">Proverb Pairs Search (PPS)</h2>
+
+  <button class="nav-button" style="width:auto;" onclick="window.location.href='{{ site.baseurl }}/Resources/PPS/Direct'">
+    Direct Mode
+  </button>
+
+  <button class="current-button" style="width:auto;">Bubble Mode</button>
+</div>
+
+<main class="container">
+
+  <!-- Optional Controls (commented out) -->
+  <!--
+  <section class="controls-box">
+    <div class="controls">
+      <div>
+        <label>Inputs</label>
+        <select id="inputs">
+          <option value="">SELECT INPUT</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Outputs</label>
+        <select id="outputs">
+          <option value="">SELECT OUTPUT</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Chapters</label>
+        <select id="chapter">
+          <option value="">ALL</option>
+          {% for i in (1..31) %}
+          <option value="{{ i }}">{{ i }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div>
+        <label>Translations</label>
+        <select id="translation">
+          <option value="">ALL</option>
+          <option value="KJV">KJV</option>
+        </select>
+      </div>
+
+      <button id="btnSearch">Search</button>
+      <span id="count"></span>
+    </div>
+  </section>
+  -->
+
+  <!-- <section id="results" class="results"></section> -->
+
+</main>
+
+<script src="{{ site.baseurl }}/js/pps.stub.js"></script>

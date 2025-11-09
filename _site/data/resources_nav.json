@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bible",
+    "title": "Bible Viewer",
+    "description": "Read a chapter or verse range.",
+    "href": "./bible/?version=bible_kjv&ref=John%201",
+    "icon": "bible",
+    "comingSoon": false
+  },
+  {
+    "id": "literature",
+    "title": "Literature Index",
+    "description": "Browse all imported texts.",
+    "href": "./literature/",
+    "icon": "books",
+    "comingSoon": false
+  },
+  {
+    "id": "churches",
+    "title": "Find a Church",
+    "description": "Discover local congregations (planned).",
+    "href": "./churches/",
+    "icon": "pin",
+    "comingSoon": true
+  },
+  {
+    "id": "community",
+    "title": "Community",
+    "description": "Blog & discussion (planned).",
+    "href": "./community/",
+    "icon": "chat",
+    "comingSoon": true
+  },
+  {
+    "id": "faqs",
+    "title": "FAQs",
+    "description": "Common questions (planned).",
+    "href": "./faqs/",
+    "icon": "help",
+    "comingSoon": true
+  }
+]

@@ -10,13 +10,17 @@
 
   <!-- Basic SEO -->
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
-  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}
   <meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow{% endif %}">
 
   <!-- Open Graph (simple defaults) -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  <meta property="og:type" content="website">
 </head>
+
 <body>
   {% include header.html %}
 
@@ -38,6 +42,7 @@
   </main>
 
   {% include footer.html %}
+
   <script src="{{ site.baseurl }}/js/site.js" defer></script>
 </body>
 </html>
