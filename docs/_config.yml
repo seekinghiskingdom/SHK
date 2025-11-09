@@ -1,6 +1,6 @@
 # docs/_config.yml
 title: Seeking His Kingdom
-baseurl: ""   # empty
+baseurl: "/SHK"   # Change this to "/SHK" when testing and "" to deploy
 url: https://www.seekinghiskingdom.org
 permalink: pretty
 timezone: America/Chicago
