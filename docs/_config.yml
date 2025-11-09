@@ -1,7 +1,7 @@
 # docs/_config.yml
 title: Seeking His Kingdom
-url: https://seekinghiskingdom.github.io
-baseurl: /SHK        # change to "" if you later use a root/custom domain
+baseurl: ""   # empty
+url: https://www.seekinghiskingdom.org
 permalink: pretty
 timezone: America/Chicago
 source: docs
