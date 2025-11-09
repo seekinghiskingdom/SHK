@@ -1,0 +1,38 @@
+---
+layout: default
+title: "404 - Lost but Not Forgotten"
+permalink: /404.html
+---
+
+<main class="container" style="text-align: center; padding: 80px 20px; display: flex; flex-direction: column; align-items: center; gap: 30px;">
+
+  <h1>404 — Lost but Not Forgotten</h1>
+
+  <p style="font-size: 1.2rem; color: #bcbcbc; max-width: 800px;">
+    It looks like you’ve wandered off the path. Let’s get you back to <strong>Seeking His Kingdom</strong>.
+  </p>
+
+  <img src="{{ site.baseurl }}/img/SHK-Cross.webp" alt="SHK Cross"
+       style="width: 120px;">
+
+  <div style="display: flex; justify-content: center; gap: 20px;">
+    <button onclick="goBack()" class="nav-button">
+      ⬅️ Go Back
+    </button>
+
+    <a href="{{ site.baseurl }}/" class="nav-button">
+      🏠 Home
+    </a>
+  </div>
+
+</main>
+
+<script>
+  function goBack() {
+    if (window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href = "{{ site.baseurl }}/";
+    }
+  }
+</script>
