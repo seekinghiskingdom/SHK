@@ -1,7 +1,7 @@
 # Seeking His Kingdom (SHK)
 Monorepo for the SHK website and tools.
-Website: https://www.seekinghiskingdom.org
-Email: contact@seekinghiskingdom.org
+## Website: https://www.seekinghiskingdom.org
+## Email: contact@seekinghiskingdom.org
 
 ## Structure
 - `docs/` — GitHub Pages site (set Pages to /docs)
