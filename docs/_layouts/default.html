@@ -1,3 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% if page.title %}
+        {{ page.title }} | Seeking His Kingdom
+      {% else %}
+        Seeking His Kingdom
+      {% endif %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '/img/favicon.ico' | relative_url }}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+
+    <!-- Scripts -->
+    <script src="{{ '/js/main.js' | relative_url }}" defer></script>
+  </head>
+  <body>
+    {% include header.html %}
+
+    <main id="content" class="container">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
+
+
+<!-- 
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,14 +47,12 @@
   <link rel="icon" href="{{ site.baseurl }}/img/favicon.png">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css" />
 
-  <!-- Basic SEO -->
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   {% if page.description %}
     <meta name="description" content="{{ page.description }}">
   {% endif %}
   <meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow{% endif %}">
 
-  <!-- Open Graph (simple defaults) -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta property="og:type" content="website">
@@ -25,7 +62,6 @@
   {% include header.html %}
 
   <main id="content" class="container">
-    <!-- Optional breadcrumbs -->
     {% if page.breadcrumbs %}
       <nav aria-label="Breadcrumb" class="breadcrumbs">
         {% for crumb in page.breadcrumbs %}
@@ -45,4 +81,4 @@
 
   <script src="{{ site.baseurl }}/js/site.js" defer></script>
 </body>
-</html>
+</html> -->

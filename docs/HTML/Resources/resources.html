@@ -1,9 +1,83 @@
 ---
 layout: default
 title: Resources
-permalink: /Resources
+permalink: /resources/
 ---
 
-<main class="container">
-  <p>Resources. Work in progress</p>
-</main>
+<h1>{{ page.title }}</h1>
+
+<section class="resources-intro">
+  <p>
+    This hub gathers SHK resources for Scripture, study, and learning. (TBD)
+  </p>
+</section>
+
+<section class="resources-tiles">
+  <div class="tile-grid">
+
+    <!-- Literature -->
+    <a href="{{ '/resources/literature/' | relative_url }}" class="tile tile-resources-literature">
+      <div class="tile-content">
+        <h3>Literature</h3>
+        <p>
+          Bible text, historical writings, studies, and other reading. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Tools -->
+    <a href="{{ '/resources/tools/' | relative_url }}" class="tile tile-resources-tools">
+      <div class="tile-content">
+        <h3>Tools</h3>
+        <p>
+          Interactive tools like Proverb Pairs Search (PPS) and others. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Games -->
+    <a href="{{ '/resources/games/' | relative_url }}" class="tile tile-resources-games">
+      <div class="tile-content">
+        <h3>Games</h3>
+        <p>
+          Simple Scripture-centered games and activities. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Online Resources -->
+    <a href="{{ '/resources/online/' | relative_url }}" class="tile tile-resources-online">
+      <div class="tile-content">
+        <h3>Online Resources</h3>
+        <p>
+          Curated links to helpful channels, sites, and tools. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Big Questions / FAQs -->
+    <a href="{{ '/resources/faqs/' | relative_url }}" class="tile tile-resources-faqs">
+      <div class="tile-content">
+        <h3>Big Questions</h3>
+        <p>
+          Short, Scripture-centered responses to big questions. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Biblical Languages (Biblangs) -->
+    <a href="{{ '/resources/biblangs/' | relative_url }}" class="tile tile-resources-biblangs">
+      <div class="tile-content">
+        <h3>Biblical Languages (Biblangs)</h3>
+        <p>
+          Koine Greek, Hebrew, and related language resources. (TBD)
+        </p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<nav class="resources-nav">
+  <a href="{{ '/' | relative_url }}">Back to Home</a>
+</nav>

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Proverb Pairs Search (Direct Mode)
-permalink: /Resources/PPS/Direct
+permalink: /resources/tools/pps/direct
 ---
 
 <main class="container" style="display: flex; gap: 20px;">
@@ -12,9 +12,11 @@ permalink: /Resources/PPS/Direct
 
     <div style="margin-bottom: 12px;">
       <button class="current-button" style="width:auto;">Direct Mode</button>
-      <button class="nav-button" style="width:auto;" onclick="window.location.href='{{ site.baseurl }}/Resources/PPS/Bubble'">
+      <button type="button"
+              onclick="window.location.href='{{ '/resources/tools/pps/bubble/' | relative_url }}'">
         Bubble Mode
       </button>
+
     </div>
 
     <div class="controls">
@@ -62,4 +64,4 @@ permalink: /Resources/PPS/Direct
 
 </main>
 
-<script src="{{ site.baseurl }}/js/pps.stub.js"></script>
+<script src="{{ '/js/pps.stub.js' | relative_url }}"></script>
