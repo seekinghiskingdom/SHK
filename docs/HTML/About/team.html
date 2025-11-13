@@ -4,17 +4,33 @@ title: Team
 permalink: /about/team/
 ---
 
-<h1>Our Team</h1>
+<h1>{{ page.title }}</h1>
 
-<nav>
-  <a href="{{ '/About/' | relative_url }}">About Home</a>
-  <a href="{{ '/' | relative_url }}">Home</a>
-</nav>
-
-<section>
-  <h2>Who We Are</h2>
+<section class="team-intro">
   <p>
-    This page will introduce the people serving behind Seeking His Kingdom.
-    Add short bios, roles, and photos here.
+    This page introduces the people serving behind Seeking His Kingdom.
   </p>
 </section>
+
+<section class="team-grid">
+  <!-- Team member card -->
+  <article class="team-member">
+    <div class="team-photo">
+      <!-- <img src="{{ '/assets/img/team/your-name.jpg' | relative_url }}" alt="Your Name"> -->
+    </div>
+    <div class="team-info">
+      <h2 class="team-name">Your Name</h2>
+      <p class="team-role">Role / Title</p>
+      <p class="team-bio">
+        Bio.
+      </p>
+    </div>
+  </article>
+
+  <!-- Duplicate this <article> block for more members -->
+</section>
+
+
+<nav class="about-nav">
+  <a href="{{ '/about/' | relative_url }}">Back to About</a>
+</nav>
