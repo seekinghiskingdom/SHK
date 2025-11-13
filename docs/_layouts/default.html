@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 
-  <link rel="icon" href="{{ site.baseurl }}/img/favicon.png">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css" />
+  <link rel="icon" href="{{ '/img/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
 
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   {% if page.description %}
@@ -31,7 +31,7 @@
           {% if forloop.last %}
             <span aria-current="page">{{ crumb.label }}</span>
           {% else %}
-            <a href="{{ site.baseurl }}{{ crumb.href }}">{{ crumb.label }}</a> /
+            <a href="{{ crumb.href | relative_url }}">{{ crumb.label }}</a> /
           {% endif %}
         {% endfor %}
       </nav>
@@ -42,6 +42,6 @@
 
   {% include footer.html %}
 
-  <script src="{{ site.baseurl }}/js/site.js" defer></script>
+  <script src="{{ '/js/main.js' | relative_url }}" defer></script>
 </body>
 </html>
