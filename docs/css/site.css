@@ -1454,5 +1454,45 @@ footer.container,
   }
 }
 
+/* Logo wordmark styling */
+.site-title {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  letter-spacing: 0.14em;   /* stretch it horizontally */
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+/* Full name vs SHK swap still applies */
+.site-title-full {
+  display: inline;
+}
+
+.site-title-short {
+  display: none;
+}
+
+/* Mobile: smaller, use SHK but still styled */
+@media (max-width: 700px) {
+  .site-title {
+    font-size: 1.1rem;
+    letter-spacing: 0.18em;
+  }
+
+  .site-title-full {
+    display: none;
+  }
+
+  .site-title-short {
+    display: inline;
+  }
+}
+
+.site-title-short {
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--gold);
+}
+
 
 /* End of Hunter's CSS Style Additions */
