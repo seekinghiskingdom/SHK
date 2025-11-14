@@ -25,3 +25,16 @@
   const main = document.getElementById('content');
   if (main) main.setAttribute('tabindex', '-1');
 })();
+
+// 4) Header hamburger toggle
+(() => {
+  const header = document.querySelector('.site-header');
+  const toggle = document.querySelector('.nav-toggle');
+
+  if (!header || !toggle) return;
+
+  toggle.addEventListener('click', () => {
+    const open = header.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();

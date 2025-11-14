@@ -1,20 +1,25 @@
-<header class="container">
-  <nav>
-    <!-- <img src="{{ site.baseurl }}/img/SHK-Cross.webp" alt="SHK" class="rounded-img"> -->
+<header class="container site-header">
+  <nav class="main-nav">
     <a href="{{ '/' | relative_url }}" class="logo-link">
       <img src="{{ '/img/SHK-Cross.webp' | relative_url }}" alt="Seeking His Kingdom" class="logo">
     </a>
 
-    <h1>Seeking His Kingdom</h1>
+    <h1 class="site-title">Seeking His Kingdom</h1>
 
-    <a href="{{ '/' | relative_url }}" class="nav-button">Home</a>
-    <a href="{{ '/resources/' | relative_url }}" class="nav-button">Resources</a>
-    <a href="{{ '/community/' | relative_url }}" class="nav-button">Community</a>
-    <a href="{{ '/serving/' | relative_url }}" class="nav-button">Serving</a>
-    <a href="{{ '/salvation/' | relative_url }}" class="nav-button">Salvation</a>
-    <a href="{{ '/about/' | relative_url }}" class="nav-button">About</a>
-    <a href="{{ '/help/' | relative_url }}" class="nav-button">Help</a>
+    <!-- Mobile hamburger -->
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+      ☰
+    </button>
 
+    <div id="primary-nav" class="nav-links">
+      <a href="{{ '/' | relative_url }}" class="nav-button">Home</a>
+      <a href="{{ '/resources/' | relative_url }}" class="nav-button">Resources</a>
+      <a href="{{ '/community/' | relative_url }}" class="nav-button">Community</a>
+      <a href="{{ '/serving/' | relative_url }}" class="nav-button">Serving</a>
+      <a href="{{ '/salvation/' | relative_url }}" class="nav-button">Salvation</a>
+      <a href="{{ '/about/' | relative_url }}" class="nav-button">About</a>
+      <a href="{{ '/help/' | relative_url }}" class="nav-button">Help</a>
+    </div>
   </nav>
 </header>
 <hr>

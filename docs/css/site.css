@@ -719,3 +719,52 @@ button:hover {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+
+/* ======================
+   Header: hamburger nav
+   ====================== */
+
+/* Desktop baseline for the new header structure */
+.site-header .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.site-header .nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.site-header .nav-toggle {
+  display: none;
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile behavior for the new header */
+@media (max-width: 700px) {
+  .site-header .nav-toggle {
+    display: inline-block;
+  }
+
+  .site-header .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: var(--panel);
+    padding: 0.5rem;
+    border-top: 1px solid #333;
+  }
+
+  .site-header.nav-open .nav-links {
+    display: flex;
+  }
+}
