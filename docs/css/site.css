@@ -1495,4 +1495,50 @@ footer.container,
 }
 
 
+/* === Mobile nav fix: full-width rows, small caret, no extra black bar === */
+@media (max-width: 700px) {
+  /* Stack nav items, but each item is one row */
+  .site-header .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-header .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  /* Main tab button: full row, label area */
+  .site-header .nav-button {
+    flex: 1 1 auto;
+    width: auto;                   /* override any global width:100% on button */
+    display: inline-flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  /* Small caret button: stays beside, not as its own full-width bar */
+  .site-header .submenu-toggle {
+    flex: 0 0 auto;
+    width: auto;                   /* don't stretch to full width */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  /* Turn off the old pseudo-element caret on the parent */
+  .site-header .nav-parent::after {
+    content: none;
+  }
+}
+
+
 /* End of Hunter's CSS Style Additions */
