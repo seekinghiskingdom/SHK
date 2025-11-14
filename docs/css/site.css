@@ -1579,7 +1579,7 @@ footer.container,
 /* Mobile logo size */
 @media (max-width: 700px) {
   .site-header .logo-link img.rounded-img {
-    width: 100px !important;
+    width: 75px !important;
     height: 100px !important;
   }
 }
