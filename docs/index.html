@@ -5,52 +5,60 @@ title: Home
 
 <main class="home-page">
 
-  <!-- Verse + AI disclaimer section -->
+  <!-- Verse section -->
   <section class="home-verse-section">
     <div class="home-verse">
       <p class="home-verse-text">
-        “But rather seek ye the kingdom of God; and all these things shall be added unto you.”
-      </p>
-      <p class="home-verse-ref">
-        Luke 12:31 (KJV)
+        “But rather <a href="{{ '/about/' | relative_url }}">seek ye the kingdom of God</a>; and all these things shall be added unto you.” - Luke 12:31 (KJV)
       </p>
     </div>
-
-    <p class="ai-disclaimer">
-      Please note that AI is used for initial development. See our <a href="{{ '/about/legal/' | relative_url }}">AI disclaimer</a> for more details.
-    </p>
   </section>
 
-  <!-- Daily Tools section (full-width feature block) -->
-  <section class="home-daily-tool-section">
-  <div class="tile tile-daily">
-    <div class="tile-content">
-      <h2>
-        <a href="{{ '/daily/' | relative_url }}" class="daily-tools-link">
-          Daily Tools
-        </a>
-      </h2>
-      <p>
-        Quick daily ways to engage Scripture and reflection.
-      </p>
 
-      <div class="daily-actions">
-        <a href="{{ '/daily/verse/' | relative_url }}" class="btn daily-verse">
-          Daily Verse
-        </a>
-        <a href="{{ '/daily/proverb/' | relative_url }}" class="btn daily-proverb">
-          Daily Proverb
-        </a>
-        <a href="{{ '/daily/trivia/' | relative_url }}" class="btn daily-trivia">
-          Daily Trivia
-        </a>
-        <a href="{{ '/daily/game/' | relative_url }}" class="btn daily-game">
-          Daily Game
-        </a>
-      </div>
+    <!-- Feature row section -->
+  <section class="home-feature-row">
+
+    <!-- Daily Tools tile -->
+    <div class="feature-tile">
+        <div class="tile tile-daily">
+        <div class="tile-content">
+            <h2>
+            <a href="{{ '/daily/' | relative_url }}" class="daily-tools-link">
+                Daily Tools
+            </a>
+            </h2>
+            <p>Quick daily ways to engage Scripture and reflection.</p>
+
+            <div class="daily-actions">
+            <a href="{{ '/daily/verse/' | relative_url }}" class="btn">Daily Verse</a>
+            <a href="{{ '/daily/proverb/' | relative_url }}" class="btn">Daily Proverb</a>
+            <a href="{{ '/daily/biblele/' | relative_url }}" class="btn">Daily Biblele</a>
+            <a href="{{ '/daily/trivia/' | relative_url }}" class="btn">Daily Trivia</a>
+            <a href="{{ '/daily/game/' | relative_url }}" class="btn">Daily Game</a>
+            </div>
+        </div>
+        </div>
     </div>
-  </div>
-</section>
+
+    <!-- Essentials tile -->
+    <div class="feature-tile">
+        <div class="tile tile-essentials">
+        <div class="tile-content">
+            <h2>Essentials</h2>
+            <p>Quick links to core areas of the site.</p>
+
+            <div class="daily-actions">
+            <a href="{{ '/community/prayer/' | relative_url }}" class="btn">Prayer</a>
+            <a href="{{ '/community/testimony/' | relative_url }}" class="btn">Testimony</a>
+            <a href="{{ '/resources/literature/bible/' | relative_url }}" class="btn">Bible</a>
+            <a href="{{ '/salvation/' | relative_url }}" class="btn">Salvation</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  </section>
+
 
 
   <!-- Home hub tiles, using the same idea as hub-grid/hub-tile -->
