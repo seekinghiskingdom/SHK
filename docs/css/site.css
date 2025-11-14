@@ -1540,5 +1540,33 @@ footer.container,
   }
 }
 
+/* Bigger logo image + title in header */
+
+/* Desktop */
+@media (min-width: 701px) {
+  .site-header .rounded-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .site-header .site-title {
+    font-size: 2rem;      /* was ~1.4rem */
+    letter-spacing: 0.18em;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .site-header .rounded-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .site-header .site-title {
+    font-size: 1.4rem;    /* bump SHK size too */
+    letter-spacing: 0.2em;
+  }
+}
+
 
 /* End of Hunter's CSS Style Additions */
