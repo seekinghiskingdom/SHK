@@ -1568,5 +1568,11 @@ footer.container,
   }
 }
 
+/* Force header logo image size */
+.site-header .logo-link img.rounded-img {
+  width: 150px !important;
+  height: 150px !important;
+}
+
 
 /* End of Hunter's CSS Style Additions */
