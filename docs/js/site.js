@@ -39,20 +39,19 @@
   });
 })();
 
-// 5) Mobile: toggle submenus on click
+// Mobile: toggle submenus via the small ▾ button, keep parent link navigable
 (() => {
-  const submenuParents = document.querySelectorAll('.nav-item.has-submenu > .nav-parent');
-  if (!submenuParents.length) return;
+  const toggles = document.querySelectorAll('.nav-item.has-submenu .submenu-toggle');
+  if (!toggles.length) return;
 
-  submenuParents.forEach(link => {
-    link.addEventListener('click', (e) => {
-      // Only intercept on small screens (same breakpoint as CSS)
-      if (window.innerWidth > 700) return;
-
+  toggles.forEach(btn => {
+    btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const item = link.closest('.nav-item');
+      const item = btn.closest('.nav-item');
       if (!item) return;
-      item.classList.toggle('submenu-open');
+      const isOpen = item.classList.toggle('submenu-open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   });
 })();
+

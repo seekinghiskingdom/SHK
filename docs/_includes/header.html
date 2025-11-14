@@ -31,6 +31,11 @@
         <a href="{{ '/resources/' | relative_url }}" class="nav-button nav-parent">
           Resources
         </a>
+        <button class="submenu-toggle"
+                aria-label="Toggle Resources menu"
+                aria-expanded="false">
+          ▾
+        </button>
         <div class="nav-dropdown">
           <div class="nav-dropdown-grid">
             <a href="{{ '/resources/literature/bible/' | relative_url }}" class="nav-dropdown-item">
@@ -63,10 +68,15 @@
         <a href="{{ '/community/' | relative_url }}" class="nav-button nav-parent">
           Community
         </a>
+        <button class="submenu-toggle"
+                aria-label="Toggle Community menu"
+                aria-expanded="false">
+          ▾
+        </button>
         <div class="nav-dropdown">
           <div class="nav-dropdown-grid">
             <a href="{{ '/community/connect/' | relative_url }}" class="nav-dropdown-item">
-              Connect & Social
+              Connect &amp; Social
             </a>
             <a href="{{ '/community/find-a-church/' | relative_url }}" class="nav-dropdown-item">
               Find a Church
@@ -89,8 +99,6 @@
             <a href="{{ '/community/blessings/' | relative_url }}" class="nav-dropdown-item">
               Blessings
             </a>
-            
-
           </div>
         </div>
       </div>
@@ -100,6 +108,11 @@
         <a href="{{ '/serving/' | relative_url }}" class="nav-button nav-parent">
           Serving
         </a>
+        <button class="submenu-toggle"
+                aria-label="Toggle Serving menu"
+                aria-expanded="false">
+          ▾
+        </button>
         <div class="nav-dropdown">
           <div class="nav-dropdown-grid">
             <a href="{{ '/serving/community-service/' | relative_url }}" class="nav-dropdown-item">
@@ -129,15 +142,16 @@
         <a href="{{ '/salvation/' | relative_url }}" class="nav-button">Salvation</a>
       </div>
 
-      <!-- About (simple) -->
-      <!-- <div class="nav-item">
-        <a href="{{ '/about/' | relative_url }}" class="nav-button">About</a>
-      </div> -->
       <!-- About (has dropdown) -->
       <div class="nav-item has-submenu">
         <a href="{{ '/about/' | relative_url }}" class="nav-button nav-parent">
           About
         </a>
+        <button class="submenu-toggle"
+                aria-label="Toggle About menu"
+                aria-expanded="false">
+          ▾
+        </button>
         <div class="nav-dropdown">
           <div class="nav-dropdown-grid">
             <a href="{{ '/about/' | relative_url }}" class="nav-dropdown-item">

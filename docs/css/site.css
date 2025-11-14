@@ -1412,5 +1412,47 @@ footer.container,
   }
 }
 
+/* Mobile nav: full-width rows and a separate submenu toggle button */
+@media (max-width: 700px) {
+  .site-header .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-header .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .site-header .nav-button {
+    flex: 1;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    display: inline-flex;
+  }
+
+  .site-header .submenu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 0.85rem;
+    padding: 0.35rem 0.5rem;
+    cursor: pointer;
+  }
+}
+
+/* Desktop: hide the little toggle button; hover handles dropdowns */
+@media (min-width: 701px) {
+  .site-header .submenu-toggle {
+    display: none;
+  }
+}
+
 
 /* End of Hunter's CSS Style Additions */
