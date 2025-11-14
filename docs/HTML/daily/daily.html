@@ -4,18 +4,36 @@ title: Daily Tools
 permalink: /daily/
 ---
 
-<h1>Daily Tools</h1>
-<p>Select one of the daily tools below.</p>
+<section class="hub-page">
+  <h1>{{ page.title }}</h1>
+  <p class="hub-intro">
+    Quick daily tools for Scripture and reflection. (TBD)
+  </p>
+  <hr class="hub-divider">
 
-<section class="daily-links">
-  <ul>
-    <li><a href="{{ '/daily/verse/' | relative_url }}">Daily Verse</a></li>
-    <li><a href="{{ '/daily/proverb/' | relative_url }}">Daily Proverb</a></li>
-    <li><a href="{{ '/daily/biblele/' | relative_url }}">Daily Biblele</a></li>
-    <li><a href="{{ '/daily/game/' | relative_url }}">Daily Game</a></li>
-  </ul>
+  <div class="hub-grid">
+    <a href="{{ '/daily/verse/' | relative_url }}" class="hub-tile tile-daily-verse">
+      <h2>Daily Verse</h2>
+      <p>See a verse of the day.</p>
+    </a>
+
+    <a href="{{ '/daily/proverb/' | relative_url }}" class="hub-tile tile-daily-proverb">
+      <h2>Daily Proverb</h2>
+      <p>See a proverb of the day.</p>
+    </a>
+
+    <a href="{{ '/daily/biblele/' | relative_url }}" class="hub-tile tile-daily-biblele">
+      <h2>Daily Biblele</h2>
+      <p>Play the daily Biblele puzzle.</p>
+    </a>
+
+    <a href="{{ '/daily/game/' | relative_url }}" class="hub-tile tile-daily-game">
+      <h2>Daily Game</h2>
+      <p>Jump into a rotating daily game.</p>
+    </a>
+  </div>
+
+  <nav class="daily-nav">
+    <a href="{{ '/' | relative_url }}">Back to Home</a>
+  </nav>
 </section>
-
-<nav class="home-nav">
-  <a href="{{ '/' | relative_url }}">Back to Home</a>
-</nav>
