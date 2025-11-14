@@ -738,20 +738,28 @@ button:hover {
   gap: 0.5rem;
 }
 
+/* Hamburger button – override global button styles */
 .site-header .nav-toggle {
-  display: none;
-  margin-left: auto;
-  background: none;
+  display: none;              /* hidden on desktop */
+  margin-left: auto;          /* pushes it to the far right */
+  background: transparent;
   border: none;
   color: var(--text);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  padding: 0.15rem 0.4rem;    /* small, square-ish icon */
+  line-height: 1;
+  width: auto;                /* kills the full-width button behavior */
   cursor: pointer;
 }
 
 /* Mobile behavior for the new header */
 @media (max-width: 700px) {
+  .site-header .main-nav {
+    flex-wrap: wrap;
+  }
+
   .site-header .nav-toggle {
-    display: inline-block;
+    display: inline-block;    /* only show on small screens */
   }
 
   .site-header .nav-links {
@@ -768,3 +776,36 @@ button:hover {
     display: flex;
   }
 }
+
+
+
+/* Home page background image layer */
+.home-page::before {
+  content: "";
+  position: fixed;          /* stays put while you scroll */
+  inset: 0;                 /* full viewport */
+  background: url("/img/SHK-Path.webp") center/cover no-repeat;
+  filter: blur(6px);
+  transform: scale(1.05);   /* avoid blur edges */
+  z-index: -1;              /* behind all content */
+  opacity: 0.35;            /* tone it down a bit */
+}
+
+/* Make sure home content sits above it */
+.home-page {
+  position: relative;
+}
+
+
+.daily-tools-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.daily-tools-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* End of Hunter's CSS Style Additions */

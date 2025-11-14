@@ -23,72 +23,210 @@ title: Home
 
   <!-- Daily Tools section (full-width feature block) -->
   <section class="home-daily-tool-section">
-    <div class="tile tile-daily">
-      <div class="tile-content">
-        <h2>Daily Tools</h2>
-        <p>
-          Quick daily ways to engage Scripture and reflection. (TBD)
-        </p>
-        <div class="daily-actions">
-          <a href="#" class="btn daily-verse">Daily Verse</a>
-          <a href="#" class="btn daily-proverb">Daily Proverb</a>
-          <a href="#" class="btn daily-trivia">Daily Trivia</a>
-          <a href="#" class="btn daily-game">Daily Game</a>
-        </div>
+  <div class="tile tile-daily">
+    <div class="tile-content">
+      <h2>
+        <a href="{{ '/daily/' | relative_url }}" class="daily-tools-link">
+          Daily Tools
+        </a>
+      </h2>
+      <p>
+        Quick daily ways to engage Scripture and reflection.
+      </p>
+
+      <div class="daily-actions">
+        <a href="{{ '/daily/verse/' | relative_url }}" class="btn daily-verse">
+          Daily Verse
+        </a>
+        <a href="{{ '/daily/proverb/' | relative_url }}" class="btn daily-proverb">
+          Daily Proverb
+        </a>
+        <a href="{{ '/daily/trivia/' | relative_url }}" class="btn daily-trivia">
+          Daily Trivia
+        </a>
+        <a href="{{ '/daily/game/' | relative_url }}" class="btn daily-game">
+          Daily Game
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Home hub tiles, using the same idea as hub-grid/hub-tile -->
   <section class="home-hub-section">
-    <h2 class="home-hub-heading">Explore SHK</h2>
-    <p class="home-hub-intro">
-      Choose a path to study, reflect, or connect.
-    </p>
+  <h2 class="home-hub-heading">Explore SHK</h2>
+  <p class="home-hub-intro">
+    Choose a path to study, reflect, or connect.
+  </p>
 
-    <div class="tile-grid hub-grid home-hub-grid">
+  <div class="tile-grid hub-grid home-hub-grid">
 
-      <!-- About -->
-      <a href="{{ '/about/' | relative_url }}" class="tile tile-about hub-tile home-hub-tile">
-        <div class="tile-content">
-          <h2>About SHK</h2>
-          <p>
-            Learn more about Seeking His Kingdom, its mission, and the heart behind our tools and resources.
-          </p>
-        </div>
-      </a>
+    <!-- Bible -->
+    <a href="{{ '/resources/literature/bible/' | relative_url }}" class="tile tile-bible hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Bible</h2>
+        <p>
+          Read and study Scripture with integrated tools and references. (TBD)
+        </p>
+      </div>
+    </a>
 
-      <!-- Literature -->
-      <a href="{{ '/resources/literature/' | relative_url }}" class="tile tile-literature hub-tile home-hub-tile">
-        <div class="tile-content">
-          <h2>Literature</h2>
-          <p>
-            TBD
-          </p>
-        </div>
-      </a>
+    <!-- Find a Church -->
+    <a href="{{ '/community/find-a-church/' | relative_url }}" class="tile tile-find-a-church hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Find a Church</h2>
+        <p>
+          Find a local church to attend and grow in your faith with others today!
+        </p>
+      </div>
+    </a>
 
-      <!-- Tools -->
-      <a href="{{ '/resources/tools/' | relative_url }}" class="tile tile-tools hub-tile home-hub-tile">
-        <div class="tile-content">
-          <h2>Tools</h2>
-          <p>
-            Access interactive tools like Proverb Pairs Search (PPS) to help you study and apply God’s Word.
-          </p>
-        </div>
-      </a>
+    <!-- Prayer -->
+    <a href="{{ '/community/prayer/' | relative_url }}" class="tile tile-prayer hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Prayer</h2>
+        <p>
+          Grow closer to God by submitting a prayer request or praying for others!
+        </p>
+      </div>
+    </a>
 
-      <!-- Games -->
-      <a href="{{ '/resources/games/' | relative_url }}" class="tile tile-games hub-tile home-hub-tile">
-        <div class="tile-content">
-          <h2>Games</h2>
-          <p>
-            TBD
-          </p>
-        </div>
-      </a>
+    <!-- About -->
+    <a href="{{ '/about/' | relative_url }}" class="tile tile-about hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>About SHK</h2>
+        <p>
+          Learn more about Seeking His Kingdom, its mission, and the heart behind our tools and resources.
+        </p>
+      </div>
+    </a>
 
-    </div>
-  </section>
+    <!-- Tools -->
+    <a href="{{ '/resources/tools/' | relative_url }}" class="tile tile-tools hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Tools</h2>
+        <p>
+          Access interactive tools like Proverb Pairs Search (PPS) to help you study and apply God’s Word.
+        </p>
+      </div>
+    </a>
+
+    <!-- Games -->
+    <a href="{{ '/resources/games/' | relative_url }}" class="tile tile-games hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Games</h2>
+        <p>
+          Bible-based games for reflection, fun, and learning. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Literature -->
+    <a href="{{ '/resources/literature/' | relative_url }}" class="tile tile-literature hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Literature</h2>
+        <p>
+          Studies, articles, books, and other written resources. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Historical -->
+    <a href="{{ '/resources/literature/historical/' | relative_url }}" class="tile tile-historical hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Historical</h2>
+        <p>
+          Background, timelines, and context to help situate Scripture. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Online Resources -->
+    <a href="{{ '/resources/online/' | relative_url }}" class="tile tile-online hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Online Resources</h2>
+        <p>
+          Curated links to external tools, sites, and ministries. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Community -->
+    <a href="{{ '/community/' | relative_url }}" class="tile tile-community hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Community</h2>
+        <p>
+          Prayer, testimonies, blessings, and ways to walk together. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Serving -->
+    <a href="{{ '/serving/' | relative_url }}" class="tile tile-serving hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Serving</h2>
+        <p>
+          Opportunities and ideas for serving in the church, campus, and community. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Salvation -->
+    <a href="{{ '/salvation/' | relative_url }}" class="tile tile-salvation hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>Salvation</h2>
+        <p>
+          What it means to know Jesus, and how to respond to the gospel. (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- Literature Index -->
+    <a href="{{ '/resources/literature/index/' | relative_url }}" class="tile hub-tile home-hub-tile tile-literature-index">
+      <div class="tile-content">
+        <h2>Literature Index</h2>
+        <p>
+          Check out all the literature we have posted! (TBD)
+        </p>
+      </div>
+    </a>
+
+    <!-- FAQs -->
+    <a href="{{ '/resources/faqs/' | relative_url }}" class="tile tile-faqs hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>FAQs</h2>
+        <p>
+          Some of the most common questions answered!
+        </p>
+      </div>
+    </a>
+
+    <!-- PPS Tool -->
+    <a href="{{ '/resources/tools/pps/direct/' | relative_url }}" class="tile tile-pps-direct hub-tile home-hub-tile">
+      <div class="tile-content">
+        <h2>PPS Tool</h2>
+        <p>
+          Discover some of the most intersesting connections in Proverbs!
+        </p>
+      </div>
+    </a>
+
+
+    <!-- Template tile to copy for future options -->
+    <!--
+    <a href="{{ '/path/here/' | relative_url }}" class="tile hub-tile home-hub-tile tile-template">
+      <div class="tile-content">
+        <h2>New Section</h2>
+        <p>
+          Short description of what this new area is for. (TBD)
+        </p>
+      </div>
+    </a>
+    -->
+
+  </div>
+</section>
+
 
 </main>
