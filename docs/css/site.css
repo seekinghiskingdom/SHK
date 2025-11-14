@@ -1550,8 +1550,8 @@ footer.container,
   }
 
   .site-header .site-title {
-    font-size: 2.5rem;      /* was ~1.4rem */
-    letter-spacing: 0.2em;
+    font-size: 2rem;      /* was ~1.4rem */
+    letter-spacing: 0.175em;
   }
 }
 
@@ -1563,8 +1563,8 @@ footer.container,
   }
 
   .site-header .site-title {
-    font-size: 3rem;    /* bump SHK size too */
-    letter-spacing: 0.2em;
+    font-size: 2rem;    /* bump SHK size too */
+    letter-spacing: 0.175em;
   }
 }
 
@@ -1579,8 +1579,8 @@ footer.container,
 /* Mobile logo size */
 @media (max-width: 700px) {
   .site-header .logo-link img.rounded-img {
-    width: 150px !important;
-    height: 150px !important;
+    width: 100px !important;
+    height: 100px !important;
   }
 }
 
