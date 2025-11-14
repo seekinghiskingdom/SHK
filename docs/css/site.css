@@ -1550,7 +1550,7 @@ footer.container,
   }
 
   .site-header .site-title {
-    font-size: 3rem;      /* was ~1.4rem */
+    font-size: 2.5rem;      /* was ~1.4rem */
     letter-spacing: 0.2em;
   }
 }
