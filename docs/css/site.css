@@ -539,3 +539,70 @@ button:hover {
     width: 100px;
   }
 }
+
+
+
+/* === Generic hub layout (for Resources, Community, etc.) === */
+
+/* Whole hub page content */
+.hub-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Title + intro spacing */
+.hub-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hub-page p.hub-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  max-width: 60rem;
+}
+
+/* Gold divider under the title */
+.hub-divider {
+  border: none;
+  border-top: 2px solid var(--gold);
+  margin: 0.75rem 0 1.5rem;
+}
+
+/* Grid that arranges tiles nicely */
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card style for hub tiles (does NOT touch home tiles) */
+.hub-tile {
+  display: block;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  background: var(--panel);
+  color: inherit;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hub-tile:hover,
+.hub-tile:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+/* Title + description inside each tile */
+.hub-tile h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.hub-tile p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}

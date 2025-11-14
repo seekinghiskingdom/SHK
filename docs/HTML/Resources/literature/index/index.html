@@ -3,50 +3,87 @@ layout: default
 title: Literature Index
 permalink: /resources/literature/index/
 ---
+
 <h1>{{ page.title }}</h1>
 <p>
-  TBD
-  <!-- Introduction to the literature index, explaining its purpose and contents. -->
+  This index collects all literature-type resources on the site and groups them
+  by category. Use the links below to jump directly to a specific work or
+  collection.
 </p>
-<section class="literature-index-tiles">
-    <div class="tile-grid">
-    
-        <!-- Bible Versions -->
-        <a href="{{ '/resources/bible/kjv/' | relative_url }}" class="tile tile-lit-bible-kjv">
-        <div class="tile-content">
-            <h3>King James Version (KJV)</h3>
-            <p>
-            Explore the classic King James Version of the Bible.
-            </p>
-        </div>
-        </a>
-    
-        <a href="{{ '/resources/bible/asv/' | relative_url }}" class="tile tile-lit-bible-asv">
-        <div class="tile-content">
-            <h3>American Standard Version (ASV)</h3>
-            <p>
-            Explore the American Standard Version of the Bible.
-            </p>
-        </div>
-        </a>
-    
-        <a href="{{ '/resources/bible/web/' | relative_url }}" class="tile tile-lit-bible-web">
-        <div class="tile-content">
-            <h3>World English Bible (WEB)</h3>
-            <p>
-            Access the World English Bible of the Bible.
-            </p>
-        </div>
-        </a>
-    
-    </div>
+
+<section class="literature-index-section">
+  <h2>Bible</h2>
+  <ul>
+    <li><a href="{{ '/resources/literature/bible/' | relative_url }}">Bible – Overview</a></li>
+    <li><a href="{{ '/resources/literature/bible/kjv/' | relative_url }}">King James Version (KJV)</a></li>
+    <li><a href="{{ '/resources/literature/bible/asv/' | relative_url }}">American Standard Version (ASV)</a></li>
+    <li><a href="{{ '/resources/literature/bible/web/' | relative_url }}">World English Bible (WEB)</a></li>
+    <li><a href="{{ '/resources/literature/bible/other/' | relative_url }}">Other / Future Translations</a></li>
+  </ul>
 </section>
 
+<section class="literature-index-section">
+  <h2>Historical Writings</h2>
+  <ul>
+    <li><a href="{{ '/resources/literature/historical/' | relative_url }}">Historical Writings – Overview</a></li>
+    <li><a href="{{ '/resources/literature/historical/creeds/' | relative_url }}">Historical Creeds</a></li>
+    <li><a href="{{ '/resources/literature/historical/councils/' | relative_url }}">Church Councils</a></li>
+    <li><a href="{{ '/resources/literature/historical/fathers/' | relative_url }}">Writings of the Church Fathers</a></li>
+    <li><a href="{{ '/resources/literature/historical/devotion-practice/' | relative_url }}">Devotion and Practice</a></li>
+    <li><a href="{{ '/resources/literature/historical/other/' | relative_url }}">Other Historical Resources</a></li>
+  </ul>
+</section>
+
+<section class="literature-index-section">
+  <h2>Strong’s Concordance</h2>
+  <ul>
+    <li><a href="{{ '/resources/literature/strongs/' | relative_url }}">Strong’s Concordance – Overview</a></li>
+    <li><a href="{{ '/resources/literature/strongs/hebrew/' | relative_url }}">Strong’s Concordance – Hebrew</a></li>
+    <li><a href="{{ '/resources/literature/strongs/greek/' | relative_url }}">Strong’s Concordance – Greek</a></li>
+  </ul>
+</section>
+
+<section class="literature-index-section">
+  <h2>Bible Studies</h2>
+  <ul>
+    <li><a href="{{ '/resources/studies/' | relative_url }}">Bible Studies – Collection</a></li>
+    <!-- Future individual studies can be listed here as separate items -->
+  </ul>
+</section>
+
+<section class="literature-index-section">
+  <h2>Articles</h2>
+  <ul>
+    <li><a href="{{ '/resources/articles/' | relative_url }}">Articles – Collection</a></li>
+    <!-- Add individual article pages here in the future -->
+  </ul>
+</section>
+
+<section class="literature-index-section">
+  <h2>Books</h2>
+  <ul>
+    <li><a href="{{ '/resources/books/' | relative_url }}">Books – Collection</a></li>
+    <!-- Add specific book resources here later -->
+  </ul>
+</section>
+
+<section class="literature-index-section">
+  <h2>Miscellaneous</h2>
+  <ul>
+    <li><a href="{{ '/resources/misc/' | relative_url }}">Miscellaneous Resources</a></li>
+    <!-- Add other one-off or uncategorized resources here -->
+  </ul>
+</section>
 
 <section class="literature-index-notes">
-  <h2>Using the Literature Resources</h2>
+  <h2>Using the Literature Index</h2>
   <p>
-    TBD
-    <!-- Instructions on how to navigate and utilize the literature resources effectively. -->
+    As new resources are added, they will appear in the appropriate category
+    above. You can browse by category using the section headings or jump
+    directly to a specific translation, collection, or resource using the links.
   </p>
 </section>
+
+<nav class="resources-nav">
+  <a href="{{ '/resources/literature/' | relative_url }}">Back to Literature</a>
+</nav>
