@@ -3,82 +3,92 @@ layout: default
 title: Home
 ---
 
-<main class="home-tiles">
+<main class="home-page">
 
-  <!-- Verse banner -->
-  <section class="home-verse">
-    <p class="home-verse-text">
-      “But rather seek ye the kingdom of God; and all these things shall be added unto you.”
-    </p>
-    <p class="home-verse-ref">
-      Luke 12:31 (KJV)
+  <!-- Verse + AI disclaimer section -->
+  <section class="home-verse-section">
+    <div class="home-verse">
+      <p class="home-verse-text">
+        “But rather seek ye the kingdom of God; and all these things shall be added unto you.”
+      </p>
+      <p class="home-verse-ref">
+        Luke 12:31 (KJV)
+      </p>
+    </div>
+
+    <p class="ai-disclaimer">
+      <a href="{{ '/about/legal/' | relative_url }}">AI disclaimer</a>
     </p>
   </section>
 
-  <p class="ai-disclaimer">
-    <a href="{{ '/about/legal/' | relative_url }}">AI disclaimer</a>
-  </p>
-
-
-  <!-- Full-width Daily Tools tile -->
-  <section class="tile tile-daily">
-    <div class="tile-content">
-      <h2>Daily Tools</h2>
-      <p>
-        Quick daily ways to engage Scripture and reflection. (TBD)
-      </p>
-      <div class="daily-actions">
-        <a href="#" class="btn daily-verse">Daily Verse</a>
-        <a href="#" class="btn daily-proverb">Daily Proverb</a>
-        <a href="#" class="btn daily-trivia">Daily Trivia</a>
-        <a href="#" class="btn daily-game">Daily Game</a>
+  <!-- Daily Tools section (full-width feature block) -->
+  <section class="home-daily-tool-section">
+    <div class="tile tile-daily">
+      <div class="tile-content">
+        <h2>Daily Tools</h2>
+        <p>
+          Quick daily ways to engage Scripture and reflection. (TBD)
+        </p>
+        <div class="daily-actions">
+          <a href="#" class="btn daily-verse">Daily Verse</a>
+          <a href="#" class="btn daily-proverb">Daily Proverb</a>
+          <a href="#" class="btn daily-trivia">Daily Trivia</a>
+          <a href="#" class="btn daily-game">Daily Game</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Main 2×2 tile grid -->
-  <section class="tile-grid">
+  <!-- Home hub tiles, using the same idea as hub-grid/hub-tile -->
+  <section class="home-hub-section">
+    <h2 class="home-hub-heading">Explore SHK</h2>
+    <p class="home-hub-intro">
+      Choose a path to study, reflect, or connect.
+    </p>
 
-    <!-- Top Left: About -->
-    <a href="{{ '/about/' | relative_url }}" class="tile tile-about">
-      <div class="tile-content">
-        <h2>About SHK</h2>
-        <p>
-          Learn more about Seeking His Kingdom, its mission, and the heart behind our tools and resources.
-        </p>
-      </div>
-    </a>
+    <div class="tile-grid hub-grid home-hub-grid">
 
-    <!-- Top Right: Literature -->
-    <a href="{{ '/resources/literature/' | relative_url }}" class="tile tile-literature">
-      <div class="tile-content">
-        <h2>Literature</h2>
-        <p>
-          TBD
-        </p>
-      </div>
-    </a>
+      <!-- About -->
+      <a href="{{ '/about/' | relative_url }}" class="tile tile-about hub-tile home-hub-tile">
+        <div class="tile-content">
+          <h2>About SHK</h2>
+          <p>
+            Learn more about Seeking His Kingdom, its mission, and the heart behind our tools and resources.
+          </p>
+        </div>
+      </a>
 
-    <!-- Bottom Left: Tools -->
-    <a href="{{ '/resources/tools/' | relative_url }}" class="tile tile-tools">
-      <div class="tile-content">
-        <h2>Tools</h2>
-        <p>
-          Access interactive tools like Proverb Pairs Search (PPS) to help you study and apply God’s Word.
-        </p>
-      </div>
-    </a>
+      <!-- Literature -->
+      <a href="{{ '/resources/literature/' | relative_url }}" class="tile tile-literature hub-tile home-hub-tile">
+        <div class="tile-content">
+          <h2>Literature</h2>
+          <p>
+            TBD
+          </p>
+        </div>
+      </a>
 
-    <!-- Bottom Right: Games -->
-    <a href="{{ '/resources/games/' | relative_url }}" class="tile tile-games">
-      <div class="tile-content">
-        <h2>Games</h2>
-        <p>
-          TBD
-        </p>
-      </div>
-    </a>
+      <!-- Tools -->
+      <a href="{{ '/resources/tools/' | relative_url }}" class="tile tile-tools hub-tile home-hub-tile">
+        <div class="tile-content">
+          <h2>Tools</h2>
+          <p>
+            Access interactive tools like Proverb Pairs Search (PPS) to help you study and apply God’s Word.
+          </p>
+        </div>
+      </a>
 
+      <!-- Games -->
+      <a href="{{ '/resources/games/' | relative_url }}" class="tile tile-games hub-tile home-hub-tile">
+        <div class="tile-content">
+          <h2>Games</h2>
+          <p>
+            TBD
+          </p>
+        </div>
+      </a>
+
+    </div>
   </section>
 
 </main>

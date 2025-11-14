@@ -1,15 +1,47 @@
 ---
 layout: default
-title: Bible Trivia
+title: Trivia
 permalink: /resources/games/trivia/
 ---
 
-<h1>{{ page.title }}</h1>
+<section class="content-page">
+  <h1>{{ page.title }}</h1>
+  <p class="content-intro">
+    A Bible trivia game with questions across themes, books, and difficulty levels. (TBD)
+  </p>
+  <hr class="hub-divider">
 
-<section class="games-section">
-  <p>TBD – coming soon.</p>
+  <div class="content-body">
+    <h2>Concept (TBD)</h2>
+    <p>
+      The idea is to serve questions one at a time, track correct answers, and optionally group questions
+      by topic or difficulty to support different contexts (solo, small group, or large group). (TBD)
+    </p>
+
+    <div class="controls">
+      <div>
+        <label for="trivia-difficulty">Difficulty</label>
+        <select id="trivia-difficulty">
+          <option value="easy">Easy (TBD)</option>
+          <option value="medium">Medium (TBD)</option>
+          <option value="hard">Hard (TBD)</option>
+        </select>
+      </div>
+
+      <button type="button">
+        Start trivia (TBD)
+      </button>
+    </div>
+
+    <div class="results">
+      <p>
+        Trivia game area placeholder – question, answer options, and score will appear here. (TBD)
+      </p>
+    </div>
+  </div>
+
+  <nav class="content-nav">
+    <a href="{{ '/resources/games/' | relative_url }}">Back to Games</a> ·
+    <a href="{{ '/' | relative_url }}">Back to Home</a>
+  </nav>
 </section>
-
-<nav class="games-nav">
-  <a href="{{ '/resources/games/' | relative_url }}">Back to Games</a>
-</nav>
