@@ -1309,5 +1309,78 @@ button:hover,
   text-decoration: underline;
 }
 
+/* Center footer content instead of using the generic .container flex layout */
+footer.container,
+.container.footer {
+  display: flex;
+  flex-direction: column;   /* stack text + social links */
+  align-items: center;      /* center horizontally */
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 24px auto;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;       /* keep text centered */
+}
+
+
+/* Floating Salvation / Contact panel */
+.sticky-cta {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 999;
+  background: var(--panel);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+  padding: 0.75rem 1rem;
+  max-width: 260px;
+  font-size: 0.85rem;
+}
+
+.sticky-cta-label {
+  margin: 0 0 0.4rem;
+  color: var(--muted);
+}
+
+.sticky-cta-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Reuse your gold button style, just slightly smaller */
+.sticky-cta-btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+/* Optional: make the Contact button a softer variant */
+.sticky-cta-btn.secondary {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.sticky-cta-btn.secondary:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+/* Mobile: turn it into a full-width bottom bar */
+@media (max-width: 700px) {
+  .sticky-cta {
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.75rem;
+    max-width: none;
+  }
+
+  .sticky-cta-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 
 /* End of Hunter's CSS Style Additions */

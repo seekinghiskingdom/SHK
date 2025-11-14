@@ -38,6 +38,20 @@
     {% endif %}
 
     {{ content }}
+
+    <!-- Salvation / Contact floating panel -->
+    <div class="sticky-cta">
+      <p class="sticky-cta-label">Need to talk or learn more?</p>
+      <div class="sticky-cta-actions">
+        <a href="{{ '/salvation/' | relative_url }}" class="btn sticky-cta-btn">
+          Salvation
+        </a>
+        <a href="{{ '/about/contact' | relative_url }}" class="btn sticky-cta-btn secondary">
+          Contact
+        </a>
+      </div>
+    </div>
+
   </main>
 
   {% include footer.html %}
