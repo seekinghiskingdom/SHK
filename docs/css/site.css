@@ -834,11 +834,11 @@ button:hover {
 }
 
 /* Make header solid over the blurred home background */
-.site-header {
-  background: var(--bg);   /* or var(--panel), or a custom color */
+/* .site-header {
+  background: var(--bg);
   position: relative;
-  z-index: 10;             /* keeps it clearly above the background layer */
-}
+  z-index: 10;
+} */
 
 
 /* Make main home sections sit on solid panels over the blur */
@@ -916,6 +916,53 @@ button:hover {
   gap: 0.5rem;
   margin-top: 0.75rem;
 }
+
+
+/* Row that holds Daily Tools + Essentials */
+.home-feature-row {
+  max-width: 1100px;
+  margin: 0 auto 2rem;      /* space above Explore SHK */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;      /* both tiles same height in the row */
+}
+
+/* Each column (Daily / Essentials) */
+.home-feature-row .feature-tile {
+  flex: 1 1 320px;           /* side-by-side on desktop, stack on narrow */
+}
+
+/* Make both tiles solid, same style, and fill the column */
+.home-feature-row .tile {
+  background: var(--panel);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+}
+
+.home-feature-row .tile-content {
+  width: 100%;
+}
+
+/* Buttons row inside the tiles */
+.home-feature-row .daily-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Mobile: stack them cleanly */
+@media (max-width: 700px) {
+  .home-feature-row {
+    flex-direction: column;
+  }
+}
+
+
 
 
 /* Full name on desktop, SHK on mobile */
