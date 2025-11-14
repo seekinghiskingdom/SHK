@@ -989,5 +989,139 @@ button:hover {
   width: 100%;
 }
 
+/* ========== Nav dropdown / mega-menu ========== */
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown panel (desktop default = hidden) */
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--panel);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  border-radius: 0.75rem;
+  z-index: 1000;
+}
+
+/* Grid of "tiles" inside the dropdown */
+.nav-dropdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.nav-dropdown-item {
+  display: block;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.nav-dropdown-item:hover,
+.nav-dropdown-item:focus-visible {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Desktop: show dropdown on hover */
+@media (min-width: 701px) {
+  .has-submenu:hover > .nav-dropdown {
+    display: block;
+  }
+}
+
+/* Mobile: dropdown becomes inline, opened via click */
+@media (max-width: 700px) {
+  .nav-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-dropdown {
+    position: static;
+    margin-top: 0.25rem;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .nav-dropdown-grid {
+    grid-template-columns: 1fr; /* stack items on mobile */
+  }
+
+  .nav-item .nav-dropdown {
+    display: none;
+  }
+
+  .nav-item.submenu-open .nav-dropdown {
+    display: block;
+  }
+}
+
+
+/* === Home feature row: Daily Tools + Essentials === */
+.home-feature-row {
+  width: 100%;
+  margin: 0 0 2rem;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+/* Two columns on desktop, each fills roughly half the width */
+.home-feature-row .feature-tile {
+  flex: 1 1 350px;
+  display: flex;
+}
+
+/* Make both tiles solid, same style */
+.home-feature-row .tile {
+  background: var(--panel);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.home-feature-row .tile-content {
+  width: 100%;
+}
+
+/* Buttons row inside these feature tiles */
+.home-feature-row .daily-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Mobile: stack the two feature tiles vertically */
+@media (max-width: 700px) {
+  .home-feature-row {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
+
+
 
 /* End of Hunter's CSS Style Additions */

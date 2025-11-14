@@ -1,12 +1,16 @@
 <header class="container site-header">
   <nav class="main-nav">
+    <!-- Logo -->
     <a href="{{ '/' | relative_url }}" class="logo-link">
-      <img src="{{ '/img/SHK-Cross.webp' | relative_url }}" alt="Seeking His Kingdom" class="rounded-img" />
+      <img src="{{ '/img/SHK-Cross.webp' | relative_url }}"
+           alt="Seeking His Kingdom"
+           class="rounded-img" />
     </a>
 
+    <!-- Title: full on desktop, SHK on mobile -->
     <h1 class="site-title">
       <span class="site-title-full">Seeking His Kingdom</span>
-      <!-- <span class="site-title-short">SHK</span> -->
+      <span class="site-title-short">SHK</span>
     </h1>
 
     <!-- Mobile hamburger -->
@@ -14,14 +18,119 @@
       ☰
     </button>
 
+    <!-- Main nav -->
     <div id="primary-nav" class="nav-links">
-      <a href="{{ '/' | relative_url }}" class="nav-button">Home</a>
-      <a href="{{ '/resources/' | relative_url }}" class="nav-button">Resources</a>
-      <a href="{{ '/community/' | relative_url }}" class="nav-button">Community</a>
-      <a href="{{ '/serving/' | relative_url }}" class="nav-button">Serving</a>
-      <a href="{{ '/salvation/' | relative_url }}" class="nav-button">Salvation</a>
-      <a href="{{ '/about/' | relative_url }}" class="nav-button">About</a>
-      <a href="{{ '/help/' | relative_url }}" class="nav-button">Help</a>
+
+      <!-- Home (simple) -->
+      <div class="nav-item">
+        <a href="{{ '/' | relative_url }}" class="nav-button">Home</a>
+      </div>
+
+      <!-- Resources (has dropdown) -->
+      <div class="nav-item has-submenu">
+        <a href="{{ '/resources/' | relative_url }}" class="nav-button nav-parent">
+          Resources
+        </a>
+        <div class="nav-dropdown">
+          <div class="nav-dropdown-grid">
+            <a href="{{ '/resources/literature/bible/' | relative_url }}" class="nav-dropdown-item">
+              Bible
+            </a>
+            <a href="{{ '/resources/tools/' | relative_url }}" class="nav-dropdown-item">
+              Tools
+            </a>
+            <a href="{{ '/resources/games/' | relative_url }}" class="nav-dropdown-item">
+              Games
+            </a>
+            <a href="{{ '/resources/literature/' | relative_url }}" class="nav-dropdown-item">
+              Literature
+            </a>
+            <a href="{{ '/resources/literature/historical/' | relative_url }}" class="nav-dropdown-item">
+              Historical
+            </a>
+            <a href="{{ '/resources/online/' | relative_url }}" class="nav-dropdown-item">
+              Online Resources
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community (has dropdown) -->
+      <div class="nav-item has-submenu">
+        <a href="{{ '/community/' | relative_url }}" class="nav-button nav-parent">
+          Community
+        </a>
+        <div class="nav-dropdown">
+          <div class="nav-dropdown-grid">
+            <a href="{{ '/community/prayer/' | relative_url }}" class="nav-dropdown-item">
+              Prayer
+            </a>
+            <a href="{{ '/community/testimony/' | relative_url }}" class="nav-dropdown-item">
+              Testimony
+            </a>
+            <a href="{{ '/community/blessings/' | relative_url }}" class="nav-dropdown-item">
+              Blessings
+            </a>
+            <a href="{{ '/community/discipleship/' | relative_url }}" class="nav-dropdown-item">
+              Discipleship
+            </a>
+            <a href="{{ '/community/fellowship/' | relative_url }}" class="nav-dropdown-item">
+              Fellowship
+            </a>
+            <a href="{{ '/community/find-a-church/' | relative_url }}" class="nav-dropdown-item">
+              Find a Church
+            </a>
+            <a href="{{ '/community/worship/' | relative_url }}" class="nav-dropdown-item">
+              Worship
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Serving (has dropdown) -->
+      <div class="nav-item has-submenu">
+        <a href="{{ '/serving/' | relative_url }}" class="nav-button nav-parent">
+          Serving
+        </a>
+        <div class="nav-dropdown">
+          <div class="nav-dropdown-grid">
+            <a href="{{ '/serving/community-service/' | relative_url }}" class="nav-dropdown-item">
+              Community Service
+            </a>
+            <a href="{{ '/serving/care-support/' | relative_url }}" class="nav-dropdown-item">
+              Care &amp; Support
+            </a>
+            <a href="{{ '/serving/training-resources/' | relative_url }}" class="nav-dropdown-item">
+              Training &amp; Resources
+            </a>
+            <a href="{{ '/serving/evangelism/' | relative_url }}" class="nav-dropdown-item">
+              Evangelism
+            </a>
+            <a href="{{ '/serving/give/' | relative_url }}" class="nav-dropdown-item">
+              Give
+            </a>
+            <a href="{{ '/serving/missions/' | relative_url }}" class="nav-dropdown-item">
+              Missions
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salvation (simple) -->
+      <div class="nav-item">
+        <a href="{{ '/salvation/' | relative_url }}" class="nav-button">Salvation</a>
+      </div>
+
+      <!-- About (simple) -->
+      <div class="nav-item">
+        <a href="{{ '/about/' | relative_url }}" class="nav-button">About</a>
+      </div>
+
+      <!-- Help (simple) -->
+      <div class="nav-item">
+        <a href="{{ '/help/' | relative_url }}" class="nav-button">Help</a>
+      </div>
+
     </div>
   </nav>
 </header>

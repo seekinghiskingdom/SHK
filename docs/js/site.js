@@ -38,3 +38,21 @@
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 })();
+
+// 5) Mobile: toggle submenus on click
+(() => {
+  const submenuParents = document.querySelectorAll('.nav-item.has-submenu > .nav-parent');
+  if (!submenuParents.length) return;
+
+  submenuParents.forEach(link => {
+    link.addEventListener('click', (e) => {
+      // Only intercept on small screens (same breakpoint as CSS)
+      if (window.innerWidth > 700) return;
+
+      e.preventDefault();
+      const item = link.closest('.nav-item');
+      if (!item) return;
+      item.classList.toggle('submenu-open');
+    });
+  });
+})();
