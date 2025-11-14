@@ -1072,6 +1072,46 @@ button:hover {
 }
 
 
+/* Make dropdown items use the same gold button style */
+.nav-button,
+.btn,
+button,
+.nav-dropdown-item {
+  background-color: var(--gold);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: inline-block;
+}
+
+.nav-button:hover,
+.btn:hover,
+button:hover,
+.nav-dropdown-item:hover,
+.nav-dropdown-item:focus-visible {
+  background-color: var(--dark-gold);
+  color: white;
+}
+
+/* Override older dropdown background so gold wins */
+.site-header .nav-dropdown-item {
+  background-color: var(--gold);
+}
+
+/* Remove gap between parent tab and dropdown to avoid hover "fall-off" */
+.site-header .nav-dropdown {
+  margin-top: 0;      /* was 0.25rem */
+  top: 100%;          /* keep it directly under the tab */
+  /* padding-top: 0.75rem;  internal space, no gap between elements */
+}
+
+
 /* === Home feature row: Daily Tools + Essentials === */
 .home-feature-row {
   width: 100%;
@@ -1122,6 +1162,132 @@ button:hover {
   }
 }
 
+/* Mobile header layout: logo | title | hamburger */
+@media (max-width: 700px) {
+  .site-header .main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 0.5rem;
+    width: 100%;
+  }
 
+  .site-header .logo-link {
+    justify-self: start;
+  }
+
+  .site-header .site-title {
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .site-header .nav-toggle {
+    justify-self: end;
+    margin-left: 0; /* override any flex-based margin-left:auto */
+  }
+
+  /* Make the expanded menu sit on its own full-width row */
+  .site-header .nav-links {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile: show a little caret for items with submenus */
+@media (max-width: 700px) {
+  .site-header .nav-parent {
+    position: relative;
+    padding-right: 1.5rem;  /* room for caret */
+    width: 100%;
+    text-align: left;
+  }
+
+  .site-header .nav-parent::after {
+    content: "▾";
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+  }
+}
+
+/* Desktop header layout: logo | title | nav */
+@media (min-width: 701px) {
+  .site-header .main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 0.75rem;
+    width: 100%;
+  }
+
+  .site-header .logo-link {
+    justify-self: start;
+  }
+
+  .site-header .site-title {
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .site-header .nav-toggle {
+    display: none;      /* hide hamburger on desktop */
+  }
+
+  .site-header .nav-links {
+    justify-self: end;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+/* Home feature row: Daily Tools + Essentials */
+.home-feature-row {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* Each feature tile cell */
+.home-feature-row .feature-tile {
+  height: 100%;
+}
+
+/* Make tiles fill the grid cell and look like solid panels */
+.home-feature-row .tile {
+  width: 100%;  /* override global 45% width */
+  background: var(--panel);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  padding: 1.5rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.home-feature-row .tile-content {
+  width: 100%;
+}
+
+/* Buttons row inside these feature tiles */
+.home-feature-row .daily-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Mobile: stack the two feature tiles */
+@media (max-width: 700px) {
+  .home-feature-row {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
 
 /* End of Hunter's CSS Style Additions */
