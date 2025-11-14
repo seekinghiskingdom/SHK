@@ -1545,25 +1545,25 @@ footer.container,
 /* Desktop */
 @media (min-width: 701px) {
   .site-header .rounded-img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
   }
 
   .site-header .site-title {
-    font-size: 2rem;      /* was ~1.4rem */
-    letter-spacing: 0.18em;
+    font-size: 3rem;      /* was ~1.4rem */
+    letter-spacing: 0.2em;
   }
 }
 
 /* Mobile */
 @media (max-width: 700px) {
   .site-header .rounded-img {
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
   }
 
   .site-header .site-title {
-    font-size: 1.4rem;    /* bump SHK size too */
+    font-size: 3rem;    /* bump SHK size too */
     letter-spacing: 0.2em;
   }
 }
