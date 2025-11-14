@@ -1568,11 +1568,22 @@ footer.container,
   }
 }
 
-/* Force header logo image size */
-.site-header .logo-link img.rounded-img {
-  width: 150px !important;
-  height: 150px !important;
+/* Desktop logo size */
+@media (min-width: 701px) {
+  .site-header .logo-link img.rounded-img {
+    width: 150px !important;
+    height: 150px !important;
+  }
 }
+
+/* Mobile logo size */
+@media (max-width: 700px) {
+  .site-header .logo-link img.rounded-img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
 
 
 /* End of Hunter's CSS Style Additions */
