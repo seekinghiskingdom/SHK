@@ -4,92 +4,45 @@ title: Bible
 permalink: /resources/literature/bible/
 ---
 
-<h1>{{ page.title }}</h1>
-
-<section class="bible-intro">
-  <p>
-    This hub gathers Bible text–related resources for SHK: simple viewing options, links to trusted
-    external tools, and (in the future) organized access to different translations and books. (TBD)
+<section class="hub-page">
+  <h1>{{ page.title }}</h1>
+  <p class="hub-intro">
+    Bible-related resources and translations used within SHK. (TBD)
   </p>
-</section>
+  <hr class="hub-divider">
 
-<section class="bible-actions">
-  <h2>Quick Access</h2>
-  <div class="tile-grid bible-quick-grid">
-
-    <!-- Bible Viewer -->
-    <a href="{{ '/resources/literature/bible/viewer/' | relative_url }}" class="tile tile-bible-viewer">
-      <div class="tile-content">
-        <h3>Bible Viewer</h3>
-        <p>
-          Use a simple viewer and jump to external tools like Blue Letter Bible and Bible Gateway. (TBD)
-        </p>
-      </div>
+  <div class="hub-grid">
+    <a href="{{ '/resources/literature/bible/kjv/' | relative_url }}" class="hub-tile tile-bible-kjv">
+      <h2>KJV</h2>
+      <p>King James Version.</p>
     </a>
 
-    <!-- External Links -->
-    <div class="tile tile-bible-external">
-      <div class="tile-content">
-        <h3>External Bible Tools</h3>
-        <p>TBD</p>
-        <ul>
-          <li><a href="https://www.blueletterbible.org" target="_blank" rel="noopener">Blue Letter Bible (BLB)</a></li>
-          <li><a href="https://www.biblegateway.com" target="_blank" rel="noopener">Bible Gateway</a></li>
-        </ul>
-      </div>
-    </div>
+    <a href="{{ '/resources/literature/bible/asv/' | relative_url }}" class="hub-tile tile-bible-asv">
+      <h2>ASV</h2>
+      <p>American Standard Version.</p>
+    </a>
 
+    <a href="{{ '/resources/literature/bible/web/' | relative_url }}" class="hub-tile tile-bible-web">
+      <h2>WEB</h2>
+      <p>World English Bible.</p>
+    </a>
+
+    <a href="{{ '/resources/literature/bible/viewer/' | relative_url }}" class="hub-tile tile-bible-viewer">
+      <h2>Bible Viewer</h2>
+      <p>Read and browse passages inside a simple on-site viewer. (TBD)</p>
+    </a>
   </div>
+
+  <section class="bible-notes">
+    <h2>How These Are Used</h2>
+    <p>
+      These translations are used throughout SHK tools and content. Over time, this hub may include
+      translation notes, comparison views, and more. (TBD)
+    </p>
+  </section>
+
+  <nav class="resources-nav">
+    <a href="{{ '/resources/literature/' | relative_url }}">Back to Literature</a> ·
+    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
+  </nav>
 </section>
-
-<section class="bible-translations">
-  <h2>Translations</h2>
-  <p>
-    Each translation gets its own space so it can grow over time (for example, adding book-level pages
-    or supplemental notes). (TBD)
-  </p>
-
-  <div class="tile-grid bible-translation-grid">
-    <!-- Adjust these hrefs to match your actual folder names if different -->
-    <a href="{{ '/resources/literature/bible/kjv/' | relative_url }}" class="tile tile-bible-kjv">
-      <div class="tile-content">
-        <h3>KJV</h3>
-        <p>TBD</p>
-      </div>
-    </a>
-
-    <a href="{{ '/resources/literature/bible/asv/' | relative_url }}" class="tile tile-bible-asv">
-      <div class="tile-content">
-        <h3>ASV</h3>
-        <p>TBD</p>
-      </div>
-    </a>
-
-    <a href="{{ '/resources/literature/bible/web/' | relative_url }}" class="tile tile-bible-web">
-      <div class="tile-content">
-        <h3>WEB</h3>
-        <p>TBD</p>
-      </div>
-    </a>
-
-    <!-- <a href="{{ '/resources/literature/bible/other/' | relative_url }}" class="tile tile-bible-other">
-      <div class="tile-content">
-        <h3>Other Translations</h3>
-        <p>TBD</p>
-      </div>
-    </a> -->
-  </div>
-</section>
-
-<section class="bible-notes">
-  <h2>Future Structure</h2>
-  <p>
-    In the future, each translation folder can include book-level pages (for example, a page per book
-    as one long chapter list) or other tools that sit alongside the text. (TBD)
-  </p>
-</section>
-
-<nav class="resources-nav">
-  <a href="{{ '/resources/literature/' | relative_url }}">Back to Literature</a>
-</nav>
-

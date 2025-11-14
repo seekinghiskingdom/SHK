@@ -1,15 +1,100 @@
 ---
 layout: default
-title: Strong’s Concordance Search (SCS)
+title: Strong’s Concordance Search
 permalink: /resources/tools/scs/
 ---
 
-<h1>{{ page.title }}</h1>
+<section class="content-page">
+  <h1>{{ page.title }}</h1>
+  <p class="content-intro">
+    Search Strong’s entries by number, language, part of speech, or word, and see a simple list of matching
+    words that can be tied into other SHK tools and studies. (TBD)
+  </p>
+  <hr class="hub-divider">
 
-<section class="tools-section">
-  <p>TBD – coming soon.</p>
+  <div class="content-body">
+    <h2>Search Filters</h2>
+    <p>
+      Use one or more filters to narrow the Strong’s entries. Results will appear below as a list of words
+      with basic details. (TBD)
+    </p>
+
+    <div class="controls scs-controls">
+      <div>
+        <label for="scs-language">Language</label>
+        <select id="scs-language" name="language">
+          <option value="">Hebrew &amp; Greek</option>
+          <option value="hebrew">Hebrew only</option>
+          <option value="greek">Greek only</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="scs-pos">Part of speech</label>
+        <select id="scs-pos" name="pos">
+          <option value="">Any</option>
+          <option value="noun">Noun</option>
+          <option value="verb">Verb</option>
+          <option value="adj">Adjective</option>
+          <option value="adv">Adverb</option>
+          <option value="prep">Preposition</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="scs-number">Strong’s number</label>
+        <input id="scs-number" name="number" type="text" placeholder="e.g., G1510 or H0430">
+      </div>
+
+      <div>
+        <label for="scs-start-letter">Starts with (lemma)</label>
+        <input id="scs-start-letter" name="start-letter" type="text" placeholder="e.g., α, א, or a letter combo">
+      </div>
+
+      <div>
+        <label for="scs-text">Contains (English gloss)</label>
+        <input id="scs-text" name="text" type="text" placeholder="e.g., love, faith, kingdom">
+      </div>
+
+      <button type="button">
+        Search (TBD)
+      </button>
+    </div>
+
+    <h2 style="margin-top: 2rem;">Results (TBD)</h2>
+    <div id="scs-results" class="results">
+      <!-- Example result item structure -->
+      <div class="scs-entry">
+        <p>
+          <strong>G0001</strong> – <em>ἀγάπη</em> (agapē) — Noun, Greek  
+          <br>
+          Basic gloss: “love” (TBD – actual data and formatting)
+        </p>
+        <button type="button">
+          View occurrences (TBD)
+        </button>
+      </div>
+
+      <div class="scs-entry">
+        <p>
+          <strong>H0430</strong> – <em>אֱלֹהִים</em> (’elohim) — Noun, Hebrew  
+          <br>
+          Basic gloss: “God, gods” (TBD)
+        </p>
+        <button type="button">
+          View occurrences (TBD)
+        </button>
+      </div>
+
+      <p>
+        Additional results will be rendered in a similar format once the data and logic are wired up. (TBD)
+      </p>
+    </div>
+  </div>
+
+  <nav class="content-nav">
+    <a href="{{ '/resources/tools/' | relative_url }}">Back to Tools</a> ·
+    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
+  </nav>
 </section>
-
-<nav class="tools-nav">
-  <a href="{{ '/resources/tools/' | relative_url }}">Back to Tools</a>
-</nav>

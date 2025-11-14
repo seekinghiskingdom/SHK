@@ -4,63 +4,132 @@ title: Bible Viewer
 permalink: /resources/literature/bible/viewer/
 ---
 
-<h1>{{ page.title }}</h1>
-
-<section class="bible-viewer-intro">
-  <p>
-    This simple viewer is meant to help you quickly jump to a passage in external Bible tools
-    like Blue Letter Bible and Bible Gateway. SHK does not host the full text here. (TBD)
+<section class="content-page">
+  <h1>{{ page.title }}</h1>
+  <p class="content-intro">
+    A simple Bible viewer where you can choose a translation, select a passage, and view the full chapter,
+    with room later to highlight a specific verse. (TBD)
   </p>
-</section>
+  <hr class="hub-divider">
 
-<section class="bible-viewer-form">
-  <h2>Go to a Passage</h2>
-  <p>
-    Select a translation and enter a reference (for example: <code>Luke 12:31</code>). External links are placeholders for now. (TBD)
-  </p>
+  <div class="content-body">
+    <h2>Select a Passage</h2>
+    <p>
+      Choose a translation and passage below. For now this is a placeholder layout—later, the controls can
+      drive the viewer logic and highlight a specific verse within the chapter. (TBD)
+    </p>
 
-  <form action="#" method="get">
-    <label>
-      Translation
-      <select name="translation">
-        <option value="kjv">KJV</option>
-        <option value="asv">ASV</option>
-        <option value="web">WEB</option>
-        <option value="other">Other (TBD)</option>
-      </select>
-    </label>
+    <!-- Filter / selection controls -->
+    <div class="controls bible-viewer-controls">
+      <div>
+        <label for="bv-translation">Translation</label>
+        <select id="bv-translation" name="translation">
+          <option value="kjv">KJV</option>
+          <option value="asv">ASV</option>
+          <option value="web">WEB</option>
+        </select>
+      </div>
 
-    <label>
-      Reference
-      <input type="text" name="reference" placeholder="e.g. John 1:1–5" required>
-    </label>
+      <div>
+        <label for="bv-testament">Testament</label>
+        <select id="bv-testament" name="testament">
+          <option value="">All</option>
+          <option value="ot">Old Testament</option>
+          <option value="nt">New Testament</option>
+        </select>
+      </div>
 
-    <div class="bible-viewer-actions">
-      <!-- These links are static placeholders; wiring them to the form is TBD -->
-      <a href="https://www.blueletterbible.org" target="_blank" rel="noopener" class="btn viewer-btn">
-        Open in Blue Letter Bible
-      </a>
-      <a href="https://www.biblegateway.com" target="_blank" rel="noopener" class="btn viewer-btn">
-        Open in Bible Gateway
-      </a>
+      <div>
+        <label for="bv-book">Book</label>
+        <select id="bv-book" name="book">
+          <option value="">Select a book…</option>
+          <!-- Placeholder options; real list to be filled later -->
+          <option value="genesis">Genesis</option>
+          <option value="psalms">Psalms</option>
+          <option value="john">John</option>
+          <option value="romans">Romans</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="bv-chapter">Chapter</label>
+        <select id="bv-chapter" name="chapter">
+          <option value="">Select…</option>
+          <!-- Placeholder; to be populated based on book later -->
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="bv-verse">Optional verse</label>
+        <input id="bv-verse" name="verse" type="text" placeholder="e.g., 16">
+      </div>
+
+      <button type="button">
+        View passage (TBD)
+      </button>
     </div>
 
-    <p class="bible-viewer-note">
-      In the future, this section may build links dynamically based on the reference you enter. (TBD)
+    <!-- Free-form search (by reference string) -->
+    <h2 style="margin-top: 2rem;">Quick Reference Search</h2>
+    <p>
+      You can also type a reference (for example, “John 3:16” or “Romans 8”) to jump directly; the viewer
+      will still show the full chapter and can later highlight the specific verse. (TBD)
     </p>
-  </form>
-</section>
 
-<section class="bible-viewer-links">
-  <h2>Quick Links</h2>
-  <ul>
-    <li><a href="https://www.blueletterbible.org" target="_blank" rel="noopener">Blue Letter Bible (BLB)</a></li>
-    <li><a href="https://www.biblegateway.com" target="_blank" rel="noopener">Bible Gateway</a></li>
-  </ul>
-</section>
+    <form class="bible-viewer-search">
+      <label for="bv-ref">Reference</label>
+      <input id="bv-ref" name="ref" type="text" placeholder="e.g., John 3:16, Psalm 23, Romans 8">
+      <button type="button">
+        Go (TBD)
+      </button>
+    </form>
 
-<nav class="resources-nav">
-  <a href="{{ '/resources/literature/bible/' | relative_url }}">Back to Bible</a>
-  <span> | </span>
-  <a href="{{ '/resources/literature/' | relative_url }}">Back to Literature</a>
-</nav>
+    <h2>External Study Tools</h2>
+    <p>
+      Alongside this simple viewer, you can also use external tools for deeper study:
+    </p>
+    <ul>
+      <li>
+        <a href="https://www.blueletterbible.org" target="_blank" rel="noopener">
+          Blue Letter Bible
+        </a>
+        – verse-by-verse tools, lexicons, and cross-references.
+      </li>
+      <li>
+        <a href="https://www.biblegateway.com" target="_blank" rel="noopener">
+          Bible Gateway
+        </a>
+        – multiple translations, audio, and reading plans.
+      </li>
+    </ul>
+
+    <!-- Results / chapter display -->
+    <h2 style="margin-top: 2rem;">Passage</h2>
+    <div id="bible-viewer-results" class="results">
+      <p>
+        This area will display the selected chapter from the chosen translation. A future highlight feature
+        can visually mark the requested verse (for example, by bolding or background highlight). (TBD)
+      </p>
+
+      <!-- Example placeholder structure for a chapter -->
+      <div class="bv-chapter">
+        <p><strong>John 3 (KJV) – Example Layout (TBD)</strong></p>
+        <p><sup>1</sup> There was a man of the Pharisees, named Nicodemus, a ruler of the Jews: (TBD)</p>
+        <p><sup>2</sup> The same came to Jesus by night, and said unto him, Rabbi, we know that thou art a
+        teacher come from God: for no man can do these miracles that thou doest, except God be with him. (TBD)</p>
+        <p><sup>3</sup> Jesus answered and said unto him, Verily, verily, I say unto thee, Except a man be
+        born again, he cannot see the kingdom of God. (TBD)</p>
+        <!-- etc. real data to be inserted later -->
+      </div>
+    </div>
+  </div>
+
+  <nav class="content-nav">
+    <a href="{{ '/resources/literature/bible/' | relative_url }}">Back to Bible</a> ·
+    <a href="{{ '/resources/literature/' | relative_url }}">Back to Literature</a> ·
+    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
+  </nav>
+</section>

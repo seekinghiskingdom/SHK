@@ -4,61 +4,46 @@ title: Tools
 permalink: /resources/tools/
 ---
 
-<h1>{{ page.title }}</h1>
-
-<section class="tools-intro">
-  <p>
-    This hub gathers interactive tools connected to SHK—Scripture study helpers, search tools, and
-    simple reflections. (TBD)
+<section class="hub-page">
+  <h1>{{ page.title }}</h1>
+  <p class="hub-intro">
+    Interactive tools to help search, connect, and explore Scripture and related content. (TBD)
   </p>
-</section>
+  <hr class="hub-divider">
 
-<section class="tools-tiles">
-  <div class="tile-grid">
-
-    <!-- Proverb Pairs Search (PPS) -->
-    <a href="{{ '/resources/tools/pps/direct/' | relative_url }}" class="tile tile-tools-pps">
-      <div class="tile-content">
-        <h3>Proverb Pairs Search (PPS)</h3>
-        <p>
-          Explore thematic connections in Proverbs using the PPS tool. (TBD)
-        </p>
-      </div>
+  <div class="hub-grid">
+    <!-- Proverb Pairs Search (PPS) – Direct -->
+    <a href="{{ '/resources/tools/pps/direct/' | relative_url }}" class="hub-tile tile-tools-pps-direct">
+      <h2>Proverb Pairs Search (Direct)</h2>
+      <p>Search relationships across Proverbs using direct PPS mode. (TBD)</p>
     </a>
 
-    <!-- Strong's Concordance Search (SCS) -->
-    <a href="{{ '/resources/tools/scs/' | relative_url }}" class="tile tile-tools-scs">
-      <div class="tile-content">
-        <h3>Strong’s Concordance Search (SCS)</h3>
-        <p>
-          TBD
-        </p>
-      </div>
+    <!-- Proverb Pairs Search (PPS) – Bubble -->
+    <a href="{{ '/resources/tools/pps/bubble/' | relative_url }}" class="hub-tile tile-tools-pps-bubble">
+      <h2>Proverb Pairs Search (Bubble)</h2>
+      <p>Explore PPS in a more visual “bubble” view. (TBD)</p>
     </a>
 
-    <!-- Map Tool -->
-    <a href="{{ '/community/map-tool/' | relative_url }}" class="tile tile-tools-map">
-      <div class="tile-content">
-        <h3>Map Tool</h3>
-        <p>
-          TBD
-        </p>
-      </div>
+    <!-- Strong’s Concordance Search (SCS) -->
+    <a href="{{ '/resources/tools/scs/' | relative_url }}" class="hub-tile tile-tools-scs">
+      <h2>Strong’s Concordance Search</h2>
+      <p>Look up words and references based on Strong’s numbers. (TBD)</p>
     </a>
 
     <!-- Blessings Jar -->
-    <a href="{{ '/resources/tools/blessings-jar/' | relative_url }}" class="tile tile-tools-blessings-jar">
-      <div class="tile-content">
-        <h3>Blessings Jar</h3>
-        <p>
-          TBD
-        </p>
-      </div>
+    <a href="{{ '/resources/tools/blessings-jar/' | relative_url }}" class="hub-tile tile-tools-blessings-jar">
+      <h2>Blessings Jar</h2>
+      <p>Track and revisit blessings, answered prayers, and encouragements. (TBD)</p>
     </a>
 
+    <!-- Map Tool -->
+    <a href="{{ '/resources/tools/maptool/' | relative_url }}" class="hub-tile tile-tools-map">
+      <h2>Map Tool</h2>
+      <p>Simple map-related functionality tied into SHK resources. (TBD)</p>
+    </a>
   </div>
-</section>
 
-<nav class="tools-nav">
-  <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
-</nav>
+  <nav class="tools-nav">
+    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
+  </nav>
+</section>

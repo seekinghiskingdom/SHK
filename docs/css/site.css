@@ -541,6 +541,9 @@ button:hover {
 }
 
 
+/* Hunter's CSS Style Additions */
+
+/* ================= Hub and Collection Pages ================= */
 
 /* === Generic hub layout (for Resources, Community, etc.) === */
 
@@ -605,4 +608,114 @@ button:hover {
   margin: 0;
   font-size: 0.95rem;
   color: var(--muted);
+}
+
+
+
+/* === Collection pages: list-style cards === */
+
+.collection-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.collection-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.collection-page p.collection-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  max-width: 60rem;
+}
+
+/* Optional section headings inside a collection */
+.collection-section {
+  margin-bottom: 1.75rem;
+}
+
+.collection-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+/* Vertical list of long, skinny "tiles" */
+.collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Each item is a long card spanning the width */
+.collection-item {
+  display: block;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--panel);
+  color: inherit;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.collection-item:hover,
+.collection-item:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+}
+
+.collection-item h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.collection-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Bottom nav for collection pages */
+.collection-nav {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+
+/* === Generic content pages === */
+
+.content-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.content-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.content-page p.content-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  max-width: 60rem;
+}
+
+/* Main body text area */
+.content-body {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Optional: smaller subheadings inside body */
+.content-body h2,
+.content-body h3 {
+  margin-top: 1.5rem;
+}
+
+/* Bottom nav for simple pages */
+.content-nav {
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
