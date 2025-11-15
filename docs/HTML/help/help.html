@@ -1,35 +1,49 @@
 ---
 layout: default
-title: Help & Using the Site
+title: Help
 permalink: /help/
 ---
 
-<section class="content-page">
+<section class="hub-page">
   <h1>{{ page.title }}</h1>
-  <p class="content-intro">
-    A simple place to find guidance on how to use SHK, its tools, and the different sections of the site. (TBD)
+  <p class="hub-intro">
+    This section provides guidance on how to use the Seeking His Kingdom website, find resources, and get support.
   </p>
   <hr class="hub-divider">
 
-  <div class="content-body">
-    <h2>Getting Around (TBD)</h2>
-    <p>
-      This section will briefly explain the main navigation (Home, About, Resources, Community, Serving,
-      Salvation, Daily, and Tools), and what you can expect to find in each area. (TBD)
-    </p>
+    <div class="hub-grid">
 
-    <h2>Using the Tools (TBD)</h2>
-    <p>
-      Here we can outline how to use key tools like the Proverb Pairs Search, Strong’s Concordance Search,
-      Bible viewer, and games, at a high level. (TBD)
-    </p>
+    <a class="hub-tile tile-help-salvation" href="{{ '/salvation/' | relative_url }}">
+      <h2>Salvation</h2>
+      <p>Learn about salvation and how to receive it.</p>
+    </a>
 
-    <h2>Troubleshooting & Feedback (TBD)</h2>
-    <p>
-      Simple guidance for what to do if something seems broken or confusing, and how to share feedback so
-      it can be improved over time. (TBD)
-    </p>
+    <a class="hub-tile tile-help-contact" href="{{ '/help/contact/' | relative_url }}">
+      <h2>Contact</h2>
+      <p>Get in touch for support, questions, or feedback.</p>
+    </a>
+
+    <a class="hub-tile tile-help-feedback" href="{{ '/help/feedback/' | relative_url }}">
+      <h2>Feedback</h2>
+      <p>Submit feedback to help us improve the site.</p>
+    </a>
+
+    <a class="hub-tile tile-help-technicals" href="{{ '/help/technicals/' | relative_url }}">
+      <h2>Technical & Website Help</h2>
+      <p>Find solutions to common technical issues and learn about site features.</p>
+    </a>
+
   </div>
+
+  <section class="help-how-to-use">
+    <h2>How to Use This Site</h2>
+    <p>
+      Start with the Tools to explore interactive study aids, visit Resources to dig deeper into Scripture
+      and key topics, and return to this About section anytime you want to better understand the heart and
+      guardrails behind everything we publish.
+    </p>
+  </section>
+
 
   <nav class="content-nav">
     <a href="{{ '/' | relative_url }}">Back to Home</a>
