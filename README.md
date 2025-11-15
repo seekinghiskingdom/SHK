@@ -3,11 +3,11 @@ Monorepo for the SHK website and tools.
 ## Website: https://www.seekinghiskingdom.org
 
 ## Contact:
-### Contact: contact@seekinghiskingdom.org
-### Info: info@seekinghiskingdom.org
-### Support: support@seekinghiskingdom.org
-### Feedback: feedback@seekinghiskingdom.org
-### Prayer: prayer@seekinghiskingdom.org
+#### Contact: contact@seekinghiskingdom.org
+#### Info: info@seekinghiskingdom.org
+#### Support: support@seekinghiskingdom.org
+#### Feedback: feedback@seekinghiskingdom.org
+#### Prayer: prayer@seekinghiskingdom.org
 
 ## Social Media:
 ### YouTube: Seeking-His-Kingdom
