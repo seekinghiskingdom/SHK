@@ -6,6 +6,7 @@
   --gold: #c9a227;
   --dark-gold:#b8860b;
   --accent: #ffd86b;
+  --deb: #deb000;
 }
 
 /* ========== Base Styles ========== */
@@ -623,7 +624,7 @@ button:hover {
   text-decoration: none;
   border-radius: 0.75rem;
   padding: 1.25rem;
-  background: var(--panel);
+  background: var(--gold);
   color: inherit;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -690,7 +691,7 @@ button:hover {
   text-decoration: none;
   border-radius: 0.75rem;
   padding: 0.9rem 1.1rem;
-  background: var(--panel);
+  background: var(--gold);
   color: inherit;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
