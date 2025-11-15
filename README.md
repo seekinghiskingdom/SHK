@@ -1,7 +1,22 @@
 # Seeking His Kingdom (SHK)
 Monorepo for the SHK website and tools.
 ## Website: https://www.seekinghiskingdom.org
-## Email: contact@seekinghiskingdom.org
+
+## Contact:
+### Contact: contact@seekinghiskingdom.org
+### Info: info@seekinghiskingdom.org
+### Support: support@seekinghiskingdom.org
+### Feedback: feedback@seekinghiskingdom.org
+### Prayer: prayer@seekinghiskingdom.org
+
+## Social Media:
+### YouTube: Seeking-His-Kingdom
+### Facebook: seekinghiskingdom
+### Discord: TBD
+### X/Twitter: seeking_his
+### Instagram/Threads: seekinghiskingdom
+### Threads:
+### TikTok: seeking.his.kingdom
 
 ## Structure
 - `docs/` — GitHub Pages site (set Pages to /docs)
