@@ -12,10 +12,9 @@ Monorepo for the SHK website and tools.
 ## Social Media:
 ### YouTube: Seeking-His-Kingdom
 ### Facebook: seekinghiskingdom
-### Discord: TBD
+### Discord: Seeking His Kingdom (TBD)
 ### X/Twitter: seeking_his
 ### Instagram/Threads: seekinghiskingdom
-### Threads:
 ### TikTok: seeking.his.kingdom
 
 ## Structure
