@@ -645,7 +645,7 @@ button:hover {
 .hub-tile p {
   margin: 0;
   font-size: 0.95rem;
-  color: var(--muted);
+  color: var(--panel);
 }
 
 
