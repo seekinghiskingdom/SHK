@@ -10,12 +10,12 @@ Monorepo for the SHK website and tools.
 #### Prayer: prayer@seekinghiskingdom.org
 
 ## Social Media:
-### YouTube: Seeking-His-Kingdom
-### Facebook: seekinghiskingdom
-### Discord: Seeking His Kingdom (TBD)
-### X/Twitter: seeking_his
-### Instagram/Threads: seekinghiskingdom
-### TikTok: seeking.his.kingdom
+#### YouTube: Seeking-His-Kingdom
+#### Facebook: seekinghiskingdom
+#### Discord: Seeking His Kingdom (TBD)
+#### X/Twitter: seeking_his
+#### Instagram/Threads: seekinghiskingdom
+#### TikTok: seeking.his.kingdom
 
 ## Structure
 - `docs/` — GitHub Pages site (set Pages to /docs)
