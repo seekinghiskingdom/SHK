@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.wmbbe",
+  "code": "wmbbe",
+  "slug": "wmbbe",
+  "title": "World Messianic Bible - British Edition",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "messianic",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "wmbbe",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": false,
+    "notes": ""
+  },
+  "versification": "kjv",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

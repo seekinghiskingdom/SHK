@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.wmb",
+  "code": "wmb",
+  "slug": "wmb",
+  "title": "World Messianic Bible",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "messianic",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "wmb",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": false,
+    "notes": "Messianic-Jewish leaning translation."
+  },
+  "versification": "kjv",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

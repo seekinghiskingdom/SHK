@@ -1,0 +1,24 @@
+{
+  "order": [
+    "GEN",
+    "EXO",
+    "LEV",
+    "NUM",
+    "DEU",
+    "MAT",
+    "MRK",
+    "LUK",
+    "JHN"
+  ],
+  "names": {
+    "GEN": "Genesis",
+    "EXO": "Exodus",
+    "LEV": "Leviticus",
+    "NUM": "Numbers",
+    "DEU": "Deuteronomy",
+    "MAT": "Matthew",
+    "MRK": "Mark",
+    "LUK": "Luke",
+    "JHN": "John"
+  }
+}
