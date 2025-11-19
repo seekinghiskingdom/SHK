@@ -1,0 +1,4144 @@
+{
+  "book_id": "1SA",
+  "chapter": 19,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And Saul spake to Jonathan his son , and to all his servants , that they should kill David.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "spake",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3129"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "kill",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "But Jonathan Saul’s son delighted much in David : and Jonathan told David , saying , Saul my father seeketh to kill thee: now therefore, I pray thee, take heed to thyself until the morning , and abide in a secret \\add place\\add*, and hide thyself:",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "Saul’s",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "delighted",
+          "s": [
+            "H2654"
+          ]
+        },
+        {
+          "t": "much",
+          "s": [
+            "H3966"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": "seeketh",
+          "s": [
+            "H1245"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "kill",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "thee:",
+          "s": []
+        },
+        {
+          "t": "now",
+          "s": []
+        },
+        {
+          "t": "therefore,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "pray",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "take",
+          "s": []
+        },
+        {
+          "t": "heed",
+          "s": [
+            "H8104"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "thyself",
+          "s": []
+        },
+        {
+          "t": "until",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "morning",
+          "s": [
+            "H1242"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "abide",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "secret",
+          "s": [
+            "H5643"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "place\\add*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "hide",
+          "s": [
+            "H2244"
+          ]
+        },
+        {
+          "t": "thyself:",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "And I will go out and stand beside my father in the field where thou \\add art\\add*, and I will commune with my father of thee; and what I see , that I will tell thee. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "go",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "stand",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "beside",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "field",
+          "s": [
+            "H7704"
+          ]
+        },
+        {
+          "t": "where",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "art\\add*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "commune",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thee;",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "what",
+          "s": [
+            "H4100"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "see",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "tell",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "thee.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "¶ And Jonathan spake good of David unto Saul his father , and said unto him, Let not the king sin against his servant , against David ; because he hath not sinned against thee, and because his works \\add have been\\add* to thee-ward very good :",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "spake",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "good",
+          "s": [
+            "H2896"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "Let",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "sin",
+          "s": [
+            "H2398"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "servant",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "sinned",
+          "s": [
+            "H2398"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "works",
+          "s": [
+            "H4639"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "been\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "thee-ward very",
+          "s": [
+            "H3966"
+          ]
+        },
+        {
+          "t": "good",
+          "s": [
+            "H2896"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "For he did put his life in his hand , and slew the Philistine , and the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* wrought a great salvation for all Israel : thou sawest \\add it\\add*, and didst rejoice : wherefore then wilt thou sin against innocent blood , to slay David without a cause ?",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": [
+            "H7760"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3709"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "slew",
+          "s": [
+            "H5221"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Philistine",
+          "s": [
+            "H6430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "wrought",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": [
+            "H1419"
+          ]
+        },
+        {
+          "t": "salvation",
+          "s": [
+            "H8668"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "sawest",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "didst",
+          "s": []
+        },
+        {
+          "t": "rejoice",
+          "s": [
+            "H8055"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "wherefore",
+          "s": []
+        },
+        {
+          "t": "then",
+          "s": []
+        },
+        {
+          "t": "wilt",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "sin",
+          "s": [
+            "H2398"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "innocent",
+          "s": [
+            "H5355"
+          ]
+        },
+        {
+          "t": "blood",
+          "s": [
+            "H1818"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "slay",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "without",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "cause",
+          "s": [
+            "H2600"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "And Saul hearkened unto the voice of Jonathan : and Saul sware , \\add As\\add* the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* liveth , he shall not be slain.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "hearkened",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "voice",
+          "s": [
+            "H6963"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "sware",
+          "s": [
+            "H7650"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "As\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "liveth",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": [
+            "H0518"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "slain",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "And Jonathan called David , and Jonathan shewed him all those things. And Jonathan brought David to Saul , and he was in his presence , as in times past.\\f + \\fr 19.7 \\ft in times…: Heb. yesterday, third day\\f* \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "called",
+          "s": [
+            "H7121"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "shewed",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "those",
+          "s": []
+        },
+        {
+          "t": "things",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "presence",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "times",
+          "s": []
+        },
+        {
+          "t": "past",
+          "s": [
+            "H0865"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "19.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "times…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "yesterday,",
+          "s": []
+        },
+        {
+          "t": "third",
+          "s": []
+        },
+        {
+          "t": "day\\f*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "¶ And there was war again : and David went out , and fought with the Philistines , and slew them with a great slaughter ; and they fled from him.\\f + \\fr 19.8 \\ft him: Heb. his face\\f*",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "war",
+          "s": [
+            "H4421"
+          ]
+        },
+        {
+          "t": "again",
+          "s": [
+            "H3254"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "fought",
+          "s": [
+            "H3898"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Philistines",
+          "s": [
+            "H6430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "slew",
+          "s": [
+            "H5221"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": [
+            "H1419"
+          ]
+        },
+        {
+          "t": "slaughter",
+          "s": [
+            "H4347"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "fled",
+          "s": [
+            "H5127"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "him.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "19.8",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "him:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "face\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "And the evil spirit from the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* was upon Saul , as he sat in his house with his javelin in his hand : and David played with \\add his\\add* hand.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "evil",
+          "s": [
+            "H7451"
+          ]
+        },
+        {
+          "t": "spirit",
+          "s": [
+            "H7307"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "sat",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "javelin",
+          "s": [
+            "H2595"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "played",
+          "s": [
+            "H5059"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "his\\add*",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "And Saul sought to smite David even to the wall with the javelin ; but he slipped away out of Saul’s presence , and he smote the javelin into the wall : and David fled , and escaped that night. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "sought",
+          "s": [
+            "H1245"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "smite",
+          "s": [
+            "H5221"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H7023"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "javelin",
+          "s": [
+            "H2595"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "slipped",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H6362"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Saul’s",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "presence",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "smote",
+          "s": [
+            "H5221"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "javelin",
+          "s": [
+            "H2595"
+          ]
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H7023"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "fled",
+          "s": [
+            "H5127"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "escaped",
+          "s": [
+            "H4422"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "H3915"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "Saul also sent messengers unto David’s house , to watch him, and to slay him in the morning : and Michal David’s wife told him, saying , If thou save not thy life to night , to morrow thou shalt be slain. \\p",
+      "tokens": [
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "sent",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": "messengers",
+          "s": [
+            "H4397"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "David’s",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "watch",
+          "s": [
+            "H8104"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "slay",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "morning",
+          "s": [
+            "H1242"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Michal",
+          "s": [
+            "H4324"
+          ]
+        },
+        {
+          "t": "David’s",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "wife",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "If",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "save",
+          "s": [
+            "H4422"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "H3915"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "morrow",
+          "s": [
+            "H4279"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "slain",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "¶ So Michal let David down through a window : and he went , and fled , and escaped.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "So",
+          "s": []
+        },
+        {
+          "t": "Michal",
+          "s": [
+            "H4324"
+          ]
+        },
+        {
+          "t": "let",
+          "s": [
+            "H3381"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "down",
+          "s": [
+            "H3381"
+          ]
+        },
+        {
+          "t": "through",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "window",
+          "s": [
+            "H2474"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "fled",
+          "s": [
+            "H1272"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "escaped",
+          "s": [
+            "H4422"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "And Michal took an image , and laid \\add it\\add* in the bed , and put a pillow of goats’ \\add hair\\add* for his bolster , and covered \\add it\\add* with a cloth.\\f + \\fr 19.13 \\ft image: Heb. teraphim\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Michal",
+          "s": [
+            "H4324"
+          ]
+        },
+        {
+          "t": "took",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "image",
+          "s": [
+            "H8655"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "laid",
+          "s": [
+            "H7760"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bed",
+          "s": [
+            "H4296"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": [
+            "H7760"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "pillow",
+          "s": [
+            "H3523"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "goats’",
+          "s": [
+            "H5795"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "hair\\add*",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "bolster",
+          "s": [
+            "H4763"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "covered",
+          "s": [
+            "H3680"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "cloth",
+          "s": [
+            "H0899"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "19.13",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "image:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "teraphim\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "And when Saul sent messengers to take David , she said , He \\add is\\add* sick.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "sent",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": "messengers",
+          "s": [
+            "H4397"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "take",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "sick",
+          "s": [
+            "H2470"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "And Saul sent the messengers \\add again\\add* to see David , saying , Bring him up to me in the bed , that I may slay him.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "sent",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "messengers",
+          "s": [
+            "H4397"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "again\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "see",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Bring",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bed",
+          "s": [
+            "H4296"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "slay",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "him.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "And when the messengers were come in , behold, \\add there was\\add* an image in the bed , with a pillow of goats’ \\add hair\\add* for his bolster.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "messengers",
+          "s": [
+            "H4397"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "behold,",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "image",
+          "s": [
+            "H8655"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bed",
+          "s": [
+            "H4296"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "pillow",
+          "s": [
+            "H3523"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "goats’",
+          "s": [
+            "H5795"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "hair\\add*",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "bolster",
+          "s": [
+            "H4763"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "And Saul said unto Michal , Why hast thou deceived me so , and sent away mine enemy , that he is escaped ? And Michal answered Saul , He said unto me, Let me go ; why should I kill thee? \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Michal",
+          "s": [
+            "H4324"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Why",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "deceived",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": [
+            "H7411"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "sent",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "enemy",
+          "s": [
+            "H0341"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "escaped",
+          "s": [
+            "H4422"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Michal",
+          "s": [
+            "H4324"
+          ]
+        },
+        {
+          "t": "answered",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "Let",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "go",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "why",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "kill",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "thee?",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "¶ So David fled , and escaped , and came to Samuel to Ramah , and told him all that Saul had done to him. And he and Samuel went and dwelt in Naioth.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "So",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "fled",
+          "s": [
+            "H1272"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "escaped",
+          "s": [
+            "H4422"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Samuel",
+          "s": [
+            "H8050"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Ramah",
+          "s": [
+            "H7414"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "done",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "him.",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Samuel",
+          "s": [
+            "H8050"
+          ]
+        },
+        {
+          "t": "went",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "dwelt",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Naioth",
+          "s": [
+            "H5121"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "And it was told Saul , saying , Behold, David \\add is\\add* at Naioth in Ramah.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Behold,",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "Naioth",
+          "s": [
+            "H5121"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Ramah",
+          "s": [
+            "H7414"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "And Saul sent messengers to take David : and when they saw the company of the prophets prophesying , and Samuel standing \\add as\\add* appointed over them, the Spirit of God was upon the messengers of Saul , and they also prophesied.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "sent",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": "messengers",
+          "s": [
+            "H4397"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "take",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "saw",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "company",
+          "s": [
+            "H3862"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prophets",
+          "s": [
+            "H5030"
+          ]
+        },
+        {
+          "t": "prophesying",
+          "s": [
+            "H5012"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Samuel",
+          "s": [
+            "H8050"
+          ]
+        },
+        {
+          "t": "standing",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "as\\add*",
+          "s": []
+        },
+        {
+          "t": "appointed",
+          "s": [
+            "H5324"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Spirit",
+          "s": [
+            "H7307"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "messengers",
+          "s": [
+            "H4397"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "prophesied",
+          "s": [
+            "H5012"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "And when it was told Saul , he sent other messengers , and they prophesied likewise. And Saul sent messengers again the third time, and they prophesied also.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "sent",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": "other",
+          "s": [
+            "H0312"
+          ]
+        },
+        {
+          "t": "messengers",
+          "s": [
+            "H4397"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "prophesied",
+          "s": [
+            "H5012"
+          ]
+        },
+        {
+          "t": "likewise.",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "sent",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": "messengers",
+          "s": [
+            "H4397"
+          ]
+        },
+        {
+          "t": "again",
+          "s": [
+            "H3254"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "third",
+          "s": [
+            "H7992"
+          ]
+        },
+        {
+          "t": "time,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "prophesied",
+          "s": [
+            "H5012"
+          ]
+        },
+        {
+          "t": "also.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "Then went he also to Ramah , and came to a great well that \\add is\\add* in Sechu : and he asked and said , Where \\add are\\add* Samuel and David ? And \\add one\\add* said , Behold, \\add they be\\add* at Naioth in Ramah.",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Ramah",
+          "s": [
+            "H7414"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": [
+            "H1419"
+          ]
+        },
+        {
+          "t": "well",
+          "s": [
+            "H0953"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Sechu",
+          "s": [
+            "H7906"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "asked",
+          "s": [
+            "H7592"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Where",
+          "s": [
+            "H0375"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "Samuel",
+          "s": [
+            "H8050"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "one\\add*",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Behold,",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "Naioth",
+          "s": [
+            "H5121"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Ramah",
+          "s": [
+            "H7414"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "And he went thither to Naioth in Ramah : and the Spirit of God was upon him also, and he went on , and prophesied , until he came to Naioth in Ramah.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "thither",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Naioth",
+          "s": [
+            "H5121"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Ramah",
+          "s": [
+            "H7414"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Spirit",
+          "s": [
+            "H7307"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "also,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "on",
+          "s": [
+            "H1980"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "prophesied",
+          "s": [
+            "H5012"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "until",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Naioth",
+          "s": [
+            "H5121"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Ramah",
+          "s": [
+            "H7414"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "And he stripped off his clothes also , and prophesied before Samuel in like manner, and lay down naked all that day and all that night. Wherefore they say , \\add Is\\add* Saul also among the prophets ?\\f + \\fr 19.24 \\ft lay: Heb. fell\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "stripped",
+          "s": []
+        },
+        {
+          "t": "off",
+          "s": [
+            "H6584"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "clothes",
+          "s": [
+            "H0899"
+          ]
+        },
+        {
+          "t": "also",
+          "s": [
+            "H1571"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "prophesied",
+          "s": [
+            "H5012"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "Samuel",
+          "s": [
+            "H8050"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "like",
+          "s": []
+        },
+        {
+          "t": "manner,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "lay",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": "naked",
+          "s": [
+            "H6174"
+          ]
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "H3915"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "Wherefore",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "say",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "Is\\add*",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prophets",
+          "s": [
+            "H5030"
+          ]
+        },
+        {
+          "t": "?\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "19.24",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "lay:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "fell\\f*",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

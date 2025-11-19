@@ -1,0 +1,4382 @@
+{
+  "book_id": "2ES",
+  "chapter": 1,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The second book of the prophet Esdras, the son of Saraias, the son of Azarias, the son of Helchias, the son of Sadamias, the son of Sadoc, the son of Achitob, \\p",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "second",
+          "s": []
+        },
+        {
+          "t": "book",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prophet",
+          "s": []
+        },
+        {
+          "t": "Esdras,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Saraias,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Azarias,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Helchias,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Sadamias,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Sadoc,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Achitob,",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "The son of Achias, the son of Phinees, the son of Heli, the son of Amarias, the son of Aziei, the son of Marimoth, the son of Arna, the son of Ozias, the son of Borith, the son of Abisei, the son of Phinees, the son of Eleazar, \\p",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Achias,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Phinees,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Heli,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Amarias,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Aziei,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Marimoth,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Arna,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Ozias,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Borith,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Abisei,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Phinees,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Eleazar,",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "The son of Aaron, of the tribe of Levi; which was captive in the land of the Medes, in the reign of Artexerxes king of the Persians. \\p",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Aaron,",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tribe",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Levi;",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "captive",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Medes,",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "reign",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Artexerxes",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Persians.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "And the word of the Lord came unto me, saying, \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "word",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "saying,",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Go thy way, and shew my people their sinful deeds, and their children their wickedness which they have done against me; that they may tell their children’s children: \\p",
+      "tokens": [
+        {
+          "t": "Go",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "way,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "shew",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "sinful",
+          "s": []
+        },
+        {
+          "t": "deeds,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "wickedness",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "done",
+          "s": []
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "me;",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "tell",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "children’s",
+          "s": []
+        },
+        {
+          "t": "children:",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "Because the sins of their fathers are increased in them: for they have forgotten me, and have offered unto strange gods. \\p",
+      "tokens": [
+        {
+          "t": "Because",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sins",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "fathers",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "increased",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "them:",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "forgotten",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "offered",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "strange",
+          "s": []
+        },
+        {
+          "t": "gods.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "Am not I even he that brought them out of the land of Egypt, from the house of bondage? but they have provoked me unto wrath, and despised my counsels. \\p",
+      "tokens": [
+        {
+          "t": "Am",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Egypt,",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "bondage?",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "provoked",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "wrath,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "despised",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "counsels.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "Pull thou off then the hair of thy head, and cast all evil upon them, for they have not been obedient unto my law, but it is a rebellious people. \\p",
+      "tokens": [
+        {
+          "t": "Pull",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "off",
+          "s": []
+        },
+        {
+          "t": "then",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hair",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "head,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "evil",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "obedient",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "law,",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "rebellious",
+          "s": []
+        },
+        {
+          "t": "people.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "How long shall I forbear them, into whom I have done so much good? \\p",
+      "tokens": [
+        {
+          "t": "How",
+          "s": []
+        },
+        {
+          "t": "long",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "forbear",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "done",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "much",
+          "s": []
+        },
+        {
+          "t": "good?",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "Many kings have I destroyed for their sakes; Pharaoh with his servants and all his power have I smitten down. \\p",
+      "tokens": [
+        {
+          "t": "Many",
+          "s": []
+        },
+        {
+          "t": "kings",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "destroyed",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "sakes;",
+          "s": []
+        },
+        {
+          "t": "Pharaoh",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "power",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "smitten",
+          "s": []
+        },
+        {
+          "t": "down.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "All the nations have I destroyed before them, and in the east I have scattered the people of two provinces, even of Tyrus and Sidon, and have slain all their enemies. \\p",
+      "tokens": [
+        {
+          "t": "All",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "nations",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "destroyed",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "east",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "scattered",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": []
+        },
+        {
+          "t": "provinces,",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Tyrus",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Sidon,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "slain",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "enemies.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "Speak thou therefore unto them, saying, Thus saith the Lord, \\p",
+      "tokens": [
+        {
+          "t": "Speak",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "therefore",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "saying,",
+          "s": []
+        },
+        {
+          "t": "Thus",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord,",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "I led you through the sea and in the beginning gave you a large and safe passage; I gave you Moses for a leader, and Aaron for a priest. \\p",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "led",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "through",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sea",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "beginning",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "large",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "safe",
+          "s": []
+        },
+        {
+          "t": "passage;",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "Moses",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "leader,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Aaron",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "priest.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "I gave you light in a pillar of fire, and great wonders have I done among you; yet have ye forgotten me, saith the Lord. \\p",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "light",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "pillar",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "fire,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": []
+        },
+        {
+          "t": "wonders",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "done",
+          "s": []
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "you;",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "forgotten",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "Thus saith the Almighty Lord, The quails were as a token to you; I gave you tents for your safeguard: nevertheless ye murmured there, \\p",
+      "tokens": [
+        {
+          "t": "Thus",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Almighty",
+          "s": []
+        },
+        {
+          "t": "Lord,",
+          "s": []
+        },
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "quails",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "token",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "you;",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "tents",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "safeguard:",
+          "s": []
+        },
+        {
+          "t": "nevertheless",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "murmured",
+          "s": []
+        },
+        {
+          "t": "there,",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "And triumphed not in my name for the destruction of your enemies, but ever to this day do ye yet murmur. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "triumphed",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "name",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "destruction",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "enemies,",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "ever",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "murmur.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Where are the benefits that I have done for you? when ye were hungry and thirsty in the wilderness, did ye not cry unto me, \\p",
+      "tokens": [
+        {
+          "t": "Where",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "benefits",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "done",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "you?",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "hungry",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thirsty",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wilderness,",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "cry",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "Saying, Why hast thou brought us into this wilderness to kill us? it had been better for us to have served the Egyptians, than to die in this wilderness. \\p",
+      "tokens": [
+        {
+          "t": "Saying,",
+          "s": []
+        },
+        {
+          "t": "Why",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": []
+        },
+        {
+          "t": "us",
+          "s": []
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "wilderness",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "kill",
+          "s": []
+        },
+        {
+          "t": "us?",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "better",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "us",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "served",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Egyptians,",
+          "s": []
+        },
+        {
+          "t": "than",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "die",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "wilderness.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "Then had I pity upon your mournings, and gave you manna to eat; so ye did eat angels’ bread. \\p",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "pity",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "mournings,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "manna",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "eat;",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": []
+        },
+        {
+          "t": "eat",
+          "s": []
+        },
+        {
+          "t": "angels’",
+          "s": []
+        },
+        {
+          "t": "bread.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "When ye were thirsty, did I not cleave the rock, and waters flowed out to your fill? for the heat I covered you with the leaves of the trees. \\p",
+      "tokens": [
+        {
+          "t": "When",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "thirsty,",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "cleave",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rock,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "waters",
+          "s": []
+        },
+        {
+          "t": "flowed",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "fill?",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "heat",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "covered",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "leaves",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "trees.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "I divided among you a fruitful land, I cast out the Canaanites, the Pherezites, and the Philistines, before you: what shall I yet do more for you? saith the Lord. \\p",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "divided",
+          "s": []
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "fruitful",
+          "s": []
+        },
+        {
+          "t": "land,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Canaanites,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Pherezites,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Philistines,",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": []
+        },
+        {
+          "t": "you:",
+          "s": []
+        },
+        {
+          "t": "what",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "more",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "you?",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "Thus saith the Almighty Lord, When ye were in the wilderness, in the river of the Amorites, being athirst, and blaspheming my name, \\p",
+      "tokens": [
+        {
+          "t": "Thus",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Almighty",
+          "s": []
+        },
+        {
+          "t": "Lord,",
+          "s": []
+        },
+        {
+          "t": "When",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wilderness,",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "river",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Amorites,",
+          "s": []
+        },
+        {
+          "t": "being",
+          "s": []
+        },
+        {
+          "t": "athirst,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "blaspheming",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "name,",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "I gave you not fire for your blasphemies, but cast a tree in the water, and made the river sweet. \\p",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "fire",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "blasphemies,",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "tree",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "water,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "river",
+          "s": []
+        },
+        {
+          "t": "sweet.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "What shall I do unto thee, O Jacob? thou, Juda, wouldest not obey me: I will turn me to other nations, and unto those will I give my name, that they may keep my statutes. \\p",
+      "tokens": [
+        {
+          "t": "What",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "Jacob?",
+          "s": []
+        },
+        {
+          "t": "thou,",
+          "s": []
+        },
+        {
+          "t": "Juda,",
+          "s": []
+        },
+        {
+          "t": "wouldest",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "obey",
+          "s": []
+        },
+        {
+          "t": "me:",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "turn",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "other",
+          "s": []
+        },
+        {
+          "t": "nations,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "those",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "name,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "keep",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "statutes.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "Seeing ye have forsaken me, I will forsake you also; when ye desire me to be gracious unto you, I shall have no mercy upon you. \\p",
+      "tokens": [
+        {
+          "t": "Seeing",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "forsaken",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "forsake",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "also;",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "desire",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "gracious",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "mercy",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "you.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "Whensoever ye shall call upon me, I will not hear you: for ye have defiled your hands with blood, and your feet are swift to commit manslaughter. \\p",
+      "tokens": [
+        {
+          "t": "Whensoever",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "call",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "hear",
+          "s": []
+        },
+        {
+          "t": "you:",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "defiled",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "hands",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "blood,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "feet",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "swift",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "commit",
+          "s": []
+        },
+        {
+          "t": "manslaughter.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "Ye have not as it were forsaken me, but your own selves, saith the Lord. \\p",
+      "tokens": [
+        {
+          "t": "Ye",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "forsaken",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "own",
+          "s": []
+        },
+        {
+          "t": "selves,",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "Thus saith the Almighty Lord, Have I not prayed you as a father his sons, as a mother her daughters, and a nurse her young babes, \\p",
+      "tokens": [
+        {
+          "t": "Thus",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Almighty",
+          "s": []
+        },
+        {
+          "t": "Lord,",
+          "s": []
+        },
+        {
+          "t": "Have",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "prayed",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "sons,",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "mother",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "daughters,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "nurse",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "young",
+          "s": []
+        },
+        {
+          "t": "babes,",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 29,
+      "text": "That ye would be my people, and I should be your God; that ye would be my children, and I should be your father? \\p",
+      "tokens": [
+        {
+          "t": "That",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "would",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "people,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "God;",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "would",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "children,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "father?",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 30,
+      "text": "I gathered you together, as a hen gathereth her chickens under her wings: but now, what shall I do unto you? I will cast you out from my face. \\p",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "gathered",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "together,",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "hen",
+          "s": []
+        },
+        {
+          "t": "gathereth",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "chickens",
+          "s": []
+        },
+        {
+          "t": "under",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "wings:",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "now,",
+          "s": []
+        },
+        {
+          "t": "what",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you?",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "face.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 31,
+      "text": "When ye offer unto me, I will turn my face from you: for your solemn feastdays, your new moons, and your circumcisions, have I forsaken. \\p",
+      "tokens": [
+        {
+          "t": "When",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "offer",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "turn",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "face",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "you:",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "solemn",
+          "s": []
+        },
+        {
+          "t": "feastdays,",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "new",
+          "s": []
+        },
+        {
+          "t": "moons,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "circumcisions,",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "forsaken.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 32,
+      "text": "I sent unto you my servants the prophets, whom ye have taken and slain, and torn their bodies in pieces, whose blood I will require of your hands, saith the Lord. \\p",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "sent",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prophets,",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "taken",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "slain,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "torn",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "bodies",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "pieces,",
+          "s": []
+        },
+        {
+          "t": "whose",
+          "s": []
+        },
+        {
+          "t": "blood",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "require",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "hands,",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 33,
+      "text": "Thus saith the Almighty Lord, Your house is desolate, I will cast you out as the wind doth stubble. \\p",
+      "tokens": [
+        {
+          "t": "Thus",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Almighty",
+          "s": []
+        },
+        {
+          "t": "Lord,",
+          "s": []
+        },
+        {
+          "t": "Your",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "desolate,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wind",
+          "s": []
+        },
+        {
+          "t": "doth",
+          "s": []
+        },
+        {
+          "t": "stubble.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 34,
+      "text": "And your children shall not be fruitful; for they have despised my commandment, and done the thing that is an evil before me. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "fruitful;",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "despised",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "commandment,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "done",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "thing",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "evil",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": []
+        },
+        {
+          "t": "me.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 35,
+      "text": "Your houses will I give to a people that shall come; which not having heard of me yet shall believe me; to whom I have shewed no signs, yet they shall do that I have commanded them. \\p",
+      "tokens": [
+        {
+          "t": "Your",
+          "s": []
+        },
+        {
+          "t": "houses",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "come;",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "having",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "believe",
+          "s": []
+        },
+        {
+          "t": "me;",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "shewed",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "signs,",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "commanded",
+          "s": []
+        },
+        {
+          "t": "them.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 36,
+      "text": "They have seen no prophets, yet they shall call their sins to remembrance, and acknowledge them. \\p",
+      "tokens": [
+        {
+          "t": "They",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "seen",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "prophets,",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "call",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "sins",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "remembrance,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "acknowledge",
+          "s": []
+        },
+        {
+          "t": "them.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 37,
+      "text": "I take to witness the grace of the people to come, whose little ones rejoice in gladness: and though they have not seen me with bodily eyes, yet in spirit they believe the thing that I say. \\p",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "take",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "witness",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "grace",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "come,",
+          "s": []
+        },
+        {
+          "t": "whose",
+          "s": []
+        },
+        {
+          "t": "little",
+          "s": []
+        },
+        {
+          "t": "ones",
+          "s": []
+        },
+        {
+          "t": "rejoice",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "gladness:",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "though",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "seen",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "bodily",
+          "s": []
+        },
+        {
+          "t": "eyes,",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "spirit",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "believe",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "thing",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "say.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 38,
+      "text": "And now, brother, behold what glory; and see the people that come from the east: \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "now,",
+          "s": []
+        },
+        {
+          "t": "brother,",
+          "s": []
+        },
+        {
+          "t": "behold",
+          "s": []
+        },
+        {
+          "t": "what",
+          "s": []
+        },
+        {
+          "t": "glory;",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "see",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "east:",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 39,
+      "text": "Unto whom I will give for leaders, Abraham, Isaac, and Jacob, Oseas, Amos, and Micheas, Joel, Abdias, and Jonas, \\p",
+      "tokens": [
+        {
+          "t": "Unto",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "leaders,",
+          "s": []
+        },
+        {
+          "t": "Abraham,",
+          "s": []
+        },
+        {
+          "t": "Isaac,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jacob,",
+          "s": []
+        },
+        {
+          "t": "Oseas,",
+          "s": []
+        },
+        {
+          "t": "Amos,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Micheas,",
+          "s": []
+        },
+        {
+          "t": "Joel,",
+          "s": []
+        },
+        {
+          "t": "Abdias,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jonas,",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 40,
+      "text": "Nahum, and Abacuc, Sophonias, Aggeus, Zachary, and Malachy, which is called also an angel of the Lord.",
+      "tokens": [
+        {
+          "t": "Nahum,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Abacuc,",
+          "s": []
+        },
+        {
+          "t": "Sophonias,",
+          "s": []
+        },
+        {
+          "t": "Aggeus,",
+          "s": []
+        },
+        {
+          "t": "Zachary,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Malachy,",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "called",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "angel",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord.",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

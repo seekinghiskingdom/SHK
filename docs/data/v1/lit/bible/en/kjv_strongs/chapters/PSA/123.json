@@ -1,0 +1,536 @@
+{
+  "book_id": "PSA",
+  "chapter": 123,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Unto thee lift I up mine eyes , O thou that dwellest in the heavens. \\q1",
+      "tokens": [
+        {
+          "t": "Unto",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "lift",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5375"
+          ]
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "eyes",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "dwellest",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "heavens",
+          "s": [
+            "H8064"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "Behold, as the eyes of servants \\add look\\add* unto the hand of their masters , \\add and\\add* as the eyes of a maiden unto the hand of her mistress ; so our eyes \\add wait\\add* upon the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* our God , until that he have mercy upon us. \\q1",
+      "tokens": [
+        {
+          "t": "Behold,",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "eyes",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "look\\add*",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "masters",
+          "s": [
+            "H0113"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "eyes",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "maiden",
+          "s": [
+            "H8198"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "mistress",
+          "s": [
+            "H1404"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "our",
+          "s": []
+        },
+        {
+          "t": "eyes",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "wait\\add*",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "our",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "until",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "mercy",
+          "s": [
+            "H2603"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "us.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "Have mercy upon us, O \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, have mercy upon us: for we are exceedingly filled with contempt. \\q1",
+      "tokens": [
+        {
+          "t": "Have",
+          "s": []
+        },
+        {
+          "t": "mercy",
+          "s": [
+            "H2603"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "us,",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "mercy",
+          "s": [
+            "H2603"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "us:",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "exceedingly",
+          "s": [
+            "H7227"
+          ]
+        },
+        {
+          "t": "filled",
+          "s": [
+            "H7646"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "contempt",
+          "s": [
+            "H0937"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "Our soul is exceedingly filled with the scorning of those that are at ease , \\add and\\add* with the contempt of the proud.",
+      "tokens": [
+        {
+          "t": "Our",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "exceedingly",
+          "s": [
+            "H7227"
+          ]
+        },
+        {
+          "t": "filled",
+          "s": [
+            "H7646"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "scorning",
+          "s": [
+            "H3933"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "those",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "ease",
+          "s": [
+            "H7600"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "contempt",
+          "s": [
+            "H0937"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "proud",
+          "s": [
+            "H3238"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

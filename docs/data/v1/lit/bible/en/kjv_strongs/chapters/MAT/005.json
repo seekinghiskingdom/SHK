@@ -1,0 +1,7800 @@
+{
+  "book_id": "MAT",
+  "chapter": 5,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And seeing the multitudes , he went up into a mountain : and when he was set , his disciples came unto him :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "seeing",
+          "s": [
+            "G1492"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "multitudes",
+          "s": [
+            "G3793"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "G0305"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "mountain",
+          "s": [
+            "G3735"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "when",
+          "s": [
+            "G2523"
+          ]
+        },
+        {
+          "t": "he",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "set",
+          "s": [
+            "G2523"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "disciples",
+          "s": [
+            "G3101"
+          ]
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G4334"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "And he opened his mouth , and taught them , saying ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "opened",
+          "s": [
+            "G0455"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "mouth",
+          "s": [
+            "G4750"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "taught",
+          "s": [
+            "G1321"
+          ]
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "G3004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "\\wj \\+w Blessed|strong=\"G3107\"\\+w* \\+add are\\+add* \\+w the poor|strong=\"G4434\"\\+w* \\+w in spirit|strong=\"G4151\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w theirs|strong=\"G0846\"\\+w* \\+w is|strong=\"G2076\"\\+w* \\+w the kingdom|strong=\"G0932\"\\+w* \\+w of heaven|strong=\"G3772\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Blessed|strong=\"G3107\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "are\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "poor|strong=\"G4434\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "spirit|strong=\"G4151\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "theirs|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom|strong=\"G0932\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "\\wj \\+w Blessed|strong=\"G3107\"\\+w* \\+add are\\+add* \\+w they that mourn|strong=\"G3996\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w they|strong=\"G0846\"\\+w* \\+w shall be comforted|strong=\"G3870\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Blessed|strong=\"G3107\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "are\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "mourn|strong=\"G3996\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "comforted|strong=\"G3870\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "\\wj \\+w Blessed|strong=\"G3107\"\\+w* \\+add are\\+add* \\+w the meek|strong=\"G4239\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w they|strong=\"G0846\"\\+w* \\+w shall inherit|strong=\"G2816\"\\+w* \\+w the earth|strong=\"G1093\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Blessed|strong=\"G3107\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "are\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "meek|strong=\"G4239\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "inherit|strong=\"G2816\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth|strong=\"G1093\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "\\wj \\+w Blessed|strong=\"G3107\"\\+w* \\+add are\\+add* \\+w they which do hunger|strong=\"G3983\"\\+w* \\+w and|strong=\"G2532\"\\+w* \\+w thirst|strong=\"G1372\"\\+w* \\+w after righteousness|strong=\"G1343\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w they|strong=\"G0846\"\\+w* \\+w shall be filled|strong=\"G5526\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Blessed|strong=\"G3107\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "are\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "hunger|strong=\"G3983\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thirst|strong=\"G1372\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "after",
+          "s": []
+        },
+        {
+          "t": "righteousness|strong=\"G1343\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "filled|strong=\"G5526\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "\\wj \\+w Blessed|strong=\"G3107\"\\+w* \\+add are\\+add* \\+w the merciful|strong=\"G1655\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w they|strong=\"G0846\"\\+w* \\+w shall obtain mercy|strong=\"G1653\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Blessed|strong=\"G3107\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "are\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "merciful|strong=\"G1655\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "obtain",
+          "s": []
+        },
+        {
+          "t": "mercy|strong=\"G1653\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "\\wj \\+w Blessed|strong=\"G3107\"\\+w* \\+add are\\+add* \\+w the pure|strong=\"G2513\"\\+w* \\+w in heart|strong=\"G2588\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w they|strong=\"G0846\"\\+w* \\+w shall see|strong=\"G3700\"\\+w* \\+w God|strong=\"G2316\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Blessed|strong=\"G3107\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "are\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "pure|strong=\"G2513\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "heart|strong=\"G2588\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "see|strong=\"G3700\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "God|strong=\"G2316\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "\\wj \\+w Blessed|strong=\"G3107\"\\+w* \\+add are\\+add* \\+w the peacemakers|strong=\"G1518\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w they|strong=\"G0846\"\\+w* \\+w shall be called|strong=\"G2564\"\\+w* \\+w the children|strong=\"G5207\"\\+w* \\+w of God|strong=\"G2316\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Blessed|strong=\"G3107\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "are\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "peacemakers|strong=\"G1518\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "called|strong=\"G2564\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children|strong=\"G5207\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God|strong=\"G2316\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "\\wj \\+w Blessed|strong=\"G3107\"\\+w* \\+add are\\+add* \\+w they which are persecuted|strong=\"G1377\"\\+w* \\+w for|strong=\"G1752\"\\+w* \\+w righteousness’|strong=\"G1343\"\\+w* \\+w sake|strong=\"G1752\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w theirs|strong=\"G0846\"\\+w* \\+w is|strong=\"G2076\"\\+w* \\+w the kingdom|strong=\"G0932\"\\+w* \\+w of heaven|strong=\"G3772\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Blessed|strong=\"G3107\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "are\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "persecuted|strong=\"G1377\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G1752\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "righteousness’|strong=\"G1343\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "sake|strong=\"G1752\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "theirs|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom|strong=\"G0932\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "\\wj \\+w Blessed|strong=\"G3107\"\\+w* \\+w are ye|strong=\"G2075\"\\+w*, \\+w when|strong=\"G3752\"\\+w* \\+add men\\+add* \\+w shall revile|strong=\"G3679\"\\+w* \\+w you|strong=\"G5209\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w persecute|strong=\"G1377\"\\+w* \\+add you\\+add*, \\+w and|strong=\"G2532\"\\+w* \\+w shall say|strong=\"G2036\"\\+w* \\+w all manner of|strong=\"G3956\"\\+w* \\+w evil|strong=\"G4190\"\\+w* \\+w against|strong=\"G2596\"\\+w* \\+w you|strong=\"G5216\"\\+w* \\+w falsely|strong=\"G5574\"\\+w*, \\+w for|strong=\"G1752\"\\+w* \\+w my|strong=\"G1700\"\\+w* \\+w sake|strong=\"G1752\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Blessed|strong=\"G3107\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "ye|strong=\"G2075\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "when|strong=\"G3752\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "men\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "revile|strong=\"G3679\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5209\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "persecute|strong=\"G1377\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "you\\+add*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G2036\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "manner",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G3956\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "evil|strong=\"G4190\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "against|strong=\"G2596\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "falsely|strong=\"G5574\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G1752\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "my|strong=\"G1700\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "sake|strong=\"G1752\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "\\wj \\+w Rejoice|strong=\"G5463\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w be exceeding glad|strong=\"G0021\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w great|strong=\"G4183\"\\+w* \\+add is\\+add* \\+w your|strong=\"G5216\"\\+w* \\+w reward|strong=\"G3408\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w heaven|strong=\"G3772\"\\+w*: \\+w for|strong=\"G1063\"\\+w* \\+w so|strong=\"G3779\"\\+w* \\+w persecuted they|strong=\"G1377\"\\+w* \\+w the prophets|strong=\"G4396\"\\+w* \\+w which were|strong=\"G3588\"\\+w* \\+w before|strong=\"G4253\"\\+w* \\+w you|strong=\"G5216\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Rejoice|strong=\"G5463\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "exceeding",
+          "s": []
+        },
+        {
+          "t": "glad|strong=\"G0021\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "great|strong=\"G4183\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "is\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "reward|strong=\"G3408\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "so|strong=\"G3779\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "persecuted",
+          "s": []
+        },
+        {
+          "t": "they|strong=\"G1377\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prophets|strong=\"G4396\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "were|strong=\"G3588\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "before|strong=\"G4253\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5216\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "\\wj ¶ \\+w Ye|strong=\"G5210\"\\+w* \\+w are|strong=\"G2075\"\\+w* \\+w the salt|strong=\"G0217\"\\+w* \\+w of the earth|strong=\"G1093\"\\+w*: \\+w but|strong=\"G1161\"\\+w* \\+w if|strong=\"G1437\"\\+w* \\+w the salt|strong=\"G0217\"\\+w* \\+w have lost his savour|strong=\"G3471\"\\+w*, \\+w wherewith|strong=\"G5101\"\\+w* \\+w shall it be salted|strong=\"G0233\"\\+w*? \\+w it is|strong=\"G2480\"\\+w* \\+w thenceforth|strong=\"G2089\"\\+w* \\+w good|strong=\"G2480\"\\+w* \\+w for|strong=\"G1519\"\\+w* \\+w nothing|strong=\"G3762\"\\+w*, \\+w but|strong=\"G3361\"\\+w* \\+w to be cast|strong=\"G0906\"\\+w* \\+w out|strong=\"G1854\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w to be trodden under foot|strong=\"G2662\"\\+w* \\+w of|strong=\"G5259\"\\+w* \\+w men|strong=\"G0444\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Ye|strong=\"G5210\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "are|strong=\"G2075\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "salt|strong=\"G0217\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth|strong=\"G1093\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "if|strong=\"G1437\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "salt|strong=\"G0217\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "lost",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "savour|strong=\"G3471\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "wherewith|strong=\"G5101\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "salted|strong=\"G0233\"\\+w*?",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2480\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thenceforth|strong=\"G2089\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "good|strong=\"G2480\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "nothing|strong=\"G3762\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "cast|strong=\"G0906\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "out|strong=\"G1854\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "trodden",
+          "s": []
+        },
+        {
+          "t": "under",
+          "s": []
+        },
+        {
+          "t": "foot|strong=\"G2662\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G5259\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "men|strong=\"G0444\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "\\wj \\+w Ye|strong=\"G5210\"\\+w* \\+w are|strong=\"G2075\"\\+w* \\+w the light|strong=\"G5457\"\\+w* \\+w of the world|strong=\"G2889\"\\+w*. \\+w A city|strong=\"G4172\"\\+w* \\+w that is set|strong=\"G2749\"\\+w* \\+w on|strong=\"G1883\"\\+w* \\+w an hill|strong=\"G3735\"\\+w* \\+w cannot|strong=\"G1410\"\\+w* \\+w be hid|strong=\"G2928\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Ye|strong=\"G5210\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "are|strong=\"G2075\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "light|strong=\"G5457\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "world|strong=\"G2889\"\\+w*.",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "A",
+          "s": []
+        },
+        {
+          "t": "city|strong=\"G4172\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "set|strong=\"G2749\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on|strong=\"G1883\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "hill|strong=\"G3735\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "cannot|strong=\"G1410\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "hid|strong=\"G2928\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "\\wj \\+w Neither|strong=\"G3761\"\\+w* do men \\+w light|strong=\"G2545\"\\+w* \\+w a candle|strong=\"G3088\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w put|strong=\"G5087\"\\+w* \\+w it|strong=\"G0846\"\\+w* \\+w under|strong=\"G5259\"\\+w* \\+w a bushel|strong=\"G3426\"\\+w*, \\+w but|strong=\"G0235\"\\+w* \\+w on|strong=\"G1909\"\\+w* \\+w a candlestick|strong=\"G3087\"\\+w*; \\+w and|strong=\"G2532\"\\+w* \\+w it giveth light|strong=\"G2989\"\\+w* \\+w unto all|strong=\"G3956\"\\+w* \\+w that are|strong=\"G3588\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w the house|strong=\"G3614\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Neither|strong=\"G3761\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "men",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "light|strong=\"G2545\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "candle|strong=\"G3088\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "put|strong=\"G5087\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "under|strong=\"G5259\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "bushel|strong=\"G3426\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G0235\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on|strong=\"G1909\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "candlestick|strong=\"G3087\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "giveth",
+          "s": []
+        },
+        {
+          "t": "light|strong=\"G2989\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "all|strong=\"G3956\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "are|strong=\"G3588\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house|strong=\"G3614\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "\\wj Let \\+w your|strong=\"G5216\"\\+w* \\+w light|strong=\"G5457\"\\+w* \\+w so|strong=\"G3779\"\\+w* \\+w shine|strong=\"G2989\"\\+w* \\+w before|strong=\"G1715\"\\+w* \\+w men|strong=\"G0444\"\\+w*, \\+w that|strong=\"G3704\"\\+w* \\+w they may see|strong=\"G1492\"\\+w* \\+w your|strong=\"G5216\"\\+w* \\+w good|strong=\"G2570\"\\+w* \\+w works|strong=\"G2041\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w glorify|strong=\"G1392\"\\+w* \\+w your|strong=\"G5216\"\\+w* \\+w Father|strong=\"G3962\"\\+w* \\+w which is|strong=\"G3588\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w heaven|strong=\"G3772\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "Let",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "light|strong=\"G5457\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "so|strong=\"G3779\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shine|strong=\"G2989\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "before|strong=\"G1715\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "men|strong=\"G0444\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3704\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "see|strong=\"G1492\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "good|strong=\"G2570\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "works|strong=\"G2041\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "glorify|strong=\"G1392\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Father|strong=\"G3962\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G3588\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "\\wj ¶ \\+w Think|strong=\"G3543\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w that|strong=\"G3754\"\\+w* \\+w I am come|strong=\"G2064\"\\+w* \\+w to destroy|strong=\"G2647\"\\+w* \\+w the law|strong=\"G3551\"\\+w*, \\+w or|strong=\"G2228\"\\+w* \\+w the prophets|strong=\"G4396\"\\+w*: \\+w I am|strong=\"G2064\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w come|strong=\"G2064\"\\+w* \\+w to destroy|strong=\"G2647\"\\+w*, \\+w but|strong=\"G0235\"\\+w* \\+w to fulfil|strong=\"G4137\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Think|strong=\"G3543\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "am",
+          "s": []
+        },
+        {
+          "t": "come|strong=\"G2064\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "destroy|strong=\"G2647\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law|strong=\"G3551\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "or|strong=\"G2228\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prophets|strong=\"G4396\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "am|strong=\"G2064\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "come|strong=\"G2064\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "destroy|strong=\"G2647\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G0235\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "fulfil|strong=\"G4137\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "\\wj \\+w For|strong=\"G1063\"\\+w* \\+w verily|strong=\"G0281\"\\+w* \\+w I say|strong=\"G3004\"\\+w* \\+w unto you|strong=\"G5213\"\\+w*, \\+w Till|strong=\"G2193\"\\+w* \\+w heaven|strong=\"G3772\"\\+w* \\+w and|strong=\"G2532\"\\+w* \\+w earth|strong=\"G1093\"\\+w* \\+w pass|strong=\"G3928\"\\+w*, \\+w one|strong=\"G1520\"\\+w* \\+w jot|strong=\"G2503\"\\+w* \\+w or|strong=\"G2228\"\\+w* \\+w one|strong=\"G1520\"\\+w* \\+w tittle|strong=\"G2762\"\\+w* \\+w shall|strong=\"G3928\"\\+w* \\+w in no|strong=\"G3756\"\\+w* \\+w wise|strong=\"G3361\"\\+w* \\+w pass|strong=\"G3928\"\\+w* \\+w from|strong=\"G0575\"\\+w* \\+w the law|strong=\"G3551\"\\+w*, \\+w till|strong=\"G2193\"\\+w* \\+w all|strong=\"G3956\"\\+w* \\+w be fulfilled|strong=\"G1096\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "For|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "verily|strong=\"G0281\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Till|strong=\"G2193\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "earth|strong=\"G1093\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "pass|strong=\"G3928\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "one|strong=\"G1520\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "jot|strong=\"G2503\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "or|strong=\"G2228\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "one|strong=\"G1520\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "tittle|strong=\"G2762\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall|strong=\"G3928\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "no|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "wise|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "pass|strong=\"G3928\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "from|strong=\"G0575\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law|strong=\"G3551\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "till|strong=\"G2193\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "all|strong=\"G3956\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "fulfilled|strong=\"G1096\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "\\wj \\+w Whosoever|strong=\"G3739\"\\+w* \\+w therefore|strong=\"G3767\"\\+w* \\+w shall break|strong=\"G3089\"\\+w* \\+w one|strong=\"G1520\"\\+w* \\+w of these|strong=\"G5130\"\\+w* \\+w least|strong=\"G1646\"\\+w* \\+w commandments|strong=\"G1785\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w shall teach|strong=\"G1321\"\\+w* \\+w men|strong=\"G0444\"\\+w* \\+w so|strong=\"G3779\"\\+w*, he \\+w shall be called|strong=\"G2564\"\\+w* \\+w the least|strong=\"G1646\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w the kingdom|strong=\"G0932\"\\+w* \\+w of heaven|strong=\"G3772\"\\+w*: \\+w but|strong=\"G1161\"\\+w* \\+w whosoever|strong=\"G3739\"\\+w* \\+w shall do|strong=\"G4160\"\\+w* \\+w and|strong=\"G2532\"\\+w* \\+w teach|strong=\"G1321\"\\+w* \\+add them\\+add*, \\+w the same|strong=\"G3778\"\\+w* \\+w shall be called|strong=\"G2564\"\\+w* \\+w great|strong=\"G3173\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w the kingdom|strong=\"G0932\"\\+w* \\+w of heaven|strong=\"G3772\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Whosoever|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "therefore|strong=\"G3767\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "break|strong=\"G3089\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "one|strong=\"G1520\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "these|strong=\"G5130\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "least|strong=\"G1646\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "commandments|strong=\"G1785\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "teach|strong=\"G1321\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "men|strong=\"G0444\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "so|strong=\"G3779\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "called|strong=\"G2564\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "least|strong=\"G1646\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom|strong=\"G0932\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "do|strong=\"G4160\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "teach|strong=\"G1321\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "them\\+add*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "same|strong=\"G3778\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "called|strong=\"G2564\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "great|strong=\"G3173\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom|strong=\"G0932\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "\\wj \\+w For|strong=\"G1063\"\\+w* \\+w I say|strong=\"G3004\"\\+w* \\+w unto you|strong=\"G5213\"\\+w*, \\+w That|strong=\"G3754\"\\+w* \\+w except|strong=\"G1437\"\\+w* \\+w your|strong=\"G5216\"\\+w* \\+w righteousness|strong=\"G1343\"\\+w* \\+w shall exceed|strong=\"G4052\"\\+w* \\+add the righteousness\\+add* \\+w of the scribes|strong=\"G1122\"\\+w* \\+w and|strong=\"G2532\"\\+w* \\+w Pharisees|strong=\"G5330\"\\+w*, \\+w ye shall|strong=\"G1525\"\\+w* \\+w in no|strong=\"G3756\"\\+w* \\+w case|strong=\"G3361\"\\+w* \\+w enter|strong=\"G1525\"\\+w* \\+w into|strong=\"G1519\"\\+w* \\+w the kingdom|strong=\"G0932\"\\+w* \\+w of heaven|strong=\"G3772\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "For|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "That|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "except|strong=\"G1437\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "righteousness|strong=\"G1343\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "exceed|strong=\"G4052\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "righteousness\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "scribes|strong=\"G1122\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Pharisees|strong=\"G5330\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "shall|strong=\"G1525\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "no|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "case|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "enter|strong=\"G1525\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "into|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom|strong=\"G0932\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "\\wj ¶ \\+w Ye have heard|strong=\"G0191\"\\+w* \\+w that|strong=\"G3754\"\\+w* \\+w it was said|strong=\"G4483\"\\+w* \\+w by them of old time|strong=\"G0744\"\\+w*, \\+w Thou shalt|strong=\"G5407\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w kill|strong=\"G5407\"\\+w*; \\+w and|strong=\"G1161\"\\+w* \\+w whosoever|strong=\"G3739\"\\+w* \\+w shall kill|strong=\"G5407\"\\+w* \\+w shall be|strong=\"G2071\"\\+w* \\+w in danger|strong=\"G1777\"\\+w* \\+w of the judgment|strong=\"G2920\"\\+w*:\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Ye",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "heard|strong=\"G0191\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "said|strong=\"G4483\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "old",
+          "s": []
+        },
+        {
+          "t": "time|strong=\"G0744\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "shalt|strong=\"G5407\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "kill|strong=\"G5407\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "kill|strong=\"G5407\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be|strong=\"G2071\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "danger|strong=\"G1777\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "judgment|strong=\"G2920\"\\+w*:\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "\\wj \\+w But|strong=\"G1161\"\\+w* \\+w I|strong=\"G1473\"\\+w* \\+w say|strong=\"G3004\"\\+w* \\+w unto you|strong=\"G5213\"\\+w*, \\+w That|strong=\"G3754\"\\+w* \\+w whosoever|strong=\"G3956\"\\+w* \\+w is angry|strong=\"G3710\"\\+w* \\+w with|strong=\"G0080\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w brother|strong=\"G0080\"\\+w* \\+w without a cause|strong=\"G1500\"\\+w* \\+w shall be|strong=\"G2071\"\\+w* \\+w in danger|strong=\"G1777\"\\+w* \\+w of the judgment|strong=\"G2920\"\\+w*: \\+w and|strong=\"G1161\"\\+w* \\+w whosoever|strong=\"G3739\"\\+w* \\+w shall say|strong=\"G2036\"\\+w* \\+w to|strong=\"G0080\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w brother|strong=\"G0080\"\\+w*, \\+w Raca|strong=\"G4469\"\\+w*, \\+w shall be|strong=\"G2071\"\\+w* \\+w in danger|strong=\"G1777\"\\+w* \\+w of the council|strong=\"G4892\"\\+w*: \\+w but|strong=\"G1161\"\\+w* \\+w whosoever|strong=\"G3739\"\\+w* \\+w shall say|strong=\"G2036\"\\+w*, \\+w Thou fool|strong=\"G3474\"\\+w*, \\+w shall be|strong=\"G2071\"\\+w* \\+w in danger|strong=\"G1777\"\\+w* \\+w of|strong=\"G1519\"\\+w* \\+w hell|strong=\"G1067\"\\+w* \\+w fire|strong=\"G4442\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "But|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I|strong=\"G1473\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "That|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3956\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "angry|strong=\"G3710\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "with|strong=\"G0080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "brother|strong=\"G0080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "without",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "cause|strong=\"G1500\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be|strong=\"G2071\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "danger|strong=\"G1777\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "judgment|strong=\"G2920\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G2036\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to|strong=\"G0080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "brother|strong=\"G0080\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Raca|strong=\"G4469\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be|strong=\"G2071\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "danger|strong=\"G1777\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "council|strong=\"G4892\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G2036\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "fool|strong=\"G3474\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be|strong=\"G2071\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "danger|strong=\"G1777\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hell|strong=\"G1067\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "fire|strong=\"G4442\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "\\wj \\+w Therefore|strong=\"G3767\"\\+w* \\+w if|strong=\"G1437\"\\+w* \\+w thou bring|strong=\"G4374\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w gift|strong=\"G1435\"\\+w* \\+w to|strong=\"G1909\"\\+w* \\+w the altar|strong=\"G2379\"\\+w*, \\+w and there|strong=\"G2546\"\\+w* \\+w rememberest|strong=\"G3415\"\\+w* \\+w that|strong=\"G3754\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w brother|strong=\"G0080\"\\+w* \\+w hath|strong=\"G2192\"\\+w* \\+w ought|strong=\"G5100\"\\+w* \\+w against|strong=\"G2596\"\\+w* \\+w thee|strong=\"G4675\"\\+w*;\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Therefore|strong=\"G3767\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "if|strong=\"G1437\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "bring|strong=\"G4374\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "gift|strong=\"G1435\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to|strong=\"G1909\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "altar|strong=\"G2379\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "there|strong=\"G2546\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "rememberest|strong=\"G3415\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "brother|strong=\"G0080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hath|strong=\"G2192\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "ought|strong=\"G5100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "against|strong=\"G2596\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4675\"\\+w*;\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "\\wj \\+w Leave|strong=\"G0863\"\\+w* \\+w there|strong=\"G1563\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w gift|strong=\"G1435\"\\+w* \\+w before|strong=\"G1715\"\\+w* \\+w the altar|strong=\"G2379\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w go thy way|strong=\"G5217\"\\+w*; \\+w first|strong=\"G4412\"\\+w* \\+w be reconciled|strong=\"G1259\"\\+w* \\+w to|strong=\"G0080\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w brother|strong=\"G0080\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w then|strong=\"G5119\"\\+w* \\+w come|strong=\"G2064\"\\+w* \\+w and offer|strong=\"G4374\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w gift|strong=\"G1435\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Leave|strong=\"G0863\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "there|strong=\"G1563\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "gift|strong=\"G1435\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "before|strong=\"G1715\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "altar|strong=\"G2379\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "go",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "way|strong=\"G5217\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "first|strong=\"G4412\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "reconciled|strong=\"G1259\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to|strong=\"G0080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "brother|strong=\"G0080\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "then|strong=\"G5119\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "come|strong=\"G2064\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "offer|strong=\"G4374\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "gift|strong=\"G1435\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "\\wj \\+w Agree with|strong=\"G2132\"\\+w* \\+w thine|strong=\"G4675\"\\+w* \\+w adversary|strong=\"G0476\"\\+w* \\+w quickly|strong=\"G5035\"\\+w*, \\+w whiles|strong=\"G3755\"\\+w* \\+w thou art|strong=\"G1488\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w the way|strong=\"G3598\"\\+w* \\+w with|strong=\"G3326\"\\+w* \\+w him|strong=\"G0846\"\\+w*; \\+w lest at any time|strong=\"G3379\"\\+w* \\+w the adversary|strong=\"G0476\"\\+w* \\+w deliver|strong=\"G3860\"\\+w* \\+w thee|strong=\"G4571\"\\+w* \\+w to the judge|strong=\"G2923\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w the judge|strong=\"G2923\"\\+w* \\+w deliver|strong=\"G3860\"\\+w* \\+w thee|strong=\"G4571\"\\+w* \\+w to the officer|strong=\"G5257\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w thou be cast|strong=\"G0906\"\\+w* \\+w into|strong=\"G1519\"\\+w* \\+w prison|strong=\"G5438\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Agree",
+          "s": []
+        },
+        {
+          "t": "with|strong=\"G2132\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thine|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "adversary|strong=\"G0476\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "quickly|strong=\"G5035\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whiles|strong=\"G3755\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "art|strong=\"G1488\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "way|strong=\"G3598\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "with|strong=\"G3326\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "him|strong=\"G0846\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "lest",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "any",
+          "s": []
+        },
+        {
+          "t": "time|strong=\"G3379\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "adversary|strong=\"G0476\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "deliver|strong=\"G3860\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4571\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "judge|strong=\"G2923\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "judge|strong=\"G2923\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "deliver|strong=\"G3860\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4571\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "officer|strong=\"G5257\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "cast|strong=\"G0906\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "into|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "prison|strong=\"G5438\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "\\wj \\+w Verily|strong=\"G0281\"\\+w* \\+w I say|strong=\"G3004\"\\+w* \\+w unto thee|strong=\"G4671\"\\+w*, Thou shalt \\+w by no|strong=\"G3756\"\\+w* \\+w means|strong=\"G3361\"\\+w* \\+w come out|strong=\"G1831\"\\+w* \\+w thence|strong=\"G1564\"\\+w*, \\+w till|strong=\"G2193\"\\+w* \\+w thou hast paid|strong=\"G0591\"\\+w* \\+w the uttermost|strong=\"G2078\"\\+w* \\+w farthing|strong=\"G2835\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Verily|strong=\"G0281\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4671\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "no|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "means|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": []
+        },
+        {
+          "t": "out|strong=\"G1831\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thence|strong=\"G1564\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "till|strong=\"G2193\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "paid|strong=\"G0591\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "uttermost|strong=\"G2078\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "farthing|strong=\"G2835\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "\\wj ¶ \\+w Ye have heard|strong=\"G0191\"\\+w* \\+w that|strong=\"G3754\"\\+w* \\+w it was said|strong=\"G4483\"\\+w* \\+w by them of old time|strong=\"G0744\"\\+w*, \\+w Thou shalt|strong=\"G3431\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w commit adultery|strong=\"G3431\"\\+w*:\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Ye",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "heard|strong=\"G0191\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "said|strong=\"G4483\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "old",
+          "s": []
+        },
+        {
+          "t": "time|strong=\"G0744\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "shalt|strong=\"G3431\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "commit",
+          "s": []
+        },
+        {
+          "t": "adultery|strong=\"G3431\"\\+w*:\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "\\wj \\+w But|strong=\"G1161\"\\+w* \\+w I|strong=\"G1473\"\\+w* \\+w say|strong=\"G3004\"\\+w* \\+w unto you|strong=\"G5213\"\\+w*, \\+w That|strong=\"G3754\"\\+w* \\+w whosoever|strong=\"G3956\"\\+w* \\+w looketh|strong=\"G0991\"\\+w* \\+w on a woman|strong=\"G1135\"\\+w* \\+w to|strong=\"G4314\"\\+w* \\+w lust after|strong=\"G1937\"\\+w* \\+w her|strong=\"G0846\"\\+w* \\+w hath committed adultery|strong=\"G3431\"\\+w* \\+w with her|strong=\"G0846\"\\+w* \\+w already|strong=\"G2235\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w heart|strong=\"G2588\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "But|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I|strong=\"G1473\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "That|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3956\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "looketh|strong=\"G0991\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "woman|strong=\"G1135\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to|strong=\"G4314\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "lust",
+          "s": []
+        },
+        {
+          "t": "after|strong=\"G1937\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "her|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "committed",
+          "s": []
+        },
+        {
+          "t": "adultery|strong=\"G3431\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "her|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "already|strong=\"G2235\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heart|strong=\"G2588\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 29,
+      "text": "\\wj \\+w And|strong=\"G1161\"\\+w* \\+w if|strong=\"G1487\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w right|strong=\"G1188\"\\+w* \\+w eye|strong=\"G3788\"\\+w* \\+w offend|strong=\"G4624\"\\+w* \\+w thee|strong=\"G4571\"\\+w*, \\+w pluck|strong=\"G1807\"\\+w* \\+w it|strong=\"G0846\"\\+w* \\+w out|strong=\"G1807\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w cast|strong=\"G0906\"\\+w* \\+add it\\+add* \\+w from|strong=\"G0575\"\\+w* \\+w thee|strong=\"G4675\"\\+w*: \\+w for|strong=\"G1063\"\\+w* \\+w it is profitable|strong=\"G4851\"\\+w* \\+w for thee|strong=\"G4671\"\\+w* \\+w that|strong=\"G2443\"\\+w* \\+w one|strong=\"G1520\"\\+w* \\+w of|strong=\"G3196\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w members|strong=\"G3196\"\\+w* \\+w should perish|strong=\"G0622\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+add that\\+add* \\+w thy|strong=\"G4675\"\\+w* \\+w whole|strong=\"G3650\"\\+w* \\+w body|strong=\"G4983\"\\+w* \\+w should be cast|strong=\"G0906\"\\+w* \\+w into|strong=\"G1519\"\\+w* \\+w hell|strong=\"G1067\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "And|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "if|strong=\"G1487\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "right|strong=\"G1188\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "eye|strong=\"G3788\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "offend|strong=\"G4624\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4571\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "pluck|strong=\"G1807\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "out|strong=\"G1807\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "cast|strong=\"G0906\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "it\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "from|strong=\"G0575\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4675\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "profitable|strong=\"G4851\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4671\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G2443\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "one|strong=\"G1520\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G3196\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "members|strong=\"G3196\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "perish|strong=\"G0622\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "that\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whole|strong=\"G3650\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "body|strong=\"G4983\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "cast|strong=\"G0906\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "into|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hell|strong=\"G1067\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 30,
+      "text": "\\wj \\+w And|strong=\"G2532\"\\+w* \\+w if|strong=\"G1487\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w right|strong=\"G1188\"\\+w* \\+w hand|strong=\"G5495\"\\+w* \\+w offend|strong=\"G4624\"\\+w* \\+w thee|strong=\"G4571\"\\+w*, \\+w cut|strong=\"G1581\"\\+w* \\+w it|strong=\"G0846\"\\+w* \\+w off|strong=\"G1581\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w cast|strong=\"G0906\"\\+w* \\+add it\\+add* \\+w from|strong=\"G0575\"\\+w* \\+w thee|strong=\"G4675\"\\+w*: \\+w for|strong=\"G1063\"\\+w* \\+w it is profitable|strong=\"G4851\"\\+w* \\+w for thee|strong=\"G4671\"\\+w* \\+w that|strong=\"G2443\"\\+w* \\+w one|strong=\"G1520\"\\+w* \\+w of|strong=\"G3196\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w members|strong=\"G3196\"\\+w* \\+w should perish|strong=\"G0622\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+add that\\+add* \\+w thy|strong=\"G4675\"\\+w* \\+w whole|strong=\"G3650\"\\+w* \\+w body|strong=\"G4983\"\\+w* \\+w should be cast|strong=\"G0906\"\\+w* \\+w into|strong=\"G1519\"\\+w* \\+w hell|strong=\"G1067\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "And|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "if|strong=\"G1487\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "right|strong=\"G1188\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hand|strong=\"G5495\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "offend|strong=\"G4624\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4571\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "cut|strong=\"G1581\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "off|strong=\"G1581\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "cast|strong=\"G0906\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "it\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "from|strong=\"G0575\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4675\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "profitable|strong=\"G4851\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4671\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G2443\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "one|strong=\"G1520\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G3196\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "members|strong=\"G3196\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "perish|strong=\"G0622\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "that\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whole|strong=\"G3650\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "body|strong=\"G4983\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "cast|strong=\"G0906\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "into|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hell|strong=\"G1067\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 31,
+      "text": "\\wj \\+w It hath been said|strong=\"G4483\"\\+w*, \\+w Whosoever|strong=\"G3739\"\\+w* \\+w shall put away|strong=\"G0630\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w wife|strong=\"G1135\"\\+w*, \\+w let him give|strong=\"G1325\"\\+w* \\+w her|strong=\"G0846\"\\+w* \\+w a writing of divorcement|strong=\"G0647\"\\+w*:\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "It",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "said|strong=\"G4483\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Whosoever|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": []
+        },
+        {
+          "t": "away|strong=\"G0630\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "wife|strong=\"G1135\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "give|strong=\"G1325\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "her|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "writing",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "divorcement|strong=\"G0647\"\\+w*:\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 32,
+      "text": "\\wj \\+w But|strong=\"G1161\"\\+w* \\+w I|strong=\"G1473\"\\+w* \\+w say|strong=\"G3004\"\\+w* \\+w unto you|strong=\"G5213\"\\+w*, \\+w That|strong=\"G3754\"\\+w* \\+w whosoever|strong=\"G3739\"\\+w* \\+w shall put away|strong=\"G0630\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w wife|strong=\"G1135\"\\+w*, \\+w saving|strong=\"G3924\"\\+w* \\+w for the cause|strong=\"G3056\"\\+w* \\+w of fornication|strong=\"G4202\"\\+w*, \\+w causeth|strong=\"G4160\"\\+w* \\+w her|strong=\"G0846\"\\+w* \\+w to commit adultery|strong=\"G3429\"\\+w*: \\+w and|strong=\"G2532\"\\+w* \\+w whosoever|strong=\"G3739\"\\+w* \\+w shall marry|strong=\"G1060\"\\+w* \\+w her that is divorced|strong=\"G0630\"\\+w* \\+w committeth adultery|strong=\"G3429\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "But|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I|strong=\"G1473\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "That|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": []
+        },
+        {
+          "t": "away|strong=\"G0630\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "wife|strong=\"G1135\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "saving|strong=\"G3924\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "cause|strong=\"G3056\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "fornication|strong=\"G4202\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "causeth|strong=\"G4160\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "her|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "commit",
+          "s": []
+        },
+        {
+          "t": "adultery|strong=\"G3429\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "marry|strong=\"G1060\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "divorced|strong=\"G0630\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "committeth",
+          "s": []
+        },
+        {
+          "t": "adultery|strong=\"G3429\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 33,
+      "text": "\\wj ¶ \\+w Again|strong=\"G3825\"\\+w*, \\+w ye have heard|strong=\"G0191\"\\+w* \\+w that|strong=\"G3754\"\\+w* \\+w it hath been said|strong=\"G4483\"\\+w* \\+w by them of old time|strong=\"G0744\"\\+w*, \\+w Thou shalt|strong=\"G1964\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w forswear thyself|strong=\"G1964\"\\+w*, \\+w but|strong=\"G1161\"\\+w* \\+w shalt perform|strong=\"G0591\"\\+w* \\+w unto the Lord|strong=\"G2962\"\\+w* \\+w thine|strong=\"G4675\"\\+w* \\+w oaths|strong=\"G3727\"\\+w*:\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Again|strong=\"G3825\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "heard|strong=\"G0191\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "said|strong=\"G4483\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "old",
+          "s": []
+        },
+        {
+          "t": "time|strong=\"G0744\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "shalt|strong=\"G1964\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "forswear",
+          "s": []
+        },
+        {
+          "t": "thyself|strong=\"G1964\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "perform|strong=\"G0591\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord|strong=\"G2962\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thine|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "oaths|strong=\"G3727\"\\+w*:\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 34,
+      "text": "\\wj \\+w But|strong=\"G1161\"\\+w* \\+w I|strong=\"G1473\"\\+w* \\+w say|strong=\"G3004\"\\+w* \\+w unto you|strong=\"G5213\"\\+w*, \\+w Swear|strong=\"G3660\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w at all|strong=\"G3654\"\\+w*; \\+w neither|strong=\"G3383\"\\+w* \\+w by|strong=\"G1722\"\\+w* \\+w heaven|strong=\"G3772\"\\+w*; \\+w for|strong=\"G3754\"\\+w* \\+w it is|strong=\"G2076\"\\+w* \\+w God’s|strong=\"G2316\"\\+w* \\+w throne|strong=\"G2362\"\\+w*:\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "But|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I|strong=\"G1473\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Swear|strong=\"G3660\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "all|strong=\"G3654\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "neither|strong=\"G3383\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "by|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "God’s|strong=\"G2316\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "throne|strong=\"G2362\"\\+w*:\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 35,
+      "text": "\\wj \\+w Nor|strong=\"G3383\"\\+w* \\+w by|strong=\"G1722\"\\+w* \\+w the earth|strong=\"G1093\"\\+w*; \\+w for|strong=\"G3754\"\\+w* \\+w it is|strong=\"G2076\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w footstool|strong=\"G5286\"\\+w*: \\+w neither|strong=\"G3383\"\\+w* \\+w by|strong=\"G1519\"\\+w* \\+w Jerusalem|strong=\"G2414\"\\+w*; \\+w for|strong=\"G3754\"\\+w* \\+w it is|strong=\"G2076\"\\+w* \\+w the city|strong=\"G4172\"\\+w* \\+w of the|strong=\"G0935\"\\+w* \\+w great|strong=\"G3173\"\\+w* \\+w King|strong=\"G0935\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Nor|strong=\"G3383\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "by|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth|strong=\"G1093\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "footstool|strong=\"G5286\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "neither|strong=\"G3383\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "by|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Jerusalem|strong=\"G2414\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city|strong=\"G4172\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the|strong=\"G0935\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "great|strong=\"G3173\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "King|strong=\"G0935\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 36,
+      "text": "\\wj \\+w Neither|strong=\"G3383\"\\+w* \\+w shalt thou swear|strong=\"G3660\"\\+w* \\+w by|strong=\"G1722\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w head|strong=\"G2776\"\\+w*, \\+w because|strong=\"G3754\"\\+w* \\+w thou canst|strong=\"G1410\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w make|strong=\"G4160\"\\+w* \\+w one|strong=\"G1520\"\\+w* \\+w hair|strong=\"G2359\"\\+w* \\+w white|strong=\"G3022\"\\+w* \\+w or|strong=\"G2228\"\\+w* \\+w black|strong=\"G3189\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Neither|strong=\"G3383\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "swear|strong=\"G3660\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "by|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "head|strong=\"G2776\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "because|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "canst|strong=\"G1410\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "make|strong=\"G4160\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "one|strong=\"G1520\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hair|strong=\"G2359\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "white|strong=\"G3022\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "or|strong=\"G2228\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "black|strong=\"G3189\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 37,
+      "text": "\\wj \\+w But|strong=\"G1161\"\\+w* \\+w let|strong=\"G2077\"\\+w* \\+w your|strong=\"G5216\"\\+w* \\+w communication|strong=\"G3056\"\\+w* \\+w be|strong=\"G2077\"\\+w*, \\+w Yea|strong=\"G3483\"\\+w*, \\+w yea|strong=\"G3483\"\\+w*; \\+w Nay|strong=\"G3756\"\\+w*, \\+w nay|strong=\"G3756\"\\+w*: \\+w for|strong=\"G1161\"\\+w* \\+w whatsoever is more than|strong=\"G4053\"\\+w* \\+w these|strong=\"G5130\"\\+w* \\+w cometh|strong=\"G2076\"\\+w* \\+w of|strong=\"G1537\"\\+w* \\+w evil|strong=\"G4190\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "But|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "let|strong=\"G2077\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "communication|strong=\"G3056\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "be|strong=\"G2077\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Yea|strong=\"G3483\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "yea|strong=\"G3483\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Nay|strong=\"G3756\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "nay|strong=\"G3756\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whatsoever",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "more",
+          "s": []
+        },
+        {
+          "t": "than|strong=\"G4053\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "these|strong=\"G5130\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "cometh|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G1537\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "evil|strong=\"G4190\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 38,
+      "text": "\\wj ¶ \\+w Ye have heard|strong=\"G0191\"\\+w* \\+w that|strong=\"G3754\"\\+w* \\+w it hath been said|strong=\"G4483\"\\+w*, \\+w An eye|strong=\"G3788\"\\+w* \\+w for|strong=\"G0473\"\\+w* \\+w an eye|strong=\"G3788\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w a tooth|strong=\"G3599\"\\+w* \\+w for|strong=\"G0473\"\\+w* \\+w a tooth|strong=\"G3599\"\\+w*:\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Ye",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "heard|strong=\"G0191\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "said|strong=\"G4483\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "An",
+          "s": []
+        },
+        {
+          "t": "eye|strong=\"G3788\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G0473\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "eye|strong=\"G3788\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "tooth|strong=\"G3599\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G0473\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "tooth|strong=\"G3599\"\\+w*:\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 39,
+      "text": "\\wj \\+w But|strong=\"G1161\"\\+w* \\+w I|strong=\"G1473\"\\+w* \\+w say|strong=\"G3004\"\\+w* \\+w unto you|strong=\"G5213\"\\+w*, \\+w That ye resist|strong=\"G0436\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w evil|strong=\"G4190\"\\+w*: \\+w but|strong=\"G0235\"\\+w* \\+w whosoever|strong=\"G3748\"\\+w* \\+w shall smite|strong=\"G4474\"\\+w* \\+w thee|strong=\"G4571\"\\+w* \\+w on|strong=\"G1909\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w right|strong=\"G1188\"\\+w* \\+w cheek|strong=\"G4600\"\\+w*, \\+w turn|strong=\"G4762\"\\+w* \\+w to him|strong=\"G0846\"\\+w* \\+w the other|strong=\"G0243\"\\+w* \\+w also|strong=\"G2532\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "But|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I|strong=\"G1473\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "That",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "resist|strong=\"G0436\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "evil|strong=\"G4190\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G0235\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3748\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "smite|strong=\"G4474\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4571\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on|strong=\"G1909\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "right|strong=\"G1188\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "cheek|strong=\"G4600\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "turn|strong=\"G4762\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "him|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "other|strong=\"G0243\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "also|strong=\"G2532\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 40,
+      "text": "\\wj \\+w And if|strong=\"G2532\"\\+w* \\+w any man will|strong=\"G2309\"\\+w* \\+w sue|strong=\"G2919\"\\+w* \\+w thee|strong=\"G4671\"\\+w* \\+w at the law|strong=\"G2919\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w take away|strong=\"G2983\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w coat|strong=\"G5509\"\\+w*, \\+w let|strong=\"G0863\"\\+w* \\+w him|strong=\"G0846\"\\+w* \\+w have|strong=\"G0863\"\\+w* \\+add thy\\+add* \\+w cloke|strong=\"G2440\"\\+w* \\+w also|strong=\"G2532\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "if|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "any",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": []
+        },
+        {
+          "t": "will|strong=\"G2309\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "sue|strong=\"G2919\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4671\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law|strong=\"G2919\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "take",
+          "s": []
+        },
+        {
+          "t": "away|strong=\"G2983\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "coat|strong=\"G5509\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "let|strong=\"G0863\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "him|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "have|strong=\"G0863\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "thy\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "cloke|strong=\"G2440\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "also|strong=\"G2532\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 41,
+      "text": "\\wj \\+w And|strong=\"G2532\"\\+w* \\+w whosoever|strong=\"G3748\"\\+w* \\+w shall compel|strong=\"G0029\"\\+w* \\+w thee|strong=\"G4571\"\\+w* \\+w to go|strong=\"G0029\"\\+w* \\+w a|strong=\"G1520\"\\+w* \\+w mile|strong=\"G3400\"\\+w*, \\+w go|strong=\"G5217\"\\+w* \\+w with|strong=\"G3326\"\\+w* \\+w him|strong=\"G0846\"\\+w* \\+w twain|strong=\"G1417\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "And|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3748\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "compel|strong=\"G0029\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4571\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "go|strong=\"G0029\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a|strong=\"G1520\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "mile|strong=\"G3400\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "go|strong=\"G5217\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "with|strong=\"G3326\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "him|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "twain|strong=\"G1417\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 42,
+      "text": "\\wj \\+w Give|strong=\"G1325\"\\+w* \\+w to him that asketh|strong=\"G0154\"\\+w* \\+w thee|strong=\"G4571\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w from|strong=\"G0575\"\\+w* \\+w him that would|strong=\"G2309\"\\+w* \\+w borrow|strong=\"G1155\"\\+w* \\+w of thee|strong=\"G4675\"\\+w* \\+w turn|strong=\"G0654\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w thou away|strong=\"G0654\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Give|strong=\"G1325\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "asketh|strong=\"G0154\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4571\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "from|strong=\"G0575\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "would|strong=\"G2309\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "borrow|strong=\"G1155\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "turn|strong=\"G0654\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "away|strong=\"G0654\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 43,
+      "text": "\\wj ¶ \\+w Ye have heard|strong=\"G0191\"\\+w* \\+w that|strong=\"G3754\"\\+w* \\+w it hath been said|strong=\"G4483\"\\+w*, \\+w Thou shalt love|strong=\"G0025\"\\+w* \\+w thy|strong=\"G4675\"\\+w* \\+w neighbour|strong=\"G4139\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w hate|strong=\"G3404\"\\+w* \\+w thine|strong=\"G4675\"\\+w* \\+w enemy|strong=\"G2190\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Ye",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "heard|strong=\"G0191\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "said|strong=\"G4483\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "love|strong=\"G0025\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "neighbour|strong=\"G4139\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hate|strong=\"G3404\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thine|strong=\"G4675\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "enemy|strong=\"G2190\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 44,
+      "text": "\\wj \\+w But|strong=\"G1161\"\\+w* \\+w I|strong=\"G1473\"\\+w* \\+w say|strong=\"G3004\"\\+w* \\+w unto you|strong=\"G5213\"\\+w*, \\+w Love|strong=\"G0025\"\\+w* \\+w your|strong=\"G5216\"\\+w* \\+w enemies|strong=\"G2190\"\\+w*, \\+w bless|strong=\"G2127\"\\+w* \\+w them that curse|strong=\"G2672\"\\+w* \\+w you|strong=\"G5209\"\\+w*, \\+w do|strong=\"G4160\"\\+w* \\+w good|strong=\"G2573\"\\+w* \\+w to them that hate|strong=\"G3404\"\\+w* \\+w you|strong=\"G5209\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w pray|strong=\"G4336\"\\+w* \\+w for|strong=\"G5228\"\\+w* \\+w them which despitefully use|strong=\"G1908\"\\+w* \\+w you|strong=\"G5209\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w persecute|strong=\"G1377\"\\+w* \\+w you|strong=\"G5209\"\\+w*;\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "But|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I|strong=\"G1473\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Love|strong=\"G0025\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "enemies|strong=\"G2190\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "bless|strong=\"G2127\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "curse|strong=\"G2672\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5209\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "do|strong=\"G4160\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "good|strong=\"G2573\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "hate|strong=\"G3404\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5209\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "pray|strong=\"G4336\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G5228\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "despitefully",
+          "s": []
+        },
+        {
+          "t": "use|strong=\"G1908\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5209\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "persecute|strong=\"G1377\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5209\"\\+w*;\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 45,
+      "text": "\\wj \\+w That|strong=\"G3704\"\\+w* \\+w ye may be|strong=\"G1096\"\\+w* \\+w the children|strong=\"G5207\"\\+w* \\+w of your|strong=\"G5216\"\\+w* \\+w Father|strong=\"G3962\"\\+w* \\+w which is|strong=\"G3588\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w heaven|strong=\"G3772\"\\+w*: \\+w for|strong=\"G3754\"\\+w* \\+w he maketh|strong=\"G0393\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w sun|strong=\"G2246\"\\+w* \\+w to rise|strong=\"G0393\"\\+w* \\+w on|strong=\"G1909\"\\+w* \\+w the evil|strong=\"G4190\"\\+w* \\+w and|strong=\"G2532\"\\+w* \\+w on the good|strong=\"G0018\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w sendeth rain|strong=\"G1026\"\\+w* \\+w on|strong=\"G1909\"\\+w* \\+w the just|strong=\"G1342\"\\+w* \\+w and|strong=\"G2532\"\\+w* \\+w on the unjust|strong=\"G0094\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "That|strong=\"G3704\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "be|strong=\"G1096\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children|strong=\"G5207\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Father|strong=\"G3962\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G3588\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "maketh|strong=\"G0393\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "sun|strong=\"G2246\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "rise|strong=\"G0393\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on|strong=\"G1909\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "evil|strong=\"G4190\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "good|strong=\"G0018\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "sendeth",
+          "s": []
+        },
+        {
+          "t": "rain|strong=\"G1026\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on|strong=\"G1909\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "just|strong=\"G1342\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "unjust|strong=\"G0094\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 46,
+      "text": "\\wj \\+w For|strong=\"G1063\"\\+w* \\+w if|strong=\"G1437\"\\+w* \\+w ye love|strong=\"G0025\"\\+w* \\+w them which love|strong=\"G0025\"\\+w* \\+w you|strong=\"G5209\"\\+w*, \\+w what|strong=\"G5101\"\\+w* \\+w reward|strong=\"G3408\"\\+w* \\+w have ye|strong=\"G2192\"\\+w*? \\+w do|strong=\"G4160\"\\+w* \\+w not|strong=\"G3780\"\\+w* \\+w even|strong=\"G2532\"\\+w* \\+w the publicans|strong=\"G5057\"\\+w* \\+w the same|strong=\"G0846\"\\+w*?\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "For|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "if|strong=\"G1437\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "love|strong=\"G0025\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "love|strong=\"G0025\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5209\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "what|strong=\"G5101\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "reward|strong=\"G3408\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "ye|strong=\"G2192\"\\+w*?",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "do|strong=\"G4160\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3780\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "even|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "publicans|strong=\"G5057\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "same|strong=\"G0846\"\\+w*?\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 47,
+      "text": "\\wj \\+w And|strong=\"G2532\"\\+w* \\+w if|strong=\"G1437\"\\+w* \\+w ye salute|strong=\"G0782\"\\+w* \\+w your|strong=\"G5216\"\\+w* \\+w brethren|strong=\"G0080\"\\+w* \\+w only|strong=\"G3440\"\\+w*, \\+w what|strong=\"G5101\"\\+w* \\+w do|strong=\"G4160\"\\+w* ye \\+w more|strong=\"G4053\"\\+w* \\+add than others\\+add*? \\+w do|strong=\"G4160\"\\+w* \\+w not|strong=\"G3780\"\\+w* \\+w even|strong=\"G2532\"\\+w* \\+w the publicans|strong=\"G5057\"\\+w* \\+w so|strong=\"G3779\"\\+w*?\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "And|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "if|strong=\"G1437\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "salute|strong=\"G0782\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "brethren|strong=\"G0080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "only|strong=\"G3440\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "what|strong=\"G5101\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "do|strong=\"G4160\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "more|strong=\"G4053\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "than",
+          "s": []
+        },
+        {
+          "t": "others\\+add*?",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "do|strong=\"G4160\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3780\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "even|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "publicans|strong=\"G5057\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "so|strong=\"G3779\"\\+w*?\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 48,
+      "text": "\\wj \\+w Be|strong=\"G2071\"\\+w* \\+w ye|strong=\"G5210\"\\+w* \\+w therefore|strong=\"G3767\"\\+w* \\+w perfect|strong=\"G5046\"\\+w*, \\+w even as|strong=\"G5618\"\\+w* \\+w your|strong=\"G5216\"\\+w* \\+w Father|strong=\"G3962\"\\+w* \\+w which is|strong=\"G3588\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w heaven|strong=\"G3772\"\\+w* \\+w is|strong=\"G2076\"\\+w* \\+w perfect|strong=\"G5046\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Be|strong=\"G2071\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "ye|strong=\"G5210\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "therefore|strong=\"G3767\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "perfect|strong=\"G5046\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "as|strong=\"G5618\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "your|strong=\"G5216\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Father|strong=\"G3962\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G3588\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "perfect|strong=\"G5046\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2764 @@
+{
+  "book_id": "1TI",
+  "chapter": 1,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Paul , an apostle of Jesus Christ by the commandment of God our Saviour , and Lord Jesus Christ , \\add which is\\add* our hope ;",
+      "tokens": [
+        {
+          "t": "Paul",
+          "s": [
+            "G3972"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "apostle",
+          "s": [
+            "G0652"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": "by",
+          "s": [
+            "G2596"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "commandment",
+          "s": [
+            "G2003"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "our",
+          "s": [
+            "G2257"
+          ]
+        },
+        {
+          "t": "Saviour",
+          "s": [
+            "G4990"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "our",
+          "s": [
+            "G2257"
+          ]
+        },
+        {
+          "t": "hope",
+          "s": [
+            "G1680"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "Unto Timothy , \\add my\\add* own son in the faith : Grace , mercy , \\add and\\add* peace , from God our Father and Jesus Christ our Lord. \\p",
+      "tokens": [
+        {
+          "t": "Unto",
+          "s": []
+        },
+        {
+          "t": "Timothy",
+          "s": [
+            "G5095"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "my\\add*",
+          "s": []
+        },
+        {
+          "t": "own",
+          "s": [
+            "G1103"
+          ]
+        },
+        {
+          "t": "son",
+          "s": [
+            "G5043"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "faith",
+          "s": [
+            "G4102"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "Grace",
+          "s": [
+            "G5485"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "mercy",
+          "s": [
+            "G1656"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "peace",
+          "s": [
+            "G1515"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "our",
+          "s": [
+            "G2257"
+          ]
+        },
+        {
+          "t": "Father",
+          "s": [
+            "G3962"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": "our",
+          "s": [
+            "G2257"
+          ]
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "As I besought thee to abide still at Ephesus , when I went into Macedonia , that thou mightest charge some that they teach no other doctrine ,",
+      "tokens": [
+        {
+          "t": "As",
+          "s": [
+            "G2531"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "besought",
+          "s": [
+            "G3870"
+          ]
+        },
+        {
+          "t": "thee",
+          "s": [
+            "G4571"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "abide",
+          "s": []
+        },
+        {
+          "t": "still",
+          "s": [
+            "G4357"
+          ]
+        },
+        {
+          "t": "at",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "Ephesus",
+          "s": [
+            "G2181"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": [
+            "G4198"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "Macedonia",
+          "s": [
+            "G3109"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G2443"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "mightest",
+          "s": []
+        },
+        {
+          "t": "charge",
+          "s": [
+            "G3853"
+          ]
+        },
+        {
+          "t": "some",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "teach",
+          "s": [
+            "G2085"
+          ]
+        },
+        {
+          "t": "no",
+          "s": [
+            "G3361"
+          ]
+        },
+        {
+          "t": "other",
+          "s": []
+        },
+        {
+          "t": "doctrine",
+          "s": [
+            "G2085"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "Neither give heed to fables and endless genealogies , which minister questions , rather than godly edifying which is in faith : \\add so do\\add*.",
+      "tokens": [
+        {
+          "t": "Neither",
+          "s": [
+            "G3366"
+          ]
+        },
+        {
+          "t": "give",
+          "s": []
+        },
+        {
+          "t": "heed",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": [
+            "G4337"
+          ]
+        },
+        {
+          "t": "fables",
+          "s": [
+            "G3454"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "endless",
+          "s": [
+            "G0562"
+          ]
+        },
+        {
+          "t": "genealogies",
+          "s": [
+            "G1076"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": [
+            "G3748"
+          ]
+        },
+        {
+          "t": "minister",
+          "s": [
+            "G3930"
+          ]
+        },
+        {
+          "t": "questions",
+          "s": [
+            "G2214"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "rather",
+          "s": [
+            "G3123"
+          ]
+        },
+        {
+          "t": "than",
+          "s": [
+            "G2228"
+          ]
+        },
+        {
+          "t": "godly",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "edifying",
+          "s": [
+            "G3620"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": [
+            "G3588"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "faith",
+          "s": [
+            "G4102"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "do\\add*.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Now the end of the commandment is charity out of a pure heart , and \\add of\\add* a good conscience , and \\add of\\add* faith unfeigned :",
+      "tokens": [
+        {
+          "t": "Now",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "end",
+          "s": [
+            "G5056"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "commandment",
+          "s": [
+            "G3852"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "charity",
+          "s": [
+            "G0026"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "pure",
+          "s": [
+            "G2513"
+          ]
+        },
+        {
+          "t": "heart",
+          "s": [
+            "G2588"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "good",
+          "s": [
+            "G0018"
+          ]
+        },
+        {
+          "t": "conscience",
+          "s": [
+            "G4893"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "faith",
+          "s": [
+            "G4102"
+          ]
+        },
+        {
+          "t": "unfeigned",
+          "s": [
+            "G0505"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "From which some having swerved have turned aside unto vain jangling ;",
+      "tokens": [
+        {
+          "t": "From",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "some",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "having",
+          "s": []
+        },
+        {
+          "t": "swerved",
+          "s": [
+            "G0795"
+          ]
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "turned",
+          "s": []
+        },
+        {
+          "t": "aside",
+          "s": [
+            "G1624"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "vain",
+          "s": []
+        },
+        {
+          "t": "jangling",
+          "s": [
+            "G3150"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "Desiring to be teachers of the law ; understanding neither what they say , nor whereof they affirm.",
+      "tokens": [
+        {
+          "t": "Desiring",
+          "s": [
+            "G2309"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "G1511"
+          ]
+        },
+        {
+          "t": "teachers",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law",
+          "s": [
+            "G3547"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "understanding",
+          "s": [
+            "G3539"
+          ]
+        },
+        {
+          "t": "neither",
+          "s": [
+            "G3383"
+          ]
+        },
+        {
+          "t": "what",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "say",
+          "s": [
+            "G3004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": [
+            "G3383"
+          ]
+        },
+        {
+          "t": "whereof",
+          "s": [
+            "G4012"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "affirm",
+          "s": [
+            "G1226"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "But we know that the law \\add is\\add* good , if a man use it lawfully ;",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "know",
+          "s": [
+            "G1492"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law",
+          "s": [
+            "G3551"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "good",
+          "s": [
+            "G2570"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "if",
+          "s": [
+            "G1437"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "use",
+          "s": [
+            "G5530"
+          ]
+        },
+        {
+          "t": "it",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "lawfully",
+          "s": [
+            "G3545"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Knowing this , that the law is not made for a righteous man , but for the lawless and disobedient , for the ungodly and for sinners , for unholy and profane , for murderers of fathers and murderers of mothers , for manslayers ,",
+      "tokens": [
+        {
+          "t": "Knowing",
+          "s": [
+            "G1492"
+          ]
+        },
+        {
+          "t": "this",
+          "s": [
+            "G5124"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law",
+          "s": [
+            "G3551"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2749"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G2749"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "righteous",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G1342"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "lawless",
+          "s": [
+            "G0459"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "disobedient",
+          "s": [
+            "G0506"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ungodly",
+          "s": [
+            "G0765"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "sinners",
+          "s": [
+            "G0268"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "unholy",
+          "s": [
+            "G0462"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "profane",
+          "s": [
+            "G0952"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "murderers",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "fathers",
+          "s": [
+            "G3964"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "murderers",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "mothers",
+          "s": [
+            "G3389"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "manslayers",
+          "s": [
+            "G0409"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "For whoremongers , for them that defile themselves with mankind , for menstealers , for liars , for perjured persons , and if there be any other thing that is contrary to sound doctrine ;",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "whoremongers",
+          "s": [
+            "G4205"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "defile",
+          "s": []
+        },
+        {
+          "t": "themselves",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "mankind",
+          "s": [
+            "G0733"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "menstealers",
+          "s": [
+            "G0405"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "liars",
+          "s": [
+            "G5583"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "perjured",
+          "s": []
+        },
+        {
+          "t": "persons",
+          "s": [
+            "G1965"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "if",
+          "s": [
+            "G1487"
+          ]
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "G0480"
+          ]
+        },
+        {
+          "t": "any",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "other",
+          "s": []
+        },
+        {
+          "t": "thing",
+          "s": [
+            "G2087"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "contrary",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": [
+            "G0480"
+          ]
+        },
+        {
+          "t": "sound",
+          "s": [
+            "G5198"
+          ]
+        },
+        {
+          "t": "doctrine",
+          "s": [
+            "G1319"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "According to the glorious gospel of the blessed God , which was committed to my trust.",
+      "tokens": [
+        {
+          "t": "According",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": [
+            "G2596"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "glorious",
+          "s": [
+            "G1391"
+          ]
+        },
+        {
+          "t": "gospel",
+          "s": [
+            "G2098"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "blessed",
+          "s": [
+            "G3107"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "committed",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": [
+            "G4100"
+          ]
+        },
+        {
+          "t": "my",
+          "s": [
+            "G1473"
+          ]
+        },
+        {
+          "t": "trust",
+          "s": [
+            "G4100"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "And I thank Christ Jesus our Lord , who hath enabled me , for that he counted me faithful , putting me into the ministry ;",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "I",
+          "s": [
+            "G2192"
+          ]
+        },
+        {
+          "t": "thank",
+          "s": [
+            "G5485"
+          ]
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "our",
+          "s": [
+            "G2257"
+          ]
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "who",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "enabled",
+          "s": [
+            "G1743"
+          ]
+        },
+        {
+          "t": "me",
+          "s": [
+            "G3165"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "counted",
+          "s": [
+            "G2233"
+          ]
+        },
+        {
+          "t": "me",
+          "s": [
+            "G3165"
+          ]
+        },
+        {
+          "t": "faithful",
+          "s": [
+            "G4103"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "putting",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": [
+            "G5087"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ministry",
+          "s": [
+            "G1248"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "Who was before a blasphemer , and a persecutor , and injurious : but I obtained mercy , because I did \\add it\\add* ignorantly in unbelief.",
+      "tokens": [
+        {
+          "t": "Who",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": [
+            "G5607"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "G4386"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "blasphemer",
+          "s": [
+            "G0989"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "persecutor",
+          "s": [
+            "G1376"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "injurious",
+          "s": [
+            "G5197"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G0235"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "obtained",
+          "s": []
+        },
+        {
+          "t": "mercy",
+          "s": [
+            "G1653"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": [
+            "G4160"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*",
+          "s": []
+        },
+        {
+          "t": "ignorantly",
+          "s": [
+            "G0050"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "unbelief",
+          "s": [
+            "G0570"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "And the grace of our Lord was exceeding abundant with faith and love which is in Christ Jesus.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "grace",
+          "s": [
+            "G5485"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "our",
+          "s": [
+            "G2257"
+          ]
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "exceeding",
+          "s": []
+        },
+        {
+          "t": "abundant",
+          "s": [
+            "G5250"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G3326"
+          ]
+        },
+        {
+          "t": "faith",
+          "s": [
+            "G4102"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "love",
+          "s": [
+            "G0026"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": [
+            "G3588"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "This \\add is\\add* a faithful saying , and worthy of all acceptation , that Christ Jesus came into the world to save sinners ; of whom I am chief.",
+      "tokens": [
+        {
+          "t": "This",
+          "s": [
+            "G3588"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "faithful",
+          "s": [
+            "G4103"
+          ]
+        },
+        {
+          "t": "saying",
+          "s": [
+            "G3056"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "worthy",
+          "s": [
+            "G0514"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "acceptation",
+          "s": [
+            "G0594"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "came",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "world",
+          "s": [
+            "G2889"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "save",
+          "s": [
+            "G4982"
+          ]
+        },
+        {
+          "t": "sinners",
+          "s": [
+            "G0268"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "I",
+          "s": [
+            "G1473"
+          ]
+        },
+        {
+          "t": "am",
+          "s": [
+            "G1510"
+          ]
+        },
+        {
+          "t": "chief",
+          "s": [
+            "G4413"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "Howbeit for this cause I obtained mercy , that in me first Jesus Christ might shew forth all longsuffering , for a pattern to them which should hereafter believe on him to life everlasting.",
+      "tokens": [
+        {
+          "t": "Howbeit",
+          "s": [
+            "G0235"
+          ]
+        },
+        {
+          "t": "for",
+          "s": [
+            "G1223"
+          ]
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "cause",
+          "s": [
+            "G5124"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "obtained",
+          "s": []
+        },
+        {
+          "t": "mercy",
+          "s": [
+            "G1653"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G2443"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "me",
+          "s": [
+            "G1698"
+          ]
+        },
+        {
+          "t": "first",
+          "s": [
+            "G4413"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": "might",
+          "s": []
+        },
+        {
+          "t": "shew",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "G1731"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "longsuffering",
+          "s": [
+            "G3115"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G4314"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "pattern",
+          "s": [
+            "G5296"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "hereafter",
+          "s": [
+            "G3195"
+          ]
+        },
+        {
+          "t": "believe",
+          "s": [
+            "G4100"
+          ]
+        },
+        {
+          "t": "on",
+          "s": [
+            "G1909"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "life",
+          "s": [
+            "G2222"
+          ]
+        },
+        {
+          "t": "everlasting",
+          "s": [
+            "G0166"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Now unto the King eternal , immortal , invisible , the only wise God , \\add be\\add* honour and glory for ever and ever. Amen.",
+      "tokens": [
+        {
+          "t": "Now",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "King",
+          "s": [
+            "G0935"
+          ]
+        },
+        {
+          "t": "eternal",
+          "s": [
+            "G0165"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "immortal",
+          "s": [
+            "G0862"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "invisible",
+          "s": [
+            "G0517"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "only",
+          "s": [
+            "G3441"
+          ]
+        },
+        {
+          "t": "wise",
+          "s": [
+            "G4680"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "honour",
+          "s": [
+            "G5092"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "glory",
+          "s": [
+            "G1391"
+          ]
+        },
+        {
+          "t": "for",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "ever",
+          "s": [
+            "G0165"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "ever",
+          "s": [
+            "G0165"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "Amen",
+          "s": [
+            "G0281"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "This charge I commit unto thee , son Timothy , according to the prophecies which went before on thee , that thou by them mightest war a good warfare ;",
+      "tokens": [
+        {
+          "t": "This",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "charge",
+          "s": [
+            "G3852"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "commit",
+          "s": [
+            "G3908"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": [
+            "G4671"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "G5043"
+          ]
+        },
+        {
+          "t": "Timothy",
+          "s": [
+            "G5095"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "according",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": [
+            "G2596"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prophecies",
+          "s": [
+            "G4394"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": [
+            "G4254"
+          ]
+        },
+        {
+          "t": "on",
+          "s": [
+            "G1909"
+          ]
+        },
+        {
+          "t": "thee",
+          "s": [
+            "G4571"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G2443"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": [
+            "G4754"
+          ]
+        },
+        {
+          "t": "by",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "mightest",
+          "s": []
+        },
+        {
+          "t": "war",
+          "s": [
+            "G4754"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "good",
+          "s": [
+            "G2570"
+          ]
+        },
+        {
+          "t": "warfare",
+          "s": [
+            "G4752"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "Holding faith , and a good conscience ; which some having put away concerning faith have made shipwreck :",
+      "tokens": [
+        {
+          "t": "Holding",
+          "s": [
+            "G2192"
+          ]
+        },
+        {
+          "t": "faith",
+          "s": [
+            "G4102"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "good",
+          "s": [
+            "G0018"
+          ]
+        },
+        {
+          "t": "conscience",
+          "s": [
+            "G4893"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "some",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "having",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "G0683"
+          ]
+        },
+        {
+          "t": "concerning",
+          "s": [
+            "G4012"
+          ]
+        },
+        {
+          "t": "faith",
+          "s": [
+            "G4102"
+          ]
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "shipwreck",
+          "s": [
+            "G3489"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "Of whom is Hymenaeus and Alexander ; whom I have delivered unto Satan , that they may learn not to blaspheme.",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "Hymenaeus",
+          "s": [
+            "G5211"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "Alexander",
+          "s": [
+            "G0223"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "delivered",
+          "s": [
+            "G3860"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Satan",
+          "s": [
+            "G4567"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G2443"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "learn",
+          "s": [
+            "G3811"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3361"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "blaspheme",
+          "s": [
+            "G0987"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6692 @@
+{
+  "book_id": "JOS",
+  "chapter": 15,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "\\add This\\add* then was the lot of the tribe of the children of Judah by their families ; \\add even\\add* to the border of Edom the wilderness of Zin southward \\add was\\add* the uttermost part of the south coast.",
+      "tokens": [
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "This\\add*",
+          "s": []
+        },
+        {
+          "t": "then",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "lot",
+          "s": [
+            "H1486"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tribe",
+          "s": [
+            "H4294"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "families",
+          "s": [
+            "H4940"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "even\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Edom",
+          "s": [
+            "H0123"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wilderness",
+          "s": [
+            "H4057"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Zin",
+          "s": [
+            "H6790"
+          ]
+        },
+        {
+          "t": "southward",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "uttermost",
+          "s": []
+        },
+        {
+          "t": "part",
+          "s": [
+            "H7097"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "south",
+          "s": []
+        },
+        {
+          "t": "coast",
+          "s": [
+            "H8486"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "And their south border was from the shore of the salt sea , from the bay that looketh southward :\\f + \\fr 15.2 \\ft bay: Heb. tongue\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "south",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "shore",
+          "s": [
+            "H7097"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "salt",
+          "s": [
+            "H4417"
+          ]
+        },
+        {
+          "t": "sea",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bay",
+          "s": [
+            "H3956"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "looketh",
+          "s": [
+            "H6437"
+          ]
+        },
+        {
+          "t": "southward",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": ":\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "15.2",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "bay:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "tongue\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "And it went out to the south side to Maaleh-acrabbim , and passed along to Zin , and ascended up on the south side unto Kadesh-barnea , and passed along to Hezron , and went up to Adar , and fetched a compass to Karkaa :\\f + \\fr 15.3 \\ft Maaleh-acrabbim: or, the going up to Acrabbim\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "south",
+          "s": []
+        },
+        {
+          "t": "side",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Maaleh-acrabbim",
+          "s": [
+            "H4610"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "passed",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "along",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Zin",
+          "s": [
+            "H6790"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "ascended",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "south",
+          "s": []
+        },
+        {
+          "t": "side",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Kadesh-barnea",
+          "s": [
+            "H6947"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "passed",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "along",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Hezron",
+          "s": [
+            "H2696"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Adar",
+          "s": [
+            "H0146"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "fetched",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "compass",
+          "s": [
+            "H5437"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Karkaa",
+          "s": [
+            "H7173"
+          ]
+        },
+        {
+          "t": ":\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "15.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Maaleh-acrabbim:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "going",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Acrabbim\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "\\add From thence\\add* it passed toward Azmon , and went out unto the river of Egypt ; and the goings out of that coast were at the sea : this shall be your south coast.",
+      "tokens": [
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "From",
+          "s": []
+        },
+        {
+          "t": "thence\\add*",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "passed",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "toward",
+          "s": []
+        },
+        {
+          "t": "Azmon",
+          "s": [
+            "H6111"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "river",
+          "s": [
+            "H5158"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Egypt",
+          "s": [
+            "H4714"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "goings",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H8444"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "coast",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sea",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "south",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": "coast",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "And the east border \\add was\\add* the salt sea , \\add even\\add* unto the end of Jordan. And \\add their\\add* border in the north quarter \\add was\\add* from the bay of the sea at the uttermost part of Jordan :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "east",
+          "s": [
+            "H6924"
+          ]
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "salt",
+          "s": [
+            "H4417"
+          ]
+        },
+        {
+          "t": "sea",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "even\\add*",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "end",
+          "s": [
+            "H7097"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jordan",
+          "s": [
+            "H3383"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "their\\add*",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "north",
+          "s": [
+            "H6828"
+          ]
+        },
+        {
+          "t": "quarter",
+          "s": [
+            "H6285"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bay",
+          "s": [
+            "H3956"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sea",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "uttermost",
+          "s": []
+        },
+        {
+          "t": "part",
+          "s": [
+            "H7097"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jordan",
+          "s": [
+            "H3383"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "And the border went up to Beth-hogla , and passed along by the north of Beth-arabah ; and the border went up to the stone of Bohan the son of Reuben :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Beth-hogla",
+          "s": [
+            "H1031"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "passed",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "along",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "north",
+          "s": [
+            "H6828"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Beth-arabah",
+          "s": [
+            "H1026"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "stone",
+          "s": [
+            "H0068"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Bohan",
+          "s": [
+            "H0932"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Reuben",
+          "s": [
+            "H7205"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "And the border went up toward Debir from the valley of Achor , and so northward , looking toward Gilgal , that \\add is\\add* before the going up to Adummim , which \\add is\\add* on the south side of the river : and the border passed toward the waters of En-shemesh , and the goings out thereof were at En-rogel :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "toward",
+          "s": []
+        },
+        {
+          "t": "Debir",
+          "s": [
+            "H1688"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "valley",
+          "s": [
+            "H6010"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Achor",
+          "s": [
+            "H5911"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "northward",
+          "s": [
+            "H6828"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "looking",
+          "s": [
+            "H6437"
+          ]
+        },
+        {
+          "t": "toward",
+          "s": []
+        },
+        {
+          "t": "Gilgal",
+          "s": [
+            "H1537"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": [
+            "H5227"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "going",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H4608"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Adummim",
+          "s": [
+            "H0131"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "south",
+          "s": []
+        },
+        {
+          "t": "side",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "river",
+          "s": [
+            "H5158"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "passed",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "toward",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "waters",
+          "s": [
+            "H4325"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "En-shemesh",
+          "s": [
+            "H5885"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "goings",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H8444"
+          ]
+        },
+        {
+          "t": "thereof",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "En-rogel",
+          "s": [
+            "H5883"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "And the border went up by the valley of the son of Hinnom unto the south side of the Jebusite ; the same \\add is\\add* Jerusalem : and the border went up to the top of the mountain that \\add lieth\\add* before the valley of Hinnom westward , which \\add is\\add* at the end of the valley of the giants northward :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "valley",
+          "s": [
+            "H1516"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Hinnom",
+          "s": [
+            "H2011"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "south",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": "side",
+          "s": [
+            "H3802"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jebusite",
+          "s": [
+            "H2983"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "same",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "top",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "mountain",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "lieth\\add*",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "valley",
+          "s": [
+            "H1516"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Hinnom",
+          "s": [
+            "H2011"
+          ]
+        },
+        {
+          "t": "westward",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "end",
+          "s": [
+            "H7097"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "valley",
+          "s": [
+            "H6010"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "giants",
+          "s": [
+            "H7497"
+          ]
+        },
+        {
+          "t": "northward",
+          "s": [
+            "H6828"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "And the border was drawn from the top of the hill unto the fountain of the water of Nephtoah , and went out to the cities of mount Ephron ; and the border was drawn to Baalah , which \\add is\\add* Kirjath-jearim :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "drawn",
+          "s": [
+            "H8388"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "top",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hill",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fountain",
+          "s": [
+            "H4599"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "water",
+          "s": [
+            "H4325"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Nephtoah",
+          "s": [
+            "H5318"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "mount",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "Ephron",
+          "s": [
+            "H6085"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "drawn",
+          "s": [
+            "H8388"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Baalah",
+          "s": [
+            "H1173"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "Kirjath-jearim",
+          "s": [
+            "H7157"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "And the border compassed from Baalah westward unto mount Seir , and passed along unto the side of mount Jearim , which \\add is\\add* Chesalon , on the north side , and went down to Beth-shemesh , and passed on to Timnah :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "compassed",
+          "s": [
+            "H5437"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "Baalah",
+          "s": [
+            "H1173"
+          ]
+        },
+        {
+          "t": "westward",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "mount",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "Seir",
+          "s": [
+            "H8165"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "passed",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "along",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "side",
+          "s": [
+            "H3802"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "mount",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "Jearim",
+          "s": [
+            "H3297"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "Chesalon",
+          "s": [
+            "H3693"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "north",
+          "s": []
+        },
+        {
+          "t": "side",
+          "s": [
+            "H6828"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H3381"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Beth-shemesh",
+          "s": [
+            "H1053"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "passed",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Timnah",
+          "s": [
+            "H8553"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "And the border went out unto the side of Ekron northward : and the border was drawn to Shicron , and passed along to mount Baalah , and went out unto Jabneel ; and the goings out of the border were at the sea.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "side",
+          "s": [
+            "H3802"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Ekron",
+          "s": [
+            "H6138"
+          ]
+        },
+        {
+          "t": "northward",
+          "s": [
+            "H6828"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "drawn",
+          "s": [
+            "H8388"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Shicron",
+          "s": [
+            "H7942"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "passed",
+          "s": []
+        },
+        {
+          "t": "along",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "mount",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "Baalah",
+          "s": [
+            "H1173"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Jabneel",
+          "s": [
+            "H2995"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "goings",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H8444"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sea",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "And the west border \\add was\\add* to the great sea , and the coast \\add thereof\\add*. This \\add is\\add* the coast of the children of Judah round about according to their families. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "west",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": [
+            "H1419"
+          ]
+        },
+        {
+          "t": "sea",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "coast",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "thereof\\add*.",
+          "s": []
+        },
+        {
+          "t": "This",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "coast",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "round",
+          "s": []
+        },
+        {
+          "t": "about",
+          "s": [
+            "H5439"
+          ]
+        },
+        {
+          "t": "according",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "families",
+          "s": [
+            "H4940"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "¶ And unto Caleb the son of Jephunneh he gave a part among the children of Judah , according to the commandment of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* to Joshua , \\add even\\add* the city of Arba the father of Anak , which \\add city is\\add* Hebron.\\f + \\fr 15.13 \\ft the city…: or, Kirjath-arba\\f*",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Caleb",
+          "s": [
+            "H3612"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jephunneh",
+          "s": [
+            "H3312"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "part",
+          "s": [
+            "H2506"
+          ]
+        },
+        {
+          "t": "among",
+          "s": [
+            "H8432"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "according",
+          "s": [
+            "H0413"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "commandment",
+          "s": [
+            "H6310"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Joshua",
+          "s": [
+            "H3091"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "even\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H7151"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Arba",
+          "s": [
+            "H0704"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Anak",
+          "s": [
+            "H6061"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "Hebron",
+          "s": [
+            "H2275"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "15.13",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "Kirjath-arba\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "And Caleb drove thence the three sons of Anak , Sheshai , and Ahiman , and Talmai , the children of Anak.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Caleb",
+          "s": [
+            "H3612"
+          ]
+        },
+        {
+          "t": "drove",
+          "s": [
+            "H3423"
+          ]
+        },
+        {
+          "t": "thence",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "three",
+          "s": [
+            "H7969"
+          ]
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Anak",
+          "s": [
+            "H6061"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Sheshai",
+          "s": [
+            "H8344"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ahiman",
+          "s": [
+            "H0289"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Talmai",
+          "s": [
+            "H8526"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H3211"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Anak",
+          "s": [
+            "H6061"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "And he went up thence to the inhabitants of Debir : and the name of Debir before \\add was\\add* Kirjath-sepher. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "thence",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "inhabitants",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Debir",
+          "s": [
+            "H1688"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "name",
+          "s": [
+            "H8034"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Debir",
+          "s": [
+            "H1688"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "Kirjath-sepher",
+          "s": [
+            "H7158"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "¶ And Caleb said , He that smiteth Kirjath-sepher , and taketh it, to him will I give Achsah my daughter to wife.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Caleb",
+          "s": [
+            "H3612"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "smiteth",
+          "s": [
+            "H5221"
+          ]
+        },
+        {
+          "t": "Kirjath-sepher",
+          "s": [
+            "H7158"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "taketh",
+          "s": [
+            "H3920"
+          ]
+        },
+        {
+          "t": "it,",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "Achsah",
+          "s": [
+            "H5915"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "daughter",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "wife",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "And Othniel the son of Kenaz , the brother of Caleb , took it: and he gave him Achsah his daughter to wife.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Othniel",
+          "s": [
+            "H6274"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Kenaz",
+          "s": [
+            "H7073"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "brother",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Caleb",
+          "s": [
+            "H3612"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "took",
+          "s": [
+            "H3920"
+          ]
+        },
+        {
+          "t": "it:",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "Achsah",
+          "s": [
+            "H5915"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "daughter",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "wife",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "And it came to pass, as she came \\add unto him\\add*, that she moved him to ask of her father a field : and she lighted off \\add her\\add* ass ; and Caleb said unto her, What wouldest thou?",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "pass,",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him\\add*,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "moved",
+          "s": [
+            "H5496"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "ask",
+          "s": [
+            "H7592"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "field",
+          "s": [
+            "H7704"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "lighted",
+          "s": []
+        },
+        {
+          "t": "off",
+          "s": [
+            "H6795"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "her\\add*",
+          "s": []
+        },
+        {
+          "t": "ass",
+          "s": [
+            "H2543"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Caleb",
+          "s": [
+            "H3612"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "her,",
+          "s": []
+        },
+        {
+          "t": "What",
+          "s": []
+        },
+        {
+          "t": "wouldest",
+          "s": []
+        },
+        {
+          "t": "thou?",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "Who answered , Give me a blessing ; for thou hast given me a south land ; give me also springs of water. And he gave her the upper springs , and the nether springs. \\p",
+      "tokens": [
+        {
+          "t": "Who",
+          "s": []
+        },
+        {
+          "t": "answered",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Give",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "blessing",
+          "s": [
+            "H1293"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "given",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "south",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "springs",
+          "s": [
+            "H1543"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "water",
+          "s": [
+            "H4325"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "upper",
+          "s": [
+            "H5942"
+          ]
+        },
+        {
+          "t": "springs",
+          "s": [
+            "H1543"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "nether",
+          "s": [
+            "H8482"
+          ]
+        },
+        {
+          "t": "springs",
+          "s": [
+            "H1543"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "This \\add is\\add* the inheritance of the tribe of the children of Judah according to their families.",
+      "tokens": [
+        {
+          "t": "This",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "inheritance",
+          "s": [
+            "H5159"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tribe",
+          "s": [
+            "H4294"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "according",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "families",
+          "s": [
+            "H4940"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "And the uttermost cities of the tribe of the children of Judah toward the coast of Edom southward were Kabzeel , and Eder , and Jagur ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "uttermost",
+          "s": [
+            "H7097"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tribe",
+          "s": [
+            "H4294"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "toward",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "coast",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Edom",
+          "s": [
+            "H0123"
+          ]
+        },
+        {
+          "t": "southward",
+          "s": [
+            "H5045"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "Kabzeel",
+          "s": [
+            "H6909"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Eder",
+          "s": [
+            "H5740"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jagur",
+          "s": [
+            "H3017"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "And Kinah , and Dimonah , and Adadah ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Kinah",
+          "s": [
+            "H7016"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Dimonah",
+          "s": [
+            "H1776"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Adadah",
+          "s": [
+            "H5735"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "And Kedesh , and Hazor , and Ithnan ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Kedesh",
+          "s": [
+            "H6943"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Hazor",
+          "s": [
+            "H2674"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ithnan",
+          "s": [
+            "H3497"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "Ziph , and Telem , and Bealoth ,",
+      "tokens": [
+        {
+          "t": "Ziph",
+          "s": [
+            "H2128"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Telem",
+          "s": [
+            "H2928"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Bealoth",
+          "s": [
+            "H1175"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "And Hazor , Hadattah , and Kerioth , \\add and\\add* Hezron , which \\add is\\add* Hazor ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Hazor",
+          "s": [
+            "H2674"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Hadattah",
+          "s": [
+            "H2675"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Kerioth",
+          "s": [
+            "H7152"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "Hezron",
+          "s": [
+            "H2696"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "Hazor",
+          "s": [
+            "H2674"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "Amam , and Shema , and Moladah ,",
+      "tokens": [
+        {
+          "t": "Amam",
+          "s": [
+            "H0538"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Shema",
+          "s": [
+            "H8090"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Moladah",
+          "s": [
+            "H4137"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "And Hazar-gaddah , and Heshmon , and Beth-palet ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Hazar-gaddah",
+          "s": [
+            "H2693"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Heshmon",
+          "s": [
+            "H2829"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Beth-palet",
+          "s": [
+            "H1046"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "And Hazar-shual , and Beer-sheba , and Bizjothjah ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Hazar-shual",
+          "s": [
+            "H2705"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Beer-sheba",
+          "s": [
+            "H0884"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Bizjothjah",
+          "s": [
+            "H0964"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 29,
+      "text": "Baalah , and Iim , and Azem ,",
+      "tokens": [
+        {
+          "t": "Baalah",
+          "s": [
+            "H1173"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Iim",
+          "s": [
+            "H5864"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Azem",
+          "s": [
+            "H6107"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 30,
+      "text": "And Eltolad , and Chesil , and Hormah ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Eltolad",
+          "s": [
+            "H0513"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Chesil",
+          "s": [
+            "H3686"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Hormah",
+          "s": [
+            "H2767"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 31,
+      "text": "And Ziklag , and Madmannah , and Sansannah ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Ziklag",
+          "s": [
+            "H6860"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Madmannah",
+          "s": [
+            "H4089"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Sansannah",
+          "s": [
+            "H5578"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 32,
+      "text": "And Lebaoth , and Shilhim , and Ain , and Rimmon : all the cities \\add are\\add* twenty and nine , with their villages :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Lebaoth",
+          "s": [
+            "H3822"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Shilhim",
+          "s": [
+            "H7978"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ain",
+          "s": [
+            "H5871"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Rimmon",
+          "s": [
+            "H7417"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "twenty",
+          "s": [
+            "H6242"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "nine",
+          "s": [
+            "H8672"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 33,
+      "text": "\\add And\\add* in the valley , Eshtaol , and Zoreah , and Ashnah ,",
+      "tokens": [
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "And\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "valley",
+          "s": [
+            "H8219"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Eshtaol",
+          "s": [
+            "H0847"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Zoreah",
+          "s": [
+            "H6881"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ashnah",
+          "s": [
+            "H0823"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 34,
+      "text": "And Zanoah , and En-gannim , Tappuah , and Enam ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Zanoah",
+          "s": [
+            "H2182"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "En-gannim",
+          "s": [
+            "H5873"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Tappuah",
+          "s": [
+            "H8599"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Enam",
+          "s": [
+            "H5879"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 35,
+      "text": "Jarmuth , and Adullam , Socoh , and Azekah ,",
+      "tokens": [
+        {
+          "t": "Jarmuth",
+          "s": [
+            "H3412"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Adullam",
+          "s": [
+            "H5725"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Socoh",
+          "s": [
+            "H7755"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Azekah",
+          "s": [
+            "H5825"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 36,
+      "text": "And Sharaim , and Adithaim , and Gederah , and Gederothaim ; fourteen cities with their villages :\\f + \\fr 15.36 \\ft and Gederothaim: or, or Gederothaim\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Sharaim",
+          "s": [
+            "H8189"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Adithaim",
+          "s": [
+            "H5723"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Gederah",
+          "s": [
+            "H1449"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Gederothaim",
+          "s": [
+            "H1453"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "fourteen",
+          "s": [
+            "H0702"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "15.36",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Gederothaim:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "or",
+          "s": []
+        },
+        {
+          "t": "Gederothaim\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 37,
+      "text": "Zenan , and Hadashah , and Migdal-gad ,",
+      "tokens": [
+        {
+          "t": "Zenan",
+          "s": [
+            "H6799"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Hadashah",
+          "s": [
+            "H2322"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Migdal-gad",
+          "s": [
+            "H4028"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 38,
+      "text": "And Dilean , and Mizpeh , and Joktheel ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Dilean",
+          "s": [
+            "H1810"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Mizpeh",
+          "s": [
+            "H4708"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Joktheel",
+          "s": [
+            "H3371"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 39,
+      "text": "Lachish , and Bozkath , and Eglon ,",
+      "tokens": [
+        {
+          "t": "Lachish",
+          "s": [
+            "H3923"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Bozkath",
+          "s": [
+            "H1218"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Eglon",
+          "s": [
+            "H5700"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 40,
+      "text": "And Cabbon , and Lahmam , and Kithlish ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Cabbon",
+          "s": [
+            "H3522"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Lahmam",
+          "s": [
+            "H3903"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Kithlish",
+          "s": [
+            "H3798"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 41,
+      "text": "And Gederoth , Beth-dagon , and Naamah , and Makkedah ; sixteen cities with their villages :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Gederoth",
+          "s": [
+            "H1450"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Beth-dagon",
+          "s": [
+            "H1016"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Naamah",
+          "s": [
+            "H5279"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Makkedah",
+          "s": [
+            "H4719"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "sixteen",
+          "s": [
+            "H8337"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 42,
+      "text": "Libnah , and Ether , and Ashan ,",
+      "tokens": [
+        {
+          "t": "Libnah",
+          "s": [
+            "H3841"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ether",
+          "s": [
+            "H6281"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ashan",
+          "s": [
+            "H6228"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 43,
+      "text": "And Jiphtah , and Ashnah , and Nezib ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Jiphtah",
+          "s": [
+            "H3316"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ashnah",
+          "s": [
+            "H0823"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Nezib",
+          "s": [
+            "H5334"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 44,
+      "text": "And Keilah , and Achzib , and Mareshah ; nine cities with their villages :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Keilah",
+          "s": [
+            "H7084"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Achzib",
+          "s": [
+            "H0392"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Mareshah",
+          "s": [
+            "H4762"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "nine",
+          "s": [
+            "H8672"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 45,
+      "text": "Ekron , with her towns and her villages :",
+      "tokens": [
+        {
+          "t": "Ekron",
+          "s": [
+            "H6138"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "towns",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 46,
+      "text": "From Ekron even unto the sea , all that \\add lay\\add* near Ashdod , with their villages :\\f + \\fr 15.46 \\ft near: Heb. by the place of\\f*",
+      "tokens": [
+        {
+          "t": "From",
+          "s": []
+        },
+        {
+          "t": "Ekron",
+          "s": [
+            "H6138"
+          ]
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sea",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "lay\\add*",
+          "s": []
+        },
+        {
+          "t": "near",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "Ashdod",
+          "s": [
+            "H0795"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "15.46",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "near:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "place",
+          "s": []
+        },
+        {
+          "t": "of\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 47,
+      "text": "Ashdod with her towns and her villages , Gaza with her towns and her villages , unto the river of Egypt , and the great sea , and the border \\add thereof:\\add* \\p",
+      "tokens": [
+        {
+          "t": "Ashdod",
+          "s": [
+            "H0795"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "towns",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Gaza",
+          "s": [
+            "H5804"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "towns",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "river",
+          "s": [
+            "H5158"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Egypt",
+          "s": [
+            "H4714"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": [
+            "H1419"
+          ]
+        },
+        {
+          "t": "sea",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "thereof:\\add*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 48,
+      "text": "¶ And in the mountains , Shamir , and Jattir , and Socoh ,",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "mountains",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Shamir",
+          "s": [
+            "H8069"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jattir",
+          "s": [
+            "H3492"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Socoh",
+          "s": [
+            "H7755"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 49,
+      "text": "And Dannah , and Kirjath-sannah , which \\add is\\add* Debir ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Dannah",
+          "s": [
+            "H1837"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Kirjath-sannah",
+          "s": [
+            "H7158"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "Debir",
+          "s": [
+            "H1688"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 50,
+      "text": "And Anab , and Eshtemoh , and Anim ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Anab",
+          "s": [
+            "H6024"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Eshtemoh",
+          "s": [
+            "H0851"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Anim",
+          "s": [
+            "H6044"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 51,
+      "text": "And Goshen , and Holon , and Giloh ; eleven cities with their villages :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Goshen",
+          "s": [
+            "H1657"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Holon",
+          "s": [
+            "H2473"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Giloh",
+          "s": [
+            "H1542"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "eleven",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 52,
+      "text": "Arab , and Dumah , and Eshean ,",
+      "tokens": [
+        {
+          "t": "Arab",
+          "s": [
+            "H0694"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Dumah",
+          "s": [
+            "H1746"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Eshean",
+          "s": [
+            "H0824"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 53,
+      "text": "And Janum , and Beth-tappuah , and Aphekah ,\\f + \\fr 15.53 \\ft Janum: or, Janus\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Janum",
+          "s": [
+            "H3241"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Beth-tappuah",
+          "s": [
+            "H1054"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Aphekah",
+          "s": [
+            "H0664"
+          ]
+        },
+        {
+          "t": ",\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "15.53",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Janum:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "Janus\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 54,
+      "text": "And Humtah , and Kirjath-arba , which \\add is\\add* Hebron , and Zior ; nine cities with their villages :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Humtah",
+          "s": [
+            "H2547"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Kirjath-arba",
+          "s": [
+            "H7153"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "Hebron",
+          "s": [
+            "H2275"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Zior",
+          "s": [
+            "H6730"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "nine",
+          "s": [
+            "H8672"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 55,
+      "text": "Maon , Carmel , and Ziph , and Juttah ,",
+      "tokens": [
+        {
+          "t": "Maon",
+          "s": [
+            "H4584"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Carmel",
+          "s": [
+            "H3760"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ziph",
+          "s": [
+            "H2128"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Juttah",
+          "s": [
+            "H3194"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 56,
+      "text": "And Jezreel , and Jokdeam , and Zanoah ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Jezreel",
+          "s": [
+            "H3157"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jokdeam",
+          "s": [
+            "H3347"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Zanoah",
+          "s": [
+            "H2182"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 57,
+      "text": "Cain , Gibeah , and Timnah ; ten cities with their villages :",
+      "tokens": [
+        {
+          "t": "Cain",
+          "s": [
+            "H7014"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Gibeah",
+          "s": [
+            "H1390"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Timnah",
+          "s": [
+            "H8553"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "ten",
+          "s": [
+            "H6235"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 58,
+      "text": "Halhul , Beth-zur , and Gedor ,",
+      "tokens": [
+        {
+          "t": "Halhul",
+          "s": [
+            "H2478"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Beth-zur",
+          "s": [
+            "H1049"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Gedor",
+          "s": [
+            "H1446"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 59,
+      "text": "And Maarath , and Beth-anoth , and Eltekon ; six cities with their villages :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Maarath",
+          "s": [
+            "H4638"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Beth-anoth",
+          "s": [
+            "H1042"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Eltekon",
+          "s": [
+            "H0515"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "six",
+          "s": [
+            "H8337"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 60,
+      "text": "Kirjath-baal , which \\add is\\add* Kirjath-jearim , and Rabbah ; two cities with their villages :",
+      "tokens": [
+        {
+          "t": "Kirjath-baal",
+          "s": [
+            "H7154"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "Kirjath-jearim",
+          "s": [
+            "H7157"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Rabbah",
+          "s": [
+            "H7237"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 61,
+      "text": "In the wilderness , Beth-arabah , Middin , and Secacah ,",
+      "tokens": [
+        {
+          "t": "In",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wilderness",
+          "s": [
+            "H4057"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Beth-arabah",
+          "s": [
+            "H1026"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Middin",
+          "s": [
+            "H4081"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Secacah",
+          "s": [
+            "H5527"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 62,
+      "text": "And Nibshan , and the city of Salt , and En-gedi ; six cities with their villages. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Nibshan",
+          "s": [
+            "H5044"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Salt",
+          "s": [
+            "H5898"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "En-gedi",
+          "s": [
+            "H5872"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "six",
+          "s": [
+            "H8337"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 63,
+      "text": "¶ As for the Jebusites the inhabitants of Jerusalem , the children of Judah could not drive them out : but the Jebusites dwell with the children of Judah at Jerusalem unto this day.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "As",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jebusites",
+          "s": [
+            "H2983"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "inhabitants",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "could",
+          "s": [
+            "H3201"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "drive",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3423"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jebusites",
+          "s": [
+            "H2983"
+          ]
+        },
+        {
+          "t": "dwell",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

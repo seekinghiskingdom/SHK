@@ -1,0 +1,2250 @@
+{
+  "book_id": "ISA",
+  "chapter": 25,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "O \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, thou \\add art\\add* my God ; I will exalt thee, I will praise thy name ; for thou hast done wonderful \\add things; thy\\add* counsels of old \\add are\\add* faithfulness \\add and\\add* truth.",
+      "tokens": [
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "art\\add*",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "exalt",
+          "s": [
+            "H7311"
+          ]
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "praise",
+          "s": [
+            "H3034"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "name",
+          "s": [
+            "H8034"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "done",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "wonderful",
+          "s": [
+            "H6382"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "things;",
+          "s": []
+        },
+        {
+          "t": "thy\\add*",
+          "s": []
+        },
+        {
+          "t": "counsels",
+          "s": [
+            "H6098"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "old",
+          "s": [
+            "H7350"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "faithfulness",
+          "s": [
+            "H0530"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "truth",
+          "s": [
+            "H0544"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "For thou hast made of a city an heap ; \\add of\\add* a defenced city a ruin : a palace of strangers to be no city ; it shall never be built.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": [
+            "H7760"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "heap",
+          "s": [
+            "H1530"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "defenced",
+          "s": [
+            "H1219"
+          ]
+        },
+        {
+          "t": "city",
+          "s": [
+            "H7151"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "ruin",
+          "s": [
+            "H4654"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "palace",
+          "s": [
+            "H0759"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "strangers",
+          "s": [
+            "H2114"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "never",
+          "s": [
+            "H5769"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "built",
+          "s": [
+            "H1129"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "Therefore shall the strong people glorify thee, the city of the terrible nations shall fear thee.",
+      "tokens": [
+        {
+          "t": "Therefore",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "strong",
+          "s": [
+            "H5794"
+          ]
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": "glorify",
+          "s": [
+            "H3513"
+          ]
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H7151"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "terrible",
+          "s": [
+            "H6184"
+          ]
+        },
+        {
+          "t": "nations",
+          "s": [
+            "H1471"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "fear",
+          "s": [
+            "H3372"
+          ]
+        },
+        {
+          "t": "thee.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "For thou hast been a strength to the poor , a strength to the needy in his distress , a refuge from the storm , a shadow from the heat , when the blast of the terrible ones \\add is\\add* as a storm \\add against\\add* the wall.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "strength",
+          "s": [
+            "H4581"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "poor",
+          "s": [
+            "H1800"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "strength",
+          "s": [
+            "H4581"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "needy",
+          "s": [
+            "H0034"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "distress",
+          "s": [
+            "H6862"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "refuge",
+          "s": [
+            "H4268"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "storm",
+          "s": [
+            "H2230"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "shadow",
+          "s": [
+            "H6738"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "heat",
+          "s": [
+            "H2721"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "blast",
+          "s": [
+            "H7307"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "terrible",
+          "s": []
+        },
+        {
+          "t": "ones",
+          "s": [
+            "H6184"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "storm",
+          "s": [
+            "H2230"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "against\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H7023"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Thou shalt bring down the noise of strangers , as the heat in a dry place ; \\add even\\add* the heat with the shadow of a cloud : the branch of the terrible ones shall be brought low. \\p",
+      "tokens": [
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H3665"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "noise",
+          "s": [
+            "H7588"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "strangers",
+          "s": [
+            "H2114"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "heat",
+          "s": [
+            "H2721"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "dry",
+          "s": []
+        },
+        {
+          "t": "place",
+          "s": [
+            "H6724"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "even\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "heat",
+          "s": [
+            "H2721"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "shadow",
+          "s": [
+            "H6738"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "cloud",
+          "s": [
+            "H5645"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "branch",
+          "s": [
+            "H2159"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "terrible",
+          "s": []
+        },
+        {
+          "t": "ones",
+          "s": [
+            "H6184"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": []
+        },
+        {
+          "t": "low",
+          "s": [
+            "H6030"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "¶ And in this mountain shall the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* of hosts make unto all people a feast of fat things , a feast of wines on the lees , of fat things full of marrow , of wines on the lees well refined.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "mountain",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "hosts",
+          "s": [
+            "H6635"
+          ]
+        },
+        {
+          "t": "make",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "feast",
+          "s": [
+            "H4960"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "fat",
+          "s": []
+        },
+        {
+          "t": "things",
+          "s": [
+            "H8081"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "feast",
+          "s": [
+            "H4960"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "wines",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "lees",
+          "s": [
+            "H8105"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "fat",
+          "s": []
+        },
+        {
+          "t": "things",
+          "s": [
+            "H8081"
+          ]
+        },
+        {
+          "t": "full",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "marrow",
+          "s": [
+            "H4229"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "wines",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "lees",
+          "s": [
+            "H8105"
+          ]
+        },
+        {
+          "t": "well",
+          "s": []
+        },
+        {
+          "t": "refined",
+          "s": [
+            "H2212"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "And he will destroy in this mountain the face of the covering cast over all people , and the vail that is spread over all nations.\\f + \\fr 25.7 \\ft destroy: Heb. swallow up\\f*\\f + \\fr 25.7 \\ft cast: Heb. covered\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "destroy",
+          "s": [
+            "H1104"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "mountain",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "face",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "covering",
+          "s": [
+            "H3875"
+          ]
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "over",
+          "s": [
+            "H3874"
+          ]
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "vail",
+          "s": [
+            "H4541"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "spread",
+          "s": [
+            "H5259"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "nations",
+          "s": [
+            "H1471"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "25.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "destroy:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "swallow",
+          "s": []
+        },
+        {
+          "t": "up\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "25.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "cast:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "covered\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "He will swallow up death in victory ; and the Lord \\nd \\+w GOD|strong=\"H3069\"\\+w*\\nd* will wipe away tears from off all faces ; and the rebuke of his people shall he take away from off all the earth : for the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* hath spoken \\add it\\add*. \\p",
+      "tokens": [
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "swallow",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H1104"
+          ]
+        },
+        {
+          "t": "death",
+          "s": [
+            "H4194"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "victory",
+          "s": [
+            "H5331"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "H0136"
+          ]
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "GOD|strong=\"H3069\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "wipe",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H4229"
+          ]
+        },
+        {
+          "t": "tears",
+          "s": [
+            "H1832"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "off",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "faces",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rebuke",
+          "s": [
+            "H2781"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "take",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H5493"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "off",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "spoken",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "¶ And it shall be said in that day , Lo, this \\add is\\add* our God ; we have waited for him, and he will save us: this \\add is\\add* the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*; we have waited for him, we will be glad and rejoice in his salvation.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Lo,",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "our",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "waited",
+          "s": [
+            "H6960"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "save",
+          "s": [
+            "H3467"
+          ]
+        },
+        {
+          "t": "us:",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*;",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "waited",
+          "s": [
+            "H6960"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "glad",
+          "s": [
+            "H1523"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "rejoice",
+          "s": [
+            "H8055"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "salvation",
+          "s": [
+            "H3444"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "For in this mountain shall the hand of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* rest , and Moab shall be trodden down under him, even as straw is trodden down for the dunghill.\\f + \\fr 25.10 \\ft trodden down under: or, threshed, etc\\f*\\f + \\fr 25.10 \\ft trodden down for…: or, threshed in Madmenah\\f*",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "mountain",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "rest",
+          "s": [
+            "H5117"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Moab",
+          "s": [
+            "H4124"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "trodden",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H1758"
+          ]
+        },
+        {
+          "t": "under",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "straw",
+          "s": [
+            "H4963"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "trodden",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H1758"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "dunghill",
+          "s": [
+            "H1119"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "25.10",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "trodden",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": []
+        },
+        {
+          "t": "under:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "threshed,",
+          "s": []
+        },
+        {
+          "t": "etc\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "25.10",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "trodden",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": []
+        },
+        {
+          "t": "for…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "threshed",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Madmenah\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "And he shall spread forth his hands in the midst of them, as he that swimmeth spreadeth forth \\add his hands\\add* to swim : and he shall bring down their pride together with the spoils of their hands.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "spread",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H6566"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "hands",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "midst",
+          "s": [
+            "H7130"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "swimmeth",
+          "s": [
+            "H7811"
+          ]
+        },
+        {
+          "t": "spreadeth",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H6566"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "hands\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "swim",
+          "s": [
+            "H7811"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H8213"
+          ]
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "pride",
+          "s": [
+            "H1346"
+          ]
+        },
+        {
+          "t": "together",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "spoils",
+          "s": [
+            "H0698"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "hands",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "And the fortress of the high fort of thy walls shall he bring down , lay low , \\add and\\add* bring to the ground , \\add even\\add* to the dust.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fortress",
+          "s": [
+            "H4013"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "high",
+          "s": []
+        },
+        {
+          "t": "fort",
+          "s": [
+            "H4869"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "walls",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H7817"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "lay",
+          "s": []
+        },
+        {
+          "t": "low",
+          "s": [
+            "H8213"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": [
+            "H5060"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ground",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "even\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "dust",
+          "s": [
+            "H6083"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

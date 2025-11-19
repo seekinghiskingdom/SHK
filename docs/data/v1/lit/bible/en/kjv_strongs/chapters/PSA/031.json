@@ -1,0 +1,3098 @@
+{
+  "book_id": "PSA",
+  "chapter": 31,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "In thee, O \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, do I put my trust ; let me never be ashamed : deliver me in thy righteousness. \\q1",
+      "tokens": [
+        {
+          "t": "In",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "trust",
+          "s": [
+            "H2620"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "never",
+          "s": [
+            "H0408"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "ashamed",
+          "s": [
+            "H0954"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "deliver",
+          "s": [
+            "H6403"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "righteousness",
+          "s": [
+            "H6666"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "Bow down thine ear to me; deliver me speedily : be thou my strong rock , for an house of defence to save me.\\f + \\fr 31.2 \\ft my…: Heb. to me for a rock of strength\\f* \\q1",
+      "tokens": [
+        {
+          "t": "Bow",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H5186"
+          ]
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "ear",
+          "s": [
+            "H0241"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "me;",
+          "s": []
+        },
+        {
+          "t": "deliver",
+          "s": [
+            "H5337"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "speedily",
+          "s": [
+            "H4120"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "strong",
+          "s": [
+            "H4581"
+          ]
+        },
+        {
+          "t": "rock",
+          "s": [
+            "H6697"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "defence",
+          "s": [
+            "H4686"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "save",
+          "s": [
+            "H3467"
+          ]
+        },
+        {
+          "t": "me.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "31.2",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "my…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "rock",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "strength\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "For thou \\add art\\add* my rock and my fortress ; therefore for thy name’s sake lead me, and guide me. \\q1",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "art\\add*",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "rock",
+          "s": [
+            "H5553"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "fortress",
+          "s": [
+            "H4686"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "therefore",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "name’s",
+          "s": [
+            "H8034"
+          ]
+        },
+        {
+          "t": "sake",
+          "s": []
+        },
+        {
+          "t": "lead",
+          "s": [
+            "H5148"
+          ]
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "guide",
+          "s": [
+            "H5095"
+          ]
+        },
+        {
+          "t": "me.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "Pull me out of the net that they have laid privily for me: for thou \\add art\\add* my strength. \\q1",
+      "tokens": [
+        {
+          "t": "Pull",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "net",
+          "s": [
+            "H7568"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "H2098"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "laid",
+          "s": []
+        },
+        {
+          "t": "privily",
+          "s": [
+            "H2934"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "me:",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "art\\add*",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "strength",
+          "s": [
+            "H4581"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Into thine hand I commit my spirit : thou hast redeemed me, O \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* God of truth. \\q1",
+      "tokens": [
+        {
+          "t": "Into",
+          "s": []
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "commit",
+          "s": [
+            "H6485"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "spirit",
+          "s": [
+            "H7307"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "redeemed",
+          "s": [
+            "H6299"
+          ]
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0410"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "truth",
+          "s": [
+            "H0571"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "I have hated them that regard lying vanities : but I trust in the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*. \\q1",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "hated",
+          "s": [
+            "H8130"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "regard",
+          "s": [
+            "H8104"
+          ]
+        },
+        {
+          "t": "lying",
+          "s": [
+            "H7723"
+          ]
+        },
+        {
+          "t": "vanities",
+          "s": [
+            "H1892"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "trust",
+          "s": [
+            "H0982"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "I will be glad and rejoice in thy mercy : for thou hast considered my trouble ; thou hast known my soul in adversities ; \\q1",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "glad",
+          "s": [
+            "H1523"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "rejoice",
+          "s": [
+            "H8055"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "mercy",
+          "s": [
+            "H2617"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "considered",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "trouble",
+          "s": [
+            "H6040"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "known",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "adversities",
+          "s": [
+            "H6869"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "And hast not shut me up into the hand of the enemy : thou hast set my feet in a large room. \\b \\q1",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "shut",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5462"
+          ]
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "enemy",
+          "s": [
+            "H0341"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "set",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "feet",
+          "s": [
+            "H7272"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "large",
+          "s": []
+        },
+        {
+          "t": "room",
+          "s": [
+            "H4800"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\b",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Have mercy upon me, O \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, for I am in trouble : mine eye is consumed with grief , \\add yea\\add*, my soul and my belly. \\q1",
+      "tokens": [
+        {
+          "t": "Have",
+          "s": []
+        },
+        {
+          "t": "mercy",
+          "s": [
+            "H2603"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "am",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "trouble",
+          "s": [
+            "H6887"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "eye",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "consumed",
+          "s": [
+            "H6244"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "grief",
+          "s": [
+            "H3708"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "yea\\add*,",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "belly",
+          "s": [
+            "H0990"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "For my life is spent with grief , and my years with sighing : my strength faileth because of mine iniquity , and my bones are consumed. \\q1",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "spent",
+          "s": [
+            "H3615"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "grief",
+          "s": [
+            "H3015"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "years",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "sighing",
+          "s": [
+            "H0585"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "strength",
+          "s": [
+            "H3581"
+          ]
+        },
+        {
+          "t": "faileth",
+          "s": [
+            "H3782"
+          ]
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "iniquity",
+          "s": [
+            "H5771"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "bones",
+          "s": [
+            "H6106"
+          ]
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "consumed",
+          "s": [
+            "H6244"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "I was a reproach among all mine enemies , but especially among my neighbours , and a fear to mine acquaintance : they that did see me without fled from me. \\q1",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "reproach",
+          "s": [
+            "H2781"
+          ]
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "enemies",
+          "s": [
+            "H6887"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "especially",
+          "s": [
+            "H3966"
+          ]
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "neighbours",
+          "s": [
+            "H7934"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "fear",
+          "s": [
+            "H6343"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "acquaintance",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": []
+        },
+        {
+          "t": "see",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "without",
+          "s": [
+            "H2351"
+          ]
+        },
+        {
+          "t": "fled",
+          "s": [
+            "H5074"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "me.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "I am forgotten as a dead man out of mind : I am like a broken vessel.\\f + \\fr 31.12 \\ft a broken…: Heb. a vessel that perisheth\\f* \\q1",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "am",
+          "s": []
+        },
+        {
+          "t": "forgotten",
+          "s": [
+            "H7911"
+          ]
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "dead",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "mind",
+          "s": [
+            "H3820"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "am",
+          "s": []
+        },
+        {
+          "t": "like",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "broken",
+          "s": [
+            "H0006"
+          ]
+        },
+        {
+          "t": "vessel",
+          "s": [
+            "H3627"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "31.12",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "broken…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "vessel",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "perisheth\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "For I have heard the slander of many : fear \\add was\\add* on every side : while they took counsel together against me, they devised to take away my life. \\q1",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "slander",
+          "s": [
+            "H1681"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "many",
+          "s": [
+            "H7227"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "fear",
+          "s": [
+            "H4032"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "side",
+          "s": [
+            "H5439"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "while",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "took",
+          "s": []
+        },
+        {
+          "t": "counsel",
+          "s": [
+            "H3245"
+          ]
+        },
+        {
+          "t": "together",
+          "s": [
+            "H3162"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "devised",
+          "s": [
+            "H2161"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "take",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "But I trusted in thee, O \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*: I said , Thou \\add art\\add* my God. \\q1",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "trusted",
+          "s": [
+            "H0982"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*:",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "art\\add*",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "My times \\add are\\add* in thy hand : deliver me from the hand of mine enemies , and from them that persecute me. \\q1",
+      "tokens": [
+        {
+          "t": "My",
+          "s": []
+        },
+        {
+          "t": "times",
+          "s": [
+            "H6256"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "deliver",
+          "s": [
+            "H5337"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "enemies",
+          "s": [
+            "H0341"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "persecute",
+          "s": [
+            "H7291"
+          ]
+        },
+        {
+          "t": "me.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "Make thy face to shine upon thy servant : save me for thy mercies’ sake. \\q1",
+      "tokens": [
+        {
+          "t": "Make",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "face",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "shine",
+          "s": [
+            "H0215"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "servant",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "save",
+          "s": [
+            "H3467"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "mercies’",
+          "s": [
+            "H2617"
+          ]
+        },
+        {
+          "t": "sake.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Let me not be ashamed , O \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*; for I have called upon thee: let the wicked be ashamed , \\add and\\add* let them be silent in the grave.\\f + \\fr 31.17 \\ft silent…: or, cut off for\\f* \\q1",
+      "tokens": [
+        {
+          "t": "Let",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "ashamed",
+          "s": [
+            "H0954"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*;",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "called",
+          "s": [
+            "H7121"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "thee:",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wicked",
+          "s": [
+            "H7563"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "ashamed",
+          "s": [
+            "H0954"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "silent",
+          "s": [
+            "H1826"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "grave",
+          "s": [
+            "H7585"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "31.17",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "silent…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "cut",
+          "s": []
+        },
+        {
+          "t": "off",
+          "s": []
+        },
+        {
+          "t": "for\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "Let the lying lips be put to silence ; which speak grievous things proudly and contemptuously against the righteous.\\f + \\fr 31.18 \\ft grievous…: Heb. a hard thing\\f* \\b \\q1",
+      "tokens": [
+        {
+          "t": "Let",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "lying",
+          "s": [
+            "H8267"
+          ]
+        },
+        {
+          "t": "lips",
+          "s": [
+            "H8193"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "silence",
+          "s": [
+            "H0481"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "speak",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "grievous",
+          "s": [
+            "H6277"
+          ]
+        },
+        {
+          "t": "things",
+          "s": []
+        },
+        {
+          "t": "proudly",
+          "s": [
+            "H1346"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "contemptuously",
+          "s": [
+            "H0937"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "righteous",
+          "s": [
+            "H6662"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "31.18",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "grievous…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "hard",
+          "s": []
+        },
+        {
+          "t": "thing\\f*",
+          "s": []
+        },
+        {
+          "t": "\\b",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "\\add Oh\\add* how great \\add is\\add* thy goodness , which thou hast laid up for them that fear thee; \\add which\\add* thou hast wrought for them that trust in thee before the sons of men ! \\q1",
+      "tokens": [
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "Oh\\add*",
+          "s": []
+        },
+        {
+          "t": "how",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": [
+            "H7227"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "goodness",
+          "s": [
+            "H2898"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "laid",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H6845"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "fear",
+          "s": [
+            "H3373"
+          ]
+        },
+        {
+          "t": "thee;",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "which\\add*",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "wrought",
+          "s": [
+            "H6466"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "trust",
+          "s": [
+            "H2620"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "men",
+          "s": [
+            "H0120"
+          ]
+        },
+        {
+          "t": "!",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "Thou shalt hide them in the secret of thy presence from the pride of man : thou shalt keep them secretly in a pavilion from the strife of tongues. \\q1",
+      "tokens": [
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "hide",
+          "s": [
+            "H5641"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "secret",
+          "s": [
+            "H5643"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "presence",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "pride",
+          "s": [
+            "H7407"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "keep",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "secretly",
+          "s": [
+            "H6845"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "pavilion",
+          "s": [
+            "H5521"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "strife",
+          "s": [
+            "H7379"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "tongues",
+          "s": [
+            "H3956"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "Blessed \\add be\\add* the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*: for he hath shewed me his marvellous kindness in a strong city.\\f + \\fr 31.21 \\ft strong: or, fenced\\f* \\q1",
+      "tokens": [
+        {
+          "t": "Blessed",
+          "s": [
+            "H1288"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*:",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "shewed",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "marvellous",
+          "s": [
+            "H6381"
+          ]
+        },
+        {
+          "t": "kindness",
+          "s": [
+            "H2617"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "strong",
+          "s": [
+            "H4692"
+          ]
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "31.21",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "strong:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "fenced\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "For I said in my haste , I am cut off from before thine eyes : nevertheless thou heardest the voice of my supplications when I cried unto thee. \\q1",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "haste",
+          "s": [
+            "H2648"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "am",
+          "s": []
+        },
+        {
+          "t": "cut",
+          "s": []
+        },
+        {
+          "t": "off",
+          "s": [
+            "H1629"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": [
+            "H5048"
+          ]
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "eyes",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "nevertheless",
+          "s": [
+            "H0403"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "heardest",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "voice",
+          "s": [
+            "H6963"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "supplications",
+          "s": [
+            "H8469"
+          ]
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "cried",
+          "s": [
+            "H7768"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "O love the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, all ye his saints : \\add for\\add* the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* preserveth the faithful , and plentifully rewardeth the proud doer. \\q1",
+      "tokens": [
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H0157"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "saints",
+          "s": [
+            "H2623"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "for\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "preserveth",
+          "s": [
+            "H5341"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "faithful",
+          "s": [
+            "H0539"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "plentifully",
+          "s": [
+            "H3499"
+          ]
+        },
+        {
+          "t": "rewardeth",
+          "s": [
+            "H7999"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "proud",
+          "s": [
+            "H1346"
+          ]
+        },
+        {
+          "t": "doer",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "Be of good courage , and he shall strengthen your heart , all ye that hope in the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*.",
+      "tokens": [
+        {
+          "t": "Be",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "good",
+          "s": []
+        },
+        {
+          "t": "courage",
+          "s": [
+            "H2388"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "strengthen",
+          "s": [
+            "H0553"
+          ]
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": [
+            "H3824"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "hope",
+          "s": [
+            "H3176"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*.",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

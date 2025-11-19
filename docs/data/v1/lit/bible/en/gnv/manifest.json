@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.gnv",
+  "code": "gnv",
+  "slug": "gnv",
+  "title": "Geneva Bible 1599",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "gnv",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": true,
+    "notes": "Historical Reformation-era edition with Apocrypha."
+  },
+  "versification": "kjv-apocrypha",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

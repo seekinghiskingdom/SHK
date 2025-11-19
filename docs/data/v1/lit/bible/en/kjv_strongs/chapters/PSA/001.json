@@ -1,0 +1,814 @@
+{
+  "book_id": "PSA",
+  "chapter": 1,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Blessed \\add is\\add* the man that walketh not in the counsel of the ungodly , nor standeth in the way of sinners , nor sitteth in the seat of the scornful.\\f + \\fr 1.1 \\ft ungodly: or, wicked\\f* \\q1",
+      "tokens": [
+        {
+          "t": "Blessed",
+          "s": [
+            "H0835"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "walketh",
+          "s": [
+            "H1980"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "counsel",
+          "s": [
+            "H6098"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ungodly",
+          "s": [
+            "H7563"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "standeth",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "H1870"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "sinners",
+          "s": [
+            "H2400"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "sitteth",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "seat",
+          "s": [
+            "H4186"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "scornful",
+          "s": [
+            "H3887"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.1",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "ungodly:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "wicked\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "But his delight \\add is\\add* in the law of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*; and in his law doth he meditate day and night. \\q1",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "delight",
+          "s": [
+            "H2656"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law",
+          "s": [
+            "H8451"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*;",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "law",
+          "s": [
+            "H8451"
+          ]
+        },
+        {
+          "t": "doth",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "meditate",
+          "s": [
+            "H1897"
+          ]
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3119"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "H3915"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "And he shall be like a tree planted by the rivers of water , that bringeth forth his fruit in his season ; his leaf also shall not wither ; and whatsoever he doeth shall prosper.\\f + \\fr 1.3 \\ft wither: Heb. fade\\f* \\b \\q1",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "like",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "tree",
+          "s": [
+            "H6086"
+          ]
+        },
+        {
+          "t": "planted",
+          "s": [
+            "H8362"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rivers",
+          "s": [
+            "H6388"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "water",
+          "s": [
+            "H4325"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "bringeth",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "fruit",
+          "s": [
+            "H6529"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "season",
+          "s": [
+            "H6256"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "leaf",
+          "s": [
+            "H5929"
+          ]
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "wither",
+          "s": [
+            "H5034"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "whatsoever",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "doeth",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "prosper",
+          "s": [
+            "H6743"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "wither:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "fade\\f*",
+          "s": []
+        },
+        {
+          "t": "\\b",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "The ungodly \\add are\\add* not so: but \\add are\\add* like the chaff which the wind driveth away. \\q1",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "ungodly",
+          "s": [
+            "H7563"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "so:",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "like",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chaff",
+          "s": [
+            "H4671"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wind",
+          "s": [
+            "H7307"
+          ]
+        },
+        {
+          "t": "driveth",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H5086"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Therefore the ungodly shall not stand in the judgment , nor sinners in the congregation of the righteous. \\q1",
+      "tokens": [
+        {
+          "t": "Therefore",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ungodly",
+          "s": [
+            "H7563"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "stand",
+          "s": [
+            "H6965"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "judgment",
+          "s": [
+            "H4941"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "sinners",
+          "s": [
+            "H2400"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "congregation",
+          "s": [
+            "H5712"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "righteous",
+          "s": [
+            "H6662"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "For the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* knoweth the way of the righteous : but the way of the ungodly shall perish.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "knoweth",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "H1870"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "righteous",
+          "s": [
+            "H6662"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "H1870"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ungodly",
+          "s": [
+            "H7563"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "perish",
+          "s": [
+            "H0006"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

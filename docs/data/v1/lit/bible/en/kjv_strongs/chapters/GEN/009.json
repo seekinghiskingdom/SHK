@@ -1,0 +1,3810 @@
+{
+  "book_id": "GEN",
+  "chapter": 9,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And God blessed Noah and his sons , and said unto them, Be fruitful , and multiply , and replenish the earth.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "blessed",
+          "s": [
+            "H1288"
+          ]
+        },
+        {
+          "t": "Noah",
+          "s": [
+            "H5146"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "Be",
+          "s": []
+        },
+        {
+          "t": "fruitful",
+          "s": [
+            "H6509"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "multiply",
+          "s": [
+            "H7235"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "replenish",
+          "s": [
+            "H4390"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "And the fear of you and the dread of you shall be upon every beast of the earth , and upon every fowl of the air , upon all that moveth \\add upon\\add* the earth , and upon all the fishes of the sea ; into your hand are they delivered.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fear",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": [
+            "H4172"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "dread",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": [
+            "H2844"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "beast",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "fowl",
+          "s": [
+            "H5775"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "air",
+          "s": [
+            "H8064"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "moveth",
+          "s": [
+            "H7430"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "upon\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0127"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fishes",
+          "s": [
+            "H1709"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sea",
+          "s": [
+            "H3220"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "delivered",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "Every moving thing that liveth shall be meat for you; even as the green herb have I given you all things.",
+      "tokens": [
+        {
+          "t": "Every",
+          "s": []
+        },
+        {
+          "t": "moving",
+          "s": []
+        },
+        {
+          "t": "thing",
+          "s": [
+            "H7431"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "liveth",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "meat",
+          "s": [
+            "H0402"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "you;",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "green",
+          "s": [
+            "H3418"
+          ]
+        },
+        {
+          "t": "herb",
+          "s": [
+            "H6212"
+          ]
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "given",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "things.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "But flesh with the life thereof, \\add which is\\add* the blood thereof, shall ye not eat.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "H0389"
+          ]
+        },
+        {
+          "t": "flesh",
+          "s": [
+            "H1320"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "thereof,",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "blood",
+          "s": [
+            "H1818"
+          ]
+        },
+        {
+          "t": "thereof,",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "eat",
+          "s": [
+            "H0398"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "And surely your blood of your lives will I require ; at the hand of every beast will I require it , and at the hand of man ; at the hand of every man’s brother will I require the life of man.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "surely",
+          "s": [
+            "H0389"
+          ]
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "blood",
+          "s": [
+            "H1818"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "lives",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "require",
+          "s": [
+            "H1875"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "beast",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "require",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": [
+            "H1875"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0120"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "man’s",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "brother",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "require",
+          "s": [
+            "H1875"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0120"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "Whoso sheddeth man’s blood , by man shall his blood be shed : for in the image of God made he man.",
+      "tokens": [
+        {
+          "t": "Whoso",
+          "s": []
+        },
+        {
+          "t": "sheddeth",
+          "s": [
+            "H8210"
+          ]
+        },
+        {
+          "t": "man’s",
+          "s": [
+            "H0120"
+          ]
+        },
+        {
+          "t": "blood",
+          "s": [
+            "H1818"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0120"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "blood",
+          "s": [
+            "H1818"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "shed",
+          "s": [
+            "H8210"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "image",
+          "s": [
+            "H6754"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "made",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0120"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "And you, be ye fruitful , and multiply ; bring forth abundantly in the earth , and multiply therein. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "you,",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "fruitful",
+          "s": [
+            "H6509"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "multiply",
+          "s": [
+            "H7235"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": []
+        },
+        {
+          "t": "abundantly",
+          "s": [
+            "H8317"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "multiply",
+          "s": [
+            "H7235"
+          ]
+        },
+        {
+          "t": "therein.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "¶ And God spake unto Noah , and to his sons with him, saying ,",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "spake",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Noah",
+          "s": [
+            "H5146"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "And I, behold, I establish my covenant with you, and with your seed after you ;",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "I,",
+          "s": []
+        },
+        {
+          "t": "behold,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "establish",
+          "s": [
+            "H6965"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "covenant",
+          "s": [
+            "H1285"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "you,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "seed",
+          "s": [
+            "H2233"
+          ]
+        },
+        {
+          "t": "after",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "And with every living creature that \\add is\\add* with you, of the fowl , of the cattle , and of every beast of the earth with you; from all that go out of the ark , to every beast of the earth.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "living",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "creature",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "you,",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fowl",
+          "s": [
+            "H5775"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "cattle",
+          "s": [
+            "H0929"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "beast",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "you;",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "go",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ark",
+          "s": [
+            "H8392"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "beast",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "And I will establish my covenant with you; neither shall all flesh be cut off any more by the waters of a flood ; neither shall there any more be a flood to destroy the earth. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "establish",
+          "s": [
+            "H6965"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "covenant",
+          "s": [
+            "H1285"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "you;",
+          "s": []
+        },
+        {
+          "t": "neither",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "flesh",
+          "s": [
+            "H1320"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "cut",
+          "s": []
+        },
+        {
+          "t": "off",
+          "s": [
+            "H3772"
+          ]
+        },
+        {
+          "t": "any",
+          "s": []
+        },
+        {
+          "t": "more",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "waters",
+          "s": [
+            "H4325"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "flood",
+          "s": [
+            "H3999"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "neither",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "any",
+          "s": []
+        },
+        {
+          "t": "more",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "flood",
+          "s": [
+            "H3999"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "destroy",
+          "s": [
+            "H7843"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "And God said , This \\add is\\add* the token of the covenant which I make between me and you and every living creature that \\add is\\add* with you, for perpetual generations :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "This",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "token",
+          "s": [
+            "H0226"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "covenant",
+          "s": [
+            "H1285"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": [
+            "H0589"
+          ]
+        },
+        {
+          "t": "make",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "between",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "living",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "creature",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "you,",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "perpetual",
+          "s": [
+            "H5769"
+          ]
+        },
+        {
+          "t": "generations",
+          "s": [
+            "H1755"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "I do set my bow in the cloud , and it shall be for a token of a covenant between me and the earth.",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "set",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "bow",
+          "s": [
+            "H7198"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "cloud",
+          "s": [
+            "H6051"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "token",
+          "s": [
+            "H0226"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "covenant",
+          "s": [
+            "H1285"
+          ]
+        },
+        {
+          "t": "between",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "And it shall come to pass, when I bring a cloud over the earth , that the bow shall be seen in the cloud :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "pass,",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": [
+            "H6049"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "cloud",
+          "s": [
+            "H6051"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bow",
+          "s": [
+            "H7198"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "seen",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "cloud",
+          "s": [
+            "H6051"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "And I will remember my covenant , which \\add is\\add* between me and you and every living creature of all flesh ; and the waters shall no more become a flood to destroy all flesh.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "remember",
+          "s": [
+            "H2142"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "covenant",
+          "s": [
+            "H1285"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "between",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "living",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "creature",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "flesh",
+          "s": [
+            "H1320"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "waters",
+          "s": [
+            "H4325"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "more",
+          "s": [
+            "H5750"
+          ]
+        },
+        {
+          "t": "become",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "flood",
+          "s": [
+            "H3999"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "destroy",
+          "s": [
+            "H7843"
+          ]
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "flesh",
+          "s": [
+            "H1320"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "And the bow shall be in the cloud ; and I will look upon it , that I may remember the everlasting covenant between God and every living creature of all flesh that \\add is\\add* upon the earth.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bow",
+          "s": [
+            "H7198"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "cloud",
+          "s": [
+            "H6051"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "look",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "remember",
+          "s": [
+            "H2142"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "everlasting",
+          "s": [
+            "H5769"
+          ]
+        },
+        {
+          "t": "covenant",
+          "s": [
+            "H1285"
+          ]
+        },
+        {
+          "t": "between",
+          "s": [
+            "H0996"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "H0996"
+          ]
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "living",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "creature",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "flesh",
+          "s": [
+            "H1320"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "And God said unto Noah , This \\add is\\add* the token of the covenant , which I have established between me and all flesh that \\add is\\add* upon the earth. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Noah",
+          "s": [
+            "H5146"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "This",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "token",
+          "s": [
+            "H0226"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "covenant",
+          "s": [
+            "H1285"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "established",
+          "s": [
+            "H6965"
+          ]
+        },
+        {
+          "t": "between",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "flesh",
+          "s": [
+            "H1320"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "¶ And the sons of Noah , that went forth of the ark , were Shem , and Ham , and Japheth : and Ham \\add is\\add* the father of Canaan.\\f + \\fr 9.18 \\ft Canaan: Heb. Chenaan\\f*",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Noah",
+          "s": [
+            "H5146"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ark",
+          "s": [
+            "H8392"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "Shem",
+          "s": [
+            "H8035"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ham",
+          "s": [
+            "H2526"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Japheth",
+          "s": [
+            "H3315"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ham",
+          "s": [
+            "H2526"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Canaan",
+          "s": [
+            "H3667"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.18",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Canaan:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "Chenaan\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "These \\add are\\add* the three sons of Noah : and of them was the whole earth overspread.",
+      "tokens": [
+        {
+          "t": "These",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "three",
+          "s": [
+            "H7969"
+          ]
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Noah",
+          "s": [
+            "H5146"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "whole",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "overspread",
+          "s": [
+            "H5310"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "And Noah began \\add to be\\add* an husbandman , and he planted a vineyard :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Noah",
+          "s": [
+            "H5146"
+          ]
+        },
+        {
+          "t": "began",
+          "s": [
+            "H2490"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "husbandman",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "planted",
+          "s": [
+            "H5193"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "vineyard",
+          "s": [
+            "H3754"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "And he drank of the wine , and was drunken ; and he was uncovered within his tent.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "drank",
+          "s": [
+            "H8354"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H3196"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "drunken",
+          "s": [
+            "H7937"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "uncovered",
+          "s": [
+            "H1540"
+          ]
+        },
+        {
+          "t": "within",
+          "s": [
+            "H8432"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "tent",
+          "s": [
+            "H0168"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "And Ham , the father of Canaan , saw the nakedness of his father , and told his two brethren without.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Ham",
+          "s": [
+            "H2526"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Canaan",
+          "s": [
+            "H3667"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saw",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "nakedness",
+          "s": [
+            "H6172"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": "without",
+          "s": [
+            "H2351"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "And Shem and Japheth took a garment , and laid \\add it\\add* upon both their shoulders , and went backward , and covered the nakedness of their father ; and their faces \\add were\\add* backward , and they saw not their father’s nakedness. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Shem",
+          "s": [
+            "H8035"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Japheth",
+          "s": [
+            "H3315"
+          ]
+        },
+        {
+          "t": "took",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "garment",
+          "s": [
+            "H8071"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "laid",
+          "s": [
+            "H7760"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "both",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "shoulders",
+          "s": [
+            "H7926"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "backward",
+          "s": [
+            "H0322"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "covered",
+          "s": [
+            "H3680"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "nakedness",
+          "s": [
+            "H6172"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "faces",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "backward",
+          "s": [
+            "H0322"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "saw",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "father’s",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": "nakedness",
+          "s": [
+            "H6172"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "And Noah awoke from his wine , and knew what his younger son had done unto him.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Noah",
+          "s": [
+            "H5146"
+          ]
+        },
+        {
+          "t": "awoke",
+          "s": [
+            "H3364"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H3196"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "knew",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": "what",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "younger",
+          "s": [
+            "H6996"
+          ]
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "done",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "And he said , Cursed \\add be\\add* Canaan ; a servant of servants shall he be unto his brethren.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Cursed",
+          "s": [
+            "H0779"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "Canaan",
+          "s": [
+            "H3667"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "servant",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "And he said , Blessed \\add be\\add* the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* God of Shem ; and Canaan shall be his servant.\\f + \\fr 9.26 \\ft his servant: or, servant to them\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Blessed",
+          "s": [
+            "H1288"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Shem",
+          "s": [
+            "H8035"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Canaan",
+          "s": [
+            "H3667"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "H1961"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "servant",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.26",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "servant:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "servant",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "them\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "God shall enlarge Japheth , and he shall dwell in the tents of Shem ; and Canaan shall be his servant.\\f + \\fr 9.27 \\ft enlarge: or, persuade\\f* \\p",
+      "tokens": [
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "enlarge",
+          "s": [
+            "H6601"
+          ]
+        },
+        {
+          "t": "Japheth",
+          "s": [
+            "H3315"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "dwell",
+          "s": [
+            "H7931"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tents",
+          "s": [
+            "H0168"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Shem",
+          "s": [
+            "H8035"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Canaan",
+          "s": [
+            "H3667"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "servant",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.27",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "enlarge:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "persuade\\f*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "¶ And Noah lived after the flood three hundred and fifty years.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Noah",
+          "s": [
+            "H5146"
+          ]
+        },
+        {
+          "t": "lived",
+          "s": [
+            "H2421"
+          ]
+        },
+        {
+          "t": "after",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "flood",
+          "s": [
+            "H3999"
+          ]
+        },
+        {
+          "t": "three",
+          "s": [
+            "H7969"
+          ]
+        },
+        {
+          "t": "hundred",
+          "s": [
+            "H3967"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "fifty",
+          "s": [
+            "H2572"
+          ]
+        },
+        {
+          "t": "years",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 29,
+      "text": "And all the days of Noah were nine hundred and fifty years : and he died.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Noah",
+          "s": [
+            "H5146"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "nine",
+          "s": [
+            "H8672"
+          ]
+        },
+        {
+          "t": "hundred",
+          "s": [
+            "H3967"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "fifty",
+          "s": [
+            "H2572"
+          ]
+        },
+        {
+          "t": "years",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "died",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

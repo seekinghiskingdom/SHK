@@ -1,0 +1,5494 @@
+{
+  "book_id": "2CH",
+  "chapter": 9,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And when the queen of Sheba heard of the fame of Solomon , she came to prove Solomon with hard questions at Jerusalem , with a very great company , and camels that bare spices , and gold in abundance , and precious stones : and when she was come to Solomon , she communed with him of all that was in her heart.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "queen",
+          "s": [
+            "H4436"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Sheba",
+          "s": [
+            "H7614"
+          ]
+        },
+        {
+          "t": "heard",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fame",
+          "s": [
+            "H8088"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "prove",
+          "s": [
+            "H5254"
+          ]
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "hard",
+          "s": []
+        },
+        {
+          "t": "questions",
+          "s": [
+            "H2420"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "very",
+          "s": [
+            "H3966"
+          ]
+        },
+        {
+          "t": "great",
+          "s": [
+            "H3515"
+          ]
+        },
+        {
+          "t": "company",
+          "s": [
+            "H2428"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "camels",
+          "s": [
+            "H1581"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "bare",
+          "s": [
+            "H5375"
+          ]
+        },
+        {
+          "t": "spices",
+          "s": [
+            "H1314"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "abundance",
+          "s": [
+            "H7230"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "precious",
+          "s": [
+            "H3368"
+          ]
+        },
+        {
+          "t": "stones",
+          "s": [
+            "H0068"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "communed",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": [
+            "H3824"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "And Solomon told her all her questions : and there was nothing hid from Solomon which he told her not.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "questions",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "nothing",
+          "s": []
+        },
+        {
+          "t": "hid",
+          "s": [
+            "H5956"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "not.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "And when the queen of Sheba had seen the wisdom of Solomon , and the house that he had built ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "queen",
+          "s": [
+            "H4436"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Sheba",
+          "s": [
+            "H7614"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "seen",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2451"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "built",
+          "s": [
+            "H1129"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "And the meat of his table , and the sitting of his servants , and the attendance of his ministers , and their apparel ; his cupbearers also, and their apparel ; and his ascent by which he went up into the house of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*; there was no more spirit in her.\\f + \\fr 9.4 \\ft cupbearers: or, butlers\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "meat",
+          "s": [
+            "H3978"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "table",
+          "s": [
+            "H7979"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sitting",
+          "s": [
+            "H4186"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "attendance",
+          "s": [
+            "H4612"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "ministers",
+          "s": [
+            "H8334"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "apparel",
+          "s": [
+            "H4403"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "cupbearers",
+          "s": [
+            "H8248"
+          ]
+        },
+        {
+          "t": "also,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "apparel",
+          "s": [
+            "H4403"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "ascent",
+          "s": [
+            "H5944"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*;",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "more",
+          "s": []
+        },
+        {
+          "t": "spirit",
+          "s": [
+            "H7307"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "her.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.4",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "cupbearers:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "butlers\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "And she said to the king , \\add It was\\add* a true report which I heard in mine own land of thine acts , and of thy wisdom :\\f + \\fr 9.5 \\ft report: Heb. word\\f*\\f + \\fr 9.5 \\ft acts: or, sayings\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "It",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "true",
+          "s": [
+            "H0571"
+          ]
+        },
+        {
+          "t": "report",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "own",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "acts",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2451"
+          ]
+        },
+        {
+          "t": ":\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "report:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "word\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "acts:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "sayings\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "Howbeit I believed not their words , until I came , and mine eyes had seen \\add it:\\add* and, behold, the one half of the greatness of thy wisdom was not told me: \\add for\\add* thou exceedest the fame that I heard.",
+      "tokens": [
+        {
+          "t": "Howbeit",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "believed",
+          "s": [
+            "H0539"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "words",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "until",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "eyes",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "seen",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it:\\add*",
+          "s": []
+        },
+        {
+          "t": "and,",
+          "s": []
+        },
+        {
+          "t": "behold,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": []
+        },
+        {
+          "t": "half",
+          "s": [
+            "H2677"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "greatness",
+          "s": [
+            "H4768"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2451"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "me:",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "for\\add*",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "exceedest",
+          "s": [
+            "H3254"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fame",
+          "s": [
+            "H8052"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "Happy \\add are\\add* thy men , and happy \\add are\\add* these thy servants , which stand continually before thee, and hear thy wisdom.",
+      "tokens": [
+        {
+          "t": "Happy",
+          "s": [
+            "H0835"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "men",
+          "s": [
+            "H0582"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "happy",
+          "s": [
+            "H0835"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "these",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "stand",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "continually",
+          "s": [
+            "H8548"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "hear",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2451"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "Blessed be the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* thy God , which delighted in thee to set thee on his throne , \\add to be\\add* king for the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* thy God : because thy God loved Israel , to establish them for ever , therefore made he thee king over them, to do judgment and justice.",
+      "tokens": [
+        {
+          "t": "Blessed",
+          "s": [
+            "H1288"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "delighted",
+          "s": [
+            "H2654"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "set",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "throne",
+          "s": [
+            "H3678"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "loved",
+          "s": [
+            "H0160"
+          ]
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "establish",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "ever",
+          "s": [
+            "H5769"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "therefore",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "judgment",
+          "s": [
+            "H4941"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "justice",
+          "s": [
+            "H6666"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "And she gave the king an hundred and twenty talents of gold , and of spices great abundance , and precious stones : neither was there any such spice as the queen of Sheba gave king Solomon.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "hundred",
+          "s": [
+            "H3967"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "twenty",
+          "s": [
+            "H6242"
+          ]
+        },
+        {
+          "t": "talents",
+          "s": [
+            "H3603"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "spices",
+          "s": [
+            "H1314"
+          ]
+        },
+        {
+          "t": "great",
+          "s": [
+            "H3966"
+          ]
+        },
+        {
+          "t": "abundance",
+          "s": [
+            "H7230"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "precious",
+          "s": [
+            "H3368"
+          ]
+        },
+        {
+          "t": "stones",
+          "s": [
+            "H0068"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "neither",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "any",
+          "s": []
+        },
+        {
+          "t": "such",
+          "s": []
+        },
+        {
+          "t": "spice",
+          "s": [
+            "H1314"
+          ]
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "queen",
+          "s": [
+            "H4436"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Sheba",
+          "s": [
+            "H7614"
+          ]
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "And the servants also of Huram , and the servants of Solomon , which brought gold from Ophir , brought algum trees and precious stones.\\f + \\fr 9.10 \\ft algum…: also called, almug trees\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Huram",
+          "s": [
+            "H2361"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "Ophir",
+          "s": [
+            "H0211"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "algum",
+          "s": [
+            "H0418"
+          ]
+        },
+        {
+          "t": "trees",
+          "s": [
+            "H6086"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "precious",
+          "s": [
+            "H3368"
+          ]
+        },
+        {
+          "t": "stones",
+          "s": [
+            "H0068"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.10",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "algum…:",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "called,",
+          "s": []
+        },
+        {
+          "t": "almug",
+          "s": []
+        },
+        {
+          "t": "trees\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "And the king made \\add of\\add* the algum trees terraces to the house of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, and to the king’s palace , and harps and psalteries for singers : and there were none such seen before in the land of Judah.\\f + \\fr 9.11 \\ft terraces: or, stairs: Heb. highways\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "made",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "algum",
+          "s": [
+            "H0418"
+          ]
+        },
+        {
+          "t": "trees",
+          "s": [
+            "H6086"
+          ]
+        },
+        {
+          "t": "terraces",
+          "s": [
+            "H4546"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king’s",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "palace",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "harps",
+          "s": [
+            "H3658"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "psalteries",
+          "s": [
+            "H5035"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "singers",
+          "s": [
+            "H7891"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "none",
+          "s": []
+        },
+        {
+          "t": "such",
+          "s": [
+            "H1992"
+          ]
+        },
+        {
+          "t": "seen",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.11",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "terraces:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "stairs:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "highways\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "And king Solomon gave to the queen of Sheba all her desire , whatsoever she asked , beside \\add that\\add* which she had brought unto the king. So she turned , and went away to her own land , she and her servants. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "queen",
+          "s": [
+            "H4436"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Sheba",
+          "s": [
+            "H7614"
+          ]
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "desire",
+          "s": [
+            "H2656"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "whatsoever",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "asked",
+          "s": [
+            "H7592"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "beside",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "So",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "turned",
+          "s": [
+            "H2015"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "own",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "¶ Now the weight of gold that came to Solomon in one year was six hundred and threescore and six talents of gold ;",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "Now",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "weight",
+          "s": [
+            "H4948"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "year",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "six",
+          "s": [
+            "H8337"
+          ]
+        },
+        {
+          "t": "hundred",
+          "s": [
+            "H3967"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "threescore",
+          "s": [
+            "H8346"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "six",
+          "s": [
+            "H8337"
+          ]
+        },
+        {
+          "t": "talents",
+          "s": [
+            "H3603"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "Beside \\add that which\\add* chapmen and merchants brought. And all the kings of Arabia and governors of the country brought gold and silver to Solomon.\\f + \\fr 9.14 \\ft governors: or, captains\\f* \\p",
+      "tokens": [
+        {
+          "t": "Beside",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "which\\add*",
+          "s": []
+        },
+        {
+          "t": "chapmen",
+          "s": [
+            "H0582"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "merchants",
+          "s": [
+            "H5503"
+          ]
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kings",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Arabia",
+          "s": [
+            "H6152"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "governors",
+          "s": [
+            "H6346"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "country",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "silver",
+          "s": [
+            "H3701"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.14",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "governors:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "captains\\f*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "¶ And king Solomon made two hundred targets \\add of\\add* beaten gold : six hundred \\add shekels\\add* of beaten gold went to one target.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "made",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "two",
+          "s": []
+        },
+        {
+          "t": "hundred",
+          "s": [
+            "H3967"
+          ]
+        },
+        {
+          "t": "targets",
+          "s": [
+            "H6793"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "beaten",
+          "s": [
+            "H7820"
+          ]
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "six",
+          "s": [
+            "H8337"
+          ]
+        },
+        {
+          "t": "hundred",
+          "s": [
+            "H3967"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "shekels\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "beaten",
+          "s": [
+            "H7820"
+          ]
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": "went",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "target",
+          "s": [
+            "H6793"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "And three hundred shields \\add made he of\\add* beaten gold : three hundred \\add shekels\\add* of gold went to one shield. And the king put them in the house of the forest of Lebanon.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "three",
+          "s": [
+            "H7969"
+          ]
+        },
+        {
+          "t": "hundred",
+          "s": [
+            "H3967"
+          ]
+        },
+        {
+          "t": "shields",
+          "s": [
+            "H4043"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "beaten",
+          "s": [
+            "H7820"
+          ]
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "three",
+          "s": [
+            "H7969"
+          ]
+        },
+        {
+          "t": "hundred",
+          "s": [
+            "H3967"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "shekels\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": "went",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "shield",
+          "s": [
+            "H4043"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "put",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "forest",
+          "s": [
+            "H3293"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Lebanon",
+          "s": [
+            "H3844"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Moreover the king made a great throne of ivory , and overlaid it with pure gold.",
+      "tokens": [
+        {
+          "t": "Moreover",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "made",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": [
+            "H1419"
+          ]
+        },
+        {
+          "t": "throne",
+          "s": [
+            "H3678"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "ivory",
+          "s": [
+            "H8127"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "overlaid",
+          "s": [
+            "H6823"
+          ]
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "pure",
+          "s": [
+            "H2889"
+          ]
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "And \\add there were\\add* six steps to the throne , with a footstool of gold , \\add which were\\add* fastened to the throne , and stays on each side of the sitting place , and two lions standing by the stays :\\f + \\fr 9.18 \\ft stays: Heb. hands\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "six",
+          "s": [
+            "H8337"
+          ]
+        },
+        {
+          "t": "steps",
+          "s": [
+            "H4609"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "throne",
+          "s": [
+            "H3678"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "footstool",
+          "s": [
+            "H3534"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "fastened",
+          "s": [
+            "H0270"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "throne",
+          "s": [
+            "H3678"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "stays",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "each",
+          "s": []
+        },
+        {
+          "t": "side",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sitting",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "place",
+          "s": [
+            "H4725"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "lions",
+          "s": [
+            "H0738"
+          ]
+        },
+        {
+          "t": "standing",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "by",
+          "s": [
+            "H0681"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "stays",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": ":\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.18",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "stays:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "hands\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "And twelve lions stood there on the one side and on the other upon the six steps. There was not the like made in any kingdom. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "twelve",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "lions",
+          "s": [
+            "H0738"
+          ]
+        },
+        {
+          "t": "stood",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": []
+        },
+        {
+          "t": "side",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "other",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "six",
+          "s": [
+            "H8337"
+          ]
+        },
+        {
+          "t": "steps",
+          "s": [
+            "H4609"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "There",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "like",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "any",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4467"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "¶ And all the drinking vessels of king Solomon \\add were of\\add* gold , and all the vessels of the house of the forest of Lebanon \\add were of\\add* pure gold : none \\add were of\\add* silver ; it was \\add not\\add* any thing accounted of in the days of Solomon.\\f + \\fr 9.20 \\ft pure: Heb. shut up\\f*\\f + \\fr 9.20 \\ft none were of silver: or, there was no silver in them\\f*",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "drinking",
+          "s": [
+            "H4945"
+          ]
+        },
+        {
+          "t": "vessels",
+          "s": [
+            "H3627"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "vessels",
+          "s": [
+            "H3627"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "forest",
+          "s": [
+            "H3293"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Lebanon",
+          "s": [
+            "H3844"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "pure",
+          "s": [
+            "H5462"
+          ]
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "none",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "silver",
+          "s": [
+            "H3701"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "not\\add*",
+          "s": []
+        },
+        {
+          "t": "any",
+          "s": [
+            "H3972"
+          ]
+        },
+        {
+          "t": "thing",
+          "s": []
+        },
+        {
+          "t": "accounted",
+          "s": [
+            "H2803"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.20",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "pure:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "shut",
+          "s": []
+        },
+        {
+          "t": "up\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.20",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "none",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "silver:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "silver",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "them\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "For the king’s ships went to Tarshish with the servants of Huram : every three years once came the ships of Tarshish bringing gold , and silver , ivory , and apes , and peacocks.\\f + \\fr 9.21 \\ft ivory: or, elephants’ teeth\\f*",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king’s",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "ships",
+          "s": [
+            "H0591"
+          ]
+        },
+        {
+          "t": "went",
+          "s": [
+            "H1980"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Tarshish",
+          "s": [
+            "H8659"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "servants",
+          "s": [
+            "H5650"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Huram",
+          "s": [
+            "H2361"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "three",
+          "s": [
+            "H7969"
+          ]
+        },
+        {
+          "t": "years",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": "once",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ships",
+          "s": [
+            "H0591"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Tarshish",
+          "s": [
+            "H8659"
+          ]
+        },
+        {
+          "t": "bringing",
+          "s": [
+            "H5375"
+          ]
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "silver",
+          "s": [
+            "H3701"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "ivory",
+          "s": [
+            "H8143"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "apes",
+          "s": [
+            "H6971"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "peacocks",
+          "s": [
+            "H8500"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.21",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "ivory:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "elephants’",
+          "s": []
+        },
+        {
+          "t": "teeth\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "And king Solomon passed all the kings of the earth in riches and wisdom. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "passed",
+          "s": [
+            "H1431"
+          ]
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kings",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "riches",
+          "s": [
+            "H6239"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2451"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "¶ And all the kings of the earth sought the presence of Solomon , to hear his wisdom , that God had put in his heart.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kings",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "sought",
+          "s": [
+            "H1245"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "presence",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "hear",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2451"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": [
+            "H3820"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "And they brought every man his present , vessels of silver , and vessels of gold , and raiment , harness , and spices , horses , and mules , a rate year by year. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "present",
+          "s": [
+            "H4503"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "vessels",
+          "s": [
+            "H3627"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "silver",
+          "s": [
+            "H3701"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "vessels",
+          "s": [
+            "H3627"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "raiment",
+          "s": [
+            "H8008"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "harness",
+          "s": [
+            "H5402"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "spices",
+          "s": [
+            "H1314"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "horses",
+          "s": [
+            "H5483"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "mules",
+          "s": [
+            "H6505"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "rate",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": "year",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "year",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "¶ And Solomon had four thousand stalls for horses and chariots , and twelve thousand horsemen ; whom he bestowed in the chariot cities , and with the king at Jerusalem. \\p",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "four",
+          "s": [
+            "H0702"
+          ]
+        },
+        {
+          "t": "thousand",
+          "s": [
+            "H0505"
+          ]
+        },
+        {
+          "t": "stalls",
+          "s": [
+            "H0723"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "horses",
+          "s": [
+            "H5483"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "chariots",
+          "s": [
+            "H4818"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "twelve",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "thousand",
+          "s": [
+            "H0505"
+          ]
+        },
+        {
+          "t": "horsemen",
+          "s": [
+            "H6571"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "bestowed",
+          "s": [
+            "H3240"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chariot",
+          "s": [
+            "H7393"
+          ]
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "¶ And he reigned over all the kings from the river even unto the land of the Philistines , and to the border of Egypt.\\f + \\fr 9.26 \\ft river: that is, Euphrates\\f*",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "reigned",
+          "s": [
+            "H4910"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kings",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "river",
+          "s": [
+            "H5104"
+          ]
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Philistines",
+          "s": [
+            "H6430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "border",
+          "s": [
+            "H1366"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Egypt",
+          "s": [
+            "H4714"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.26",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "river:",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is,",
+          "s": []
+        },
+        {
+          "t": "Euphrates\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "And the king made silver in Jerusalem as stones , and cedar trees made he as the sycomore trees that \\add are\\add* in the low plains in abundance.\\f + \\fr 9.27 \\ft made silver: Heb. gave silver\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "made",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "silver",
+          "s": [
+            "H3701"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "stones",
+          "s": [
+            "H0068"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "cedar",
+          "s": []
+        },
+        {
+          "t": "trees",
+          "s": [
+            "H0730"
+          ]
+        },
+        {
+          "t": "made",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sycomore",
+          "s": []
+        },
+        {
+          "t": "trees",
+          "s": [
+            "H8256"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "low",
+          "s": []
+        },
+        {
+          "t": "plains",
+          "s": [
+            "H8219"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "abundance",
+          "s": [
+            "H7230"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.27",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "silver:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": []
+        },
+        {
+          "t": "silver\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "And they brought unto Solomon horses out of Egypt , and out of all lands. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "horses",
+          "s": [
+            "H5483"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Egypt",
+          "s": [
+            "H4714"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "lands",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 29,
+      "text": "¶ Now the rest of the acts of Solomon , first and last , \\add are\\add* they not written in the book of Nathan the prophet , and in the prophecy of Ahijah the Shilonite , and in the visions of Iddo the seer against Jeroboam the son of Nebat ?\\f + \\fr 9.29 \\ft book: Heb. words\\f*",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "Now",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rest",
+          "s": [
+            "H7605"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "acts",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "first",
+          "s": [
+            "H7223"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "last",
+          "s": [
+            "H0314"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "written",
+          "s": [
+            "H3789"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "book",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Nathan",
+          "s": [
+            "H5416"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prophet",
+          "s": [
+            "H5030"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prophecy",
+          "s": [
+            "H5016"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Ahijah",
+          "s": [
+            "H0281"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Shilonite",
+          "s": [
+            "H7888"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "visions",
+          "s": [
+            "H2378"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Iddo",
+          "s": [
+            "H3260"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "seer",
+          "s": [
+            "H2374"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "Jeroboam",
+          "s": [
+            "H3379"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Nebat",
+          "s": [
+            "H5028"
+          ]
+        },
+        {
+          "t": "?\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.29",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "book:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "words\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 30,
+      "text": "And Solomon reigned in Jerusalem over all Israel forty years.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "reigned",
+          "s": [
+            "H4427"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": "forty",
+          "s": [
+            "H0705"
+          ]
+        },
+        {
+          "t": "years",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 31,
+      "text": "And Solomon slept with his fathers , and he was buried in the city of David his father : and Rehoboam his son reigned in his stead.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "slept",
+          "s": [
+            "H7901"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "fathers",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "buried",
+          "s": [
+            "H6912"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Rehoboam",
+          "s": [
+            "H7346"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "reigned",
+          "s": [
+            "H4427"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "stead.",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5296 @@
+{
+  "book_id": "JHN",
+  "chapter": 3,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "There was a man of the Pharisees , named Nicodemus , a ruler of the Jews :",
+      "tokens": [
+        {
+          "t": "There",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": [
+            "G2258"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0444"
+          ]
+        },
+        {
+          "t": "of",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Pharisees",
+          "s": [
+            "G5330"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "named",
+          "s": [
+            "G3686"
+          ]
+        },
+        {
+          "t": "Nicodemus",
+          "s": [
+            "G3530"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "ruler",
+          "s": [
+            "G0758"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "The same came to Jesus by night , and said unto him , Rabbi , we know that thou art a teacher come from God : for no man can do these miracles that thou doest , except God be with him.",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "same",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "came",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G4314"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "G3571"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Rabbi",
+          "s": [
+            "G4461"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "know",
+          "s": [
+            "G1492"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "art",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "teacher",
+          "s": [
+            "G1320"
+          ]
+        },
+        {
+          "t": "come",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G3762"
+          ]
+        },
+        {
+          "t": "can",
+          "s": [
+            "G1410"
+          ]
+        },
+        {
+          "t": "do",
+          "s": [
+            "G4160"
+          ]
+        },
+        {
+          "t": "these",
+          "s": [
+            "G5023"
+          ]
+        },
+        {
+          "t": "miracles",
+          "s": [
+            "G4592"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": [
+            "G4771"
+          ]
+        },
+        {
+          "t": "doest",
+          "s": [
+            "G4160"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "except",
+          "s": [
+            "G3361"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "be",
+          "s": [
+            "G5600"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G3326"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "Jesus answered and said unto him , \\wj \\+w Verily|strong=\"G0281\"\\+w*, \\+w verily|strong=\"G0281\"\\+w*, \\+w I say|strong=\"G3004\"\\+w* \\+w unto thee|strong=\"G4671\"\\+w*, \\+w Except|strong=\"G3361\"\\+w* \\+w a man|strong=\"G5100\"\\+w* \\+w be born|strong=\"G1080\"\\+w* \\+w again|strong=\"G0509\"\\+w*, he \\+w can|strong=\"G1410\"\\+w*\\+w not|strong=\"G3756\"\\+w* \\+w see|strong=\"G1492\"\\+w* \\+w the kingdom|strong=\"G0932\"\\+w* \\+w of God|strong=\"G2316\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "answered",
+          "s": [
+            "G0611"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Verily|strong=\"G0281\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "verily|strong=\"G0281\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4671\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Except|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man|strong=\"G5100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "born|strong=\"G1080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "again|strong=\"G0509\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "can|strong=\"G1410\"\\+w*\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "see|strong=\"G1492\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom|strong=\"G0932\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God|strong=\"G2316\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "Nicodemus saith unto him , How can a man be born when he is old ? can he enter the second time into his mother’s womb , and be born ?",
+      "tokens": [
+        {
+          "t": "Nicodemus",
+          "s": [
+            "G3530"
+          ]
+        },
+        {
+          "t": "saith",
+          "s": [
+            "G3004"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G4314"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "How",
+          "s": [
+            "G4459"
+          ]
+        },
+        {
+          "t": "can",
+          "s": [
+            "G1410"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0444"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "born",
+          "s": [
+            "G1080"
+          ]
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": [
+            "G5607"
+          ]
+        },
+        {
+          "t": "old",
+          "s": [
+            "G1088"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "can",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": [
+            "G1410"
+          ]
+        },
+        {
+          "t": "enter",
+          "s": [
+            "G1525"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "second",
+          "s": []
+        },
+        {
+          "t": "time",
+          "s": [
+            "G1208"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "mother’s",
+          "s": [
+            "G3384"
+          ]
+        },
+        {
+          "t": "womb",
+          "s": [
+            "G2836"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "born",
+          "s": [
+            "G1080"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Jesus answered , \\wj \\+w Verily|strong=\"G0281\"\\+w*, \\+w verily|strong=\"G0281\"\\+w*, \\+w I say|strong=\"G3004\"\\+w* \\+w unto thee|strong=\"G4671\"\\+w*, \\+w Except|strong=\"G3361\"\\+w* \\+w a man|strong=\"G5100\"\\+w* \\+w be born|strong=\"G1080\"\\+w* \\+w of|strong=\"G1537\"\\+w* \\+w water|strong=\"G5204\"\\+w* \\+w and|strong=\"G2532\"\\+w* \\+add of\\+add* \\+w the Spirit|strong=\"G4151\"\\+w*, \\+w he can|strong=\"G1410\"\\+w*\\+w not|strong=\"G3756\"\\+w* \\+w enter|strong=\"G1525\"\\+w* \\+w into|strong=\"G1519\"\\+w* \\+w the kingdom|strong=\"G0932\"\\+w* \\+w of God|strong=\"G2316\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "answered",
+          "s": [
+            "G0611"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Verily|strong=\"G0281\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "verily|strong=\"G0281\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4671\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Except|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man|strong=\"G5100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "born|strong=\"G1080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G1537\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "water|strong=\"G5204\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "of\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Spirit|strong=\"G4151\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "can|strong=\"G1410\"\\+w*\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "enter|strong=\"G1525\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "into|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom|strong=\"G0932\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God|strong=\"G2316\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "\\wj \\+w That which is born|strong=\"G1080\"\\+w* \\+w of|strong=\"G1537\"\\+w* \\+w the flesh|strong=\"G4561\"\\+w* \\+w is|strong=\"G2076\"\\+w* \\+w flesh|strong=\"G4561\"\\+w*; \\+w and|strong=\"G2532\"\\+w* \\+w that which is born|strong=\"G1080\"\\+w* \\+w of|strong=\"G1537\"\\+w* \\+w the Spirit|strong=\"G4151\"\\+w* \\+w is|strong=\"G2076\"\\+w* \\+w spirit|strong=\"G4151\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "That",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "born|strong=\"G1080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G1537\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "flesh|strong=\"G4561\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "flesh|strong=\"G4561\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "born|strong=\"G1080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G1537\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Spirit|strong=\"G4151\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "spirit|strong=\"G4151\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "\\wj \\+w Marvel|strong=\"G2296\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w that|strong=\"G3754\"\\+w* \\+w I said|strong=\"G2036\"\\+w* \\+w unto thee|strong=\"G4671\"\\+w*, \\+w Ye|strong=\"G5209\"\\+w* \\+w must|strong=\"G1163\"\\+w* \\+w be born|strong=\"G1080\"\\+w* \\+w again|strong=\"G0509\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Marvel|strong=\"G2296\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "said|strong=\"G2036\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4671\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Ye|strong=\"G5209\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "must|strong=\"G1163\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "born|strong=\"G1080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "again|strong=\"G0509\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "\\wj \\+w The wind|strong=\"G4151\"\\+w* \\+w bloweth|strong=\"G4154\"\\+w* \\+w where|strong=\"G3699\"\\+w* \\+w it listeth|strong=\"G2309\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w thou hearest|strong=\"G0191\"\\+w* \\+w the sound|strong=\"G5456\"\\+w* \\+w thereof|strong=\"G0846\"\\+w*, \\+w but|strong=\"G0235\"\\+w* \\+w canst|strong=\"G1492\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w tell|strong=\"G1492\"\\+w* \\+w whence|strong=\"G4159\"\\+w* \\+w it cometh|strong=\"G2064\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w whither|strong=\"G4226\"\\+w* \\+w it goeth|strong=\"G5217\"\\+w*: \\+w so|strong=\"G3779\"\\+w* \\+w is|strong=\"G2076\"\\+w* \\+w every|strong=\"G3956\"\\+w* \\+w one that is born|strong=\"G1080\"\\+w* \\+w of|strong=\"G1537\"\\+w* \\+w the Spirit|strong=\"G4151\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "wind|strong=\"G4151\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "bloweth|strong=\"G4154\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "where|strong=\"G3699\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "listeth|strong=\"G2309\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hearest|strong=\"G0191\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sound|strong=\"G5456\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thereof|strong=\"G0846\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G0235\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "canst|strong=\"G1492\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "tell|strong=\"G1492\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whence|strong=\"G4159\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "cometh|strong=\"G2064\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whither|strong=\"G4226\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "goeth|strong=\"G5217\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "so|strong=\"G3779\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "every|strong=\"G3956\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "born|strong=\"G1080\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of|strong=\"G1537\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Spirit|strong=\"G4151\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Nicodemus answered and said unto him , How can these things be ?",
+      "tokens": [
+        {
+          "t": "Nicodemus",
+          "s": [
+            "G3530"
+          ]
+        },
+        {
+          "t": "answered",
+          "s": [
+            "G0611"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "How",
+          "s": [
+            "G4459"
+          ]
+        },
+        {
+          "t": "can",
+          "s": [
+            "G1410"
+          ]
+        },
+        {
+          "t": "these",
+          "s": []
+        },
+        {
+          "t": "things",
+          "s": [
+            "G5023"
+          ]
+        },
+        {
+          "t": "be",
+          "s": [
+            "G1096"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "Jesus answered and said unto him , \\wj \\+w Art|strong=\"G1488\"\\+w* \\+w thou|strong=\"G4771\"\\+w* \\+w a master|strong=\"G1320\"\\+w* \\+w of Israel|strong=\"G2474\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w knowest|strong=\"G1097\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w these things|strong=\"G5023\"\\+w*?\\wj*",
+      "tokens": [
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "answered",
+          "s": [
+            "G0611"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Art|strong=\"G1488\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thou|strong=\"G4771\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "master|strong=\"G1320\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Israel|strong=\"G2474\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "knowest|strong=\"G1097\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "these",
+          "s": []
+        },
+        {
+          "t": "things|strong=\"G5023\"\\+w*?\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "\\wj \\+w Verily|strong=\"G0281\"\\+w*, \\+w verily|strong=\"G0281\"\\+w*, \\+w I say|strong=\"G3004\"\\+w* \\+w unto thee|strong=\"G4671\"\\+w*, \\+w We speak|strong=\"G2980\"\\+w* \\+w that|strong=\"G3739\"\\+w* \\+w we do know|strong=\"G1492\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w testify|strong=\"G3140\"\\+w* \\+w that|strong=\"G3739\"\\+w* \\+w we have seen|strong=\"G3708\"\\+w*; \\+w and|strong=\"G2532\"\\+w* \\+w ye receive|strong=\"G2983\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w our|strong=\"G2257\"\\+w* \\+w witness|strong=\"G3141\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Verily|strong=\"G0281\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "verily|strong=\"G0281\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "say|strong=\"G3004\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4671\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "We",
+          "s": []
+        },
+        {
+          "t": "speak|strong=\"G2980\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "know|strong=\"G1492\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "testify|strong=\"G3140\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3739\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "seen|strong=\"G3708\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "receive|strong=\"G2983\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "our|strong=\"G2257\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "witness|strong=\"G3141\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "\\wj \\+w If|strong=\"G1487\"\\+w* \\+w I have told|strong=\"G2036\"\\+w* \\+w you|strong=\"G5213\"\\+w* \\+w earthly things|strong=\"G1919\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w ye believe|strong=\"G4100\"\\+w* \\+w not|strong=\"G3756\"\\+w*, \\+w how|strong=\"G4459\"\\+w* \\+w shall ye believe|strong=\"G4100\"\\+w*, \\+w if|strong=\"G1437\"\\+w* \\+w I tell|strong=\"G2036\"\\+w* \\+w you|strong=\"G5213\"\\+w* \\+add of\\+add* \\+w heavenly things|strong=\"G2032\"\\+w*?\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "If|strong=\"G1487\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "told|strong=\"G2036\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "earthly",
+          "s": []
+        },
+        {
+          "t": "things|strong=\"G1919\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "believe|strong=\"G4100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "how|strong=\"G4459\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "believe|strong=\"G4100\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "if|strong=\"G1437\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "tell|strong=\"G2036\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "you|strong=\"G5213\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "of\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heavenly",
+          "s": []
+        },
+        {
+          "t": "things|strong=\"G2032\"\\+w*?\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "\\wj \\+w And|strong=\"G2532\"\\+w* \\+w no man|strong=\"G3762\"\\+w* \\+w hath ascended up|strong=\"G0305\"\\+w* \\+w to|strong=\"G1519\"\\+w* \\+w heaven|strong=\"G3772\"\\+w*, \\+w but|strong=\"G3361\"\\+w* \\+w he that|strong=\"G3588\"\\+w* \\+w came down|strong=\"G2597\"\\+w* \\+w from|strong=\"G1537\"\\+w* \\+w heaven|strong=\"G3772\"\\+w*, \\+add even\\+add* \\+w the Son|strong=\"G5207\"\\+w* \\+w of man|strong=\"G0444\"\\+w* \\+w which is|strong=\"G5607\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w heaven|strong=\"G3772\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "And|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "man|strong=\"G3762\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "ascended",
+          "s": []
+        },
+        {
+          "t": "up|strong=\"G0305\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3588\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "down|strong=\"G2597\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "from|strong=\"G1537\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+add",
+          "s": []
+        },
+        {
+          "t": "even\\+add*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Son|strong=\"G5207\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "man|strong=\"G0444\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G5607\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "heaven|strong=\"G3772\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "\\wj ¶ \\+w And|strong=\"G2532\"\\+w* \\+w as|strong=\"G2531\"\\+w* \\+w Moses|strong=\"G3475\"\\+w* \\+w lifted up|strong=\"G5312\"\\+w* \\+w the serpent|strong=\"G3789\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w the wilderness|strong=\"G2048\"\\+w*, \\+w even so|strong=\"G3779\"\\+w* \\+w must|strong=\"G1163\"\\+w* \\+w the Son|strong=\"G5207\"\\+w* \\+w of man|strong=\"G0444\"\\+w* \\+w be lifted up|strong=\"G5312\"\\+w*:\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "And|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "as|strong=\"G2531\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Moses|strong=\"G3475\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "lifted",
+          "s": []
+        },
+        {
+          "t": "up|strong=\"G5312\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "serpent|strong=\"G3789\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wilderness|strong=\"G2048\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "so|strong=\"G3779\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "must|strong=\"G1163\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Son|strong=\"G5207\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "man|strong=\"G0444\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "lifted",
+          "s": []
+        },
+        {
+          "t": "up|strong=\"G5312\"\\+w*:\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "\\wj \\+w That|strong=\"G2443\"\\+w* \\+w whosoever|strong=\"G3956\"\\+w* \\+w believeth|strong=\"G4100\"\\+w* \\+w in|strong=\"G1519\"\\+w* \\+w him|strong=\"G0846\"\\+w* \\+w should|strong=\"G0622\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w perish|strong=\"G0622\"\\+w*, \\+w but|strong=\"G0235\"\\+w* \\+w have|strong=\"G2192\"\\+w* \\+w eternal|strong=\"G0166\"\\+w* \\+w life|strong=\"G2222\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "That|strong=\"G2443\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3956\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "believeth|strong=\"G4100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "him|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "should|strong=\"G0622\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "perish|strong=\"G0622\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G0235\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "have|strong=\"G2192\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "eternal|strong=\"G0166\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "life|strong=\"G2222\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "\\wj ¶ \\+w For|strong=\"G1063\"\\+w* \\+w God|strong=\"G2316\"\\+w* \\+w so|strong=\"G3779\"\\+w* \\+w loved|strong=\"G0025\"\\+w* \\+w the world|strong=\"G2889\"\\+w*, \\+w that|strong=\"G5620\"\\+w* \\+w he gave|strong=\"G1325\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w only begotten|strong=\"G3439\"\\+w* \\+w Son|strong=\"G5207\"\\+w*, \\+w that|strong=\"G2443\"\\+w* \\+w whosoever|strong=\"G3956\"\\+w* \\+w believeth|strong=\"G4100\"\\+w* \\+w in|strong=\"G1519\"\\+w* \\+w him|strong=\"G0846\"\\+w* \\+w should|strong=\"G0622\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w perish|strong=\"G0622\"\\+w*, \\+w but|strong=\"G0235\"\\+w* \\+w have|strong=\"G2192\"\\+w* \\+w everlasting|strong=\"G0166\"\\+w* \\+w life|strong=\"G2222\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "For|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "God|strong=\"G2316\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "so|strong=\"G3779\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "loved|strong=\"G0025\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "world|strong=\"G2889\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G5620\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "gave|strong=\"G1325\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "only",
+          "s": []
+        },
+        {
+          "t": "begotten|strong=\"G3439\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Son|strong=\"G5207\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G2443\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "whosoever|strong=\"G3956\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "believeth|strong=\"G4100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "him|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "should|strong=\"G0622\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "perish|strong=\"G0622\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G0235\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "have|strong=\"G2192\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "everlasting|strong=\"G0166\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "life|strong=\"G2222\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "\\wj \\+w For|strong=\"G1063\"\\+w* \\+w God|strong=\"G2316\"\\+w* \\+w sent|strong=\"G0649\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w Son|strong=\"G5207\"\\+w* \\+w into|strong=\"G1519\"\\+w* \\+w the world|strong=\"G2889\"\\+w* \\+w to|strong=\"G2443\"\\+w* \\+w condemn|strong=\"G2919\"\\+w* \\+w the world|strong=\"G2889\"\\+w*; \\+w but|strong=\"G0235\"\\+w* \\+w that|strong=\"G2443\"\\+w* \\+w the world|strong=\"G2889\"\\+w* \\+w through|strong=\"G1223\"\\+w* \\+w him|strong=\"G0846\"\\+w* \\+w might be saved|strong=\"G4982\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "For|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "God|strong=\"G2316\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "sent|strong=\"G0649\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Son|strong=\"G5207\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "into|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "world|strong=\"G2889\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to|strong=\"G2443\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "condemn|strong=\"G2919\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "world|strong=\"G2889\"\\+w*;",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G0235\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G2443\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "world|strong=\"G2889\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "through|strong=\"G1223\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "him|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "might",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "saved|strong=\"G4982\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "\\wj ¶ \\+w He that believeth|strong=\"G4100\"\\+w* \\+w on|strong=\"G1519\"\\+w* \\+w him|strong=\"G0846\"\\+w* \\+w is|strong=\"G2919\"\\+w* \\+w not|strong=\"G3756\"\\+w* \\+w condemned|strong=\"G2919\"\\+w*: \\+w but|strong=\"G1161\"\\+w* \\+w he that believeth|strong=\"G4100\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w is condemned|strong=\"G2919\"\\+w* \\+w already|strong=\"G2235\"\\+w*, \\+w because|strong=\"G3754\"\\+w* \\+w he hath|strong=\"G4100\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w believed|strong=\"G4100\"\\+w* \\+w in|strong=\"G1519\"\\+w* \\+w the name|strong=\"G3686\"\\+w* \\+w of the only begotten|strong=\"G3439\"\\+w* \\+w Son|strong=\"G5207\"\\+w* \\+w of God|strong=\"G2316\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "believeth|strong=\"G4100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "him|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2919\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "condemned|strong=\"G2919\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "believeth|strong=\"G4100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "condemned|strong=\"G2919\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "already|strong=\"G2235\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "because|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "hath|strong=\"G4100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "believed|strong=\"G4100\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "name|strong=\"G3686\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "only",
+          "s": []
+        },
+        {
+          "t": "begotten|strong=\"G3439\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Son|strong=\"G5207\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God|strong=\"G2316\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "\\wj \\+w And|strong=\"G1161\"\\+w* \\+w this|strong=\"G3778\"\\+w* \\+w is|strong=\"G2076\"\\+w* \\+w the condemnation|strong=\"G2920\"\\+w*, \\+w that|strong=\"G3754\"\\+w* \\+w light|strong=\"G5457\"\\+w* \\+w is come|strong=\"G2064\"\\+w* \\+w into|strong=\"G1519\"\\+w* \\+w the world|strong=\"G2889\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w men|strong=\"G0444\"\\+w* \\+w loved|strong=\"G0025\"\\+w* \\+w darkness|strong=\"G4655\"\\+w* \\+w rather|strong=\"G3123\"\\+w* \\+w than|strong=\"G2228\"\\+w* \\+w light|strong=\"G5457\"\\+w*, \\+w because|strong=\"G1063\"\\+w* \\+w their|strong=\"G0846\"\\+w* \\+w deeds|strong=\"G2041\"\\+w* \\+w were|strong=\"G2258\"\\+w* \\+w evil|strong=\"G4190\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "And|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "this|strong=\"G3778\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "condemnation|strong=\"G2920\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "light|strong=\"G5457\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "come|strong=\"G2064\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "into|strong=\"G1519\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "world|strong=\"G2889\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "men|strong=\"G0444\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "loved|strong=\"G0025\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "darkness|strong=\"G4655\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "rather|strong=\"G3123\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "than|strong=\"G2228\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "light|strong=\"G5457\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "because|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "their|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "deeds|strong=\"G2041\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "were|strong=\"G2258\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "evil|strong=\"G4190\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "\\wj \\+w For|strong=\"G1063\"\\+w* \\+w every|strong=\"G3956\"\\+w* \\+w one that doeth|strong=\"G4238\"\\+w* \\+w evil|strong=\"G5337\"\\+w* \\+w hateth|strong=\"G3404\"\\+w* \\+w the light|strong=\"G5457\"\\+w*, \\+w neither|strong=\"G3756\"\\+w* \\+w cometh|strong=\"G2064\"\\+w* \\+w to|strong=\"G4314\"\\+w* \\+w the light|strong=\"G5457\"\\+w*, \\+w lest|strong=\"G3361\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w deeds|strong=\"G2041\"\\+w* \\+w should be reproved|strong=\"G1651\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "For|strong=\"G1063\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "every|strong=\"G3956\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "doeth|strong=\"G4238\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "evil|strong=\"G5337\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hateth|strong=\"G3404\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "light|strong=\"G5457\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "neither|strong=\"G3756\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "cometh|strong=\"G2064\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to|strong=\"G4314\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "light|strong=\"G5457\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "lest|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "deeds|strong=\"G2041\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "reproved|strong=\"G1651\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "\\wj \\+w But|strong=\"G1161\"\\+w* \\+w he that doeth|strong=\"G4160\"\\+w* \\+w truth|strong=\"G0225\"\\+w* \\+w cometh|strong=\"G2064\"\\+w* \\+w to|strong=\"G4314\"\\+w* \\+w the light|strong=\"G5457\"\\+w*, \\+w that|strong=\"G2443\"\\+w* \\+w his|strong=\"G0846\"\\+w* \\+w deeds|strong=\"G2041\"\\+w* \\+w may be made manifest|strong=\"G5319\"\\+w*, \\+w that|strong=\"G3754\"\\+w* \\+w they are|strong=\"G2076\"\\+w* \\+w wrought|strong=\"G2038\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w God|strong=\"G2316\"\\+w*.\\wj* \\p",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "But|strong=\"G1161\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "doeth|strong=\"G4160\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "truth|strong=\"G0225\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "cometh|strong=\"G2064\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to|strong=\"G4314\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "light|strong=\"G5457\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G2443\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "his|strong=\"G0846\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "deeds|strong=\"G2041\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "manifest|strong=\"G5319\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "that|strong=\"G3754\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "are|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "wrought|strong=\"G2038\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "God|strong=\"G2316\"\\+w*.\\wj*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "¶ After these things came Jesus and his disciples into the land of Judæa ; and there he tarried with them , and baptized. \\p",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "After",
+          "s": [
+            "G3326"
+          ]
+        },
+        {
+          "t": "these",
+          "s": []
+        },
+        {
+          "t": "things",
+          "s": [
+            "G5023"
+          ]
+        },
+        {
+          "t": "came",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "disciples",
+          "s": [
+            "G3101"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": [
+            "G1093"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judæa",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "there",
+          "s": [
+            "G1563"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "tarried",
+          "s": [
+            "G1304"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G3326"
+          ]
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "baptized",
+          "s": [
+            "G0907"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "¶ And John also was baptizing in Ænon near to Salim , because there was much water there : and they came , and were baptized.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "John",
+          "s": [
+            "G2491"
+          ]
+        },
+        {
+          "t": "also",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "was",
+          "s": [
+            "G2258"
+          ]
+        },
+        {
+          "t": "baptizing",
+          "s": [
+            "G0907"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "Ænon",
+          "s": [
+            "G0137"
+          ]
+        },
+        {
+          "t": "near",
+          "s": [
+            "G1451"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Salim",
+          "s": [
+            "G4530"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": [
+            "G2258"
+          ]
+        },
+        {
+          "t": "much",
+          "s": [
+            "G4183"
+          ]
+        },
+        {
+          "t": "water",
+          "s": [
+            "G5204"
+          ]
+        },
+        {
+          "t": "there",
+          "s": [
+            "G1563"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "G3854"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "baptized",
+          "s": [
+            "G0907"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "For John was not yet cast into prison. \\p",
+      "tokens": [
+        {
+          "t": "For",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "John",
+          "s": [
+            "G2491"
+          ]
+        },
+        {
+          "t": "was",
+          "s": [
+            "G2258"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": [
+            "G3768"
+          ]
+        },
+        {
+          "t": "cast",
+          "s": [
+            "G0906"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "prison",
+          "s": [
+            "G5438"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "¶ Then there arose a question between \\add some\\add* of John’s disciples and the Jews about purifying.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "Then",
+          "s": [
+            "G3767"
+          ]
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "arose",
+          "s": [
+            "G1096"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "question",
+          "s": [
+            "G2214"
+          ]
+        },
+        {
+          "t": "between",
+          "s": [
+            "G3326"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "some\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "John’s",
+          "s": [
+            "G2491"
+          ]
+        },
+        {
+          "t": "disciples",
+          "s": [
+            "G3101"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G3326"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": "about",
+          "s": [
+            "G4012"
+          ]
+        },
+        {
+          "t": "purifying",
+          "s": [
+            "G2512"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "And they came unto John , and said unto him , Rabbi , he that was with thee beyond Jordan , to whom thou barest witness , behold , the same baptizeth , and all \\add men\\add* come to him.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G4314"
+          ]
+        },
+        {
+          "t": "John",
+          "s": [
+            "G2491"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Rabbi",
+          "s": [
+            "G4461"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": [
+            "G2258"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G3326"
+          ]
+        },
+        {
+          "t": "thee",
+          "s": [
+            "G4675"
+          ]
+        },
+        {
+          "t": "beyond",
+          "s": [
+            "G4008"
+          ]
+        },
+        {
+          "t": "Jordan",
+          "s": [
+            "G2446"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": [
+            "G4771"
+          ]
+        },
+        {
+          "t": "barest",
+          "s": []
+        },
+        {
+          "t": "witness",
+          "s": [
+            "G3140"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "behold",
+          "s": [
+            "G1492"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "same",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "baptizeth",
+          "s": [
+            "G0907"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "men\\add*",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G4314"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "John answered and said , A man can receive nothing , except it be given him from heaven.",
+      "tokens": [
+        {
+          "t": "John",
+          "s": [
+            "G2491"
+          ]
+        },
+        {
+          "t": "answered",
+          "s": [
+            "G0611"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "A",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0444"
+          ]
+        },
+        {
+          "t": "can",
+          "s": [
+            "G1410"
+          ]
+        },
+        {
+          "t": "receive",
+          "s": [
+            "G2983"
+          ]
+        },
+        {
+          "t": "nothing",
+          "s": [
+            "G3762"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "except",
+          "s": [
+            "G3361"
+          ]
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "G5600"
+          ]
+        },
+        {
+          "t": "given",
+          "s": [
+            "G1325"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "heaven",
+          "s": [
+            "G3772"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "Ye yourselves bear me witness , that I said , I am not the Christ , but that I am sent before him.",
+      "tokens": [
+        {
+          "t": "Ye",
+          "s": [
+            "G5210"
+          ]
+        },
+        {
+          "t": "yourselves",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "bear",
+          "s": [
+            "G3140"
+          ]
+        },
+        {
+          "t": "me",
+          "s": [
+            "G3427"
+          ]
+        },
+        {
+          "t": "witness",
+          "s": [
+            "G3140"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": [
+            "G1473"
+          ]
+        },
+        {
+          "t": "am",
+          "s": [
+            "G1510"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G0235"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "am",
+          "s": [
+            "G1510"
+          ]
+        },
+        {
+          "t": "sent",
+          "s": [
+            "G0649"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "G1715"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G1565"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 29,
+      "text": "He that hath the bride is the bridegroom : but the friend of the bridegroom , which standeth and heareth him , rejoiceth greatly because of the bridegroom’s voice : this my joy therefore is fulfilled.",
+      "tokens": [
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": [
+            "G2192"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bride",
+          "s": [
+            "G3565"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bridegroom",
+          "s": [
+            "G3566"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "friend",
+          "s": [
+            "G5384"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bridegroom",
+          "s": [
+            "G3566"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "standeth",
+          "s": [
+            "G2476"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "heareth",
+          "s": [
+            "G0191"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "rejoiceth",
+          "s": [
+            "G5463"
+          ]
+        },
+        {
+          "t": "greatly",
+          "s": [
+            "G5479"
+          ]
+        },
+        {
+          "t": "because",
+          "s": [
+            "G1223"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": [
+            "G5456"
+          ]
+        },
+        {
+          "t": "bridegroom’s",
+          "s": [
+            "G3566"
+          ]
+        },
+        {
+          "t": "voice",
+          "s": [
+            "G5456"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "my",
+          "s": [
+            "G1699"
+          ]
+        },
+        {
+          "t": "joy",
+          "s": [
+            "G5479"
+          ]
+        },
+        {
+          "t": "therefore",
+          "s": [
+            "G3767"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "fulfilled",
+          "s": [
+            "G4137"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 30,
+      "text": "He must increase , but I \\add must\\add* decrease.",
+      "tokens": [
+        {
+          "t": "He",
+          "s": [
+            "G1565"
+          ]
+        },
+        {
+          "t": "must",
+          "s": [
+            "G1163"
+          ]
+        },
+        {
+          "t": "increase",
+          "s": [
+            "G0837"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "I",
+          "s": [
+            "G1691"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "must\\add*",
+          "s": []
+        },
+        {
+          "t": "decrease",
+          "s": [
+            "G1642"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 31,
+      "text": "He that cometh from above is above all : he that is of the earth is earthly , and speaketh of the earth : he that cometh from heaven is above all.",
+      "tokens": [
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "cometh",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "above",
+          "s": [
+            "G0509"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "above",
+          "s": [
+            "G1883"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": [
+            "G5607"
+          ]
+        },
+        {
+          "t": "of",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "G1093"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "earthly",
+          "s": [
+            "G1093"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "speaketh",
+          "s": [
+            "G2980"
+          ]
+        },
+        {
+          "t": "of",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "G1093"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "cometh",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "heaven",
+          "s": [
+            "G3772"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "above",
+          "s": [
+            "G1883"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 32,
+      "text": "And what he hath seen and heard , that he testifieth ; and no man receiveth his testimony.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "what",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "seen",
+          "s": [
+            "G3708"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "heard",
+          "s": [
+            "G0191"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G5124"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "testifieth",
+          "s": [
+            "G3140"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G3762"
+          ]
+        },
+        {
+          "t": "receiveth",
+          "s": [
+            "G2983"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "testimony",
+          "s": [
+            "G3141"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 33,
+      "text": "He that hath received his testimony hath set to his seal that God is true.",
+      "tokens": [
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "received",
+          "s": [
+            "G2983"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "testimony",
+          "s": [
+            "G3141"
+          ]
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "set",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "seal",
+          "s": [
+            "G4972"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "true",
+          "s": [
+            "G0227"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 34,
+      "text": "For he whom God hath sent speaketh the words of God : for God giveth not the Spirit by measure \\add unto him\\add*.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "sent",
+          "s": [
+            "G0649"
+          ]
+        },
+        {
+          "t": "speaketh",
+          "s": [
+            "G2980"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "words",
+          "s": [
+            "G4487"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "giveth",
+          "s": [
+            "G1325"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Spirit",
+          "s": [
+            "G4151"
+          ]
+        },
+        {
+          "t": "by",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "measure",
+          "s": [
+            "G3358"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him\\add*.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 35,
+      "text": "The Father loveth the Son , and hath given all things into his hand.",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "Father",
+          "s": [
+            "G3962"
+          ]
+        },
+        {
+          "t": "loveth",
+          "s": [
+            "G0025"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Son",
+          "s": [
+            "G5207"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "given",
+          "s": [
+            "G1325"
+          ]
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "things",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "hand",
+          "s": [
+            "G5495"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 36,
+      "text": "He that believeth on the Son hath everlasting life : and he that believeth not the Son shall not see life ; but the wrath of God abideth on him.",
+      "tokens": [
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "believeth",
+          "s": [
+            "G4100"
+          ]
+        },
+        {
+          "t": "on",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Son",
+          "s": [
+            "G5207"
+          ]
+        },
+        {
+          "t": "hath",
+          "s": [
+            "G2192"
+          ]
+        },
+        {
+          "t": "everlasting",
+          "s": [
+            "G0166"
+          ]
+        },
+        {
+          "t": "life",
+          "s": [
+            "G2222"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "believeth",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": [
+            "G0544"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Son",
+          "s": [
+            "G5207"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": [
+            "G3700"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": "see",
+          "s": [
+            "G3700"
+          ]
+        },
+        {
+          "t": "life",
+          "s": [
+            "G2222"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G0235"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wrath",
+          "s": [
+            "G3709"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "abideth",
+          "s": [
+            "G3306"
+          ]
+        },
+        {
+          "t": "on",
+          "s": [
+            "G1909"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6388 @@
+{
+  "book_id": "NEH",
+  "chapter": 12,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now these \\add are\\add* the priests and the Levites that went up with Zerubbabel the son of Shealtiel , and Jeshua : Seraiah , Jeremiah , Ezra ,",
+      "tokens": [
+        {
+          "t": "Now",
+          "s": []
+        },
+        {
+          "t": "these",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priests",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "Zerubbabel",
+          "s": [
+            "H2216"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Shealtiel",
+          "s": [
+            "H7597"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jeshua",
+          "s": [
+            "H3442"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "Seraiah",
+          "s": [
+            "H8304"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Jeremiah",
+          "s": [
+            "H3414"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Ezra",
+          "s": [
+            "H5830"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "Amariah , Malluch , Hattush ,\\f + \\fr 12.2 \\ft Malluch: also called, Melicu\\f*",
+      "tokens": [
+        {
+          "t": "Amariah",
+          "s": [
+            "H0568"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Malluch",
+          "s": [
+            "H4409"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Hattush",
+          "s": [
+            "H2407"
+          ]
+        },
+        {
+          "t": ",\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.2",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Malluch:",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "called,",
+          "s": []
+        },
+        {
+          "t": "Melicu\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "Shechaniah , Rehum , Meremoth ,\\f + \\fr 12.3 \\ft Shechaniah: also called, Shebaniah\\f*\\f + \\fr 12.3 \\ft Rehum: also called, Harim\\f*\\f + \\fr 12.3 \\ft Meremoth: also called, Meraioth\\f*",
+      "tokens": [
+        {
+          "t": "Shechaniah",
+          "s": [
+            "H7935"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Rehum",
+          "s": [
+            "H7348"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Meremoth",
+          "s": [
+            "H4822"
+          ]
+        },
+        {
+          "t": ",\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Shechaniah:",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "called,",
+          "s": []
+        },
+        {
+          "t": "Shebaniah\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Rehum:",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "called,",
+          "s": []
+        },
+        {
+          "t": "Harim\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Meremoth:",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "called,",
+          "s": []
+        },
+        {
+          "t": "Meraioth\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "Iddo , Ginnetho , Abijah ,\\f + \\fr 12.4 \\ft Ginnetho: also called, Ginnethon\\f*",
+      "tokens": [
+        {
+          "t": "Iddo",
+          "s": [
+            "H5714"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Ginnetho",
+          "s": [
+            "H1599"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Abijah",
+          "s": [
+            "H0029"
+          ]
+        },
+        {
+          "t": ",\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.4",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Ginnetho:",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "called,",
+          "s": []
+        },
+        {
+          "t": "Ginnethon\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Miamin , Maadiah , Bilgah ,\\f + \\fr 12.5 \\ft Miamin: also called, Miniamin\\f*\\f + \\fr 12.5 \\ft Maadiah: also called, Moadiah\\f*",
+      "tokens": [
+        {
+          "t": "Miamin",
+          "s": [
+            "H4326"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Maadiah",
+          "s": [
+            "H4573"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Bilgah",
+          "s": [
+            "H1083"
+          ]
+        },
+        {
+          "t": ",\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Miamin:",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "called,",
+          "s": []
+        },
+        {
+          "t": "Miniamin\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Maadiah:",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "called,",
+          "s": []
+        },
+        {
+          "t": "Moadiah\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "Shemaiah , and Joiarib , Jedaiah ,",
+      "tokens": [
+        {
+          "t": "Shemaiah",
+          "s": [
+            "H8098"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Joiarib",
+          "s": [
+            "H3114"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Jedaiah",
+          "s": [
+            "H3048"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "Sallu , Amok , Hilkiah , Jedaiah. These \\add were\\add* the chief of the priests and of their brethren in the days of Jeshua.\\f + \\fr 12.7 \\ft Sallu: also called, Sallai\\f*",
+      "tokens": [
+        {
+          "t": "Sallu",
+          "s": [
+            "H5543"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Amok",
+          "s": [
+            "H5987"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Hilkiah",
+          "s": [
+            "H2518"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Jedaiah",
+          "s": [
+            "H3048"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "These",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priests",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jeshua",
+          "s": [
+            "H3442"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Sallu:",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "called,",
+          "s": []
+        },
+        {
+          "t": "Sallai\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "Moreover the Levites : Jeshua , Binnui , Kadmiel , Sherebiah , Judah , \\add and\\add* Mattaniah , \\add which was\\add* over the thanksgiving , he and his brethren.\\f + \\fr 12.8 \\ft the thanksgiving: that is, the psalms of thanksgiving\\f*",
+      "tokens": [
+        {
+          "t": "Moreover",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "Jeshua",
+          "s": [
+            "H3442"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Binnui",
+          "s": [
+            "H1131"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Kadmiel",
+          "s": [
+            "H6934"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Sherebiah",
+          "s": [
+            "H8274"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "Mattaniah",
+          "s": [
+            "H4983"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "thanksgiving",
+          "s": [
+            "H1960"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.8",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "thanksgiving:",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "psalms",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thanksgiving\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Also Bakbukiah and Unni , their brethren , \\add were\\add* over against them in the watches. \\p",
+      "tokens": [
+        {
+          "t": "Also",
+          "s": []
+        },
+        {
+          "t": "Bakbukiah",
+          "s": [
+            "H1229"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Unni",
+          "s": [
+            "H6042"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "watches",
+          "s": [
+            "H4931"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "¶ And Jeshua begat Joiakim , Joiakim also begat Eliashib , and Eliashib begat Joiada ,",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Jeshua",
+          "s": [
+            "H3442"
+          ]
+        },
+        {
+          "t": "begat",
+          "s": [
+            "H3205"
+          ]
+        },
+        {
+          "t": "Joiakim",
+          "s": [
+            "H3113"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Joiakim",
+          "s": [
+            "H3113"
+          ]
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "begat",
+          "s": [
+            "H3205"
+          ]
+        },
+        {
+          "t": "Eliashib",
+          "s": [
+            "H0475"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Eliashib",
+          "s": [
+            "H0475"
+          ]
+        },
+        {
+          "t": "begat",
+          "s": [
+            "H3205"
+          ]
+        },
+        {
+          "t": "Joiada",
+          "s": [
+            "H3111"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "And Joiada begat Jonathan , and Jonathan begat Jaddua.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Joiada",
+          "s": [
+            "H3111"
+          ]
+        },
+        {
+          "t": "begat",
+          "s": [
+            "H3205"
+          ]
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3129"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3129"
+          ]
+        },
+        {
+          "t": "begat",
+          "s": [
+            "H3205"
+          ]
+        },
+        {
+          "t": "Jaddua",
+          "s": [
+            "H3037"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "And in the days of Joiakim were priests , the chief of the fathers : of Seraiah , Meraiah ; of Jeremiah , Hananiah ;",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Joiakim",
+          "s": [
+            "H3113"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "priests",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fathers",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Seraiah",
+          "s": [
+            "H8304"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Meraiah",
+          "s": [
+            "H4811"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jeremiah",
+          "s": [
+            "H3414"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Hananiah",
+          "s": [
+            "H2608"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "Of Ezra , Meshullam ; of Amariah , Jehohanan ;",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "Ezra",
+          "s": [
+            "H5830"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Meshullam",
+          "s": [
+            "H4918"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Amariah",
+          "s": [
+            "H0568"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Jehohanan",
+          "s": [
+            "H3076"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "Of Melicu , Jonathan ; of Shebaniah , Joseph ;",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "Melicu",
+          "s": [
+            "H4409"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3129"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Shebaniah",
+          "s": [
+            "H7645"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Joseph",
+          "s": [
+            "H3130"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "Of Harim , Adna ; of Meraioth , Helkai ;",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "Harim",
+          "s": [
+            "H2766"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Adna",
+          "s": [
+            "H5733"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Meraioth",
+          "s": [
+            "H4812"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Helkai",
+          "s": [
+            "H2517"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "Of Iddo , Zechariah ; of Ginnethon , Meshullam ;",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "Iddo",
+          "s": [
+            "H5714"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Zechariah",
+          "s": [
+            "H2148"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Ginnethon",
+          "s": [
+            "H1599"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Meshullam",
+          "s": [
+            "H4918"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Of Abijah , Zichri ; of Miniamin , of Moadiah , Piltai ;",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "Abijah",
+          "s": [
+            "H0029"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Zichri",
+          "s": [
+            "H2147"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Miniamin",
+          "s": [
+            "H4509"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Moadiah",
+          "s": [
+            "H4153"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Piltai",
+          "s": [
+            "H6408"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "Of Bilgah , Shammua ; of Shemaiah , Jehonathan ;",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "Bilgah",
+          "s": [
+            "H1083"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Shammua",
+          "s": [
+            "H8051"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Shemaiah",
+          "s": [
+            "H8098"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Jehonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "And of Joiarib , Mattenai ; of Jedaiah , Uzzi ;",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Joiarib",
+          "s": [
+            "H3114"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Mattenai",
+          "s": [
+            "H4982"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jedaiah",
+          "s": [
+            "H3048"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Uzzi",
+          "s": [
+            "H5813"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "Of Sallai , Kallai ; of Amok , Eber ;",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "Sallai",
+          "s": [
+            "H5543"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Kallai",
+          "s": [
+            "H7040"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Amok",
+          "s": [
+            "H5987"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Eber",
+          "s": [
+            "H5677"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "Of Hilkiah , Hashabiah ; of Jedaiah , Nethaneel. \\p",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "Hilkiah",
+          "s": [
+            "H2518"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Hashabiah",
+          "s": [
+            "H2811"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jedaiah",
+          "s": [
+            "H3048"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Nethaneel",
+          "s": [
+            "H5417"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "¶ The Levites in the days of Eliashib , Joiada , and Johanan , and Jaddua , \\add were\\add* recorded chief of the fathers : also the priests , to the reign of Darius the Persian.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Eliashib",
+          "s": [
+            "H0475"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Joiada",
+          "s": [
+            "H3111"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Johanan",
+          "s": [
+            "H3110"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jaddua",
+          "s": [
+            "H3037"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "recorded",
+          "s": [
+            "H3789"
+          ]
+        },
+        {
+          "t": "chief",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fathers",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priests",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "reign",
+          "s": [
+            "H4438"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Darius",
+          "s": [
+            "H1867"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Persian",
+          "s": [
+            "H6542"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "The sons of Levi , the chief of the fathers , \\add were\\add* written in the book of the chronicles , even until the days of Johanan the son of Eliashib.",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Levi",
+          "s": [
+            "H3878"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fathers",
+          "s": [
+            "H0001"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "written",
+          "s": [
+            "H3789"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "book",
+          "s": [
+            "H5612"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chronicles",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "until",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Johanan",
+          "s": [
+            "H3110"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Eliashib",
+          "s": [
+            "H0475"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "And the chief of the Levites : Hashabiah , Sherebiah , and Jeshua the son of Kadmiel , with their brethren over against them, to praise \\add and\\add* to give thanks , according to the commandment of David the man of God , ward over against ward.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "Hashabiah",
+          "s": [
+            "H2811"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Sherebiah",
+          "s": [
+            "H8274"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jeshua",
+          "s": [
+            "H3442"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Kadmiel",
+          "s": [
+            "H6934"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "praise",
+          "s": [
+            "H1984"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": []
+        },
+        {
+          "t": "thanks",
+          "s": [
+            "H3034"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "according",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "commandment",
+          "s": [
+            "H4687"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "ward",
+          "s": [
+            "H4929"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "against",
+          "s": [
+            "H5980"
+          ]
+        },
+        {
+          "t": "ward",
+          "s": [
+            "H4929"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "Mattaniah , and Bakbukiah , Obadiah , Meshullam , Talmon , Akkub , \\add were\\add* porters keeping the ward at the thresholds of the gates.\\f + \\fr 12.25 \\ft thresholds: or, treasuries, or, assemblies\\f*",
+      "tokens": [
+        {
+          "t": "Mattaniah",
+          "s": [
+            "H4983"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Bakbukiah",
+          "s": [
+            "H1229"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Obadiah",
+          "s": [
+            "H5662"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Meshullam",
+          "s": [
+            "H4918"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Talmon",
+          "s": [
+            "H2929"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Akkub",
+          "s": [
+            "H6126"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "porters",
+          "s": [
+            "H7778"
+          ]
+        },
+        {
+          "t": "keeping",
+          "s": [
+            "H8104"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ward",
+          "s": [
+            "H4929"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "thresholds",
+          "s": [
+            "H0624"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "gates",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.25",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "thresholds:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "treasuries,",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "assemblies\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "These \\add were\\add* in the days of Joiakim the son of Jeshua , the son of Jozadak , and in the days of Nehemiah the governor , and of Ezra the priest , the scribe. \\p",
+      "tokens": [
+        {
+          "t": "These",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Joiakim",
+          "s": [
+            "H3113"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jeshua",
+          "s": [
+            "H3442"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jozadak",
+          "s": [
+            "H3136"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Nehemiah",
+          "s": [
+            "H5166"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "governor",
+          "s": [
+            "H6346"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Ezra",
+          "s": [
+            "H5830"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priest",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "scribe",
+          "s": [
+            "H5608"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "¶ And at the dedication of the wall of Jerusalem they sought the Levites out of all their places , to bring them to Jerusalem , to keep the dedication with gladness , both with thanksgivings , and with singing , \\add with\\add* cymbals , psalteries , and with harps.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "dedication",
+          "s": [
+            "H2598"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "sought",
+          "s": [
+            "H1245"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "places",
+          "s": [
+            "H4725"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "keep",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "dedication",
+          "s": [
+            "H2598"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "gladness",
+          "s": [
+            "H8057"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "both",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "thanksgivings",
+          "s": [
+            "H8426"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "singing",
+          "s": [
+            "H7892"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "with\\add*",
+          "s": []
+        },
+        {
+          "t": "cymbals",
+          "s": [
+            "H4700"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "psalteries",
+          "s": [
+            "H5035"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "harps",
+          "s": [
+            "H3658"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "And the sons of the singers gathered themselves together , both out of the plain country round about Jerusalem , and from the villages of Netophathi ;",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "singers",
+          "s": [
+            "H7891"
+          ]
+        },
+        {
+          "t": "gathered",
+          "s": []
+        },
+        {
+          "t": "themselves",
+          "s": []
+        },
+        {
+          "t": "together",
+          "s": [
+            "H0622"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "both",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "plain",
+          "s": []
+        },
+        {
+          "t": "country",
+          "s": [
+            "H3603"
+          ]
+        },
+        {
+          "t": "round",
+          "s": []
+        },
+        {
+          "t": "about",
+          "s": [
+            "H5439"
+          ]
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Netophathi",
+          "s": [
+            "H5200"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 29,
+      "text": "Also from the house of Gilgal , and out of the fields of Geba and Azmaveth : for the singers had builded them villages round about Jerusalem.",
+      "tokens": [
+        {
+          "t": "Also",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Gilgal",
+          "s": [
+            "H1537"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fields",
+          "s": [
+            "H7704"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Geba",
+          "s": [
+            "H1387"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Azmaveth",
+          "s": [
+            "H5820"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "singers",
+          "s": [
+            "H7891"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "builded",
+          "s": [
+            "H1129"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "villages",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": "round",
+          "s": []
+        },
+        {
+          "t": "about",
+          "s": [
+            "H5439"
+          ]
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 30,
+      "text": "And the priests and the Levites purified themselves, and purified the people , and the gates , and the wall.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priests",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": "purified",
+          "s": [
+            "H2891"
+          ]
+        },
+        {
+          "t": "themselves,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "purified",
+          "s": [
+            "H2891"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "gates",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 31,
+      "text": "Then I brought up the princes of Judah upon the wall , and appointed two great \\add companies of them that gave\\add* thanks , \\add whereof one\\add* went on the right hand upon the wall toward the dung gate :",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "princes",
+          "s": [
+            "H8269"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "appointed",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "two",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "great",
+          "s": [
+            "H1419"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "companies",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "gave\\add*",
+          "s": []
+        },
+        {
+          "t": "thanks",
+          "s": [
+            "H8426"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "whereof",
+          "s": []
+        },
+        {
+          "t": "one\\add*",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": [
+            "H8418"
+          ]
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "right",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3225"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": "toward",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "dung",
+          "s": [
+            "H0830"
+          ]
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 32,
+      "text": "And after them went Hoshaiah , and half of the princes of Judah ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "after",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "Hoshaiah",
+          "s": [
+            "H1955"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "half",
+          "s": [
+            "H2677"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "princes",
+          "s": [
+            "H8269"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 33,
+      "text": "And Azariah , Ezra , and Meshullam ,",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Azariah",
+          "s": [
+            "H5838"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Ezra",
+          "s": [
+            "H5830"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Meshullam",
+          "s": [
+            "H4918"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 34,
+      "text": "Judah , and Benjamin , and Shemaiah , and Jeremiah ,",
+      "tokens": [
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Benjamin",
+          "s": [
+            "H1144"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Shemaiah",
+          "s": [
+            "H8098"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jeremiah",
+          "s": [
+            "H3414"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 35,
+      "text": "And \\add certain\\add* of the priests’ sons with trumpets ; \\add namely\\add*, Zechariah the son of Jonathan , the son of Shemaiah , the son of Mattaniah , the son of Michaiah , the son of Zaccur , the son of Asaph :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "certain\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priests’",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "trumpets",
+          "s": [
+            "H2689"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "namely\\add*,",
+          "s": []
+        },
+        {
+          "t": "Zechariah",
+          "s": [
+            "H2148"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3129"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Shemaiah",
+          "s": [
+            "H8098"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Mattaniah",
+          "s": [
+            "H4983"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Michaiah",
+          "s": [
+            "H4320"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Zaccur",
+          "s": [
+            "H2139"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Asaph",
+          "s": [
+            "H0623"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 36,
+      "text": "And his brethren , Shemaiah , and Azarael , Milalai , Gilalai , Maai , Nethaneel , and Judah , Hanani , with the musical instruments of David the man of God , and Ezra the scribe before them.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Shemaiah",
+          "s": [
+            "H8098"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Azarael",
+          "s": [
+            "H5832"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Milalai",
+          "s": [
+            "H4450"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Gilalai",
+          "s": [
+            "H1562"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Maai",
+          "s": [
+            "H4597"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Nethaneel",
+          "s": [
+            "H5417"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Hanani",
+          "s": [
+            "H2607"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "musical",
+          "s": [
+            "H7892"
+          ]
+        },
+        {
+          "t": "instruments",
+          "s": [
+            "H3627"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ezra",
+          "s": [
+            "H5830"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "scribe",
+          "s": [
+            "H5608"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "them.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 37,
+      "text": "And at the fountain gate , which was over against them, they went up by the stairs of the city of David , at the going up of the wall , above the house of David , even unto the water gate eastward.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fountain",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "stairs",
+          "s": [
+            "H4609"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "going",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H4608"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "above",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "water",
+          "s": [
+            "H4325"
+          ]
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": "eastward",
+          "s": [
+            "H4217"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 38,
+      "text": "And the other \\add company of them that gave\\add* thanks went over against \\add them\\add*, and I after them, and the half of the people upon the wall , from beyond the tower of the furnaces even unto the broad wall ;",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "other",
+          "s": [
+            "H8145"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "company",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "gave\\add*",
+          "s": []
+        },
+        {
+          "t": "thanks",
+          "s": [
+            "H8426"
+          ]
+        },
+        {
+          "t": "went",
+          "s": [
+            "H1980"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "against",
+          "s": [
+            "H4136"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "them\\add*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "after",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "half",
+          "s": [
+            "H2677"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "beyond",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tower",
+          "s": [
+            "H4026"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "furnaces",
+          "s": [
+            "H8574"
+          ]
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "broad",
+          "s": [
+            "H7342"
+          ]
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 39,
+      "text": "And from above the gate of Ephraim , and above the old gate , and above the fish gate , and the tower of Hananeel , and the tower of Meah , even unto the sheep gate : and they stood still in the prison gate.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "above",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Ephraim",
+          "s": [
+            "H0669"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "above",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "old",
+          "s": [
+            "H3465"
+          ]
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "above",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fish",
+          "s": [
+            "H1709"
+          ]
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tower",
+          "s": [
+            "H4026"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Hananeel",
+          "s": [
+            "H2606"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tower",
+          "s": [
+            "H4026"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Meah",
+          "s": [
+            "H3968"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sheep",
+          "s": [
+            "H6629"
+          ]
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "stood",
+          "s": []
+        },
+        {
+          "t": "still",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prison",
+          "s": [
+            "H4307"
+          ]
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 40,
+      "text": "So stood the two \\add companies of them that gave\\add* thanks in the house of God , and I, and the half of the rulers with me:",
+      "tokens": [
+        {
+          "t": "So",
+          "s": []
+        },
+        {
+          "t": "stood",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "companies",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "gave\\add*",
+          "s": []
+        },
+        {
+          "t": "thanks",
+          "s": [
+            "H8426"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "I,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "half",
+          "s": [
+            "H2677"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rulers",
+          "s": [
+            "H5461"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "me:",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 41,
+      "text": "And the priests ; Eliakim , Maaseiah , Miniamin , Michaiah , Elioenai , Zechariah , \\add and\\add* Hananiah , with trumpets ;",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priests",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "Eliakim",
+          "s": [
+            "H0471"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Maaseiah",
+          "s": [
+            "H4641"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Miniamin",
+          "s": [
+            "H4509"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Michaiah",
+          "s": [
+            "H4320"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Elioenai",
+          "s": [
+            "H0454"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Zechariah",
+          "s": [
+            "H2148"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "Hananiah",
+          "s": [
+            "H2608"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "trumpets",
+          "s": [
+            "H2689"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 42,
+      "text": "And Maaseiah , and Shemaiah , and Eleazar , and Uzzi , and Jehohanan , and Malchijah , and Elam , and Ezer. And the singers sang loud , with Jezrahiah \\add their\\add* overseer.\\f + \\fr 12.42 \\ft sang…: Heb. made their voice to be heard\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Maaseiah",
+          "s": [
+            "H4641"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Shemaiah",
+          "s": [
+            "H8098"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Eleazar",
+          "s": [
+            "H0499"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Uzzi",
+          "s": [
+            "H5813"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jehohanan",
+          "s": [
+            "H3076"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Malchijah",
+          "s": [
+            "H4441"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Elam",
+          "s": [
+            "H5867"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Ezer",
+          "s": [
+            "H5829"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "singers",
+          "s": [
+            "H7891"
+          ]
+        },
+        {
+          "t": "sang",
+          "s": []
+        },
+        {
+          "t": "loud",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "Jezrahiah",
+          "s": [
+            "H3156"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "their\\add*",
+          "s": []
+        },
+        {
+          "t": "overseer",
+          "s": [
+            "H6496"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.42",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "sang…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "voice",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "heard\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 43,
+      "text": "Also that day they offered great sacrifices , and rejoiced : for God had made them rejoice with great joy : the wives also and the children rejoiced : so that the joy of Jerusalem was heard even afar off. \\p",
+      "tokens": [
+        {
+          "t": "Also",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "offered",
+          "s": [
+            "H2076"
+          ]
+        },
+        {
+          "t": "great",
+          "s": [
+            "H1419"
+          ]
+        },
+        {
+          "t": "sacrifices",
+          "s": [
+            "H2077"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "rejoiced",
+          "s": [
+            "H8055"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "rejoice",
+          "s": [
+            "H8055"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": [
+            "H1419"
+          ]
+        },
+        {
+          "t": "joy",
+          "s": [
+            "H8057"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wives",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H3206"
+          ]
+        },
+        {
+          "t": "rejoiced",
+          "s": [
+            "H8055"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "joy",
+          "s": [
+            "H8057"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "afar",
+          "s": []
+        },
+        {
+          "t": "off",
+          "s": [
+            "H7350"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 44,
+      "text": "¶ And at that time were some appointed over the chambers for the treasures , for the offerings , for the firstfruits , and for the tithes , to gather into them out of the fields of the cities the portions of the law for the priests and Levites : for Judah rejoiced for the priests and for the Levites that waited.\\f + \\fr 12.44 \\ft of the law: that is, appointed by the law\\f*\\f + \\fr 12.44 \\ft for Judah…: Heb. for the joy of Judah\\f*\\f + \\fr 12.44 \\ft waited: Heb. stood\\f*",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "time",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "some",
+          "s": [
+            "H0582"
+          ]
+        },
+        {
+          "t": "appointed",
+          "s": [
+            "H6485"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chambers",
+          "s": [
+            "H5393"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "treasures",
+          "s": [
+            "H0214"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "offerings",
+          "s": [
+            "H8641"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "firstfruits",
+          "s": [
+            "H7225"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tithes",
+          "s": [
+            "H4643"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "gather",
+          "s": [
+            "H3664"
+          ]
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fields",
+          "s": [
+            "H7704"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "cities",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "portions",
+          "s": [
+            "H4521"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law",
+          "s": [
+            "H8451"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priests",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "rejoiced",
+          "s": [
+            "H8057"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priests",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "waited",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.44",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law:",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is,",
+          "s": []
+        },
+        {
+          "t": "appointed",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.44",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "Judah…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "joy",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.44",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "waited:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "stood\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 45,
+      "text": "And both the singers and the porters kept the ward of their God , and the ward of the purification , according to the commandment of David , \\add and\\add* of Solomon his son.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "both",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "singers",
+          "s": [
+            "H7891"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "porters",
+          "s": [
+            "H7778"
+          ]
+        },
+        {
+          "t": "kept",
+          "s": [
+            "H8104"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ward",
+          "s": [
+            "H4931"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ward",
+          "s": [
+            "H4931"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "purification",
+          "s": [
+            "H2893"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "according",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "commandment",
+          "s": [
+            "H4687"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Solomon",
+          "s": [
+            "H8010"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 46,
+      "text": "For in the days of David and Asaph of old \\add there were\\add* chief of the singers , and songs of praise and thanksgiving unto God.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Asaph",
+          "s": [
+            "H0623"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "old",
+          "s": [
+            "H6924"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "singers",
+          "s": [
+            "H7891"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "songs",
+          "s": [
+            "H7892"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "praise",
+          "s": [
+            "H8416"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thanksgiving",
+          "s": [
+            "H3034"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 47,
+      "text": "And all Israel in the days of Zerubbabel , and in the days of Nehemiah , gave the portions of the singers and the porters , every day his portion : and they sanctified \\add holy things\\add* unto the Levites ; and the Levites sanctified \\add them\\add* unto the children of Aaron.\\f + \\fr 12.47 \\ft sanctified: that is, set apart\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Zerubbabel",
+          "s": [
+            "H2216"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Nehemiah",
+          "s": [
+            "H5166"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "portions",
+          "s": [
+            "H4521"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "singers",
+          "s": [
+            "H7891"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "porters",
+          "s": [
+            "H7778"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "portion",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "sanctified",
+          "s": [
+            "H6942"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "holy",
+          "s": []
+        },
+        {
+          "t": "things\\add*",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Levites",
+          "s": [
+            "H3881"
+          ]
+        },
+        {
+          "t": "sanctified",
+          "s": [
+            "H6942"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "them\\add*",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Aaron",
+          "s": [
+            "H0175"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "12.47",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "sanctified:",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is,",
+          "s": []
+        },
+        {
+          "t": "set",
+          "s": []
+        },
+        {
+          "t": "apart\\f*",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

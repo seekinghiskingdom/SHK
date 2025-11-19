@@ -1,0 +1,5074 @@
+{
+  "book_id": "1SA",
+  "chapter": 1,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now there was a certain man of Ramathaim-zophim , of mount Ephraim , and his name \\add was\\add* Elkanah , the son of Jeroham , the son of Elihu , the son of Tohu , the son of Zuph , an Ephrathite :",
+      "tokens": [
+        {
+          "t": "Now",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "certain",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Ramathaim-zophim",
+          "s": [
+            "H7436"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "mount",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "Ephraim",
+          "s": [
+            "H0669"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "name",
+          "s": [
+            "H8034"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "Elkanah",
+          "s": [
+            "H0511"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jeroham",
+          "s": [
+            "H3395"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Elihu",
+          "s": [
+            "H0453"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Tohu",
+          "s": [
+            "H8459"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Zuph",
+          "s": [
+            "H6689"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "Ephrathite",
+          "s": [
+            "H0673"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "And he had two wives ; the name of the one \\add was\\add* Hannah , and the name of the other Peninnah : and Peninnah had children , but Hannah had no children.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "wives",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "name",
+          "s": [
+            "H8034"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "name",
+          "s": [
+            "H8034"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "other",
+          "s": [
+            "H8145"
+          ]
+        },
+        {
+          "t": "Peninnah",
+          "s": [
+            "H6444"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Peninnah",
+          "s": [
+            "H6444"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H3206"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H3206"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "And this man went up out of his city yearly to worship and to sacrifice unto the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* of hosts in Shiloh. And the two sons of Eli , Hophni and Phinehas , the priests of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, \\add were\\add* there.\\f + \\fr 1.3 \\ft yearly: Heb. from year to year\\f* \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": [
+            "H1931"
+          ]
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "yearly",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "worship",
+          "s": [
+            "H7812"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "sacrifice",
+          "s": [
+            "H2076"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "hosts",
+          "s": [
+            "H6635"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Shiloh",
+          "s": [
+            "H7887"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Eli",
+          "s": [
+            "H5941"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Hophni",
+          "s": [
+            "H2652"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Phinehas",
+          "s": [
+            "H6372"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priests",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "there.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "yearly:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "year",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "year\\f*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "¶ And when the time was that Elkanah offered , he gave to Peninnah his wife , and to all her sons and her daughters , portions :",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "time",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "Elkanah",
+          "s": [
+            "H0511"
+          ]
+        },
+        {
+          "t": "offered",
+          "s": [
+            "H2076"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Peninnah",
+          "s": [
+            "H6444"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "wife",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "daughters",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "portions",
+          "s": [
+            "H4490"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "But unto Hannah he gave a worthy portion ; for he loved Hannah : but the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* had shut up her womb.\\f + \\fr 1.5 \\ft worthy: or, double\\f*",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "a",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "worthy",
+          "s": [
+            "H0639"
+          ]
+        },
+        {
+          "t": "portion",
+          "s": [
+            "H4490"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "loved",
+          "s": [
+            "H0157"
+          ]
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "shut",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5462"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "womb",
+          "s": [
+            "H7358"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "worthy:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "double\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "And her adversary also provoked her sore , for to make her fret , because the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* had shut up her womb.\\f + \\fr 1.6 \\ft provoked: Heb. angered\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "adversary",
+          "s": [
+            "H6869"
+          ]
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "provoked",
+          "s": [
+            "H3707"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "sore",
+          "s": [
+            "H3708"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "make",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "fret",
+          "s": [
+            "H7481"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "shut",
+          "s": [
+            "H5462"
+          ]
+        },
+        {
+          "t": "up",
+          "s": [
+            "H1157"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "womb",
+          "s": [
+            "H7358"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.6",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "provoked:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "angered\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "And \\add as\\add* he did so year by year , when she went up to the house of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, so she provoked her; therefore she wept , and did not eat.\\f + \\fr 1.7 \\ft when…: or, from the time that she, etc: Heb. from her going up\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "as\\add*",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "year",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "year",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": [
+            "H1767"
+          ]
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "provoked",
+          "s": [
+            "H3707"
+          ]
+        },
+        {
+          "t": "her;",
+          "s": []
+        },
+        {
+          "t": "therefore",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "wept",
+          "s": [
+            "H1058"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "eat",
+          "s": [
+            "H0398"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "when…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "time",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "she,",
+          "s": []
+        },
+        {
+          "t": "etc:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "going",
+          "s": []
+        },
+        {
+          "t": "up\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "Then said Elkanah her husband to her, Hannah , why weepest thou? and why eatest thou not? and why is thy heart grieved ? \\add am\\add* not I better to thee than ten sons ? \\p",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "Elkanah",
+          "s": [
+            "H0511"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "husband",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "her,",
+          "s": []
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "why",
+          "s": []
+        },
+        {
+          "t": "weepest",
+          "s": [
+            "H1058"
+          ]
+        },
+        {
+          "t": "thou?",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "why",
+          "s": []
+        },
+        {
+          "t": "eatest",
+          "s": [
+            "H0398"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "not?",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "why",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": [
+            "H3824"
+          ]
+        },
+        {
+          "t": "grieved",
+          "s": [
+            "H3415"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "better",
+          "s": [
+            "H2896"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "than",
+          "s": []
+        },
+        {
+          "t": "ten",
+          "s": [
+            "H6235"
+          ]
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "¶ So Hannah rose up after they had eaten in Shiloh , and after they had drunk. Now Eli the priest sat upon a seat by a post of the temple of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "So",
+          "s": []
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": "rose",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H6965"
+          ]
+        },
+        {
+          "t": "after",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "eaten",
+          "s": [
+            "H0398"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Shiloh",
+          "s": [
+            "H7887"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "after",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "drunk",
+          "s": [
+            "H8354"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "Now",
+          "s": []
+        },
+        {
+          "t": "Eli",
+          "s": [
+            "H5941"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "priest",
+          "s": [
+            "H3548"
+          ]
+        },
+        {
+          "t": "sat",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "seat",
+          "s": [
+            "H3678"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "post",
+          "s": [
+            "H4201"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "temple",
+          "s": [
+            "H1964"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "And she \\add was\\add* in bitterness of soul , and prayed unto the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, and wept sore.\\f + \\fr 1.10 \\ft in…: Heb. bitter of soul\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "bitterness",
+          "s": [
+            "H4751"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "prayed",
+          "s": [
+            "H6419"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "wept",
+          "s": [
+            "H1058"
+          ]
+        },
+        {
+          "t": "sore",
+          "s": [
+            "H1058"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.10",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "in…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "bitter",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "soul\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "And she vowed a vow , and said , O \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* of hosts , if thou wilt indeed look on the affliction of thine handmaid , and remember me, and not forget thine handmaid , but wilt give unto thine handmaid a man child , then I will give him unto the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* all the days of his life , and there shall no razor come upon his head.\\f + \\fr 1.11 \\ft a man…: Heb. seed of men\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "vowed",
+          "s": [
+            "H5087"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "vow",
+          "s": [
+            "H5088"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "hosts",
+          "s": [
+            "H6635"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "if",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "wilt",
+          "s": []
+        },
+        {
+          "t": "indeed",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "look",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "affliction",
+          "s": [
+            "H6040"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "handmaid",
+          "s": [
+            "H0519"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "remember",
+          "s": [
+            "H2142"
+          ]
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "forget",
+          "s": [
+            "H7911"
+          ]
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "handmaid",
+          "s": [
+            "H0519"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "wilt",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "handmaid",
+          "s": [
+            "H0519"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0582"
+          ]
+        },
+        {
+          "t": "child",
+          "s": [
+            "H2233"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "then",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "razor",
+          "s": [
+            "H4177"
+          ]
+        },
+        {
+          "t": "come",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "head",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.11",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "seed",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "men\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "And it came to pass, as she continued praying before the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, that Eli marked her mouth.\\f + \\fr 1.12 \\ft continued…: Heb. multiplied to pray\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "pass,",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "continued",
+          "s": [
+            "H7235"
+          ]
+        },
+        {
+          "t": "praying",
+          "s": [
+            "H6419"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "Eli",
+          "s": [
+            "H5941"
+          ]
+        },
+        {
+          "t": "marked",
+          "s": [
+            "H8104"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "mouth",
+          "s": [
+            "H6310"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.12",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "continued…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "multiplied",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "pray\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "Now Hannah , she spake in her heart ; only her lips moved , but her voice was not heard : therefore Eli thought she had been drunken.",
+      "tokens": [
+        {
+          "t": "Now",
+          "s": []
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "spake",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": [
+            "H3820"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "only",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "lips",
+          "s": [
+            "H8193"
+          ]
+        },
+        {
+          "t": "moved",
+          "s": [
+            "H5128"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "voice",
+          "s": [
+            "H6963"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "therefore",
+          "s": []
+        },
+        {
+          "t": "Eli",
+          "s": [
+            "H5941"
+          ]
+        },
+        {
+          "t": "thought",
+          "s": [
+            "H2803"
+          ]
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "drunken",
+          "s": [
+            "H7910"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "And Eli said unto her, How long wilt thou be drunken ? put away thy wine from thee.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Eli",
+          "s": [
+            "H5941"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "her,",
+          "s": []
+        },
+        {
+          "t": "How",
+          "s": []
+        },
+        {
+          "t": "long",
+          "s": []
+        },
+        {
+          "t": "wilt",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "drunken",
+          "s": [
+            "H7937"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H5493"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H3196"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "thee.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "And Hannah answered and said , No, my lord , I \\add am\\add* a woman of a sorrowful spirit : I have drunk neither wine nor strong drink , but have poured out my soul before the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*.\\f + \\fr 1.15 \\ft of a sorrowful…: Heb. hard of spirit\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": "answered",
+          "s": [
+            "H6030"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "No,",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "lord",
+          "s": [
+            "H0113"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "woman",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "sorrowful",
+          "s": [
+            "H7186"
+          ]
+        },
+        {
+          "t": "spirit",
+          "s": [
+            "H7307"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "drunk",
+          "s": [
+            "H8354"
+          ]
+        },
+        {
+          "t": "neither",
+          "s": []
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H3196"
+          ]
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "strong",
+          "s": []
+        },
+        {
+          "t": "drink",
+          "s": [
+            "H7941"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "poured",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H8210"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.15",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "sorrowful…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "hard",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "spirit\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "Count not thine handmaid for a daughter of Belial : for out of the abundance of my complaint and grief have I spoken hitherto.\\f + \\fr 1.16 \\ft complaint: or, meditation\\f*",
+      "tokens": [
+        {
+          "t": "Count",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "handmaid",
+          "s": [
+            "H0519"
+          ]
+        },
+        {
+          "t": "for",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "daughter",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Belial",
+          "s": [
+            "H1100"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "abundance",
+          "s": [
+            "H7230"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "complaint",
+          "s": [
+            "H7879"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "grief",
+          "s": [
+            "H3708"
+          ]
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "spoken",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "hitherto.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.16",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "complaint:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "meditation\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Then Eli answered and said , Go in peace : and the God of Israel grant \\add thee\\add* thy petition that thou hast asked of him.",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": []
+        },
+        {
+          "t": "Eli",
+          "s": [
+            "H5941"
+          ]
+        },
+        {
+          "t": "answered",
+          "s": [
+            "H6030"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Go",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "peace",
+          "s": [
+            "H7965"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": "grant",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "thee\\add*",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "petition",
+          "s": [
+            "H7596"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "asked",
+          "s": [
+            "H7592"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "him.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "And she said , Let thine handmaid find grace in thy sight. So the woman went her way , and did eat , and her countenance was no more \\add sad\\add*. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Let",
+          "s": []
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "handmaid",
+          "s": [
+            "H8198"
+          ]
+        },
+        {
+          "t": "find",
+          "s": [
+            "H4672"
+          ]
+        },
+        {
+          "t": "grace",
+          "s": [
+            "H2580"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "sight",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "So",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "woman",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": "went",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "H1870"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": []
+        },
+        {
+          "t": "eat",
+          "s": [
+            "H0398"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "countenance",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "more",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "sad\\add*.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "¶ And they rose up in the morning early , and worshipped before the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, and returned , and came to their house to Ramah : and Elkanah knew Hannah his wife ; and the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* remembered her.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "rose",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H7925"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "morning",
+          "s": [
+            "H1242"
+          ]
+        },
+        {
+          "t": "early",
+          "s": [
+            "H7925"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "worshipped",
+          "s": [
+            "H7812"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "returned",
+          "s": [
+            "H7725"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Ramah",
+          "s": [
+            "H7414"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Elkanah",
+          "s": [
+            "H0511"
+          ]
+        },
+        {
+          "t": "knew",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "wife",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "remembered",
+          "s": [
+            "H2142"
+          ]
+        },
+        {
+          "t": "her.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "Wherefore it came to pass, when the time was come about after Hannah had conceived , that she bare a son , and called his name Samuel , \\add saying\\add*, Because I have asked him of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*.\\f + \\fr 1.20 \\ft when…: Heb. in revolution of days\\f*\\f + \\fr 1.20 \\ft Samuel: that is, Asked of God\\f*",
+      "tokens": [
+        {
+          "t": "Wherefore",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "pass,",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "time",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": [
+            "H8622"
+          ]
+        },
+        {
+          "t": "about",
+          "s": []
+        },
+        {
+          "t": "after",
+          "s": []
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "conceived",
+          "s": [
+            "H2029"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "bare",
+          "s": [
+            "H3205"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "called",
+          "s": [
+            "H7121"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "name",
+          "s": [
+            "H8034"
+          ]
+        },
+        {
+          "t": "Samuel",
+          "s": [
+            "H8050"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "saying\\add*,",
+          "s": []
+        },
+        {
+          "t": "Because",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "asked",
+          "s": [
+            "H7592"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.20",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "when…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "revolution",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "days\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.20",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Samuel:",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "is,",
+          "s": []
+        },
+        {
+          "t": "Asked",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "And the man Elkanah , and all his house , went up to offer unto the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* the yearly sacrifice , and his vow.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "Elkanah",
+          "s": [
+            "H0511"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "offer",
+          "s": [
+            "H2076"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "yearly",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "sacrifice",
+          "s": [
+            "H2077"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "vow",
+          "s": [
+            "H5088"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "But Hannah went not up ; for she said unto her husband , \\add I will not go up\\add* until the child be weaned , and \\add then\\add* I will bring him, that he may appear before the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, and there abide for ever.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "Hannah",
+          "s": [
+            "H2584"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "husband",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "go",
+          "s": []
+        },
+        {
+          "t": "up\\add*",
+          "s": []
+        },
+        {
+          "t": "until",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "child",
+          "s": [
+            "H5288"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "weaned",
+          "s": [
+            "H1580"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "then\\add*",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "appear",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "abide",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "for",
+          "s": [
+            "H5704"
+          ]
+        },
+        {
+          "t": "ever",
+          "s": [
+            "H5769"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "And Elkanah her husband said unto her, Do what seemeth thee good ; tarry until thou have weaned him; only the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* establish his word. So the woman abode , and gave her son suck until she weaned him. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Elkanah",
+          "s": [
+            "H0511"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "husband",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "her,",
+          "s": []
+        },
+        {
+          "t": "Do",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "what",
+          "s": []
+        },
+        {
+          "t": "seemeth",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "good",
+          "s": [
+            "H2896"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "tarry",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "until",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "weaned",
+          "s": [
+            "H1580"
+          ]
+        },
+        {
+          "t": "him;",
+          "s": []
+        },
+        {
+          "t": "only",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "establish",
+          "s": [
+            "H6965"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "word",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "So",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "woman",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": "abode",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "suck",
+          "s": [
+            "H3243"
+          ]
+        },
+        {
+          "t": "until",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "weaned",
+          "s": [
+            "H1580"
+          ]
+        },
+        {
+          "t": "him.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "¶ And when she had weaned him, she took him up with her, with three bullocks , and one ephah of flour , and a bottle of wine , and brought him unto the house of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* in Shiloh : and the child \\add was\\add* young.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "weaned",
+          "s": [
+            "H1580"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "took",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "her,",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "three",
+          "s": [
+            "H7969"
+          ]
+        },
+        {
+          "t": "bullocks",
+          "s": [
+            "H6499"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "ephah",
+          "s": [
+            "H0374"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "flour",
+          "s": [
+            "H7058"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "bottle",
+          "s": [
+            "H5035"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H3196"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Shiloh",
+          "s": [
+            "H7887"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "child",
+          "s": [
+            "H5288"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "young",
+          "s": [
+            "H5288"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "And they slew a bullock , and brought the child to Eli.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "slew",
+          "s": [
+            "H7819"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "bullock",
+          "s": [
+            "H6499"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "child",
+          "s": [
+            "H5288"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Eli",
+          "s": [
+            "H5941"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "And she said , Oh my lord , \\add as\\add* thy soul liveth , my lord , I \\add am\\add* the woman that stood by thee here, praying unto the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Oh",
+          "s": [
+            "H0994"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "lord",
+          "s": [
+            "H0113"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "as\\add*",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "liveth",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "lord",
+          "s": [
+            "H0113"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "woman",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "stood",
+          "s": [
+            "H5324"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "here,",
+          "s": []
+        },
+        {
+          "t": "praying",
+          "s": [
+            "H6419"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "For this child I prayed ; and the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* hath given me my petition which I asked of him:",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "child",
+          "s": [
+            "H5288"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "prayed",
+          "s": [
+            "H6419"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "given",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "petition",
+          "s": [
+            "H7596"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "asked",
+          "s": [
+            "H7592"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "him:",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "Therefore also I have lent him to the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*; as long as he liveth he shall be lent to the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*. And he worshipped the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* there.\\f + \\fr 1.28 \\ft lent him: or, returned him, whom I have obtained by petition\\f*\\f + \\fr 1.28 \\ft he shall…: or, he whom I have obtained by petition shall be returned\\f*",
+      "tokens": [
+        {
+          "t": "Therefore",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "lent",
+          "s": [
+            "H7592"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*;",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "long",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "liveth",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "lent",
+          "s": [
+            "H7592"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*.",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "worshipped",
+          "s": [
+            "H7812"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "there.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.28",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "lent",
+          "s": []
+        },
+        {
+          "t": "him:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "returned",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "obtained",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "petition\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.28",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "obtained",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "petition",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "returned\\f*",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

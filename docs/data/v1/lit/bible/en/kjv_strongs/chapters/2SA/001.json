@@ -1,0 +1,4186 @@
+{
+  "book_id": "2SA",
+  "chapter": 1,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now it came to pass after the death of Saul , when David was returned from the slaughter of the Amalekites , and David had abode two days in Ziklag ;",
+      "tokens": [
+        {
+          "t": "Now",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "pass",
+          "s": []
+        },
+        {
+          "t": "after",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "death",
+          "s": [
+            "H4194"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "returned",
+          "s": [
+            "H7725"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "slaughter",
+          "s": [
+            "H5221"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Amalekites",
+          "s": [
+            "H6002"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "abode",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "two",
+          "s": [
+            "H8147"
+          ]
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Ziklag",
+          "s": [
+            "H6860"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "It came even to pass on the third day , that, behold, a man came out of the camp from Saul with his clothes rent , and earth upon his head : and \\add so\\add* it was, when he came to David , that he fell to the earth , and did obeisance.",
+      "tokens": [
+        {
+          "t": "It",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "pass",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "third",
+          "s": [
+            "H7992"
+          ]
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that,",
+          "s": []
+        },
+        {
+          "t": "behold,",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "camp",
+          "s": [
+            "H4264"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "clothes",
+          "s": [
+            "H0899"
+          ]
+        },
+        {
+          "t": "rent",
+          "s": [
+            "H7167"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0127"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "head",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "so\\add*",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "was,",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "fell",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "did",
+          "s": []
+        },
+        {
+          "t": "obeisance",
+          "s": [
+            "H7812"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "And David said unto him, From whence comest thou? And he said unto him, Out of the camp of Israel am I escaped.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "From",
+          "s": []
+        },
+        {
+          "t": "whence",
+          "s": []
+        },
+        {
+          "t": "comest",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "thou?",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "Out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "camp",
+          "s": [
+            "H4264"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": "am",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "escaped",
+          "s": [
+            "H4422"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "And David said unto him, How went the matter ? I pray thee, tell me. And he answered , That the people are fled from the battle , and many of the people also are fallen and dead ; and Saul and Jonathan his son are dead also.\\f + \\fr 1.4 \\ft How…: Heb. What was, etc\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "How",
+          "s": [
+            "H4100"
+          ]
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "matter",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "pray",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "tell",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "me.",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "answered",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "That",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "fled",
+          "s": [
+            "H5127"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "battle",
+          "s": [
+            "H4421"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "many",
+          "s": [
+            "H7235"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "fallen",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "dead",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "dead",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "also.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.4",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "How…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "What",
+          "s": []
+        },
+        {
+          "t": "was,",
+          "s": []
+        },
+        {
+          "t": "etc\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "And David said unto the young man that told him, How knowest thou that Saul and Jonathan his son be dead ?",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "young",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H5288"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "How",
+          "s": []
+        },
+        {
+          "t": "knowest",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "dead",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "And the young man that told him said , As I happened by chance upon mount Gilboa , behold, Saul leaned upon his spear ; and, lo, the chariots and horsemen followed hard after him.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "young",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H5288"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "As",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "happened",
+          "s": [
+            "H7136"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "chance",
+          "s": [
+            "H7122"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "mount",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "Gilboa",
+          "s": [
+            "H1533"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "behold,",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "leaned",
+          "s": [
+            "H8172"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "spear",
+          "s": [
+            "H2595"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and,",
+          "s": []
+        },
+        {
+          "t": "lo,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chariots",
+          "s": [
+            "H7393"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "horsemen",
+          "s": [
+            "H1167"
+          ]
+        },
+        {
+          "t": "followed",
+          "s": []
+        },
+        {
+          "t": "hard",
+          "s": [
+            "H1692"
+          ]
+        },
+        {
+          "t": "after",
+          "s": []
+        },
+        {
+          "t": "him.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "And when he looked behind him, he saw me, and called unto me. And I answered , Here \\add am\\add* I.\\f + \\fr 1.7 \\ft Here…: Heb. Behold me\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "looked",
+          "s": [
+            "H6437"
+          ]
+        },
+        {
+          "t": "behind",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "saw",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "called",
+          "s": [
+            "H7121"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me.",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "answered",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Here",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "I.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Here…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "Behold",
+          "s": []
+        },
+        {
+          "t": "me\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "And he said unto me, Who \\add art\\add* thou? And I answered him, I \\add am\\add* an Amalekite.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "Who",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "art\\add*",
+          "s": []
+        },
+        {
+          "t": "thou?",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "answered",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "Amalekite",
+          "s": [
+            "H6003"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "He said unto me again, Stand , I pray thee, upon me, and slay me: for anguish is come upon me, because my life \\add is\\add* yet whole in me.\\f + \\fr 1.9 \\ft anguish…: or, my coat of mail (or, my embroidered coat) hindereth me, that my, etc\\f*",
+      "tokens": [
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "again,",
+          "s": []
+        },
+        {
+          "t": "Stand",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "pray",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "slay",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "me:",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "anguish",
+          "s": [
+            "H7661"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": [
+            "H0270"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "whole",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "me.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.9",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "anguish…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "coat",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "mail",
+          "s": []
+        },
+        {
+          "t": "(or,",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "embroidered",
+          "s": []
+        },
+        {
+          "t": "coat)",
+          "s": []
+        },
+        {
+          "t": "hindereth",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "my,",
+          "s": []
+        },
+        {
+          "t": "etc\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "So I stood upon him, and slew him, because I was sure that he could not live after that he was fallen : and I took the crown that \\add was\\add* upon his head , and the bracelet that \\add was\\add* on his arm , and have brought them hither unto my lord. \\p",
+      "tokens": [
+        {
+          "t": "So",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "stood",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "slew",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "sure",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "could",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "live",
+          "s": [
+            "H2421"
+          ]
+        },
+        {
+          "t": "after",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "fallen",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "took",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "crown",
+          "s": [
+            "H5145"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "head",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bracelet",
+          "s": [
+            "H0685"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "arm",
+          "s": [
+            "H2220"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "hither",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "lord",
+          "s": [
+            "H0113"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "Then David took hold on his clothes , and rent them; and likewise all the men that \\add were\\add* with him:",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "took",
+          "s": []
+        },
+        {
+          "t": "hold",
+          "s": [
+            "H2388"
+          ]
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "clothes",
+          "s": [
+            "H0899"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "rent",
+          "s": [
+            "H7167"
+          ]
+        },
+        {
+          "t": "them;",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "likewise",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "men",
+          "s": [
+            "H0582"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "him:",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "And they mourned , and wept , and fasted until even , for Saul , and for Jonathan his son , and for the people of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, and for the house of Israel ; because they were fallen by the sword. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "mourned",
+          "s": [
+            "H5594"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "wept",
+          "s": [
+            "H1058"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "fasted",
+          "s": [
+            "H6684"
+          ]
+        },
+        {
+          "t": "until",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": [
+            "H6153"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "fallen",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sword",
+          "s": [
+            "H2719"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "¶ And David said unto the young man that told him, Whence \\add art\\add* thou? And he answered , I \\add am\\add* the son of a stranger , an Amalekite.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "young",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H5288"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "told",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "Whence",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "art\\add*",
+          "s": []
+        },
+        {
+          "t": "thou?",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "answered",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "stranger",
+          "s": [
+            "H0376"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "Amalekite",
+          "s": [
+            "H6003"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "And David said unto him, How wast thou not afraid to stretch forth thine hand to destroy the \\nd \\+w LORD’s|strong=\"H3068\"\\+w*\\nd* anointed ?",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "How",
+          "s": []
+        },
+        {
+          "t": "wast",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "afraid",
+          "s": [
+            "H3372"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "stretch",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "destroy",
+          "s": [
+            "H7843"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD’s|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "anointed",
+          "s": [
+            "H4899"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "And David called one of the young men , and said , Go near , \\add and\\add* fall upon him. And he smote him that he died.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "called",
+          "s": [
+            "H7121"
+          ]
+        },
+        {
+          "t": "one",
+          "s": [
+            "H0259"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "young",
+          "s": []
+        },
+        {
+          "t": "men",
+          "s": [
+            "H5288"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Go",
+          "s": []
+        },
+        {
+          "t": "near",
+          "s": [
+            "H5066"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "fall",
+          "s": [
+            "H6293"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "him.",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "smote",
+          "s": [
+            "H5221"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "died",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "And David said unto him, Thy blood \\add be\\add* upon thy head ; for thy mouth hath testified against thee, saying , I have slain the \\nd \\+w LORD’s|strong=\"H3068\"\\+w*\\nd* anointed. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "Thy",
+          "s": []
+        },
+        {
+          "t": "blood",
+          "s": [
+            "H1818"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "head",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "mouth",
+          "s": [
+            "H6310"
+          ]
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "testified",
+          "s": [
+            "H6030"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "slain",
+          "s": [
+            "H4191"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD’s|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "anointed",
+          "s": [
+            "H4899"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "¶ And David lamented with this lamentation over Saul and over Jonathan his son :",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "David",
+          "s": [
+            "H1732"
+          ]
+        },
+        {
+          "t": "lamented",
+          "s": [
+            "H6969"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "lamentation",
+          "s": [
+            "H7015"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "(Also he bade them teach the children of Judah \\add the use of\\add* the bow : behold, \\add it is\\add* written in the book of Jasher.)\\f + \\fr 1.18 \\ft of Jasher: or, of the upright\\f*",
+      "tokens": [
+        {
+          "t": "(Also",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "bade",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "teach",
+          "s": [
+            "H3925"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "use",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bow",
+          "s": [
+            "H7198"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "behold,",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "written",
+          "s": [
+            "H3789"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "book",
+          "s": [
+            "H5612"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jasher",
+          "s": [
+            "H3477"
+          ]
+        },
+        {
+          "t": ".)\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.18",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jasher:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "upright\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "The beauty of Israel is slain upon thy high places : how are the mighty fallen !",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "beauty",
+          "s": [
+            "H6643"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "slain",
+          "s": [
+            "H2491"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "high",
+          "s": []
+        },
+        {
+          "t": "places",
+          "s": [
+            "H1116"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "how",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "mighty",
+          "s": [
+            "H1368"
+          ]
+        },
+        {
+          "t": "fallen",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": "!",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "Tell \\add it\\add* not in Gath , publish \\add it\\add* not in the streets of Askelon ; lest the daughters of the Philistines rejoice , lest the daughters of the uncircumcised triumph.",
+      "tokens": [
+        {
+          "t": "Tell",
+          "s": [
+            "H5046"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Gath",
+          "s": [
+            "H1661"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "publish",
+          "s": [
+            "H1319"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "streets",
+          "s": [
+            "H2351"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Askelon",
+          "s": [
+            "H0831"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "lest",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "daughters",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Philistines",
+          "s": [
+            "H6430"
+          ]
+        },
+        {
+          "t": "rejoice",
+          "s": [
+            "H8055"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "lest",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "daughters",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "uncircumcised",
+          "s": [
+            "H6189"
+          ]
+        },
+        {
+          "t": "triumph",
+          "s": [
+            "H5937"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "Ye mountains of Gilboa , \\add let there be\\add* no dew , neither \\add let there be\\add* rain , upon you, nor fields of offerings : for there the shield of the mighty is vilely cast away , the shield of Saul , \\add as though he had\\add* not \\add been\\add* anointed with oil.",
+      "tokens": [
+        {
+          "t": "Ye",
+          "s": []
+        },
+        {
+          "t": "mountains",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Gilboa",
+          "s": [
+            "H1533"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "dew",
+          "s": [
+            "H2919"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "neither",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "rain",
+          "s": [
+            "H4306"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "you,",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "fields",
+          "s": [
+            "H7704"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "offerings",
+          "s": [
+            "H8641"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "shield",
+          "s": [
+            "H4043"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "mighty",
+          "s": [
+            "H1368"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "vilely",
+          "s": []
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H1602"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "shield",
+          "s": [
+            "H4043"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "though",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "had\\add*",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "been\\add*",
+          "s": []
+        },
+        {
+          "t": "anointed",
+          "s": [
+            "H4899"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "oil",
+          "s": [
+            "H8081"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "From the blood of the slain , from the fat of the mighty , the bow of Jonathan turned not back , and the sword of Saul returned not empty.",
+      "tokens": [
+        {
+          "t": "From",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "blood",
+          "s": [
+            "H1818"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "slain",
+          "s": [
+            "H2491"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fat",
+          "s": [
+            "H2459"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "mighty",
+          "s": [
+            "H1368"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "bow",
+          "s": [
+            "H7198"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "turned",
+          "s": [
+            "H7734"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "back",
+          "s": [
+            "H0268"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sword",
+          "s": [
+            "H2719"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "returned",
+          "s": [
+            "H7725"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "empty",
+          "s": [
+            "H7387"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "Saul and Jonathan \\add were\\add* lovely and pleasant in their lives , and in their death they were not divided : they were swifter than eagles , they were stronger than lions.\\f + \\fr 1.23 \\ft pleasant: or, sweet\\f*",
+      "tokens": [
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "were\\add*",
+          "s": []
+        },
+        {
+          "t": "lovely",
+          "s": [
+            "H0157"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "pleasant",
+          "s": [
+            "H5273"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "lives",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "death",
+          "s": [
+            "H4194"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "divided",
+          "s": [
+            "H6504"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "swifter",
+          "s": [
+            "H7043"
+          ]
+        },
+        {
+          "t": "than",
+          "s": []
+        },
+        {
+          "t": "eagles",
+          "s": [
+            "H5404"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "stronger",
+          "s": [
+            "H1396"
+          ]
+        },
+        {
+          "t": "than",
+          "s": []
+        },
+        {
+          "t": "lions",
+          "s": [
+            "H0738"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "1.23",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "pleasant:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "sweet\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "Ye daughters of Israel , weep over Saul , who clothed you in scarlet , with \\add other\\add* delights , who put on ornaments of gold upon your apparel.",
+      "tokens": [
+        {
+          "t": "Ye",
+          "s": []
+        },
+        {
+          "t": "daughters",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "weep",
+          "s": []
+        },
+        {
+          "t": "over",
+          "s": [
+            "H1058"
+          ]
+        },
+        {
+          "t": "Saul",
+          "s": [
+            "H7586"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "who",
+          "s": []
+        },
+        {
+          "t": "clothed",
+          "s": [
+            "H3847"
+          ]
+        },
+        {
+          "t": "you",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "scarlet",
+          "s": [
+            "H8144"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "other\\add*",
+          "s": []
+        },
+        {
+          "t": "delights",
+          "s": [
+            "H5730"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "who",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "ornaments",
+          "s": [
+            "H5716"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H2091"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "apparel",
+          "s": [
+            "H3830"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "How are the mighty fallen in the midst of the battle ! O Jonathan , \\add thou wast\\add* slain in thine high places.",
+      "tokens": [
+        {
+          "t": "How",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "mighty",
+          "s": [
+            "H1368"
+          ]
+        },
+        {
+          "t": "fallen",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "midst",
+          "s": [
+            "H8432"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "battle",
+          "s": [
+            "H4421"
+          ]
+        },
+        {
+          "t": "!",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "wast\\add*",
+          "s": []
+        },
+        {
+          "t": "slain",
+          "s": [
+            "H2491"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "high",
+          "s": []
+        },
+        {
+          "t": "places",
+          "s": [
+            "H1116"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "I am distressed for thee, my brother Jonathan : very pleasant hast thou been unto me: thy love to me was wonderful , passing the love of women.",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "am",
+          "s": []
+        },
+        {
+          "t": "distressed",
+          "s": [
+            "H6887"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "brother",
+          "s": [
+            "H0251"
+          ]
+        },
+        {
+          "t": "Jonathan",
+          "s": [
+            "H3083"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "very",
+          "s": [
+            "H3966"
+          ]
+        },
+        {
+          "t": "pleasant",
+          "s": [
+            "H5276"
+          ]
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me:",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H0160"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "wonderful",
+          "s": [
+            "H6381"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "passing",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H0160"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "women",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "How are the mighty fallen , and the weapons of war perished !",
+      "tokens": [
+        {
+          "t": "How",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "mighty",
+          "s": [
+            "H1368"
+          ]
+        },
+        {
+          "t": "fallen",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "weapons",
+          "s": [
+            "H3627"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "war",
+          "s": [
+            "H4421"
+          ]
+        },
+        {
+          "t": "perished",
+          "s": [
+            "H0006"
+          ]
+        },
+        {
+          "t": "!",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

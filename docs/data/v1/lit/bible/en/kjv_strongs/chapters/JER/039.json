@@ -1,0 +1,3524 @@
+{
+  "book_id": "JER",
+  "chapter": 39,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "In the ninth year of Zedekiah king of Judah , in the tenth month , came Nebuchadrezzar king of Babylon and all his army against Jerusalem , and they besieged it.",
+      "tokens": [
+        {
+          "t": "In",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ninth",
+          "s": [
+            "H8671"
+          ]
+        },
+        {
+          "t": "year",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Zedekiah",
+          "s": [
+            "H6667"
+          ]
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tenth",
+          "s": [
+            "H6224"
+          ]
+        },
+        {
+          "t": "month",
+          "s": [
+            "H2320"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "Nebuchadrezzar",
+          "s": [
+            "H5019"
+          ]
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "army",
+          "s": [
+            "H2428"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "besieged",
+          "s": [
+            "H6696"
+          ]
+        },
+        {
+          "t": "it.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "\\add And\\add* in the eleventh year of Zedekiah , in the fourth month , the ninth \\add day\\add* of the month , the city was broken up.",
+      "tokens": [
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "And\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "eleventh",
+          "s": [
+            "H6249"
+          ]
+        },
+        {
+          "t": "year",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Zedekiah",
+          "s": [
+            "H6667"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fourth",
+          "s": [
+            "H7243"
+          ]
+        },
+        {
+          "t": "month",
+          "s": [
+            "H2320"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "ninth",
+          "s": [
+            "H8672"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "day\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "month",
+          "s": [
+            "H2320"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "broken",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H1234"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "And all the princes of the king of Babylon came in , and sat in the middle gate , \\add even\\add* Nergal-sharezer , Samgar-nebo , Sarsechim , Rab-saris , Nergal-sharezer , Rab-mag , with all the residue of the princes of the king of Babylon. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "princes",
+          "s": [
+            "H8269"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "sat",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "middle",
+          "s": [
+            "H8432"
+          ]
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "even\\add*",
+          "s": []
+        },
+        {
+          "t": "Nergal-sharezer",
+          "s": [
+            "H5371"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Samgar-nebo",
+          "s": [
+            "H5562"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Sarsechim",
+          "s": [
+            "H8310"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Rab-saris",
+          "s": [
+            "H7249"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Nergal-sharezer",
+          "s": [
+            "H5371"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Rab-mag",
+          "s": [
+            "H7248"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "residue",
+          "s": [
+            "H7611"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "princes",
+          "s": [
+            "H8269"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "¶ And it came to pass, \\add that\\add* when Zedekiah the king of Judah saw them, and all the men of war , then they fled , and went forth out of the city by night , by the way of the king’s garden , by the gate betwixt the two walls : and he went out the way of the plain.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "pass,",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "Zedekiah",
+          "s": [
+            "H6667"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": "saw",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "men",
+          "s": [
+            "H0582"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "war",
+          "s": [
+            "H4421"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "then",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "fled",
+          "s": [
+            "H1272"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "H3915"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "H1870"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king’s",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "garden",
+          "s": [
+            "H1588"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "gate",
+          "s": [
+            "H8179"
+          ]
+        },
+        {
+          "t": "betwixt",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": []
+        },
+        {
+          "t": "walls",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "H1870"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "plain",
+          "s": [
+            "H6160"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "But the Chaldeans’ army pursued after them, and overtook Zedekiah in the plains of Jericho : and when they had taken him, they brought him up to Nebuchadnezzar king of Babylon to Riblah in the land of Hamath , where he gave judgment upon him.\\f + \\fr 39.5 \\ft gave…: Heb. spake with him judgments\\f*",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Chaldeans’",
+          "s": [
+            "H3778"
+          ]
+        },
+        {
+          "t": "army",
+          "s": [
+            "H2428"
+          ]
+        },
+        {
+          "t": "pursued",
+          "s": [
+            "H7291"
+          ]
+        },
+        {
+          "t": "after",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "them,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "overtook",
+          "s": [
+            "H5381"
+          ]
+        },
+        {
+          "t": "Zedekiah",
+          "s": [
+            "H6667"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "plains",
+          "s": [
+            "H6160"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jericho",
+          "s": [
+            "H3405"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "taken",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Nebuchadnezzar",
+          "s": [
+            "H5019"
+          ]
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Riblah",
+          "s": [
+            "H7247"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Hamath",
+          "s": [
+            "H2574"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "where",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "judgment",
+          "s": [
+            "H4941"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "him.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "39.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "gave…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "spake",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "judgments\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "Then the king of Babylon slew the sons of Zedekiah in Riblah before his eyes : also the king of Babylon slew all the nobles of Judah.",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": "slew",
+          "s": [
+            "H7819"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Zedekiah",
+          "s": [
+            "H6667"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Riblah",
+          "s": [
+            "H7247"
+          ]
+        },
+        {
+          "t": "before",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "eyes",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": "slew",
+          "s": [
+            "H7819"
+          ]
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "nobles",
+          "s": [
+            "H2715"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "Moreover he put out Zedekiah’s eyes , and bound him with chains , to carry him to Babylon.\\f + \\fr 39.7 \\ft with…: Heb. with two brasen chains, or, fetters\\f* \\p",
+      "tokens": [
+        {
+          "t": "Moreover",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H5786"
+          ]
+        },
+        {
+          "t": "Zedekiah’s",
+          "s": [
+            "H6667"
+          ]
+        },
+        {
+          "t": "eyes",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "bound",
+          "s": [
+            "H0631"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "chains",
+          "s": [
+            "H5178"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "carry",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "39.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "with…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": []
+        },
+        {
+          "t": "brasen",
+          "s": []
+        },
+        {
+          "t": "chains,",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "fetters\\f*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "¶ And the Chaldeans burned the king’s house , and the houses of the people , with fire , and brake down the walls of Jerusalem.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Chaldeans",
+          "s": [
+            "H3778"
+          ]
+        },
+        {
+          "t": "burned",
+          "s": [
+            "H8313"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king’s",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "houses",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "fire",
+          "s": [
+            "H0784"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "brake",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H5422"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "walls",
+          "s": [
+            "H2346"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Then Nebuzar-adan the captain of the guard carried away captive into Babylon the remnant of the people that remained in the city , and those that fell away , that fell to him, with the rest of the people that remained.\\f + \\fr 39.9 \\ft captain…: or, chief marshal: Heb. chief of the executioners, or, slaughtermen\\f*",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": []
+        },
+        {
+          "t": "Nebuzar-adan",
+          "s": [
+            "H5018"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "captain",
+          "s": [
+            "H7227"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "guard",
+          "s": [
+            "H2876"
+          ]
+        },
+        {
+          "t": "carried",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": []
+        },
+        {
+          "t": "captive",
+          "s": [
+            "H1540"
+          ]
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "remnant",
+          "s": [
+            "H3499"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "remained",
+          "s": [
+            "H7604"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "those",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "fell",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "fell",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rest",
+          "s": [
+            "H3499"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "remained",
+          "s": [
+            "H7604"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "39.9",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "captain…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "marshal:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "executioners,",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "slaughtermen\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "But Nebuzar-adan the captain of the guard left of the poor of the people , which had nothing , in the land of Judah , and gave them vineyards and fields at the same time.\\f + \\fr 39.10 \\ft captain…: or, chief marshal: Heb. chief of the executioners, or, slaughtermen\\f*\\f + \\fr 39.10 \\ft at the…: Heb. in that day\\f* \\p",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "Nebuzar-adan",
+          "s": [
+            "H5018"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "captain",
+          "s": [
+            "H7227"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "guard",
+          "s": [
+            "H2876"
+          ]
+        },
+        {
+          "t": "left",
+          "s": [
+            "H7604"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "poor",
+          "s": [
+            "H1800"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "nothing",
+          "s": [
+            "H3972"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3063"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "vineyards",
+          "s": [
+            "H3754"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "fields",
+          "s": [
+            "H3010"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "same",
+          "s": []
+        },
+        {
+          "t": "time",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "39.10",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "captain…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "marshal:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "executioners,",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "slaughtermen\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "39.10",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "day\\f*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "¶ Now Nebuchadrezzar king of Babylon gave charge concerning Jeremiah to Nebuzar-adan the captain of the guard , saying ,\\f + \\fr 39.11 \\ft to: Heb. by the hand of\\f*\\f + \\fr 39.11 \\ft captain…: or, chief marshal: Heb. chief of the executioners, or, slaughtermen\\f*",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "Now",
+          "s": []
+        },
+        {
+          "t": "Nebuchadrezzar",
+          "s": [
+            "H5019"
+          ]
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": "gave",
+          "s": []
+        },
+        {
+          "t": "charge",
+          "s": [
+            "H6680"
+          ]
+        },
+        {
+          "t": "concerning",
+          "s": []
+        },
+        {
+          "t": "Jeremiah",
+          "s": [
+            "H3414"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "Nebuzar-adan",
+          "s": [
+            "H5018"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "captain",
+          "s": [
+            "H7227"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "guard",
+          "s": [
+            "H2876"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "39.11",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "to:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": []
+        },
+        {
+          "t": "of\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "39.11",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "captain…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "marshal:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "executioners,",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "slaughtermen\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "Take him, and look well to him, and do him no harm ; but do unto him even as he shall say unto thee.\\f + \\fr 39.12 \\ft look…: Heb. set thine eyes upon him\\f*",
+      "tokens": [
+        {
+          "t": "Take",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "look",
+          "s": []
+        },
+        {
+          "t": "well",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "harm",
+          "s": [
+            "H3972"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "say",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "39.12",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "look…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "set",
+          "s": []
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "eyes",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "him\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "So Nebuzar-adan the captain of the guard sent , and Nebushasban , Rab-saris , and Nergal-sharezer , Rab-mag , and all the king of Babylon’s princes ;\\f + \\fr 39.13 \\ft captain…: or, chief marshal: Heb. chief of the executioners, or, slaughtermen\\f*",
+      "tokens": [
+        {
+          "t": "So",
+          "s": []
+        },
+        {
+          "t": "Nebuzar-adan",
+          "s": [
+            "H5018"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "captain",
+          "s": [
+            "H7227"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "guard",
+          "s": [
+            "H2876"
+          ]
+        },
+        {
+          "t": "sent",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Nebushasban",
+          "s": [
+            "H5021"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Rab-saris",
+          "s": [
+            "H7249"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Nergal-sharezer",
+          "s": [
+            "H5371"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Rab-mag",
+          "s": [
+            "H7248"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4428"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon’s",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": "princes",
+          "s": [
+            "H7227"
+          ]
+        },
+        {
+          "t": ";\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "39.13",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "captain…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "marshal:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "executioners,",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "slaughtermen\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "Even they sent , and took Jeremiah out of the court of the prison , and committed him unto Gedaliah the son of Ahikam the son of Shaphan , that he should carry him home : so he dwelt among the people. \\p",
+      "tokens": [
+        {
+          "t": "Even",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "sent",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "took",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "Jeremiah",
+          "s": [
+            "H3414"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "court",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prison",
+          "s": [
+            "H4307"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "committed",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Gedaliah",
+          "s": [
+            "H1436"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Ahikam",
+          "s": [
+            "H0296"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Shaphan",
+          "s": [
+            "H8227"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "carry",
+          "s": [
+            "H3318"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "home",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "dwelt",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "among",
+          "s": [
+            "H8432"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5971"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "¶ Now the word of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* came unto Jeremiah , while he was shut up in the court of the prison , saying ,",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "Now",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "word",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Jeremiah",
+          "s": [
+            "H3414"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "while",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "shut",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H6113"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "court",
+          "s": [
+            "H2691"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "prison",
+          "s": [
+            "H4307"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "Go and speak to Ebed-melech the Ethiopian , saying , Thus saith the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* of hosts , the God of Israel ; Behold, I will bring my words upon this city for evil , and not for good ; and they shall be \\add accomplished\\add* in that day before thee.",
+      "tokens": [
+        {
+          "t": "Go",
+          "s": [
+            "H1980"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "speak",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Ebed-melech",
+          "s": [
+            "H5663"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Ethiopian",
+          "s": [
+            "H3569"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Thus",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "hosts",
+          "s": [
+            "H6635"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Israel",
+          "s": [
+            "H3478"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "Behold,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "words",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H5892"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "evil",
+          "s": [
+            "H7451"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "good",
+          "s": [
+            "H2896"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "accomplished\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "thee.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "But I will deliver thee in that day , saith the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*: and thou shalt not be given into the hand of the men of whom thou \\add art\\add* afraid.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "deliver",
+          "s": [
+            "H5337"
+          ]
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": [
+            "H5002"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*:",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "given",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3027"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "men",
+          "s": [
+            "H0582"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "art\\add*",
+          "s": []
+        },
+        {
+          "t": "afraid",
+          "s": [
+            "H3016"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "For I will surely deliver thee, and thou shalt not fall by the sword , but thy life shall be for a prey unto thee: because thou hast put thy trust in me, saith the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "surely",
+          "s": [
+            "H4422"
+          ]
+        },
+        {
+          "t": "deliver",
+          "s": [
+            "H4422"
+          ]
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "fall",
+          "s": [
+            "H5307"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sword",
+          "s": [
+            "H2719"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "prey",
+          "s": [
+            "H7998"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee:",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "trust",
+          "s": [
+            "H0982"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": [
+            "H5002"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*.",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

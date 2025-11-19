@@ -1,0 +1,1850 @@
+{
+  "book_id": "PSA",
+  "chapter": 42,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "As the hart panteth after the water brooks , so panteth my soul after thee, O God.\\f + \\fr 42.1 \\ft Maschil…: or, A Psalm giving instruction of the sons, etc\\f*\\f + \\fr 42.1 \\ft panteth: Heb. brayeth\\f* \\q1",
+      "tokens": [
+        {
+          "t": "As",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hart",
+          "s": [
+            "H0354"
+          ]
+        },
+        {
+          "t": "panteth",
+          "s": [
+            "H6165"
+          ]
+        },
+        {
+          "t": "after",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "water",
+          "s": [
+            "H4325"
+          ]
+        },
+        {
+          "t": "brooks",
+          "s": [
+            "H0650"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "panteth",
+          "s": [
+            "H6165"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "after",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "42.1",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Maschil…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "A",
+          "s": []
+        },
+        {
+          "t": "Psalm",
+          "s": []
+        },
+        {
+          "t": "giving",
+          "s": []
+        },
+        {
+          "t": "instruction",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sons,",
+          "s": []
+        },
+        {
+          "t": "etc\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "42.1",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "panteth:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "brayeth\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "My soul thirsteth for God , for the living God : when shall I come and appear before God ? \\q1",
+      "tokens": [
+        {
+          "t": "My",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "thirsteth",
+          "s": [
+            "H6770"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "living",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0410"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "appear",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "My tears have been my meat day and night , while they continually say unto me, Where \\add is\\add* thy God ? \\q1",
+      "tokens": [
+        {
+          "t": "My",
+          "s": []
+        },
+        {
+          "t": "tears",
+          "s": [
+            "H1832"
+          ]
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "meat",
+          "s": [
+            "H3899"
+          ]
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3119"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "H3915"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "while",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "continually",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "say",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "Where",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "When I remember these \\add things\\add*, I pour out my soul in me: for I had gone with the multitude , I went with them to the house of God , with the voice of joy and praise , with a multitude that kept holyday. \\q1",
+      "tokens": [
+        {
+          "t": "When",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "remember",
+          "s": [
+            "H2142"
+          ]
+        },
+        {
+          "t": "these",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "things\\add*,",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "pour",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H8210"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "me:",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "gone",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "multitude",
+          "s": [
+            "H5519"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": [
+            "H1718"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "voice",
+          "s": [
+            "H6963"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "joy",
+          "s": [
+            "H7440"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "praise",
+          "s": [
+            "H8426"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "multitude",
+          "s": [
+            "H1995"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "kept",
+          "s": []
+        },
+        {
+          "t": "holyday",
+          "s": [
+            "H2287"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Why art thou cast down , O my soul ? and \\add why\\add* art thou disquieted in me? hope thou in God : for I shall yet praise him \\add for\\add* the help of his countenance.\\f + \\fr 42.5 \\ft cast: Heb. bowed\\f*\\f + \\fr 42.5 \\ft praise: or, give thanks\\f*\\f + \\fr 42.5 \\ft for the…: or, his presence is salvation\\f* \\b \\q1",
+      "tokens": [
+        {
+          "t": "Why",
+          "s": []
+        },
+        {
+          "t": "art",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H7817"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "why\\add*",
+          "s": []
+        },
+        {
+          "t": "art",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "disquieted",
+          "s": [
+            "H1993"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "me?",
+          "s": []
+        },
+        {
+          "t": "hope",
+          "s": [
+            "H3176"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "praise",
+          "s": [
+            "H3034"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "for\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "help",
+          "s": [
+            "H3444"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "countenance",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "42.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "cast:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "bowed\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "42.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "praise:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": []
+        },
+        {
+          "t": "thanks\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "42.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "the…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "presence",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "salvation\\f*",
+          "s": []
+        },
+        {
+          "t": "\\b",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "O my God , my soul is cast down within me: therefore will I remember thee from the land of Jordan , and of the Hermonites , from the hill Mizar.\\f + \\fr 42.6 \\ft the hill…: or, the little hill\\f* \\q1",
+      "tokens": [
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H7817"
+          ]
+        },
+        {
+          "t": "within",
+          "s": []
+        },
+        {
+          "t": "me:",
+          "s": []
+        },
+        {
+          "t": "therefore",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "remember",
+          "s": [
+            "H2142"
+          ]
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jordan",
+          "s": [
+            "H3383"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Hermonites",
+          "s": [
+            "H2769"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hill",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "Mizar",
+          "s": [
+            "H4706"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "42.6",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hill…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "little",
+          "s": []
+        },
+        {
+          "t": "hill\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "Deep calleth unto deep at the noise of thy waterspouts : all thy waves and thy billows are gone over me. \\q1",
+      "tokens": [
+        {
+          "t": "Deep",
+          "s": [
+            "H8415"
+          ]
+        },
+        {
+          "t": "calleth",
+          "s": [
+            "H7121"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "deep",
+          "s": [
+            "H8415"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "noise",
+          "s": [
+            "H6963"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "waterspouts",
+          "s": [
+            "H6794"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "waves",
+          "s": [
+            "H4867"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "billows",
+          "s": [
+            "H1530"
+          ]
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "gone",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "me.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "\\add Yet\\add* the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* will command his lovingkindness in the daytime , and in the night his song \\add shall be\\add* with me, \\add and\\add* my prayer unto the God of my life. \\q1",
+      "tokens": [
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "Yet\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "command",
+          "s": [
+            "H6680"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "lovingkindness",
+          "s": [
+            "H2617"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "daytime",
+          "s": [
+            "H3119"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "H3915"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "song",
+          "s": [
+            "H7892"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "prayer",
+          "s": [
+            "H8605"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0410"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "I will say unto God my rock , Why hast thou forgotten me? why go I mourning because of the oppression of the enemy ? \\q1",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "say",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0410"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "rock",
+          "s": [
+            "H5553"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Why",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "forgotten",
+          "s": [
+            "H7911"
+          ]
+        },
+        {
+          "t": "me?",
+          "s": []
+        },
+        {
+          "t": "why",
+          "s": []
+        },
+        {
+          "t": "go",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "mourning",
+          "s": [
+            "H6937"
+          ]
+        },
+        {
+          "t": "because",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "oppression",
+          "s": [
+            "H3906"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "enemy",
+          "s": [
+            "H0341"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "\\add As\\add* with a sword in my bones , mine enemies reproach me; while they say daily unto me, Where \\add is\\add* thy God ?\\f + \\fr 42.10 \\ft sword: or, killing\\f* \\q1",
+      "tokens": [
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "As\\add*",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "sword",
+          "s": [
+            "H7524"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "bones",
+          "s": [
+            "H6106"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "mine",
+          "s": []
+        },
+        {
+          "t": "enemies",
+          "s": [
+            "H6887"
+          ]
+        },
+        {
+          "t": "reproach",
+          "s": [
+            "H2778"
+          ]
+        },
+        {
+          "t": "me;",
+          "s": []
+        },
+        {
+          "t": "while",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "say",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "daily",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "Where",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": "?\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "42.10",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "sword:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "killing\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "Why art thou cast down , O my soul ? and why art thou disquieted within me? hope thou in God : for I shall yet praise him, \\add who is\\add* the health of my countenance , and my God.",
+      "tokens": [
+        {
+          "t": "Why",
+          "s": []
+        },
+        {
+          "t": "art",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "cast",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H7817"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "soul",
+          "s": [
+            "H5315"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "why",
+          "s": []
+        },
+        {
+          "t": "art",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "disquieted",
+          "s": [
+            "H1993"
+          ]
+        },
+        {
+          "t": "within",
+          "s": []
+        },
+        {
+          "t": "me?",
+          "s": []
+        },
+        {
+          "t": "hope",
+          "s": [
+            "H3176"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "praise",
+          "s": [
+            "H3034"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "who",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "health",
+          "s": [
+            "H3444"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "countenance",
+          "s": [
+            "H6440"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0430"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

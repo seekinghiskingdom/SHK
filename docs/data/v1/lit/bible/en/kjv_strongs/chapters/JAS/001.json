@@ -1,0 +1,3432 @@
+{
+  "book_id": "JAS",
+  "chapter": 1,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "James , a servant of God and of the Lord Jesus Christ , to the twelve tribes which are scattered abroad , greeting. \\p",
+      "tokens": [
+        {
+          "t": "James",
+          "s": [
+            "G2385"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "servant",
+          "s": [
+            "G1401"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": [
+            "G5443"
+          ]
+        },
+        {
+          "t": "twelve",
+          "s": [
+            "G1427"
+          ]
+        },
+        {
+          "t": "tribes",
+          "s": [
+            "G5443"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "are",
+          "s": [
+            "G3588"
+          ]
+        },
+        {
+          "t": "scattered",
+          "s": []
+        },
+        {
+          "t": "abroad",
+          "s": [
+            "G1290"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "greeting",
+          "s": [
+            "G5463"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "My brethren , count it all joy when ye fall into divers temptations ;",
+      "tokens": [
+        {
+          "t": "My",
+          "s": [
+            "G3450"
+          ]
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "G0080"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "count",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": [
+            "G2233"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "joy",
+          "s": [
+            "G5479"
+          ]
+        },
+        {
+          "t": "when",
+          "s": [
+            "G3752"
+          ]
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "fall",
+          "s": []
+        },
+        {
+          "t": "into",
+          "s": [
+            "G4045"
+          ]
+        },
+        {
+          "t": "divers",
+          "s": [
+            "G4164"
+          ]
+        },
+        {
+          "t": "temptations",
+          "s": [
+            "G3986"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "Knowing \\add this\\add*, that the trying of your faith worketh patience.",
+      "tokens": [
+        {
+          "t": "Knowing",
+          "s": [
+            "G1097"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "this\\add*,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "trying",
+          "s": [
+            "G1383"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": [
+            "G5216"
+          ]
+        },
+        {
+          "t": "faith",
+          "s": [
+            "G4102"
+          ]
+        },
+        {
+          "t": "worketh",
+          "s": [
+            "G2716"
+          ]
+        },
+        {
+          "t": "patience",
+          "s": [
+            "G5281"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "But let patience have \\add her\\add* perfect work , that ye may be perfect and entire , wanting nothing.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "patience",
+          "s": [
+            "G5281"
+          ]
+        },
+        {
+          "t": "have",
+          "s": [
+            "G2192"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "her\\add*",
+          "s": []
+        },
+        {
+          "t": "perfect",
+          "s": [
+            "G5046"
+          ]
+        },
+        {
+          "t": "work",
+          "s": [
+            "G2041"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G2443"
+          ]
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "may",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "G5600"
+          ]
+        },
+        {
+          "t": "perfect",
+          "s": [
+            "G5046"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "entire",
+          "s": [
+            "G3648"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "wanting",
+          "s": [
+            "G3007"
+          ]
+        },
+        {
+          "t": "nothing",
+          "s": [
+            "G3367"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "If any of you lack wisdom , let him ask of God , that giveth to all \\add men\\add* liberally , and upbraideth not ; and it shall be given him.",
+      "tokens": [
+        {
+          "t": "If",
+          "s": [
+            "G1487"
+          ]
+        },
+        {
+          "t": "any",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": [
+            "G5216"
+          ]
+        },
+        {
+          "t": "lack",
+          "s": [
+            "G3007"
+          ]
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "G4678"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "ask",
+          "s": [
+            "G0154"
+          ]
+        },
+        {
+          "t": "of",
+          "s": [
+            "G3844"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "giveth",
+          "s": [
+            "G1325"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "men\\add*",
+          "s": []
+        },
+        {
+          "t": "liberally",
+          "s": [
+            "G0574"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "upbraideth",
+          "s": [
+            "G3679"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3361"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "given",
+          "s": [
+            "G1325"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "But let him ask in faith , nothing wavering. For he that wavereth is like a wave of the sea driven with the wind and tossed.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "ask",
+          "s": [
+            "G0154"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "faith",
+          "s": [
+            "G4102"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nothing",
+          "s": [
+            "G3367"
+          ]
+        },
+        {
+          "t": "wavering",
+          "s": [
+            "G1252"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "For",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "wavereth",
+          "s": [
+            "G1252"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "like",
+          "s": [
+            "G1503"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "wave",
+          "s": [
+            "G2830"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sea",
+          "s": [
+            "G2281"
+          ]
+        },
+        {
+          "t": "driven",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wind",
+          "s": [
+            "G0416"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "tossed",
+          "s": [
+            "G4494"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "For let not that man think that he shall receive any thing of the Lord.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3361"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "G1565"
+          ]
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0444"
+          ]
+        },
+        {
+          "t": "think",
+          "s": [
+            "G3633"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "receive",
+          "s": [
+            "G2983"
+          ]
+        },
+        {
+          "t": "any",
+          "s": []
+        },
+        {
+          "t": "thing",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "of",
+          "s": [
+            "G3844"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "A double minded man \\add is\\add* unstable in all his ways.",
+      "tokens": [
+        {
+          "t": "A",
+          "s": []
+        },
+        {
+          "t": "double",
+          "s": []
+        },
+        {
+          "t": "minded",
+          "s": [
+            "G1374"
+          ]
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0435"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "unstable",
+          "s": [
+            "G0182"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "ways",
+          "s": [
+            "G3598"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Let the brother of low degree rejoice in that he is exalted :",
+      "tokens": [
+        {
+          "t": "Let",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "brother",
+          "s": [
+            "G0080"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "low",
+          "s": []
+        },
+        {
+          "t": "degree",
+          "s": [
+            "G5011"
+          ]
+        },
+        {
+          "t": "rejoice",
+          "s": [
+            "G2744"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "exalted",
+          "s": [
+            "G5311"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "But the rich , in that he is made low : because as the flower of the grass he shall pass away.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rich",
+          "s": [
+            "G4145"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "low",
+          "s": [
+            "G5014"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "because",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "as",
+          "s": [
+            "G5613"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "flower",
+          "s": [
+            "G0438"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "grass",
+          "s": [
+            "G5528"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "pass",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "G3928"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "For the sun is no sooner risen with a burning heat , but it withereth the grass , and the flower thereof falleth , and the grace of the fashion of it perisheth : so also shall the rich man fade away in his ways.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sun",
+          "s": [
+            "G2246"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "sooner",
+          "s": []
+        },
+        {
+          "t": "risen",
+          "s": [
+            "G0393"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G4862"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "burning",
+          "s": []
+        },
+        {
+          "t": "heat",
+          "s": [
+            "G2742"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "withereth",
+          "s": [
+            "G3583"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "grass",
+          "s": [
+            "G5528"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "flower",
+          "s": [
+            "G0438"
+          ]
+        },
+        {
+          "t": "thereof",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "falleth",
+          "s": [
+            "G1601"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "grace",
+          "s": [
+            "G2143"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fashion",
+          "s": [
+            "G4383"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "perisheth",
+          "s": [
+            "G0622"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": [
+            "G3779"
+          ]
+        },
+        {
+          "t": "also",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": [
+            "G3133"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rich",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G4145"
+          ]
+        },
+        {
+          "t": "fade",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "G3133"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "ways",
+          "s": [
+            "G4197"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "Blessed \\add is\\add* the man that endureth temptation : for when he is tried , he shall receive the crown of life , which the Lord hath promised to them that love him.",
+      "tokens": [
+        {
+          "t": "Blessed",
+          "s": [
+            "G3107"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0435"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "endureth",
+          "s": [
+            "G5278"
+          ]
+        },
+        {
+          "t": "temptation",
+          "s": [
+            "G3986"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": [
+            "G1096"
+          ]
+        },
+        {
+          "t": "tried",
+          "s": [
+            "G1384"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "receive",
+          "s": [
+            "G2983"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "crown",
+          "s": [
+            "G4735"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "G2222"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "promised",
+          "s": [
+            "G1861"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": [
+            "G3588"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "G0025"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "Let no man say when he is tempted , I am tempted of God : for God cannot be tempted with evil , neither tempteth he any man :",
+      "tokens": [
+        {
+          "t": "Let",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G3367"
+          ]
+        },
+        {
+          "t": "say",
+          "s": [
+            "G3004"
+          ]
+        },
+        {
+          "t": "when",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "tempted",
+          "s": [
+            "G3985"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "am",
+          "s": []
+        },
+        {
+          "t": "tempted",
+          "s": [
+            "G3985"
+          ]
+        },
+        {
+          "t": "of",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "cannot",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "tempted",
+          "s": [
+            "G0551"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "evil",
+          "s": [
+            "G2556"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "neither",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "tempteth",
+          "s": [
+            "G3985"
+          ]
+        },
+        {
+          "t": "he",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "any",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G3762"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "But every man is tempted , when he is drawn away of his own lust , and enticed.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "every",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G1538"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "tempted",
+          "s": [
+            "G3985"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "drawn",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "G1828"
+          ]
+        },
+        {
+          "t": "of",
+          "s": [
+            "G5259"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "own",
+          "s": [
+            "G2398"
+          ]
+        },
+        {
+          "t": "lust",
+          "s": [
+            "G1939"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "enticed",
+          "s": [
+            "G1185"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "Then when lust hath conceived , it bringeth forth sin : and sin , when it is finished , bringeth forth death.",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": [
+            "G1534"
+          ]
+        },
+        {
+          "t": "lust",
+          "s": [
+            "G1939"
+          ]
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "conceived",
+          "s": [
+            "G4815"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "bringeth",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "G5088"
+          ]
+        },
+        {
+          "t": "sin",
+          "s": [
+            "G0266"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "sin",
+          "s": [
+            "G0266"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "finished",
+          "s": [
+            "G0658"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "bringeth",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "G0616"
+          ]
+        },
+        {
+          "t": "death",
+          "s": [
+            "G2288"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "Do not err , my beloved brethren.",
+      "tokens": [
+        {
+          "t": "Do",
+          "s": [
+            "G4105"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3361"
+          ]
+        },
+        {
+          "t": "err",
+          "s": [
+            "G4105"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": [
+            "G3450"
+          ]
+        },
+        {
+          "t": "beloved",
+          "s": [
+            "G0027"
+          ]
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "G0080"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Every good gift and every perfect gift is from above , and cometh down from the Father of lights , with whom is no variableness , neither shadow of turning.",
+      "tokens": [
+        {
+          "t": "Every",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "good",
+          "s": [
+            "G0018"
+          ]
+        },
+        {
+          "t": "gift",
+          "s": [
+            "G1394"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "every",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "perfect",
+          "s": [
+            "G5046"
+          ]
+        },
+        {
+          "t": "gift",
+          "s": [
+            "G1434"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "above",
+          "s": [
+            "G0509"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "cometh",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "G2597"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Father",
+          "s": [
+            "G3962"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "lights",
+          "s": [
+            "G5457"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": [
+            "G3844"
+          ]
+        },
+        {
+          "t": "whom",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G1762"
+          ]
+        },
+        {
+          "t": "no",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": "variableness",
+          "s": [
+            "G3883"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "neither",
+          "s": [
+            "G2228"
+          ]
+        },
+        {
+          "t": "shadow",
+          "s": [
+            "G0644"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "turning",
+          "s": [
+            "G5157"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "Of his own will begat he us with the word of truth , that we should be a kind of firstfruits of his creatures. \\p",
+      "tokens": [
+        {
+          "t": "Of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "own",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": [
+            "G1014"
+          ]
+        },
+        {
+          "t": "begat",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": [
+            "G0616"
+          ]
+        },
+        {
+          "t": "us",
+          "s": [
+            "G2248"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "word",
+          "s": [
+            "G3056"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "truth",
+          "s": [
+            "G0225"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": [
+            "G2248"
+          ]
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "G1511"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "kind",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "firstfruits",
+          "s": [
+            "G0536"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "creatures",
+          "s": [
+            "G2938"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "Wherefore , my beloved brethren , let every man be swift to hear , slow to speak , slow to wrath :",
+      "tokens": [
+        {
+          "t": "Wherefore",
+          "s": [
+            "G5620"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": [
+            "G3450"
+          ]
+        },
+        {
+          "t": "beloved",
+          "s": [
+            "G0027"
+          ]
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "G0080"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "every",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0444"
+          ]
+        },
+        {
+          "t": "be",
+          "s": [
+            "G2077"
+          ]
+        },
+        {
+          "t": "swift",
+          "s": [
+            "G5036"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "hear",
+          "s": [
+            "G0191"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "slow",
+          "s": [
+            "G1021"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "speak",
+          "s": [
+            "G2980"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "slow",
+          "s": [
+            "G1021"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "wrath",
+          "s": [
+            "G3709"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "For the wrath of man worketh not the righteousness of God.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wrath",
+          "s": [
+            "G3709"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0435"
+          ]
+        },
+        {
+          "t": "worketh",
+          "s": [
+            "G2716"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "righteousness",
+          "s": [
+            "G1343"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "Wherefore lay apart all filthiness and superfluity of naughtiness , and receive with meekness the engrafted word , which is able to save your souls.",
+      "tokens": [
+        {
+          "t": "Wherefore",
+          "s": [
+            "G1352"
+          ]
+        },
+        {
+          "t": "lay",
+          "s": []
+        },
+        {
+          "t": "apart",
+          "s": [
+            "G0659"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "filthiness",
+          "s": [
+            "G4507"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "superfluity",
+          "s": [
+            "G4050"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "naughtiness",
+          "s": [
+            "G2549"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "receive",
+          "s": [
+            "G1209"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "meekness",
+          "s": [
+            "G4240"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "engrafted",
+          "s": [
+            "G1721"
+          ]
+        },
+        {
+          "t": "word",
+          "s": [
+            "G3056"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": [
+            "G3588"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "able",
+          "s": [
+            "G1410"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "save",
+          "s": [
+            "G4982"
+          ]
+        },
+        {
+          "t": "your",
+          "s": [
+            "G5216"
+          ]
+        },
+        {
+          "t": "souls",
+          "s": [
+            "G5590"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "But be ye doers of the word , and not hearers only , deceiving your own selves.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "be",
+          "s": [
+            "G1096"
+          ]
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "doers",
+          "s": [
+            "G4163"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "word",
+          "s": [
+            "G3056"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3361"
+          ]
+        },
+        {
+          "t": "hearers",
+          "s": [
+            "G0202"
+          ]
+        },
+        {
+          "t": "only",
+          "s": [
+            "G3440"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "deceiving",
+          "s": [
+            "G3884"
+          ]
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "own",
+          "s": []
+        },
+        {
+          "t": "selves",
+          "s": [
+            "G1438"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "For if any be a hearer of the word , and not a doer , he is like unto a man beholding his natural face in a glass :",
+      "tokens": [
+        {
+          "t": "For",
+          "s": [
+            "G3754"
+          ]
+        },
+        {
+          "t": "if",
+          "s": [
+            "G1487"
+          ]
+        },
+        {
+          "t": "any",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "hearer",
+          "s": [
+            "G0202"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "word",
+          "s": [
+            "G3056"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "doer",
+          "s": [
+            "G4163"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "like",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G1503"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0435"
+          ]
+        },
+        {
+          "t": "beholding",
+          "s": [
+            "G2657"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "natural",
+          "s": [
+            "G1078"
+          ]
+        },
+        {
+          "t": "face",
+          "s": [
+            "G4383"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "glass",
+          "s": [
+            "G2072"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "For he beholdeth himself , and goeth his way , and straightway forgetteth what manner of man he was.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "beholdeth",
+          "s": [
+            "G2657"
+          ]
+        },
+        {
+          "t": "himself",
+          "s": [
+            "G1438"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "goeth",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "G0565"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "straightway",
+          "s": [
+            "G2112"
+          ]
+        },
+        {
+          "t": "forgetteth",
+          "s": [
+            "G1950"
+          ]
+        },
+        {
+          "t": "what",
+          "s": []
+        },
+        {
+          "t": "manner",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G3697"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": [
+            "G2258"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "But whoso looketh into the perfect law of liberty , and continueth \\add therein\\add*, he being not a forgetful hearer , but a doer of the work , this man shall be blessed in his deed.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "whoso",
+          "s": []
+        },
+        {
+          "t": "looketh",
+          "s": [
+            "G3879"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "perfect",
+          "s": [
+            "G5046"
+          ]
+        },
+        {
+          "t": "law",
+          "s": [
+            "G3551"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "liberty",
+          "s": [
+            "G1657"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "continueth",
+          "s": [
+            "G3887"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "therein\\add*,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "being",
+          "s": [
+            "G1096"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "forgetful",
+          "s": [
+            "G1953"
+          ]
+        },
+        {
+          "t": "hearer",
+          "s": [
+            "G0202"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G0235"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "doer",
+          "s": [
+            "G4163"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "work",
+          "s": [
+            "G2041"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "G2071"
+          ]
+        },
+        {
+          "t": "blessed",
+          "s": [
+            "G3107"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "deed",
+          "s": [
+            "G4162"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "If any man among you seem to be religious , and bridleth not his tongue , but deceiveth his own heart , this man’s religion \\add is\\add* vain.",
+      "tokens": [
+        {
+          "t": "If",
+          "s": [
+            "G1487"
+          ]
+        },
+        {
+          "t": "any",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "among",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "you",
+          "s": [
+            "G5213"
+          ]
+        },
+        {
+          "t": "seem",
+          "s": [
+            "G1380"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "G1511"
+          ]
+        },
+        {
+          "t": "religious",
+          "s": [
+            "G2357"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "bridleth",
+          "s": [
+            "G5468"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3361"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "tongue",
+          "s": [
+            "G1100"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G0235"
+          ]
+        },
+        {
+          "t": "deceiveth",
+          "s": [
+            "G0538"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "own",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "heart",
+          "s": [
+            "G2588"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "man’s",
+          "s": [
+            "G5127"
+          ]
+        },
+        {
+          "t": "religion",
+          "s": [
+            "G2356"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "vain",
+          "s": [
+            "G3152"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "Pure religion and undefiled before God and the Father is this , To visit the fatherless and widows in their affliction , \\add and\\add* to keep himself unspotted from the world.",
+      "tokens": [
+        {
+          "t": "Pure",
+          "s": [
+            "G2513"
+          ]
+        },
+        {
+          "t": "religion",
+          "s": [
+            "G2356"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "undefiled",
+          "s": [
+            "G0283"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "G3844"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Father",
+          "s": [
+            "G3962"
+          ]
+        },
+        {
+          "t": "is",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "this",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "To",
+          "s": []
+        },
+        {
+          "t": "visit",
+          "s": [
+            "G1980"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "fatherless",
+          "s": [
+            "G3737"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "widows",
+          "s": [
+            "G5503"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "their",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "affliction",
+          "s": [
+            "G2347"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "keep",
+          "s": [
+            "G5083"
+          ]
+        },
+        {
+          "t": "himself",
+          "s": [
+            "G1438"
+          ]
+        },
+        {
+          "t": "unspotted",
+          "s": [
+            "G0784"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "world",
+          "s": [
+            "G2889"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6548 @@
+{
+  "book_id": "DAN",
+  "chapter": 5,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Belshazzar the king made a great feast to a thousand of his lords , and drank wine before the thousand.",
+      "tokens": [
+        {
+          "t": "Belshazzar",
+          "s": [
+            "H1113"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "made",
+          "s": [
+            "H5648"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": [
+            "H7229"
+          ]
+        },
+        {
+          "t": "feast",
+          "s": [
+            "H3900"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "thousand",
+          "s": [
+            "H0506"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "lords",
+          "s": [
+            "H7261"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "drank",
+          "s": [
+            "H8355"
+          ]
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H2562"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6903"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "thousand",
+          "s": [
+            "H0506"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "Belshazzar , whiles he tasted the wine , commanded to bring the golden and silver vessels which his father Nebuchadnezzar had taken out of the temple which \\add was\\add* in Jerusalem ; that the king , and his princes , his wives , and his concubines , might drink therein.\\f + \\fr 5.2 \\ft father: or, grandfather\\f*\\f + \\fr 5.2 \\ft taken: Chaldee, brought forth\\f*",
+      "tokens": [
+        {
+          "t": "Belshazzar",
+          "s": [
+            "H1113"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "whiles",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "tasted",
+          "s": [
+            "H2942"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H2562"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "commanded",
+          "s": [
+            "H0560"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": [
+            "H0858"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "golden",
+          "s": [
+            "H1722"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "silver",
+          "s": [
+            "H3702"
+          ]
+        },
+        {
+          "t": "vessels",
+          "s": [
+            "H3984"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0002"
+          ]
+        },
+        {
+          "t": "Nebuchadnezzar",
+          "s": [
+            "H5020"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "taken",
+          "s": [
+            "H5312"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "temple",
+          "s": [
+            "H1965"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3390"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "princes",
+          "s": [
+            "H7261"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "wives",
+          "s": [
+            "H7695"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "concubines",
+          "s": [
+            "H3904"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "might",
+          "s": []
+        },
+        {
+          "t": "drink",
+          "s": [
+            "H8355"
+          ]
+        },
+        {
+          "t": "therein.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.2",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "father:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "grandfather\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.2",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "taken:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": []
+        },
+        {
+          "t": "forth\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "Then they brought the golden vessels that were taken out of the temple of the house of God which \\add was\\add* at Jerusalem ; and the king , and his princes , his wives , and his concubines , drank in them.",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": [
+            "H0116"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0858"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "golden",
+          "s": [
+            "H1722"
+          ]
+        },
+        {
+          "t": "vessels",
+          "s": [
+            "H3984"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "taken",
+          "s": [
+            "H5312"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "temple",
+          "s": [
+            "H1965"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1005"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3390"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "princes",
+          "s": [
+            "H7261"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "wives",
+          "s": [
+            "H7695"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "concubines",
+          "s": [
+            "H3904"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "drank",
+          "s": [
+            "H8355"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "them.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "They drank wine , and praised the gods of gold , and of silver , of brass , of iron , of wood , and of stone. \\p",
+      "tokens": [
+        {
+          "t": "They",
+          "s": []
+        },
+        {
+          "t": "drank",
+          "s": [
+            "H8355"
+          ]
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H2562"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "praised",
+          "s": [
+            "H7624"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "gods",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H1722"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "silver",
+          "s": [
+            "H3702"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "brass",
+          "s": [
+            "H5174"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "iron",
+          "s": [
+            "H6523"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "wood",
+          "s": [
+            "H0636"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "stone",
+          "s": [
+            "H0069"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "¶ In the same hour came forth fingers of a man’s hand , and wrote over against the candlestick upon the plaister of the wall of the king’s palace : and the king saw the part of the hand that wrote.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "In",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "same",
+          "s": []
+        },
+        {
+          "t": "hour",
+          "s": [
+            "H8160"
+          ]
+        },
+        {
+          "t": "came",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H5312"
+          ]
+        },
+        {
+          "t": "fingers",
+          "s": [
+            "H0677"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man’s",
+          "s": [
+            "H0606"
+          ]
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3028"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "wrote",
+          "s": [
+            "H3790"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "against",
+          "s": [
+            "H6903"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "candlestick",
+          "s": [
+            "H5043"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "plaister",
+          "s": [
+            "H1528"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H3797"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king’s",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "palace",
+          "s": [
+            "H1965"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "saw",
+          "s": [
+            "H2370"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "part",
+          "s": [
+            "H6447"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3028"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "wrote",
+          "s": [
+            "H3790"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "Then the king’s countenance was changed , and his thoughts troubled him, so that the joints of his loins were loosed , and his knees smote one against another.\\f + \\fr 5.6 \\ft countenance: Chaldee, brightnesses\\f*\\f + \\fr 5.6 \\ft was changed: Chaldee, changed it\\f*\\f + \\fr 5.6 \\ft joints: or, girdles: Chaldee, bindings, or, knots\\f*",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": [
+            "H0116"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king’s",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "countenance",
+          "s": [
+            "H2122"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "changed",
+          "s": [
+            "H8133"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "thoughts",
+          "s": [
+            "H7476"
+          ]
+        },
+        {
+          "t": "troubled",
+          "s": [
+            "H0927"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "joints",
+          "s": [
+            "H7001"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "loins",
+          "s": [
+            "H2783"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "loosed",
+          "s": [
+            "H8271"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "knees",
+          "s": [
+            "H0755"
+          ]
+        },
+        {
+          "t": "smote",
+          "s": [
+            "H5368"
+          ]
+        },
+        {
+          "t": "one",
+          "s": [
+            "H1668"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "another",
+          "s": [
+            "H1668"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.6",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "countenance:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "brightnesses\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.6",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "changed:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "changed",
+          "s": []
+        },
+        {
+          "t": "it\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.6",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "joints:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "girdles:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "bindings,",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "knots\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "The king cried aloud to bring in the astrologers , the Chaldeans , and the soothsayers. \\add And\\add* the king spake , and said to the wise \\add men\\add* of Babylon , Whosoever shall read this writing , and shew me the interpretation thereof, shall be clothed with scarlet , and \\add have\\add* a chain of gold about his neck , and shall be the third ruler in the kingdom.\\f + \\fr 5.7 \\ft aloud: Chaldee, with might\\f*\\f + \\fr 5.7 \\ft scarlet: or, purple\\f*",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "cried",
+          "s": [
+            "H7123"
+          ]
+        },
+        {
+          "t": "aloud",
+          "s": [
+            "H2429"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "bring",
+          "s": [
+            "H5954"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "astrologers",
+          "s": [
+            "H0826"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Chaldeans",
+          "s": [
+            "H3779"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "soothsayers",
+          "s": [
+            "H1505"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "And\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "spake",
+          "s": [
+            "H6032"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0560"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wise",
+          "s": [
+            "H2445"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "men\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0895"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Whosoever",
+          "s": [
+            "H0606"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "read",
+          "s": [
+            "H7123"
+          ]
+        },
+        {
+          "t": "this",
+          "s": [
+            "H1836"
+          ]
+        },
+        {
+          "t": "writing",
+          "s": [
+            "H3792"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "shew",
+          "s": [
+            "H2324"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "interpretation",
+          "s": [
+            "H6591"
+          ]
+        },
+        {
+          "t": "thereof,",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "clothed",
+          "s": [
+            "H3848"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "scarlet",
+          "s": [
+            "H0711"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "have\\add*",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "chain",
+          "s": [
+            "H2002"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H1722"
+          ]
+        },
+        {
+          "t": "about",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "neck",
+          "s": [
+            "H6676"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "third",
+          "s": [
+            "H8523"
+          ]
+        },
+        {
+          "t": "ruler",
+          "s": [
+            "H7981"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "aloud:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "might\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "scarlet:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "purple\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "Then came in all the king’s wise \\add men:\\add* but they could not read the writing , nor make known to the king the interpretation thereof.",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": [
+            "H0116"
+          ]
+        },
+        {
+          "t": "came",
+          "s": [
+            "H5954"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": [
+            "H3606"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king’s",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "wise",
+          "s": [
+            "H2445"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "men:\\add*",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "could",
+          "s": [
+            "H3546"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "H3809"
+          ]
+        },
+        {
+          "t": "read",
+          "s": [
+            "H7123"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "writing",
+          "s": [
+            "H3792"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "make",
+          "s": []
+        },
+        {
+          "t": "known",
+          "s": [
+            "H3046"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "interpretation",
+          "s": [
+            "H6591"
+          ]
+        },
+        {
+          "t": "thereof.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Then was king Belshazzar greatly troubled , and his countenance was changed in him , and his lords were astonied.\\f + \\fr 5.9 \\ft countenance: Chaldee, brightnesses\\f* \\p",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": [
+            "H0116"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "Belshazzar",
+          "s": [
+            "H1113"
+          ]
+        },
+        {
+          "t": "greatly",
+          "s": [
+            "H7690"
+          ]
+        },
+        {
+          "t": "troubled",
+          "s": [
+            "H0927"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "countenance",
+          "s": [
+            "H2122"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "changed",
+          "s": [
+            "H8133"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "lords",
+          "s": [
+            "H7261"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "astonied",
+          "s": [
+            "H7672"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.9",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "countenance:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "brightnesses\\f*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "¶ \\add Now\\add* the queen , by reason of the words of the king and his lords , came into the banquet house : \\add and\\add* the queen spake and said , O king , live for ever : let not thy thoughts trouble thee, nor let thy countenance be changed :",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "Now\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "queen",
+          "s": [
+            "H4433"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "reason",
+          "s": [
+            "H6903"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "words",
+          "s": [
+            "H4406"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "lords",
+          "s": [
+            "H7261"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "H5954"
+          ]
+        },
+        {
+          "t": "into",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "banquet",
+          "s": [
+            "H4961"
+          ]
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1005"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "queen",
+          "s": [
+            "H4433"
+          ]
+        },
+        {
+          "t": "spake",
+          "s": [
+            "H6032"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0560"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "live",
+          "s": [
+            "H2418"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "ever",
+          "s": [
+            "H5957"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": [
+            "H0409"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "thoughts",
+          "s": [
+            "H7476"
+          ]
+        },
+        {
+          "t": "trouble",
+          "s": [
+            "H0927"
+          ]
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "countenance",
+          "s": [
+            "H2122"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "changed",
+          "s": [
+            "H8133"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "There is a man in thy kingdom , in whom \\add is\\add* the spirit of the holy gods ; and in the days of thy father light and understanding and wisdom , like the wisdom of the gods , was found in him; whom the king Nebuchadnezzar thy father , the king , \\add I say\\add*, thy father , made master of the magicians , astrologers , Chaldeans , \\add and\\add* soothsayers ;\\f + \\fr 5.11 \\ft father: or, grandfather\\f*",
+      "tokens": [
+        {
+          "t": "There",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": [
+            "H0383"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H1400"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "spirit",
+          "s": [
+            "H7308"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "holy",
+          "s": [
+            "H6922"
+          ]
+        },
+        {
+          "t": "gods",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3118"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0002"
+          ]
+        },
+        {
+          "t": "light",
+          "s": [
+            "H5094"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "understanding",
+          "s": [
+            "H7924"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2452"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "like",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2452"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "gods",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "found",
+          "s": [
+            "H7912"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "him;",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "Nebuchadnezzar",
+          "s": [
+            "H5020"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0002"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "say\\add*,",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0002"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": [
+            "H6966"
+          ]
+        },
+        {
+          "t": "master",
+          "s": [
+            "H7229"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "magicians",
+          "s": [
+            "H2749"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "astrologers",
+          "s": [
+            "H0826"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Chaldeans",
+          "s": [
+            "H3779"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "soothsayers",
+          "s": [
+            "H1505"
+          ]
+        },
+        {
+          "t": ";\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.11",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "father:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "grandfather\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "Forasmuch as an excellent spirit , and knowledge , and understanding , interpreting of dreams , and shewing of hard sentences , and dissolving of doubts , were found in the same Daniel , whom the king named Belteshazzar : now let Daniel be called , and he will shew the interpretation.\\f + \\fr 5.12 \\ft interpreting: or, of an interpreter\\f*\\f + \\fr 5.12 \\ft dissolving: or, of a dissolver\\f*\\f + \\fr 5.12 \\ft doubts: Chaldee, knots\\f*",
+      "tokens": [
+        {
+          "t": "Forasmuch",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": [
+            "H6903"
+          ]
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "excellent",
+          "s": [
+            "H3493"
+          ]
+        },
+        {
+          "t": "spirit",
+          "s": [
+            "H7308"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "knowledge",
+          "s": [
+            "H4486"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "understanding",
+          "s": [
+            "H7924"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "interpreting",
+          "s": [
+            "H6590"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "dreams",
+          "s": [
+            "H2493"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "shewing",
+          "s": [
+            "H0263"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "hard",
+          "s": []
+        },
+        {
+          "t": "sentences",
+          "s": [
+            "H0280"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "dissolving",
+          "s": [
+            "H8271"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "doubts",
+          "s": [
+            "H7001"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "found",
+          "s": [
+            "H7912"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "same",
+          "s": []
+        },
+        {
+          "t": "Daniel",
+          "s": [
+            "H1841"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "named",
+          "s": [
+            "H7761"
+          ]
+        },
+        {
+          "t": "Belteshazzar",
+          "s": [
+            "H1096"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "now",
+          "s": [
+            "H3705"
+          ]
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "Daniel",
+          "s": [
+            "H1841"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "called",
+          "s": [
+            "H7123"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "shew",
+          "s": [
+            "H2324"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "interpretation",
+          "s": [
+            "H6591"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.12",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "interpreting:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "interpreter\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.12",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "dissolving:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "dissolver\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.12",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "doubts:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "knots\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "Then was Daniel brought in before the king. \\add And\\add* the king spake and said unto Daniel , \\add Art\\add* thou that Daniel , which \\add art\\add* of the children of the captivity of Judah , whom the king my father brought out of Jewry ?\\f + \\fr 5.13 \\ft father: or, grandfather\\f*",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": [
+            "H0116"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "Daniel",
+          "s": [
+            "H1841"
+          ]
+        },
+        {
+          "t": "brought",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": [
+            "H5954"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6925"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "And\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "spake",
+          "s": [
+            "H6032"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0560"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "Daniel",
+          "s": [
+            "H1841"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "Art\\add*",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": [
+            "H0607"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "Daniel",
+          "s": [
+            "H1841"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "art\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1123"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "captivity",
+          "s": [
+            "H1547"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Judah",
+          "s": [
+            "H3061"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0002"
+          ]
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0858"
+          ]
+        },
+        {
+          "t": "out",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": "Jewry",
+          "s": [
+            "H3061"
+          ]
+        },
+        {
+          "t": "?\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.13",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "father:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "grandfather\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "I have even heard of thee, that the spirit of the gods \\add is\\add* in thee , and \\add that\\add* light and understanding and excellent wisdom is found in thee.",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "even",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": [
+            "H8086"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "spirit",
+          "s": [
+            "H7308"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "gods",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "light",
+          "s": [
+            "H5094"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "understanding",
+          "s": [
+            "H7924"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "excellent",
+          "s": [
+            "H3493"
+          ]
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2452"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "found",
+          "s": [
+            "H7912"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thee.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "And now the wise \\add men\\add*, the astrologers , have been brought in before me, that they should read this writing , and make known unto me the interpretation thereof: but they could not shew the interpretation of the thing :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "now",
+          "s": [
+            "H3705"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wise",
+          "s": [
+            "H2445"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "men\\add*,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "astrologers",
+          "s": [
+            "H0826"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "been",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H5954"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6925"
+          ]
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "read",
+          "s": [
+            "H7123"
+          ]
+        },
+        {
+          "t": "this",
+          "s": [
+            "H1836"
+          ]
+        },
+        {
+          "t": "writing",
+          "s": [
+            "H3792"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "make",
+          "s": []
+        },
+        {
+          "t": "known",
+          "s": [
+            "H3046"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "interpretation",
+          "s": [
+            "H6591"
+          ]
+        },
+        {
+          "t": "thereof:",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "could",
+          "s": [
+            "H3546"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "H3809"
+          ]
+        },
+        {
+          "t": "shew",
+          "s": [
+            "H2324"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "interpretation",
+          "s": [
+            "H6591"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "thing",
+          "s": [
+            "H4406"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "And I have heard of thee , that thou canst make interpretations , and dissolve doubts : now if thou canst read the writing , and make known to me the interpretation thereof, thou shalt be clothed with scarlet , and \\add have\\add* a chain of gold about thy neck , and shalt be the third ruler in the kingdom.\\f + \\fr 5.16 \\ft make interpretations: Chaldee, interpret, etc\\f* \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": [
+            "H0576"
+          ]
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": [
+            "H8086"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "canst",
+          "s": [
+            "H3202"
+          ]
+        },
+        {
+          "t": "make",
+          "s": [
+            "H6590"
+          ]
+        },
+        {
+          "t": "interpretations",
+          "s": [
+            "H6591"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "dissolve",
+          "s": [
+            "H8271"
+          ]
+        },
+        {
+          "t": "doubts",
+          "s": [
+            "H7001"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "now",
+          "s": [
+            "H3705"
+          ]
+        },
+        {
+          "t": "if",
+          "s": [
+            "H2006"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "canst",
+          "s": [
+            "H3202"
+          ]
+        },
+        {
+          "t": "read",
+          "s": [
+            "H7123"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "writing",
+          "s": [
+            "H3792"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "make",
+          "s": []
+        },
+        {
+          "t": "known",
+          "s": [
+            "H3046"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "interpretation",
+          "s": [
+            "H6591"
+          ]
+        },
+        {
+          "t": "thereof,",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "clothed",
+          "s": [
+            "H3848"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "scarlet",
+          "s": [
+            "H0711"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "have\\add*",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "chain",
+          "s": [
+            "H2002"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H1722"
+          ]
+        },
+        {
+          "t": "about",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "neck",
+          "s": [
+            "H6676"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "third",
+          "s": [
+            "H8531"
+          ]
+        },
+        {
+          "t": "ruler",
+          "s": [
+            "H7981"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.16",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "make",
+          "s": []
+        },
+        {
+          "t": "interpretations:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "interpret,",
+          "s": []
+        },
+        {
+          "t": "etc\\f*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "¶ Then Daniel answered and said before the king , Let thy gifts be to thyself, and give thy rewards to another ; yet I will read the writing unto the king , and make known to him the interpretation.\\f + \\fr 5.17 \\ft rewards: or, fee\\f*",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "Then",
+          "s": [
+            "H0116"
+          ]
+        },
+        {
+          "t": "Daniel",
+          "s": [
+            "H1841"
+          ]
+        },
+        {
+          "t": "answered",
+          "s": [
+            "H6032"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0560"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6925"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Let",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "gifts",
+          "s": [
+            "H4978"
+          ]
+        },
+        {
+          "t": "be",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "thyself,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "give",
+          "s": [
+            "H3052"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "rewards",
+          "s": [
+            "H5023"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "another",
+          "s": [
+            "H0321"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": [
+            "H1297"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "read",
+          "s": [
+            "H7123"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "writing",
+          "s": [
+            "H3792"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "make",
+          "s": []
+        },
+        {
+          "t": "known",
+          "s": [
+            "H3046"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "interpretation",
+          "s": [
+            "H6591"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.17",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "rewards:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "fee\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "O thou king , the most high God gave Nebuchadnezzar thy father a kingdom , and majesty , and glory , and honour :",
+      "tokens": [
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": [
+            "H0607"
+          ]
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "most",
+          "s": []
+        },
+        {
+          "t": "high",
+          "s": [
+            "H5943"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H3052"
+          ]
+        },
+        {
+          "t": "Nebuchadnezzar",
+          "s": [
+            "H5020"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "father",
+          "s": [
+            "H0002"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "majesty",
+          "s": [
+            "H7238"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "glory",
+          "s": [
+            "H3367"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "honour",
+          "s": [
+            "H1923"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "And for the majesty that he gave him, all people , nations , and languages , trembled and feared before him : whom he would he slew ; and whom he would he kept alive ; and whom he would he set up ; and whom he would he put down.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "majesty",
+          "s": [
+            "H7238"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "gave",
+          "s": [
+            "H3052"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": [
+            "H3606"
+          ]
+        },
+        {
+          "t": "people",
+          "s": [
+            "H5972"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nations",
+          "s": [
+            "H0524"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "languages",
+          "s": [
+            "H3961"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "trembled",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "feared",
+          "s": [
+            "H1763"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "H6925"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "would",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "slew",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "would",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "kept",
+          "s": []
+        },
+        {
+          "t": "alive",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "would",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "set",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "would",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "put",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "But when his heart was lifted up , and his mind hardened in pride , he was deposed from his kingly throne , and they took his glory from him :\\f + \\fr 5.20 \\ft in pride: or, to deal proudly\\f*\\f + \\fr 5.20 \\ft deposed: Chaldee, made to come down\\f*",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": [
+            "H3825"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "lifted",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H7313"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "mind",
+          "s": [
+            "H7308"
+          ]
+        },
+        {
+          "t": "hardened",
+          "s": [
+            "H8631"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "pride",
+          "s": [
+            "H2103"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "deposed",
+          "s": [
+            "H5182"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "kingly",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": "throne",
+          "s": [
+            "H3764"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "took",
+          "s": [
+            "H5709"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "glory",
+          "s": [
+            "H3367"
+          ]
+        },
+        {
+          "t": "from",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": ":\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.20",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "pride:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "deal",
+          "s": []
+        },
+        {
+          "t": "proudly\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.20",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "deposed:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": []
+        },
+        {
+          "t": "down\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "And he was driven from the sons of men ; and his heart was made like the beasts , and his dwelling \\add was\\add* with the wild asses : they fed him with grass like oxen , and his body was wet with the dew of heaven ; till he knew that the most high God ruled in the kingdom of men , and \\add that\\add* he appointeth over it whomsoever he will.\\f + \\fr 5.21 \\ft his heart…: or, he made his heart equal, etc\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "driven",
+          "s": [
+            "H2957"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1123"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "men",
+          "s": [
+            "H0606"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": [
+            "H3825"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": [
+            "H7739"
+          ]
+        },
+        {
+          "t": "like",
+          "s": [
+            "H5974"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "beasts",
+          "s": [
+            "H2423"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "dwelling",
+          "s": [
+            "H4070"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wild",
+          "s": []
+        },
+        {
+          "t": "asses",
+          "s": [
+            "H6167"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "fed",
+          "s": [
+            "H2939"
+          ]
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "grass",
+          "s": [
+            "H6211"
+          ]
+        },
+        {
+          "t": "like",
+          "s": []
+        },
+        {
+          "t": "oxen",
+          "s": [
+            "H8450"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "body",
+          "s": [
+            "H1655"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "wet",
+          "s": [
+            "H6647"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "dew",
+          "s": [
+            "H2920"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "heaven",
+          "s": [
+            "H8065"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "till",
+          "s": [
+            "H5705"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "knew",
+          "s": [
+            "H3046"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "most",
+          "s": []
+        },
+        {
+          "t": "high",
+          "s": [
+            "H5943"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": "ruled",
+          "s": [
+            "H7990"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "men",
+          "s": [
+            "H0606"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "appointeth",
+          "s": [
+            "H6966"
+          ]
+        },
+        {
+          "t": "over",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "whomsoever",
+          "s": [
+            "H4479"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": [
+            "H6634"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.21",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "heart…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": []
+        },
+        {
+          "t": "equal,",
+          "s": []
+        },
+        {
+          "t": "etc\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "And thou his son , O Belshazzar , hast not humbled thine heart , though thou knewest all this ;",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": [
+            "H0607"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": [
+            "H1247"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "Belshazzar",
+          "s": [
+            "H1113"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": [
+            "H3809"
+          ]
+        },
+        {
+          "t": "humbled",
+          "s": [
+            "H8214"
+          ]
+        },
+        {
+          "t": "thine",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": [
+            "H3825"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "though",
+          "s": [
+            "H6903"
+          ]
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "knewest",
+          "s": [
+            "H3046"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "H3606"
+          ]
+        },
+        {
+          "t": "this",
+          "s": [
+            "H1836"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "But hast lifted up thyself against the Lord of heaven ; and they have brought the vessels of his house before thee, and thou , and thy lords , thy wives , and thy concubines , have drunk wine in them; and thou hast praised the gods of silver , and gold , of brass , iron , wood , and stone , which see not , nor hear , nor know : and the God in whose hand thy breath \\add is\\add*, and whose \\add are\\add* all thy ways , hast thou not glorified :",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "lifted",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H7313"
+          ]
+        },
+        {
+          "t": "thyself",
+          "s": []
+        },
+        {
+          "t": "against",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "H4756"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "heaven",
+          "s": [
+            "H8065"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0858"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "vessels",
+          "s": [
+            "H3984"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1005"
+          ]
+        },
+        {
+          "t": "before",
+          "s": [
+            "H6925"
+          ]
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": [
+            "H0607"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "lords",
+          "s": [
+            "H7261"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "wives",
+          "s": [
+            "H7695"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "concubines",
+          "s": [
+            "H3904"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "drunk",
+          "s": [
+            "H8355"
+          ]
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H2562"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "them;",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "praised",
+          "s": [
+            "H7624"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "gods",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "silver",
+          "s": [
+            "H3702"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H1722"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "brass",
+          "s": [
+            "H5174"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "iron",
+          "s": [
+            "H6523"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "wood",
+          "s": [
+            "H0636"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "stone",
+          "s": [
+            "H0069"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "see",
+          "s": [
+            "H2370"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "H3809"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": [
+            "H3809"
+          ]
+        },
+        {
+          "t": "hear",
+          "s": [
+            "H8086"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": [
+            "H3809"
+          ]
+        },
+        {
+          "t": "know",
+          "s": [
+            "H3046"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "whose",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3028"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "breath",
+          "s": [
+            "H5396"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "whose",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": [
+            "H3606"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "ways",
+          "s": [
+            "H0735"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": [
+            "H3809"
+          ]
+        },
+        {
+          "t": "glorified",
+          "s": [
+            "H1922"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "Then was the part of the hand sent from him ; and this writing was written. \\p",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": [
+            "H0116"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "part",
+          "s": [
+            "H6447"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3028"
+          ]
+        },
+        {
+          "t": "sent",
+          "s": [
+            "H7972"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "H4481"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "H6925"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": [
+            "H1836"
+          ]
+        },
+        {
+          "t": "writing",
+          "s": [
+            "H3792"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "written",
+          "s": [
+            "H7560"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "¶ And this \\add is\\add* the writing that was written , MENE , MENE , TEKEL , UPHARSIN.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "this",
+          "s": [
+            "H1836"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "writing",
+          "s": [
+            "H3792"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "written",
+          "s": [
+            "H7560"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "MENE",
+          "s": [
+            "H4484"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "MENE",
+          "s": [
+            "H4484"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "TEKEL",
+          "s": [
+            "H8625"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "UPHARSIN",
+          "s": [
+            "H6537"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "This \\add is\\add* the interpretation of the thing : MENE ; God hath numbered thy kingdom , and finished it.",
+      "tokens": [
+        {
+          "t": "This",
+          "s": [
+            "H1836"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "interpretation",
+          "s": [
+            "H6591"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "thing",
+          "s": [
+            "H4406"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "MENE",
+          "s": [
+            "H4484"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "H0426"
+          ]
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "numbered",
+          "s": [
+            "H4483"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "finished",
+          "s": [
+            "H8000"
+          ]
+        },
+        {
+          "t": "it.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "TEKEL ; Thou art weighed in the balances , and art found wanting.",
+      "tokens": [
+        {
+          "t": "TEKEL",
+          "s": [
+            "H8625"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "Thou",
+          "s": []
+        },
+        {
+          "t": "art",
+          "s": []
+        },
+        {
+          "t": "weighed",
+          "s": [
+            "H8625"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "balances",
+          "s": [
+            "H3977"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "art",
+          "s": []
+        },
+        {
+          "t": "found",
+          "s": [
+            "H7912"
+          ]
+        },
+        {
+          "t": "wanting",
+          "s": [
+            "H2627"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "PERES ; Thy kingdom is divided , and given to the Medes and Persians.",
+      "tokens": [
+        {
+          "t": "PERES",
+          "s": [
+            "H6537"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "Thy",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "divided",
+          "s": [
+            "H6537"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "given",
+          "s": [
+            "H3052"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Medes",
+          "s": [
+            "H4076"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "Persians",
+          "s": [
+            "H6540"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 29,
+      "text": "Then commanded Belshazzar , and they clothed Daniel with scarlet , and \\add put\\add* a chain of gold about his neck , and made a proclamation concerning him, that he should be the third ruler in the kingdom. \\p",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": [
+            "H0116"
+          ]
+        },
+        {
+          "t": "commanded",
+          "s": [
+            "H0560"
+          ]
+        },
+        {
+          "t": "Belshazzar",
+          "s": [
+            "H1113"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "clothed",
+          "s": [
+            "H3848"
+          ]
+        },
+        {
+          "t": "Daniel",
+          "s": [
+            "H1841"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "scarlet",
+          "s": [
+            "H0711"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "put\\add*",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "chain",
+          "s": [
+            "H2002"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "gold",
+          "s": [
+            "H1722"
+          ]
+        },
+        {
+          "t": "about",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "neck",
+          "s": [
+            "H6676"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "proclamation",
+          "s": [
+            "H3745"
+          ]
+        },
+        {
+          "t": "concerning",
+          "s": [
+            "H5922"
+          ]
+        },
+        {
+          "t": "him,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "H1934"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "third",
+          "s": [
+            "H8531"
+          ]
+        },
+        {
+          "t": "ruler",
+          "s": [
+            "H7990"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 30,
+      "text": "¶ In that night was Belshazzar the king of the Chaldeans slain.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "In",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "H3916"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "Belshazzar",
+          "s": [
+            "H1113"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "king",
+          "s": [
+            "H4430"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Chaldeans",
+          "s": [
+            "H3779"
+          ]
+        },
+        {
+          "t": "slain",
+          "s": [
+            "H6992"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 31,
+      "text": "And Darius the Median took the kingdom , \\add being\\add* about threescore and two years old.\\f + \\fr 5.31 \\ft being…: Chaldee, he as the son of, etc\\f*\\f + \\fr 5.31 \\ft about: or, now\\f*",
+      "tokens": [
+        {
+          "t": "And",
+          "s": []
+        },
+        {
+          "t": "Darius",
+          "s": [
+            "H1868"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Median",
+          "s": [
+            "H4077"
+          ]
+        },
+        {
+          "t": "took",
+          "s": [
+            "H6902"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "kingdom",
+          "s": [
+            "H4437"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "being\\add*",
+          "s": []
+        },
+        {
+          "t": "about",
+          "s": []
+        },
+        {
+          "t": "threescore",
+          "s": [
+            "H8361"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "two",
+          "s": [
+            "H8648"
+          ]
+        },
+        {
+          "t": "years",
+          "s": [
+            "H8140"
+          ]
+        },
+        {
+          "t": "old",
+          "s": [
+            "H1247"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.31",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "being…:",
+          "s": []
+        },
+        {
+          "t": "Chaldee,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "son",
+          "s": []
+        },
+        {
+          "t": "of,",
+          "s": []
+        },
+        {
+          "t": "etc\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "5.31",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "about:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "now\\f*",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

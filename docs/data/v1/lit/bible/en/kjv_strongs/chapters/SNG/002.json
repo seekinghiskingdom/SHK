@@ -1,0 +1,2386 @@
+{
+  "book_id": "SNG",
+  "chapter": 2,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "I \\add am\\add* the rose of Sharon , \\add and\\add* the lily of the valleys.",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rose",
+          "s": [
+            "H2261"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Sharon",
+          "s": [
+            "H8289"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "lily",
+          "s": [
+            "H7799"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "valleys",
+          "s": [
+            "H6010"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "As the lily among thorns , so \\add is\\add* my love among the daughters. \\p",
+      "tokens": [
+        {
+          "t": "As",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "lily",
+          "s": [
+            "H7799"
+          ]
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "thorns",
+          "s": [
+            "H2336"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H7474"
+          ]
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "daughters",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "As the apple tree among the trees of the wood , so \\add is\\add* my beloved among the sons. I sat down under his shadow with great delight , and his fruit \\add was\\add* sweet to my taste.\\f + \\fr 2.3 \\ft I sat…: Heb. I delighted and sat down, etc\\f*\\f + \\fr 2.3 \\ft taste: Heb. palate\\f*",
+      "tokens": [
+        {
+          "t": "As",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "apple",
+          "s": []
+        },
+        {
+          "t": "tree",
+          "s": [
+            "H8598"
+          ]
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "trees",
+          "s": [
+            "H6086"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wood",
+          "s": [
+            "H3293"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "so",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "beloved",
+          "s": [
+            "H1730"
+          ]
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "sons",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "sat",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "down",
+          "s": []
+        },
+        {
+          "t": "under",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "shadow",
+          "s": [
+            "H6738"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "great",
+          "s": []
+        },
+        {
+          "t": "delight",
+          "s": [
+            "H2530"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "fruit",
+          "s": [
+            "H6529"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "sweet",
+          "s": [
+            "H4966"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "taste",
+          "s": [
+            "H2441"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "2.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "sat…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "delighted",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "sat",
+          "s": []
+        },
+        {
+          "t": "down,",
+          "s": []
+        },
+        {
+          "t": "etc\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "2.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "taste:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "palate\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "He brought me to the banqueting house , and his banner over me \\add was\\add* love.\\f + \\fr 2.4 \\ft banqueting…: Heb. house of wine\\f*",
+      "tokens": [
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "brought",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "banqueting",
+          "s": [
+            "H3196"
+          ]
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "banner",
+          "s": [
+            "H1714"
+          ]
+        },
+        {
+          "t": "over",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H0160"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "2.4",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "banqueting…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "wine\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Stay me with flagons , comfort me with apples : for I \\add am\\add* sick of love.\\f + \\fr 2.5 \\ft comfort…: Heb. straw me with apples\\f*",
+      "tokens": [
+        {
+          "t": "Stay",
+          "s": [
+            "H5564"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "flagons",
+          "s": [
+            "H0809"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "comfort",
+          "s": [
+            "H7502"
+          ]
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "apples",
+          "s": [
+            "H8598"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "sick",
+          "s": [
+            "H2470"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H0160"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "2.5",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "comfort…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "straw",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "apples\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "His left hand \\add is\\add* under my head , and his right hand doth embrace me.",
+      "tokens": [
+        {
+          "t": "His",
+          "s": []
+        },
+        {
+          "t": "left",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H8040"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "under",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "head",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "right",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3225"
+          ]
+        },
+        {
+          "t": "doth",
+          "s": []
+        },
+        {
+          "t": "embrace",
+          "s": [
+            "H2263"
+          ]
+        },
+        {
+          "t": "me.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "I charge you, O ye daughters of Jerusalem , by the roes , and by the hinds of the field , that ye stir not up , nor awake \\add my\\add* love , till he please.\\f + \\fr 2.7 \\ft I charge…: Heb. I adjure you\\f* \\p",
+      "tokens": [
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "charge",
+          "s": [
+            "H7650"
+          ]
+        },
+        {
+          "t": "you,",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "daughters",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "roes",
+          "s": [
+            "H6643"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "H0176"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hinds",
+          "s": [
+            "H0355"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "field",
+          "s": [
+            "H7704"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": []
+        },
+        {
+          "t": "stir",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5782"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "awake",
+          "s": [
+            "H5782"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "my\\add*",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H0160"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "till",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "please",
+          "s": [
+            "H2654"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "2.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "charge…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "adjure",
+          "s": []
+        },
+        {
+          "t": "you\\f*",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "¶ The voice of my beloved ! behold, he cometh leaping upon the mountains , skipping upon the hills.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "voice",
+          "s": [
+            "H6963"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "beloved",
+          "s": [
+            "H1730"
+          ]
+        },
+        {
+          "t": "!",
+          "s": []
+        },
+        {
+          "t": "behold,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "cometh",
+          "s": [
+            "H0935"
+          ]
+        },
+        {
+          "t": "leaping",
+          "s": [
+            "H1801"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "mountains",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "skipping",
+          "s": [
+            "H7092"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "hills",
+          "s": [
+            "H1389"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "My beloved is like a roe or a young hart : behold, he standeth behind our wall , he looketh forth at the windows , shewing himself through the lattice.\\f + \\fr 2.9 \\ft shewing…: Heb. flourishing\\f*",
+      "tokens": [
+        {
+          "t": "My",
+          "s": []
+        },
+        {
+          "t": "beloved",
+          "s": [
+            "H1730"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "like",
+          "s": [
+            "H1819"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "roe",
+          "s": [
+            "H6643"
+          ]
+        },
+        {
+          "t": "or",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "young",
+          "s": [
+            "H6082"
+          ]
+        },
+        {
+          "t": "hart",
+          "s": [
+            "H0354"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "behold,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "standeth",
+          "s": [
+            "H5975"
+          ]
+        },
+        {
+          "t": "behind",
+          "s": [
+            "H0310"
+          ]
+        },
+        {
+          "t": "our",
+          "s": []
+        },
+        {
+          "t": "wall",
+          "s": [
+            "H3796"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "looketh",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H7688"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "windows",
+          "s": [
+            "H2474"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "shewing",
+          "s": [
+            "H6692"
+          ]
+        },
+        {
+          "t": "himself",
+          "s": []
+        },
+        {
+          "t": "through",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "lattice",
+          "s": [
+            "H2762"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "2.9",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "shewing…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "flourishing\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "My beloved spake , and said unto me, Rise up , my love , my fair one , and come away.",
+      "tokens": [
+        {
+          "t": "My",
+          "s": []
+        },
+        {
+          "t": "beloved",
+          "s": [
+            "H1730"
+          ]
+        },
+        {
+          "t": "spake",
+          "s": [
+            "H6030"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "me,",
+          "s": []
+        },
+        {
+          "t": "Rise",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H6965"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H7474"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "fair",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": [
+            "H3303"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "For, lo, the winter is past , the rain is over \\add and\\add* gone ;",
+      "tokens": [
+        {
+          "t": "For,",
+          "s": []
+        },
+        {
+          "t": "lo,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "winter",
+          "s": [
+            "H5638"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "past",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rain",
+          "s": [
+            "H1653"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "over",
+          "s": [
+            "H2498"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "gone",
+          "s": [
+            "H1980"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "The flowers appear on the earth ; the time of the singing \\add of birds\\add* is come , and the voice of the turtle is heard in our land ;",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "flowers",
+          "s": [
+            "H5339"
+          ]
+        },
+        {
+          "t": "appear",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "earth",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "time",
+          "s": [
+            "H6256"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "singing",
+          "s": [
+            "H2158"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "birds\\add*",
+          "s": []
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": [
+            "H5060"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "voice",
+          "s": [
+            "H6963"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "turtle",
+          "s": [
+            "H8449"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "our",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0776"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "The fig tree putteth forth her green figs , and the vines \\add with\\add* the tender grape give a \\add good\\add* smell. Arise , my love , my fair one , and come away. \\p",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "fig",
+          "s": []
+        },
+        {
+          "t": "tree",
+          "s": [
+            "H8384"
+          ]
+        },
+        {
+          "t": "putteth",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H2590"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "green",
+          "s": []
+        },
+        {
+          "t": "figs",
+          "s": [
+            "H6291"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "vines",
+          "s": [
+            "H1612"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "with\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "tender",
+          "s": []
+        },
+        {
+          "t": "grape",
+          "s": [
+            "H5563"
+          ]
+        },
+        {
+          "t": "give",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "good\\add*",
+          "s": []
+        },
+        {
+          "t": "smell",
+          "s": [
+            "H7381"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "Arise",
+          "s": [
+            "H6965"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H7474"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "fair",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": [
+            "H3303"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "¶ O my dove , \\add that art\\add* in the clefts of the rock , in the secret \\add places\\add* of the stairs , let me see thy countenance , let me hear thy voice ; for sweet \\add is\\add* thy voice , and thy countenance \\add is\\add* comely.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "dove",
+          "s": [
+            "H3123"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "art\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "clefts",
+          "s": [
+            "H2288"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rock",
+          "s": [
+            "H5553"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "secret",
+          "s": [
+            "H5643"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "places\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "stairs",
+          "s": [
+            "H4095"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "see",
+          "s": [
+            "H7200"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "countenance",
+          "s": [
+            "H4758"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "hear",
+          "s": [
+            "H8085"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "voice",
+          "s": [
+            "H6963"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "sweet",
+          "s": [
+            "H6156"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "voice",
+          "s": [
+            "H6963"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "countenance",
+          "s": [
+            "H4758"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "comely",
+          "s": [
+            "H5000"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "Take us the foxes , the little foxes , that spoil the vines : for our vines \\add have\\add* tender grapes. \\p",
+      "tokens": [
+        {
+          "t": "Take",
+          "s": [
+            "H0270"
+          ]
+        },
+        {
+          "t": "us",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "foxes",
+          "s": [
+            "H7776"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "little",
+          "s": [
+            "H6996"
+          ]
+        },
+        {
+          "t": "foxes",
+          "s": [
+            "H7776"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "spoil",
+          "s": [
+            "H2254"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "vines",
+          "s": [
+            "H3754"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "our",
+          "s": []
+        },
+        {
+          "t": "vines",
+          "s": [
+            "H3754"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "have\\add*",
+          "s": []
+        },
+        {
+          "t": "tender",
+          "s": []
+        },
+        {
+          "t": "grapes",
+          "s": [
+            "H5563"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "¶ My beloved \\add is\\add* mine, and I \\add am\\add* his: he feedeth among the lilies.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "My",
+          "s": []
+        },
+        {
+          "t": "beloved",
+          "s": [
+            "H1730"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "mine,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "his:",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "feedeth",
+          "s": [
+            "H7462"
+          ]
+        },
+        {
+          "t": "among",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "lilies",
+          "s": [
+            "H7799"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Until the day break , and the shadows flee away , turn , my beloved , and be thou like a roe or a young hart upon the mountains of Bether.\\f + \\fr 2.17 \\ft of Bether: or, of division\\f*",
+      "tokens": [
+        {
+          "t": "Until",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "break",
+          "s": [
+            "H6315"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "shadows",
+          "s": [
+            "H6752"
+          ]
+        },
+        {
+          "t": "flee",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": [
+            "H5127"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "turn",
+          "s": [
+            "H5437"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "beloved",
+          "s": [
+            "H1730"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "like",
+          "s": [
+            "H1819"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "roe",
+          "s": [
+            "H6643"
+          ]
+        },
+        {
+          "t": "or",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "young",
+          "s": [
+            "H6082"
+          ]
+        },
+        {
+          "t": "hart",
+          "s": [
+            "H0354"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "mountains",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Bether",
+          "s": [
+            "H1336"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "2.17",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Bether:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "division\\f*",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

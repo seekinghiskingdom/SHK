@@ -1,0 +1,1320 @@
+{
+  "book_id": "PSA",
+  "chapter": 137,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "By the rivers of Babylon , there we sat down , yea, we wept , when we remembered Zion. \\q1",
+      "tokens": [
+        {
+          "t": "By",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rivers",
+          "s": [
+            "H5104"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "sat",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "yea,",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "wept",
+          "s": [
+            "H1058"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "remembered",
+          "s": [
+            "H2142"
+          ]
+        },
+        {
+          "t": "Zion",
+          "s": [
+            "H6726"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "We hanged our harps upon the willows in the midst thereof. \\q1",
+      "tokens": [
+        {
+          "t": "We",
+          "s": []
+        },
+        {
+          "t": "hanged",
+          "s": [
+            "H8518"
+          ]
+        },
+        {
+          "t": "our",
+          "s": []
+        },
+        {
+          "t": "harps",
+          "s": [
+            "H3658"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "willows",
+          "s": [
+            "H6155"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "midst",
+          "s": [
+            "H8432"
+          ]
+        },
+        {
+          "t": "thereof.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "For there they that carried us away captive required of us a song ; and they that wasted us \\add required of us\\add* mirth , \\add saying\\add*, Sing us \\add one\\add* of the songs of Zion.\\f + \\fr 137.3 \\ft a song: Heb. the words of a song\\f*\\f + \\fr 137.3 \\ft wasted…: Heb. laid us on heaps\\f* \\q1",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "there",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "carried",
+          "s": []
+        },
+        {
+          "t": "us",
+          "s": []
+        },
+        {
+          "t": "away",
+          "s": []
+        },
+        {
+          "t": "captive",
+          "s": [
+            "H7617"
+          ]
+        },
+        {
+          "t": "required",
+          "s": [
+            "H7592"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "us",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "song",
+          "s": [
+            "H1697"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "wasted",
+          "s": [
+            "H8437"
+          ]
+        },
+        {
+          "t": "us",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "required",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "us\\add*",
+          "s": []
+        },
+        {
+          "t": "mirth",
+          "s": [
+            "H8057"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "saying\\add*,",
+          "s": []
+        },
+        {
+          "t": "Sing",
+          "s": [
+            "H7891"
+          ]
+        },
+        {
+          "t": "us",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "one\\add*",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "songs",
+          "s": [
+            "H7892"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Zion",
+          "s": [
+            "H6726"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "137.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "song:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "words",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "song\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "137.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "wasted…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "laid",
+          "s": []
+        },
+        {
+          "t": "us",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "heaps\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "How shall we sing the \\nd \\+w LORD’s|strong=\"H3068\"\\+w*\\nd* song in a strange land ?\\f + \\fr 137.4 \\ft strange…: Heb. land of a stranger?\\f* \\q1",
+      "tokens": [
+        {
+          "t": "How",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "we",
+          "s": []
+        },
+        {
+          "t": "sing",
+          "s": [
+            "H7891"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD’s|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "song",
+          "s": [
+            "H7892"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "strange",
+          "s": [
+            "H5236"
+          ]
+        },
+        {
+          "t": "land",
+          "s": [
+            "H0127"
+          ]
+        },
+        {
+          "t": "?\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "137.4",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "strange…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "land",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "stranger?\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "If I forget thee, O Jerusalem , let my right hand forget \\add her cunning\\add*. \\q1",
+      "tokens": [
+        {
+          "t": "If",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "forget",
+          "s": [
+            "H7911"
+          ]
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "right",
+          "s": []
+        },
+        {
+          "t": "hand",
+          "s": [
+            "H3225"
+          ]
+        },
+        {
+          "t": "forget",
+          "s": [
+            "H7911"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "cunning\\add*.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "If I do not remember thee, let my tongue cleave to the roof of my mouth ; if I prefer not Jerusalem above my chief joy.\\f + \\fr 137.6 \\ft my chief…: Heb. the head of my joy\\f* \\b \\q1",
+      "tokens": [
+        {
+          "t": "If",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "do",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "remember",
+          "s": [
+            "H2142"
+          ]
+        },
+        {
+          "t": "thee,",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "tongue",
+          "s": [
+            "H3956"
+          ]
+        },
+        {
+          "t": "cleave",
+          "s": [
+            "H1692"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "roof",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "mouth",
+          "s": [
+            "H2441"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "if",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "prefer",
+          "s": [
+            "H5927"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": "above",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": [
+            "H7218"
+          ]
+        },
+        {
+          "t": "joy",
+          "s": [
+            "H8057"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "137.6",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "chief…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "head",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "joy\\f*",
+          "s": []
+        },
+        {
+          "t": "\\b",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "Remember , O \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, the children of Edom in the day of Jerusalem ; who said , Rase \\add it\\add*, rase \\add it, even\\add* to the foundation thereof.\\f + \\fr 137.7 \\ft Rase it: Heb. Make bare\\f* \\q1",
+      "tokens": [
+        {
+          "t": "Remember",
+          "s": [
+            "H2142"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "children",
+          "s": [
+            "H1121"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Edom",
+          "s": [
+            "H0123"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "day",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "H3389"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "who",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Rase",
+          "s": [
+            "H6168"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*,",
+          "s": []
+        },
+        {
+          "t": "rase",
+          "s": [
+            "H6168"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it,",
+          "s": []
+        },
+        {
+          "t": "even\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "foundation",
+          "s": [
+            "H3247"
+          ]
+        },
+        {
+          "t": "thereof.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "137.7",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "Rase",
+          "s": []
+        },
+        {
+          "t": "it:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "Make",
+          "s": []
+        },
+        {
+          "t": "bare\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "O daughter of Babylon , who art to be destroyed ; happy \\add shall he be\\add*, that rewardeth thee as thou hast served us.\\f + \\fr 137.8 \\ft destroyed: Heb. wasted\\f*\\f + \\fr 137.8 \\ft rewardeth…: Heb. recompenseth unto thee thy deed which thou didst to us\\f* \\q1",
+      "tokens": [
+        {
+          "t": "O",
+          "s": []
+        },
+        {
+          "t": "daughter",
+          "s": [
+            "H1323"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Babylon",
+          "s": [
+            "H0894"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "who",
+          "s": []
+        },
+        {
+          "t": "art",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "destroyed",
+          "s": [
+            "H7703"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "happy",
+          "s": [
+            "H0835"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "be\\add*,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "rewardeth",
+          "s": [
+            "H7999"
+          ]
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "hast",
+          "s": []
+        },
+        {
+          "t": "served",
+          "s": [
+            "H1580"
+          ]
+        },
+        {
+          "t": "us.\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "137.8",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "destroyed:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "wasted\\f*\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "137.8",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "rewardeth…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "recompenseth",
+          "s": []
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "thee",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "deed",
+          "s": []
+        },
+        {
+          "t": "which",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "didst",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "us\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Happy \\add shall he be\\add*, that taketh and dasheth thy little ones against the stones.\\f + \\fr 137.9 \\ft the stones: Heb. the rock\\f*",
+      "tokens": [
+        {
+          "t": "Happy",
+          "s": [
+            "H0835"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "be\\add*,",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "taketh",
+          "s": [
+            "H0270"
+          ]
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "dasheth",
+          "s": [
+            "H5310"
+          ]
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "little",
+          "s": []
+        },
+        {
+          "t": "ones",
+          "s": [
+            "H5768"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "stones",
+          "s": [
+            "H5553"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "137.9",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "stones:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "rock\\f*",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

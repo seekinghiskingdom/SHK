@@ -1,0 +1,674 @@
+{
+  "book_id": "PSA",
+  "chapter": 15,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "\\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*, who shall abide in thy tabernacle ? who shall dwell in thy holy hill ?\\f + \\fr 15.1 \\ft abide: Heb. sojourn\\f* \\q1",
+      "tokens": [
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*,",
+          "s": []
+        },
+        {
+          "t": "who",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "abide",
+          "s": [
+            "H1481"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "tabernacle",
+          "s": [
+            "H0168"
+          ]
+        },
+        {
+          "t": "?",
+          "s": []
+        },
+        {
+          "t": "who",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "dwell",
+          "s": [
+            "H7931"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "holy",
+          "s": [
+            "H6944"
+          ]
+        },
+        {
+          "t": "hill",
+          "s": [
+            "H2022"
+          ]
+        },
+        {
+          "t": "?\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "15.1",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "abide:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "sojourn\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "He that walketh uprightly , and worketh righteousness , and speaketh the truth in his heart. \\q1",
+      "tokens": [
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "walketh",
+          "s": [
+            "H1980"
+          ]
+        },
+        {
+          "t": "uprightly",
+          "s": [
+            "H8549"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "worketh",
+          "s": [
+            "H6466"
+          ]
+        },
+        {
+          "t": "righteousness",
+          "s": [
+            "H6664"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "speaketh",
+          "s": [
+            "H1696"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "truth",
+          "s": [
+            "H0571"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "heart",
+          "s": [
+            "H3824"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "\\add He that\\add* backbiteth not with his tongue , nor doeth evil to his neighbour , nor taketh up a reproach against his neighbour.\\f + \\fr 15.3 \\ft taketh…: or, receiveth, or, endureth\\f* \\q1",
+      "tokens": [
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "backbiteth",
+          "s": [
+            "H7270"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "tongue",
+          "s": [
+            "H3956"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "doeth",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "evil",
+          "s": [
+            "H7451"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "neighbour",
+          "s": [
+            "H7453"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "taketh",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "H5375"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "reproach",
+          "s": [
+            "H2781"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "neighbour",
+          "s": [
+            "H7138"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "15.3",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "taketh…:",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "receiveth,",
+          "s": []
+        },
+        {
+          "t": "or,",
+          "s": []
+        },
+        {
+          "t": "endureth\\f*",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "In whose eyes a vile person is contemned ; but he honoureth them that fear the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd*. \\add He that\\add* sweareth to \\add his own\\add* hurt , and changeth not. \\q1",
+      "tokens": [
+        {
+          "t": "In",
+          "s": []
+        },
+        {
+          "t": "whose",
+          "s": []
+        },
+        {
+          "t": "eyes",
+          "s": [
+            "H5869"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "vile",
+          "s": []
+        },
+        {
+          "t": "person",
+          "s": [
+            "H3988"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "contemned",
+          "s": [
+            "H0959"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "honoureth",
+          "s": [
+            "H3513"
+          ]
+        },
+        {
+          "t": "them",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "fear",
+          "s": [
+            "H3373"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*.",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "sweareth",
+          "s": [
+            "H7650"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "own\\add*",
+          "s": []
+        },
+        {
+          "t": "hurt",
+          "s": [
+            "H7489"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "changeth",
+          "s": [
+            "H4171"
+          ]
+        },
+        {
+          "t": "not.",
+          "s": []
+        },
+        {
+          "t": "\\q1",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "\\add He that\\add* putteth not out his money to usury , nor taketh reward against the innocent. He that doeth these \\add things\\add* shall never be moved.",
+      "tokens": [
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "putteth",
+          "s": []
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "money",
+          "s": [
+            "H3701"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "usury",
+          "s": [
+            "H5392"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "nor",
+          "s": []
+        },
+        {
+          "t": "taketh",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "reward",
+          "s": [
+            "H7810"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "innocent",
+          "s": [
+            "H5355"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "doeth",
+          "s": [
+            "H6213"
+          ]
+        },
+        {
+          "t": "these",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "things\\add*",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "never",
+          "s": [
+            "H5769"
+          ]
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "moved",
+          "s": [
+            "H4131"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

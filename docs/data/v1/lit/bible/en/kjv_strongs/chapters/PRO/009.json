@@ -1,0 +1,1784 @@
+{
+  "book_id": "PRO",
+  "chapter": 9,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Wisdom hath builded her house , she hath hewn out her seven pillars :",
+      "tokens": [
+        {
+          "t": "Wisdom",
+          "s": [
+            "H2454"
+          ]
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "builded",
+          "s": [
+            "H1129"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "hewn",
+          "s": []
+        },
+        {
+          "t": "out",
+          "s": [
+            "H2672"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "seven",
+          "s": [
+            "H7651"
+          ]
+        },
+        {
+          "t": "pillars",
+          "s": [
+            "H5982"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "She hath killed her beasts ; she hath mingled her wine ; she hath also furnished her table.\\f + \\fr 9.2 \\ft her beasts: Heb. her killing\\f*",
+      "tokens": [
+        {
+          "t": "She",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "killed",
+          "s": [
+            "H2873"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "beasts",
+          "s": [
+            "H2874"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "mingled",
+          "s": [
+            "H4537"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H3196"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "also",
+          "s": []
+        },
+        {
+          "t": "furnished",
+          "s": [
+            "H6186"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "table",
+          "s": [
+            "H7979"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.2",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "beasts:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "killing\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "She hath sent forth her maidens : she crieth upon the highest places of the city ,",
+      "tokens": [
+        {
+          "t": "She",
+          "s": []
+        },
+        {
+          "t": "hath",
+          "s": []
+        },
+        {
+          "t": "sent",
+          "s": []
+        },
+        {
+          "t": "forth",
+          "s": [
+            "H7971"
+          ]
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "maidens",
+          "s": [
+            "H5291"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "crieth",
+          "s": [
+            "H7121"
+          ]
+        },
+        {
+          "t": "upon",
+          "s": [
+            "H1610"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "highest",
+          "s": []
+        },
+        {
+          "t": "places",
+          "s": [
+            "H4791"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H7176"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "Whoso \\add is\\add* simple , let him turn in hither: \\add as for\\add* him that wanteth understanding , she saith to him,",
+      "tokens": [
+        {
+          "t": "Whoso",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "simple",
+          "s": [
+            "H6612"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "turn",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": [
+            "H5493"
+          ]
+        },
+        {
+          "t": "hither:",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "for\\add*",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "wanteth",
+          "s": [
+            "H2638"
+          ]
+        },
+        {
+          "t": "understanding",
+          "s": [
+            "H3820"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "Come , eat of my bread , and drink of the wine \\add which\\add* I have mingled.",
+      "tokens": [
+        {
+          "t": "Come",
+          "s": [
+            "H3212"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "eat",
+          "s": [
+            "H3898"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "my",
+          "s": []
+        },
+        {
+          "t": "bread",
+          "s": [
+            "H3899"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "drink",
+          "s": [
+            "H8354"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "wine",
+          "s": [
+            "H3196"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "which\\add*",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "have",
+          "s": []
+        },
+        {
+          "t": "mingled",
+          "s": [
+            "H4537"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "Forsake the foolish , and live ; and go in the way of understanding.",
+      "tokens": [
+        {
+          "t": "Forsake",
+          "s": [
+            "H5800"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "foolish",
+          "s": [
+            "H6612"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "live",
+          "s": [
+            "H2421"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "go",
+          "s": [
+            "H0833"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "H1870"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "understanding",
+          "s": [
+            "H0998"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "He that reproveth a scorner getteth to himself shame : and he that rebuketh a wicked \\add man getteth\\add* himself a blot.",
+      "tokens": [
+        {
+          "t": "He",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "reproveth",
+          "s": [
+            "H3256"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "scorner",
+          "s": [
+            "H3887"
+          ]
+        },
+        {
+          "t": "getteth",
+          "s": [
+            "H3947"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "himself",
+          "s": []
+        },
+        {
+          "t": "shame",
+          "s": [
+            "H7036"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "rebuketh",
+          "s": [
+            "H3198"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "wicked",
+          "s": [
+            "H7563"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": []
+        },
+        {
+          "t": "getteth\\add*",
+          "s": []
+        },
+        {
+          "t": "himself",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "blot",
+          "s": [
+            "H3971"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "Reprove not a scorner , lest he hate thee: rebuke a wise man , and he will love thee.",
+      "tokens": [
+        {
+          "t": "Reprove",
+          "s": [
+            "H3198"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "scorner",
+          "s": [
+            "H3887"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "lest",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "hate",
+          "s": [
+            "H8130"
+          ]
+        },
+        {
+          "t": "thee:",
+          "s": []
+        },
+        {
+          "t": "rebuke",
+          "s": [
+            "H3198"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "wise",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "H2450"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "love",
+          "s": [
+            "H0157"
+          ]
+        },
+        {
+          "t": "thee.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Give \\add instruction\\add* to a wise \\add man\\add*, and he will be yet wiser : teach a just \\add man\\add*, and he will increase in learning.",
+      "tokens": [
+        {
+          "t": "Give",
+          "s": [
+            "H5414"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "instruction\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "wise",
+          "s": [
+            "H2450"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "man\\add*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": []
+        },
+        {
+          "t": "wiser",
+          "s": [
+            "H2449"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "teach",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "just",
+          "s": [
+            "H6662"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "man\\add*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "increase",
+          "s": [
+            "H3254"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "learning",
+          "s": [
+            "H3948"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "The fear of the \\nd \\+w LORD|strong=\"H3068\"\\+w*\\nd* \\add is\\add* the beginning of wisdom : and the knowledge of the holy \\add is\\add* understanding.",
+      "tokens": [
+        {
+          "t": "The",
+          "s": []
+        },
+        {
+          "t": "fear",
+          "s": [
+            "H3374"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "\\nd",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "LORD|strong=\"H3068\"\\+w*\\nd*",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "beginning",
+          "s": [
+            "H8462"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "wisdom",
+          "s": [
+            "H2451"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "knowledge",
+          "s": [
+            "H1847"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "holy",
+          "s": [
+            "H6918"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "understanding",
+          "s": [
+            "H0998"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "For by me thy days shall be multiplied , and the years of thy life shall be increased.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "me",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "days",
+          "s": [
+            "H3117"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "multiplied",
+          "s": [
+            "H7235"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "years",
+          "s": [
+            "H8141"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "life",
+          "s": [
+            "H2416"
+          ]
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "increased",
+          "s": [
+            "H3254"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "If thou be wise , thou shalt be wise for thyself: but \\add if\\add* thou scornest , thou alone shalt bear \\add it\\add*. \\p",
+      "tokens": [
+        {
+          "t": "If",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "wise",
+          "s": [
+            "H2449"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": []
+        },
+        {
+          "t": "wise",
+          "s": [
+            "H2449"
+          ]
+        },
+        {
+          "t": "for",
+          "s": []
+        },
+        {
+          "t": "thyself:",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "if\\add*",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "scornest",
+          "s": [
+            "H3887"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "thou",
+          "s": []
+        },
+        {
+          "t": "alone",
+          "s": []
+        },
+        {
+          "t": "shalt",
+          "s": []
+        },
+        {
+          "t": "bear",
+          "s": [
+            "H5375"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "it\\add*.",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "¶ A foolish woman \\add is\\add* clamorous : \\add she is\\add* simple , and knoweth nothing.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "A",
+          "s": []
+        },
+        {
+          "t": "foolish",
+          "s": [
+            "H3687"
+          ]
+        },
+        {
+          "t": "woman",
+          "s": [
+            "H0802"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "clamorous",
+          "s": [
+            "H1993"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "simple",
+          "s": [
+            "H6615"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "H1077"
+          ]
+        },
+        {
+          "t": "knoweth",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": "nothing",
+          "s": [
+            "H4100"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "For she sitteth at the door of her house , on a seat in the high places of the city ,",
+      "tokens": [
+        {
+          "t": "For",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "sitteth",
+          "s": [
+            "H3427"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "door",
+          "s": [
+            "H6607"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "H1004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "seat",
+          "s": [
+            "H3678"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "high",
+          "s": []
+        },
+        {
+          "t": "places",
+          "s": [
+            "H4791"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "city",
+          "s": [
+            "H7176"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "To call passengers who go right on their ways :",
+      "tokens": [
+        {
+          "t": "To",
+          "s": []
+        },
+        {
+          "t": "call",
+          "s": [
+            "H7121"
+          ]
+        },
+        {
+          "t": "passengers",
+          "s": [
+            "H5674"
+          ]
+        },
+        {
+          "t": "who",
+          "s": []
+        },
+        {
+          "t": "go",
+          "s": []
+        },
+        {
+          "t": "right",
+          "s": [
+            "H3474"
+          ]
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "ways",
+          "s": [
+            "H0734"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "Whoso \\add is\\add* simple , let him turn in hither: and \\add as for\\add* him that wanteth understanding , she saith to him,",
+      "tokens": [
+        {
+          "t": "Whoso",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "is\\add*",
+          "s": []
+        },
+        {
+          "t": "simple",
+          "s": [
+            "H6612"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "let",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "turn",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": [
+            "H5493"
+          ]
+        },
+        {
+          "t": "hither:",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "as",
+          "s": []
+        },
+        {
+          "t": "for\\add*",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "wanteth",
+          "s": [
+            "H2638"
+          ]
+        },
+        {
+          "t": "understanding",
+          "s": [
+            "H3820"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "she",
+          "s": []
+        },
+        {
+          "t": "saith",
+          "s": [
+            "H0559"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "him,",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Stolen waters are sweet , and bread \\add eaten\\add* in secret is pleasant.\\f + \\fr 9.17 \\ft eaten…: Heb. of secrecies\\f*",
+      "tokens": [
+        {
+          "t": "Stolen",
+          "s": [
+            "H1589"
+          ]
+        },
+        {
+          "t": "waters",
+          "s": [
+            "H4325"
+          ]
+        },
+        {
+          "t": "are",
+          "s": []
+        },
+        {
+          "t": "sweet",
+          "s": [
+            "H4985"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "bread",
+          "s": [
+            "H3899"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "eaten\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "secret",
+          "s": [
+            "H5643"
+          ]
+        },
+        {
+          "t": "is",
+          "s": []
+        },
+        {
+          "t": "pleasant",
+          "s": [
+            "H5276"
+          ]
+        },
+        {
+          "t": ".\\f",
+          "s": []
+        },
+        {
+          "t": "+",
+          "s": []
+        },
+        {
+          "t": "\\fr",
+          "s": []
+        },
+        {
+          "t": "9.17",
+          "s": []
+        },
+        {
+          "t": "\\ft",
+          "s": []
+        },
+        {
+          "t": "eaten…:",
+          "s": []
+        },
+        {
+          "t": "Heb.",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "secrecies\\f*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "But he knoweth not that the dead \\add are\\add* there; \\add and that\\add* her guests \\add are\\add* in the depths of hell.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "knoweth",
+          "s": [
+            "H3045"
+          ]
+        },
+        {
+          "t": "not",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "dead",
+          "s": [
+            "H7496"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "there;",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "her",
+          "s": []
+        },
+        {
+          "t": "guests",
+          "s": [
+            "H7121"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "are\\add*",
+          "s": []
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "depths",
+          "s": [
+            "H6012"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "hell",
+          "s": [
+            "H7585"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.kjvd",
+  "code": "kjvd",
+  "slug": "kjvd",
+  "title": "King James Version with Apocrypha",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "kjvd",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": true,
+    "notes": "Includes Deuterocanonical/Apocryphal books."
+  },
+  "versification": "kjv-apocrypha",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

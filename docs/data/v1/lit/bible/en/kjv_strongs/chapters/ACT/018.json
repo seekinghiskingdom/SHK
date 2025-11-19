@@ -1,0 +1,4306 @@
+{
+  "book_id": "ACT",
+  "chapter": 18,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "After these things Paul departed from Athens , and came to Corinth ;",
+      "tokens": [
+        {
+          "t": "After",
+          "s": [
+            "G3326"
+          ]
+        },
+        {
+          "t": "these",
+          "s": []
+        },
+        {
+          "t": "things",
+          "s": [
+            "G5023"
+          ]
+        },
+        {
+          "t": "Paul",
+          "s": [
+            "G3972"
+          ]
+        },
+        {
+          "t": "departed",
+          "s": [
+            "G5563"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "Athens",
+          "s": [
+            "G0116"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "Corinth",
+          "s": [
+            "G2882"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 2,
+      "text": "And found a certain Jew named Aquila , born in Pontus , lately come from Italy , with his wife Priscilla ; (because that Claudius had commanded all Jews to depart from Rome :) and came unto them.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "found",
+          "s": [
+            "G2147"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "certain",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "Jew",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": "named",
+          "s": [
+            "G3686"
+          ]
+        },
+        {
+          "t": "Aquila",
+          "s": [
+            "G0207"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "born",
+          "s": [
+            "G1085"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "Pontus",
+          "s": [
+            "G4193"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "lately",
+          "s": [
+            "G4373"
+          ]
+        },
+        {
+          "t": "come",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "Italy",
+          "s": [
+            "G2482"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "with",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "wife",
+          "s": [
+            "G1135"
+          ]
+        },
+        {
+          "t": "Priscilla",
+          "s": [
+            "G4252"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "(because",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G1223"
+          ]
+        },
+        {
+          "t": "Claudius",
+          "s": [
+            "G2804"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "commanded",
+          "s": [
+            "G1299"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "depart",
+          "s": [
+            "G5563"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G1537"
+          ]
+        },
+        {
+          "t": "Rome",
+          "s": [
+            "G4516"
+          ]
+        },
+        {
+          "t": ":)",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "G4334"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 3,
+      "text": "And because he was of the same craft , he abode with them , and wrought : for by their occupation they were tentmakers.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "because",
+          "s": [
+            "G1511"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": [
+            "G2258"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "same",
+          "s": []
+        },
+        {
+          "t": "craft",
+          "s": [
+            "G3673"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "abode",
+          "s": [
+            "G3306"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G3844"
+          ]
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "wrought",
+          "s": [
+            "G2038"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "their",
+          "s": []
+        },
+        {
+          "t": "occupation",
+          "s": [
+            "G5078"
+          ]
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "tentmakers",
+          "s": [
+            "G4635"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 4,
+      "text": "And he reasoned in the synagogue every sabbath , and persuaded the Jews and the Greeks.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "reasoned",
+          "s": [
+            "G1256"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "synagogue",
+          "s": [
+            "G4864"
+          ]
+        },
+        {
+          "t": "every",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "sabbath",
+          "s": [
+            "G4521"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G5037"
+          ]
+        },
+        {
+          "t": "persuaded",
+          "s": [
+            "G3982"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Greeks",
+          "s": [
+            "G1672"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "text": "And when Silas and Timotheus were come from Macedonia , Paul was pressed in the spirit , and testified to the Jews \\add that\\add* Jesus \\add was\\add* Christ.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "when",
+          "s": [
+            "G5613"
+          ]
+        },
+        {
+          "t": "Silas",
+          "s": [
+            "G4609"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "Timotheus",
+          "s": [
+            "G5095"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": [
+            "G2718"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "Macedonia",
+          "s": [
+            "G3109"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Paul",
+          "s": [
+            "G3972"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "pressed",
+          "s": [
+            "G4912"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "spirit",
+          "s": [
+            "G4151"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "testified",
+          "s": [
+            "G1263"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "was\\add*",
+          "s": []
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "text": "And when they opposed themselves , and blasphemed , he shook \\add his\\add* raiment , and said unto them , Your blood \\add be\\add* upon your own heads ; I \\add am\\add* clean : from henceforth I will go unto the Gentiles. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "opposed",
+          "s": [
+            "G0498"
+          ]
+        },
+        {
+          "t": "themselves",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "blasphemed",
+          "s": [
+            "G0987"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "shook",
+          "s": [
+            "G1621"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "his\\add*",
+          "s": []
+        },
+        {
+          "t": "raiment",
+          "s": [
+            "G2440"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "said",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G4314"
+          ]
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Your",
+          "s": [
+            "G5216"
+          ]
+        },
+        {
+          "t": "blood",
+          "s": [
+            "G0129"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "be\\add*",
+          "s": []
+        },
+        {
+          "t": "upon",
+          "s": [
+            "G1909"
+          ]
+        },
+        {
+          "t": "your",
+          "s": []
+        },
+        {
+          "t": "own",
+          "s": [
+            "G5216"
+          ]
+        },
+        {
+          "t": "heads",
+          "s": [
+            "G2776"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": [
+            "G1473"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "am\\add*",
+          "s": []
+        },
+        {
+          "t": "clean",
+          "s": [
+            "G2513"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "from",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "henceforth",
+          "s": [
+            "G3568"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "go",
+          "s": [
+            "G4198"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Gentiles",
+          "s": [
+            "G1484"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "text": "¶ And he departed thence , and entered into a certain \\add man’s\\add* house , named Justus , \\add one\\add* that worshipped God , whose house joined hard to the synagogue.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "departed",
+          "s": [
+            "G3327"
+          ]
+        },
+        {
+          "t": "thence",
+          "s": [
+            "G1564"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "entered",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "certain",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "man’s\\add*",
+          "s": []
+        },
+        {
+          "t": "house",
+          "s": [
+            "G3614"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "named",
+          "s": [
+            "G3686"
+          ]
+        },
+        {
+          "t": "Justus",
+          "s": [
+            "G2459"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "one\\add*",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": "worshipped",
+          "s": [
+            "G4576"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "whose",
+          "s": [
+            "G3588"
+          ]
+        },
+        {
+          "t": "house",
+          "s": [
+            "G3614"
+          ]
+        },
+        {
+          "t": "joined",
+          "s": []
+        },
+        {
+          "t": "hard",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": [
+            "G4927"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "synagogue",
+          "s": [
+            "G4864"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "text": "And Crispus , the chief ruler of the synagogue , believed on the Lord with all his house ; and many of the Corinthians hearing believed , and were baptized.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "Crispus",
+          "s": [
+            "G2921"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "ruler",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "synagogue",
+          "s": [
+            "G0752"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "believed",
+          "s": [
+            "G4100"
+          ]
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G4862"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3650"
+          ]
+        },
+        {
+          "t": "his",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "house",
+          "s": [
+            "G3624"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "many",
+          "s": [
+            "G4183"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Corinthians",
+          "s": [
+            "G2881"
+          ]
+        },
+        {
+          "t": "hearing",
+          "s": [
+            "G0191"
+          ]
+        },
+        {
+          "t": "believed",
+          "s": [
+            "G4100"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "were",
+          "s": []
+        },
+        {
+          "t": "baptized",
+          "s": [
+            "G0907"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "text": "Then spake the Lord to Paul in the night by a vision , \\wj \\+w Be|strong=\"G5399\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w afraid|strong=\"G5399\"\\+w*, \\+w but|strong=\"G0235\"\\+w* \\+w speak|strong=\"G2980\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w hold|strong=\"G4623\"\\+w* \\+w not|strong=\"G3361\"\\+w* \\+w thy peace|strong=\"G4623\"\\+w*:\\wj*",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "spake",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "Paul",
+          "s": [
+            "G3972"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "night",
+          "s": [
+            "G3571"
+          ]
+        },
+        {
+          "t": "by",
+          "s": [
+            "G1223"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "vision",
+          "s": [
+            "G3705"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "Be|strong=\"G5399\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "afraid|strong=\"G5399\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "but|strong=\"G0235\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "speak|strong=\"G2980\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "hold|strong=\"G4623\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "not|strong=\"G3361\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thy",
+          "s": []
+        },
+        {
+          "t": "peace|strong=\"G4623\"\\+w*:\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "text": "\\wj \\+w For|strong=\"G1360\"\\+w* \\+w I|strong=\"G1473\"\\+w* \\+w am|strong=\"G1510\"\\+w* \\+w with|strong=\"G3326\"\\+w* \\+w thee|strong=\"G4675\"\\+w*, \\+w and|strong=\"G2532\"\\+w* \\+w no man|strong=\"G3762\"\\+w* \\+w shall set|strong=\"G2007\"\\+w* \\+w on thee|strong=\"G4671\"\\+w* \\+w to hurt|strong=\"G2559\"\\+w* \\+w thee|strong=\"G4571\"\\+w*: \\+w for|strong=\"G1360\"\\+w* \\+w I|strong=\"G3427\"\\+w* \\+w have|strong=\"G2076\"\\+w* \\+w much|strong=\"G4183\"\\+w* \\+w people|strong=\"G2992\"\\+w* \\+w in|strong=\"G1722\"\\+w* \\+w this|strong=\"G3778\"\\+w* \\+w city|strong=\"G4172\"\\+w*.\\wj*",
+      "tokens": [
+        {
+          "t": "\\wj",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "For|strong=\"G1360\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I|strong=\"G1473\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "am|strong=\"G1510\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "with|strong=\"G3326\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4675\"\\+w*,",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "and|strong=\"G2532\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "no",
+          "s": []
+        },
+        {
+          "t": "man|strong=\"G3762\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "shall",
+          "s": []
+        },
+        {
+          "t": "set|strong=\"G2007\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "on",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4671\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "hurt|strong=\"G2559\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "thee|strong=\"G4571\"\\+w*:",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "for|strong=\"G1360\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "I|strong=\"G3427\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "have|strong=\"G2076\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "much|strong=\"G4183\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "people|strong=\"G2992\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "in|strong=\"G1722\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "this|strong=\"G3778\"\\+w*",
+          "s": []
+        },
+        {
+          "t": "\\+w",
+          "s": []
+        },
+        {
+          "t": "city|strong=\"G4172\"\\+w*.\\wj*",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "text": "And he continued \\add there\\add* a year and six months , teaching the word of God among them. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G5037"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "continued",
+          "s": [
+            "G2523"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "there\\add*",
+          "s": []
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "year",
+          "s": [
+            "G1763"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "six",
+          "s": [
+            "G1803"
+          ]
+        },
+        {
+          "t": "months",
+          "s": [
+            "G3376"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "teaching",
+          "s": [
+            "G1321"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "word",
+          "s": [
+            "G3056"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "among",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "text": "¶ And when Gallio was the deputy of Achaia , the Jews made insurrection with one accord against Paul , and brought him to the judgment seat ,",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "Gallio",
+          "s": [
+            "G1058"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "deputy",
+          "s": [
+            "G0445"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Achaia",
+          "s": [
+            "G0882"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": "made",
+          "s": []
+        },
+        {
+          "t": "insurrection",
+          "s": [
+            "G2721"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "one",
+          "s": []
+        },
+        {
+          "t": "accord",
+          "s": [
+            "G3661"
+          ]
+        },
+        {
+          "t": "against",
+          "s": []
+        },
+        {
+          "t": "Paul",
+          "s": [
+            "G3972"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "brought",
+          "s": [
+            "G0071"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1909"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "judgment",
+          "s": []
+        },
+        {
+          "t": "seat",
+          "s": [
+            "G0968"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "text": "Saying , This \\add fellow\\add* persuadeth men to worship God contrary to the law.",
+      "tokens": [
+        {
+          "t": "Saying",
+          "s": [
+            "G3004"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "This",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "fellow\\add*",
+          "s": []
+        },
+        {
+          "t": "persuadeth",
+          "s": [
+            "G0374"
+          ]
+        },
+        {
+          "t": "men",
+          "s": [
+            "G0444"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "worship",
+          "s": [
+            "G4576"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "contrary",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": [
+            "G3844"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "law",
+          "s": [
+            "G3551"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 14,
+      "text": "And when Paul was now about to open \\add his\\add* mouth , Gallio said unto the Jews , If it were a matter of wrong or wicked lewdness , O \\add ye\\add* Jews , reason would that I should bear with you :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "Paul",
+          "s": [
+            "G3972"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "now",
+          "s": []
+        },
+        {
+          "t": "about",
+          "s": [
+            "G3195"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "open",
+          "s": [
+            "G0455"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "his\\add*",
+          "s": []
+        },
+        {
+          "t": "mouth",
+          "s": [
+            "G4750"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "Gallio",
+          "s": [
+            "G1058"
+          ]
+        },
+        {
+          "t": "said",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G4314"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "If",
+          "s": [
+            "G1487"
+          ]
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "were",
+          "s": [
+            "G2258"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "matter",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "wrong",
+          "s": [
+            "G0092"
+          ]
+        },
+        {
+          "t": "or",
+          "s": [
+            "G2228"
+          ]
+        },
+        {
+          "t": "wicked",
+          "s": [
+            "G4190"
+          ]
+        },
+        {
+          "t": "lewdness",
+          "s": [
+            "G4467"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "O",
+          "s": [
+            "G5599"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "ye\\add*",
+          "s": []
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "reason",
+          "s": [
+            "G3056"
+          ]
+        },
+        {
+          "t": "would",
+          "s": []
+        },
+        {
+          "t": "that",
+          "s": [
+            "G2596"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "should",
+          "s": []
+        },
+        {
+          "t": "bear",
+          "s": [
+            "G0430"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "you",
+          "s": [
+            "G5216"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 15,
+      "text": "But if it be a question of words and names , and \\add of\\add* your law , look ye \\add to it\\add*; for I will be no judge of such \\add matters\\add*.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "if",
+          "s": [
+            "G1487"
+          ]
+        },
+        {
+          "t": "it",
+          "s": []
+        },
+        {
+          "t": "be",
+          "s": [
+            "G2076"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "question",
+          "s": [
+            "G2213"
+          ]
+        },
+        {
+          "t": "of",
+          "s": [
+            "G4012"
+          ]
+        },
+        {
+          "t": "words",
+          "s": [
+            "G3056"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "names",
+          "s": [
+            "G3686"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "of\\add*",
+          "s": []
+        },
+        {
+          "t": "your",
+          "s": [
+            "G5209"
+          ]
+        },
+        {
+          "t": "law",
+          "s": [
+            "G3551"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "look",
+          "s": []
+        },
+        {
+          "t": "ye",
+          "s": [
+            "G3700"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "it\\add*;",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "I",
+          "s": [
+            "G1473"
+          ]
+        },
+        {
+          "t": "will",
+          "s": [
+            "G1014"
+          ]
+        },
+        {
+          "t": "be",
+          "s": [
+            "G1511"
+          ]
+        },
+        {
+          "t": "no",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": "judge",
+          "s": [
+            "G2923"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "such",
+          "s": [
+            "G5130"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "matters\\add*.",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 16,
+      "text": "And he drave them from the judgment seat.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "drave",
+          "s": [
+            "G0556"
+          ]
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "judgment",
+          "s": []
+        },
+        {
+          "t": "seat",
+          "s": [
+            "G0968"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 17,
+      "text": "Then all the Greeks took Sosthenes , the chief ruler of the synagogue , and beat \\add him\\add* before the judgment seat. And Gallio cared for none of those things. \\p",
+      "tokens": [
+        {
+          "t": "Then",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Greeks",
+          "s": [
+            "G1672"
+          ]
+        },
+        {
+          "t": "took",
+          "s": [
+            "G1949"
+          ]
+        },
+        {
+          "t": "Sosthenes",
+          "s": [
+            "G4988"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "chief",
+          "s": []
+        },
+        {
+          "t": "ruler",
+          "s": []
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "synagogue",
+          "s": [
+            "G0752"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "beat",
+          "s": [
+            "G5180"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "him\\add*",
+          "s": []
+        },
+        {
+          "t": "before",
+          "s": [
+            "G1715"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "judgment",
+          "s": []
+        },
+        {
+          "t": "seat",
+          "s": [
+            "G0968"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "Gallio",
+          "s": [
+            "G1058"
+          ]
+        },
+        {
+          "t": "cared",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G3199"
+          ]
+        },
+        {
+          "t": "none",
+          "s": [
+            "G3762"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "those",
+          "s": []
+        },
+        {
+          "t": "things",
+          "s": [
+            "G5130"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 18,
+      "text": "¶ And Paul \\add after this\\add* tarried \\add there\\add* yet a good while , and then took his leave of the brethren , and sailed thence into Syria , and with him Priscilla and Aquila ; having shorn \\add his\\add* head in Cenchrea : for he had a vow.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "Paul",
+          "s": [
+            "G3972"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "after",
+          "s": []
+        },
+        {
+          "t": "this\\add*",
+          "s": []
+        },
+        {
+          "t": "tarried",
+          "s": [
+            "G4357"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "there\\add*",
+          "s": []
+        },
+        {
+          "t": "yet",
+          "s": [
+            "G2089"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "good",
+          "s": [
+            "G2425"
+          ]
+        },
+        {
+          "t": "while",
+          "s": [
+            "G2250"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "then",
+          "s": []
+        },
+        {
+          "t": "took",
+          "s": []
+        },
+        {
+          "t": "his",
+          "s": []
+        },
+        {
+          "t": "leave",
+          "s": [
+            "G0657"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "G0080"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "sailed",
+          "s": []
+        },
+        {
+          "t": "thence",
+          "s": [
+            "G1602"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "Syria",
+          "s": [
+            "G4947"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G4862"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "Priscilla",
+          "s": [
+            "G4252"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "Aquila",
+          "s": [
+            "G0207"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "having",
+          "s": []
+        },
+        {
+          "t": "shorn",
+          "s": [
+            "G2751"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "his\\add*",
+          "s": []
+        },
+        {
+          "t": "head",
+          "s": [
+            "G2776"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "Cenchrea",
+          "s": [
+            "G2747"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "for",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": [
+            "G2192"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "vow",
+          "s": [
+            "G2171"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 19,
+      "text": "And he came to Ephesus , and left them there : but he himself entered into the synagogue , and reasoned with the Jews.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "G2658"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "Ephesus",
+          "s": [
+            "G2181"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2548"
+          ]
+        },
+        {
+          "t": "left",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": [
+            "G2641"
+          ]
+        },
+        {
+          "t": "there",
+          "s": [
+            "G0847"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "he",
+          "s": [
+            "G1525"
+          ]
+        },
+        {
+          "t": "himself",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "entered",
+          "s": [
+            "G1525"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "synagogue",
+          "s": [
+            "G4864"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "reasoned",
+          "s": [
+            "G1256"
+          ]
+        },
+        {
+          "t": "with",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 20,
+      "text": "When they desired \\add him\\add* to tarry longer time with them , he consented not ;",
+      "tokens": [
+        {
+          "t": "When",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "they",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "desired",
+          "s": [
+            "G2065"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "him\\add*",
+          "s": []
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1909"
+          ]
+        },
+        {
+          "t": "tarry",
+          "s": [
+            "G3306"
+          ]
+        },
+        {
+          "t": "longer",
+          "s": [
+            "G4119"
+          ]
+        },
+        {
+          "t": "time",
+          "s": [
+            "G5550"
+          ]
+        },
+        {
+          "t": "with",
+          "s": [
+            "G3844"
+          ]
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "consented",
+          "s": [
+            "G1962"
+          ]
+        },
+        {
+          "t": "not",
+          "s": [
+            "G3756"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 21,
+      "text": "But bade them farewell , saying , I must by all means keep this feast that cometh in Jerusalem : but I will return again unto you , if God will. And he sailed from Ephesus.",
+      "tokens": [
+        {
+          "t": "But",
+          "s": [
+            "G0235"
+          ]
+        },
+        {
+          "t": "bade",
+          "s": [
+            "G0657"
+          ]
+        },
+        {
+          "t": "them",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "farewell",
+          "s": [
+            "G0657"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "saying",
+          "s": [
+            "G2036"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "I",
+          "s": [
+            "G3165"
+          ]
+        },
+        {
+          "t": "must",
+          "s": [
+            "G1163"
+          ]
+        },
+        {
+          "t": "by",
+          "s": []
+        },
+        {
+          "t": "all",
+          "s": []
+        },
+        {
+          "t": "means",
+          "s": [
+            "G3843"
+          ]
+        },
+        {
+          "t": "keep",
+          "s": [
+            "G4160"
+          ]
+        },
+        {
+          "t": "this",
+          "s": []
+        },
+        {
+          "t": "feast",
+          "s": [
+            "G1859"
+          ]
+        },
+        {
+          "t": "that",
+          "s": []
+        },
+        {
+          "t": "cometh",
+          "s": [
+            "G2064"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "Jerusalem",
+          "s": [
+            "G2414"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "but",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "I",
+          "s": []
+        },
+        {
+          "t": "will",
+          "s": []
+        },
+        {
+          "t": "return",
+          "s": [
+            "G0344"
+          ]
+        },
+        {
+          "t": "again",
+          "s": [
+            "G3825"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G4314"
+          ]
+        },
+        {
+          "t": "you",
+          "s": [
+            "G5209"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "if",
+          "s": [
+            "G2309"
+          ]
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "will",
+          "s": [
+            "G2309"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "sailed",
+          "s": [
+            "G0321"
+          ]
+        },
+        {
+          "t": "from",
+          "s": [
+            "G0575"
+          ]
+        },
+        {
+          "t": "Ephesus",
+          "s": [
+            "G2181"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 22,
+      "text": "And when he had landed at Cæsarea , and gone up , and saluted the church , he went down to Antioch.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "landed",
+          "s": [
+            "G2718"
+          ]
+        },
+        {
+          "t": "at",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "Cæsarea",
+          "s": [
+            "G2542"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "gone",
+          "s": []
+        },
+        {
+          "t": "up",
+          "s": [
+            "G0305"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "saluted",
+          "s": [
+            "G0782"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "church",
+          "s": [
+            "G1577"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "down",
+          "s": [
+            "G2597"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "Antioch",
+          "s": [
+            "G0490"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 23,
+      "text": "And after he had spent some time \\add there\\add*, he departed , and went over \\add all\\add* the country of Galatia and Phrygia in order , strengthening all the disciples. \\p",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "after",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "spent",
+          "s": [
+            "G4160"
+          ]
+        },
+        {
+          "t": "some",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "time",
+          "s": [
+            "G5550"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "there\\add*,",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "departed",
+          "s": [
+            "G1831"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "went",
+          "s": []
+        },
+        {
+          "t": "over",
+          "s": [
+            "G1330"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "all\\add*",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "country",
+          "s": [
+            "G5561"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "Galatia",
+          "s": [
+            "G1054"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "Phrygia",
+          "s": [
+            "G5435"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "order",
+          "s": [
+            "G2517"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "strengthening",
+          "s": [
+            "G1991"
+          ]
+        },
+        {
+          "t": "all",
+          "s": [
+            "G3956"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "disciples",
+          "s": [
+            "G3101"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        },
+        {
+          "t": "\\p",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 24,
+      "text": "¶ And a certain Jew named Apollos , born at Alexandria , an eloquent man , \\add and\\add* mighty in the scriptures , came to Ephesus.",
+      "tokens": [
+        {
+          "t": "¶",
+          "s": []
+        },
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "a",
+          "s": []
+        },
+        {
+          "t": "certain",
+          "s": [
+            "G5100"
+          ]
+        },
+        {
+          "t": "Jew",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": "named",
+          "s": [
+            "G3686"
+          ]
+        },
+        {
+          "t": "Apollos",
+          "s": [
+            "G0625"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "born",
+          "s": [
+            "G1085"
+          ]
+        },
+        {
+          "t": "at",
+          "s": []
+        },
+        {
+          "t": "Alexandria",
+          "s": [
+            "G0221"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "an",
+          "s": []
+        },
+        {
+          "t": "eloquent",
+          "s": [
+            "G3052"
+          ]
+        },
+        {
+          "t": "man",
+          "s": [
+            "G0435"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and\\add*",
+          "s": []
+        },
+        {
+          "t": "mighty",
+          "s": [
+            "G1415"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "scriptures",
+          "s": [
+            "G1124"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "came",
+          "s": [
+            "G2658"
+          ]
+        },
+        {
+          "t": "to",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "Ephesus",
+          "s": [
+            "G2181"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 25,
+      "text": "This man was instructed in the way of the Lord ; and being fervent in the spirit , he spake and taught diligently the things of the Lord , knowing only the baptism of John.",
+      "tokens": [
+        {
+          "t": "This",
+          "s": []
+        },
+        {
+          "t": "man",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "was",
+          "s": [
+            "G2258"
+          ]
+        },
+        {
+          "t": "instructed",
+          "s": [
+            "G2727"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "G3598"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": ";",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "being",
+          "s": []
+        },
+        {
+          "t": "fervent",
+          "s": [
+            "G2204"
+          ]
+        },
+        {
+          "t": "in",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "spirit",
+          "s": [
+            "G4151"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "spake",
+          "s": [
+            "G2980"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "taught",
+          "s": [
+            "G1321"
+          ]
+        },
+        {
+          "t": "diligently",
+          "s": [
+            "G0199"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "things",
+          "s": [
+            "G3588"
+          ]
+        },
+        {
+          "t": "of",
+          "s": [
+            "G4012"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Lord",
+          "s": [
+            "G2962"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "knowing",
+          "s": [
+            "G1987"
+          ]
+        },
+        {
+          "t": "only",
+          "s": [
+            "G3440"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "baptism",
+          "s": [
+            "G0908"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "John",
+          "s": [
+            "G2491"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 26,
+      "text": "And he began to speak boldly in the synagogue : whom when Aquila and Priscilla had heard , they took him unto \\add them\\add*, and expounded unto him the way of God more perfectly.",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G5037"
+          ]
+        },
+        {
+          "t": "he",
+          "s": [
+            "G3778"
+          ]
+        },
+        {
+          "t": "began",
+          "s": [
+            "G0756"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "speak",
+          "s": []
+        },
+        {
+          "t": "boldly",
+          "s": [
+            "G3955"
+          ]
+        },
+        {
+          "t": "in",
+          "s": [
+            "G1722"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "synagogue",
+          "s": [
+            "G4864"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "whom",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "when",
+          "s": [
+            "G0191"
+          ]
+        },
+        {
+          "t": "Aquila",
+          "s": [
+            "G0207"
+          ]
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "Priscilla",
+          "s": [
+            "G4252"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "heard",
+          "s": [
+            "G0191"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "they",
+          "s": []
+        },
+        {
+          "t": "took",
+          "s": [
+            "G4355"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": [
+            "G4355"
+          ]
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "them\\add*,",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": [
+            "G2532"
+          ]
+        },
+        {
+          "t": "expounded",
+          "s": [
+            "G1620"
+          ]
+        },
+        {
+          "t": "unto",
+          "s": []
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "way",
+          "s": [
+            "G3598"
+          ]
+        },
+        {
+          "t": "of",
+          "s": []
+        },
+        {
+          "t": "God",
+          "s": [
+            "G2316"
+          ]
+        },
+        {
+          "t": "more",
+          "s": []
+        },
+        {
+          "t": "perfectly",
+          "s": [
+            "G0199"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 27,
+      "text": "And when he was disposed to pass into Achaia , the brethren wrote , exhorting the disciples to receive him : who , when he was come , helped them much which had believed through grace :",
+      "tokens": [
+        {
+          "t": "And",
+          "s": [
+            "G1161"
+          ]
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "disposed",
+          "s": [
+            "G1014"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "pass",
+          "s": [
+            "G1330"
+          ]
+        },
+        {
+          "t": "into",
+          "s": [
+            "G1519"
+          ]
+        },
+        {
+          "t": "Achaia",
+          "s": [
+            "G0882"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "brethren",
+          "s": [
+            "G0080"
+          ]
+        },
+        {
+          "t": "wrote",
+          "s": [
+            "G1125"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "exhorting",
+          "s": [
+            "G4389"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "disciples",
+          "s": [
+            "G3101"
+          ]
+        },
+        {
+          "t": "to",
+          "s": []
+        },
+        {
+          "t": "receive",
+          "s": [
+            "G0588"
+          ]
+        },
+        {
+          "t": "him",
+          "s": [
+            "G0846"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        },
+        {
+          "t": "who",
+          "s": [
+            "G3739"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "when",
+          "s": []
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "was",
+          "s": []
+        },
+        {
+          "t": "come",
+          "s": [
+            "G3854"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "helped",
+          "s": []
+        },
+        {
+          "t": "them",
+          "s": [
+            "G4820"
+          ]
+        },
+        {
+          "t": "much",
+          "s": [
+            "G4183"
+          ]
+        },
+        {
+          "t": "which",
+          "s": [
+            "G3588"
+          ]
+        },
+        {
+          "t": "had",
+          "s": []
+        },
+        {
+          "t": "believed",
+          "s": [
+            "G4100"
+          ]
+        },
+        {
+          "t": "through",
+          "s": [
+            "G1223"
+          ]
+        },
+        {
+          "t": "grace",
+          "s": [
+            "G5485"
+          ]
+        },
+        {
+          "t": ":",
+          "s": []
+        }
+      ]
+    },
+    {
+      "verse": 28,
+      "text": "For he mightily convinced the Jews , \\add and that\\add* publickly , shewing by the scriptures that Jesus was Christ.",
+      "tokens": [
+        {
+          "t": "For",
+          "s": [
+            "G1063"
+          ]
+        },
+        {
+          "t": "he",
+          "s": []
+        },
+        {
+          "t": "mightily",
+          "s": [
+            "G2159"
+          ]
+        },
+        {
+          "t": "convinced",
+          "s": [
+            "G1246"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "Jews",
+          "s": [
+            "G2453"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "\\add",
+          "s": []
+        },
+        {
+          "t": "and",
+          "s": []
+        },
+        {
+          "t": "that\\add*",
+          "s": []
+        },
+        {
+          "t": "publickly",
+          "s": [
+            "G1219"
+          ]
+        },
+        {
+          "t": ",",
+          "s": []
+        },
+        {
+          "t": "shewing",
+          "s": [
+            "G1925"
+          ]
+        },
+        {
+          "t": "by",
+          "s": [
+            "G1223"
+          ]
+        },
+        {
+          "t": "the",
+          "s": []
+        },
+        {
+          "t": "scriptures",
+          "s": [
+            "G1124"
+          ]
+        },
+        {
+          "t": "that",
+          "s": [
+            "G1925"
+          ]
+        },
+        {
+          "t": "Jesus",
+          "s": [
+            "G2424"
+          ]
+        },
+        {
+          "t": "was",
+          "s": [
+            "G1511"
+          ]
+        },
+        {
+          "t": "Christ",
+          "s": [
+            "G5547"
+          ]
+        },
+        {
+          "t": ".",
+          "s": []
+        }
+      ]
+    }
+  ]
+}
