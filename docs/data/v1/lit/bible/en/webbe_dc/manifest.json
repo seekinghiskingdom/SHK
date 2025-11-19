@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.webbe_dc",
+  "code": "webbe_dc",
+  "slug": "webbe_dc",
+  "title": "World English Bible - British Edition with Deuterocanon",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "catholic",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "webbe_dc",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": true,
+    "notes": "British edition including Deuterocanonical books."
+  },
+  "versification": "catholic",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}
