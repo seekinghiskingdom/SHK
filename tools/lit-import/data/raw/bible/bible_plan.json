@@ -1,0 +1,512 @@
+{
+  "version": "1.0.0",
+  "description": "Planning checklist for Bible translations to be handled by shk-lit-import. Tracks must-have and optional public-domain Bibles from eBible.",
+  "groups": [
+    {
+      "id": "v1_core_en",
+      "label": "English core translations (must for v1)",
+      "section": "bible/en/core"
+    },
+    {
+      "id": "v1_core_orig",
+      "label": "Original-language core (must for v1)",
+      "section": "bible/orig"
+    },
+    {
+      "id": "v1_extra_en_B1",
+      "label": "English extras B1 (high-value)",
+      "section": "bible/en/extra-B1"
+    },
+    {
+      "id": "v1_extra_en_B2",
+      "label": "English extras B2 (historical/specialist)",
+      "section": "bible/en/extra-B2"
+    },
+    {
+      "id": "v1_extra_orig_B1",
+      "label": "Original-language extras B1 (Greek NT variants)",
+      "section": "bible/orig/extra-B1"
+    },
+    {
+      "id": "v1_extra_orig_B2",
+      "label": "Original-language extras B2 (Hebrew variants)",
+      "section": "bible/orig/extra-B2"
+    }
+  ],
+  "translations": [
+    {
+      "id": "bible.en.kjv",
+      "code": "kjv",
+      "title": "King James Version",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/core",
+      "status": "available"
+    },
+    {
+      "id": "bible.en.kjvd",
+      "code": "kjvd",
+      "title": "King James Version + Apocrypha",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/core+apo",
+      "status": "planned"
+    },
+    {
+    "id": "bible.en.kjv_strongs",
+    "code": "kjv_strongs",
+    "title": "King James Version + Apocrypha with Strong's numbers",
+    "language": "en",
+    "group": "v1_core_en",
+    "tier": "must",
+    "section": "bible/en/core+apo",
+    "status": "planned"
+    },
+    {
+      "id": "bible.en.asv",
+      "code": "asv",
+      "title": "American Standard Version (1901)",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/core",
+      "status": "available"
+    },
+    {
+      "id": "bible.en.web",
+      "code": "web",
+      "title": "World English Bible (Updated, U.S.)",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/core",
+      "status": "available"
+    },
+    {
+      "id": "bible.en.ylt",
+      "code": "ylt",
+      "title": "Young's Literal Translation",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/literal",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.bbe",
+      "code": "bbe",
+      "title": "Bible in Basic English",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/simplified",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.drv",
+      "code": "drv",
+      "title": "Douay–Rheims 1899",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/core-cath",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.gnv",
+      "code": "gnv",
+      "title": "Geneva Bible 1599",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/historical",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.ojps",
+      "code": "ojps",
+      "title": "JPS TaNaKH 1917",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/tanakh",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.lee",
+      "code": "lee",
+      "title": "Leeser Tanakh",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/tanakh",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.rv",
+      "code": "rv",
+      "title": "Revised Version (with Apocrypha, 1895)",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/core+apo",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.brenton",
+      "code": "brenton",
+      "title": "Brenton English Septuagint",
+      "language": "en",
+      "group": "v1_core_en",
+      "tier": "must",
+      "section": "bible/en/lxx-eng",
+      "status": "planned"
+    },
+
+    
+
+    {
+      "id": "bible.en.asvbt",
+      "code": "asvbt",
+      "title": "ASV Byzantine Text",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/secondary-critical",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.bsb",
+      "code": "bsb",
+      "title": "Berean Standard Bible",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/core-modern",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.msb",
+      "code": "msb",
+      "title": "Majority Standard Bible",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/secondary-modern-majority",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.lxx2012",
+      "code": "lxx2012",
+      "title": "LXX2012 U.S. English",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/lxx-eng",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.brenton_upd",
+      "code": "brenton_upd",
+      "title": "Updated Brenton English Septuagint",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/lxx-eng",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.oeb_us",
+      "code": "oeb_us",
+      "title": "Open English Bible (US)",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/core-modern-open",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.oeb_cw",
+      "code": "oeb_cw",
+      "title": "Open English Bible (Commonwealth)",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/secondary-open",
+      "status": "planned"
+    },
+    {
+    "id": "bible.en.webp",
+    "code": "webp",
+    "title": "World English Bible (Protestant edition)",
+    "language": "en",
+    "group": "v1_extra_en_B1",
+    "tier": "extra-B1",
+    "section": "bible/en/secondary-web",
+    "status": "planned"
+    },
+    {
+      "id": "bible.en.webc",
+      "code": "webc",
+      "title": "World English Bible - Catholic",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/secondary-web",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.webbe",
+      "code": "webbe",
+      "title": "World English Bible - British Edition",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/secondary-web",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.webbe_dc",
+      "code": "webbe_dc",
+      "title": "World English Bible - British Edition + Deuterocanon",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/secondary-web",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.webcath",
+      "code": "webcath",
+      "title": "World English Bible - Catholic Edition",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/secondary-web",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.wmb",
+      "code": "wmb",
+      "title": "World Messianic Bible",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/secondary-messianic",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.wmbbe",
+      "code": "wmbbe",
+      "title": "World Messianic Bible - British Edition",
+      "language": "en",
+      "group": "v1_extra_en_B1",
+      "tier": "extra-B1",
+      "section": "bible/en/secondary-messianic",
+      "status": "planned"
+    },
+
+    {
+      "id": "bible.en.kjvcpb",
+      "code": "kjvcpb",
+      "title": "KJV Cambridge Paragraph Bible",
+      "language": "en",
+      "group": "v1_extra_en_B2",
+      "tier": "extra-B2",
+      "section": "bible/en/historical",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.noy",
+      "code": "noy",
+      "title": "George Noyes Bible",
+      "language": "en",
+      "group": "v1_extra_en_B2",
+      "tier": "extra-B2",
+      "section": "bible/en/historical",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.webster",
+      "code": "webster",
+      "title": "Noah Webster Bible",
+      "language": "en",
+      "group": "v1_extra_en_B2",
+      "tier": "extra-B2",
+      "section": "bible/en/historical",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.tyndale",
+      "code": "tyndale",
+      "title": "Tyndale New Testament",
+      "language": "en",
+      "group": "v1_extra_en_B2",
+      "tier": "extra-B2",
+      "section": "bible/en/historical",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.wyc_portions",
+      "code": "wyc_portions",
+      "title": "Wycliffe Bible portions",
+      "language": "en",
+      "group": "v1_extra_en_B2",
+      "tier": "extra-B2",
+      "section": "bible/en/historical",
+      "status": "planned"
+    },
+    {
+      "id": "bible.en.toe",
+      "code": "toe",
+      "title": "Targum Onkelos Etheridge (English)",
+      "language": "en",
+      "group": "v1_extra_en_B2",
+      "tier": "extra-B2",
+      "section": "bible/en/historical",
+      "status": "planned"
+    },
+
+
+
+    {
+      "id": "bible.grc.grctr",
+      "code": "grctr",
+      "title": "Textus Receptus Greek NT",
+      "language": "grc",
+      "group": "v1_core_orig",
+      "tier": "must",
+      "section": "bible/orig/greek-tr",
+      "status": "available"
+    },
+    {
+      "id": "bible.grc.grcmt",
+      "code": "grcmt",
+      "title": "Greek Majority Text NT",
+      "language": "grc",
+      "group": "v1_core_orig",
+      "tier": "must",
+      "section": "bible/orig/greek-mt",
+      "status": "planned"
+    },
+    {
+      "id": "bible.grc.grclxx",
+      "code": "grclxx",
+      "title": "Greek Septuagint (Brenton base)",
+      "language": "grc",
+      "group": "v1_core_orig",
+      "tier": "must",
+      "section": "bible/orig/greek-lxx",
+      "status": "planned"
+    },
+    {
+    "id": "bible.grc.grcf35",
+    "code": "grcf35",
+    "title": "Family 35 Greek New Testament",
+    "language": "grc",
+    "group": "v1_extra_orig_B1",
+    "tier": "extra-B1",
+    "section": "bible/orig/greek-alt",
+    "status": "planned"
+    },
+    {
+    "id": "bible.grc.grcsbl",
+    "code": "grcsbl",
+    "title": "SBL Greek New Testament",
+    "language": "grc",
+    "group": "v1_extra_orig_B1",
+    "tier": "extra-B1",
+    "section": "bible/orig/greek-critical",
+    "status": "planned"
+    },
+    {
+      "id": "bible.grc.grcbyz",
+      "code": "grcbyz",
+      "title": "Byzantine Greek NT",
+      "language": "grc",
+      "group": "v1_extra_orig_B1",
+      "tier": "extra-B1",
+      "section": "bible/orig/greek-byz",
+      "status": "planned"
+    },
+    {
+      "id": "bible.grc.grctc",
+      "code": "grctc",
+      "title": "Text-Critical Greek NT",
+      "language": "grc",
+      "group": "v1_extra_orig_B1",
+      "tier": "extra-B1",
+      "section": "bible/orig/greek-critical",
+      "status": "planned"
+    },
+    {
+      "id": "bible.grc.grcsr",
+      "code": "grcsr",
+      "title": "Solid Rock Greek NT",
+      "language": "grc",
+      "group": "v1_extra_orig_B1",
+      "tier": "extra-B1",
+      "section": "bible/orig/greek-alt",
+      "status": "planned"
+    },
+    {
+      "id": "bible.grc.grctisch",
+      "code": "grctisch",
+      "title": "Tischendorf Greek NT",
+      "language": "grc",
+      "group": "v1_extra_orig_B1",
+      "tier": "extra-B1",
+      "section": "bible/orig/greek-alt",
+      "status": "planned"
+    },
+
+
+
+    {
+      "id": "bible.he.wlc",
+      "code": "wlc",
+      "title": "Westminster Leningrad Codex Hebrew OT",
+      "language": "he",
+      "group": "v1_core_orig",
+      "tier": "must",
+      "section": "bible/orig/hebrew",
+      "status": "planned"
+    },
+    {
+      "id": "bible.he.hebmas",
+      "code": "hebmas",
+      "title": "Hebrew Masoretic OT",
+      "language": "he",
+      "group": "v1_core_orig",
+      "tier": "must",
+      "section": "bible/orig/hebrew",
+      "status": "planned"
+    },
+    {
+      "id": "bible.he.hebmodern",
+      "code": "hebmodern",
+      "title": "Modern Hebrew Bible 1899",
+      "language": "he",
+      "group": "v1_extra_orig_B2",
+      "tier": "extra-B2",
+      "section": "bible/orig/hebrew-modern",
+      "status": "planned"
+    },
+    {
+      "id": "bible.he.hebsalk",
+      "code": "hebsalk",
+      "title": "Salkinson–Ginsburg Hebrew NT",
+      "language": "he",
+      "group": "v1_extra_orig_B2",
+      "tier": "extra-B2",
+      "section": "bible/orig/hebrew-nt",
+      "status": "planned"
+    }
+
+
+
+
+  ]
+}

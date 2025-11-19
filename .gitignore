@@ -28,5 +28,5 @@ Thumbs.db
 tools/pps/data/output/
 tools/pps/**/__pycache__/
 tools/pps/.venv/
-tools/lit-import/data/raw/
+# tools/lit-import/data/raw/
 docs/data/v1/lit/

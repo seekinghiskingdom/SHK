@@ -1,0 +1,13 @@
+{
+  "translations": [
+    { "code": "grctr",    "language": "grc", "target": "bible/grc/grctr"    },
+    { "code": "grcmt",    "language": "grc", "target": "bible/grc/grcmt"    },
+    { "code": "grclxx",   "language": "grc", "target": "bible/grc/grclxx"   },
+    { "code": "grcbyz",   "language": "grc", "target": "bible/grc/grcbyz"   },
+    { "code": "grctc",    "language": "grc", "target": "bible/grc/grctc"    },
+    { "code": "grcsr",    "language": "grc", "target": "bible/grc/grcsr"    },
+    { "code": "grctisch", "language": "grc", "target": "bible/grc/grctisch" },
+    { "code": "grcf35",   "language": "grc", "target": "bible/grc/grcf35"   },
+    { "code": "grcsbl",   "language": "grc", "target": "bible/grc/grcsbl"   }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bible.grc.grcf35",
+  "code": "grcf35",
+  "slug": "grcf35",
+  "title": "Family 35 Greek New Testament",
+  "category": "bible",
+  "subcategory": "original",
+  "language": "grc",
+  "tradition": "byzantine",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "grcf35",
+    "format": "usfm",
+    "description": "The Greek New Testament According to Family 35 (Pickering), in USFM format."
+  },
+  "is_public_domain": false,
+  "status": "planned",
+  "canon": {
+    "testaments": ["nt"],
+    "has_apocrypha": false,
+    "notes": "New Testament only."
+  },
+  "versification": "kjv",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

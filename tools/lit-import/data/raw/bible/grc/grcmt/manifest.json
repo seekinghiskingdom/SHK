@@ -1,0 +1,28 @@
+{
+  "id": "bible.grc.grcmt",
+  "code": "grcmt",
+  "slug": "grcmt",
+  "title": "Greek Majority Text New Testament",
+  "category": "bible",
+  "subcategory": "base-text",
+  "language": "grc",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "grcmt",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["nt"],
+    "has_apocrypha": false,
+    "notes": ""
+  },
+  "versification": "nt-standard",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

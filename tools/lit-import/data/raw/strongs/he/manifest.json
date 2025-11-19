@@ -1,0 +1,13 @@
+{
+  "id": "strongs.hebrew",
+  "language": "he",
+  "title": "Strong's Hebrew lexicon (Open Scriptures)",
+  "source": "Open Scriptures Hebrew lexicon XML (derived from Strong's numbers).",
+  "license": "CC BY 4.0",
+  "input_format": "xml",
+  "input_file": "HebrewStrong.xml",
+  "entry_tag": "entry",
+  "entry_id_attr": "id",
+  "id_prefix": "H",
+  "status": "planned"
+}

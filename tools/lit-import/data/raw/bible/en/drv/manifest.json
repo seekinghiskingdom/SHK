@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.drv",
+  "code": "drv",
+  "slug": "drv",
+  "title": "Douay–Rheims 1899",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "catholic",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "drv",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": true,
+    "notes": "Catholic edition including Deuterocanonical books."
+  },
+  "versification": "catholic",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

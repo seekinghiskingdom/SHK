@@ -1,0 +1,28 @@
+{
+  "id": "bible.he.hebmas",
+  "code": "hebmas",
+  "slug": "hebmas",
+  "title": "Hebrew Masoretic Old Testament",
+  "category": "bible",
+  "subcategory": "base-text",
+  "language": "he",
+  "tradition": "jewish",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "hebmas",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot"],
+    "has_apocrypha": false,
+    "notes": "Masoretic Hebrew Old Testament (alternate edition)."
+  },
+  "versification": "mt",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "bible.he.wlc",
+  "code": "wlc",
+  "slug": "wlc",
+  "title": "Westminster Leningrad Codex Hebrew Old Testament",
+  "category": "bible",
+  "subcategory": "base-text",
+  "language": "he",
+  "tradition": "jewish",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "wlc",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot"],
+    "has_apocrypha": false,
+    "notes": "Masoretic Hebrew Old Testament."
+  },
+  "versification": "mt",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

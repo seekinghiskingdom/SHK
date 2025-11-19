@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.lxx2012",
+  "code": "lxx2012",
+  "slug": "lxx2012",
+  "title": "LXX2012 U.S. English",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "ecumenical",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "lxx2012",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot"],
+    "has_apocrypha": true,
+    "notes": "Modern English translation of the Septuagint Old Testament."
+  },
+  "versification": "lxx",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}
