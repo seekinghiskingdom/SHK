@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.lee",
+  "code": "lee",
+  "slug": "lee",
+  "title": "Leeser Tanakh",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "jewish",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "lee",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot"],
+    "has_apocrypha": false,
+    "notes": "Orthodox Jewish Tanakh."
+  },
+  "versification": "tanakh",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

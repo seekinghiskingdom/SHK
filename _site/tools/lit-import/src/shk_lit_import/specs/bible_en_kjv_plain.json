@@ -1,0 +1,21 @@
+{
+  "corpus_id": "bible:en:kjv",
+  "type": "bible",
+  "mode": "plain",                    
+  "lang": "en",
+  "source": {
+    "format": "osis-xml",
+    "mode": "local",
+    "local_path": "data/raw/kjv/osis",
+    "urls": []                       
+  },
+  "hierarchy": ["book", "chapter", "verse"],
+  "books": ["GEN"],                   
+  "export": {
+    "api_root": "../../docs/data/v1",
+    "path_template": "lit/bible/en/kjv/{BOOK}.json",
+    "short_keys": true,
+    "shard": { "strategy": "per-book" }
+  },
+  "license": "public-domain"
+}

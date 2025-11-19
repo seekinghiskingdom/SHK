@@ -1,0 +1,33 @@
+{
+  "id": "bible.en.kjv_strongs",
+  "code": "kjv_strongs",
+  "slug": "kjv_strongs",
+  "title": "King James Version + Apocrypha with Strong's numbers",
+  "category": "bible",
+  "subcategory": "translation+strongs",
+  "language": "en",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "eng-kjv",
+    "format": "usfm",
+    "description": "KJV + Apocrypha in USFM, with Strong's markers embedded in \\w tags."
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": true,
+    "notes": "Same base text and versification as bible.en.kjvd."
+  },
+  "versification": "kjv",
+  "base_text_id": "bible.en.kjvd",
+  "annotations": {
+    "strongs": true
+  },
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

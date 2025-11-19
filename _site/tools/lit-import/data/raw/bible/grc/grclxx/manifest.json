@@ -1,0 +1,28 @@
+{
+  "id": "bible.grc.grclxx",
+  "code": "grclxx",
+  "slug": "grclxx",
+  "title": "Greek Septuagint Old Testament",
+  "category": "bible",
+  "subcategory": "base-text",
+  "language": "grc",
+  "tradition": "ecumenical",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "grclxx",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot"],
+    "has_apocrypha": true,
+    "notes": "Greek Septuagint Old Testament, including Deuterocanonical books."
+  },
+  "versification": "lxx",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "lexicon.strongs",
+  "code": "strongs",
+  "slug": "strongs",
+  "title": "Strong's Hebrew and Greek Lexicon",
+  "category": "lexicon",
+  "subcategory": "strongs",
+  "languages": ["he", "grc"],
+  "source": {
+    "provider": "TBD",
+    "format": "xml",
+    "description": "Strong's entries (Hebrew and Greek) to be populated from an external public-domain lexicon source, not from eBible."
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "files": {
+    "hebrew": "hebrew.jsonl",
+    "greek": "greek.jsonl",
+    "index": "index.json",
+    "meta": "meta.json"
+  }
+}

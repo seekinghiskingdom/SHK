@@ -1,0 +1,304 @@
+---
+layout: default
+title: Bible Viewer
+permalink: /tools/bible-viewer/
+---
+
+<section class="tool bible-viewer">
+  <h1>Bible Viewer</h1>
+
+  <form id="bv-form" class="bv-form">
+    <div class="bv-field">
+      <label for="bv-translation">Translation</label>
+      <select id="bv-translation" name="translation">
+        <!-- Populated by JS -->
+      </select>
+    </div>
+
+    <div class="bv-field">
+      <label for="bv-ref">Reference</label>
+      <input
+        id="bv-ref"
+        name="ref"
+        type="text"
+        placeholder="e.g. John 3:16 or John 3:16-18 or John 3"
+        required
+      />
+    </div>
+
+    <button type="submit">Go</button>
+  </form>
+
+  <div id="bv-message" class="bv-message"></div>
+
+  <div id="bv-chapter" class="bv-chapter"></div>
+</section>
+
+<style>
+  .bible-viewer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .bv-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+  }
+
+  .bv-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bv-field label {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  #bv-ref {
+    min-width: 220px;
+  }
+
+  .bv-message {
+    min-height: 1.2em;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .bv-message.error {
+    color: #b00020;
+  }
+
+  .bv-message.info {
+    color: #555;
+  }
+
+  .bv-chapter {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+  }
+
+  .bv-chapter-header {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .bv-verse {
+    margin: 0.1rem 0;
+    line-height: 1.5;
+  }
+
+  .bv-verse-number {
+    font-weight: 600;
+    margin-right: 0.3rem;
+    font-size: 0.85rem;
+  }
+
+  .bv-verse.highlight {
+    background: rgba(255, 230, 150, 0.7);
+  }
+</style>
+
+<script>
+(function () {
+  // URL to the central translations list (docs/data/v1/lit/bible/translations.json)
+  const TRANSLATIONS_URL = '{{ "/data/v1/lit/bible/translations.json" | relative_url }}';
+  // Handles GitHub Pages subdirectory vs root
+  const SITE_BASE = '{{ "" | relative_url }}'.replace(/\/$/, "");
+
+  let TRANSLATIONS = [];
+
+  const form = document.getElementById('bv-form');
+  const translationSelect = document.getElementById('bv-translation');
+  const refInput = document.getElementById('bv-ref');
+  const messageEl = document.getElementById('bv-message');
+  const chapterEl = document.getElementById('bv-chapter');
+
+  function setMessage(text, type) {
+    messageEl.textContent = text || '';
+    messageEl.className = 'bv-message' + (type ? ' ' + type : '');
+  }
+
+  function leftPad(num, size) {
+    let s = String(num);
+    while (s.length < size) s = '0' + s;
+    return s;
+  }
+
+  function resolveTranslation(id) {
+    return TRANSLATIONS.find(tr => tr.id === id) || TRANSLATIONS[0] || null;
+  }
+
+  // Load translations.json and populate the dropdown
+  async function initTranslations() {
+    try {
+      const res = await fetch(TRANSLATIONS_URL);
+      if (!res.ok) {
+        throw new Error('Could not load translations list.');
+      }
+      const data = await res.json();
+      TRANSLATIONS = data;
+
+      translationSelect.innerHTML = '';
+      TRANSLATIONS.forEach(tr => {
+        const opt = document.createElement('option');
+        opt.value = tr.id;      // e.g., "kjv", "asv"
+        opt.textContent = tr.name; // e.g., "King James Version"
+        translationSelect.appendChild(opt);
+      });
+
+      if (TRANSLATIONS.length === 0) {
+        setMessage('No translations are available.', 'error');
+      }
+    } catch (err) {
+      console.error(err);
+      setMessage('Error loading translations.', 'error');
+    }
+  }
+
+  // Very small book map for now; you can extend this at any time.
+  const BOOK_MAP = {
+    'genesis': 'GEN',
+    'gen': 'GEN',
+    'exodus': 'EXO',
+    'exo': 'EXO',
+    'leviticus': 'LEV',
+    'lev': 'LEV',
+    'numbers': 'NUM',
+    'num': 'NUM',
+    'deuteronomy': 'DEU',
+    'deut': 'DEU',
+    'deu': 'DEU',
+    'john': 'JOH',
+    'jn': 'JOH',
+    'joh': 'JOH'
+    // TODO: fill out full mapping when convenient
+  };
+
+  // Parse "John 3:16-18" / "John 3:16" / "John 3"
+  function parseReference(input) {
+    const raw = input.trim().replace(/\s+/g, ' ');
+    const match = raw.match(/^(.+?)\s+(\d+)(?::(\d+)(?:[-–](\d+))?)?$/i);
+    if (!match) {
+      throw new Error('Could not understand reference. Try "John 3:16" or "John 3".');
+    }
+
+    const bookPart = match[1].trim().toLowerCase();
+    const chapter = parseInt(match[2], 10);
+    const startVerse = match[3] ? parseInt(match[3], 10) : null;
+    const endVerse = match[4] ? parseInt(match[4], 10) : startVerse;
+
+    const bookId = BOOK_MAP[bookPart];
+    if (!bookId) {
+      throw new Error('Unknown book: "' + bookPart + '".');
+    }
+
+    return {
+      bookId,
+      chapter,
+      startVerse,
+      endVerse
+    };
+  }
+
+  function buildChapterUrl(translation, bookId, chapter) {
+    const chapterStr = leftPad(chapter, 3);
+    // base_url from translations.json, e.g. "/data/v1/lit/bible/en/kjv"
+    const baseUrl = SITE_BASE + translation.base_url;
+    // -> "/.../data/v1/lit/bible/en/kjv/chapters/JOH/003.json"
+    return baseUrl.replace(/\/$/, "") + '/chapters/' + bookId + '/' + chapterStr + '.json';
+  }
+
+  async function fetchChapter(url) {
+    const res = await fetch(url);
+    if (!res.ok) {
+      throw new Error('Could not load chapter data (HTTP ' + res.status + ').');
+    }
+    return res.json();
+  }
+
+  function renderChapter(chapterData, refInfo) {
+    chapterEl.innerHTML = '';
+
+    const header = document.createElement('div');
+    header.className = 'bv-chapter-header';
+    header.textContent = chapterData.book_id + ' ' + chapterData.chapter;
+    chapterEl.appendChild(header);
+
+    let firstHighlightedEl = null;
+
+    (chapterData.verses || []).forEach(v => {
+      const p = document.createElement('p');
+      p.className = 'bv-verse';
+      p.id = 'v-' + v.verse;
+
+      const numSpan = document.createElement('span');
+      numSpan.className = 'bv-verse-number';
+      numSpan.textContent = v.verse;
+      p.appendChild(numSpan);
+
+      const textSpan = document.createElement('span');
+      // For now we render raw text (including any Strong’s markup as plain text)
+      textSpan.textContent = ' ' + v.text;
+      p.appendChild(textSpan);
+
+      const { startVerse, endVerse } = refInfo || {};
+      if (
+        startVerse != null &&
+        v.verse >= startVerse &&
+        (endVerse == null || v.verse <= endVerse)
+      ) {
+        p.classList.add('highlight');
+        if (!firstHighlightedEl) firstHighlightedEl = p;
+      }
+
+      chapterEl.appendChild(p);
+    });
+
+    if (firstHighlightedEl) {
+      firstHighlightedEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  form.addEventListener('submit', async function (evt) {
+    evt.preventDefault();
+    setMessage('', '');
+
+    const translationId = translationSelect.value;
+    const translation = resolveTranslation(translationId);
+    if (!translation) {
+      setMessage('No translation selected.', 'error');
+      return;
+    }
+
+    const refString = refInput.value;
+
+    let refInfo;
+    try {
+      refInfo = parseReference(refString);
+    } catch (err) {
+      setMessage(err.message, 'error');
+      return;
+    }
+
+    const url = buildChapterUrl(translation, refInfo.bookId, refInfo.chapter);
+    setMessage('Loading...', 'info');
+
+    try {
+      const chapterData = await fetchChapter(url);
+      renderChapter(chapterData, refInfo);
+      setMessage('', '');
+    } catch (err) {
+      console.error(err);
+      setMessage(err.message || 'Error loading chapter.', 'error');
+    }
+  });
+
+  // Initialize on load
+  initTranslations();
+})();
+</script>
+

@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.oeb_us",
+  "code": "oeb_us",
+  "slug": "oeb_us",
+  "title": "Open English Bible (US)",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "ecumenical",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "oeb_us",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": false,
+    "notes": ""
+  },
+  "versification": "kjv",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

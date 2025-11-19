@@ -1,0 +1,28 @@
+{
+  "id": "bible.__LANG__.__CODE__",
+  "code": "__CODE__",
+  "slug": "__CODE__",
+  "title": "__TITLE__",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "__LANG__",
+  "tradition": "__TRADITION__", 
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "__EBIBLE_CODE__",
+    "url": "__SOURCE_URL__"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": false,
+    "notes": ""
+  },
+  "versification": "__VERSIFICATION__", 
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

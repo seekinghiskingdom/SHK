@@ -1,0 +1,76 @@
+/  (HUB - Home)
+├── Give                            (PAGE)
+├── Resources/                      (HUB - PPS tools under older path)
+/Resources/                         (HUB-ish; legacy path segment)
+├── PPS/Bubble                      (PAGE - Proverb Pairs Search, bubble mode)
+/Resources/PPS/Bubble
+└── PPS/Direct                      (PAGE - Proverb Pairs Search, direct mode)
+/Resources/PPS/Direct
+
+/about/                             (HUB)
+├── beliefs/                        (PAGE)
+├── contact/                        (PAGE)
+├── faqs/                           (PAGE)
+├── legal/                          (PAGE - legal + AI notes)
+└── team/                           (PAGE)
+
+/privacy/                           (PAGE - standalone privacy page)
+
+/community/                         (HUB)
+├── blessings/                      (PAGE)
+├── discipleship/                   (PAGE)
+├── fellowship/                     (PAGE)
+├── find-a-church/                  (PAGE)
+├── map-tool/                       (PAGE - community map tool)
+├── prayer/                         (PAGE)
+├── testimony/                      (PAGE)
+└── worship/                        (PAGE)
+
+/help/                              (HUB - help/guide hub)
+
+/resources/                         (HUB)
+├── biblangs/                       (HUB or COLLECTION)
+│   ├── aramaic/                    (PAGE)
+│   ├── greek/                      (PAGE)
+│   └── hebrew/                     (PAGE)
+│
+├── faqs/                           (PAGE - “Big Questions”)
+│
+├── games/                          (HUB)
+│   ├── biblele/                    (PAGE)
+│   ├── escape/                     (PAGE)
+│   ├── geography/                  (PAGE)
+│   ├── pass-the-phrase/            (PAGE)
+│   ├── spectrum/                   (PAGE)
+│   ├── thought-match/              (PAGE)
+│   ├── timeline-links/             (PAGE)
+│   ├── trivia/                     (PAGE)
+│   ├── twenty-questions/           (PAGE)
+│   └── verse-unscramble/           (PAGE)
+│
+├── literature/                     (HUB)
+│   ├── index/                      (COLLECTION - master literature index)
+│   ├── bible/                      (COLLECTION)
+│   │   ├── asv/                    (PAGE)
+│   │   ├── kjv/                    (PAGE)
+│   │   ├── viewer/                 (PAGE - Bible viewer)
+│   │   └── web/                    (PAGE)
+│   ├── historical/                 (COLLECTION)
+│   └── strongs/                    (COLLECTION)
+│       ├── (Hebrew/Greek planned as subpages later)
+│       └── (current page is overall Strong’s collection)
+│
+└── online/                         (PAGE or light COLLECTION)
+
+/salvation/                         (PAGE)
+
+/serving/                           (HUB)
+├── care-support/                   (PAGE)
+├── community-service/              (PAGE)
+├── evangelism/                     (PAGE)
+├── missions/                       (PAGE)
+└── training-resources/             (PAGE)
+
+/tools/                             (HUB - tools hub)
+├── blessings-jar/                  (PAGE)
+└── scs/                            (PAGE - Strong’s Concordance Search)

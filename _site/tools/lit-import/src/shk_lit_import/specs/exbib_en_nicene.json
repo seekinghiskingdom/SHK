@@ -1,0 +1,26 @@
+{
+  "corpus_id": "exbib:en:nicene",
+  "type": "general",
+  "mode": "plain",
+  "lang": "en",
+  "source": {
+    "paths": [
+      "data/raw/nicene_creed.txt"
+    ],
+    "format": "plain"
+  },
+  "hierarchy": [
+    "section",
+    "line"
+  ],
+  "id_template": "Nicene.{SECTION}.{LINE}",
+  "export": {
+    "api_root": "../../docs/data/v1",
+    "path_template": "lit/exbib/en/nicene-creed.json",
+    "short_keys": true,
+    "shard": {
+      "strategy": "per-work"
+    }
+  },
+  "license": "public-domain"
+}

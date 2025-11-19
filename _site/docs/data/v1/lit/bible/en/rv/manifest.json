@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.rv",
+  "code": "rv",
+  "slug": "rv",
+  "title": "Revised Version (with Apocrypha, 1895)",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "rv",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": true,
+    "notes": "Official KJV revision including Apocrypha."
+  },
+  "versification": "kjv-apocrypha",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

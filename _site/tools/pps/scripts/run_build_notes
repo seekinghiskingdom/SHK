@@ -1,0 +1,17 @@
+# Initial (one line) build command for PPS pairs
+python -m tools.pps.scripts.build ^  
+    --pairs tools/pps/data/input/pairs/pairs.csv ^  
+    --bible-root docs/data/v1/lit/bible/en ^  
+    --trans kjv ^  
+    --out tools/pps/data/output/shk_pairs.json ^  
+    --bundle-version auto ^  
+    --gzip ^  
+    --publish-dir docs/data/v1/tools/pps ^  
+    --ignore-synonyms 
+
+# Py wrapper build command
+python -m tools.pps.scripts.build_local
+
+# Command for running py build script in notebook
+from tools.pps.scripts.build_local import run
+run()

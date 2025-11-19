@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.brenton",
+  "code": "brenton",
+  "slug": "brenton",
+  "title": "Brenton English Septuagint",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "ecumenical",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "brenton",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot"],
+    "has_apocrypha": true,
+    "notes": "English translation of the Septuagint Old Testament, including Deuterocanon."
+  },
+  "versification": "lxx",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

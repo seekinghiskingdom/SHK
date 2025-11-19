@@ -1,0 +1,29 @@
+{
+  "id": "bible.grc.grcsbl",
+  "code": "grcsbl",
+  "slug": "grcsbl",
+  "title": "SBL Greek New Testament",
+  "category": "bible",
+  "subcategory": "original",
+  "language": "grc",
+  "tradition": "critical",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "grcsbl",
+    "format": "usfm",
+    "description": "SBL Greek New Testament in USFM format."
+  },
+  "is_public_domain": false,
+  "status": "planned",
+  "canon": {
+    "testaments": ["nt"],
+    "has_apocrypha": false,
+    "notes": "New Testament only."
+  },
+  "versification": "kjv",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

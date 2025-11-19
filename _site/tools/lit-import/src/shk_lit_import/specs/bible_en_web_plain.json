@@ -1,0 +1,27 @@
+{
+  "corpus_id": "bible:en:web",
+  "type": "bible",
+  "mode": "plain",
+  "lang": "en",
+  "source": {
+    "urls": [],
+    "format": "osis-xml"
+  },
+  "hierarchy": [
+    "book",
+    "chapter",
+    "verse"
+  ],
+  "books": [
+    "GEN"
+  ],
+  "export": {
+    "api_root": "../../docs/data/v1",
+    "path_template": "lit/bible/en/web/{BOOK}.json",
+    "short_keys": true,
+    "shard": {
+      "strategy": "per-book"
+    }
+  },
+  "license": "public-domain"
+}

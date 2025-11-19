@@ -1,0 +1,312 @@
+{
+  "version": "1.0.0",
+  "works": [
+    {
+      "id": "bible.en.kjv",
+      "slug": "kjv",
+      "title": "King James Version",
+      "category": "bible",
+      "subcategory": "translation",
+      "language": "en",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "available",
+      "data_path": "lit/bible/en/kjv/manifest.json"
+    },
+    {
+    "id": "bible.en.kjv_strongs",
+    "slug": "kjv-strongs",
+    "title": "King James Version with Strong’s Numbers",
+    "category": "bible",
+    "subcategory": "aligned",
+    "language": "en",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "available",
+    "data_path": "lit/bible/en/kjv_strongs/manifest.json"
+    },
+    {
+      "id": "bible.en.asv",
+      "slug": "asv",
+      "title": "American Standard Version",
+      "category": "bible",
+      "subcategory": "translation",
+      "language": "en",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "available",
+      "data_path": "lit/bible/en/asv/manifest.json"
+    },
+    {
+      "id": "bible.en.web",
+      "slug": "web",
+      "title": "World English Bible",
+      "category": "bible",
+      "subcategory": "translation",
+      "language": "en",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "available",
+      "data_path": "lit/bible/en/web/manifest.json"
+    },
+
+    {
+      "id": "bible.el.tr",
+      "slug": "tr",
+      "title": "Greek New Testament (Textus Receptus)",
+      "category": "bible",
+      "subcategory": "base-text",
+      "language": "el",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "planned",
+      "data_path": "lit/bible/el/tr/manifest.json"
+    },
+    {
+    "id": "bible.el.mgnt",
+    "slug": "mgnt",
+    "title": "Greek New Testament (Majority Text)",
+    "category": "bible",
+    "subcategory": "base-text",
+    "language": "el",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/el/mgnt/manifest.json"
+    },
+    {
+    "id": "bible.el.lxx",
+    "slug": "lxx-brenton",
+    "title": "Greek Old Testament (Septuagint, Brenton)",
+    "category": "bible",
+    "subcategory": "base-text",
+    "language": "el",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/el/lxx/brenton/manifest.json"
+    },
+    {
+      "id": "bible.he.base",
+      "slug": "hebrew-ot",
+      "title": "Hebrew Old Testament (base text)",
+      "category": "bible",
+      "subcategory": "base-text",
+      "language": "he",
+      "tradition": "jewish",
+      "is_public_domain": true,
+      "status": "planned",
+      "data_path": "lit/bible/he/base/manifest.json"
+    },
+
+    {
+      "id": "lang.strongs.lexicon",
+      "slug": "strongs-lexicon",
+      "title": "Strong’s Hebrew and Greek Lexicon",
+      "category": "languages",
+      "subcategory": "lexicon",
+      "language": "en",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "planned",
+      "data_path": "lit/strongs/lexicon/index.json"
+    },
+    {
+      "id": "lang.strongs.concordance",
+      "slug": "strongs-concordance",
+      "title": "Strong’s Concordance Index",
+      "category": "languages",
+      "subcategory": "concordance",
+      "language": "en",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "planned",
+      "data_path": "lit/strongs/concordance/index.json"
+    },
+
+    {
+      "id": "hist.creed.apostles",
+      "slug": "apostles-creed",
+      "title": "Apostles’ Creed",
+      "category": "historical",
+      "subcategory": "creeds",
+      "language": "en",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "planned",
+      "data_path": "lit/historical/creeds/apostles.json"
+    },
+    {
+      "id": "hist.creed.nicene",
+      "slug": "nicene-creed",
+      "title": "Niceno-Constantinopolitan Creed",
+      "category": "historical",
+      "subcategory": "creeds",
+      "language": "en",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "planned",
+      "data_path": "lit/historical/creeds/nicene_constantinopolitan.json"
+    },
+    {
+      "id": "hist.creed.athanasian",
+      "slug": "athanasian-creed",
+      "title": "Athanasian Creed",
+      "category": "historical",
+      "subcategory": "creeds",
+      "language": "en",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "planned",
+      "data_path": "lit/historical/creeds/athanasian.json"
+    },
+    {
+      "id": "hist.creed.chalcedon",
+      "slug": "chalcedon-definition",
+      "title": "Definition of Chalcedon",
+      "category": "historical",
+      "subcategory": "creeds",
+      "language": "en",
+      "tradition": "ecumenical",
+      "is_public_domain": true,
+      "status": "planned",
+      "data_path": "lit/historical/creeds/chalcedon_definition.json"
+    },
+
+
+
+    {
+    "id": "bible.en.kjvd",
+    "slug": "kjvd",
+    "title": "King James Version with Apocrypha",
+    "category": "bible",
+    "subcategory": "translation",
+    "language": "en",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/en/kjvd/manifest.json"
+    },
+    {
+    "id": "bible.en.ylt",
+    "slug": "ylt",
+    "title": "Young's Literal Translation",
+    "category": "bible",
+    "subcategory": "translation",
+    "language": "en",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/en/ylt/manifest.json"
+    },
+    {
+    "id": "bible.en.bbe",
+    "slug": "bbe",
+    "title": "Bible in Basic English",
+    "category": "bible",
+    "subcategory": "translation",
+    "language": "en",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/en/bbe/manifest.json"
+    },
+    {
+    "id": "bible.en.drv",
+    "slug": "drv",
+    "title": "Douay–Rheims 1899",
+    "category": "bible",
+    "subcategory": "translation",
+    "language": "en",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/en/drv/manifest.json"
+    },
+    {
+    "id": "bible.en.gnv",
+    "slug": "gnv",
+    "title": "Geneva Bible 1599",
+    "category": "bible",
+    "subcategory": "translation",
+    "language": "en",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/en/gnv/manifest.json"
+    },
+    {
+    "id": "bible.en.ojps",
+    "slug": "ojps",
+    "title": "JPS TaNaKH 1917",
+    "category": "bible",
+    "subcategory": "translation",
+    "language": "en",
+    "tradition": "jewish",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/en/ojps/manifest.json"
+    },
+    {
+    "id": "bible.en.lee",
+    "slug": "lee",
+    "title": "Leeser Tanakh",
+    "category": "bible",
+    "subcategory": "translation",
+    "language": "en",
+    "tradition": "jewish",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/en/lee/manifest.json"
+    },
+    {
+    "id": "bible.en.rv",
+    "slug": "rv",
+    "title": "Revised Version (with Apocrypha, 1895)",
+    "category": "bible",
+    "subcategory": "translation",
+    "language": "en",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/en/rv/manifest.json"
+    },
+    {
+    "id": "bible.en.brenton",
+    "slug": "brenton",
+    "title": "Brenton English Septuagint",
+    "category": "bible",
+    "subcategory": "translation",
+    "language": "en",
+    "tradition": "ecumenical",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/en/brenton/manifest.json"
+    },
+    {
+    "id": "bible.he.wlc",
+    "slug": "wlc",
+    "title": "Westminster Leningrad Codex Hebrew OT",
+    "category": "bible",
+    "subcategory": "base-text",
+    "language": "he",
+    "tradition": "jewish",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/he/wlc/manifest.json"
+    },
+    {
+    "id": "bible.he.hebmas",
+    "slug": "hebmas",
+    "title": "Hebrew Masoretic OT",
+    "category": "bible",
+    "subcategory": "base-text",
+    "language": "he",
+    "tradition": "jewish",
+    "is_public_domain": true,
+    "status": "planned",
+    "data_path": "lit/bible/he/hebmas/manifest.json"
+    }
+
+  ]
+}

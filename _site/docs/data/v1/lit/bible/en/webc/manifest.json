@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.webc",
+  "code": "webc",
+  "slug": "webc",
+  "title": "World English Bible - Catholic",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "catholic",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "webc",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": true,
+    "notes": "Catholic edition of the World English Bible, including Deuterocanonical books."
+  },
+  "versification": "catholic",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

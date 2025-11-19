@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.msb",
+  "code": "msb",
+  "slug": "msb",
+  "title": "Majority Standard Bible",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "msb",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": false,
+    "notes": "English translation keyed to the Majority Text."
+  },
+  "versification": "kjv",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

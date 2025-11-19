@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.brenton_upd",
+  "code": "brenton_upd",
+  "slug": "brenton_upd",
+  "title": "Updated Brenton English Septuagint",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "ecumenical",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "brenton_upd",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot"],
+    "has_apocrypha": true,
+    "notes": "Updated English translation of the Septuagint Old Testament."
+  },
+  "versification": "lxx",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

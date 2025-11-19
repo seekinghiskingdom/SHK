@@ -1,0 +1,28 @@
+{
+  "id": "bible.he.hebsalk",
+  "code": "hebsalk",
+  "slug": "hebsalk",
+  "title": "Salkinson Hebrew New Testament",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "he",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "hebsalk",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["nt"],
+    "has_apocrypha": false,
+    "notes": "Hebrew translation of the New Testament."
+  },
+  "versification": "nt-standard",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

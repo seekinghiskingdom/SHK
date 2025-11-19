@@ -1,0 +1,15 @@
+{
+  "id": "creed.apostles",
+  "code": "apostles",
+  "title": "The Apostles' Creed (Received Form)",
+  "language": "en",
+  "kind": "creed",
+  "date": "received Western form",
+  "source": {
+    "type": "public-domain",
+    "note": "Received English form as printed in Philip Schaff, The Creeds of Christendom, vol. 2 (19th c.)."
+  },
+  "files": {
+    "text": "text.txt"
+  }
+}

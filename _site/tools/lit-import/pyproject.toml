@@ -1,0 +1,12 @@
+[project]
+name='shk-lit-import'
+version='0.2.0'
+[project.scripts]
+shk-lit='shk_lit_import.cli:main'
+[build-system]
+requires=['setuptools','wheel']
+build-backend='setuptools.build_meta'
+[tool.setuptools.package-dir]
+''='src'
+[tool.setuptools.packages.find]
+where=['src']

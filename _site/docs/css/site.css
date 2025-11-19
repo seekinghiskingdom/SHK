@@ -1,0 +1,1627 @@
+:root {
+  --bg: #2d3035;
+  --panel: #171a21;
+  --text: #e6e7ea;
+  --muted: #8b90a0;
+  --gold: #c9a227;
+  --dark-gold:#b8860b;
+  --accent: #ffd86b;
+  --deb: #deb000;
+}
+
+/* ========== Base Styles ========== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+}
+
+a {
+  color: var(--accent);
+}
+
+.container {
+  max-width: none;     /* remove the fixed max width */
+  margin: 0;           /* remove auto centering */
+  padding: 16px 16px 16px 40px; /* optional: add left padding */
+  text-align: left;    /* ensure content is left-aligned */
+}
+
+.highlight-gold {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.highlight-link {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+.highlight-link:hover {
+  text-decoration: underline;
+}
+
+
+/* ========== Header & Navigation ========== */
+header h1 {
+  margin: 0;
+}
+
+header.container {
+  padding-top: 0.0rem;
+  padding-bottom: 0.0rem;
+}
+
+header.container h1 {
+  font-size: 1.2rem;
+  line-height: 1.2; /* tighter spacing */
+  margin: 0 0.5rem;
+}
+
+/* nav a.nav-button,
+nav a.current-button {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.9rem;
+} */
+
+header.container img.rounded-img {
+  width: 40px;       /* make width and height equal */
+  height: 40px;
+  border-radius: 50%; /* makes it perfectly circular */
+  object-fit: cover;  /* ensures the image fills the circle without distortion */
+}
+
+
+nav {
+  display: flex;
+  align-items: center;          /* vertical alignment */
+  justify-content: flex-start;  /* left-align everything */
+  gap: 15px;                    /* space between items */
+  margin: 20px 0;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+nav img {
+  height: 80px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* ========== Buttons (Nav + Regular) ========== */
+/* .nav-button,
+button {
+  background-color: var(--gold);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+} */
+
+/* Hover effect */
+/* .nav-button:hover,
+button:hover {
+  background-color: #b8860b;
+} */
+
+/* Optional: remove focus outline */
+.nav-button:focus,
+button:focus {
+  outline: none;
+}
+
+.nav-button,
+.btn,
+button {
+  background-color: var(--gold);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-button:hover,
+.btn:hover,
+button:hover {
+  background-color: #b8860b;
+}
+
+
+/* ========== Buttons (Nav + Regular) ========== */
+.current-button,
+button {
+  background-color: var(--dark-gold);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect */
+.current-button:hover,
+button:hover {
+  background-color: #684c07; /* dark goldenrod */
+}
+
+/* Optional: remove focus outline */
+.current-button:focus,
+button:focus {
+  outline: none;
+}
+
+/* ========== Controls ========== */
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto auto;
+  gap: 12px;
+  align-items: end;
+  margin: 16px 0;
+}
+
+.controls label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+select,
+button {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid #2a2f3a;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+button {
+  border-color: var(--gold);
+}
+
+/* ========== Results Styling ========== */
+.results .verse {
+  background: var(--panel);
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin: 10px 0;
+  border: 1px solid #222631;
+}
+
+.ref {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.pill {
+  display: inline-block;
+  background: #1e2230;
+  border: 1px solid #2a2f3a;
+  color: var(--text);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin: 6px 6px 0 0;
+  font-size: 12px;
+}
+
+.arrow {
+  color: var(--gold);
+  font-weight: 700;
+  margin: 0 4px;
+}
+
+mark.input {
+  background: transparent;
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+mark.output {
+  background: transparent;
+  color: #f6e08f;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ========== Footer ========== */
+.footer {
+  margin: 24px 0;
+  color: var(--muted);
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 700px) {
+  .controls {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(0, auto);
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  nav img {
+    height: 60px;
+  }
+
+  nav h1 {
+    font-size: 1.4em;
+  }
+}
+
+/* Horizontal Gold Line */
+hr {
+  border: none;
+  border-top: 2px solid var(--gold);
+  margin: 20px 0;
+}
+
+/* Spacing for the footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* pushes the footer down */
+}
+
+footer {
+  margin-top: auto; /* ensures footer sticks to bottom */
+}
+
+/* Allow content to align left with margin */
+main.container {
+  text-align: left;
+  max-width: none;
+  margin-left: 40px;
+}
+
+/* Rounded Image Class */
+.rounded-img {
+  border-radius: 50%; 
+  width: 100px;  /* set width and height */
+  height: 100px;
+  object-fit: cover; /* ensures the image fills the circle */
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.controls-box {
+  flex: 0 0 250px; /* left panel width */
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2b2b; /* dark gray box */
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  color: white; /* make text readable */
+}
+
+.controls div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #777;
+  background-color: #3a3a3a;
+  color: white;
+  box-sizing: border-box;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--gold);
+  border: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--dark-gold);
+  color: white;
+}
+
+.results {
+  flex: 1;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 10px;
+  min-height: 600px;   /* sets a taller minimum height */
+  overflow-y: auto;    /* allows scrolling if content exceeds height */
+  background: var(--panel); /* optional, matches your theme */
+  border-radius: 12px;
+}
+
+/* Footer */
+.footer {
+  background-color: #3a3a3a; /* slightly lighter than the controls box (#2b2b2b) */
+  color: #f0f0f0;
+  padding: 15px 20px;
+  border-top: 1px solid #555; /* even lighter separator line */
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.footer a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: var(--dark-gold);
+  text-decoration: underline;
+}
+
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-header h1 {
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Hide the menu toggle checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon styling */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-top: 1px solid #ccc;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-header img.rounded-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-header h1 {
+    font-size: 1.1rem;
+  }
+}
+
+.rounded-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Home page tiles container */
+.home-tiles {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: center;
+  flex-wrap: wrap; /* Responsive stacking */
+}
+
+/* Tile base style */
+.tile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 45%; /* Half-width with some gap */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+/* Left tile: About */
+.tile-left {
+  background-color: #FFD966; /* Soft, warm yellow */
+  color: #333;
+  flex-direction: column;
+  text-align: left; /* Left-align text */
+  justify-content: flex-start;
+  padding-left: 2rem; /* Add padding for left alignment */
+}
+
+/* Right tile: PPS */
+.tile-right {
+  background-color: #2c2c2c; /* Dark grey */
+  color: white;
+  justify-content: flex-start;
+}
+
+.tile-right .tile-content {
+  margin-left: 1.5rem;
+}
+
+/* Tile image for PPS */
+.tile-image {
+  width: 120px;
+  border-radius: 8px;
+}
+
+/* Tile content text */
+.tile-content h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.tile-content p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive: stack tiles on small screens */
+@media (max-width: 768px) {
+  .tile {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tile-left {
+    padding-left: 1.5rem;
+  }
+
+  .tile-right .tile-content {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .tile-image {
+    width: 100px;
+  }
+}
+
+
+/* Hunter's CSS Style Additions */
+
+/* ================= Hub and Collection Pages ================= */
+
+/* === Generic hub layout (for Resources, Community, etc.) === */
+
+/* Whole hub page content */
+.hub-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Title + intro spacing */
+.hub-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hub-page p.hub-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  max-width: 60rem;
+}
+
+/* Gold divider under the title */
+.hub-divider {
+  border: none;
+  border-top: 2px solid var(--gold);
+  margin: 0.75rem 0 1.5rem;
+}
+
+/* Grid that arranges tiles nicely */
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card style for hub tiles (does NOT touch home tiles) */
+.hub-tile {
+  display: block;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  background: var(--gold);
+  color: inherit;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hub-tile:hover,
+.hub-tile:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+/* Title + description inside each tile */
+.hub-tile h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.hub-tile p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--panel);
+}
+
+
+
+/* === Collection pages: list-style cards === */
+
+.collection-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.collection-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.collection-page p.collection-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  max-width: 60rem;
+}
+
+/* Optional section headings inside a collection */
+.collection-section {
+  margin-bottom: 1.75rem;
+}
+
+.collection-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+/* Vertical list of long, skinny "tiles" */
+.collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Each item is a long card spanning the width */
+.collection-item {
+  display: block;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--gold);
+  color: inherit;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.collection-item:hover,
+.collection-item:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+}
+
+.collection-item h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.collection-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Bottom nav for collection pages */
+.collection-nav {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+
+/* === Generic content pages === */
+
+.content-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.content-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.content-page p.content-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  max-width: 60rem;
+}
+
+/* Main body text area */
+.content-body {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Optional: smaller subheadings inside body */
+.content-body h2,
+.content-body h3 {
+  margin-top: 1.5rem;
+}
+
+/* Bottom nav for simple pages */
+.content-nav {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ======================
+   Header: hamburger nav
+   ====================== */
+
+/* Desktop baseline for the new header structure */
+.site-header .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.site-header .nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Hamburger button – override global button styles */
+.site-header .nav-toggle {
+  display: none;              /* hidden on desktop */
+  margin-left: auto;          /* pushes it to the far right */
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 1.6rem;
+  padding: 0.15rem 0.4rem;    /* small, square-ish icon */
+  line-height: 1;
+  width: auto;                /* kills the full-width button behavior */
+  cursor: pointer;
+}
+
+/* Mobile behavior for the new header */
+@media (max-width: 700px) {
+  .site-header .main-nav {
+    flex-wrap: wrap;
+  }
+
+  .site-header .nav-toggle {
+    display: inline-block;    /* only show on small screens */
+  }
+
+  .site-header .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: var(--panel);
+    padding: 0.5rem;
+    border-top: 1px solid #333;
+  }
+
+  .site-header.nav-open .nav-links {
+    display: flex;
+  }
+}
+
+
+
+/* Home page background image layer */
+.home-page::before {
+  content: "";
+  position: fixed;          /* stays put while you scroll */
+  inset: 0;                 /* full viewport */
+  background: url("/img/SHK-Path.webp") center/cover no-repeat;
+  filter: blur(6px);
+  transform: scale(1.05);   /* avoid blur edges */
+  z-index: -1;              /* behind all content */
+  opacity: 0.35;            /* tone it down a bit */
+}
+
+/* Make sure home content sits above it */
+.home-page {
+  position: relative;
+}
+
+/* Make header solid over the blurred home background */
+/* .site-header {
+  background: var(--bg);
+  position: relative;
+  z-index: 10;
+} */
+
+
+/* Make main home sections sit on solid panels over the blur */
+.home-page {
+  position: relative;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Verse block */
+.home-verse-section {
+  background: rgba(23, 26, 33, 0.96); /* var(--panel) with slight alpha is fine too */
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 0 auto 1.5rem;
+  max-width: 1000px;
+}
+
+/* Daily tile wrapper already contains .tile; just ensure the tile is solid */
+.home-daily-tool-section .tile-daily {
+  background: var(--panel);
+  border-radius: 12px;
+}
+
+/* Row that holds Daily Tools + Essentials */
+.home-feature-row {
+  max-width: 1100px;
+  margin: 0 auto 2rem;   /* ⬅ this also creates space above Explore SHK */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Each tile column */
+.home-feature-row .feature-tile {
+  flex: 1 1 280px;       /* 2 columns on desktop, stack on narrow screens */
+}
+
+/* Make Essentials tile match Daily visual style */
+.tile-essentials {
+  background: var(--panel);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  padding: 1.5rem;
+}
+
+
+/* Home hub grid panel */
+.home-hub-section {
+  background: rgba(23, 26, 33, 0.96);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem 2rem;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.home-hub-heading,
+.home-hub-intro {
+  margin-top: 0;
+}
+
+
+
+.daily-tools-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.daily-tools-link:hover {
+  text-decoration: underline;
+}
+
+.daily-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+
+/* Row that holds Daily Tools + Essentials */
+.home-feature-row {
+  max-width: 1100px;
+  margin: 0 auto 2rem;      /* space above Explore SHK */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;      /* both tiles same height in the row */
+}
+
+/* Each column (Daily / Essentials) */
+.home-feature-row .feature-tile {
+  flex: 1 1 320px;           /* side-by-side on desktop, stack on narrow */
+}
+
+/* Make both tiles solid, same style, and fill the column */
+.home-feature-row .tile {
+  background: var(--panel);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+}
+
+.home-feature-row .tile-content {
+  width: 100%;
+}
+
+/* Buttons row inside the tiles */
+.home-feature-row .daily-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Mobile: stack them cleanly */
+@media (max-width: 700px) {
+  .home-feature-row {
+    flex-direction: column;
+  }
+}
+
+
+
+
+/* Full name on desktop, SHK on mobile */
+.site-title-short {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .site-title-full {
+    display: none;
+  }
+  .site-title-short {
+    display: inline;
+  }
+
+  .site-title {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* Hub tiles should fill the grid cell, not be 45% wide */
+.hub-tile {
+  width: 100%;
+}
+
+/* ========== Nav dropdown / mega-menu ========== */
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown panel (desktop default = hidden) */
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--panel);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  border-radius: 0.75rem;
+  z-index: 1000;
+}
+
+/* Grid of "tiles" inside the dropdown */
+.nav-dropdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.nav-dropdown-item {
+  display: block;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.nav-dropdown-item:hover,
+.nav-dropdown-item:focus-visible {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Desktop: show dropdown on hover */
+@media (min-width: 701px) {
+  .has-submenu:hover > .nav-dropdown {
+    display: block;
+  }
+}
+
+/* Mobile: dropdown becomes inline, opened via click */
+@media (max-width: 700px) {
+  .nav-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-dropdown {
+    position: static;
+    margin-top: 0.25rem;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .nav-dropdown-grid {
+    grid-template-columns: 1fr; /* stack items on mobile */
+  }
+
+  .nav-item .nav-dropdown {
+    display: none;
+  }
+
+  .nav-item.submenu-open .nav-dropdown {
+    display: block;
+  }
+}
+
+
+/* Make dropdown items use the same gold button style */
+.nav-button,
+.btn,
+button,
+.nav-dropdown-item {
+  background-color: var(--gold);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: inline-block;
+}
+
+.nav-button:hover,
+.btn:hover,
+button:hover,
+.nav-dropdown-item:hover,
+.nav-dropdown-item:focus-visible {
+  background-color: var(--dark-gold);
+  color: white;
+}
+
+/* Override older dropdown background so gold wins */
+.site-header .nav-dropdown-item {
+  background-color: var(--gold);
+}
+
+/* Remove gap between parent tab and dropdown to avoid hover "fall-off" */
+.site-header .nav-dropdown {
+  margin-top: 0;      /* was 0.25rem */
+  top: 100%;          /* keep it directly under the tab */
+  /* padding-top: 0.75rem;  internal space, no gap between elements */
+}
+
+
+/* === Home feature row: Daily Tools + Essentials === */
+.home-feature-row {
+  width: 100%;
+  margin: 0 0 2rem;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+/* Two columns on desktop, each fills roughly half the width */
+.home-feature-row .feature-tile {
+  flex: 1 1 350px;
+  display: flex;
+}
+
+/* Make both tiles solid, same style */
+.home-feature-row .tile {
+  background: var(--panel);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.home-feature-row .tile-content {
+  width: 100%;
+}
+
+/* Buttons row inside these feature tiles */
+.home-feature-row .daily-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Mobile: stack the two feature tiles vertically */
+@media (max-width: 700px) {
+  .home-feature-row {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
+
+/* Mobile header layout: logo | title | hamburger */
+@media (max-width: 700px) {
+  .site-header .main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 0.5rem;
+    width: 100%;
+  }
+
+  .site-header .logo-link {
+    justify-self: start;
+  }
+
+  .site-header .site-title {
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .site-header .nav-toggle {
+    justify-self: end;
+    margin-left: 0; /* override any flex-based margin-left:auto */
+  }
+
+  /* Make the expanded menu sit on its own full-width row */
+  .site-header .nav-links {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile: show a little caret for items with submenus */
+@media (max-width: 700px) {
+  .site-header .nav-parent {
+    position: relative;
+    padding-right: 1.5rem;  /* room for caret */
+    width: 100%;
+    text-align: left;
+  }
+
+  .site-header .nav-parent::after {
+    content: "▾";
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+  }
+}
+
+/* Desktop header layout: logo | title | nav */
+@media (min-width: 701px) {
+  .site-header .main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 0.75rem;
+    width: 100%;
+  }
+
+  .site-header .logo-link {
+    justify-self: start;
+  }
+
+  .site-header .site-title {
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .site-header .nav-toggle {
+    display: none;      /* hide hamburger on desktop */
+  }
+
+  .site-header .nav-links {
+    justify-self: end;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+/* Home feature row: Daily Tools + Essentials */
+.home-feature-row {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* Each feature tile cell */
+.home-feature-row .feature-tile {
+  height: 100%;
+}
+
+/* Make tiles fill the grid cell and look like solid panels */
+.home-feature-row .tile {
+  width: 100%;  /* override global 45% width */
+  background: var(--panel);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  padding: 1.5rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.home-feature-row .tile-content {
+  width: 100%;
+}
+
+/* Buttons row inside these feature tiles */
+.home-feature-row .daily-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Mobile: stack the two feature tiles */
+@media (max-width: 700px) {
+  .home-feature-row {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
+
+
+.footer-social {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.footer-social-link {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.footer-social-link:hover {
+  text-decoration: underline;
+}
+
+/* Center footer content instead of using the generic .container flex layout */
+footer.container,
+.container.footer {
+  display: flex;
+  flex-direction: column;   /* stack text + social links */
+  align-items: center;      /* center horizontally */
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 24px auto;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;       /* keep text centered */
+}
+
+
+/* Floating Salvation / Contact panel */
+.sticky-cta {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 999;
+  background: var(--panel);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+  padding: 0.75rem 1rem;
+  max-width: 260px;
+  font-size: 0.85rem;
+}
+
+.sticky-cta-label {
+  margin: 0 0 0.4rem;
+  color: var(--muted);
+}
+
+.sticky-cta-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Reuse your gold button style, just slightly smaller */
+.sticky-cta-btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+/* Optional: make the Contact button a softer variant */
+.sticky-cta-btn.secondary {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.sticky-cta-btn.secondary:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+/* Mobile: turn it into a full-width bottom bar */
+@media (max-width: 700px) {
+  .sticky-cta {
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.75rem;
+    max-width: none;
+  }
+
+  .sticky-cta-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Mobile: turn CTA into a full-width bottom bar and avoid layout issues */
+@media (max-width: 700px) {
+  body {
+    padding-bottom: 4.5rem; /* space so content doesn't hide behind the bar */
+  }
+
+  .sticky-cta {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: none;
+    border-radius: 0;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .sticky-cta-label {
+    text-align: center;
+    margin-bottom: 0.35rem;
+  }
+
+  .sticky-cta-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .sticky-cta-btn {
+    flex: 0 1 auto;
+  }
+}
+
+/* Mobile nav: full-width rows and a separate submenu toggle button */
+@media (max-width: 700px) {
+  .site-header .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-header .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .site-header .nav-button {
+    flex: 1;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    display: inline-flex;
+  }
+
+  .site-header .submenu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 0.85rem;
+    padding: 0.35rem 0.5rem;
+    cursor: pointer;
+  }
+}
+
+/* Desktop: hide the little toggle button; hover handles dropdowns */
+@media (min-width: 701px) {
+  .site-header .submenu-toggle {
+    display: none;
+  }
+}
+
+/* Logo wordmark styling */
+.site-title {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  letter-spacing: 0.14em;   /* stretch it horizontally */
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+/* Full name vs SHK swap still applies */
+.site-title-full {
+  display: inline;
+}
+
+.site-title-short {
+  display: none;
+}
+
+/* Mobile: smaller, use SHK but still styled */
+@media (max-width: 700px) {
+  .site-title {
+    font-size: 1.1rem;
+    letter-spacing: 0.18em;
+  }
+
+  .site-title-full {
+    display: none;
+  }
+
+  .site-title-short {
+    display: inline;
+  }
+}
+
+.site-title-short {
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--gold);
+}
+
+
+/* === Mobile nav fix: full-width rows, small caret, no extra black bar === */
+@media (max-width: 700px) {
+  /* Stack nav items, but each item is one row */
+  .site-header .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-header .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  /* Main tab button: full row, label area */
+  .site-header .nav-button {
+    flex: 1 1 auto;
+    width: auto;                   /* override any global width:100% on button */
+    display: inline-flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  /* Small caret button: stays beside, not as its own full-width bar */
+  .site-header .submenu-toggle {
+    flex: 0 0 auto;
+    width: auto;                   /* don't stretch to full width */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  /* Turn off the old pseudo-element caret on the parent */
+  .site-header .nav-parent::after {
+    content: none;
+  }
+}
+
+
+/* Bigger logo image + title in header */
+
+/* Desktop */
+@media (min-width: 701px) {
+  .site-header .rounded-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .site-header .site-title {
+    font-size: 2rem;      /* was ~1.4rem */
+    letter-spacing: 0.175em;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .site-header .rounded-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .site-header .site-title {
+    font-size: 2rem;    /* bump SHK size too */
+    letter-spacing: 0.175em;
+  }
+}
+
+/* Desktop logo size */
+@media (min-width: 701px) {
+  .site-header .logo-link img.rounded-img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+/* Mobile logo size */
+@media (max-width: 700px) {
+  .site-header .logo-link img.rounded-img {
+    width: 75px !important;
+    height: 75px !important;
+  }
+}
+
+/* Fix mobile submenu arrow so it sits on the tab, not as a black bar */
+@media (max-width: 700px) {
+  /* Make each nav row a positioning context */
+  .site-header .nav-item {
+    position: relative;
+  }
+
+  /* Give space on the right side of the yellow tab for the arrow */
+  .site-header .nav-item.has-submenu > .nav-button {
+    padding-right: 2rem;
+  }
+
+  /* Submenu toggle: float on top-right of the yellow tab, no own row, no button styling */
+  .site-header .nav-item.has-submenu > .submenu-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    font-size: 0.9rem;
+  }
+
+  /* Ensure no extra caret from old ::after rules */
+  .site-header .nav-parent::after {
+    content: none !important;
+  }
+}
+
+/* End of Hunter's CSS Style Additions */

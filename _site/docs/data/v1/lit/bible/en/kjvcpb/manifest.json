@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.kjvcpb",
+  "code": "kjvcpb",
+  "slug": "kjvcpb",
+  "title": "KJV Cambridge Paragraph Bible",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "kjvcpb",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": false,
+    "notes": "Paragraph edition of the King James Version."
+  },
+  "versification": "kjv",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

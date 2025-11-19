@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.webster",
+  "code": "webster",
+  "slug": "webster",
+  "title": "Noah Webster Bible",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "webster",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot", "nt"],
+    "has_apocrypha": false,
+    "notes": ""
+  },
+  "versification": "kjv",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

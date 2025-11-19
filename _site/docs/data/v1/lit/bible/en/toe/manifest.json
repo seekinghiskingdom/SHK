@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.toe",
+  "code": "toe",
+  "slug": "toe",
+  "title": "Targum Onkelos Etheridge (English)",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "jewish",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "toe",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot"],
+    "has_apocrypha": false,
+    "notes": "English translation of Targum Onkelos on the Torah."
+  },
+  "versification": "tanakh",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

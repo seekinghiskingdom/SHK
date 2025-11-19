@@ -1,0 +1,17 @@
+{
+  "corpus_id": "lexicon:strongs",
+  "type": "lexicon",
+  "mode": "strongs-xml",
+  "source": {
+    "urls": [],
+    "format": "xml"
+  },
+  "export": {
+    "api_root": "../../docs/data/v1",
+    "path_root": "lit/strongs",
+    "shard": {
+      "strategy": "A-Z"
+    }
+  },
+  "license": "public-domain"
+}

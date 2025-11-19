@@ -1,0 +1,28 @@
+{
+  "id": "bible.en.ojps",
+  "code": "ojps",
+  "slug": "ojps",
+  "title": "JPS Tanakh 1917",
+  "category": "bible",
+  "subcategory": "translation",
+  "language": "en",
+  "tradition": "jewish",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "ojps",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["ot"],
+    "has_apocrypha": false,
+    "notes": "Jewish Tanakh (Old Testament only)."
+  },
+  "versification": "tanakh",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

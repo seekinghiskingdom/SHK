@@ -1,0 +1,28 @@
+{
+  "id": "bible.grc.grcbyz",
+  "code": "grcbyz",
+  "slug": "grcbyz",
+  "title": "Byzantine Greek New Testament",
+  "category": "bible",
+  "subcategory": "base-text",
+  "language": "grc",
+  "tradition": "protestant",
+  "source": {
+    "provider": "eBible",
+    "ebible_code": "grcbyz",
+    "url": "https://ebible.org"
+  },
+  "is_public_domain": true,
+  "status": "planned",
+  "canon": {
+    "testaments": ["nt"],
+    "has_apocrypha": false,
+    "notes": ""
+  },
+  "versification": "nt-standard",
+  "files": {
+    "books": "books.json",
+    "chapters": "chapters.jsonl",
+    "meta": "meta.json"
+  }
+}

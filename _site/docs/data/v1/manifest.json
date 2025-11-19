@@ -1,0 +1,72 @@
+{
+  "datasets": {
+    "bible": {
+      "paths": [
+        "lit/bible/en/kjv",
+        "lit/bible/en/asv",
+        "lit/bible/en/web",
+        "lit/bible/en/kjv_strongs",
+
+        "lit/bible/en/kjvd",
+        "lit/bible/en/ylt",
+        "lit/bible/en/bbe",
+        "lit/bible/en/drv",
+        "lit/bible/en/gnv",
+        "lit/bible/en/ojps",
+        "lit/bible/en/lee",
+        "lit/bible/en/rv",
+        "lit/bible/en/brenton",
+
+        "lit/bible/en/asvbt",
+        "lit/bible/en/bsb",
+        "lit/bible/en/msb",
+        "lit/bible/en/lxx2012",
+        "lit/bible/en/brenton_upd",
+        "lit/bible/en/oeb_us",
+        "lit/bible/en/oeb_cw",
+        "lit/bible/en/webc",
+        "lit/bible/en/webbe",
+        "lit/bible/en/webbe_dc",
+        "lit/bible/en/webcath",
+        "lit/bible/en/webupd",
+        "lit/bible/en/wmb",
+        "lit/bible/en/wmbbe",
+
+        "lit/bible/en/kjvcpb",
+        "lit/bible/en/noy",
+        "lit/bible/en/webster",
+        "lit/bible/en/tyndale",
+        "lit/bible/en/wyc_portions",
+        "lit/bible/en/toe",
+
+        "lit/bible/grc/grctr",
+        "lit/bible/grc/grcmt",
+        "lit/bible/grc/grclxx",
+        "lit/bible/grc/grcbyz",
+        "lit/bible/grc/grctc",
+        "lit/bible/grcsr",
+        "lit/bible/grc/grctisch",
+
+        "lit/bible/he/wlc",
+        "lit/bible/he/hebmas",
+        "lit/bible/he/heb",
+        "lit/bible/he/hebmodern",
+        "lit/bible/he/hebsalk"
+      ],
+      "data_version": "0"
+    },
+    "strongs": {
+      "paths": [
+        "lit/strongs"
+      ],
+      "data_version": "0"
+    },
+    "tools": {
+      "paths": [
+        "tools/scs",
+        "tools/pps"
+      ],
+      "data_version": "0"
+    }
+  }
+}
