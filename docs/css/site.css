@@ -711,7 +711,7 @@ button:hover {
 .collection-item p {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--muted);
+  color: var(--panel);
 }
 
 /* Bottom nav for collection pages */

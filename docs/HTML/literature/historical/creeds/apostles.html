@@ -2,65 +2,78 @@
 layout: default
 title: Apostles' Creed
 permalink: /literature/historical/creeds/apostles/
-nav_weight: 10
+creed_id: apostles
 ---
+<!--
+CREED PAGE CHECKLIST
 
-<main class="page page-document">
+1. Front matter
+   - `title`: Full name of the creed.
+   - `permalink`: Final URL.
+   - `creed_id`: Matches the data file name (e.g., apostles → apostles.html).
+
+2. Data file
+   - Expected at: /data/v1/lit/historical/creeds/{{ creed_id }}.html
+   - Contains only the creed body markup (no <html> / <body> tags).
+
+3. Behavior
+   - On load, JS fetches the creed HTML and inserts it into #creed-body.
+   - If fetch fails, a short error message is shown.
+-->
+
+<main class="page page-long-text page-creed">
   <header class="page-header">
     <h1>{{ page.title }}</h1>
     <p class="page-intro">
-      <!-- 1–2 sentence introduction: what this document is, roughly when and why it was written. -->
+      The Apostles' Creed is an early, concise summary of Christian belief, used widely in worship and catechesis across many traditions. -AI
     </p>
   </header>
 
-  <!-- Optional meta info -->
-  <section class="page-section document-meta" id="meta">
-    <dl>
-      <div class="meta-row">
-        <dt>Date / era</dt>
-        <dd><!-- e.g., 4th century AD --></dd>
-      </div>
-      <div class="meta-row">
-        <dt>Type</dt>
-        <dd><!-- e.g., Creed / Confession / Letter --></dd>
-      </div>
-      <div class="meta-row">
-        <dt>Notes</dt>
-        <dd>
-          <!-- Any short notes (public domain status, translation source). -->
-        </dd>
-      </div>
-    </dl>
+  <section class="page-section creed-section" id="creed-text">
+    <h2>Text of the Creed</h2>
+    <div id="creed-body">
+      <p class="muted">Loading creed text… -AI</p>
+    </div>
   </section>
 
-  <!-- Main text -->
-  <section class="page-section document-body" id="text">
-    <h2 class="sr-only">Text</h2>
-    <article class="document-text">
-      <!-- Paste the full text here, formatted with <p> and <br> as needed. -->
-      <!-- Example:
-      <p>I believe in God, the Father almighty, maker of heaven and earth...</p>
-      -->
-    </article>
-  </section>
-
-  <!-- Optional: notes / explanation -->
-  <section class="page-section document-notes" id="notes">
+  <section class="page-section creed-notes" id="creed-notes">
     <h2>Notes</h2>
-    <ul>
-      <li><!-- Short explanatory note 1 --></li>
-      <li><!-- Note 2 --></li>
-    </ul>
+    <p>
+      The wording and line breaks of this creed may follow a particular edition or liturgical usage; consult the notes or sources for more detail as they are added. -AI
+    </p>
   </section>
 
-  <!-- Back / related links -->
   <section class="page-section page-links" id="back-links">
     <h2>More</h2>
     <ul>
-      <!--
-      <li><a href="/literature/historical/creeds/">Back to Creeds</a></li>
-      <li><a href="/literature/historical/">Back to Historical writings</a></li>
-      -->
+      <li><a href="/literature/historical/creeds/">Back to Creeds overview</a></li>
+      <li><a href="/literature/historical/">Back to Historical Writings</a></li>
+      <li><a href="/literature/index/">Back to Literature index</a></li>
     </ul>
   </section>
 </main>
+
+<script>
+(function () {
+  const container = document.getElementById('creed-body');
+  if (!container) return;
+
+  const base = '{{ "/data/v1/lit/historical/creeds/" | relative_url }}'.replace(/\/$/, '');
+  const url = base + '/{{ page.creed_id }}.html';
+
+  fetch(url)
+    .then(function (res) {
+      if (!res.ok) {
+        throw new Error('HTTP ' + res.status);
+      }
+      return res.text();
+    })
+    .then(function (html) {
+      container.innerHTML = html;
+    })
+    .catch(function (err) {
+      console.error(err);
+      container.innerHTML = '<p class="error">Could not load the creed text. -AI</p>';
+    });
+})();
+</script>
