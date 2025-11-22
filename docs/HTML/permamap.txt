@@ -1,0 +1,178 @@
+# Root-level pages
+index.md                          # /
+salvation.html                    # /salvation/
+daily.html                        # /daily/
+
+literature.html                   # /literature/
+tools-games.html                  # /tools-games/
+resources.html                    # /resources/
+community.html                    # /community/
+serving.html                      # /serving/
+about.html                        # /about/
+help.html                         # /help/
+
+# --- LITERATURE ---
+
+# Bible
+literature/
+  bible/
+    index.md                      # /literature/bible/
+    translations/
+      index.md                    # /literature/bible/translations/
+      kjv.md                      # /literature/bible/translations/kjv/
+      asv.md                      # /literature/bible/translations/asv/
+      web.md                      # /literature/bible/translations/web/
+      mgnt.md                     # /literature/bible/translations/mgnt/
+      # ... one per translation
+
+  historical/
+    index.md                      # /literature/historical/
+    creeds/
+      index.md                    # /literature/historical/creeds/
+      apostles.md                 # /literature/historical/creeds/apostles/
+      nicene.md                   # /literature/historical/creeds/nicene/
+      athanasian.md               # (optional) /literature/historical/creeds/athanasian/
+
+  strongs/
+    index.md                      # /literature/strongs/
+    hebrew/
+      index.md                    # /literature/strongs/hebrew/
+      H0001.md                    # /literature/strongs/hebrew/H0001/
+      H0002.md                    # ...
+      # ...
+    greek/
+      index.md                    # /literature/strongs/greek/
+      G0001.md                    # /literature/strongs/greek/G0001/
+      G0002.md                    # ...
+      # ...
+
+  biblangs/
+    index.md                      # /literature/biblangs/
+    hebrew.md                     # /literature/biblangs/hebrew/
+    greek.md                      # /literature/biblangs/greek/
+    aramaic.md                    # /literature/biblangs/aramaic/
+
+  index/
+    index.md                      # /literature/index/
+
+# --- TOOLS & GAMES ---
+
+tools-games/
+  tools/
+    index.md                      # /tools-games/tools/
+    infinite-bible.md             # /tools-games/tools/infinite-bible/
+    bible-viewer.md               # (optional)
+    pps.md                        # (optional)
+    scs.md                        # (optional)
+    blessings-jar.md              # (optional)
+    # ... other tool pages as added
+
+  games/
+    index.md                      # /tools-games/games/
+    biblele.md                    # (optional)
+    verse-unscramble.md           # (optional)
+    daily-trivia.md               # (optional)
+    # ... other game pages
+
+# --- RESOURCES ---
+
+resources/
+  ministries/
+    index.md                      # /resources/ministries/
+    churches.md                   # /resources/ministries/churches/
+    campuses.md                   # /resources/ministries/campuses/
+    international.md              # /resources/ministries/international/
+    missions.md                   # /resources/ministries/missions/
+    marketplace.md                # /resources/ministries/marketplace/
+    youth.md                      # (optional)
+    family.md                     # (optional)
+
+  online/
+    index.md                      # /resources/online/
+    literature-info.md            # /resources/online/literature-info/
+    websites.md                   # /resources/online/websites/
+    social-media.md               # /resources/online/social-media/
+    tools.md                      # /resources/online/tools/
+    misc.md                       # /resources/online/misc/
+    communities.md                # (optional)
+    therapy.md                    # (optional)
+
+  children/
+    index.md                      # /resources/children/
+
+  faqs/
+    index.md                      # /resources/faqs/
+
+# --- COMMUNITY ---
+
+community/
+  socials-connect/
+    index.md                      # /community/socials-connect/
+  find-a-church/
+    index.md                      # /community/find-a-church/
+  prayer/
+    index.md                      # /community/prayer/
+  worship/
+    index.md                      # /community/worship/
+  fellowship/
+    index.md                      # /community/fellowship/
+  discipleship/
+    index.md                      # /community/discipleship/
+  testimony/
+    index.md                      # /community/testimony/
+  blessings/
+    index.md                      # /community/blessings/
+  accountability/
+    index.md                      # /community/accountability/
+
+# --- SERVING ---
+
+serving/
+  missions/
+    index.md                      # /serving/missions/
+  community-service/
+    index.md                      # /serving/community-service/
+  evangelism/
+    index.md                      # /serving/evangelism/
+  giving/
+    index.md                      # /serving/giving/
+  involvement/
+    index.md                      # /serving/involvement/
+  care-support/
+    index.md                      # (optional) /serving/care-support/
+  training-resources/
+    index.md                      # (optional) /serving/training-resources/
+
+# --- ABOUT ---
+
+about/
+  mission/
+    index.md                      # /about/mission/
+  beliefs/
+    index.md                      # /about/beliefs/
+  team/
+    index.md                      # /about/team/
+  social-media/
+    index.md                      # /about/social-media/
+  involvement/
+    index.md                      # /about/involvement/
+  faqs/
+    index.md                      # /about/faqs/
+  legal/
+    index.md                      # /about/legal/
+  privacy/
+    index.md                      # /about/privacy/
+
+# --- HELP ---
+
+help/
+  contact/
+    index.md                      # /help/contact/
+  feedback/
+    index.md                      # /help/feedback/
+  technicals/
+    index.md                      # /help/technicals/
+  guides/
+    index.md                      # (optional) /help/guides/
+  faq/
+    index.md                      # (optional) /help/faq/

@@ -1,0 +1,117 @@
+/                          [hub: Home]
+├── salvation/             [leaf: Salvation CTA page]
+├── daily/                 [leaf: Daily page: game, verse, proverb, reflection, actions]
+├── literature/            [hub: Literature]
+│   ├── bible/             [sub-hub: Bible]
+│   │   ├── translations/  [leaf-hub: translations index]
+│   │   │   ├── kjv/       [leaf: translation info page]
+│   │   │   ├── asv/       [leaf]
+│   │   │   ├── web/       [leaf]
+│   │   │   ├── mgnt/      [leaf]
+│   │   │   └── ...        [leaf, pattern repeats for each translation]
+│   │   └──                [Bible hub also links out (not structurally) to:]
+│   │       /tools-games/tools/bible-viewer/     [tool, optional]
+│   │       /tools-games/tools/infinite-bible/   [tool, core]
+│   │
+│   ├── historical/        [sub-hub: Historical Writings]
+│   │   └── creeds/        [leaf-hub: Creeds]
+│   │       ├── apostles/  [leaf: Apostles’ Creed]
+│   │       ├── nicene/    [leaf: Nicene Creed]
+│   │       └── athanasian/ (optional)   [leaf: Athanasian Creed]
+│   │
+│   ├── strongs/           [sub-hub: Strong’s]
+│   │   ├── hebrew/        [leaf-hub: Hebrew lexicon index]
+│   │   │   ├── H0001/     [leaf: individual H-entry]
+│   │   │   ├── H0002/     [leaf]
+│   │   │   └── ...        [leaf, pattern repeats for each H-number]
+│   │   └── greek/         [leaf-hub: Greek lexicon index]
+│   │       ├── G0001/     [leaf]
+│   │       ├── G0002/     [leaf]
+│   │       └── ...        [leaf, pattern repeats for each G-number]
+│   │   (hub also links out to /tools-games/tools/scs/ as optional tool)
+│   │
+│   ├── biblangs/          [sub-hub: Biblical Languages]
+│   │   ├── hebrew/        [leaf: overview of Biblical Hebrew]
+│   │   ├── greek/         [leaf: overview of Koine Greek]
+│   │   └── aramaic/       [leaf: overview of Biblical Aramaic]
+│   │
+│   └── index/             [leaf: Literature Index directory page]
+│
+├── tools-games/           [hub: Tools & Games]
+│   ├── tools/             [sub-hub: Tools index]
+│   │   ├── infinite-bible/        [leaf tool: Infinite Bible (core V1)]
+│   │   ├── bible-viewer/          (optional tool)
+│   │   ├── pps/                   (optional tool: Proverb Pair Search)
+│   │   ├── scs/                   (optional tool: Strong’s Concordance Search)
+│   │   ├── blessings-jar/         (optional tool)
+│   │   └── ...                    (optional future tools)
+│   │
+│   └── games/             [sub-hub: Games index]
+│       ├── biblele/               (optional game)
+│       ├── verse-unscramble/      (optional game)
+│       ├── daily-trivia/          (optional game)
+│       └── ...                    (optional future games)
+│
+├── resources/              [hub: Resources]
+│   ├── ministries/          [sub-hub]
+│   │   ├── churches/        [leaf: info + links]
+│   │   ├── campuses/        [leaf]
+│   │   ├── international/   [leaf]
+│   │   ├── missions/        [leaf]
+│   │   ├── marketplace/     [leaf]
+│   │   ├── youth/           (optional leaf)
+│   │   └── family/          (optional leaf)
+│   │
+│   ├── online/              [sub-hub]
+│   │   ├── literature-info/ [leaf: article/reading resources]
+│   │   ├── websites/        [leaf: general Christian/Bible sites]
+│   │   ├── social-media/    [leaf: external SM resources]
+│   │   ├── tools/           [leaf: external tools]
+│   │   ├── misc/            [leaf: everything else]
+│   │   ├── communities/     (optional leaf)
+│   │   └── therapy/         (optional leaf)
+│   │
+│   ├── children/            [leaf: children’s resources]
+│   └── faqs/                [leaf: Christianity / Bible / faith FAQs]
+│
+├── community/               [hub: Community]
+│   ├── socials-connect/     [leaf: all SHK socials + Discord]
+│   ├── find-a-church/       [leaf: explanation + future tool link]
+│   ├── prayer/              [leaf: prayer requests/board interface]
+│   ├── worship/             [leaf: worship resources, playlists]
+│   ├── fellowship/          [leaf: community & connection]
+│   ├── discipleship/        [leaf: discipleship overview/resources]
+│   ├── testimony/           [leaf: testimony submissions + reading]
+│   ├── blessings/           [leaf: blessings jar page]
+│   └── accountability/      [leaf: accountability overview/resources]
+│   (optional future tool links: blessing/prayer map, group finder, mentorship, etc.)
+│
+├── serving/                 [hub: Serving]
+│   ├── missions/            [leaf: missions info, resources, future tools]
+│   ├── community-service/   [leaf: local/community service]
+│   ├── evangelism/          [leaf: outreach/evangelism guidance]
+│   ├── giving/              [leaf: guidance on giving/tithing]
+│   ├── involvement/         [leaf: “Get involved with SHK” (canonical involvement)]
+│   ├── care-support/        (optional leaf)
+│   └── training-resources/  (optional leaf)
+│
+├── about/                   [hub: About]
+│   ├── mission/             [leaf: SHK mission]
+│   ├── beliefs/             [leaf: statement of faith]
+│   ├── team/                [leaf: team/leadership]
+│   ├── social-media/        [leaf: site’s own social links; can cross-link to community/socials-connect/]
+│   ├── involvement/         [leaf: summary, linking to /serving/involvement/ as canonical]
+│   ├── faqs/                [leaf: FAQs about SHK as a project]
+│   ├── legal/               [leaf: legal + attribution + disclaimers]
+│   └── privacy/             [leaf: privacy policy]
+│
+└── help/                    [hub: Help]
+    ├── contact/             [leaf: contact page (form/email)]
+    ├── feedback/            [leaf: feedback/suggestions]
+    ├── technicals/          [leaf: technical issues/bug reporting]
+    ├── guides/              (optional leaf: tool guides index)
+    ├── faq/                 (optional leaf: site-usage FAQs)
+    └──                     [hub links to:]
+        /about/legal/       [canonical legal page]
+        /about/privacy/     [privacy policy]
+        /salvation/         [spiritual help tile]

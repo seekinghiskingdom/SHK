@@ -1,0 +1,33 @@
+---
+layout: default
+title: Page Title Here
+permalink: /path/to/page/
+---
+
+<section class="content-page">
+  <h1>{{ page.title }}</h1>
+  <p class="content-intro">
+    One or two sentences summarizing what this page is about. (TBD)
+  </p>
+  <hr class="hub-divider">
+
+  <div class="content-body">
+    <h2>Section Heading (Optional)</h2>
+    <p>
+      Main content goes here. You can add paragraphs, lists, headings, quotes,
+      images, or whatever this page needs. (TBD)
+    </p>
+
+    <!-- More sections as needed -->
+    <!--
+    <h2>Another Section</h2>
+    <p>Additional content...</p>
+    -->
+  </div>
+
+  <nav class="content-nav">
+    <!-- Adjust as appropriate for each page -->
+    <a href="{{ '/' | relative_url }}">Back to Home</a>
+    <!-- or e.g. <a href="{{ '/about/' | relative_url }}">Back to About</a> -->
+  </nav>
+</section>

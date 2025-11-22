@@ -1,33 +1,57 @@
 ---
-layout: default
-title: Page Title Here
+layout: default           <!-- or: default / leaf / section -->
+title: "Page Title"
 permalink: /path/to/page/
+<!-- nav_weight: 10         # optional, for ordering in sidebars/menus -->
 ---
 
-<section class="content-page">
-  <h1>{{ page.title }}</h1>
-  <p class="content-intro">
-    One or two sentences summarizing what this page is about. (TBD)
-  </p>
-  <hr class="hub-divider">
-
-  <div class="content-body">
-    <h2>Section Heading (Optional)</h2>
-    <p>
-      Main content goes here. You can add paragraphs, lists, headings, quotes,
-      images, or whatever this page needs. (TBD)
+<main class="page page-basic">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="page-intro">
+      <!-- 1–3 sentence intro explaining the purpose of this page. -->
+      <!-- Example: This page explains how to get involved with SHK... -->
     </p>
+  </header>
 
-    <!-- More sections as needed -->
-    <!--
-    <h2>Another Section</h2>
-    <p>Additional content...</p>
-    -->
-  </div>
+  <!-- Optional: Key CTA / quick links -->
+  <section class="page-cta">
+    <div class="cta-buttons">
+      <!-- Example buttons/links -->
+      <!--
+      <a href="/community/prayer/" class="btn">Ask for prayer</a>
+      <a href="/serving/involvement/" class="btn btn-secondary">Get involved</a>
+      -->
+    </div>
+  </section>
 
-  <nav class="content-nav">
-    <!-- Adjust as appropriate for each page -->
-    <a href="{{ '/' | relative_url }}">Back to Home</a>
-    <!-- or e.g. <a href="{{ '/about/' | relative_url }}">Back to About</a> -->
-  </nav>
-</section>
+  <!-- Main content sections (clone/rename as needed) -->
+  <section class="page-section" id="section-overview">
+    <h2>Overview</h2>
+    <p>
+      <!-- Short paragraph or bullet list giving the big picture. -->
+    </p>
+  </section>
+
+  <section class="page-section" id="section-practical">
+    <h2>Practical Steps</h2>
+    <ul>
+      <li><!-- Step or suggestion 1 --></li>
+      <li><!-- Step or suggestion 2 --></li>
+      <li><!-- Step or suggestion 3 --></li>
+    </ul>
+  </section>
+
+  <!-- Optional: Links to other hubs or tools -->
+  <section class="page-section page-links" id="section-links">
+    <h2>Related</h2>
+    <ul>
+      <!--
+      <li><a href="/salvation/">Learn about salvation</a></li>
+      <li><a href="/resources/ministries/">Explore ministries</a></li>
+      <li><a href="/community/">Visit the community hub</a></li>
+      -->
+    </ul>
+  </section>
+
+</main>

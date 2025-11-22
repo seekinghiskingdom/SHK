@@ -1,0 +1,77 @@
+---
+layout: default
+title: "Index Title"
+permalink: /path/to/index/
+nav_weight: 10
+---
+
+<main class="page page-index">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="page-intro">
+      <!-- 1–2 sentence description of what is being indexed here. -->
+    </p>
+  </header>
+
+  <!-- Optional: filter / search instructions -->
+  <section class="page-section index-controls" id="index-controls">
+    <p>
+      <!-- E.g.: You can browse by category below. Basic search/filters can go here later. -->
+    </p>
+    <!-- Optional: <input type="search" id="index-search" placeholder="Search..." /> -->
+  </section>
+
+  <!-- Category 1 (for Literature Index: Bible, Strong’s, etc.) -->
+  <section class="page-section index-section" id="category-1">
+    <h2>Category Heading</h2>
+    <ul class="index-list">
+      <li>
+        <a href="/some/path/">Item Name</a><br>
+        <span class="index-desc">
+          <!-- 1-line description of this item. -->
+        </span>
+      </li>
+      <!-- Repeat li as needed -->
+    </ul>
+  </section>
+
+  <!-- Category 2 -->
+  <section class="page-section index-section" id="category-2">
+    <h2>Category Heading 2</h2>
+    <ul class="index-list">
+      <li>
+        <a href="/another/path/">Another Item</a><br>
+        <span class="index-desc">
+          <!-- Description. -->
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- For table-style indexes (e.g., translations or lexicon), swap the UL for a table: -->
+  <!--
+  <section class="page-section index-section" id="table-index">
+    <h2>All Translations</h2>
+    <table class="index-table">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Language</th>
+          <th>Era</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>KJV</td>
+          <td><a href="/literature/bible/translations/kjv/">King James Version</a></td>
+          <td>English</td>
+          <td>17th century</td>
+        </tr>
+        <!-- Repeat rows -->
+      </tbody>
+    </table>
+  </section>
+  -->
+
+</main>
