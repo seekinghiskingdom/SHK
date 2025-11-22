@@ -4,16 +4,26 @@ title: Literature Index
 permalink: /literature/index/
 ---
 
-<h1>{{ page.title }}</h1>
-<p>
-  This index collects all literature-type resources on the site and groups them
-  by category. Use the links below to jump directly to a specific work or
-  collection.
-</p>
+<main class="page page-index">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="page-intro">
+      This index lists the literature resources currently available on this site, grouped by category so you can quickly find, compare, and access each resource. -AI
+    </p>
+    </header>
 
-<section class="literature-index-section">
-  <h2>Bible</h2>
-  <ul>
+  <!-- Optional: filter / search instructions -->
+  <section class="page-section index-controls" id="index-controls">
+      <p>
+        Browse all available literature resources by category in the sections below; each link leads to more details and access options. As new resources are added, they will appear here automatically. -AI
+      </p>
+      <!-- Optional: <input type="search" id="index-search" placeholder="Search translations..." /> --> 
+  </section>
+
+  <!-- Category 1  -->
+  <section class="page-section index-section" id="bible">
+    <h2>Bible</h2>
+    <ul>
     <li><a href="{{ '/literature/bible/' | relative_url }}">Bible – Overview</a></li>
     <li><a href="{{ '/literature/bible/translations/' | relative_url }}">Translations (Index)</a></li>
 
@@ -27,6 +37,7 @@ permalink: /literature/index/
     {% endfor %} -->
   </ul>
 </section>
+
 
 <section class="literature-index-section">
   <h2>Strong’s Concordance</h2>
