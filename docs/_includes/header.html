@@ -26,6 +26,62 @@
         <a href="{{ '/' | relative_url }}" class="nav-button">Home</a>
       </div>
 
+      <!-- Literature (has dropdown) -->
+      <div class="nav-item has-submenu">
+        <a href="{{ '/literature/' | relative_url }}" class="nav-button nav-parent">
+          Literature
+        </a>
+        <button class="submenu-toggle"
+                aria-label="Toggle Literature menu"
+                aria-expanded="false">
+          ▾
+        </button>
+        <div class="nav-dropdown">
+          <div class="nav-dropdown-grid">
+            <a href="{{ '/literature/bible/' | relative_url }}" class="nav-dropdown-item">
+              Bible
+            </a>
+            <a href="{{ '/literature/biblical-langs/' | relative_url }}" class="nav-dropdown-item">
+              Biblical Languages
+            </a>
+            <a href="{{ '/literature/strongs/' | relative_url }}" class="nav-dropdown-item">
+              Strong's Concordance
+            </a>
+            <a href="{{ '/literature/historical/' | relative_url }}" class="nav-dropdown-item">
+              Historical Writings
+            </a>
+            <a href="{{ '/literature/historical/creeds/' | relative_url }}" class="nav-dropdown-item">
+              Creeds
+            </a>
+            <a href="{{ '/literature/index/' | relative_url }}" class="nav-dropdown-item">
+              Literature Index
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Games (has dropdown) -->
+      <div class="nav-item has-submenu">
+        <a href="{{ '/tools-games/' | relative_url }}" class="nav-button nav-parent">
+          Tools &amp; Games
+        </a>
+        <button class="submenu-toggle"
+                aria-label="Toggle Tools & Games menu"
+                aria-expanded="false">
+          ▾
+        </button>
+        <div class="nav-dropdown">
+          <div class="nav-dropdown-grid">
+            <a href="{{ '/tools-games/tools/' | relative_url }}" class="nav-dropdown-item">
+              Tools
+            </a>
+            <a href="{{ '/tools-games/games/' | relative_url }}" class="nav-dropdown-item">
+              Games
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Resources (has dropdown) -->
       <div class="nav-item has-submenu">
         <a href="{{ '/resources/' | relative_url }}" class="nav-button nav-parent">
@@ -38,26 +94,17 @@
         </button>
         <div class="nav-dropdown">
           <div class="nav-dropdown-grid">
-            <a href="{{ '/literature/bible/' | relative_url }}" class="nav-dropdown-item">
-              Bible
+            <a href="{{ '/resources/ministries/' | relative_url }}" class="nav-dropdown-item">
+              Ministries
             </a>
-            <a href="{{ '/literature/' | relative_url }}" class="nav-dropdown-item">
-              Literature
-            </a>
-            <a href="{{ '/resources/tools/' | relative_url }}" class="nav-dropdown-item">
-              Tools
-            </a>
-            <a href="{{ '/resources/games/' | relative_url }}" class="nav-dropdown-item">
-              Games
-            </a>
+            <!-- <a href="{{ '/resources/ministries/churches/' | relative_url }}" class="nav-dropdown-item">
+              Churches
+            </a> -->
             <a href="{{ '/resources/online/' | relative_url }}" class="nav-dropdown-item">
               Online Resources
             </a>
             <a href="{{ '/resources/faqs/' | relative_url }}" class="nav-dropdown-item">
               FAQs
-            </a>
-            <a href="{{ '/resources/biblangs/' | relative_url }}" class="nav-dropdown-item">
-              Biblical Languages
             </a>
           </div>
         </div>
@@ -131,8 +178,8 @@
             <a href="{{ '/serving/training-resources/' | relative_url }}" class="nav-dropdown-item">
               Training &amp; Resources
             </a>
-            <a href="{{ '/serving/give/' | relative_url }}" class="nav-dropdown-item">
-              Give
+            <a href="{{ '/serving/giving/' | relative_url }}" class="nav-dropdown-item">
+              Giving
             </a>
           </div>
         </div>
@@ -183,10 +230,10 @@
         </div>
       </div>
 
-      <!-- Help (simple) -->
+      <!-- Help (simple)
       <div class="nav-item">
         <a href="{{ '/help/' | relative_url }}" class="nav-button">Help</a>
-      </div>
+      </div> -->
 
     </div>
   </nav>

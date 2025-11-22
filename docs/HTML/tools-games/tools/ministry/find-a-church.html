@@ -1,0 +1,107 @@
+---
+layout: default
+title: Find a Church Tool
+permalink: /resources/tools/ministry/find-a-church/
+---
+
+<section class="content-page">
+  <h1>{{ page.title }}</h1>
+  <p class="content-intro">
+    A place to record and visualize blessings from across the body of Christ, grouped into “jars” so you can
+    see how God is at work in many different ways. (TBD)
+  </p>
+  <hr class="hub-divider">
+
+  <div class="content-body">
+    <!-- Add a blessing -->
+    <h2>Add a Blessing</h2>
+    <p>
+      Share a short description of a blessing and choose which kind of “jar” it belongs to. Over time, these
+      jars can be visualized as bubbles to see how God is blessing in many areas. (TBD)
+    </p>
+
+    <form class="blessings-form">
+      <div>
+        <label for="blessing-group">Blessing jar (category)</label>
+        <select id="blessing-group" name="blessing-group">
+          <option value="">Select a jar…</option>
+          <option value="provision">Provision &amp; Needs Met</option>
+          <option value="healing">Healing &amp; Health</option>
+          <option value="relationships">Relationships &amp; Community</option>
+          <option value="growth">Spiritual Growth &amp; Change</option>
+          <option value="service">Serving &amp; Ministry</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="blessing-text">Blessing description</label>
+        <textarea id="blessing-text" name="blessing-text" rows="3"
+          placeholder="Short description of the blessing (TBD – actual storage/logic later)"></textarea>
+      </div>
+
+      <button type="button">
+        Add blessing (TBD)
+      </button>
+    </form>
+
+    <!-- Overview / bubble map -->
+    <h2 style="margin-top: 2rem;">Blessing Jars Overview</h2>
+    <p>
+      This section will eventually show a bubble-style view of all jars, with bubble size reflecting how many
+      blessings are in each jar. Clicking a bubble could filter the list below to that jar. (TBD)
+    </p>
+
+    <div class="blessings-overview">
+      <div class="controls blessings-controls">
+        <div>
+          <label for="blessings-filter-group">Filter by jar</label>
+          <select id="blessings-filter-group" name="blessings-filter-group">
+            <option value="">All jars</option>
+            <option value="provision">Provision &amp; Needs Met</option>
+            <option value="healing">Healing &amp; Health</option>
+            <option value="relationships">Relationships &amp; Community</option>
+            <option value="growth">Spiritual Growth &amp; Change</option>
+            <option value="service">Serving &amp; Ministry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="blessings-min-count">Minimum blessings per jar</label>
+          <select id="blessings-min-count" name="blessings-min-count">
+            <option value="1">1+</option>
+            <option value="5">5+</option>
+            <option value="10">10+</option>
+          </select>
+        </div>
+
+        <button type="button">
+          Update view (TBD)
+        </button>
+      </div>
+
+      <!-- Bubble map placeholder -->
+      <div id="blessings-bubbles" class="results">
+        <p>
+          Bubble map placeholder – this area will eventually render jar “bubbles” sized by count,
+          clickable to reveal the related blessings. (TBD)
+        </p>
+      </div>
+
+      <!-- Filtered list placeholder -->
+      <h3 style="margin-top: 1.5rem;">Blessings in Selected Jar (TBD)</h3>
+      <div id="blessings-list" class="results">
+        <p>
+          A simple list of individual blessings will appear here when a jar is selected, with links or
+          references back to the original entries. (TBD)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="content-nav">
+    <a href="{{ '/resources/tools/' | relative_url }}">Back to Tools</a> ·
+    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
+  </nav>
+</section>

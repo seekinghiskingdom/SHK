@@ -1,24 +1,25 @@
 ---
 layout: default
-title: Proverb Pairs Search (Direct Mode)
-permalink: /resources/tools/pps/direct/
+title: Proverb Pairs Search (PPS)
+permalink: /resources/tools/study/pps/bubble/
 ---
 
-<main class="container" style="display: flex; gap: 20px;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+  <h2 style="margin: 0;">Proverb Pairs Search (PPS)</h2>
 
-  <!-- Left column: Controls -->
-  <section class="controls-box" style="flex: 0 0 300px;">
-    <h2>Proverb Pairs Search (PPS)</h2>
+  <button type="button"
+          onclick="window.location.href='{{ '/resources/tools/pps/direct/' | relative_url }}'">
+    Direct Mode
+  </button>
 
-    <div style="margin-bottom: 12px;">
-      <button class="current-button" style="width:auto;">Direct Mode</button>
-      <button type="button"
-              onclick="window.location.href='{{ '/resources/tools/pps/bubble/' | relative_url }}'">
-        Bubble Mode
-      </button>
+  <button class="current-button" style="width:auto;">Bubble Mode</button>
+</div>
 
-    </div>
+<main class="container">
 
+  <!-- Optional Controls (commented out) -->
+  <!--
+  <section class="controls-box">
     <div class="controls">
       <div>
         <label>Inputs</label>
@@ -39,7 +40,7 @@ permalink: /resources/tools/pps/direct/
         <select id="chapter">
           <option value="">ALL</option>
           {% for i in (1..31) %}
-            <option value="{{ i }}">{{ i }}</option>
+          <option value="{{ i }}">{{ i }}</option>
           {% endfor %}
         </select>
       </div>
@@ -56,11 +57,9 @@ permalink: /resources/tools/pps/direct/
       <span id="count"></span>
     </div>
   </section>
+  -->
 
-  <!-- Right column: Results -->
-  <section id="results" class="results" style="flex: 1;">
-    <!-- Results will dynamically fill this area -->
-  </section>
+  <!-- <section id="results" class="results"></section> -->
 
 </main>
 
