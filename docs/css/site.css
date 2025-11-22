@@ -25,6 +25,11 @@ a {
   color: var(--accent);
 }
 
+html {
+  overflow-y: scroll; /* always reserve scrollbar width */
+}
+
+
 .container {
   max-width: none;     /* remove the fixed max width */
   margin: 0;           /* remove auto centering */

@@ -43,7 +43,7 @@ creed_id: nicene
   if (!container) return;
 
   const base = '{{ "/data/v1/lit/historical/creeds/" | relative_url }}'.replace(/\/$/, '');
-  const url = base + '/{{ page.creed_id }}.txt';
+  const url = base + '/{{ page.creed_id }}/{{ page.creed_id }}.txt';
 
   fetch(url)
     .then(function (res) {
