@@ -1,68 +1,37 @@
-# SHK Lit Import
+# lit-import
 
-This tool ingests raw Bible and lexicon source files (mainly from eBible) and converts them into the JSON formats used under `docs/data/v1/lit/`.
+lit-import contains the import and build pipeline for all literature data used by the SHK site.
 
-## Directory layout
+It is responsible for:
+- Downloading or ingesting raw source files (USFM, XML, text, etc.).
+- Converting them into normalized JSON/CSV structures.
+- Writing the final site data under `docs/data/v1/lit/...`.
 
-- `tools/lit-import/`
-  - `cli.py` – command-line entry point (`shk-lit-import`).
-  - `usfm_import.py` – generic USFM → `books.json` + `chapters.jsonl` importer.
-  - `usfm_parser.py` – minimal USFM line parser.
-  - `kjv_strongs_import.py` – special importer for KJV+Strong’s from USFX XML.
-  - `check_imports.py` – sanity checker for imported Bibles.
-  - `data/raw/` – raw source files and planning JSON:
-    - `bible/bible_plan.json` – master list of translations, groups, tiers, and codes.
-    - `bible/<lang>/<code>/manifest.json` – per-translation metadata.
-    - `bible/<lang>/<code>/*_usfm.zip` – raw USFM zips.
-    - `bible/en/kjv_strongs/eng-kjv-usfx.zip` – USFX source for KJV+Strong’s.
-    - `strongs/manifest.json` – placeholder for Strong’s lexicon (to be populated later).
+## Layout
 
-## Data flow (Bible imports)
+- `import_scripts/`  
+  Main pipeline scripts (end-to-end import/build commands).
 
-1. Raw sources are stored under `tools/lit-import/data/raw/bible/<lang>/<code>/`:
-   - `manifest.json` defines `code`, `language`, `source.format`, `canon`, and target files.
-   - Exactly one `*_usfm.zip` (or `*_usfx.zip` for KJV+Strong’s) contains the original text.
+- `helper_scripts/`  
+  Reusable maintenance and validation utilities, for example:
+  - `bible_cleanup_structure.py` – normalize Bible translation folder structure.
+  - `bible_registry_update.py` – set Strong’s feature flags and regenerate `translations.json`.
+  - `data_manifest_check.py` – validate `docs/data/v1/manifest.json` against disk.
+  - `historical_check.py` – structural check for `lit/historical`.
 
-2. Running the importer:
-   - From the repo root:
-     - Import all Greek originals:
-       ```bash
-       python tools/lit-import/cli.py bible --lang grc --force
-       ```
-     - Import all English Bibles:
-       ```bash
-       python tools/lit-import/cli.py bible --lang en --force
-       ```
-     - Import a single translation (e.g. ASV):
-       ```bash
-       python tools/lit-import/cli.py bible --lang en --code asv --force
-       ```
+- `helper_scripts/old/`  
+  One-off scripts used to prepare the v1 dataset. These are kept for reference but are not intended for regular use.
 
-3. For each selected translation, the importer:
-   - Reads `bible_plan.json` to find the translation definitions.
-   - Loads the raw `manifest.json` and discovers the source zip.
-   - If `source.format == "usfm"`:
-     - Uses `usfm_import.import_bible_from_raw_plan` to:
-       - Parse USFM into an in-memory book model.
-       - Write:
-         - `docs/data/v1/lit/bible/<lang>/<code>/books.json`
-         - `docs/data/v1/lit/bible/<lang>/<code>/chapters.jsonl`
-         - `docs/data/v1/lit/bible/<lang>/<code>/meta.json`
-   - If `source.format == "usfx"` (KJV+Strong’s):
-     - Uses `kjv_strongs_import.import_kjv_strongs_from_usfx` to:
-       - Parse USFX XML and extract tokens with Strong’s IDs.
-       - Write the same three files, but each verse also includes a `tokens` array
-         with Strong’s annotations.
+- `data/raw/`  
+  Raw source inputs (e.g., USFM bundles, Strong’s XML), organized by family (bible, strongs, historical, etc.).
 
-## Output formats
+- `data/processed/`  
+  Intermediate processed outputs that can be regenerated from `data/raw/`. The final deployed data lives under `docs/data/v1/lit/...`.
 
-### `books.json`
+## Usage (high level)
 
-```json
-{
-  "order": ["GEN", "EXO", "..."],
-  "names": {
-    "GEN": "Genesis",
-    "EXO": "Exodus"
-  }
-}
+- Use scripts in `import_scripts/` to import or refresh data from `data/raw/`.
+- After adding or changing translations:
+  - Run `bible_cleanup_structure.py` and `bible_registry_update.py`.
+  - Optionally run `data_manifest_check.py` to confirm the global manifest still matches the data.
+- The `data/raw/` directory is the long-term archive of inputs; `data/processed/` and `docs/data/v1/lit/` can always be rebuilt from it.

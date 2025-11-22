@@ -13,9 +13,12 @@
     "url": "https://ebible.org"
   },
   "is_public_domain": true,
-  "status": "planned",
+  "status": "available",
   "canon": {
-    "testaments": ["ot", "nt"],
+    "testaments": [
+      "ot",
+      "nt"
+    ],
     "has_apocrypha": false,
     "notes": "Portions of the Wycliffe Bible (not a complete canon)."
   },
@@ -23,6 +26,10 @@
   "files": {
     "books": "books.json",
     "chapters": "chapters.jsonl",
-    "meta": "meta.json"
+    "meta": "meta.json",
+    "chapters_dir": "chapters/"
+  },
+  "features": {
+    "has_strongs": false
   }
 }

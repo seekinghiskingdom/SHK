@@ -1,100 +1,46 @@
-# Data Sources & Provenance
+# Data Sources (v1)
 
-This repo ships per-book JSON exports for several English Bible translations (v1) plus a Strong’s‑tagged KJV set. All sources are public‑domain or permissively licensed; verify licenses for your deployment.
+This file summarizes the primary data sources used in `docs/data/v1`.  
+For exact raw file paths, formats, and counts, see each dataset’s `meta.json`.
 
-> Tip: Record checksums for each raw file so you can reproduce builds exactly.
+## Bible translations
 
----
+All Bible translations in `lit/bible/` were imported from:
 
-## KJV (plain, OSIS)
-- **Raw path:** `tools/lit-import/data/raw/kjv/osis/eng-kjv.osis.xml`
-- **Format:** OSIS XML (milestone verses or `<verse osisID="...">`)
-- **Output:** `docs/data/v1/lit/bible/en/kjv/*.json`
-- **License:** Public Domain
-- **Retrieved:** 2025-10-25
-- **Checksum:**
-  ```bash
-  python - <<'PY'
-  import hashlib, pathlib
-  p = pathlib.Path("tools/lit-import/data/raw/kjv/osis/eng-kjv.osis.xml")
-  print("KJV OSIS SHA256:", hashlib.sha256(p.read_bytes()).hexdigest())
-  PY
-  ```
+- **eBible.org** – Public-domain and permissively licensed Bible texts in USFM or similar formats.  
+  - Website: https://ebible.org
 
-## KJV + Strong’s (USFX)
-- **Raw dir:** `tools/lit-import/data/raw/kjv/eng-kjv_usfx/` (main text typically `eng-kjv_usfx.xml`)
-- **Format:** USFX XML (`<v bcv="GEN.1.1">` or `<v id="…">…</ve>`; word tokens in `<w s="H####|G####">`)
-- **Output:** `docs/data/v1/lit/bible/en/kjv_strongs/*.json`
-- **License:** Public Domain
-- **Retrieved:** 2025-10-25
-- **Checksum (per file):**
-  ```bash
-  python - <<'PY'
-  import hashlib, pathlib
-  for p in pathlib.Path("tools/lit-import/data/raw/kjv/eng-kjv_usfx").rglob("*.xml"):
-      print(p.name, hashlib.sha256(p.read_bytes()).hexdigest())
-  PY
-  ```
+Many of these are historical or specialized editions (e.g., Tyndale, Wycliffe portions, certain LXX/Greek editions) that are distributed via eBible.org. Any such details are recorded in each translation’s `meta.json`.
 
-## WEB (plain, USFX)
-- **Raw path:** `tools/lit-import/data/raw/web/usfx/eng-web.usfx.xml`
-- **Format:** USFX XML (verse start `<v id="n">`, end `</ve>`; books via `<book code="GEN">` or `<scriptureBook ubsAbbreviation="GEN">`)
-- **Output:** `docs/data/v1/lit/bible/en/web/*.json`
-- **License:** Public Domain (World English Bible)
-- **Retrieved:** 2025-10-26
-- **Checksum:**
-  ```bash
-  python - <<'PY'
-  import hashlib, pathlib
-  p = pathlib.Path("tools/lit-import/data/raw/web/usfx/eng-web.usfx.xml")
-  print("WEB USFX SHA256:", hashlib.sha256(p.read_bytes()).hexdigest())
-  PY
-  ```
+For each translation:
 
-## ASV (plain, Zefania)
-- **Raw path:** `tools/lit-import/data/raw/asv/zefania/eng-asv.zefania.xml`
-- **Format:** Zefania XML (`<XMLBIBLE>/<BIBLEBOOK>/<CHAPTER>/<VERS>`)
-- **Output:** `docs/data/v1/lit/bible/en/asv/*.json`
-- **License:** Public Domain
-- **Retrieved:** 2025-10-26
-- **Checksum:**
-  ```bash
-  python - <<'PY'
-  import hashlib, pathlib
-  p = pathlib.Path("tools/lit-import/data/raw/asv/zefania/eng-asv.zefania.xml")
-  print("ASV Zefania SHA256:", hashlib.sha256(p.read_bytes()).hexdigest())
-  PY
-  ```
+- `meta.json.source.provider` names the upstream provider (for v1, `eBible.org`).
+- `meta.json.source.raw_dir` and related fields point to the raw source bundle under `tools/lit-import/data/raw/bible/...`.
+- `meta.json.source.license` and/or `license_note` describe the license or public-domain status as applicable.
 
-## Strong’s Lexicon (for later)
-- **Raw dir (expected):** `tools/lit-import/data/raw/strongs/` (e.g., `strongs-hebrew.xml`, `strongs-greek.xml`, or Zefania-style dictionary XMLs)
-- **Output (after build):** `docs/data/v1/lit/strongs/lexicon.json`
-- **License:** Use a public-domain or permissive lexicon source
-- **Checksum (per file):**
-  ```bash
-  python - <<'PY'
-  import hashlib, pathlib
-  d = pathlib.Path("tools/lit-import/data/raw/strongs")
-  if d.exists():
-      for p in d.rglob("*.xml"):
-          print(p.name, hashlib.sha256(p.read_bytes()).hexdigest())
-  else:
-      print("No strongs source dir yet:", d)
-  PY
-  ```
+Only plain-text chapter files are deployed in `docs/data/v1/lit/bible/...`; the original tagged USFM/XML is kept under `tools/lit-import/data/raw/` for reproducible rebuilds.
 
----
+## Strong’s lexicon
 
-## Rebuild commands
+Strong’s data under `lit/strongs/` is derived from public-domain or permissively licensed Strong’s dictionaries, imported via `tools/lit-import`. In v1, the data is based on the Open Scriptures Strong’s project:
 
-From repo root:
+- GitHub: https://github.com/openscriptures/strongs
 
-```bash
-python tools\lit-import\scripts\kjv_manual_export.py
-python tools\lit-import\scripts\kjv_strongs_from_usfx.py
-python tools\lit-import\scripts\web_manual_export_usfx.py
-python tools\lit-import\scripts\asv_manual_export.py
-# Later when you add raw lexicon XMLs:
-# python tools\lit-import\scripts\strongs_lexicon_build.py
-python tools\lit-import\scripts\build_bible_manifests.py
-```
+Exact source and license information is recorded in:
+
+- `lit/strongs/grc/meta.json` – Greek Strong’s provenance and license.
+- `lit/strongs/he/meta.json` – Hebrew Strong’s provenance and license.
+
+These lexicon files are used by Strong’s-aware tools (e.g., concordance) and are not required for normal Bible text display.
+
+## Historical texts
+
+Historical creeds under `lit/historical/creeds/` (Apostles’, Nicene, Athanasian, Chalcedonian) are taken from public-domain English editions (e.g., Schaff’s translations or equivalent public-domain forms).
+
+Each work’s `manifest.json` and/or `meta.json` includes:
+
+- A short title and group (e.g. `"creeds"`).
+- A `files.text` pointer to the deployed text file.
+- A brief `source` or `notes` field (where available) describing the edition or known source.
+
+When in doubt, prefer the edition/attribution information in each `meta.json` or `manifest.json` file over this summary.

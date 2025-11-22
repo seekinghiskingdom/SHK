@@ -5,7 +5,10 @@
   "source": {
     "file": "tools\\lit-import\\data\\raw\\strongs\\grc\\strongsgreek.xml",
     "format": "xml-strongs-greek",
-    "license_note": "Strong's text is public domain; XML encoding credited in prologue."
+    "license_note": "Strong's text is public domain; XML encoding credited in prologue.",
+    "provider": "Open Scriptures",
+    "url": "https://github.com/openscriptures/strongs",
+    "raw_dir": "tools/lit-import/data/raw/strongs/grc"
   },
   "counts": {
     "entries": 5624

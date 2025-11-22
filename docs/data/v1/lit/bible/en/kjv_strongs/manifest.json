@@ -14,9 +14,12 @@
     "description": "KJV + Apocrypha in USFM, with Strong's markers embedded in \\w tags."
   },
   "is_public_domain": true,
-  "status": "planned",
+  "status": "available",
   "canon": {
-    "testaments": ["ot", "nt"],
+    "testaments": [
+      "ot",
+      "nt"
+    ],
     "has_apocrypha": true,
     "notes": "Same base text and versification as bible.en.kjvd."
   },
@@ -28,6 +31,10 @@
   "files": {
     "books": "books.json",
     "chapters": "chapters.jsonl",
-    "meta": "meta.json"
+    "meta": "meta.json",
+    "chapters_dir": "chapters/"
+  },
+  "features": {
+    "has_strongs": true
   }
 }

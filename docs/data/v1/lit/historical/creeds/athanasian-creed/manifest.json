@@ -1,0 +1,15 @@
+{
+  "id": "creed.athanasian",
+  "code": "athanasian",
+  "title": "Athanasian Creed (Quicunque vult)",
+  "language": "en",
+  "kind": "creed",
+  "date": "medieval Western form",
+  "source": {
+    "type": "public-domain",
+    "note": "Classic English translation as printed in Schaff, Creeds of Christendom, vol. 2."
+  },
+  "files": {
+    "text": "athanasian-creed.txt"
+  }
+}

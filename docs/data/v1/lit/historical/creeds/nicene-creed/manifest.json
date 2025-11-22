@@ -1,0 +1,15 @@
+{
+  "id": "creed.nicene",
+  "code": "nicene",
+  "title": "Nicene-Constantinopolitan Creed (A.D. 381)",
+  "language": "en",
+  "kind": "creed",
+  "date": "A.D. 381",
+  "source": {
+    "type": "public-domain",
+    "note": "Standard English text of the Niceno-Constantinopolitan Creed as in Schaff, Creeds of Christendom."
+  },
+  "files": {
+    "text": "nicene-creed.txt"
+  }
+}

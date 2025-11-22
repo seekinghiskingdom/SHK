@@ -2,8 +2,11 @@
   "code": "grcf35",
   "language": "grc",
   "source": {
-    "raw_dir": "C:\\Users\\hrbncv\\SHK\\SHK\\tools\\lit-import\\data\\raw\\bible\\grc\\grcf35",
-    "usfm_zip": "grcf35_usfm.zip"
+    "raw_dir": "tools/lit-import/data/raw/bible/grc/grcf35",
+    "usfm_zip": "grcf35_usfm.zip",
+    "provider": "eBible.org",
+    "url": "https://ebible.org",
+    "license": "Public domain / permissive license; see eBible.org"
   },
   "counts": {
     "books": 31,

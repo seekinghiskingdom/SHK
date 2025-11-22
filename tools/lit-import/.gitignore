@@ -1,0 +1,21 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtualenvs (if any)
+.venv/
+venv/
+
+# Temporary / scratch
+tmp/
+scratch/
+*.tmp
+
+# LitImport data:
+# - Keep raw source data versioned if you want full reproducibility.
+# - Ignore processed outputs that can be regenerated from raw.
+data/processed/
+data/tmp/

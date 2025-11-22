@@ -4,155 +4,155 @@
   "verses": [
     {
       "verse": 1,
-      "text": "\\w εν|strong=\"G1722\" x-morph=\"PREP\"\\w* \\w εκειναισ|strong=\"G1565\" x-morph=\"D-DPF\"\\w* \\w ταισ|strong=\"G3588\" x-morph=\"T-DPF\"\\w* \\w ημεραισ|strong=\"G2250\" x-morph=\"N-DPF\"\\w* \\w παμπολλου|strong=\"G3827\" x-morph=\"A-GSM\"\\w* \\w οχλου|strong=\"G3793\" x-morph=\"N-GSM\"\\w* \\w οντοσ|strong=\"G1510\" x-morph=\"V-PAP-GSM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w μη|strong=\"G3361\" x-morph=\"PRT-N\"\\w* \\w εχοντων|strong=\"G2192\" x-morph=\"V-PAP-GPM\"\\w* \\w τι|strong=\"G5101\" x-morph=\"I-ASN\"\\w* \\w φαγωσιν|strong=\"G5315\" x-morph=\"V-2AAS-3P\"\\w* \\w προσκαλεσαμενοσ|strong=\"G4341\" x-morph=\"V-ADP-NSM\"\\w* \\w ο|strong=\"G3588\" x-morph=\"T-NSM\"\\w* \\w ιησουσ|strong=\"G2424\" x-morph=\"N-NSM\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w μαθητασ|strong=\"G3101\" x-morph=\"N-APM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w λεγει|strong=\"G3004\" x-morph=\"V-PAI-3S\"\\w* \\w αυτοισ|strong=\"G0846\" x-morph=\"P-DPM\"\\w*"
+      "text": "εν εκειναισ ταισ ημεραισ παμπολλου οχλου οντοσ και μη εχοντων τι φαγωσιν προσκαλεσαμενοσ ο ιησουσ τουσ μαθητασ αυτου λεγει αυτοισ"
     },
     {
       "verse": 2,
-      "text": "\\w σπλαγχνιζομαι|strong=\"G4697\" x-morph=\"V-PNI-1S\"\\w* \\w επι|strong=\"G1909\" x-morph=\"PREP\"\\w* \\w τον|strong=\"G3588\" x-morph=\"T-ASM\"\\w* \\w οχλον|strong=\"G3793\" x-morph=\"N-ASM\"\\w* \\w οτι|strong=\"G3754\" x-morph=\"CONJ\"\\w* \\w ηδη|strong=\"G2235\" x-morph=\"ADV\"\\w* \\w ημεραι|strong=\"G2250\" x-morph=\"N-NPF\"\\w* \\w τρεισ|strong=\"G5140\" x-morph=\"A-NPF\"\\w* \\w προσμενουσιν|strong=\"G4357\" x-morph=\"V-PAI-3P\"\\w* \\w μοι|strong=\"G1473\" x-morph=\"P-1DS\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ουκ|strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w εχουσιν|strong=\"G2192\" x-morph=\"V-PAI-3P\"\\w* \\w τι|strong=\"G5101\" x-morph=\"I-ASN\"\\w* \\w φαγωσιν|strong=\"G5315\" x-morph=\"V-2AAS-3P\"\\w*"
+      "text": "σπλαγχνιζομαι επι τον οχλον οτι ηδη ημεραι τρεισ προσμενουσιν μοι και ουκ εχουσιν τι φαγωσιν"
     },
     {
       "verse": 3,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w εαν|strong=\"G1437\" x-morph=\"COND\"\\w* \\w απολυσω|strong=\"G0630\" x-morph=\"V-AAS-1S\"\\w* \\w αυτουσ|strong=\"G0846\" x-morph=\"P-APM\"\\w* \\w νηστεισ|strong=\"G3523\" x-morph=\"A-APM\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w οικον|strong=\"G3624\" x-morph=\"N-ASM\"\\w* \\w αυτων|strong=\"G0846\" x-morph=\"P-GPM\"\\w* \\w εκλυθησονται|strong=\"G1590\" x-morph=\"V-FPI-3P\"\\w* \\w εν|strong=\"G1722\" x-morph=\"PREP\"\\w* \\w τη|strong=\"G3588\" x-morph=\"T-DSF\"\\w* \\w οδω|strong=\"G3598\" x-morph=\"N-DSF\"\\w* \\w τινεσ|strong=\"G5100\" x-morph=\"X-NPM\"\\w* \\w γαρ|strong=\"G1063\" x-morph=\"CONJ\"\\w* \\w αυτων|strong=\"G0846\" x-morph=\"P-GPM\"\\w* \\w μακροθεν|strong=\"G3113\" x-morph=\"ADV\"\\w* \\w ηκουσιν|strong=\"G2240\" x-morph=\"V-PAI-3P\"\\w*"
+      "text": "και εαν απολυσω αυτουσ νηστεισ εισ οικον αυτων εκλυθησονται εν τη οδω τινεσ γαρ αυτων μακροθεν ηκουσιν"
     },
     {
       "verse": 4,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w απεκριθησαν|strong=\"G0611\" x-morph=\"V-ADI-3P\"\\w* \\w αυτω|strong=\"G0846\" x-morph=\"P-DSM\"\\w* \\w οι|strong=\"G3588\" x-morph=\"T-NPM\"\\w* \\w μαθηται|strong=\"G3101\" x-morph=\"N-NPM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w ποθεν|strong=\"G4159\" x-morph=\"ADV-I\"\\w* \\w τουτουσ|strong=\"G3778\" x-morph=\"D-APM\"\\w* \\w δυνησεται|strong=\"G1410\" x-morph=\"V-FDI-3S\"\\w* \\w τισ|strong=\"G5100\" x-morph=\"X-NSM\"\\w* \\w ωδε|strong=\"G5602\" x-morph=\"ADV\"\\w* \\w χορτασαι|strong=\"G5526\" x-morph=\"V-AAN\"\\w* \\w αρτων|strong=\"G0740\" x-morph=\"N-GPM\"\\w* \\w επ|strong=\"G1909\" x-morph=\"PREP\"\\w* \\w ερημιασ|strong=\"G2047\" x-morph=\"N-GSF\"\\w*"
+      "text": "και απεκριθησαν αυτω οι μαθηται αυτου ποθεν τουτουσ δυνησεται τισ ωδε χορτασαι αρτων επ ερημιασ"
     },
     {
       "verse": 5,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w επηρωτα|strong=\"G1905\" x-morph=\"V-IAI-3S\"\\w* \\w αυτουσ|strong=\"G0846\" x-morph=\"P-APM\"\\w* \\w ποσουσ|strong=\"G4214\" x-morph=\"Q-APM\"\\w* \\w εχετε|strong=\"G2192\" x-morph=\"V-PAI-2P\"\\w* \\w αρτουσ|strong=\"G0740\" x-morph=\"N-APM\"\\w* \\w οι|strong=\"G3588\" x-morph=\"T-NPM\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w ειπον|strong=\"G3004\" x-morph=\"V-2AAI-3P\"\\w* \\w επτα|strong=\"G2033\" x-morph=\"A-NUI\"\\w*"
+      "text": "και επηρωτα αυτουσ ποσουσ εχετε αρτουσ οι δε ειπον επτα"
     },
     {
       "verse": 6,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w παρηγγειλεν|strong=\"G3853\" x-morph=\"V-AAI-3S\"\\w* \\w τω|strong=\"G3588\" x-morph=\"T-DSM\"\\w* \\w οχλω|strong=\"G3793\" x-morph=\"N-DSM\"\\w* \\w αναπεσειν|strong=\"G0377\" x-morph=\"V-2AAN\"\\w* \\w επι|strong=\"G1909\" x-morph=\"PREP\"\\w* \\w τησ|strong=\"G3588\" x-morph=\"T-GSF\"\\w* \\w γησ|strong=\"G1093\" x-morph=\"N-GSF\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w λαβων|strong=\"G2983\" x-morph=\"V-2AAP-NSM\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w επτα|strong=\"G2033\" x-morph=\"A-NUI\"\\w* \\w αρτουσ|strong=\"G0740\" x-morph=\"N-APM\"\\w* \\w ευχαριστησασ|strong=\"G2168\" x-morph=\"V-AAP-NSM\"\\w* \\w εκλασεν|strong=\"G2806\" x-morph=\"V-AAI-3S\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w εδιδου|strong=\"G1325\" x-morph=\"V-IAI-3S\"\\w* \\w τοισ|strong=\"G3588\" x-morph=\"T-DPM\"\\w* \\w μαθηταισ|strong=\"G3101\" x-morph=\"N-DPM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w ινα|strong=\"G2443\" x-morph=\"CONJ\"\\w* \\w παραθωσιν|strong=\"G3908\" x-morph=\"V-2AAS-3P\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w παρεθηκαν|strong=\"G3908\" x-morph=\"V-AAI-3P\"\\w* \\w τω|strong=\"G3588\" x-morph=\"T-DSM\"\\w* \\w οχλω|strong=\"G3793\" x-morph=\"N-DSM\"\\w*"
+      "text": "και παρηγγειλεν τω οχλω αναπεσειν επι τησ γησ και λαβων τουσ επτα αρτουσ ευχαριστησασ εκλασεν και εδιδου τοισ μαθηταισ αυτου ινα παραθωσιν και παρεθηκαν τω οχλω"
     },
     {
       "verse": 7,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ειχον|strong=\"G2192\" x-morph=\"V-IAI-3P\"\\w* \\w ιχθυδια|strong=\"G2485\" x-morph=\"N-APN\"\\w* \\w ολιγα|strong=\"G3641\" x-morph=\"A-APN\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ευλογησασ|strong=\"G2127\" x-morph=\"V-AAP-NSM\"\\w* \\w ειπεν|strong=\"G3004\" x-morph=\"V-2AAI-3S\"\\w* \\w παραθειναι|strong=\"G3908\" x-morph=\"V-2AAN\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αυτα|strong=\"G0846\" x-morph=\"P-APN\"\\w*"
+      "text": "και ειχον ιχθυδια ολιγα και ευλογησασ ειπεν παραθειναι και αυτα"
     },
     {
       "verse": 8,
-      "text": "\\w εφαγον|strong=\"G5315\" x-morph=\"V-2AAI-3P\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w εχορτασθησαν|strong=\"G5526\" x-morph=\"V-API-3P\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ηραν|strong=\"G0142\" x-morph=\"V-AAI-3P\"\\w* \\w περισσευματα|strong=\"G4051\" x-morph=\"N-APN\"\\w* \\w κλασματων|strong=\"G2801\" x-morph=\"N-GPN\"\\w* \\w επτα|strong=\"G2033\" x-morph=\"A-NUI\"\\w* \\w σπυριδασ|strong=\"G4711\" x-morph=\"N-APF\"\\w*"
+      "text": "εφαγον δε και εχορτασθησαν και ηραν περισσευματα κλασματων επτα σπυριδασ"
     },
     {
       "verse": 9,
-      "text": "\\w ησαν|strong=\"G1510\" x-morph=\"V-IAI-3P\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w οι|strong=\"G3588\" x-morph=\"T-NPM\"\\w* \\w φαγοντεσ|strong=\"G5315\" x-morph=\"V-2AAP-NPM\"\\w* \\w ωσ|strong=\"G5613\" x-morph=\"ADV\"\\w* \\w τετρακισχιλιοι|strong=\"G5070\" x-morph=\"A-NPM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w απελυσεν|strong=\"G0630\" x-morph=\"V-AAI-3S\"\\w* \\w αυτουσ|strong=\"G0846\" x-morph=\"P-APM\"\\w*"
+      "text": "ησαν δε οι φαγοντεσ ωσ τετρακισχιλιοι και απελυσεν αυτουσ"
     },
     {
       "verse": 10,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ευθεωσ|strong=\"G2112\" x-morph=\"ADV\"\\w* \\w εμβασ|strong=\"G1684\" x-morph=\"V-2AAP-NSM\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w το|strong=\"G3588\" x-morph=\"T-ASN\"\\w* \\w πλοιον|strong=\"G4143\" x-morph=\"N-ASN\"\\w* \\w μετα|strong=\"G3326\" x-morph=\"PREP\"\\w* \\w των|strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w μαθητων|strong=\"G3101\" x-morph=\"N-GPM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w ηλθεν|strong=\"G2064\" x-morph=\"V-2AAI-3S\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w τα|strong=\"G3588\" x-morph=\"T-APN\"\\w* \\w μερη|strong=\"G3313\" x-morph=\"N-APN\"\\w* \\w δαλμανουθα|strong=\"G1148\" x-morph=\"N-PRI\"\\w*"
+      "text": "και ευθεωσ εμβασ εισ το πλοιον μετα των μαθητων αυτου ηλθεν εισ τα μερη δαλμανουθα"
     },
     {
       "verse": 11,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w εξηλθον|strong=\"G1831\" x-morph=\"V-2AAI-3P\"\\w* \\w οι|strong=\"G3588\" x-morph=\"T-NPM\"\\w* \\w φαρισαιοι|strong=\"G5330\" x-morph=\"N-NPM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ηρξαντο|strong=\"G0756\" x-morph=\"V-AMI-3P\"\\w* \\w συζητειν|strong=\"G4802\" x-morph=\"V-PAN\"\\w* \\w αυτω|strong=\"G0846\" x-morph=\"P-DSM\"\\w* \\w ζητουντεσ|strong=\"G2212\" x-morph=\"V-PAP-NPM\"\\w* \\w παρ|strong=\"G3844\" x-morph=\"PREP\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w σημειον|strong=\"G4592\" x-morph=\"N-ASN\"\\w* \\w απο|strong=\"G0575\" x-morph=\"PREP\"\\w* \\w του|strong=\"G3588\" x-morph=\"T-GSM\"\\w* \\w ουρανου|strong=\"G3772\" x-morph=\"N-GSM\"\\w* \\w πειραζοντεσ|strong=\"G3985\" x-morph=\"V-PAP-NPM\"\\w* \\w αυτον|strong=\"G0846\" x-morph=\"P-ASM\"\\w*"
+      "text": "και εξηλθον οι φαρισαιοι και ηρξαντο συζητειν αυτω ζητουντεσ παρ αυτου σημειον απο του ουρανου πειραζοντεσ αυτον"
     },
     {
       "verse": 12,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αναστεναξασ|strong=\"G0389\" x-morph=\"V-AAP-NSM\"\\w* \\w τω|strong=\"G3588\" x-morph=\"T-DSN\"\\w* \\w πνευματι|strong=\"G4151\" x-morph=\"N-DSN\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w λεγει|strong=\"G3004\" x-morph=\"V-PAI-3S\"\\w* \\w τι|strong=\"G5101\" x-morph=\"I-ASN\"\\w* \\w η|strong=\"G3588\" x-morph=\"T-NSF\"\\w* \\w γενεα|strong=\"G1074\" x-morph=\"N-NSF\"\\w* \\w αυτη|strong=\"G3778\" x-morph=\"D-NSF\"\\w* \\w σημειον|strong=\"G4592\" x-morph=\"N-ASN\"\\w* \\w επιζητει|strong=\"G1934\" x-morph=\"V-PAI-3S\"\\w* \\w αμην|strong=\"G0281\" x-morph=\"HEB\"\\w* \\w λεγω|strong=\"G3004\" x-morph=\"V-PAI-1S\"\\w* \\w υμιν|strong=\"G4771\" x-morph=\"P-2DP\"\\w* \\w ει|strong=\"G1487\" x-morph=\"COND\"\\w* \\w δοθησεται|strong=\"G1325\" x-morph=\"V-FPI-3S\"\\w* \\w τη|strong=\"G3588\" x-morph=\"T-DSF\"\\w* \\w γενεα|strong=\"G1074\" x-morph=\"N-DSF\"\\w* \\w ταυτη|strong=\"G3778\" x-morph=\"D-DSF\"\\w* \\w σημειον|strong=\"G4592\" x-morph=\"N-NSN\"\\w*"
+      "text": "και αναστεναξασ τω πνευματι αυτου λεγει τι η γενεα αυτη σημειον επιζητει αμην λεγω υμιν ει δοθησεται τη γενεα ταυτη σημειον"
     },
     {
       "verse": 13,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αφεισ|strong=\"G0863\" x-morph=\"V-2AAP-NSM\"\\w* \\w αυτουσ|strong=\"G0846\" x-morph=\"P-APM\"\\w* \\w εμβασ|strong=\"G1684\" x-morph=\"V-2AAP-NSM\"\\w* \\w παλιν|strong=\"G3825\" x-morph=\"ADV\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w πλοιον|strong=\"G4143\" x-morph=\"N-ASN\"\\w* \\w απηλθεν|strong=\"G0565\" x-morph=\"V-2AAI-3S\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w το|strong=\"G3588\" x-morph=\"T-ASN\"\\w* \\w περαν|strong=\"G4008\" x-morph=\"ADV\"\\w*"
+      "text": "και αφεισ αυτουσ εμβασ παλιν εισ πλοιον απηλθεν εισ το περαν"
     },
     {
       "verse": 14,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w επελαθοντο|strong=\"G1950\" x-morph=\"V-2ADI-3P\"\\w* \\w λαβειν|strong=\"G2983\" x-morph=\"V-2AAN\"\\w* \\w αρτουσ|strong=\"G0740\" x-morph=\"N-APM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ει|strong=\"G1487\" x-morph=\"COND\"\\w* \\w μη|strong=\"G3361\" x-morph=\"PRT-N\"\\w* \\w ενα|strong=\"G1520\" x-morph=\"A-ASM\"\\w* \\w αρτον|strong=\"G0740\" x-morph=\"N-ASM\"\\w* \\w ουκ|strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w ειχον|strong=\"G2192\" x-morph=\"V-IAI-3P\"\\w* \\w μεθ|strong=\"G3326\" x-morph=\"PREP\"\\w* \\w εαυτων|strong=\"G1438\" x-morph=\"F-3GPM\"\\w* \\w εν|strong=\"G1722\" x-morph=\"PREP\"\\w* \\w τω|strong=\"G3588\" x-morph=\"T-DSN\"\\w* \\w πλοιω|strong=\"G4143\" x-morph=\"N-DSN\"\\w*"
+      "text": "και επελαθοντο λαβειν αρτουσ και ει μη ενα αρτον ουκ ειχον μεθ εαυτων εν τω πλοιω"
     },
     {
       "verse": 15,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w διεστελλετο|strong=\"G1291\" x-morph=\"V-IMI-3S\"\\w* \\w αυτοισ|strong=\"G0846\" x-morph=\"P-DPM\"\\w* \\w λεγων|strong=\"G3004\" x-morph=\"V-PAP-NSM\"\\w* \\w ορατε|strong=\"G3708\" x-morph=\"V-PAM-2P\"\\w* \\w βλεπετε|strong=\"G0991\" x-morph=\"V-PAM-2P\"\\w* \\w απο|strong=\"G0575\" x-morph=\"PREP\"\\w* \\w τησ|strong=\"G3588\" x-morph=\"T-GSF\"\\w* \\w ζυμησ|strong=\"G2219\" x-morph=\"N-GSF\"\\w* \\w των|strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w φαρισαιων|strong=\"G5330\" x-morph=\"N-GPM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w τησ|strong=\"G3588\" x-morph=\"T-GSF\"\\w* \\w ζυμησ|strong=\"G2219\" x-morph=\"N-GSF\"\\w* \\w ηρωδου|strong=\"G2264\" x-morph=\"N-GSM\"\\w*"
+      "text": "και διεστελλετο αυτοισ λεγων ορατε βλεπετε απο τησ ζυμησ των φαρισαιων και τησ ζυμησ ηρωδου"
     },
     {
       "verse": 16,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w διελογιζοντο|strong=\"G1260\" x-morph=\"V-INI-3P\"\\w* \\w προσ|strong=\"G4314\" x-morph=\"PREP\"\\w* \\w αλληλουσ|strong=\"G0240\" x-morph=\"C-APM\"\\w* \\w λεγοντεσ|strong=\"G3004\" x-morph=\"V-PAP-NPM\"\\w* \\w οτι|strong=\"G3754\" x-morph=\"CONJ\"\\w* \\w αρτουσ|strong=\"G0740\" x-morph=\"N-APM\"\\w* \\w ουκ|strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w εχομεν|strong=\"G2192\" x-morph=\"V-PAI-1P\"\\w*"
+      "text": "και διελογιζοντο προσ αλληλουσ λεγοντεσ οτι αρτουσ ουκ εχομεν"
     },
     {
       "verse": 17,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w γνουσ|strong=\"G1097\" x-morph=\"V-2AAP-NSM\"\\w* \\w ο|strong=\"G3588\" x-morph=\"T-NSM\"\\w* \\w ιησουσ|strong=\"G2424\" x-morph=\"N-NSM\"\\w* \\w λεγει|strong=\"G3004\" x-morph=\"V-PAI-3S\"\\w* \\w αυτοισ|strong=\"G0846\" x-morph=\"P-DPM\"\\w* \\w τι|strong=\"G5101\" x-morph=\"I-ASN\"\\w* \\w διαλογιζεσθε|strong=\"G1260\" x-morph=\"V-PNI-2P\"\\w* \\w οτι|strong=\"G3754\" x-morph=\"CONJ\"\\w* \\w αρτουσ|strong=\"G0740\" x-morph=\"N-APM\"\\w* \\w ουκ|strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w εχετε|strong=\"G2192\" x-morph=\"V-PAI-2P\"\\w* \\w ουπω|strong=\"G3768\" x-morph=\"ADV-N\"\\w* \\w νοειτε|strong=\"G3539\" x-morph=\"V-PAI-2P\"\\w* \\w ουδε|strong=\"G3761\" x-morph=\"CONJ-N\"\\w* \\w συνιετε|strong=\"G4920\" x-morph=\"V-PAI-2P\"\\w* \\w ετι|strong=\"G2089\" x-morph=\"ADV\"\\w* \\w πεπωρωμενην|strong=\"G4456\" x-morph=\"V-RPP-ASF\"\\w* \\w εχετε|strong=\"G2192\" x-morph=\"V-PAI-2P\"\\w* \\w την|strong=\"G3588\" x-morph=\"T-ASF\"\\w* \\w καρδιαν|strong=\"G2588\" x-morph=\"N-ASF\"\\w* \\w υμων|strong=\"G4771\" x-morph=\"P-2GP\"\\w*"
+      "text": "και γνουσ ο ιησουσ λεγει αυτοισ τι διαλογιζεσθε οτι αρτουσ ουκ εχετε ουπω νοειτε ουδε συνιετε ετι πεπωρωμενην εχετε την καρδιαν υμων"
     },
     {
       "verse": 18,
-      "text": "\\w οφθαλμουσ|strong=\"G3788\" x-morph=\"N-APM\"\\w* \\w εχοντεσ|strong=\"G2192\" x-morph=\"V-PAP-NPM\"\\w* \\w ου|strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w βλεπετε|strong=\"G0991\" x-morph=\"V-PAI-2P\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ωτα|strong=\"G3775\" x-morph=\"N-APN\"\\w* \\w εχοντεσ|strong=\"G2192\" x-morph=\"V-PAP-NPM\"\\w* \\w ουκ|strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w ακουετε|strong=\"G0191\" x-morph=\"V-PAI-2P\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ου|strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w μνημονευετε|strong=\"G3421\" x-morph=\"V-PAI-2P\"\\w*"
+      "text": "οφθαλμουσ εχοντεσ ου βλεπετε και ωτα εχοντεσ ουκ ακουετε και ου μνημονευετε"
     },
     {
       "verse": 19,
-      "text": "\\w οτε|strong=\"G3753\" x-morph=\"ADV\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w πεντε|strong=\"G4002\" x-morph=\"A-NUI\"\\w* \\w αρτουσ|strong=\"G0740\" x-morph=\"N-APM\"\\w* \\w εκλασα|strong=\"G2806\" x-morph=\"V-AAI-1S\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w πεντακισχιλιουσ|strong=\"G4000\" x-morph=\"A-APM\"\\w* \\w ποσουσ|strong=\"G4214\" x-morph=\"Q-APM\"\\w* \\w κοφινουσ|strong=\"G2894\" x-morph=\"N-APM\"\\w* \\w πληρεισ|strong=\"G4134\" x-morph=\"A-APM\"\\w* \\w κλασματων|strong=\"G2801\" x-morph=\"N-GPN\"\\w* \\w ηρατε|strong=\"G0142\" x-morph=\"V-AAI-2P\"\\w* \\w λεγουσιν|strong=\"G3004\" x-morph=\"V-PAI-3P\"\\w* \\w αυτω|strong=\"G0846\" x-morph=\"P-DSM\"\\w* \\w δωδεκα|strong=\"G1427\" x-morph=\"A-NUI\"\\w*"
+      "text": "οτε τουσ πεντε αρτουσ εκλασα εισ τουσ πεντακισχιλιουσ ποσουσ κοφινουσ πληρεισ κλασματων ηρατε λεγουσιν αυτω δωδεκα"
     },
     {
       "verse": 20,
-      "text": "\\w οτε|strong=\"G3753\" x-morph=\"ADV\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w επτα|strong=\"G2033\" x-morph=\"A-NUI\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w τετρακισχιλιουσ|strong=\"G5070\" x-morph=\"A-APM\"\\w* \\w ποσων|strong=\"G4214\" x-morph=\"Q-GPF\"\\w* \\w σπυριδων|strong=\"G4711\" x-morph=\"N-GPF\"\\w* \\w πληρωματα|strong=\"G4138\" x-morph=\"N-APN\"\\w* \\w κλασματων|strong=\"G2801\" x-morph=\"N-GPN\"\\w* \\w ηρατε|strong=\"G0142\" x-morph=\"V-AAI-2P\"\\w* \\w οι|strong=\"G3588\" x-morph=\"T-NPM\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w ειπον|strong=\"G3004\" x-morph=\"V-2AAI-3P\"\\w* \\w επτα|strong=\"G2033\" x-morph=\"A-NUI\"\\w*"
+      "text": "οτε δε τουσ επτα εισ τουσ τετρακισχιλιουσ ποσων σπυριδων πληρωματα κλασματων ηρατε οι δε ειπον επτα"
     },
     {
       "verse": 21,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ελεγεν|strong=\"G3004\" x-morph=\"V-IAI-3S\"\\w* \\w αυτοισ|strong=\"G0846\" x-morph=\"P-DPM\"\\w* \\w πωσ|strong=\"G4459\" x-morph=\"ADV-I\"\\w* \\w ου|strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w συνιετε|strong=\"G4920\" x-morph=\"V-PAI-2P\"\\w*"
+      "text": "και ελεγεν αυτοισ πωσ ου συνιετε"
     },
     {
       "verse": 22,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ερχεται|strong=\"G2064\" x-morph=\"V-PNI-3S\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w βηθσαιδαν|strong=\"G0966\" x-morph=\"N-PRI\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w φερουσιν|strong=\"G5342\" x-morph=\"V-PAI-3P\"\\w* \\w αυτω|strong=\"G0846\" x-morph=\"P-DSM\"\\w* \\w τυφλον|strong=\"G5185\" x-morph=\"A-ASM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w παρακαλουσιν|strong=\"G3870\" x-morph=\"V-PAI-3P\"\\w* \\w αυτον|strong=\"G0846\" x-morph=\"P-ASM\"\\w* \\w ινα|strong=\"G2443\" x-morph=\"CONJ\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w αψηται|strong=\"G0680\" x-morph=\"V-AMS-3S\"\\w*"
+      "text": "και ερχεται εισ βηθσαιδαν και φερουσιν αυτω τυφλον και παρακαλουσιν αυτον ινα αυτου αψηται"
     },
     {
       "verse": 23,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w επιλαβομενοσ|strong=\"G1949\" x-morph=\"V-2ADP-NSM\"\\w* \\w τησ|strong=\"G3588\" x-morph=\"T-GSF\"\\w* \\w χειροσ|strong=\"G5495\" x-morph=\"N-GSF\"\\w* \\w του|strong=\"G3588\" x-morph=\"T-GSM\"\\w* \\w τυφλου|strong=\"G5185\" x-morph=\"A-GSM\"\\w* \\w εξηγαγεν|strong=\"G1806\" x-morph=\"V-2AAI-3S\"\\w* \\w αυτον|strong=\"G0846\" x-morph=\"P-ASM\"\\w* \\w εξω|strong=\"G1854\" x-morph=\"ADV\"\\w* \\w τησ|strong=\"G3588\" x-morph=\"T-GSF\"\\w* \\w κωμησ|strong=\"G2968\" x-morph=\"N-GSF\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w πτυσασ|strong=\"G4429\" x-morph=\"V-AAP-NSM\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w τα|strong=\"G3588\" x-morph=\"T-APN\"\\w* \\w ομματα|strong=\"G3659\" x-morph=\"N-APN\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w επιθεισ|strong=\"G2007\" x-morph=\"V-2AAP-NSM\"\\w* \\w τασ|strong=\"G3588\" x-morph=\"T-APF\"\\w* \\w χειρασ|strong=\"G5495\" x-morph=\"N-APF\"\\w* \\w αυτω|strong=\"G0846\" x-morph=\"P-DSM\"\\w* \\w επηρωτα|strong=\"G1905\" x-morph=\"V-IAI-3S\"\\w* \\w αυτον|strong=\"G0846\" x-morph=\"P-ASM\"\\w* \\w ει|strong=\"G1487\" x-morph=\"COND\"\\w* \\w τι|strong=\"G5100\" x-morph=\"X-ASN\"\\w* \\w βλεπει|strong=\"G0991\" x-morph=\"V-PAI-3S\"\\w*"
+      "text": "και επιλαβομενοσ τησ χειροσ του τυφλου εξηγαγεν αυτον εξω τησ κωμησ και πτυσασ εισ τα ομματα αυτου επιθεισ τασ χειρασ αυτω επηρωτα αυτον ει τι βλεπει"
     },
     {
       "verse": 24,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αναβλεψασ|strong=\"G0308\" x-morph=\"V-AAP-NSM\"\\w* \\w ελεγεν|strong=\"G3004\" x-morph=\"V-IAI-3S\"\\w* \\w βλεπω|strong=\"G0991\" x-morph=\"V-PAI-1S\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w ανθρωπουσ|strong=\"G0444\" x-morph=\"N-APM\"\\w* \\w οτι|strong=\"G3754\" x-morph=\"CONJ\"\\w* \\w ωσ|strong=\"G5613\" x-morph=\"ADV\"\\w* \\w δενδρα|strong=\"G1186\" x-morph=\"N-APN\"\\w* \\w ορω|strong=\"G3708\" x-morph=\"V-PAI-1S\"\\w* \\w περιπατουντασ|strong=\"G4043\" x-morph=\"V-PAP-APM\"\\w*"
+      "text": "και αναβλεψασ ελεγεν βλεπω τουσ ανθρωπουσ οτι ωσ δενδρα ορω περιπατουντασ"
     },
     {
       "verse": 25,
-      "text": "\\w ειτα|strong=\"G1534\" x-morph=\"ADV\"\\w* \\w παλιν|strong=\"G3825\" x-morph=\"ADV\"\\w* \\w επεθηκεν|strong=\"G2007\" x-morph=\"V-AAI-3S\"\\w* \\w τασ|strong=\"G3588\" x-morph=\"T-APF\"\\w* \\w χειρασ|strong=\"G5495\" x-morph=\"N-APF\"\\w* \\w επι|strong=\"G1909\" x-morph=\"PREP\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w οφθαλμουσ|strong=\"G3788\" x-morph=\"N-APM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w εποιησεν|strong=\"G4160\" x-morph=\"V-AAI-3S\"\\w* \\w αυτον|strong=\"G0846\" x-morph=\"P-ASM\"\\w* \\w αναβλεψαι|strong=\"G0308\" x-morph=\"V-AAN\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αποκατεσταθη|strong=\"G0600\" x-morph=\"V-API-3S\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ενεβλεψεν|strong=\"G1689\" x-morph=\"V-AAI-3S\"\\w* \\w τηλαυγωσ|strong=\"G5081\" x-morph=\"ADV\"\\w* \\w απαντασ|strong=\"G0537\" x-morph=\"A-APM\"\\w*"
+      "text": "ειτα παλιν επεθηκεν τασ χειρασ επι τουσ οφθαλμουσ αυτου και εποιησεν αυτον αναβλεψαι και αποκατεσταθη και ενεβλεψεν τηλαυγωσ απαντασ"
     },
     {
       "verse": 26,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w απεστειλεν|strong=\"G0649\" x-morph=\"V-AAI-3S\"\\w* \\w αυτον|strong=\"G0846\" x-morph=\"P-ASM\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w τον|strong=\"G3588\" x-morph=\"T-ASM\"\\w* \\w οικον|strong=\"G3624\" x-morph=\"N-ASM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w λεγων|strong=\"G3004\" x-morph=\"V-PAP-NSM\"\\w* \\w μηδε|strong=\"G3366\" x-morph=\"CONJ-N\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w την|strong=\"G3588\" x-morph=\"T-ASF\"\\w* \\w κωμην|strong=\"G2968\" x-morph=\"N-ASF\"\\w* \\w εισελθησ|strong=\"G1525\" x-morph=\"V-2AAS-2S\"\\w* \\w μηδε|strong=\"G3366\" x-morph=\"CONJ-N\"\\w* \\w ειπησ|strong=\"G3004\" x-morph=\"V-2AAS-2S\"\\w* \\w τινι|strong=\"G5100\" x-morph=\"X-DSM\"\\w* \\w εν|strong=\"G1722\" x-morph=\"PREP\"\\w* \\w τη|strong=\"G3588\" x-morph=\"T-DSF\"\\w* \\w κωμη|strong=\"G2968\" x-morph=\"N-DSF\"\\w*"
+      "text": "και απεστειλεν αυτον εισ τον οικον αυτου λεγων μηδε εισ την κωμην εισελθησ μηδε ειπησ τινι εν τη κωμη"
     },
     {
       "verse": 27,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w εξηλθεν|strong=\"G1831\" x-morph=\"V-2AAI-3S\"\\w* \\w ο|strong=\"G3588\" x-morph=\"T-NSM\"\\w* \\w ιησουσ|strong=\"G2424\" x-morph=\"N-NSM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w οι|strong=\"G3588\" x-morph=\"T-NPM\"\\w* \\w μαθηται|strong=\"G3101\" x-morph=\"N-NPM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w εισ|strong=\"G1519\" x-morph=\"PREP\"\\w* \\w τασ|strong=\"G3588\" x-morph=\"T-APF\"\\w* \\w κωμασ|strong=\"G2968\" x-morph=\"N-APF\"\\w* \\w καισαρειασ|strong=\"G2542\" x-morph=\"N-GSF\"\\w* \\w τησ|strong=\"G3588\" x-morph=\"T-GSF\"\\w* \\w φιλιππου|strong=\"G5376\" x-morph=\"N-GSM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w εν|strong=\"G1722\" x-morph=\"PREP\"\\w* \\w τη|strong=\"G3588\" x-morph=\"T-DSF\"\\w* \\w οδω|strong=\"G3598\" x-morph=\"N-DSF\"\\w* \\w επηρωτα|strong=\"G1905\" x-morph=\"V-IAI-3S\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w μαθητασ|strong=\"G3101\" x-morph=\"N-APM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w λεγων|strong=\"G3004\" x-morph=\"V-PAP-NSM\"\\w* \\w αυτοισ|strong=\"G0846\" x-morph=\"P-DPM\"\\w* \\w τινα|strong=\"G5101\" x-morph=\"I-ASM\"\\w* \\w με|strong=\"G1473\" x-morph=\"P-1AS\"\\w* \\w λεγουσιν|strong=\"G3004\" x-morph=\"V-PAI-3P\"\\w* \\w οι|strong=\"G3588\" x-morph=\"T-NPM\"\\w* \\w ανθρωποι|strong=\"G0444\" x-morph=\"N-NPM\"\\w* \\w ειναι|strong=\"G1510\" x-morph=\"V-PAN\"\\w*"
+      "text": "και εξηλθεν ο ιησουσ και οι μαθηται αυτου εισ τασ κωμασ καισαρειασ τησ φιλιππου και εν τη οδω επηρωτα τουσ μαθητασ αυτου λεγων αυτοισ τινα με λεγουσιν οι ανθρωποι ειναι"
     },
     {
       "verse": 28,
-      "text": "\\w οι|strong=\"G3588\" x-morph=\"T-NPM\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w απεκριθησαν|strong=\"G0611\" x-morph=\"V-ADI-3P\"\\w* \\w ιωαννην|strong=\"G2491\" x-morph=\"N-ASM\"\\w* \\w τον|strong=\"G3588\" x-morph=\"T-ASM\"\\w* \\w βαπτιστην|strong=\"G0910\" x-morph=\"N-ASM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αλλοι|strong=\"G0243\" x-morph=\"A-NPM\"\\w* \\w ηλιαν|strong=\"G2243\" x-morph=\"N-ASM\"\\w* \\w αλλοι|strong=\"G0243\" x-morph=\"A-NPM\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w ενα|strong=\"G1520\" x-morph=\"A-ASM\"\\w* \\w των|strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w προφητων|strong=\"G4396\" x-morph=\"N-GPM\"\\w*"
+      "text": "οι δε απεκριθησαν ιωαννην τον βαπτιστην και αλλοι ηλιαν αλλοι δε ενα των προφητων"
     },
     {
       "verse": 29,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αυτοσ|strong=\"G0846\" x-morph=\"P-NSM\"\\w* \\w λεγει|strong=\"G3004\" x-morph=\"V-PAI-3S\"\\w* \\w αυτοισ|strong=\"G0846\" x-morph=\"P-DPM\"\\w* \\w υμεισ|strong=\"G4771\" x-morph=\"P-2NP\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w τινα|strong=\"G5101\" x-morph=\"I-ASM\"\\w* \\w με|strong=\"G1473\" x-morph=\"P-1AS\"\\w* \\w λεγετε|strong=\"G3004\" x-morph=\"V-PAI-2P\"\\w* \\w ειναι|strong=\"G1510\" x-morph=\"V-PAN\"\\w* \\w αποκριθεισ|strong=\"G0611\" x-morph=\"V-AOP-NSM\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w ο|strong=\"G3588\" x-morph=\"T-NSM\"\\w* \\w πετροσ|strong=\"G4074\" x-morph=\"N-NSM\"\\w* \\w λεγει|strong=\"G3004\" x-morph=\"V-PAI-3S\"\\w* \\w αυτω|strong=\"G0846\" x-morph=\"P-DSM\"\\w* \\w συ|strong=\"G4771\" x-morph=\"P-2NS\"\\w* \\w ει|strong=\"G1510\" x-morph=\"V-PAI-2S\"\\w* \\w ο|strong=\"G3588\" x-morph=\"T-NSM\"\\w* \\w χριστοσ|strong=\"G5547\" x-morph=\"N-NSM\"\\w*"
+      "text": "και αυτοσ λεγει αυτοισ υμεισ δε τινα με λεγετε ειναι αποκριθεισ δε ο πετροσ λεγει αυτω συ ει ο χριστοσ"
     },
     {
       "verse": 30,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w επετιμησεν|strong=\"G2008\" x-morph=\"V-AAI-3S\"\\w* \\w αυτοισ|strong=\"G0846\" x-morph=\"P-DPM\"\\w* \\w ινα|strong=\"G2443\" x-morph=\"CONJ\"\\w* \\w μηδενι|strong=\"G3367\" x-morph=\"A-DSM-N\"\\w* \\w λεγωσιν|strong=\"G3004\" x-morph=\"V-PAS-3P\"\\w* \\w περι|strong=\"G4012\" x-morph=\"PREP\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w*"
+      "text": "και επετιμησεν αυτοισ ινα μηδενι λεγωσιν περι αυτου"
     },
     {
       "verse": 31,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ηρξατο|strong=\"G0756\" x-morph=\"V-AMI-3S\"\\w* \\w διδασκειν|strong=\"G1321\" x-morph=\"V-PAN\"\\w* \\w αυτουσ|strong=\"G0846\" x-morph=\"P-APM\"\\w* \\w οτι|strong=\"G3754\" x-morph=\"CONJ\"\\w* \\w δει|strong=\"G1163\" x-morph=\"V-PAI-3S\"\\w* \\w τον|strong=\"G3588\" x-morph=\"T-ASM\"\\w* \\w υιον|strong=\"G5207\" x-morph=\"N-ASM\"\\w* \\w του|strong=\"G3588\" x-morph=\"T-GSM\"\\w* \\w ανθρωπου|strong=\"G0444\" x-morph=\"N-GSM\"\\w* \\w πολλα|strong=\"G4183\" x-morph=\"A-APN\"\\w* \\w παθειν|strong=\"G3958\" x-morph=\"V-2AAN\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αποδοκιμασθηναι|strong=\"G0593\" x-morph=\"V-APN\"\\w* \\w απο|strong=\"G0575\" x-morph=\"PREP\"\\w* \\w των|strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w πρεσβυτερων|strong=\"G4245\" x-morph=\"A-GPM-C\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w των|strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w αρχιερεων|strong=\"G0749\" x-morph=\"N-GPM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w των|strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w γραμματεων|strong=\"G1122\" x-morph=\"N-GPM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αποκτανθηναι|strong=\"G0615\" x-morph=\"V-APN\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w μετα|strong=\"G3326\" x-morph=\"PREP\"\\w* \\w τρεισ|strong=\"G5140\" x-morph=\"A-APF\"\\w* \\w ημερασ|strong=\"G2250\" x-morph=\"N-APF\"\\w* \\w αναστηναι|strong=\"G0450\" x-morph=\"V-2AAN\"\\w*"
+      "text": "και ηρξατο διδασκειν αυτουσ οτι δει τον υιον του ανθρωπου πολλα παθειν και αποδοκιμασθηναι απο των πρεσβυτερων και των αρχιερεων και των γραμματεων και αποκτανθηναι και μετα τρεισ ημερασ αναστηναι"
     },
     {
       "verse": 32,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w παρρησια|strong=\"G3954\" x-morph=\"N-DSF\"\\w* \\w τον|strong=\"G3588\" x-morph=\"T-ASM\"\\w* \\w λογον|strong=\"G3056\" x-morph=\"N-ASM\"\\w* \\w ελαλει|strong=\"G2980\" x-morph=\"V-IAI-3S\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w προσλαβομενοσ|strong=\"G4355\" x-morph=\"V-2AMP-NSM\"\\w* \\w αυτον|strong=\"G0846\" x-morph=\"P-ASM\"\\w* \\w ο|strong=\"G3588\" x-morph=\"T-NSM\"\\w* \\w πετροσ|strong=\"G4074\" x-morph=\"N-NSM\"\\w* \\w ηρξατο|strong=\"G0756\" x-morph=\"V-AMI-3S\"\\w* \\w επιτιμαν|strong=\"G2008\" x-morph=\"V-PAN\"\\w* \\w αυτω|strong=\"G0846\" x-morph=\"P-DSM\"\\w*"
+      "text": "και παρρησια τον λογον ελαλει και προσλαβομενοσ αυτον ο πετροσ ηρξατο επιτιμαν αυτω"
     },
     {
       "verse": 33,
-      "text": "\\w ο|strong=\"G3588\" x-morph=\"T-NSM\"\\w* \\w δε|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w επιστραφεισ|strong=\"G1994\" x-morph=\"V-2APP-NSM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ιδων|strong=\"G3708\" x-morph=\"V-2AAP-NSM\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w μαθητασ|strong=\"G3101\" x-morph=\"N-APM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w επετιμησεν|strong=\"G2008\" x-morph=\"V-AAI-3S\"\\w* \\w τω|strong=\"G3588\" x-morph=\"T-DSM\"\\w* \\w πετρω|strong=\"G4074\" x-morph=\"N-DSM\"\\w* \\w λεγων|strong=\"G3004\" x-morph=\"V-PAP-NSM\"\\w* \\w υπαγε|strong=\"G5217\" x-morph=\"V-PAM-2S\"\\w* \\w οπισω|strong=\"G3694\" x-morph=\"ADV\"\\w* \\w μου|strong=\"G1473\" x-morph=\"P-1GS\"\\w* \\w σατανα|strong=\"G4567\" x-morph=\"N-VSM\"\\w* \\w οτι|strong=\"G3754\" x-morph=\"CONJ\"\\w* \\w ου|strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w φρονεισ|strong=\"G5426\" x-morph=\"V-PAI-2S\"\\w* \\w τα|strong=\"G3588\" x-morph=\"T-APN\"\\w* \\w του|strong=\"G3588\" x-morph=\"T-GSM\"\\w* \\w θεου|strong=\"G2316\" x-morph=\"N-GSM\"\\w* \\w αλλα|strong=\"G0235\" x-morph=\"CONJ\"\\w* \\w τα|strong=\"G3588\" x-morph=\"T-APN\"\\w* \\w των|strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w ανθρωπων|strong=\"G0444\" x-morph=\"N-GPM\"\\w*"
+      "text": "ο δε επιστραφεισ και ιδων τουσ μαθητασ αυτου επετιμησεν τω πετρω λεγων υπαγε οπισω μου σατανα οτι ου φρονεισ τα του θεου αλλα τα των ανθρωπων"
     },
     {
       "verse": 34,
-      "text": "\\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w προσκαλεσαμενοσ|strong=\"G4341\" x-morph=\"V-ADP-NSM\"\\w* \\w τον|strong=\"G3588\" x-morph=\"T-ASM\"\\w* \\w οχλον|strong=\"G3793\" x-morph=\"N-ASM\"\\w* \\w συν|strong=\"G4862\" x-morph=\"PREP\"\\w* \\w τοισ|strong=\"G3588\" x-morph=\"T-DPM\"\\w* \\w μαθηταισ|strong=\"G3101\" x-morph=\"N-DPM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w ειπεν|strong=\"G3004\" x-morph=\"V-2AAI-3S\"\\w* \\w αυτοισ|strong=\"G0846\" x-morph=\"P-DPM\"\\w* \\w οστισ|strong=\"G3748\" x-morph=\"R-NSM\"\\w* \\w θελει|strong=\"G2309\" x-morph=\"V-PAI-3S\"\\w* \\w οπισω|strong=\"G3694\" x-morph=\"ADV\"\\w* \\w μου|strong=\"G1473\" x-morph=\"P-1GS\"\\w* \\w ακολουθειν|strong=\"G0190\" x-morph=\"V-PAN\"\\w* \\w απαρνησασθω|strong=\"G0533\" x-morph=\"V-ADM-3S\"\\w* \\w εαυτον|strong=\"G1438\" x-morph=\"F-3ASM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αρατω|strong=\"G0142\" x-morph=\"V-AAM-3S\"\\w* \\w τον|strong=\"G3588\" x-morph=\"T-ASM\"\\w* \\w σταυρον|strong=\"G4716\" x-morph=\"N-ASM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ακολουθειτω|strong=\"G0190\" x-morph=\"V-PAM-3S\"\\w* \\w μοι|strong=\"G1473\" x-morph=\"P-1DS\"\\w*"
+      "text": "και προσκαλεσαμενοσ τον οχλον συν τοισ μαθηταισ αυτου ειπεν αυτοισ οστισ θελει οπισω μου ακολουθειν απαρνησασθω εαυτον και αρατω τον σταυρον αυτου και ακολουθειτω μοι"
     },
     {
       "verse": 35,
-      "text": "\\w οσ|strong=\"G3739\" x-morph=\"R-NSM\"\\w* \\w γαρ|strong=\"G1063\" x-morph=\"CONJ\"\\w* \\w αν|strong=\"G0302\" x-morph=\"PRT\"\\w* \\w θελη|strong=\"G2309\" x-morph=\"V-PAS-3S\"\\w* \\w την|strong=\"G3588\" x-morph=\"T-ASF\"\\w* \\w ψυχην|strong=\"G5590\" x-morph=\"N-ASF\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w σωσαι|strong=\"G4982\" x-morph=\"V-AAN\"\\w* \\w απολεσει|strong=\"G0622\" x-morph=\"V-FAI-3S\"\\w* \\w αυτην|strong=\"G0846\" x-morph=\"P-ASF\"\\w* \\w οσ|strong=\"G3739\" x-morph=\"R-NSM\"\\w* \\w δ|strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w αν|strong=\"G0302\" x-morph=\"PRT\"\\w* \\w απολεση|strong=\"G0622\" x-morph=\"V-AAS-3S\"\\w* \\w την|strong=\"G3588\" x-morph=\"T-ASF\"\\w* \\w εαυτου|strong=\"G1438\" x-morph=\"F-3GSM\"\\w* \\w ψυχην|strong=\"G5590\" x-morph=\"N-ASF\"\\w* \\w ενεκεν|strong=\"G1752\" x-morph=\"PREP\"\\w* \\w εμου|strong=\"G1473\" x-morph=\"P-1GS\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w του|strong=\"G3588\" x-morph=\"T-GSN\"\\w* \\w ευαγγελιου|strong=\"G2098\" x-morph=\"N-GSN\"\\w* \\w ουτοσ|strong=\"G3778\" x-morph=\"D-NSM\"\\w* \\w σωσει|strong=\"G4982\" x-morph=\"V-FAI-3S\"\\w* \\w αυτην|strong=\"G0846\" x-morph=\"P-ASF\"\\w*"
+      "text": "οσ γαρ αν θελη την ψυχην αυτου σωσαι απολεσει αυτην οσ δ αν απολεση την εαυτου ψυχην ενεκεν εμου και του ευαγγελιου ουτοσ σωσει αυτην"
     },
     {
       "verse": 36,
-      "text": "\\w τι|strong=\"G5101\" x-morph=\"I-NSN\"\\w* \\w γαρ|strong=\"G1063\" x-morph=\"CONJ\"\\w* \\w ωφελησει|strong=\"G5623\" x-morph=\"V-FAI-3S\"\\w* \\w ανθρωπον|strong=\"G0444\" x-morph=\"N-ASM\"\\w* \\w εαν|strong=\"G1437\" x-morph=\"COND\"\\w* \\w κερδηση|strong=\"G2770\" x-morph=\"V-AAS-3S\"\\w* \\w τον|strong=\"G3588\" x-morph=\"T-ASM\"\\w* \\w κοσμον|strong=\"G2889\" x-morph=\"N-ASM\"\\w* \\w ολον|strong=\"G3650\" x-morph=\"A-ASM\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ζημιωθη|strong=\"G2210\" x-morph=\"V-APS-3S\"\\w* \\w την|strong=\"G3588\" x-morph=\"T-ASF\"\\w* \\w ψυχην|strong=\"G5590\" x-morph=\"N-ASF\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w*"
+      "text": "τι γαρ ωφελησει ανθρωπον εαν κερδηση τον κοσμον ολον και ζημιωθη την ψυχην αυτου"
     },
     {
       "verse": 37,
-      "text": "\\w η|strong=\"G2228\" x-morph=\"PRT\"\\w* \\w τι|strong=\"G5101\" x-morph=\"I-ASN\"\\w* \\w δωσει|strong=\"G1325\" x-morph=\"V-FAI-3S\"\\w* \\w ανθρωποσ|strong=\"G0444\" x-morph=\"N-NSM\"\\w* \\w ανταλλαγμα|strong=\"G0465\" x-morph=\"N-ASN\"\\w* \\w τησ|strong=\"G3588\" x-morph=\"T-GSF\"\\w* \\w ψυχησ|strong=\"G5590\" x-morph=\"N-GSF\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w*"
+      "text": "η τι δωσει ανθρωποσ ανταλλαγμα τησ ψυχησ αυτου"
     },
     {
       "verse": 38,
-      "text": "\\w οσ|strong=\"G3739\" x-morph=\"R-NSM\"\\w* \\w γαρ|strong=\"G1063\" x-morph=\"CONJ\"\\w* \\w εαν|strong=\"G1437\" x-morph=\"COND\"\\w* \\w επαισχυνθη|strong=\"G1870\" x-morph=\"V-AOS-3S\"\\w* \\w με|strong=\"G1473\" x-morph=\"P-1AS\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w τουσ|strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w εμουσ|strong=\"G1699\" x-morph=\"S-1SAPM\"\\w* \\w λογουσ|strong=\"G3056\" x-morph=\"N-APM\"\\w* \\w εν|strong=\"G1722\" x-morph=\"PREP\"\\w* \\w τη|strong=\"G3588\" x-morph=\"T-DSF\"\\w* \\w γενεα|strong=\"G1074\" x-morph=\"N-DSF\"\\w* \\w ταυτη|strong=\"G3778\" x-morph=\"D-DSF\"\\w* \\w τη|strong=\"G3588\" x-morph=\"T-DSF\"\\w* \\w μοιχαλιδι|strong=\"G3428\" x-morph=\"N-DSF\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w αμαρτωλω|strong=\"G0268\" x-morph=\"A-DSF\"\\w* \\w και|strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ο|strong=\"G3588\" x-morph=\"T-NSM\"\\w* \\w υιοσ|strong=\"G5207\" x-morph=\"N-NSM\"\\w* \\w του|strong=\"G3588\" x-morph=\"T-GSM\"\\w* \\w ανθρωπου|strong=\"G0444\" x-morph=\"N-GSM\"\\w* \\w επαισχυνθησεται|strong=\"G1870\" x-morph=\"V-FOI-3S\"\\w* \\w αυτον|strong=\"G0846\" x-morph=\"P-ASM\"\\w* \\w οταν|strong=\"G3752\" x-morph=\"CONJ\"\\w* \\w ελθη|strong=\"G2064\" x-morph=\"V-2AAS-3S\"\\w* \\w εν|strong=\"G1722\" x-morph=\"PREP\"\\w* \\w τη|strong=\"G3588\" x-morph=\"T-DSF\"\\w* \\w δοξη|strong=\"G1391\" x-morph=\"N-DSF\"\\w* \\w του|strong=\"G3588\" x-morph=\"T-GSM\"\\w* \\w πατροσ|strong=\"G3962\" x-morph=\"N-GSM\"\\w* \\w αυτου|strong=\"G0846\" x-morph=\"P-GSM\"\\w* \\w μετα|strong=\"G3326\" x-morph=\"PREP\"\\w* \\w των|strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w αγγελων|strong=\"G0032\" x-morph=\"N-GPM\"\\w* \\w των|strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w αγιων|strong=\"G0040\" x-morph=\"A-GPM\"\\w*"
+      "text": "οσ γαρ εαν επαισχυνθη με και τουσ εμουσ λογουσ εν τη γενεα ταυτη τη μοιχαλιδι και αμαρτωλω και ο υιοσ του ανθρωπου επαισχυνθησεται αυτον οταν ελθη εν τη δοξη του πατροσ αυτου μετα των αγγελων των αγιων"
     }
   ]
 }

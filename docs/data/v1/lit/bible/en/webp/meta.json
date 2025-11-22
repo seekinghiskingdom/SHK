@@ -2,8 +2,11 @@
   "code": "webp",
   "language": "en",
   "source": {
-    "raw_dir": "C:\\Users\\hrbncv\\SHK\\SHK\\tools\\lit-import\\data\\raw\\bible\\en\\webp",
-    "usfm_zip": "engwebp_usfm.zip"
+    "raw_dir": "tools/lit-import/data/raw/bible/en/webp",
+    "usfm_zip": "engwebp_usfm.zip",
+    "provider": "eBible.org",
+    "url": "https://ebible.org",
+    "license": "Public domain / permissive license; see eBible.org"
   },
   "counts": {
     "books": 68,

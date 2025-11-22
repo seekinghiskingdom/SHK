@@ -4,19 +4,19 @@
   "verses": [
     {
       "verse": 1,
-      "text": "Adam, \\w Seth|strong=\"H8352\"\\w*, Enosh,"
+      "text": "Adam, Seth, Enosh,"
     },
     {
       "verse": 2,
-      "text": "\\w Kenan|strong=\"H7018\"\\w*, \\w Mahalalel|strong=\"H4111\"\\w*, \\w Jared|strong=\"H3382\"\\w*,"
+      "text": "Kenan, Mahalalel, Jared,"
     },
     {
       "verse": 3,
-      "text": "\\w Enoch|strong=\"H2585\"\\w*, \\w Methuselah|strong=\"H4968\"\\w*, \\w Lamech|strong=\"H3929\"\\w*."
+      "text": "Enoch, Methuselah, Lamech."
     },
     {
       "verse": 4,
-      "text": "\\w The|strong=\"H3315\"\\w* sons of \\w Noah|strong=\"H5146\"\\w*:\\f + \\fr 1:4 \\ft Hebrew does not include The sons of; LXX Noah: the sons of Noah; see Genesis 5:32.\\f* Shem, Ham, and Japheth."
+      "text": "The sons of Noah: Shem, Ham, and Japheth."
     },
     {
       "verse": 5,
@@ -24,7 +24,7 @@
     },
     {
       "verse": 6,
-      "text": "The sons of Gomer: Ashkenaz, Riphath,\\f + \\fr 1:6 \\ft Many Hebrew manuscripts and Vulgate (see also LXX and Genesis 10:3); most Hebrew manuscripts Diphath\\f* and Togarmah."
+      "text": "The sons of Gomer: Ashkenaz, Riphath, and Togarmah."
     },
     {
       "verse": 7,
@@ -36,11 +36,11 @@
     },
     {
       "verse": 9,
-      "text": "The sons of Cush: Seba, Havilah, Sabta,\\f + \\fr 1:9 \\ft Sabta is a variant of Sabtah; see Genesis 10:7.\\f* Raamah, and Sabteca. The sons of Raamah: Sheba and Dedan."
+      "text": "The sons of Cush: Seba, Havilah, Sabta, Raamah, and Sabteca. The sons of Raamah: Sheba and Dedan."
     },
     {
       "verse": 10,
-      "text": "Cush was the father of Nimrod, who began to be a mighty one \\f + \\fr 1:10 \\ft Or who established himself as a mighty warrior\\f* on the earth."
+      "text": "Cush was the father of Nimrod, who began to be a mighty one on the earth."
     },
     {
       "verse": 11,
@@ -48,11 +48,11 @@
     },
     {
       "verse": 12,
-      "text": "the Pathrusites, the Casluhites (from whom the Philistines came), and the Caphtorites.\\f + \\fr 1:12 \\ft Some translators adjust the Hebrew word order to the Casluhites, and the Caphtorites (from whom the Philistines came); see also Jeremiah 47:4 and Amos 9:7.\\f*"
+      "text": "the Pathrusites, the Casluhites (from whom the Philistines came), and the Caphtorites."
     },
     {
       "verse": 13,
-      "text": "And Canaan was the father of Sidon his firstborn,\\f + \\fr 1:13 \\ft Or of the Sidonians, the foremost\\f* and of the Hittites,\\f + \\fr 1:13 \\ft Hebrew and of Heth\\f*"
+      "text": "And Canaan was the father of Sidon his firstborn, and of the Hittites,"
     },
     {
       "verse": 14,
@@ -68,7 +68,7 @@
     },
     {
       "verse": 17,
-      "text": "The sons of Shem: Elam, Asshur, Arphaxad, Lud, and Aram. The sons of Aram: \\f + \\fr 1:17 \\ft One Hebrew manuscript and some LXX manuscripts (see also Genesis 10:23); most Hebrew manuscripts do not include The sons of Aram.\\f* Uz, Hul, Gether, and Meshech.\\f + \\fr 1:17 \\ft Meshech is a variant of Mash; see Genesis 10:23.\\f*"
+      "text": "The sons of Shem: Elam, Asshur, Arphaxad, Lud, and Aram. The sons of Aram: Uz, Hul, Gether, and Meshech."
     },
     {
       "verse": 18,
@@ -76,7 +76,7 @@
     },
     {
       "verse": 19,
-      "text": "Two sons were born to Eber: One was named Peleg,\\f + \\fr 1:19 \\ft Peleg means division.\\f* because in his days the earth was divided, and his brother was named Joktan."
+      "text": "Two sons were born to Eber: One was named Peleg, because in his days the earth was divided, and his brother was named Joktan."
     },
     {
       "verse": 20,
@@ -88,7 +88,7 @@
     },
     {
       "verse": 22,
-      "text": "Obal,\\f + \\fr 1:22 \\ft LXX and Syriac (see also Genesis 10:28); Hebrew Ebal\\f* Abimael, Sheba,"
+      "text": "Obal, Abimael, Sheba,"
     },
     {
       "verse": 23,
@@ -96,7 +96,7 @@
     },
     {
       "verse": 24,
-      "text": "So from Shem came Arphaxad, Shelah,\\f + \\fr 1:24 \\ft Literally Shem, Arphaxad, Shelah; some LXX manuscripts Shem, Arphaxad, Cainan, Shelah; see also Genesis 10:24 LXX and Luke 3:35–36.\\f*"
+      "text": "So from Shem came Arphaxad, Shelah,"
     },
     {
       "verse": 25,
@@ -112,11 +112,11 @@
     },
     {
       "verse": 28,
-      "text": "\\w The|strong=\"H3458\"\\w* \\w sons|strong=\"H1121\"\\w* \\w of|strong=\"H1121\"\\w* Abraham \\w were|strong=\"H1121\"\\w* \\w Isaac|strong=\"H3327\"\\w* \\w and|strong=\"H1121\"\\w* \\w Ishmael|strong=\"H3458\"\\w*."
+      "text": "The sons of Abraham were Isaac and Ishmael."
     },
     {
       "verse": 29,
-      "text": "These are their \\w genealogies|strong=\"H8435\"\\w*: Nebaioth the firstborn of Ishmael, then Kedar, Adbeel, Mibsam,"
+      "text": "These are their genealogies: Nebaioth the firstborn of Ishmael, then Kedar, Adbeel, Mibsam,"
     },
     {
       "verse": 30,
@@ -144,7 +144,7 @@
     },
     {
       "verse": 36,
-      "text": "The sons of Eliphaz: Teman, Omar, Zepho,\\f + \\fr 1:36 \\ft Many Hebrew manuscripts, some LXX manuscripts, and Syriac (see also Genesis 36:11); most Hebrew manuscripts Zephi\\f* Gatam, and Kenaz; and by Timna, Amalek."
+      "text": "The sons of Eliphaz: Teman, Omar, Zepho, Gatam, and Kenaz; and by Timna, Amalek."
     },
     {
       "verse": 37,
@@ -156,23 +156,23 @@
     },
     {
       "verse": 39,
-      "text": "The sons of Lotan: Hori and Homam.\\f + \\fr 1:39 \\ft Homam is a variant of Hemam; see Genesis 36:22.\\f* Timna was Lotan’s sister."
+      "text": "The sons of Lotan: Hori and Homam. Timna was Lotan’s sister."
     },
     {
       "verse": 40,
-      "text": "The sons of Shobal: Alvan,\\f + \\fr 1:40 \\ft LXX (see also Genesis 36:23); Hebrew Alian \\f* Manahath, Ebal, Shepho,\\f + \\fr 1:40 \\ft LXX (see also Genesis 36:23); Hebrew Shephi\\f* and Onam. The sons of Zibeon: Aiah and Anah."
+      "text": "The sons of Shobal: Alvan, Manahath, Ebal, Shepho, and Onam. The sons of Zibeon: Aiah and Anah."
     },
     {
       "verse": 41,
-      "text": "The son \\f + \\fr 1:41 \\ft Hebrew sons \\f* of Anah: Dishon. The sons of Dishon: Hemdan,\\f + \\fr 1:41 \\ft LXX (see also Genesis 36:26); Hebrew Hamran\\f* Eshban, Ithran, and Cheran."
+      "text": "The son of Anah: Dishon. The sons of Dishon: Hemdan, Eshban, Ithran, and Cheran."
     },
     {
       "verse": 42,
-      "text": "The sons of Ezer: Bilhan, Zaavan, and Akan.\\f + \\fr 1:42 \\ft LXX (see also Genesis 36:27); Hebrew Jaakan\\f* The sons of Dishan: Uz and Aran. The Kings of Edom (Genesis 36:31–43)"
+      "text": "The sons of Ezer: Bilhan, Zaavan, and Akan. The sons of Dishan: Uz and Aran. The Kings of Edom (Genesis 36:31–43)"
     },
     {
       "verse": 43,
-      "text": "\\w These|strong=\"H6440\"\\w* \\w are|strong=\"H1121\"\\w* \\w the|strong=\"H6440\"\\w* \\w kings|strong=\"H4428\"\\w* \\w who|strong=\"H1121\"\\w* \\w reigned|strong=\"H4427\"\\w* \\w in|strong=\"H3478\"\\w* \\w the|strong=\"H6440\"\\w* \\w land|strong=\"H6440\"\\w* \\w of|strong=\"H1121\"\\w* Edom \\w before|strong=\"H6440\"\\w* \\w any|strong=\"H6440\"\\w* \\w king|strong=\"H4428\"\\w* \\w reigned|strong=\"H4427\"\\w* \\w over|strong=\"H4427\"\\w* \\w the|strong=\"H6440\"\\w* \\w Israelites|strong=\"H3478\"\\w*:\\f + \\fr 1:43 \\ft Or before an Israelite king ruled over them\\f* Bela son of Beor. His city was named Dinhabah."
+      "text": "These are the kings who reigned in the land of Edom before any king reigned over the Israelites: Bela son of Beor. His city was named Dinhabah."
     },
     {
       "verse": 44,
@@ -192,7 +192,7 @@
     },
     {
       "verse": 48,
-      "text": "When Samlah died, Shaul from Rehoboth on the Euphrates \\f + \\fr 1:48 \\ft Hebrew the River\\f* reigned in his place."
+      "text": "When Samlah died, Shaul from Rehoboth on the Euphrates reigned in his place."
     },
     {
       "verse": 49,
@@ -200,23 +200,23 @@
     },
     {
       "verse": 50,
-      "text": "When Baal-hanan died, Hadad reigned in his place. His city was named Pau,\\f + \\fr 1:50 \\ft Many MT manuscripts, some LXX manuscripts, Vulgate, and Syriac (see also Genesis 36:39); most MT manuscripts Pai\\f* and his wife’s name was Mehetabel daughter of Matred, the daughter of Me-zahab."
+      "text": "When Baal-hanan died, Hadad reigned in his place. His city was named Pau, and his wife’s name was Mehetabel daughter of Matred, the daughter of Me-zahab."
     },
     {
       "verse": 51,
-      "text": "Then Hadad died. \\w Now|strong=\"H1961\"\\w* \\w the|strong=\"H1961\"\\w* chiefs \\w of|strong=\"H4191\"\\w* Edom \\w were|strong=\"H1961\"\\w* \\w Timna|strong=\"H8555\"\\w*, \\w Alvah|strong=\"H5933\"\\w*, \\w Jetheth|strong=\"H3509\"\\w*,"
+      "text": "Then Hadad died. Now the chiefs of Edom were Timna, Alvah, Jetheth,"
     },
     {
       "verse": 52,
-      "text": "Oholibamah, Elah, \\w Pinon|strong=\"H6373\"\\w*,"
+      "text": "Oholibamah, Elah, Pinon,"
     },
     {
       "verse": 53,
-      "text": "\\w Kenaz|strong=\"H7073\"\\w*, \\w Teman|strong=\"H8487\"\\w*, \\w Mibzar|strong=\"H4014\"\\w*,"
+      "text": "Kenaz, Teman, Mibzar,"
     },
     {
       "verse": 54,
-      "text": "\\w Magdiel|strong=\"H4025\"\\w*, and \\w Iram|strong=\"H5902\"\\w*. These were the chiefs of Edom."
+      "text": "Magdiel, and Iram. These were the chiefs of Edom."
     }
   ]
 }

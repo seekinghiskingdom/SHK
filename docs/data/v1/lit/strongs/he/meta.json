@@ -5,7 +5,10 @@
   "source": {
     "file": "tools\\lit-import\\data\\raw\\strongs\\he\\HebrewStrong.xml",
     "format": "xml-strongs-hebrew",
-    "license_note": "Underlying Strong's text public domain; XML per Open Scriptures Hebrew Lexicon (CC BY 4.0)."
+    "license_note": "Underlying Strong's text public domain; XML per Open Scriptures Hebrew Lexicon (CC BY 4.0).",
+    "provider": "Open Scriptures",
+    "url": "https://github.com/openscriptures/strongs",
+    "raw_dir": "tools/lit-import/data/raw/strongs/he"
   },
   "counts": {
     "entries": 8674

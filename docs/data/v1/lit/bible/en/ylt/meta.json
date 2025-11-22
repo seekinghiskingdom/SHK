@@ -2,8 +2,11 @@
   "code": "ylt",
   "language": "en",
   "source": {
-    "raw_dir": "C:\\Users\\hrbncv\\SHK\\SHK\\tools\\lit-import\\data\\raw\\bible\\en\\ylt",
-    "usfm_zip": "engylt_usfm.zip"
+    "raw_dir": "tools/lit-import/data/raw/bible/en/ylt",
+    "usfm_zip": "engylt_usfm.zip",
+    "provider": "eBible.org",
+    "url": "https://ebible.org",
+    "license": "Public domain / permissive license; see eBible.org"
   },
   "counts": {
     "books": 66,

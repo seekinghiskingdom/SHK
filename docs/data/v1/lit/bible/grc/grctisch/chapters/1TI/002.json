@@ -4,63 +4,63 @@
   "verses": [
     {
       "verse": 1,
-      "text": "\\w Παρακαλῶ|lemma=\"παρακαλέω\" strong=\"G3870\" x-morph=\"V-PAI-1S\"\\w* \\w οὖν|lemma=\"οὖν\" strong=\"G3767\" x-morph=\"CONJ\"\\w* \\w πρῶτον|lemma=\"πρῶτον\" strong=\"G4412\" x-morph=\"ADV-S\"\\w* \\w πάντων|lemma=\"πᾶς\" strong=\"G3956\" x-morph=\"A-GPN\"\\w* \\w ποιεῖσθαι|lemma=\"ποιέω\" strong=\"G4160\" x-morph=\"V-PPN\"\\w* \\w δεήσεις,|lemma=\"δέησις\" strong=\"G1162\" x-morph=\"N-APF\"\\w* \\w προσευχάς,|lemma=\"προσευχή\" strong=\"G4335\" x-morph=\"N-APF\"\\w* \\w ἐντεύξεις,|lemma=\"ἔντευξις\" strong=\"G1783\" x-morph=\"N-APF\"\\w* \\w εὐχαριστίας,|lemma=\"εὐχαριστία\" strong=\"G2169\" x-morph=\"N-APF\"\\w* \\w ὑπὲρ|lemma=\"ὑπέρ\" strong=\"G5228\" x-morph=\"PREP\"\\w* \\w πάντων|lemma=\"πᾶς\" strong=\"G3956\" x-morph=\"A-GPM\"\\w* \\w ἀνθρώπων,|lemma=\"ἄνθρωπος\" strong=\"G0444\" x-morph=\"N-GPM\"\\w*"
+      "text": "Παρακαλῶ οὖν πρῶτον πάντων ποιεῖσθαι δεήσεις, προσευχάς, ἐντεύξεις, εὐχαριστίας, ὑπὲρ πάντων ἀνθρώπων,"
     },
     {
       "verse": 2,
-      "text": "\\w ὑπὲρ|lemma=\"ὑπέρ\" strong=\"G5228\" x-morph=\"PREP\"\\w* \\w βασιλέων|lemma=\"βασιλεύς\" strong=\"G0935\" x-morph=\"N-GPM\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w πάντων|lemma=\"πᾶς\" strong=\"G3956\" x-morph=\"A-GPM\"\\w* \\w τῶν|lemma=\"ὁ\" strong=\"G3588\" x-morph=\"T-GPM\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w ὑπεροχῇ|lemma=\"ὑπεροχή\" strong=\"G5247\" x-morph=\"N-DSF\"\\w* \\w ὄντων,|lemma=\"εἰμί\" strong=\"G1510\" x-morph=\"V-PAP-GPM\"\\w* \\w ἵνα|lemma=\"ἵνα\" strong=\"G2443\" x-morph=\"CONJ\"\\w* \\w ἤρεμον|lemma=\"ἤρεμος\" strong=\"G2263\" x-morph=\"A-ASM\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ἡσύχιον|lemma=\"ἡσύχιος\" strong=\"G2272\" x-morph=\"A-ASM\"\\w* \\w βίον|lemma=\"βίος\" strong=\"G0979\" x-morph=\"N-ASM\"\\w* \\w διάγωμεν|lemma=\"διάγω\" strong=\"G1236\" x-morph=\"V-PAS-1P\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w πάσῃ|lemma=\"πᾶς\" strong=\"G3956\" x-morph=\"A-DSF\"\\w* \\w εὐσεβείᾳ|lemma=\"εὐσέβεια\" strong=\"G2150\" x-morph=\"N-DSF\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w σεμνότητι.|lemma=\"σεμνότης\" strong=\"G4587\" x-morph=\"N-DSF\"\\w*"
+      "text": "ὑπὲρ βασιλέων καὶ πάντων τῶν ἐν ὑπεροχῇ ὄντων, ἵνα ἤρεμον καὶ ἡσύχιον βίον διάγωμεν ἐν πάσῃ εὐσεβείᾳ καὶ σεμνότητι."
     },
     {
       "verse": 3,
-      "text": "\\w τοῦτο|lemma=\"οὗτος\" strong=\"G3778\" x-morph=\"D-NSN\"\\w* \\w καλὸν|lemma=\"καλός\" strong=\"G2570\" x-morph=\"A-NSN\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ἀπόδεκτον|lemma=\"ἀπόδεκτος\" strong=\"G0587\" x-morph=\"A-NSN\"\\w* \\w ἐνώπιον|lemma=\"ἐνώπιον\" strong=\"G1799\" x-morph=\"ADV\"\\w* \\w τοῦ|lemma=\"ὁ\" strong=\"G3588\" x-morph=\"T-GSM\"\\w* \\w σωτῆρος|lemma=\"σωτήρ\" strong=\"G4990\" x-morph=\"N-GSM\"\\w* \\w ἡμῶν|lemma=\"ἡμεῖς\" strong=\"G2249\" x-morph=\"P-1GP\"\\w* \\w θεοῦ,|lemma=\"θεός\" strong=\"G2316\" x-morph=\"N-GSM\"\\w*"
+      "text": "τοῦτο καλὸν καὶ ἀπόδεκτον ἐνώπιον τοῦ σωτῆρος ἡμῶν θεοῦ,"
     },
     {
       "verse": 4,
-      "text": "\\w ὃς|lemma=\"ὅς\" strong=\"G3739\" x-morph=\"R-NSM\"\\w* \\w πάντας|lemma=\"πᾶς\" strong=\"G3956\" x-morph=\"A-APM\"\\w* \\w ἀνθρώπους|lemma=\"ἄνθρωπος\" strong=\"G0444\" x-morph=\"N-APM\"\\w* \\w θέλει|lemma=\"θέλω\" strong=\"G2309\" x-morph=\"V-PAI-3S\"\\w* \\w σωθῆναι|lemma=\"σώζω\" strong=\"G4982\" x-morph=\"V-APN\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w εἰς|lemma=\"εἰς\" strong=\"G1519\" x-morph=\"PREP\"\\w* \\w ἐπίγνωσιν|lemma=\"ἐπίγνωσις\" strong=\"G1922\" x-morph=\"N-ASF\"\\w* \\w ἀληθείας|lemma=\"ἀλήθεια\" strong=\"G0225\" x-morph=\"N-GSF\"\\w* \\w ἐλθεῖν.|lemma=\"ἔρχομαι\" strong=\"G2064\" x-morph=\"V-2AAN\"\\w*"
+      "text": "ὃς πάντας ἀνθρώπους θέλει σωθῆναι καὶ εἰς ἐπίγνωσιν ἀληθείας ἐλθεῖν."
     },
     {
       "verse": 5,
-      "text": "\\w εἷς|lemma=\"εἷς\" strong=\"G1520\" x-morph=\"A-NSM\"\\w* \\w γὰρ|lemma=\"γάρ\" strong=\"G1063\" x-morph=\"CONJ\"\\w* \\w θεός,|lemma=\"θεός\" strong=\"G2316\" x-morph=\"N-NSM\"\\w* \\w εἷς|lemma=\"εἷς\" strong=\"G1520\" x-morph=\"A-NSM\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w μεσίτης|lemma=\"μεσίτης\" strong=\"G3316\" x-morph=\"N-NSM\"\\w* \\w θεοῦ|lemma=\"θεός\" strong=\"G2316\" x-morph=\"N-GSM\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ἀνθρώπων,|lemma=\"ἄνθρωπος\" strong=\"G0444\" x-morph=\"N-GPM\"\\w* \\w ἄνθρωπος|lemma=\"ἄνθρωπος\" strong=\"G0444\" x-morph=\"N-NSM\"\\w* \\w Χριστὸς|lemma=\"Χριστός\" strong=\"G5547\" x-morph=\"N-NSM\"\\w* \\w Ἰησοῦς,|lemma=\"Ἰησοῦς\" strong=\"G2424\" x-morph=\"N-NSM\"\\w*"
+      "text": "εἷς γὰρ θεός, εἷς καὶ μεσίτης θεοῦ καὶ ἀνθρώπων, ἄνθρωπος Χριστὸς Ἰησοῦς,"
     },
     {
       "verse": 6,
-      "text": "\\w ὁ|lemma=\"ὁ\" strong=\"G3588\" x-morph=\"T-NSM\"\\w* \\w δοὺς|lemma=\"δίδωμι\" strong=\"G1325\" x-morph=\"V-2AAP-NSM\"\\w* \\w ἑαυτὸν|lemma=\"ἑαυτοῦ\" strong=\"G1438\" x-morph=\"F-3ASM\"\\w* \\w ἀντίλυτρον|lemma=\"ἀντίλυτρον\" strong=\"G0487\" x-morph=\"N-ASN\"\\w* \\w ὑπὲρ|lemma=\"ὑπέρ\" strong=\"G5228\" x-morph=\"PREP\"\\w* \\w πάντων,|lemma=\"πᾶς\" strong=\"G3956\" x-morph=\"A-GPM\"\\w* \\w τὸ|lemma=\"ὁ\" strong=\"G3588\" x-morph=\"T-ASN\"\\w* \\w μαρτύριον|lemma=\"μαρτύριον\" strong=\"G3142\" x-morph=\"N-ASN\"\\w* \\w καιροῖς|lemma=\"καιρός\" strong=\"G2540\" x-morph=\"N-DPM\"\\w* \\w ἰδίοις·|lemma=\"ἴδιος\" strong=\"G2398\" x-morph=\"A-DPM\"\\w*"
+      "text": "ὁ δοὺς ἑαυτὸν ἀντίλυτρον ὑπὲρ πάντων, τὸ μαρτύριον καιροῖς ἰδίοις·"
     },
     {
       "verse": 7,
-      "text": "\\w εἰς|lemma=\"εἰς\" strong=\"G1519\" x-morph=\"PREP\"\\w* \\w ὃ|lemma=\"ὅς\" strong=\"G3739\" x-morph=\"R-ASN\"\\w* \\w ἐτέθην|lemma=\"τίθημι\" strong=\"G5087\" x-morph=\"V-API-1S\"\\w* \\w ἐγὼ|lemma=\"ἐγώ\" strong=\"G1473\" x-morph=\"P-1NS\"\\w* \\w κῆρυξ|lemma=\"κῆρυξ\" strong=\"G2783\" x-morph=\"N-NSM\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ἀπόστολος|lemma=\"ἀπόστολος\" strong=\"G0652\" x-morph=\"N-NSM\"\\w* \\w ἀλήθειαν|lemma=\"ἀλήθεια\" strong=\"G0225\" x-morph=\"N-ASF\"\\w* \\w λέγω,|lemma=\"λέγω\" strong=\"G3004\" x-morph=\"V-PAI-1S\"\\w* \\w οὐ|lemma=\"οὐ\" strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w ψεύδομαι|lemma=\"ψεύδομαι\" strong=\"G5574\" x-morph=\"V-PNI-1S\"\\w* \\w διδάσκαλος|lemma=\"διδάσκαλος\" strong=\"G1320\" x-morph=\"N-NSM\"\\w* \\w ἐθνῶν|lemma=\"ἔθνος\" strong=\"G1484\" x-morph=\"N-GPN\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w πίστει|lemma=\"πίστις\" strong=\"G4102\" x-morph=\"N-DSF\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ἀληθείᾳ.|lemma=\"ἀλήθεια\" strong=\"G0225\" x-morph=\"N-DSF\"\\w*"
+      "text": "εἰς ὃ ἐτέθην ἐγὼ κῆρυξ καὶ ἀπόστολος ἀλήθειαν λέγω, οὐ ψεύδομαι διδάσκαλος ἐθνῶν ἐν πίστει καὶ ἀληθείᾳ."
     },
     {
       "verse": 8,
-      "text": "\\w Βούλομαι|lemma=\"βούλομαι\" strong=\"G1014\" x-morph=\"V-PNI-1S\"\\w* \\w οὖν|lemma=\"οὖν\" strong=\"G3767\" x-morph=\"CONJ\"\\w* \\w προσεύχεσθαι|lemma=\"προσεύχομαι\" strong=\"G4336\" x-morph=\"V-PNN\"\\w* \\w τοὺς|lemma=\"ὁ\" strong=\"G3588\" x-morph=\"T-APM\"\\w* \\w ἄνδρας|lemma=\"ἀνήρ\" strong=\"G0435\" x-morph=\"N-APM\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w παντὶ|lemma=\"πᾶς\" strong=\"G3956\" x-morph=\"A-DSM\"\\w* \\w τόπῳ,|lemma=\"τόπος\" strong=\"G5117\" x-morph=\"N-DSM\"\\w* \\w ἐπαίροντας|lemma=\"ἐπαίρω\" strong=\"G1869\" x-morph=\"V-PAP-APM\"\\w* \\w ὁσίους|lemma=\"ὅσιος\" strong=\"G3741\" x-morph=\"A-APF\"\\w* \\w χεῖρας|lemma=\"χείρ\" strong=\"G5495\" x-morph=\"N-APF\"\\w* \\w χωρὶς|lemma=\"χωρίς\" strong=\"G5565\" x-morph=\"ADV\"\\w* \\w ὀργῆς|lemma=\"ὀργή\" strong=\"G3709\" x-morph=\"N-GSF\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w διαλογισμοῦ·|lemma=\"διαλογισμός\" strong=\"G1261\" x-morph=\"N-GSM\"\\w*"
+      "text": "Βούλομαι οὖν προσεύχεσθαι τοὺς ἄνδρας ἐν παντὶ τόπῳ, ἐπαίροντας ὁσίους χεῖρας χωρὶς ὀργῆς καὶ διαλογισμοῦ·"
     },
     {
       "verse": 9,
-      "text": "\\w ὡσαύτως|lemma=\"ὡσαύτως\" strong=\"G5615\" x-morph=\"ADV\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w γυναῖκας|lemma=\"γυνή\" strong=\"G1135\" x-morph=\"N-APF\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w καταστολῇ|lemma=\"καταστολή\" strong=\"G2689\" x-morph=\"N-DSF\"\\w* \\w κοσμίῳ|lemma=\"κόσμιος\" strong=\"G2887\" x-morph=\"A-DSF\"\\w* \\w μετὰ|lemma=\"μετά\" strong=\"G3326\" x-morph=\"PREP\"\\w* \\w αἰδοῦς|lemma=\"αἰδώς\" strong=\"G0127\" x-morph=\"N-GSF\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w σωφροσύνης|lemma=\"σωφροσύνη\" strong=\"G4997\" x-morph=\"N-GSF\"\\w* \\w κοσμεῖν|lemma=\"κοσμέω\" strong=\"G2885\" x-morph=\"V-PAN\"\\w* \\w ἑαυτάς,|lemma=\"ἑαυτοῦ\" strong=\"G1438\" x-morph=\"F-3APF\"\\w* \\w μὴ|lemma=\"μή\" strong=\"G3361\" x-morph=\"PRT-N\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w πλέγμασιν|lemma=\"πλέγμα\" strong=\"G4117\" x-morph=\"N-DPN\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w χρυσῷ|lemma=\"χρυσός\" strong=\"G5557\" x-morph=\"N-DSM\"\\w* \\w ἢ|lemma=\"ἤ\" strong=\"G2228\" x-morph=\"PRT\"\\w* \\w μαργαρίταις|lemma=\"μαργαρίτης\" strong=\"G3135\" x-morph=\"N-DPM\"\\w* \\w ἢ|lemma=\"ἤ\" strong=\"G2228\" x-morph=\"PRT\"\\w* \\w ἱματισμῷ|lemma=\"ἱματισμός\" strong=\"G2441\" x-morph=\"N-DSM\"\\w* \\w πολυτελεῖ,|lemma=\"πολυτελής\" strong=\"G4185\" x-morph=\"A-DSM\"\\w*"
+      "text": "ὡσαύτως καὶ γυναῖκας ἐν καταστολῇ κοσμίῳ μετὰ αἰδοῦς καὶ σωφροσύνης κοσμεῖν ἑαυτάς, μὴ ἐν πλέγμασιν καὶ χρυσῷ ἢ μαργαρίταις ἢ ἱματισμῷ πολυτελεῖ,"
     },
     {
       "verse": 10,
-      "text": "\\w ἀλλ’|lemma=\"ἀλλά\" strong=\"G0235\" x-morph=\"CONJ\"\\w* \\w ὃ|lemma=\"ὅς\" strong=\"G3739\" x-morph=\"R-NSN\"\\w* \\w πρέπει|lemma=\"πρέπω\" strong=\"G4241\" x-morph=\"V-PAI-3S\"\\w* \\w γυναιξὶν|lemma=\"γυνή\" strong=\"G1135\" x-morph=\"N-DPF\"\\w* \\w ἐπαγγελλομέναις|lemma=\"ἐπαγγέλλω\" strong=\"G1861\" x-morph=\"V-PNP-DPF\"\\w* \\w θεοσέβειαν,|lemma=\"θεοσέβεια\" strong=\"G2317\" x-morph=\"N-ASF\"\\w* \\w δι’|lemma=\"διά\" strong=\"G1223\" x-morph=\"PREP\"\\w* \\w ἔργων|lemma=\"ἔργον\" strong=\"G2041\" x-morph=\"N-GPN\"\\w* \\w ἀγαθῶν.|lemma=\"ἀγαθός\" strong=\"G0018\" x-morph=\"A-GPN\"\\w*"
+      "text": "ἀλλ’ ὃ πρέπει γυναιξὶν ἐπαγγελλομέναις θεοσέβειαν, δι’ ἔργων ἀγαθῶν."
     },
     {
       "verse": 11,
-      "text": "\\w Γυνὴ|lemma=\"γυνή\" strong=\"G1135\" x-morph=\"N-NSF\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w ἡσυχίᾳ|lemma=\"ἡσυχία\" strong=\"G2271\" x-morph=\"N-DSF\"\\w* \\w μανθανέτω|lemma=\"μανθάνω\" strong=\"G3129\" x-morph=\"V-PAM-3S\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w πάσῃ|lemma=\"πᾶς\" strong=\"G3956\" x-morph=\"A-DSF\"\\w* \\w ὑποταγῇ·|lemma=\"ὑποταγή\" strong=\"G5292\" x-morph=\"N-DSF\"\\w*"
+      "text": "Γυνὴ ἐν ἡσυχίᾳ μανθανέτω ἐν πάσῃ ὑποταγῇ·"
     },
     {
       "verse": 12,
-      "text": "\\w διδάσκειν|lemma=\"διδάσκω\" strong=\"G1321\" x-morph=\"V-PAN\"\\w* \\w δὲ|lemma=\"δέ\" strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w γυναικὶ|lemma=\"γυνή\" strong=\"G1135\" x-morph=\"N-DSF\"\\w* \\w οὐκ|lemma=\"οὐ\" strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w ἐπιτρέπω,|lemma=\"ἐπιτρέπω\" strong=\"G2010\" x-morph=\"V-PAI-1S\"\\w* \\w οὐδὲ|lemma=\"οὐδέ\" strong=\"G3761\" x-morph=\"CONJ-N\"\\w* \\w αὐθεντεῖν|lemma=\"αὐθεντέω\" strong=\"G0831\" x-morph=\"V-PAN\"\\w* \\w ἀνδρός,|lemma=\"ἀνήρ\" strong=\"G0435\" x-morph=\"N-GSM\"\\w* \\w ἀλλ’|lemma=\"ἀλλά\" strong=\"G0235\" x-morph=\"CONJ\"\\w* \\w εἶναι|lemma=\"εἰμί\" strong=\"G1510\" x-morph=\"V-PAN\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w ἡσυχίᾳ.|lemma=\"ἡσυχία\" strong=\"G2271\" x-morph=\"N-DSF\"\\w*"
+      "text": "διδάσκειν δὲ γυναικὶ οὐκ ἐπιτρέπω, οὐδὲ αὐθεντεῖν ἀνδρός, ἀλλ’ εἶναι ἐν ἡσυχίᾳ."
     },
     {
       "verse": 13,
-      "text": "\\w Ἀδὰμ|lemma=\"Ἀδάμ\" strong=\"G0076\" x-morph=\"N-PRI\"\\w* \\w γὰρ|lemma=\"γάρ\" strong=\"G1063\" x-morph=\"CONJ\"\\w* \\w πρῶτος|lemma=\"πρῶτος\" strong=\"G4413\" x-morph=\"A-NSM-S\"\\w* \\w ἐπλάσθη,|lemma=\"πλάσσω\" strong=\"G4111\" x-morph=\"V-API-3S\"\\w* \\w εἶτα|lemma=\"εἶτα\" strong=\"G1534\" x-morph=\"ADV\"\\w* \\w Εὔα·|lemma=\"Εὖα\" strong=\"G2096\" x-morph=\"N-NSF\"\\w*"
+      "text": "Ἀδὰμ γὰρ πρῶτος ἐπλάσθη, εἶτα Εὔα·"
     },
     {
       "verse": 14,
-      "text": "\\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w Ἀδὰμ|lemma=\"Ἀδάμ\" strong=\"G0076\" x-morph=\"N-PRI\"\\w* \\w οὐκ|lemma=\"οὐ\" strong=\"G3756\" x-morph=\"PRT-N\"\\w* \\w ἠπατήθη,|lemma=\"ἀπατάω\" strong=\"G0538\" x-morph=\"V-API-3S\"\\w* \\w ἡ|lemma=\"ὁ\" strong=\"G3588\" x-morph=\"T-NSF\"\\w* \\w δὲ|lemma=\"δέ\" strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w γυνὴ|lemma=\"γυνή\" strong=\"G1135\" x-morph=\"N-NSF\"\\w* \\w ἐξαπατηθεῖσα|lemma=\"ἐξαπατάω\" strong=\"G1818\" x-morph=\"V-APP-NSF\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w παραβάσει|lemma=\"παράβασις\" strong=\"G3847\" x-morph=\"N-DSF\"\\w* \\w γέγονεν,|lemma=\"γίνομαι\" strong=\"G1096\" x-morph=\"V-2RAI-3S\"\\w*"
+      "text": "καὶ Ἀδὰμ οὐκ ἠπατήθη, ἡ δὲ γυνὴ ἐξαπατηθεῖσα ἐν παραβάσει γέγονεν,"
     },
     {
       "verse": 15,
-      "text": "\\w σωθήσεται|lemma=\"σώζω\" strong=\"G4982\" x-morph=\"V-FPI-3S\"\\w* \\w δὲ|lemma=\"δέ\" strong=\"G1161\" x-morph=\"CONJ\"\\w* \\w διὰ|lemma=\"διά\" strong=\"G1223\" x-morph=\"PREP\"\\w* \\w τῆς|lemma=\"ὁ\" strong=\"G3588\" x-morph=\"T-GSF\"\\w* \\w τεκνογονίας,|lemma=\"τεκνογονία\" strong=\"G5042\" x-morph=\"N-GSF\"\\w* \\w ἐὰν|lemma=\"ἐάν\" strong=\"G1437\" x-morph=\"COND\"\\w* \\w μείνωσιν|lemma=\"μένω\" strong=\"G3306\" x-morph=\"V-AAS-3P\"\\w* \\w ἐν|lemma=\"ἐν\" strong=\"G1722\" x-morph=\"PREP\"\\w* \\w πίστει|lemma=\"πίστις\" strong=\"G4102\" x-morph=\"N-DSF\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ἀγάπῃ|lemma=\"ἀγάπη\" strong=\"G0026\" x-morph=\"N-DSF\"\\w* \\w καὶ|lemma=\"καί\" strong=\"G2532\" x-morph=\"CONJ\"\\w* \\w ἁγιασμῷ|lemma=\"ἁγιασμός\" strong=\"G0038\" x-morph=\"N-DSM\"\\w* \\w μετὰ|lemma=\"μετά\" strong=\"G3326\" x-morph=\"PREP\"\\w* \\w σωφροσύνης.|lemma=\"σωφροσύνη\" strong=\"G4997\" x-morph=\"N-GSF\"\\w*"
+      "text": "σωθήσεται δὲ διὰ τῆς τεκνογονίας, ἐὰν μείνωσιν ἐν πίστει καὶ ἀγάπῃ καὶ ἁγιασμῷ μετὰ σωφροσύνης."
     }
   ]
 }

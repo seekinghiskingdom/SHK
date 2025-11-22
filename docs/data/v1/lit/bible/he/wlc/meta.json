@@ -2,8 +2,11 @@
   "code": "wlc",
   "language": "he",
   "source": {
-    "raw_dir": "C:\\Users\\hrbncv\\SHK\\SHK\\tools\\lit-import\\data\\raw\\bible\\he\\wlc",
-    "usfm_zip": "hebwlc_usfm.zip"
+    "raw_dir": "tools/lit-import/data/raw/bible/he/wlc",
+    "usfm_zip": "hebwlc_usfm.zip",
+    "provider": "eBible.org",
+    "url": "https://ebible.org",
+    "license": "Public domain / permissive license; see eBible.org"
   },
   "counts": {
     "books": 39,

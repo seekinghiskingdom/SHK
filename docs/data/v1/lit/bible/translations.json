@@ -1,34 +1,370 @@
 [
   {
-    "id": "kjv",
-    "name": "King James Version",
-    "path": "kjv",
-    "books": 66,
-    "verses": 31102,
-    "base_url": "/data/v1/lit/bible/en/kjv"
+    "code": "asv",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/asv",
+    "books": 68,
+    "chapters": 1189,
+    "verses": 31102
   },
   {
-    "id": "kjv_strongs",
-    "name": "KJV + Strong's (tokenized)",
-    "path": "kjv_strongs",
-    "books": 66,
-    "verses": 31102,
-    "base_url": "/data/v1/lit/bible/en/kjv_strongs"
+    "code": "asvbt",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/asvbt",
+    "books": 85,
+    "chapters": 1405,
+    "verses": 37756
   },
   {
-    "id": "asv",
-    "name": "American Standard Version",
-    "path": "asv",
+    "code": "bbe",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/bbe",
     "books": 66,
-    "verses": 31102,
-    "base_url": "/data/v1/lit/bible/en/asv"
+    "chapters": 1189,
+    "verses": 31102
   },
   {
-    "id": "web",
-    "name": "World English Bible",
-    "path": "web",
+    "code": "brenton",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/brenton",
+    "books": 60,
+    "chapters": 1118,
+    "verses": 28690
+  },
+  {
+    "code": "brenton_upd",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/brenton_upd",
+    "books": 53,
+    "chapters": 1104,
+    "verses": 28307
+  },
+  {
+    "code": "bsb",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/bsb",
     "books": 66,
-    "verses": 32995,
-    "base_url": "/data/v1/lit/bible/en/web"
+    "chapters": 1189,
+    "verses": 31086
+  },
+  {
+    "code": "drv",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/drv",
+    "books": 73,
+    "chapters": 1334,
+    "verses": 35811
+  },
+  {
+    "code": "gnv",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/gnv",
+    "books": 66,
+    "chapters": 1189,
+    "verses": 31090
+  },
+  {
+    "code": "kjv",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/kjv",
+    "books": 66,
+    "chapters": 1189,
+    "verses": 31102
+  },
+  {
+    "code": "kjv_strongs",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/kjv_strongs",
+    "books": 81,
+    "chapters": 1362,
+    "verses": 36822
+  },
+  {
+    "code": "kjvcpb",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/kjvcpb",
+    "books": 83,
+    "chapters": 1361,
+    "verses": 36821
+  },
+  {
+    "code": "kjvd",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/kjvd",
+    "books": 81,
+    "chapters": 1362,
+    "verses": 36822
+  },
+  {
+    "code": "lee",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/lee",
+    "books": 39,
+    "chapters": 929,
+    "verses": 23145
+  },
+  {
+    "code": "lxx2012",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/lxx2012",
+    "books": 56,
+    "chapters": 1105,
+    "verses": 28276
+  },
+  {
+    "code": "msb",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/msb",
+    "books": 66,
+    "chapters": 1189,
+    "verses": 31102
+  },
+  {
+    "code": "noy",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/noy",
+    "books": 49,
+    "chapters": 753,
+    "verses": 18231
+  },
+  {
+    "code": "oeb_cw",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/oeb_cw",
+    "books": 43,
+    "chapters": 491,
+    "verses": 11722
+  },
+  {
+    "code": "oeb_us",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/oeb_us",
+    "books": 43,
+    "chapters": 491,
+    "verses": 11722
+  },
+  {
+    "code": "ojps",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/ojps",
+    "books": 39,
+    "chapters": 929,
+    "verses": 23145
+  },
+  {
+    "code": "rv",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/rv",
+    "books": 80,
+    "chapters": 1362,
+    "verses": 36873
+  },
+  {
+    "code": "toe",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/toe",
+    "books": 5,
+    "chapters": 187,
+    "verses": 5848
+  },
+  {
+    "code": "tyndale",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/tyndale",
+    "books": 27,
+    "chapters": 260,
+    "verses": 7957
+  },
+  {
+    "code": "web",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/web",
+    "books": 83,
+    "chapters": 1402,
+    "verses": 38052
+  },
+  {
+    "code": "webbe",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/webbe",
+    "books": 68,
+    "chapters": 1189,
+    "verses": 31103
+  },
+  {
+    "code": "webbe_dc",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/webbe_dc",
+    "books": 83,
+    "chapters": 1402,
+    "verses": 38052
+  },
+  {
+    "code": "webc",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/webc",
+    "books": 83,
+    "chapters": 1402,
+    "verses": 38052
+  },
+  {
+    "code": "webcath",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/webcath",
+    "books": 73,
+    "chapters": 1328,
+    "verses": 35403
+  },
+  {
+    "code": "webp",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/webp",
+    "books": 68,
+    "chapters": 1189,
+    "verses": 31103
+  },
+  {
+    "code": "webster",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/webster",
+    "books": 66,
+    "chapters": 1189,
+    "verses": 31102
+  },
+  {
+    "code": "wmb",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/wmb",
+    "books": 66,
+    "chapters": 1189,
+    "verses": 31103
+  },
+  {
+    "code": "wmbbe",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/wmbbe",
+    "books": 66,
+    "chapters": 1189,
+    "verses": 31103
+  },
+  {
+    "code": "wyc_portions",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/wyc_portions",
+    "books": 9,
+    "chapters": 276,
+    "verses": 9621
+  },
+  {
+    "code": "ylt",
+    "language": "en",
+    "path": "/data/v1/lit/bible/en/ylt",
+    "books": 66,
+    "chapters": 1189,
+    "verses": 31102
+  },
+  {
+    "code": "grcbyz",
+    "language": "grc",
+    "path": "/data/v1/lit/bible/grc/grcbyz",
+    "books": 32,
+    "chapters": 260,
+    "verses": 7958
+  },
+  {
+    "code": "grcf35",
+    "language": "grc",
+    "path": "/data/v1/lit/bible/grc/grcf35",
+    "books": 31,
+    "chapters": 260,
+    "verses": 7954
+  },
+  {
+    "code": "grclxx",
+    "language": "grc",
+    "path": "/data/v1/lit/bible/grc/grclxx",
+    "books": 52,
+    "chapters": 1104,
+    "verses": 28280
+  },
+  {
+    "code": "grcmt",
+    "language": "grc",
+    "path": "/data/v1/lit/bible/grc/grcmt",
+    "books": 28,
+    "chapters": 260,
+    "verses": 7957
+  },
+  {
+    "code": "grcsbl",
+    "language": "grc",
+    "path": "/data/v1/lit/bible/grc/grcsbl",
+    "books": 32,
+    "chapters": 260,
+    "verses": 7939
+  },
+  {
+    "code": "grcsr",
+    "language": "grc",
+    "path": "/data/v1/lit/bible/grc/grcsr",
+    "books": 30,
+    "chapters": 260,
+    "verses": 7961
+  },
+  {
+    "code": "grctc",
+    "language": "grc",
+    "path": "/data/v1/lit/bible/grc/grctc",
+    "books": 36,
+    "chapters": 260,
+    "verses": 7953
+  },
+  {
+    "code": "grctisch",
+    "language": "grc",
+    "path": "/data/v1/lit/bible/grc/grctisch",
+    "books": 28,
+    "chapters": 260,
+    "verses": 7939
+  },
+  {
+    "code": "grctr",
+    "language": "grc",
+    "path": "/data/v1/lit/bible/grc/grctr",
+    "books": 28,
+    "chapters": 260,
+    "verses": 7957
+  },
+  {
+    "code": "hebmas",
+    "language": "he",
+    "path": "/data/v1/lit/bible/he/hebmas",
+    "books": 39,
+    "chapters": 929,
+    "verses": 23213
+  },
+  {
+    "code": "hebmodern",
+    "language": "he",
+    "path": "/data/v1/lit/bible/he/hebmodern",
+    "books": 66,
+    "chapters": 1189,
+    "verses": 31102
+  },
+  {
+    "code": "hebsalk",
+    "language": "he",
+    "path": "/data/v1/lit/bible/he/hebsalk",
+    "books": 28,
+    "chapters": 260,
+    "verses": 7957
+  },
+  {
+    "code": "wlc",
+    "language": "he",
+    "path": "/data/v1/lit/bible/he/wlc",
+    "books": 39,
+    "chapters": 929,
+    "verses": 23213
   }
 ]
