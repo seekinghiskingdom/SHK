@@ -53,23 +53,32 @@ CREED PAGE CHECKLIST
   </section>
 </main>
 
+
 <script>
 (function () {
   const container = document.getElementById('creed-body');
   if (!container) return;
 
   const base = '{{ "/data/v1/lit/historical/creeds/" | relative_url }}'.replace(/\/$/, '');
-  const url = base + '/{{ page.creed_id }}.txt';
+  const creedId = '{{ page.creed_id }}';
+  const url = base + '/' + creedId + '/' + creedId + '.txt';
+
+  console.log('Loading creed from:', url); // debug
 
   fetch(url)
     .then(function (res) {
+      console.log('Creed fetch status:', res.status); // debug
       if (!res.ok) {
-        throw new Error('HTTP ' + res.status);
+        throw new Error('HTTP ' + res.status + ' for ' + url);
       }
       return res.text();
     })
-    .then(function (html) {
-      container.innerHTML = html;
+    .then(function (text) {
+      const pre = document.createElement('pre');
+      pre.className = 'creed-text-pre';
+      pre.textContent = text;  // render as plain text
+      container.innerHTML = '';
+      container.appendChild(pre);
     })
     .catch(function (err) {
       console.error(err);
@@ -77,3 +86,4 @@ CREED PAGE CHECKLIST
     });
 })();
 </script>
+

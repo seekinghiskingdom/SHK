@@ -43,20 +43,23 @@ creed_id: chalcedonian
   if (!container) return;
 
   const base = '{{ "/data/v1/lit/historical/creeds/" | relative_url }}'.replace(/\/$/, '');
-  const url = base + '/{{ page.creed_id }}/{{ page.creed_id }}.txt';
+  const creedId = '{{ page.creed_id }}';
+  const url = base + '/' + creedId + '/' + creedId + '.txt';
+
+  console.log('Loading creed from:', url); // debug
 
   fetch(url)
     .then(function (res) {
+      console.log('Creed fetch status:', res.status); // debug
       if (!res.ok) {
-        throw new Error('HTTP ' + res.status);
+        throw new Error('HTTP ' + res.status + ' for ' + url);
       }
       return res.text();
     })
     .then(function (text) {
-      // Clear any placeholder, then render plain text in a <pre>
       const pre = document.createElement('pre');
       pre.className = 'creed-text-pre';
-      pre.textContent = text;  // safe: no HTML interpretation
+      pre.textContent = text;  // render as plain text
       container.innerHTML = '';
       container.appendChild(pre);
     })
@@ -66,4 +69,3 @@ creed_id: chalcedonian
     });
 })();
 </script>
-
