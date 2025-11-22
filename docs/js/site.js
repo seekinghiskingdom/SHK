@@ -26,20 +26,20 @@
   if (main) main.setAttribute('tabindex', '-1');
 })();
 
-// 4) Header hamburger toggle
+// 4) Header hamburger toggle – controls .site-header.nav-open
 (() => {
   const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.nav-toggle');
 
   if (!header || !toggle) return;
 
-  toggle.addEventListener('click', function () {
-    const item = this.closest('.nav-item');
-    item.classList.toggle('is-open');
+  toggle.addEventListener('click', () => {
+    const isOpen = header.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 })();
 
-// Mobile: toggle submenus via the small ▾ button, keep parent link navigable
+// 5) Mobile: toggle submenus via the small ▾ button, keep parent link navigable
 (() => {
   const toggles = document.querySelectorAll('.nav-item.has-submenu .submenu-toggle');
   if (!toggles.length) return;
@@ -55,3 +55,15 @@
   });
 })();
 
+// 6) Help CTA collapse/expand (cross button)
+(() => {
+  const cta = document.getElementById('help-cta');
+  if (!cta) return;
+  const toggle = cta.querySelector('.help-cta-toggle');
+  if (!toggle) return;
+
+  toggle.addEventListener('click', () => {
+    const isCollapsed = cta.classList.toggle('help-cta--collapsed');
+    toggle.setAttribute('aria-expanded', isCollapsed ? 'false' : 'true');
+  });
+})();

@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,7 +14,6 @@
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap"
     rel="stylesheet">
 
-
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   {% if page.description %}
     <meta name="description" content="{{ page.description }}">
@@ -27,32 +24,6 @@
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta property="og:type" content="website">
 </head>
-
-<script>
-  (function () {
-    // Hamburger: toggle overall nav visibility
-    var header = document.querySelector('.site-header');
-    var toggle = document.querySelector('.site-header .nav-toggle');
-    if (header && toggle) {
-      toggle.addEventListener('click', function () {
-        var isOpen = header.classList.toggle('nav-open');
-        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-    }
-
-    // Mobile submenu toggles
-    document.querySelectorAll('.site-header .nav-item.has-submenu > .submenu-toggle')
-      .forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-          e.preventDefault();
-          var item = btn.closest('.nav-item');
-          var isOpen = item.classList.toggle('submenu-open');
-          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        });
-      });
-  })();
-</script>
-
 
 <body>
   {% include header.html %}
@@ -72,34 +43,40 @@
 
     {{ content }}
 
-    <!-- Salvation / Contact floating panel -->
-    {% if page.back_cta_url and page.back_cta_label %}
+    <!-- Left-side back CTA (desktop only) -->
+    {% if page.back_links %}
     <div class="floating-back-cta">
-      <a href="{{ page.back_cta_url | relative_url }}" class="btn btn-secondary">
-        {{ page.back_cta_label }}
-      </a>
+      {% for link in page.back_links %}
+        <a href="{{ link.url | relative_url }}" class="btn back-cta-btn">
+          {{ link.label }}
+        </a>
+      {% endfor %}
     </div>
     {% endif %}
 
-    <div class="sticky-cta">
-        <p class="sticky-cta-label">
-            Need help, have questions, or want to share something?
-        </p>
-        <div class="sticky-cta-actions">
-            <!-- existing static buttons, e.g. Salvation / Contact -->
-            <a href="{{ '/salvation/' | relative_url }}" class="btn sticky-cta-btn">Salvation</a>
-            <a href="{{ '/help/contact/' | relative_url }}" class="btn sticky-cta-btn secondary">Contact</a>
+    <!-- Right-side Help CTA with cross toggle -->
+    <div class="help-cta" id="help-cta">
+      <button
+        type="button"
+        class="help-cta-toggle"
+        aria-label="Hide help panel"
+        aria-expanded="true"
+      >
+        <span class="help-cta-cross">✝</span>
+      </button>
 
-            {% if page.back_links %}
-              {% for link in page.back_links %}
-                <a href="{{ link.url | relative_url }}" class="btn sticky-cta-btn">
-                  {{ link.label }}
-                </a>
-              {% endfor %}
-            {% endif %}
-          </div>
-        </div>
-
+      <p class="help-cta-label">
+        Need help, have questions, or want to share something?
+      </p>
+      <div class="help-cta-actions">
+        <a href="{{ '/salvation/' | relative_url }}" class="btn help-cta-btn">
+          Salvation
+        </a>
+        <a href="{{ '/help/contact/' | relative_url }}" class="btn help-cta-btn secondary">
+          Contact
+        </a>
+      </div>
+    </div>
   </main>
 
   {% include footer.html %}

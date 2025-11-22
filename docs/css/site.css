@@ -283,12 +283,6 @@ hr {
 
 /* Deleted template formatting here*/
 
-/* Allow content to align left with margin */
-main.container {
-  text-align: left;
-  max-width: none;
-  margin-left: 40px;
-}
 
 /* Rounded Image Class */
 .rounded-img {
@@ -298,12 +292,6 @@ main.container {
   object-fit: cover; /* ensures the image fills the circle */
 }
 
-.container {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
-}
 
 .controls-box {
   flex: 0 0 250px; /* left panel width */
@@ -1308,8 +1296,10 @@ footer.container,
   text-align: center;       /* keep text centered */
 }
 
-/* Floating Salvation / Contact panel */
-.sticky-cta {
+/* ================= Help CTA ================= */
+
+/* Right-side Help CTA with collapsible cross */
+.help-cta {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
@@ -1318,63 +1308,89 @@ footer.container,
   border-radius: 0.75rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
   padding: 0.75rem 1rem;
-  max-width: min(480px, 100% - 2rem); /* grow left as needed, never off-screen */
+  max-width: min(480px, 100% - 2rem);
   font-size: 0.85rem;
 }
 
-.sticky-cta-actions {
-  display: flex;
-  flex-wrap: wrap;         /* allow multiple rows of buttons */
-  gap: 0.5rem;
-  justify-content: flex-end;
+/* Cross toggle */
+.help-cta-toggle {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  background: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
 }
 
-.sticky-cta-btn {
-  padding: 6px 10px;
-  font-size: 0.85rem;
-  white-space: nowrap;     /* keep labels on one line */
+.help-cta-cross {
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--accent);
 }
 
-.sticky-cta-label {
+.help-cta-label {
   margin: 0 0 0.4rem;
   color: var(--muted);
 }
 
-/* Optional: make the Contact button a softer variant */
-.sticky-cta-btn.secondary {
+.help-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.help-cta-btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.help-cta-btn.secondary {
   background-color: transparent;
   color: var(--accent);
   border: 1px solid var(--accent);
 }
 
-.sticky-cta-btn.secondary:hover {
+.help-cta-btn.secondary:hover {
   background-color: var(--accent);
   color: #000;
 }
 
-
-/* Mobile: turn it into a full-width bottom bar */
-@media (max-width: 700px) {
-  .sticky-cta {
-    left: 0.5rem;
-    right: 0.5rem;
-    bottom: 0.75rem;
-    max-width: none;
-  }
-
-  .sticky-cta-actions {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+/* Collapsed: only show the cross pill */
+.help-cta.help-cta--collapsed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  border-radius: 999px;
 }
 
-/* Mobile: turn CTA into a full-width bottom bar and avoid layout issues */
+.help-cta.help-cta--collapsed .help-cta-label,
+.help-cta.help-cta--collapsed .help-cta-actions {
+  display: none;
+}
+
+.help-cta.help-cta--collapsed .help-cta-toggle {
+  position: static;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* Mobile: full-width bar on bottom, still collapsible */
 @media (max-width: 700px) {
   body {
-    padding-bottom: 4.5rem; /* space so content doesn't hide behind the bar */
+    padding-bottom: 4.5rem; /* ensure footer content isn't hidden */
   }
 
-  .sticky-cta {
+  .help-cta {
     left: 0;
     right: 0;
     bottom: 0;
@@ -1383,20 +1399,35 @@ footer.container,
     padding: 0.6rem 0.75rem;
   }
 
-  .sticky-cta-label {
+  .help-cta-label {
     text-align: center;
-    margin-bottom: 0.35rem;
+    margin: 0 2.8rem 0.35rem 0.75rem; /* space for cross on the right */
   }
 
-  .sticky-cta-actions {
+  .help-cta-toggle {
+    top: 0.5rem;
+    right: 0.75rem;
+  }
+
+  .help-cta-actions {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .sticky-cta-btn {
+  .help-cta-btn {
     flex: 0 1 auto;
   }
+
+  /* When collapsed on mobile, behave like a small pill in bottom-right */
+  .help-cta.help-cta--collapsed {
+    left: auto;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    border-radius: 999px;
+    max-width: none;
+  }
 }
+
 
 /* Mobile nav: full-width rows and a separate submenu toggle button */
 @media (max-width: 700px) {
@@ -1612,9 +1643,34 @@ footer.container,
 /* Right-align dropdowns for the last nav items so they don't go off-screen */
 @media (min-width: 701px) {
   .site-header .nav-item.has-submenu:last-child .nav-dropdown,
-  .site-header .nav-item.has-submenu:nth-last-child(2) .nav-dropdown {
+  .site-header .nav-item.has-submenu:nth-last-child(2) .nav-dropdown,
+  .site-header .nav-item.has-submenu:nth-last-child(3) .nav-dropdown {
     left: auto;
     right: 0;
+  }
+}
+
+/* Left-side floating back CTA (desktop only) */
+.floating-back-cta {
+  position: fixed;
+  left: 1rem;
+  bottom: 1.5rem;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.back-cta-btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  white-space: nowrap;
+}
+
+/* Hide left back CTA on small screens; phone users use browser back */
+@media (max-width: 700px) {
+  .floating-back-cta {
+    display: none;
   }
 }
 
