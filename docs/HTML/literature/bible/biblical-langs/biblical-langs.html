@@ -1,49 +1,103 @@
 ---
 layout: default
 title: Biblical Languages
-permalink: /resources/biblangs/
+permalink: /literature/bible/biblical-langs/
+nav_weight: 25
 ---
+<!--
+BIBLICAL LANGUAGES HUB CHECKLIST
 
-<section class="collection-page">
-  <h1>{{ page.title }}</h1>
-  <p class="collection-intro">
-    A simple place to gather resources related to the main biblical languages used on SHK. (TBD)
-  </p>
-  <hr class="hub-divider">
+1. Front matter
+   - Adjust `title`, `permalink`, and `nav_weight` only if you move or reorder this hub.
 
-  <section class="collection-section">
-    <h2>Primary Languages</h2>
-    <div class="collection-list">
-      <a href="{{ '/resources/biblangs/hebrew/' | relative_url }}" class="collection-item">
-        <h3>Hebrew</h3>
-        <p>Resources related to the Hebrew text of the Old Testament. (TBD)</p>
-      </a>
+2. Language sections
+   - Each language (Hebrew, Greek, Aramaic) has:
+     - A short overview paragraph about the language and its role in Scripture. -AI
+     - A note on how this site uses that language (translations, Strong’s, tools). -AI
+     - A primary button linking to that language’s dedicated page.
 
-      <a href="{{ '/resources/biblangs/greek/' | relative_url }}" class="collection-item">
-        <h3>Greek</h3>
-        <p>Resources related to the Greek text of the New Testament. (TBD)</p>
-      </a>
+3. Links / structure
+   - Update the child page permalinks in the buttons if you change their locations.
+   - Keep the “Using biblical languages” section in sync with your tools as they grow. -AI
+-->
 
-      <a href="{{ '/resources/biblangs/aramaic/' | relative_url }}" class="collection-item">
-        <h3>Aramaic</h3>
-        <p>Resources related to Aramaic passages and background. (TBD)</p>
-      </a>
-    </div>
+<main class="page page-hub page-biblical-langs">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="page-intro">
+      This hub introduces the primary languages of the Bible—Hebrew, Greek, and Aramaic—and gathers links to resources that help you explore the text in its original forms. -AI
+    </p>
+  </header>
+
+  <section class="page-section blang-overview" id="blang-overview">
+    <h2>Why biblical languages matter</h2>
+    <p>
+      The Old and New Testaments were written in ancient languages whose words, grammar, and idioms sometimes carry nuance that can be flattened or obscured in translation; studying these languages can clarify meanings, patterns, and connections across Scripture. -AI
+    </p>
+    <p>
+      On this site, biblical language resources are designed to be approachable starting points: you can follow Strong’s numbers, compare translations, or simply read brief notes and examples without needing formal language training. -AI
+    </p>
   </section>
 
-  <!-- Optional: more themed sections later
-  <section class="collection-section">
-    <h2>Study Helps</h2>
-    <div class="collection-list">
-      <a href="#" class="collection-item">
-        <h3>Example Resource</h3>
-        <p>Placeholder description. (TBD)</p>
-      </a>
-    </div>
+  <section class="page-section blang-language" id="hebrew">
+    <h2>Hebrew</h2>
+    <p>
+      Biblical Hebrew is the primary language of the Old Testament, a Semitic language characterized by its consonantal roots and rich poetic and narrative styles. -AI
+    </p>
+    <p>
+      Here you will find Hebrew-oriented resources such as Strong’s Hebrew entries, Hebrew-based translations, and future tools for exploring key words and phrases across the Old Testament. -AI
+    </p>
+    <p>
+      <a href="/literature/bible/biblical-langs/hebrew/" class="btn">Hebrew resources</a>
+    </p>
   </section>
-  -->
 
-  <nav class="collection-nav">
-    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
-  </nav>
-</section>
+  <section class="page-section blang-language" id="greek">
+    <h2>Greek</h2>
+    <p>
+      The New Testament was written in Koine Greek, the common dialect of the eastern Mediterranean in the first century, combining precise grammatical structure with a flexible vocabulary. -AI
+    </p>
+    <p>
+      Greek resources on this site include Strong’s Greek entries, Greek-based translations, and future study tools aimed at tracing words, themes, and grammatical patterns in the New Testament. -AI
+    </p>
+    <p>
+      <a href="/literature/bible/biblical-langs/greek/" class="btn">Greek resources</a>
+    </p>
+  </section>
+
+  <section class="page-section blang-language" id="aramaic">
+    <h2>Aramaic</h2>
+    <p>
+      Aramaic, closely related to Hebrew, appears in a few Old Testament sections and in certain sayings preserved in the New Testament, reflecting the everyday spoken language of many Jews in the Second Temple period. -AI
+    </p>
+    <p>
+      Aramaic resources here will highlight key Aramaic passages, terms, and connections to the surrounding Hebrew and Greek texts, with room to grow into more detailed lexical and grammatical tools over time. -AI
+    </p>
+    <p>
+      <a href="/literature/bible/biblical-langs/aramaic/" class="btn">Aramaic resources</a>
+    </p>
+  </section>
+
+  <section class="page-section blang-usage" id="using-blangs">
+    <h2>Using biblical languages on this site</h2>
+    <ul>
+      <li>
+        Follow Strong’s numbers and language notes from Bible tools or verse views to open entries tied to Hebrew or Greek lemmas. -AI
+      </li>
+      <li>
+        Use translation and lexicon indexes to move between English (or other languages) and the underlying biblical languages when doing word studies. -AI
+      </li>
+      <li>
+        As the project grows, expect deeper integration between language pages, tools, and study guides so you can approach the original text at your own pace. -AI
+      </li>
+    </ul>
+  </section>
+
+  <section class="page-section page-links" id="back-links">
+    <h2>More</h2>
+    <ul>
+      <li><a href="/literature/bible/">Back to Bible hub</a></li>
+      <li><a href="/literature/index/">Back to Literature index</a></li>
+    </ul>
+  </section>
+</main>

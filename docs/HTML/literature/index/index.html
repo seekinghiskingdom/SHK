@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Literature Index
-permalink: /resources/literature/index/
+permalink: /literature/index/
 ---
 
 <h1>{{ page.title }}</h1>
@@ -14,39 +14,91 @@ permalink: /resources/literature/index/
 <section class="literature-index-section">
   <h2>Bible</h2>
   <ul>
-    <li><a href="{{ '/resources/literature/bible/' | relative_url }}">Bible – Overview</a></li>
-    <li><a href="{{ '/resources/literature/bible/kjv/' | relative_url }}">King James Version (KJV)</a></li>
-    <li><a href="{{ '/resources/literature/bible/asv/' | relative_url }}">American Standard Version (ASV)</a></li>
-    <li><a href="{{ '/resources/literature/bible/web/' | relative_url }}">World English Bible (WEB)</a></li>
-    <li><a href="{{ '/resources/literature/bible/other/' | relative_url }}">Other / Future Translations</a></li>
-  </ul>
-</section>
+    <li><a href="{{ '/literature/bible/' | relative_url }}">Bible – Overview</a></li>
+    <li><a href="{{ '/literature/bible/translations/' | relative_url }}">Translations (Index)</a></li>
 
-<section class="literature-index-section">
-  <h2>Historical Writings</h2>
-  <ul>
-    <li><a href="{{ '/resources/literature/historical/' | relative_url }}">Historical Writings – Overview</a></li>
-    <li><a href="{{ '/resources/literature/historical/creeds/' | relative_url }}">Historical Creeds</a></li>
-    <li><a href="{{ '/resources/literature/historical/councils/' | relative_url }}">Church Councils</a></li>
-    <li><a href="{{ '/resources/literature/historical/fathers/' | relative_url }}">Writings of the Church Fathers</a></li>
-    <li><a href="{{ '/resources/literature/historical/devotion-practice/' | relative_url }}">Devotion and Practice</a></li>
-    <li><a href="{{ '/resources/literature/historical/other/' | relative_url }}">Other Historical Resources</a></li>
+    <!-- {% assign bible_trans = site.pages
+       | where_exp: "p", "p.url contains '/literature/bible/translations/'"
+       | sort: "code" %}
+    {% for t in bible_trans %}
+    <li>
+      <a href="{{ t.url | relative_url }}">{{ t.title }} ({{ t.code }})</a>
+    </li>
+    {% endfor %} -->
   </ul>
 </section>
 
 <section class="literature-index-section">
   <h2>Strong’s Concordance</h2>
   <ul>
-    <li><a href="{{ '/resources/literature/strongs/' | relative_url }}">Strong’s Concordance – Overview</a></li>
-    <li><a href="{{ '/resources/literature/strongs/hebrew/' | relative_url }}">Strong’s Concordance – Hebrew</a></li>
-    <li><a href="{{ '/resources/literature/strongs/greek/' | relative_url }}">Strong’s Concordance – Greek</a></li>
+    <li><a href="{{ '/literature/bible/strongs/' | relative_url }}">Strong’s Concordance – Overview</a></li>
+    <li><a href="{{ '/literature/bible/strongs/hebrew/' | relative_url }}">Strong’s Concordance – Hebrew (Index)</a></li>
+    <li><a href="{{ '/literature/bible/strongs/greek/' | relative_url }}">Strong’s Concordance – Greek (Index)</a></li>
   </ul>
 </section>
 
 <section class="literature-index-section">
+  <h2>Historical Writings</h2>
+  <ul>
+    <li><a href="{{ '/literature/historical/' | relative_url }}">Historical Writings – Overview</a></li>
+
+    <!-- Creeds -->
+    {% assign creeds = site.pages
+       | where_exp: "p", "p.url contains '/literature/historical/creeds/'"
+       | sort: "title" %}
+    {% for p in creeds %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </li>
+    {% endfor %}
+
+    <!-- Councils -->
+    {% assign councils = site.pages
+       | where_exp: "p", "p.url contains '/literature/historical/councils/'"
+       | sort: "title" %}
+    {% for p in councils %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </li>
+    {% endfor %}
+
+    <!-- Church Fathers -->
+    {% assign fathers = site.pages
+       | where_exp: "p", "p.url contains '/literature/historical/fathers/'"
+       | sort: "title" %}
+    {% for p in fathers %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </li>
+    {% endfor %}
+
+    <!-- Devotion and Practice -->
+    {% assign devo = site.pages
+       | where_exp: "p", "p.url contains '/literature/historical/devotion-practice/'"
+       | sort: "title" %}
+    {% for p in devo %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </li>
+    {% endfor %}
+
+    <!-- Other Historical Resources -->
+    {% assign other_hist = site.pages
+       | where_exp: "p", "p.url contains '/literature/historical/other/'"
+       | sort: "title" %}
+    {% for p in other_hist %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+
+<section class="literature-index-section">
   <h2>Bible Studies</h2>
   <ul>
-    <li><a href="{{ '/resources/literature/studies/' | relative_url }}">Bible Studies – Collection</a></li>
+    <li><a href="{{ '/literature/studies/' | relative_url }}">Bible Studies – Collection</a></li>
     <!-- Future individual studies can be listed here as separate items -->
   </ul>
 </section>
@@ -54,7 +106,7 @@ permalink: /resources/literature/index/
 <section class="literature-index-section">
   <h2>Articles</h2>
   <ul>
-    <li><a href="{{ '/resources/literature/articles/' | relative_url }}">Articles – Collection</a></li>
+    <li><a href="{{ '/literature/articles/' | relative_url }}">Articles – Collection</a></li>
     <!-- Add individual article pages here in the future -->
   </ul>
 </section>
@@ -62,7 +114,7 @@ permalink: /resources/literature/index/
 <section class="literature-index-section">
   <h2>Books</h2>
   <ul>
-    <li><a href="{{ '/resources/literature/books/' | relative_url }}">Books – Collection</a></li>
+    <li><a href="{{ '/literature/books/' | relative_url }}">Books – Collection</a></li>
     <!-- Add specific book resources here later -->
   </ul>
 </section>
@@ -70,7 +122,7 @@ permalink: /resources/literature/index/
 <section class="literature-index-section">
   <h2>Miscellaneous</h2>
   <ul>
-    <li><a href="{{ '/resources/literature/misc/' | relative_url }}">Miscellaneous Resources</a></li>
+    <li><a href="{{ '/literature/misc/' | relative_url }}">Miscellaneous Resources</a></li>
     <!-- Add other one-off or uncategorized resources here -->
   </ul>
 </section>
@@ -85,5 +137,5 @@ permalink: /resources/literature/index/
 </section>
 
 <nav class="resources-nav">
-  <a href="{{ '/resources/literature/' | relative_url }}">Back to Literature</a>
+  <a href="{{ '/literature/' | relative_url }}">Back to Literature</a>
 </nav>

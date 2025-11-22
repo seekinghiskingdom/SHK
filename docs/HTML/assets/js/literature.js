@@ -1,4 +1,4 @@
-// This page is /docs/resources/literature/index.html → ../../data points to /docs/data
+// This page is /docs/literature/index.html → ../../data points to /docs/data
 async function loadIndex(){
   const idxURL = new URL('../../data/v1/lit/literature_index.json', document.baseURI);
   const r = await fetch(idxURL);

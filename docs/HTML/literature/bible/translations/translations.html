@@ -1,48 +1,138 @@
 ---
 layout: default
-title: Collection Title Here
-permalink: /path/to/collection/
+title: Translations Index
+permalink: /literature/bible/translations/
+nav_weight: 10
 ---
+<!--
+INDEX PAGE SETUP CHECKLIST
 
-<section class="collection-page">
-  <h1>{{ page.title }}</h1>
-  <p class="collection-intro">
-    One or two sentences explaining what this collection groups together. (TBD)
-  </p>
-  <hr class="hub-divider">
+2. Header
+   - Replace `.page-intro` content with a 1–2 sentence description of what this index lists.
 
-  <!-- Section 1 -->
-  <section class="collection-section">
-    <h2>Section 1 Heading</h2>
-    <div class="collection-list">
-      <a href="{{ '/path/to/item-1/' | relative_url }}" class="collection-item">
-        <h3>Item 1 Title</h3>
-        <p>Short description of this item or sub-collection. (TBD)</p>
-      </a>
+3. Index controls (optional but recommended)
+   - Replace the `<p>` in `#index-controls` with a short “how to use this index” note.
+   - Uncomment or remove the `<input type="search">` if/when a search box is desired.
 
-      <a href="{{ '/path/to/item-2/' | relative_url }}" class="collection-item">
-        <h3>Item 2 Title</h3>
-        <p>Short description. (TBD)</p>
-      </a>
-    </div>
+4. List-style index sections (UL)
+   - Update section `id`s (e.g., `category-1`, `category-2`) to something meaningful, or remove unused sections.
+   - Replace `Category Heading` text with real category names.
+   - For each `<li>`:
+     - Set `href` to the real target URL.
+     - Replace `Item Name` with the visible label.
+     - Replace `index-desc` content with a 1-line description.
+
+5. Table-style index (alternative to UL)
+   - EITHER keep the UL sections OR uncomment and use the table block; do not use both.
+   - Update the `<h2>` above the table (e.g., “All Translations”).
+   - Adjust table column headers to match your data (e.g., Code, Name, Language, Era).
+   - For each `<tr>`, replace sample values (e.g., KJV, King James Version, etc.) with real data and links.
+
+6. Clean-up
+   - Remove leftover placeholder comments and dummy items once the page is filled in.
+-->
+
+<main class="page page-index">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="page-intro">
+      This index lists the Bible translations currently available on this site, grouped by language and code, so you can quickly find, compare, and access each version. -AI
+    </p>
+
+  </header>
+
+  <!-- Optional: filter / search instructions -->
+  <section class="page-section index-controls" id="index-controls">
+    <p>
+      Browse the translations by language in the sections below; each code links to a dedicated page with more details and access options. As new translations are added, they will appear here automatically. -AI
+    </p>
+    <!-- Optional: <input type="search" id="index-search" placeholder="Search translations..." /> -->
   </section>
 
-  <!-- Optional Section 2 -->
-  <section class="collection-section">
-    <h2>Section 2 Heading (Optional)</h2>
-    <div class="collection-list">
-      <a href="{{ '/path/to/another-item/' | relative_url }}" class="collection-item">
-        <h3>Another Item</h3>
-        <p>Short description. (TBD)</p>
-      </a>
-    </div>
+
+  <!-- Category 1  -->
+  <section class="page-section index-section" id="en">
+    <h2>English (EN)</h2>
+    <ul class="index-list">
+      {% assign english_trans = site.pages
+        | where: "lang", "en"
+        | sort: "code" %}
+      {% for t in english_trans %}
+      <li>
+        <a href="{{ t.url | relative_url }}">{{ t.code }}</a><br>
+        <span class="index-desc">
+          {{ t.short_desc }} -AI
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
   </section>
 
-  <!-- Add more sections as needed -->
+  <!-- Category 2 -->
+  <section class="page-section index-section" id="grc">
+    <h2>Koine Greek (GRC)</h2>
+    <ul class="index-list">
+      {% assign koine_trans = site.pages
+        | where: "lang", "grc"
+        | sort: "code" %}
+      {% for t in koine_trans %}
+      <li>
+        <a href="{{ t.url | relative_url }}">{{ t.code }}</a><br>
+        <span class="index-desc">
+          {{ t.short_desc }} -AI
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 
-  <nav class="collection-nav">
-    <!-- Adjust these links per collection -->
-    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
-    <!-- or e.g. <a href="{{ '/resources/literature/' | relative_url }}">Back to Literature</a> -->
-  </nav>
-</section>
+  <!-- Category 3 -->
+  <section class="page-section index-section" id="he">
+    <h2>Hebrew (he)</h2>
+    <ul class="index-list">
+      {% assign hebrew_trans = site.pages
+        | where: "lang", "he"
+        | sort: "code" %}
+      {% for t in hebrew_trans %}
+      <li>
+        <a href="{{ t.url | relative_url }}">{{ t.code }}</a><br>
+        <span class="index-desc">
+          {{ t.short_desc }} -AI
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- For table-style indexes (e.g., translations or lexicon), swap the UL for a table: -->
+  <!--
+  <section class="page-section index-section" id="table-index">
+    <h2>All Translations</h2>
+    <table class="index-table">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Language</th>
+          <th>Era</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>KJV</td>
+          <td><a href="/literature/bible/translations/kjv/">King James Version</a></td>
+          <td>English</td>
+          <td>17th century</td>
+        </tr>
+        <tr>
+          <td>ASV</td>
+          <td><a href="/literature/bible/translations/asv/">American Standard Version</a></td>
+          <td>English</td>
+          <td>20th century</td>
+        </tr>
+      </tbody>
+    </table>
+  </section> -->
+
+
+</main>

@@ -4,12 +4,45 @@ title: "Index Title"
 permalink: /path/to/index/
 nav_weight: 10
 ---
+<!--
+INDEX PAGE SETUP CHECKLIST
+
+1. Front matter
+   - Set `title:` to the exact page title.
+   - Set `permalink:` to the final URL (e.g., `/literature/bible/translations/`).
+   - Set `nav_weight:` for ordering among sibling pages (lower = earlier).
+
+2. Header
+   - Replace `.page-intro` content with a 1–2 sentence description of what this index lists.
+
+3. Index controls (optional but recommended)
+   - Replace the `<p>` in `#index-controls` with a short “how to use this index” note.
+   - Uncomment or remove the `<input type="search">` if/when a search box is desired.
+
+4. List-style index sections (UL)
+   - Update section `id`s (e.g., `category-1`, `category-2`) to something meaningful, or remove unused sections.
+   - Replace `Category Heading` text with real category names.
+   - For each `<li>`:
+     - Set `href` to the real target URL.
+     - Replace `Item Name` with the visible label.
+     - Replace `index-desc` content with a 1-line description.
+
+5. Table-style index (alternative to UL)
+   - EITHER keep the UL sections OR uncomment and use the table block; do not use both.
+   - Update the `<h2>` above the table (e.g., “All Translations”).
+   - Adjust table column headers to match your data (e.g., Code, Name, Language, Era).
+   - For each `<tr>`, replace sample values (e.g., KJV, King James Version, etc.) with real data and links.
+
+6. Clean-up
+   - Remove leftover placeholder comments and dummy items once the page is filled in.
+-->
 
 <main class="page page-index">
   <header class="page-header">
     <h1>{{ page.title }}</h1>
     <p class="page-intro">
       <!-- 1–2 sentence description of what is being indexed here. -->
+      Introduction Coming Soon!
     </p>
   </header>
 
@@ -17,6 +50,7 @@ nav_weight: 10
   <section class="page-section index-controls" id="index-controls">
     <p>
       <!-- E.g.: You can browse by category below. Basic search/filters can go here later. -->
+      How to use this index coming soon!
     </p>
     <!-- Optional: <input type="search" id="index-search" placeholder="Search..." /> -->
   </section>

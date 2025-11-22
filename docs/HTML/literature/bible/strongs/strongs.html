@@ -1,35 +1,101 @@
 ---
 layout: default
-title: Strong’s Concordance
-permalink: /resources/literature/strongs/
+title: Strong's Concordance
+permalink: /literature/bible/strongs/
+nav_weight: 30
 ---
+<!--
+STRONG'S CONCORDANCE HUB CHECKLIST
 
-<section class="content-page">
-  <h1>{{ page.title }}</h1>
-  <p class="content-intro">
-    A short overview of Strong’s Concordance, how it is structured, and how it can be used within SHK alongside Scripture. (TBD)
-  </p>
-  <hr class="hub-divider">
+1. Front matter
+   - `title`: Page title shown in the header.
+   - `permalink`: Base URL for the Strong's hub.
+   - `nav_weight`: Adjust ordering among Bible/Literature pages if needed.
 
-  <div class="content-body">
-    <h2>What Strong’s Concordance Is (TBD)</h2>
-    <p>
-      This section will summarize the idea of assigning numbers to Hebrew and Greek words to make word lookup and study easier. (TBD)
+2. Header
+   - Update `.page-intro` if you change the overall purpose or scope of this hub. -AI
+
+3. Hebrew and Greek sections
+   - Each section should have:
+     - A short descriptive paragraph about the language and how Strong's indexes it. -AI
+     - A primary button linking to the corresponding Strong's index page.
+     - Optional extra notes or tips. -AI
+
+4. “How to use” section
+   - Briefly explain how Strong's numbers are used on this site (e.g., in tools, links from verses). -AI
+
+5. Back links
+   - Ensure the links back to the Bible hub and Literature hub match your actual permalinks.
+-->
+
+<main class="page page-hub page-strongs">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="page-intro">
+      Strong’s Concordance assigns a unique number to many Hebrew and Greek words in the Bible, making it easier to study the original terms, their meanings, and where they appear in Scripture. -AI
     </p>
+  </header>
 
-    <h2>How SHK Uses Strong’s (TBD)</h2>
+  <section class="page-section strongs-overview" id="strongs-overview">
+    <h2>About Strong’s Concordance</h2>
     <p>
-      Here we can explain how Strong’s numbers appear in SHK tools (e.g., SCS, Bible viewer, studies) and how to move between them. (TBD)
+      In this site, Strong’s numbers act as a bridge between English translations and the underlying Hebrew and Greek words, so you can move from a verse to the original term, its basic gloss, and related occurrences. -AI
     </p>
-
-    <h2>Limitations & Guardrails (TBD)</h2>
     <p>
-      A brief note that Strong’s is a useful guide, but not a substitute for full language study or careful context reading. (TBD)
+      Each Strong’s entry page provides the Strong’s number, the lemma (original-language form), a brief gloss, and links or references that can be expanded in future versions of the project. -AI
     </p>
-  </div>
+  </section>
 
-  <nav class="content-nav">
-    <a href="{{ '/resources/literature/' | relative_url }}">Back to Literature</a> ·
-    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
-  </nav>
-</section>
+  <section class="page-section strongs-language" id="strongs-hebrew">
+    <h2>Strong’s Hebrew Lexicon (H-numbers)</h2>
+    <p>
+      The Hebrew Strong’s lexicon covers words from the Old Testament, which was primarily written in Biblical Hebrew (with some Aramaic), a consonant-rich Semitic language used by ancient Israel. -AI
+    </p>
+    <p>
+      Each Hebrew entry is labeled with an H-number (e.g., H0001) and links the English translation back to a specific Hebrew lemma, providing a starting point for word studies and cross-references. -AI
+    </p>
+    <p>
+      <a href="/literature/bible/strongs/hebrew/" class="btn">
+        Open Hebrew Strong’s Index
+      </a>
+    </p>
+  </section>
+
+  <section class="page-section strongs-language" id="strongs-greek">
+    <h2>Strong’s Greek Lexicon (G-numbers)</h2>
+    <p>
+      The Greek Strong’s lexicon covers words from the New Testament, written in Koine Greek, the common dialect of the eastern Mediterranean world during the first century. -AI
+    </p>
+    <p>
+      Each Greek entry is labeled with a G-number (e.g., G0001) and connects English translations to their underlying Greek lemmas, helping you trace how a term is used across different passages. -AI
+    </p>
+    <p>
+      <a href="/literature/bible/strongs/greek/" class="btn">
+        Open Greek Strong’s Index
+      </a>
+    </p>
+  </section>
+
+  <section class="page-section strongs-usage" id="using-strongs">
+    <h2>Using Strong’s on this site</h2>
+    <ul>
+      <li>
+        Follow Strong’s numbers from Bible tools or verse views to open the corresponding word entry and see its lemma and basic gloss. -AI
+      </li>
+      <li>
+        Use the Hebrew and Greek index pages to browse or search for specific H- or G-numbers when doing more focused word studies. -AI
+      </li>
+      <li>
+        As the project grows, additional links, references, and cross-tools will be added to make Strong’s-based study faster and more connected. -AI
+      </li>
+    </ul>
+  </section>
+
+  <section class="page-section page-links" id="back-links">
+    <h2>More</h2>
+    <ul>
+      <li><a href="/literature/bible/">Back to Bible hub</a></li>
+      <li><a href="/literature/index/">Back to Literature index</a></li>
+    </ul>
+  </section>
+</main>
