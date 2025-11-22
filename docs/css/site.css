@@ -1691,6 +1691,12 @@ footer.container,
     border-radius: 0.75rem;
   }
 }
+@media (max-width: 900px) and (min-width: 701px) {
+  .site-header .nav-button {
+    font-size: 0.9rem;
+    padding-inline: 0.6rem;
+  }
+}
 
 /* Give each tab a soft accent outline on hover/active */
 .site-header .nav-button {
@@ -1701,8 +1707,22 @@ footer.container,
 .site-header .nav-button:hover,
 .site-header .nav-button:focus-visible,
 .site-header .nav-button.is-active {
-  border-color: var(--accent);
+  border-color: var(--panel);
 }
 
+/* Outline the main header nav container (desktop + mobile) */
+.site-header .nav-links {
+  border: 1px solid var(--accent);  /* thin yellow line */
+  border-radius: 0.75rem;           /* soften corners */
+  padding: 0.4rem 0.5rem;           /* keep tiles off the edge */
+}
+
+/* (Optional) if you only want this in the mobile dropdown: */
+@media (max-width: 700px) {
+  .site-header .nav-links {
+    border: 1px solid var(--accent);
+    border-radius: 0.75rem;
+  }
+}
 
 /* End of Hunter's CSS Style Additions */

@@ -43,16 +43,47 @@
 
     {{ content }}
 
-    <!-- Left-side back CTA (desktop only) -->
-    {% if page.back_links %}
-    <div class="floating-back-cta">
-      {% for link in page.back_links %}
-        <a href="{{ link.url | relative_url }}" class="btn back-cta-btn">
-          {{ link.label }}
-        </a>
-      {% endfor %}
+    <!-- Left-side navigation CTA (auto breadcrumbs) -->
+    <div
+      class="nav-cta"
+      id="nav-cta"
+      data-baseurl="{{ site.baseurl }}"
+      aria-label="Page navigation shortcuts"
+    >
+      <button
+        type="button"
+        class="nav-cta-toggle"
+        aria-label="Hide navigation panel"
+        aria-expanded="true"
+      >
+        <span class="nav-cta-icon">⤳</span>
+      </button>
+      <div class="nav-cta-links"></div>
     </div>
-    {% endif %}
+
+    <!-- Right-side Help CTA with cross toggle -->
+    <div class="help-cta" id="help-cta">
+      <button
+        type="button"
+        class="help-cta-toggle"
+        aria-label="Hide help panel"
+        aria-expanded="true"
+      >
+        <span class="help-cta-cross">✝</span>
+      </button>
+
+      <p class="help-cta-label">
+        Need help, have questions, or want to share something?
+      </p>
+      <div class="help-cta-actions">
+        <a href="{{ '/salvation/' | relative_url }}" class="btn help-cta-btn">
+          Salvation
+        </a>
+        <a href="{{ '/help/contact/' | relative_url }}" class="btn help-cta-btn secondary">
+          Contact
+        </a>
+      </div>
+    </div>
 
     <!-- Right-side Help CTA with cross toggle -->
     <div class="help-cta" id="help-cta">
