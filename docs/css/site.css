@@ -1679,5 +1679,30 @@ footer.container,
   }
 }
 
+/* Outline the main header/nav bar */
+.site-header {
+  border-bottom: 1px solid var(--accent); /* your gold */
+}
+
+/* Outline the black/nav panel area in mobile menu */
+@media (max-width: 700px) {
+  .site-header .nav-links {
+    border: 1px solid var(--accent);
+    border-radius: 0.75rem;
+  }
+}
+
+/* Give each tab a soft accent outline on hover/active */
+.site-header .nav-button {
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.site-header .nav-button:hover,
+.site-header .nav-button:focus-visible,
+.site-header .nav-button.is-active {
+  border-color: var(--accent);
+}
+
 
 /* End of Hunter's CSS Style Additions */

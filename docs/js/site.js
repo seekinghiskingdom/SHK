@@ -14,9 +14,14 @@
 // 2) External-link hygiene
 (() => {
   document.querySelectorAll('a[href^="http"]').forEach(a => {
-    if (a.href.startsWith(location.origin)) return;
-    a.setAttribute('target', '_blank');
-    a.setAttribute('rel', 'noopener noreferrer');
+    try {
+      const url = new URL(a.href);
+      if (url.origin === location.origin) return;
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    } catch (e) {
+      // ignore malformed URLs
+    }
   });
 })();
 
