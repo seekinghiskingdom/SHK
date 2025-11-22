@@ -42,7 +42,7 @@ creed_id: athanasian
   const container = document.getElementById('creed-body');
   if (!container) return;
   const base = '{{ "/data/v1/lit/historical/creeds/" | relative_url }}'.replace(/\/$/, '');
-  const url = base + '/{{ page.creed_id }}.html';
+  const url = base + '/{{ page.creed_id }}.txt';
 
   fetch(url)
     .then(res => {

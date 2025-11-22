@@ -281,24 +281,7 @@ hr {
   margin: 20px 0;
 }
 
-/* Spacing for the footer */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1; /* pushes the footer down */
-}
-
-footer {
-  margin-top: auto; /* ensures footer sticks to bottom */
-}
+/* Deleted template formatting here*/
 
 /* Allow content to align left with margin */
 main.container {
@@ -1325,35 +1308,36 @@ footer.container,
   text-align: center;       /* keep text centered */
 }
 
-
 /* Floating Salvation / Contact panel */
 .sticky-cta {
   position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
+  right: 1rem;
+  bottom: 1rem;
   z-index: 999;
   background: var(--panel);
   border-radius: 0.75rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
   padding: 0.75rem 1rem;
-  max-width: 260px;
+  max-width: min(480px, 100% - 2rem); /* grow left as needed, never off-screen */
   font-size: 0.85rem;
+}
+
+.sticky-cta-actions {
+  display: flex;
+  flex-wrap: wrap;         /* allow multiple rows of buttons */
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.sticky-cta-btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  white-space: nowrap;     /* keep labels on one line */
 }
 
 .sticky-cta-label {
   margin: 0 0 0.4rem;
   color: var(--muted);
-}
-
-.sticky-cta-actions {
-  display: flex;
-  gap: 0.5rem;
-}
-
-/* Reuse your gold button style, just slightly smaller */
-.sticky-cta-btn {
-  padding: 6px 10px;
-  font-size: 0.85rem;
 }
 
 /* Optional: make the Contact button a softer variant */
@@ -1367,6 +1351,7 @@ footer.container,
   background-color: var(--accent);
   color: #000;
 }
+
 
 /* Mobile: turn it into a full-width bottom bar */
 @media (max-width: 700px) {
@@ -1623,5 +1608,15 @@ footer.container,
     content: none !important;
   }
 }
+
+/* Right-align dropdowns for the last nav items so they don't go off-screen */
+@media (min-width: 701px) {
+  .site-header .nav-item.has-submenu:last-child .nav-dropdown,
+  .site-header .nav-item.has-submenu:nth-last-child(2) .nav-dropdown {
+    left: auto;
+    right: 0;
+  }
+}
+
 
 /* End of Hunter's CSS Style Additions */

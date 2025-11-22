@@ -33,9 +33,9 @@
 
   if (!header || !toggle) return;
 
-  toggle.addEventListener('click', () => {
-    const open = header.classList.toggle('nav-open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  toggle.addEventListener('click', function () {
+    const item = this.closest('.nav-item');
+    item.classList.toggle('is-open');
   });
 })();
 
