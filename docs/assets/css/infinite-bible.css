@@ -142,3 +142,109 @@
     margin-left: auto;
   }
 }
+
+
+/* Intro row: subtitle + small button in one line on desktop */
+
+.infinite-bible-bible .ib-intro-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.infinite-bible-bible .ib-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  flex: 1 1 auto;
+}
+
+/* Small compact "More info" button, gold text + outline */
+
+.infinite-bible-bible .ib-info-toggle {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.28rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #facc15;   /* gold outline */
+  background: rgba(0, 0, 0, 0.1); /* subtle transparent background */
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  color: #facc15;              /* gold text */
+}
+
+.infinite-bible-bible .ib-info-toggle span,
+.infinite-bible-bible .ib-info-toggle .ib-info-toggle-icon {
+  color: #facc15;
+}
+
+.infinite-bible-bible .ib-info-toggle:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile: stack text above button */
+
+@media (max-width: 640px) {
+  .infinite-bible-bible .ib-intro-row {
+    align-items: flex-start;
+  }
+
+  .infinite-bible-bible .ib-info-toggle {
+    margin-left: auto;
+    margin-top: 0.35rem;
+  }
+}
+
+
+/* === Infinite Bible – Bible Mode: top toolbar ribbon === */
+
+.infinite-bible-bible .ib-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.92); /* dark, so white text still works */
+  backdrop-filter: blur(6px);
+}
+
+.infinite-bible-bible .ib-toolbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+}
+
+.infinite-bible-bible .ib-toolbar-left,
+.infinite-bible-bible .ib-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.infinite-bible-bible .ib-toolbar-btn {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: transparent;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+.infinite-bible-bible .ib-toolbar-btn:hover {
+  background: rgba(31, 41, 55, 0.85);
+}
+
+.infinite-bible-bible .ib-toolbar-btn-primary {
+  border-color: #facc15;
+  color: #facc15;
+  background: rgba(0, 0, 0, 0.2);
+}
