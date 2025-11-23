@@ -14,212 +14,267 @@ extra_css:
     <div class="ib-header-main">
       <div class="ib-title-row">
         <h1 class="ib-title">Infinite Bible</h1>
-        <span class="ib-pill" id="ib-mode-pill">Bible mode</span>
+        <span class="ib-title-pill">Boards workspace</span>
       </div>
+      <p class="ib-header-lead">
+        Work through Scripture one chapter at a time—or build free-form boards—as part of a single Infinite Bible workspace.
+      </p>
+    </div>
 
-      <div class="ib-intro-row">
-        <p class="ib-subtitle">
-          Work through Scripture one chapter at a time—or build free-form boards—as part of a single Infinite Bible workspace.
+    <div class="ib-header-secondary">
+      <div class="ib-header-blurb">
+        <h2 class="ib-header-subtitle">Unified Bible + boards</h2>
+        <p class="ib-header-text">
+          Infinite Bible is designed as a two-in-one tool: Bible mode
+          for chapter boards, and Notes mode for free-form boards that can
+          mix verses and notes. Everything lives in one Infinite Bible workspace.
+        </p>
+      </div>
+      <div class="ib-header-meta">
+        <p class="ib-meta-line">
+          <span class="ib-meta-label">Status</span>
+          <span class="ib-meta-value">Prototype – layout and shell only</span>
+        </p>
+        <p class="ib-meta-line">
+          <span class="ib-meta-label">Data</span>
+          <span class="ib-meta-value">Local-only, stored in your browser</span>
         </p>
       </div>
     </div>
   </header>
 
-  <!-- Sticky toolbar ribbon -->
-  <div class="ib-toolbar" aria-label="Infinite Bible tools">
-    <div class="ib-toolbar-inner">
-      <!-- Left: Navigator + modes and views -->
-      <div class="ib-toolbar-section ib-toolbar-left">
-        <!-- Navigator toggle -->
-        <button
-          type="button"
-          class="ib-toolbar-btn ib-toolbar-btn-plain"
-          id="ib-toolbar-nav"
-          aria-pressed="true"
-        >
-          Navigator
-        </button>
+  <!-- Toolbar and dropdowns -->
+  <section class="ib-toolbar-shell" aria-label="Infinite Bible toolbar and helpers">
+    <div class="ib-toolbar" aria-label="Infinite Bible tools">
+      <div class="ib-toolbar-inner">
+        <!-- Left: Navigator only -->
+        <div class="ib-toolbar-section ib-toolbar-left">
+          <!-- Navigator toggle -->
+          <button
+            type="button"
+            class="ib-toolbar-btn ib-toolbar-btn-primary"
+            id="ib-toolbar-nav"
+            aria-pressed="true"
+          >
+            Navigator
+          </button>
+        </div>
 
-        <span class="ib-toolbar-divider" aria-hidden="true"></span>
+        <!-- Middle: formatting / tools (placeholders for now) -->
+        <div class="ib-toolbar-section ib-toolbar-middle">
+          <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Bold">
+            <span class="ib-toolbar-label">B</span>
+          </button>
+          <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Italic">
+            <span class="ib-toolbar-label ib-toolbar-label-italic">I</span>
+          </button>
+          <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Underline">
+            <span class="ib-toolbar-label ib-toolbar-label-underline">U</span>
+          </button>
+          <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Add note">
+            <span class="ib-toolbar-label">+ Note</span>
+          </button>
+        </div>
 
-        <!-- Primary app modes -->
-        <button
-          type="button"
-          class="ib-toolbar-btn ib-toolbar-btn-primary"
-          data-mode="bible"
-          id="ib-btn-mode-bible"
-        >
-          Bible
-        </button>
-        <button
-          type="button"
-          class="ib-toolbar-btn ib-toolbar-btn-plain"
-          data-mode="notes"
-          id="ib-btn-mode-boards"
-        >
-          Boards
-        </button>
+        <!-- Right: theme + settings + help -->
+        <div class="ib-toolbar-section ib-toolbar-right">
+          <button
+            type="button"
+            class="ib-toolbar-btn ib-toolbar-btn-plain"
+            id="ib-toolbar-theme"
+          >
+            Theme: Light
+          </button>
 
-        <span class="ib-toolbar-divider" aria-hidden="true"></span>
+          <span class="ib-toolbar-divider" aria-hidden="true"></span>
 
-        <!-- Secondary views (filters) – wired later -->
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
-          Notes
-        </button>
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
-          Bookmarks
-        </button>
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
-          Sections
-        </button>
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
-          Highlights
-        </button>
-      </div>
+          <button
+            type="button"
+            class="ib-toolbar-btn ib-toolbar-btn-plain"
+            id="ib-toolbar-settings"
+            disabled
+            title="Settings will be added in a future update."
+          >
+            Settings
+          </button>
 
-      <!-- Middle: formatting / tools (placeholders for now) -->
-      <div class="ib-toolbar-section ib-toolbar-middle">
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Bold">
-          <span class="ib-toolbar-label">B</span>
-        </button>
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Italic">
-          <span class="ib-toolbar-label ib-toolbar-label-italic">I</span>
-        </button>
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Underline">
-          <span class="ib-toolbar-label ib-toolbar-label-underline">U</span>
-        </button>
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Highlight">
-          <span class="ib-toolbar-label">A</span>
-        </button>
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
-          + Note
-        </button>
-      </div>
+          <button
+            type="button"
+            class="ib-toolbar-btn ib-toolbar-btn-plain"
+            id="ib-toolbar-more"
+            aria-expanded="false"
+            aria-controls="ib-dropdown-more"
+          >
+            More info
+          </button>
 
-      <!-- Right: theme / settings / info -->
-      <div class="ib-toolbar-section ib-toolbar-right">
-        <button
-          type="button"
-          class="ib-toolbar-btn ib-toolbar-btn-plain"
-          id="ib-toolbar-theme"
-        >
-          Theme: Light
-        </button>
-        <button
-          type="button"
-          class="ib-toolbar-btn ib-toolbar-btn-plain"
-          id="ib-toolbar-settings"
-        >
-          Settings
-        </button>
-        <button
-          type="button"
-          class="ib-toolbar-btn ib-toolbar-btn-plain"
-          id="ib-toolbar-more"
-        >
-          More info
-        </button>
-        <button
-          type="button"
-          class="ib-toolbar-btn ib-toolbar-btn-plain"
-          id="ib-toolbar-help"
-        >
-          Help
-        </button>
+          <button
+            type="button"
+            class="ib-toolbar-btn ib-toolbar-btn-plain"
+            id="ib-toolbar-help"
+            aria-expanded="false"
+            aria-controls="ib-dropdown-help"
+          >
+            Help
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Dropdown panels under toolbar -->
-  <div class="ib-toolbar-dropdowns">
-    <!-- More info dropdown -->
-    <section
-      class="ib-dropdown"
-      id="ib-dropdown-more"
-      aria-label="Infinite Bible information"
-      hidden
-    >
-      <h2 class="ib-dropdown-heading">Infinite Bible – unified Bible &amp; Boards</h2>
-      <p class="ib-dropdown-text">
-        Infinite Bible is a single workspace with two main modes:
-        chapter-based Bible boards and free-form boards for topics and notes.
-      </p>
-
-      <div class="ib-dropdown-columns">
-        <div class="ib-dropdown-column">
-          <h3 class="ib-dropdown-subheading">Bible mode</h3>
-          <ul class="ib-dropdown-list">
-            <li>One board per chapter, using the shared Bible Tools v1 data.</li>
-            <li>Ideal for repeated work in specific passages (e.g., Genesis 1, Romans 8).</li>
-            <li>Boards only persist if you add your own content (notes, highlights, etc.).</li>
-          </ul>
+    <!-- Dropdown region under toolbar -->
+    <div class="ib-toolbar-dropdowns" aria-live="polite">
+      <!-- More info panel -->
+      <section
+        class="ib-dropdown"
+        id="ib-dropdown-more"
+        aria-label="More information about Infinite Bible"
+        hidden
+      >
+        <div class="ib-dropdown-grid">
+          <div class="ib-dropdown-col">
+            <h2 class="ib-dropdown-heading">
+              Infinite Bible – unified Bible &amp; Notes (boards)
+            </h2>
+            <p class="ib-dropdown-text">
+              Infinite Bible is a single workspace that can host both Bible chapter
+              boards and free-form note boards. Everything shares the same storage
+              and tools so you only have to learn one interface.
+            </p>
+            <p class="ib-dropdown-text">
+              Your data is stored locally in your browser (no account, no sync) in
+              this early version.
+            </p>
+          </div>
+          <div class="ib-dropdown-col">
+            <h3 class="ib-dropdown-subheading">Bible mode</h3>
+            <ul class="ib-dropdown-list">
+              <li>Each board represents a single chapter in a specific translation.</li>
+              <li>Boards can hold verse blocks, notes, highlights, and more.</li>
+              <li>Navigator will list books and chapters for the active translation.</li>
+            </ul>
+          </div>
+          <div class="ib-dropdown-col">
+            <h3 class="ib-dropdown-subheading">Notes mode</h3>
+            <ul class="ib-dropdown-list">
+              <li>Named boards for topics, projects, or sermon prep.</li>
+              <li>Boards will be able to mix verses from any chapter with your notes.</li>
+              <li>Notes mode will share the same tools, navigation, and storage.</li>
+              <li>Boards only persist if you add your own content (notes, highlights, etc.).</li>
+            </ul>
+          </div>
         </div>
-        <div class="ib-dropdown-column">
-          <h3 class="ib-dropdown-subheading">Boards mode</h3>
-          <ul class="ib-dropdown-list">
-            <li>Named boards for topics, projects, or sermon prep.</li>
-            <li>Can hold any mix of verse blocks and notes from across Scripture.</li>
-            <li>Also stored locally on the device where you use them.</li>
-          </ul>
-        </div>
-        <div class="ib-dropdown-column">
-          <h3 class="ib-dropdown-subheading">Notes &amp; limitations</h3>
-          <ul class="ib-dropdown-list">
-            <li>No accounts or sync yet; everything is local to one browser.</li>
-            <li>Design and tools are still in early development and may change.</li>
-            <li>You can always fall back to the main Bible Viewer for traditional reading.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Help dropdown -->
-    <section
-      class="ib-dropdown"
-      id="ib-dropdown-help"
-      aria-label="Help and feedback"
-      hidden
-    >
-      <h2 class="ib-dropdown-heading">Help &amp; feedback</h2>
-      <p class="ib-dropdown-text">
-        This is an early version of Infinite Bible. If something feels confusing or broken,
-        feedback is welcome.
-      </p>
-      <ul class="ib-dropdown-list">
-        <li>
-          <a href="{{ '/help/feedback/' | relative_url }}">
-            Send feedback or report an issue
-          </a>
-        </li>
-        <li>
-          <a href="{{ '/help/' | relative_url }}">
-            Visit the general Help hub
-          </a>
-        </li>
-        <li>
-          <a href="{{ '/help/technical/' | relative_url }}">
-            Technical notes &amp; known limitations
-          </a>
-        </li>
-      </ul>
-    </section>
-  </div>
+      <!-- Help panel -->
+      <section
+        class="ib-dropdown"
+        id="ib-dropdown-help"
+        aria-label="Help for using Infinite Bible"
+        hidden
+      >
+        <h2 class="ib-dropdown-heading">Using this prototype</h2>
+        <p class="ib-dropdown-text">
+          This is an early layout prototype. The toolbar, navigator, and workspace
+          shell are present so we can refine the experience on both desktop and
+          mobile before wiring up real Scripture data and board interactions.
+        </p>
+        <ul class="ib-dropdown-list">
+          <li>
+            Use the <strong>Navigator</strong> button to show or hide the left panel.
+          </li>
+          <li>
+            Use the <strong>Theme</strong> toggle to switch the canvas between light and dark.
+          </li>
+          <li>
+            As the tool develops, boards will store layout and notes locally in your browser.
+          </li>
+        </ul>
+      </section>
+    </div>
+  </section>
 
-  <!-- Layout: sidebar + workspace (sidebar is toggleable) -->
+  <!-- Main layout: sidebar + workspace -->
   <div class="ib-layout" id="ib-layout">
-    <!-- Left sidebar driven by Navigator; placeholder for now -->
+    <!-- Navigator / sidebar -->
     <aside class="ib-sidebar" aria-label="Infinite Bible navigator" id="ib-sidebar">
       <div class="ib-sidebar-header">
         <h2 class="ib-sidebar-title" id="ib-sidebar-title">Bible</h2>
         <p class="ib-sidebar-mode-hint" id="ib-sidebar-mode-hint">
           Chapter boards will appear here in Bible mode.
         </p>
+
+        <div class="ib-sidebar-controls">
+          <!-- Mode toggle: Bible vs Notes -->
+          <div class="ib-sidebar-modes" role="radiogroup" aria-label="Mode">
+            <button
+              type="button"
+              class="ib-sidebar-mode-btn ib-sidebar-mode-btn-active"
+              data-ib-mode="bible"
+              id="ib-sidebar-mode-bible"
+            >
+              Bible
+            </button>
+            <button
+              type="button"
+              class="ib-sidebar-mode-btn"
+              data-ib-mode="notes"
+              id="ib-sidebar-mode-notes"
+            >
+              Notes
+            </button>
+          </div>
+
+          <!-- View filter: which things from the current mode to list -->
+          <div class="ib-sidebar-views" aria-label="View filter">
+            <button
+              type="button"
+              class="ib-sidebar-view-btn ib-sidebar-view-btn-active"
+              data-ib-view="boards"
+              id="ib-sidebar-view-boards"
+            >
+              Boards
+            </button>
+            <button
+              type="button"
+              class="ib-sidebar-view-btn"
+              data-ib-view="notes"
+              id="ib-sidebar-view-notes"
+            >
+              Notes
+            </button>
+            <button
+              type="button"
+              class="ib-sidebar-view-btn"
+              data-ib-view="highlights"
+              id="ib-sidebar-view-highlights"
+            >
+              Highlights
+            </button>
+            <button
+              type="button"
+              class="ib-sidebar-view-btn"
+              data-ib-view="bookmarks"
+              id="ib-sidebar-view-bookmarks"
+            >
+              Bookmarks
+            </button>
+            <button
+              type="button"
+              class="ib-sidebar-view-btn"
+              data-ib-view="sections"
+              id="ib-sidebar-view-sections"
+            >
+              Sections
+            </button>
+          </div>
+        </div>
       </div>
+
       <div class="ib-sidebar-body">
         <div class="ib-sidebar-section">
           <h3 class="ib-sidebar-section-title">Coming soon</h3>
           <p class="ib-sidebar-text">
-            This navigator will list books &amp; chapters in Bible mode and named boards in Boards mode.
+            This navigator will list books &amp; chapters in Bible mode and named boards in Notes mode.
           </p>
         </div>
         <div class="ib-sidebar-section ib-sidebar-section-muted">
@@ -230,20 +285,45 @@ extra_css:
       </div>
     </aside>
 
-    <!-- Workspace (canvas shell) -->
-    <section
-      class="ib-workspace ib-workspace-theme-light ib-mode-bible"
-      aria-label="Infinite Bible workspace"
-      id="ib-workspace"
-    >
-      <div class="ib-canvas-inner">
-        <h2 class="ib-canvas-title">
-          Workspace – <span id="ib-current-mode-label">Bible mode</span>
-        </h2>
+    <!-- Workspace -->
+    <section class="ib-workspace ib-workspace-theme-light ib-mode-bible" id="ib-workspace">
+      <header class="ib-canvas-header">
+        <div class="ib-canvas-header-main">
+          <h2 class="ib-canvas-title">Workspace – Bible mode</h2>
+          <p class="ib-canvas-subtitle" id="ib-mode-pill">
+            Bible mode
+          </p>
+        </div>
+        <div class="ib-canvas-header-meta">
+          <p class="ib-canvas-meta-line">
+            <span class="ib-canvas-meta-label">Current mode</span>
+            <span class="ib-canvas-meta-value" id="ib-current-mode-label">
+              Bible mode
+            </span>
+          </p>
+          <p class="ib-canvas-meta-line">
+            <span class="ib-canvas-meta-label">Theme</span>
+            <span class="ib-canvas-meta-value" id="ib-current-theme-label">
+              Light
+            </span>
+          </p>
+        </div>
+      </header>
+
+      <section class="ib-canvas-body" aria-label="Infinite Bible workspace">
         <p class="ib-canvas-text" id="ib-mode-description">
           In Bible mode, each board represents a single chapter. As the tool develops,
           this area will hold your chapter layouts, verse blocks, and notes.
         </p>
+
+        <div class="ib-canvas-callout">
+          <h3 class="ib-canvas-callout-title">Boards and notes are coming</h3>
+          <p class="ib-canvas-callout-text">
+            This prototype focuses on the layout of the toolbar, navigator, and workspace.
+            The next steps are to wire this shell into the shared Bible Tools core and
+            start rendering real chapter boards with verse blocks and notes.
+          </p>
+        </div>
 
         <div class="ib-canvas-scroll-test">
           <p>
@@ -251,7 +331,7 @@ extra_css:
             On mobile, the toolbar should stay accessible while the workspace scrolls.
           </p>
         </div>
-      </div>
+      </section>
     </section>
   </div>
 </main>
@@ -272,41 +352,45 @@ extra_css:
     var sidebarModeHint = document.getElementById("ib-sidebar-mode-hint");
 
     var btnNav = document.getElementById("ib-toolbar-nav");
-    var btnBible = document.getElementById("ib-btn-mode-bible");
-    var btnBoards = document.getElementById("ib-btn-mode-boards");
+    var themeBtn = document.getElementById("ib-toolbar-theme");
 
     var moreBtn = document.getElementById("ib-toolbar-more");
     var helpBtn = document.getElementById("ib-toolbar-help");
     var morePanel = document.getElementById("ib-dropdown-more");
     var helpPanel = document.getElementById("ib-dropdown-help");
+    var toolbar = document.querySelector(".ib-toolbar");
+    var dropdownRoot = document.querySelector(".ib-toolbar-dropdowns");
 
-    var themeBtn = document.getElementById("ib-toolbar-theme");
+    // Sidebar mode + view buttons
+    var modeButtons = document.querySelectorAll("[data-ib-mode]");
+    var viewButtons = document.querySelectorAll("[data-ib-view]");
 
     // Fallback if IBT core isn't loaded for some reason
     var IBT = window.IBT || {
       settings: {
         lastMode: "bible",
         canvasTheme: "light",
-        showSidebar: true
+        sidebarCollapsed: false
       },
       saveSettings: function () {}
     };
 
     function closeAllDropdowns() {
-      if (morePanel) morePanel.hidden = true;
-      if (helpPanel) helpPanel.hidden = true;
+      if (morePanel) {
+        morePanel.hidden = true;
+      }
+      if (helpPanel) {
+        helpPanel.hidden = true;
+      }
+      if (moreBtn) {
+        moreBtn.setAttribute("aria-expanded", "false");
+      }
+      if (helpBtn) {
+        helpBtn.setAttribute("aria-expanded", "false");
+      }
     }
 
-    function toggleDropdown(panel) {
-      if (!panel) return;
-      var willShow = panel.hidden;
-      closeAllDropdowns();
-      panel.hidden = !willShow;
-    }
-
-    // Sidebar open/close
-    function setSidebar(open) {
-      var isOpen = !!open;
+    function setSidebar(isOpen) {
       if (layout) {
         layout.classList.toggle("ib-sidebar-closed", !isOpen);
       }
@@ -315,31 +399,40 @@ extra_css:
         btnNav.classList.toggle("ib-toolbar-btn-plain", !isOpen);
         btnNav.setAttribute("aria-pressed", isOpen ? "true" : "false");
       }
-      IBT.settings.showSidebar = isOpen;
+      IBT.settings.sidebarCollapsed = !isOpen;
+      if ("showSidebar" in IBT.settings) {
+        delete IBT.settings.showSidebar;
+      }
       IBT.saveSettings();
     }
 
-    // Mode switching: "bible" vs "notes" (Boards)
+    function setActiveModeButton(mode) {
+      modeButtons.forEach(function (btn) {
+        var isActive = btn.getAttribute("data-ib-mode") === mode;
+        btn.classList.toggle("ib-sidebar-mode-btn-active", isActive);
+      });
+    }
+
+    function setActiveViewButton(view) {
+      viewButtons.forEach(function (btn) {
+        var isActive = btn.getAttribute("data-ib-view") === view;
+        btn.classList.toggle("ib-sidebar-view-btn-active", isActive);
+      });
+    }
+
+    // Mode switching: "bible" vs "notes"
     function setMode(mode) {
       var normalized = mode === "notes" ? "notes" : "bible";
       var isBible = normalized === "bible";
 
-      // Update active button styles
-      if (btnBible && btnBoards) {
-        btnBible.classList.toggle("ib-toolbar-btn-primary", isBible);
-        btnBible.classList.toggle("ib-toolbar-btn-plain", !isBible);
-        btnBoards.classList.toggle("ib-toolbar-btn-primary", !isBible);
-        btnBoards.classList.toggle("ib-toolbar-btn-plain", isBible);
-      }
-
       // Update workspace mode classes
       if (workspace) {
         workspace.classList.toggle("ib-mode-bible", isBible);
-        workspace.classList.toggle("ib-mode-boards", !isBible);
+        workspace.classList.toggle("ib-mode-notes", !isBible);
       }
 
       // Update labels
-      var labelText = isBible ? "Bible mode" : "Boards mode";
+      var labelText = isBible ? "Bible mode" : "Notes mode";
       if (modePill) modePill.textContent = labelText;
       if (modeLabel) modeLabel.textContent = labelText;
 
@@ -349,7 +442,7 @@ extra_css:
             "In Bible mode, each board represents a single chapter. As the tool develops, this area will hold your chapter layouts, verse blocks, and notes.";
         } else {
           modeDescription.textContent =
-            "In Boards mode, each board is a named workspace for topics, projects, or sermon prep. As the tool develops, you will be able to mix verses and notes freely here.";
+            "In Notes mode, each board is a named workspace for topics, projects, or sermon prep. As the tool develops, you will be able to mix verses and notes freely here.";
         }
       }
 
@@ -359,11 +452,13 @@ extra_css:
           sidebarModeHint.textContent =
             "Chapter boards will appear here in Bible mode.";
         } else {
-          sidebarTitle.textContent = "Boards";
+          sidebarTitle.textContent = "Notes";
           sidebarModeHint.textContent =
-            "Named boards will appear here in Boards mode.";
+            "Named boards will appear here in Notes mode.";
         }
       }
+
+      setActiveModeButton(normalized);
 
       // Persist choice
       IBT.settings.lastMode = normalized;
@@ -374,11 +469,18 @@ extra_css:
     function applyTheme(theme) {
       var normalized = theme === "dark" ? "dark" : "light";
       if (workspace) {
-        workspace.classList.toggle("ib-workspace-theme-light", normalized === "light");
-        workspace.classList.toggle("ib-workspace-theme-dark", normalized === "dark");
+        workspace.classList.toggle(
+          "ib-workspace-theme-light",
+          normalized === "light"
+        );
+        workspace.classList.toggle(
+          "ib-workspace-theme-dark",
+          normalized === "dark"
+        );
       }
       if (themeBtn) {
-        themeBtn.textContent = normalized === "light" ? "Theme: Light" : "Theme: Dark";
+        themeBtn.textContent =
+          normalized === "light" ? "Theme: Light" : "Theme: Dark";
       }
       IBT.settings.canvasTheme = normalized;
       IBT.saveSettings();
@@ -388,54 +490,66 @@ extra_css:
     if (btnNav) {
       btnNav.addEventListener("click", function (ev) {
         ev.preventDefault();
-        var next = !(IBT.settings.showSidebar !== false);
-        setSidebar(next);
-      });
-    }
-
-    if (btnBible) {
-      btnBible.addEventListener("click", function (ev) {
-        ev.preventDefault();
-        setMode("bible");
-      });
-    }
-    if (btnBoards) {
-      btnBoards.addEventListener("click", function (ev) {
-        ev.preventDefault();
-        setMode("notes");
-      });
-    }
-
-    if (moreBtn && morePanel) {
-      moreBtn.addEventListener("click", function (ev) {
-        ev.stopPropagation();
-        toggleDropdown(morePanel);
-      });
-    }
-
-    if (helpBtn && helpPanel) {
-      helpBtn.addEventListener("click", function (ev) {
-        ev.stopPropagation();
-        toggleDropdown(helpPanel);
+        var isCollapsed = !!IBT.settings.sidebarCollapsed;
+        setSidebar(isCollapsed);
       });
     }
 
     if (themeBtn) {
       themeBtn.addEventListener("click", function (ev) {
         ev.preventDefault();
-        var nextTheme = IBT.settings.canvasTheme === "dark" ? "light" : "dark";
+        var nextTheme =
+          IBT.settings.canvasTheme === "dark" ? "light" : "dark";
         applyTheme(nextTheme);
       });
     }
 
-    // Close dropdowns when clicking outside toolbar + dropdown area
-    document.addEventListener("click", function (ev) {
-      var dropdownRoot = document.querySelector(".ib-toolbar-dropdowns");
-      var toolbar = document.querySelector(".ib-toolbar");
-      if (!dropdownRoot || !toolbar) {
-        closeAllDropdowns();
-        return;
+    // Hook up sidebar mode buttons
+    modeButtons.forEach(function (btn) {
+      btn.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        var mode = btn.getAttribute("data-ib-mode");
+        setMode(mode);
+      });
+    });
+
+    // Hook up sidebar view buttons (UI only for now)
+    viewButtons.forEach(function (btn) {
+      btn.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        var view = btn.getAttribute("data-ib-view");
+        setActiveViewButton(view);
+      });
+    });
+
+    // Hook up dropdown buttons
+    function togglePanel(panel, button) {
+      if (!panel) return;
+      var willOpen = panel.hidden;
+      closeAllDropdowns();
+      panel.hidden = !willOpen;
+      if (button) {
+        button.setAttribute("aria-expanded", willOpen ? "true" : "false");
       }
+    }
+
+    if (moreBtn && morePanel) {
+      moreBtn.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        togglePanel(morePanel, moreBtn);
+      });
+    }
+
+    if (helpBtn && helpPanel) {
+      helpBtn.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        togglePanel(helpPanel, helpBtn);
+      });
+    }
+
+    // Close dropdowns on outside click
+    document.addEventListener("click", function (ev) {
+      if (!toolbar || !dropdownRoot) return;
       if (toolbar.contains(ev.target) || dropdownRoot.contains(ev.target)) {
         return;
       }
@@ -445,6 +559,13 @@ extra_css:
     // Initial state based on saved settings
     setMode(IBT.settings.lastMode || "bible");
     applyTheme(IBT.settings.canvasTheme || "light");
-    setSidebar(IBT.settings.showSidebar !== false);
+
+    var initialSidebarOpen = true;
+    if (typeof IBT.settings.sidebarCollapsed === "boolean") {
+      initialSidebarOpen = !IBT.settings.sidebarCollapsed;
+    } else if (typeof IBT.settings.showSidebar === "boolean") {
+      initialSidebarOpen = IBT.settings.showSidebar !== false;
+    }
+    setSidebar(initialSidebarOpen);
   });
 </script>

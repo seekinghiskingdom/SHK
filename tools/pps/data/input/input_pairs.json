@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "generated_at": "2025-11-23T11:12:33Z",
+    "source": {
+      "file": "C:\\Users\\hrbncv\\SHK\\SHK\\tools\\pps\\data\\input\\pairs.csv",
+      "sheet": "pairs",
+      "version": "v1"
+    },
+    "schema": {
+      "Y": [],
+      "P": [],
+      "T": [],
+      "S": [],
+      "R": [],
+      "X": []
+    },
+    "stats": {
+      "pairs_total": 0,
+      "books": [],
+      "chapters": [],
+      "skipped_rows": 554
+    }
+  },
+  "pairs": []
+}

@@ -1,3 +1,19 @@
+/* Infinite Bible app layout tweaks */
+.infinite-bible-app.tool-page {
+  max-width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .infinite-bible-app.tool-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* End Infinite Bible app layout tweaks */
+
 /* Infinite Bible – unified Bible + Boards app */
 /* Content and wording assisted by AI (-AI) */
 
@@ -16,56 +32,121 @@
 
 .infinite-bible-app .ib-title-row {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
   flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
 }
 
 .infinite-bible-app .ib-title {
-  font-size: 1.6rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
   margin: 0;
-}
-
-.infinite-bible-app .ib-pill {
-  padding: 3px 10px;
-  border-radius: 999px;
-  border: 1px solid #facc15; /* gold */
-  font-size: 0.7rem;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 2.1rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: #facc15;
-  background: transparent;
 }
 
-.infinite-bible-app .ib-intro-row {
-  display: flex;
+.infinite-bible-app .ib-title-pill {
+  display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+  height: 1.7rem;
+  padding: 0 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(251, 191, 36, 0.8);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #fbbf24;
+  background: rgba(15, 23, 42, 0.9);
 }
 
-.infinite-bible-app .ib-subtitle {
+.infinite-bible-app .ib-header-lead {
   margin: 0;
   font-size: 0.95rem;
-  flex: 1 1 auto;
+  color: #e5e7eb;
+  max-width: 40rem;
 }
 
-/* === Sticky toolbar ribbon === */
+.infinite-bible-app .ib-header-secondary {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
 
-.infinite-bible-app .ib-toolbar {
+.infinite-bible-app .ib-header-blurb {
+  flex: 2 1 280px;
+  max-width: 32rem;
+}
+
+.infinite-bible-app .ib-header-subtitle {
+  margin: 0 0 0.25rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #facc15;
+}
+
+.infinite-bible-app .ib-header-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.infinite-bible-app .ib-header-meta {
+  flex: 1 1 220px;
+  font-size: 0.85rem;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  background: rgba(15, 23, 42, 0.92);
+  padding: 0.7rem 0.85rem;
+}
+
+.infinite-bible-app .ib-meta-line {
+  margin: 0 0 0.25rem;
+  display: flex;
+  gap: 0.35rem;
+  justify-content: space-between;
+}
+
+.infinite-bible-app .ib-meta-line:last-child {
+  margin-bottom: 0;
+}
+
+.infinite-bible-app .ib-meta-label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+.infinite-bible-app .ib-meta-value {
+  font-weight: 500;
+}
+
+/* === Toolbar region === */
+
+.infinite-bible-app .ib-toolbar-shell {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgba(15, 23, 42, 0.9);
-  background: #020617; /* almost-black */
-  backdrop-filter: blur(6px);
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(55, 65, 81, 0.7);
+}
+
+.infinite-bible-app .ib-toolbar {
+  display: flex;
+  justify-content: center;
 }
 
 .infinite-bible-app .ib-toolbar-inner {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.75rem;
   padding: 0.4rem 0;
@@ -98,59 +179,52 @@
 }
 
 .infinite-bible-app .ib-toolbar-middle {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
 }
 
 .infinite-bible-app .ib-toolbar-right {
-  flex: 0 1 auto;
   margin-left: auto;
+  flex: 0 0 auto;
 }
-
-/* Toolbar buttons */
-
 
 .infinite-bible-app .ib-toolbar-btn {
-  display: inline-flex;      /* override any global display:block */
-  align-items: center;
-  justify-content: center;
-  width: auto;               /* override any width:100% */
-  padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  border: 1px solid transparent;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+  border: 1px solid #4b5563;
   background: transparent;
   color: #e5e7eb;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
   white-space: nowrap;
-}
-
-
-.infinite-bible-app .ib-toolbar-btn:hover {
-  background: rgba(31, 41, 55, 0.85);
 }
 
 .infinite-bible-app .ib-toolbar-btn-primary {
   border-color: #facc15;
-  color: #facc15;
-  background: rgba(0, 0, 0, 0.2);
+  background: #facc15;
+  color: #111827;
 }
 
 .infinite-bible-app .ib-toolbar-btn-plain {
-  border-color: transparent;
+  border-color: #4b5563;
+  background: rgba(15, 23, 42, 0.9);
 }
 
 .infinite-bible-app .ib-toolbar-btn-icon {
-  width: 1.9rem;
-  padding-inline: 0;
-  justify-content: center;
+  border-radius: 999px;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
 }
-
-/* Label variants inside icon-like buttons */
 
 .infinite-bible-app .ib-toolbar-label {
   font-weight: 600;
+  font-size: 0.85rem;
 }
 
 .infinite-bible-app .ib-toolbar-label-italic {
@@ -160,8 +234,6 @@
 .infinite-bible-app .ib-toolbar-label-underline {
   text-decoration: underline;
 }
-
-/* Vertical divider */
 
 .infinite-bible-app .ib-toolbar-divider {
   width: 1px;
@@ -197,41 +269,36 @@
 }
 
 .infinite-bible-app .ib-dropdown-text {
-  margin: 0 0 0.6rem;
-  font-size: 0.88rem;
-}
-
-.infinite-bible-app .ib-dropdown-columns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.infinite-bible-app .ib-dropdown-column {
-  flex: 1 1 200px;
-}
-
-.infinite-bible-app .ib-dropdown-subheading {
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.4rem;
   font-size: 0.86rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
 .infinite-bible-app .ib-dropdown-list {
-  margin: 0;
+  margin: 0.2rem 0 0;
   padding-left: 1.1rem;
   font-size: 0.85rem;
 }
 
-.infinite-bible-app .ib-dropdown-list li + li {
-  margin-top: 0.2rem;
+.infinite-bible-app .ib-dropdown-list li {
+  margin-bottom: 0.2rem;
 }
 
-.infinite-bible-app .ib-dropdown a {
+.infinite-bible-app .ib-dropdown-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr) minmax(0, 1.3fr);
+  gap: 1.1rem;
+}
+
+.infinite-bible-app .ib-dropdown-col {
+  min-width: 0;
+}
+
+.infinite-bible-app .ib-dropdown-subheading {
+  margin: 0 0 0.25rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
   color: #facc15;
-  text-decoration: underline;
 }
 
 /* === Layout: sidebar + workspace === */
@@ -255,11 +322,11 @@
   flex: 1 1 100%;
 }
 
-/* Sidebar */
+/* Sidebar (navigator) */
 
 .infinite-bible-app .ib-sidebar {
-  flex: 0 0 260px;
-  max-width: 260px;
+  flex: 0 0 220px;
+  max-width: 220px;
   border-radius: 14px;
   border: 1px solid #e5e7eb;
   background: #020617;
@@ -296,7 +363,7 @@
   margin: 0 0 0.25rem;
   font-size: 0.82rem;
   text-transform: uppercase;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.12em;
   color: #e5e7eb;
 }
 
@@ -310,49 +377,184 @@
   color: #9ca3af;
 }
 
+/* Sidebar controls (mode + view) */
+
+.infinite-bible-app .ib-sidebar-controls {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.infinite-bible-app .ib-sidebar-modes {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.infinite-bible-app .ib-sidebar-mode-btn {
+  flex: 1 1 0;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: transparent;
+  color: #e5e7eb;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+
+.infinite-bible-app .ib-sidebar-mode-btn-active {
+  background: #fbbf24;
+  border-color: #fbbf24;
+  color: #111827;
+}
+
+.infinite-bible-app .ib-sidebar-views {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.infinite-bible-app .ib-sidebar-view-btn {
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: transparent;
+  color: #e5e7eb;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.infinite-bible-app .ib-sidebar-view-btn-active {
+  background: #111827;
+  border-color: #fbbf24;
+  color: #fbbf24;
+}
+
 /* Workspace (canvas shell) */
 
 .infinite-bible-app .ib-workspace {
   flex: 1 1 auto;
   border-radius: 14px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-  padding: 1.5rem 1.75rem;
-  min-height: 800px; /* ensures scroll on most screens */
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.26);
+  padding: 1.25rem 1.4rem 1.6rem;
+  background: #0b1220;
+  color: #e5e7eb;
 }
 
-/* Themes */
+/* Workspace theme variants */
 
 .infinite-bible-app .ib-workspace-theme-light {
-  background: #ffffff;
+  background: #f9fafb;
+  color: #111827;
+  border-color: #e5e7eb;
+}
+
+.infinite-bible-app .ib-workspace-theme-light .ib-canvas-subtitle {
+  background: #111827;
+  color: #f9fafb;
 }
 
 .infinite-bible-app .ib-workspace-theme-dark {
   background: #020617;
-  border-color: #111827;
   color: #e5e7eb;
+  border-color: #1f2937;
 }
 
-/* Inner content */
+/* Canvas header */
 
-.infinite-bible-app .ib-canvas-inner {
-  max-width: 100%;
+.infinite-bible-app .ib-canvas-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
+.infinite-bible-app .ib-canvas-header-main {
+  flex: 2 1 260px;
+}
 
 .infinite-bible-app .ib-canvas-title {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.infinite-bible-app .ib-canvas-subtitle {
+  display: inline-flex;
+  align-items: center;
+  height: 1.6rem;
+  padding: 0 0.7rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.infinite-bible-app .ib-canvas-header-meta {
+  flex: 1 1 200px;
+  font-size: 0.82rem;
+}
+
+.infinite-bible-app .ib-canvas-meta-line {
+  margin: 0 0 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.infinite-bible-app .ib-canvas-meta-label {
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+.infinite-bible-app .ib-canvas-meta-value {
+  font-weight: 500;
+}
+
+/* Canvas body */
+
+.infinite-bible-app .ib-canvas-body {
+  font-size: 0.9rem;
 }
 
 .infinite-bible-app .ib-canvas-text {
-  margin: 0 0 1rem;
-  font-size: 0.95rem;
-  color: #4b5563;
+  margin: 0 0 0.75rem;
 }
 
-.infinite-bible-app .ib-workspace-theme-dark .ib-canvas-text {
+.infinite-bible-app .ib-canvas-callout {
+  margin-top: 1.2rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.94);
   color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+}
+
+.infinite-bible-app .ib-workspace-theme-light .ib-canvas-callout {
+  background: #111827;
+  color: #e5e7eb;
+  border-color: #111827;
+}
+
+.infinite-bible-app .ib-canvas-callout-title {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+.infinite-bible-app .ib-canvas-callout-text {
+  margin: 0;
+  font-size: 0.88rem;
 }
 
 /* Extra height to test scrolling under the toolbar */
@@ -379,34 +581,70 @@
   /* Bible mode specific styling can go here later */
 }
 
-.infinite-bible-app .ib-mode-boards .ib-canvas-title {
-  /* Boards mode specific styling can go here later */
+.infinite-bible-app .ib-mode-notes .ib-canvas-title {
+  /* Notes mode specific styling can go here later */
 }
 
 /* === Responsive tweaks === */
 
-@media (min-width: 900px) {
-  .infinite-bible-app .ib-toolbar-left {
-    flex: 1 1 auto;
+@media (max-width: 1024px) {
+  .infinite-bible-app .ib-dropdown-grid {
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.2fr);
   }
 
-  .infinite-bible-app .ib-toolbar-middle {
-    flex: 0 1 auto;
-    justify-content: center;
-  }
-
-  .infinite-bible-app .ib-toolbar-right {
-    flex: 0 1 auto;
+  .infinite-bible-app .ib-dropdown-col:last-child {
+    grid-column: 1 / -1;
   }
 }
 
 @media (max-width: 768px) {
+  .infinite-bible-app .ib-toolbar-inner {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .infinite-bible-app .ib-toolbar-left {
+    flex: 1 1 100%;
+  }
+
+  .infinite-bible-app .ib-toolbar-middle {
+    flex: 0 0 auto;
+  }
+
+  .infinite-bible-app .ib-toolbar-right {
+    flex: 0 0 auto;
+  }
+
+  .infinite-bible-app .ib-dropdown-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .infinite-bible-app .ib-layout {
     flex-direction: column;
   }
 
   .infinite-bible-app .ib-sidebar {
-    max-width: 100%;
+    max-width: none;
+    width: 100%;
+  }
+
+  .infinite-bible-app .ib-workspace {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .infinite-bible-app .ib-header-secondary {
+    flex-direction: column;
+  }
+
+  .infinite-bible-app .ib-header-meta {
+    width: 100%;
+  }
+
+  .infinite-bible-app .ib-layout {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
   }
 
   .infinite-bible-app .ib-workspace {

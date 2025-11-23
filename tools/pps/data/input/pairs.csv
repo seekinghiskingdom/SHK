@@ -1,0 +1,555 @@
+Status Info,,,,,,,,,Reference Info,,,,,Pair Info,,,,X INFO,,,,,,,,,,,,,,Y INFO,,,,,,,,,,,,,,Type Info,,,,
+Status,RV,UV,Stage,X,Y,T,Confidence,,Book,Ch,Entry,PV,,P.X,P.T,P.Y,,X.status,X.con,X.type,X.key,X.keys,X.int,X.ref,X.group,X.root,X.context,X.mode,X.gen,X.notes,,Y.status,Y.con,Y.type,Y.key,Y.keys,Y.int,Y.ref,Y.group,Y.root,Y.context,Y.mode,Y.gen,Y.notes,,T.type,T.polarity,T.mode,T.tag,T.notes
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+U,1.0.0,1.0.1,FS,FS,FS,FS,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,2",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,knowledge,,,know,wisdom,know wisdom and instruction,,,of wisdom and instruction,"interpretstion good enough to keep as own, or only used to explain mode? ",,,,,,
+P,,,,,,,,,pro,1,1-4,"1,2",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,wisdom,,,,wisdom,wisdom,,knowledge of,,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,2",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,instruction,,,,guidance,instruction,,knowledge of,,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,2",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,discernment,"perception, discernment, understanding",,perceive,wisdom,to perceive the words of understanding,,,sayings of understanding,"interpretstion good enough to keep as own, or only used to explain mode? ",,,,,,
+P,,,,,,,,,pro,1,1-4,"1,2",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,understanding,"understanding, insight",,understanding,wisdom,the words of understanding,,perception/discernment of/ words of,,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,3",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,instruction,,,,instruction,to receive the instruction of,,receive,of wisdom .... ,"interpretstion good enough to keep as own, or only used to explain mode? ",,,,,,
+P,,,,,,,,,pro,1,1-4,"1,3",,,,,,,,,Proverbs,,,,Word of God,,,,,,,,,,wisdom,,,,wisdom,wisdom,,receive the instruction of,,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,3",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,righteousness,"righteousness, justice, uprightness",,justice,righteousness,justice,,receive the instruction of,,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,3",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,justice,"justice, judgement",,judgement,righteousness,judgement,,receive the instruction of,,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,3",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,equity,"equity, fairness",,equity,righteousness,equity,,receive the instruction of,,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,4",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,prudence,"prudence, subtilty",,subtilty ,wisdom,subtilty ,,,of the simple,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,4",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,knowledge,,,,wisdom,knowledge,,,of young man,,,,,,,
+P,,,,,,,,,pro,1,1-4,"1,4",,,,,,,,,Proverbs,,,Proverbs,Word of God,the Proverbs of Solomon,,,"of Solomon, Proverbs of Solomon (if scripture/God's word)",,,,,,discretion,"discretion, discernment",,discretion,wisdom,discretion,,,of young man,,,,,,,
+IP,,,,,,,,,pro,1,5-6/1-6,"1 or 6?, 5",,,,,,,,,,,"Proverbs (if 1), understanding Proverbs/wisdom (if 6), ",,Word of God/understanding,"the Proverbs of Solomon (1) / to understand a proverb, and the... ",,,,"wisdom - hear, wisdom - learning, understanding - wisdom/counsel, Proverb/understand Proverb - learning & wisdom/counsel,... ",,,,,"hear,learning,...",,,,?? ,,,,,"wisdom - hear, wisdom - learning, understanding - wisdom/counsel, Proverb/understand Proverb - learning & wisdom/counsel,... ",,,,,,
+IP,,,,,,,,,pro,1,5-6/1-6,"1 or 6?, 5",,,,,,,,,,,"Proverbs (if 1), understanding Proverbs/wisdom (if 6), ",,Word of God/understanding,"the Proverbs of Solomon (1) / to understand a proverb, and the... ",,,,"wisdom - hear, wisdom - learning, understanding - wisdom/counsel, Proverb/understand Proverb - learning & wisdom/counsel,... ",,,,,"hear,learning,...",,,,?? ,,,,,"wisdom - hear, wisdom - learning, understanding - wisdom/counsel, Proverb/understand Proverb - learning & wisdom/counsel,... ",,,,,,
+P,,,,,,,,,pro,1,7,7,,,,,,,,,reverence,"fear, reverence",,fear,reverence,fear of the LORD,,,of the LORD,,,,,,,,,,wisdom,beginning of knowledge,,the beginning/source of,,,,,,,,
+IP,,,,,,,,,pro,1,8-9,"8,9",,,,,,,,,instruction,"instruction, (heed) law/obedience ",,"instruction, law","guidance, guidance/obedience","hear the instruction of thy father, forsake not the law of thy mother",,"hear, forsake not (/heed?)","of father, of mother",combine both instruction of father & teaching of mother? ,,,,,?? ,,honor/wealth/status? ,,?? ,"an ornament of grace unto thy head, chains about thy neck",,,,"combine both, unless different depending on interpretation",,,,,,
+F,,,,,,,,,pro,1,10-19,"10,15",,,,,,,,,?? ,,resist temptation,,?? ,,,,,"command, different type? ",,,,,bad things avoided,,,,?? ,,,,,,,,,,,"command, and avoid"
+P,,,,,,,,,pro,1,(20-)23,23,,,,,,,,,correction,"reproof, correction, rebuke, discipline",,reproof,guidance,reproof,,turn to,from wisdom,,,,,,Holy Spirit,,,,Holy Spirit,pour out my spirit unto you,,pour out unto,of Wisdom,,,,,,,
+P,,,,,,,,,pro,1,(20-)23,23,,,,,,,,,correction,"reproof, correction, rebuke, discipline",,reproof,guidance,reproof,,turn to,from wisdom,,,,,,,,wisdom,,wisdom,pour out my spirit unto you,,pour out spirit of,of Spirit,"interpreted, need validation ",,,,,,
+P,,,,,,,,,pro,1,(20-)23,23,,,,,,,,,repentance,,,,repentance,turn you at my reproof,,,from wisdom,,,,,,knowledge,,,,wisdom,make known my words unto you,,words,word of God and of wisdom,,,,,,,
+P,,,,,,,,,pro,1,(20-)23,23,,,,,,,,,repentance,,,,repentance,turn you at my reproof,,,from wisdom,,,,,,,,wisdom,,wisdom,make known my words unto you,,make words known,of Wisdom,"interpreted, need validation ",,,,,,
+P,,,,,,,,,pro,1,31-33,33,,,,,,,,,listening,"listening, heedance, obedience, consideration, mindfulness",,listening,guidance,hearkeneth unto me,,,from wisdom,IM: add wisdom from interpretation as well? ,,,,,safety,"safety, security, peace",,safety,safety,dwell safely,,live/dwell,,,,,,,,(listen to) wisdom?; combine with next as safety/security/peace? 
+P,,,,,,,,,pro,1,31-33,33,,,,,,,,,listening,"listening, heedance, obedience, consideration, mindfulness",,listening,guidance,hearkeneth unto me,,,from wisdom,IM: add wisdom from interpretation as well? ,,,,,peace,"quiet, ease, security",peace,quiet,peace,be quiet from fear of evil,,without fear of evil,,AR: free of fear/evil specifically separate Y? ,,,,,,(listen to) wisdom?; combine with next as safety/security/peace? 
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,2,1-,1,,,,,,,,,receptivity & Word of God,,,,guidance,,,,,,,,,,discernment/understanding (of reverence),,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,1-,1,,,,,,,,,receptivity & Word of God,,,,guidance,,,,,,,,,,revelation & knowledge (of God),,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,1-,1,,,,,,,,,?? & instruction,"teachability, instruction, heedance, obedience, etc",,,guidance,,,,,,,,,,discernment/understanding (of reverence),,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,1-,1,,,,,,,,,?? & instruction,"teachability, instruction, heedance, obedience, etc",,,guidance,,,,,,,,,,revelation & knowledge (of God),,,,wisdom,,,,,,,,,,,
+IP,,,,,,,,,pro,2,1-,2,,,,,,,,,?? & wisdom,"listening, attentiveness, heedance, receptivity, pursuit",,,pursuit,,,listen to,of wisdom,,,,,,discernment/understanding (of reverence),,,,wisdom,,,,,,,,,,,
+IP,,,,,,,,,pro,2,1-,2,,,,,,,,,?? & wisdom,"listening, attentiveness, heedance, receptivity, pursuit",,,pursuit,,,listen to,of wisdom,,,,,,revelation & knowledge (of God),,,,wisdom,,,,,,,,,,,
+IP,,,,,,,,,pro,2,1-,2,,,,,,,,,?? & understanding,"set heart/desire to (wisdom), attentiveness, heedance, receptivity, pursuit",,,pursuit,,,set heart on,of understanding,,,,,,discernment/understanding (of reverence),,,,wisdom,,,,,,,,,,,
+IP,,,,,,,,,pro,2,1-,2,,,,,,,,,?? & understanding,"set heart/desire to (wisdom), attentiveness, heedance, receptivity, pursuit",,,pursuit,,,set heart on,of understanding,,,,,,revelation & knowledge (of God),,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,1-,3,,,,,,,,,supplication & ?? ,"pursuit, pleading, seek desperately word? & discernment/knowledge",,,supplication,,,,,CG,,,,,discernment/understanding (of reverence),,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,1-,3,,,,,,,,,supplication & ?? ,"pursuit, pleading, seek desperately word? & discernment/knowledge",,,supplication,,,,,CG,,,,,revelation & knowledge (of God),,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,1-,3,,,,,,,,,supplication & understanding,lift voice for,,,supplication,,,,,CG,,,,,discernment/understanding (of reverence),,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,1-,3,,,,,,,,,supplication & understanding,lift voice for,,,supplication,,,,,CG,,,,,revelation & knowledge (of God),,,,wisdom,,,,,,,,,,,
+IP,,,,,,,,,pro,2,1-,4,,,,,,,,,"pursuit & ""her""/wisdom",,,,pursuit,,,,,,,,,,discernment/understanding (of reverence),,,,wisdom,,,,,,,,,,,
+IP,,,,,,,,,pro,2,1-,4,,,,,,,,,"pursuit & ""her""/wisdom",,,,pursuit,,,,,,,,,,revelation & knowledge (of God),,,,wisdom,,,,,,,,,,,
+IP,,,,,,,,,pro,2,1-,4,,,,,,,,,"pursuit & ""her""/wisdom",,,,pursuit,,,,,,,,,,discernment/understanding (of reverence),,,,wisdom,,,,,,,,,,,
+IP,,,,,,,,,pro,2,1-,4,,,,,,,,,"pursuit & ""her""/wisdom",,,,pursuit,,,,,,,,,,revelation & knowledge (of God),,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,,6,,,,,,,,,Word of God,,,,Word of God,,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,,6,,,,,,,,,Word of God,,,,Word of God,,,,,,,,,,knowledge,,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,,6,,,,,,,,,Word of God,,,,Word of God,,,,,,,,,,understanding,,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,,7,,,,,,,,,?? ,"righteousness, uprightness",,,,,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,,
+P,,,,,,,,,pro,2,,7,,,,,,,,,?? ,"integrity, uprightness",,,,,,,,,,,,,protection,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,8,,,,,,,,,?? ,"justice, judgement",?? ,,,,,,,,,,,,?? ,"protection, ""guarding""",int guidance or provision? ,,,,,,,,,,,,,
+P,,,,,,,,,pro,2,,8,,,,,,,,,?? ,"godliness, holiness, etc",,,,,,,,,,,,,preservation,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,9",,,,,,,,,?? ,,,,,,,,,,,,,,discernment/understanding,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,9",,,,,,,,,?? ,,,,,,,,,,,,,,righteousness,,,,righteousness,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,9",,,,,,,,,?? ,,,,,,,,,,,,,,justice,,,,righteousness,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,9",,,,,,,,,?? ,,,,,,,,,,,,,,equity,,,,righteousness,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,9",,,,,,,,,?? ,,,,,,,,,,,,,,?? ,,"guidance, prudence, discernment, decision; essentially wraps up rest of verse",,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,10",,,,,,,,,wisdom (in desires?),,,,,,,,,,,,,,9?,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,10",,,,,,,,,9?,,,,,,,,,,,,,,wisdom (in desires?),,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,10",,,,,,,,,knowledge? ,,,,,,,,,,,,,,pleasure,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,10",,,,,,,,,pleasure (in knowledge)?,,,,,,,,,,,,,,9?,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,2,,11,,,,,,,,,discretion,,,,wisdom,,,,,,,,,,?? ,"protection, preservation, guarding",,,,,,,,,,,,,,
+P,,,,,,,,,pro,2,,11,,,,,,,,,understanding,,,,wisdom,,,,,,,,,,?? ,"protection, preservation, guarding",,,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,12",,,,,,,,,?? ,,,,,,,,,,,,,,"deliverance (from bunch of different bad things, all one?)",,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,16",,,,,,,,,?? ,,,,,,,,,,,,,,"deliverance (from temptation, purity?)",,,,,,,,,separate from 12?,,,,,,
+IP,,,,,,,,,pro,2,,"??,20",,,,,,,,,?? ,,,,,,,,,,,,,,(way of) good/upright/just,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,2,,"??,20",,,,,,,,,?? ,,,,,,,,,,,,,,(paths of) righteousness,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,2,-22,21,,,,,,,,,uprightness,,,,,,,,,,,,,,establishment,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,2,-22,22,,,,,,,,,?? ,"blamelessness, perfection,",holinessñ,,righteousness,,,,,,,,,,preservation,,,,,,,,,CG,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,3,1-2,"1,2",,,,,,,,,?? ,,"instruction, guidance, Word of God? ","law, teaching",guidance,law,,not forget,of father,"CK, literal or int",,,,,life,,,,salvation (/provision?),"length of days, and long life",,,,and long days (int time?) separate? CG,,,,,,
+P,,,,,,,,,pro,3,1-2,"1,2",,,,,,,,,?? ,,"instruction, guidance, Word of God? ","law, teaching",guidance,law,,not forget,of father,"CK, literal or int",,,,,peace,,,,peace,peace,,,,CG,,,,,,
+IP,,,,,,,,,pro,3,1-2,"1,2",,,,,,,,,not forget,,"remembering, value/treasure other places",,pursuit,forget not,,,"law, teaching","own pair, or mode? IM, or CG",,,,,life,,,,salvation (/provision?),"length of days, and long life",,,,and time? separate? CG,,,,,,
+IP,,,,,,,,,pro,3,1-2,"1,2",,,,,,,,,not forget,,"remembering, value/treasure other places",,pursuit,forget not,,,"law, teaching","own pair, or mode? IM, or CG",,,,,peace,,,,peace,peace,,,,CG,,,,,,
+P,,,,,,,,,pro,3,1-2,"1,2",,,,,,,,,?? ,,"instruction, guidance, Word of God? ",,guidance,commandments,,to keep,of father,"CK, literal or int",,,,,life,,,,salvation (/provision?),"length of days, and long life",,,,and long days (int time?) separate? CG,,,,,,
+P,,,,,,,,,pro,3,1-2,"1,2",,,,,,,,,?? ,,"instruction, guidance, Word of God? ",,guidance,commandments,,to keep,of father,"CK, literal or int",,,,,peace,,,,peace,peace,,,,CG,,,,,,
+P,,,,,,,,,pro,3,1-2,"1,2",,,,,,,,,obedience,,"obedience, heedance",keep commandments,righteousness,keep my commandments,,"with heart, desires",commandments,"own pair, or mode? and also, heart=desires additional pair? CG",,,,,life,,,,salvation (/provision?),"length of days, and long life",,,,and time? separate? CG,,,,,,
+P,,,,,,,,,pro,3,1-2,"1,2",,,,,,,,,obedience,,"obedience, heedance",keep commandments,righteousness,keep my commandments,,"with heart, desires",commandments,"own pair, or mode? and also, heart=desires additional pair? CG",,,,,peace,,,,peace,peace,,,,CG,,,,,,
+,,,,,,,,,pro,3,3-4,"3,4",,,,,,,,,?? ,"kindness, mercy","heedance, others similar",,righteousness,mercy,,bound by neck and heart,,different modes important to distinguish? ,,,,,favor,,,,?? ,find favour,,,,CG,,,,,,kinda int for KJV
+,,,,,,,,,pro,3,3-4,"3,4",,,,,,,,,?? ,"kindness, mercy","heedance, others similar",,righteousness,mercy,,bound by neck and heart,,different modes important to distinguish? ,,,,,reputation,,,,?? ,good understanding in the sight of God and man,,,,CG,,,,,,kinda int for KJV
+,,,,,,,,,pro,3,3-4,"3,4",,,,,,,,,truth,,honesty/integrity? ,,righteousness,truth,,bound by neck and heart,,,,,,,favor,,,,?? ,find favour,,,,CG,,,,,,kinda int for KJV
+,,,,,,,,,pro,3,3-4,"3,4",,,,,,,,,truth,,honesty/integrity? ,,righteousness,truth,,bound by neck and heart,,,,,,,reputation,,,,?? ,good understanding in the sight of God and man,,,,CG,,,,,,kinda int for KJV
+,,,,,,,,,pro,3,5-6 (-8?),"5,6",,,,,,,,,trust,,,,faith,trust in the LORD,,,,,,,,,guidance,"guidance, straight paths",,,guidance,direct thy paths,,,,"maybe reliance on God in 5 is a deep Y? I think grammatically/literarily it could, but from my experience/familiarity with Proverbs it likely isn't",,,,,,
+,,,,,,,,,pro,3,5-6 (-8?),"5,6",,,,,,,,,humility,,,,righteousness,lean not unto thine own understanding,,to lean on,own understanding?,CG,,,,,guidance,"guidance, straight paths",,,guidance,direct thy paths,,,,,,,,,,
+,,,,,,,,,pro,3,5-6 (-8?),"5,6",,,,,,,,,acknowledgement,,"righteousness, pursuit, godliness, reverence, submission, obedience ""seeking His will in actions/choices/life""",,pursuit/righteousness/guidance/reference/etc,in all thy ways acknowledge him,,,,IM,,,,,guidance,"guidance, straight paths",,,guidance,direct thy paths,,,,,,,,,,
+,,,,,,,,,pro,3,(5-?)7-8,"7,8",,,,,,,,,humility,,,,righteousness,Be not wise in thine own eyes,,in own eyes,own wisdom? ,"int, maybe something other than humility? ",,,,,healing,,,,health/refreshment,,,,,CG,,,,,,
+,,,,,,,,,pro,3,(5-?)7-8,"7,8",,,,,,,,,humility,,,,righteousness,Be not wise in thine own eyes,,in own eyes,own wisdom? ,"int, maybe something other than humility? ",,,,,?? ,"refreshment, strength",,,health/refreshment,,,,,CG,,,,,,
+,,,,,,,,,pro,3,(5-?)7-8,"7,8",,,,,,,,,reverence,"reverence, fear",,,reverence,fear the Lord,,,,CG,,,,,healing,,,,health/refreshment,,,,,CG,,,,,,
+,,,,,,,,,pro,3,(5-?)7-8,"7,8",,,,,,,,,reverence,"reverence, fear",,,reverence,fear the Lord,,,,CG,,,,,?? ,"refreshment, strength",,,health/refreshment,,,,,CG,,,,,,
+,,,,,,,,,pro,3,(5-?)7-8,"7,8",,,,,,,,,repentance,,repentance,,repentance,depart from evil,,,,CG,,,,,healing,,,,health/refreshment,,,,,CG,,,,,,
+,,,,,,,,,pro,3,(5-?)7-8,"7,8",,,,,,,,,repentance,,repentance,,repentance,depart from evil,,,,CG,,,,,?? ,"refreshment, strength",,,health/refreshment,,,,,CG,,,,,,
+,,,,,,,,,pro,3,9-10,"9,10",,,,,,,,,?? ,,generosity/sacrifice/tithe (honor the LORD from wealth),,?? ,"Honour the Lord with thy substance, and with the firstfruits of all thine increase:",,,,"split up honor and generosity/sacrifice? split up of wealth/first fruits (maybe if so, generosity for wealth and sacrifice/trust for first fruits?)",,,,,?? ,,wealth/provisions,,wealth/provision,,,,,"split up, or no real contextually meaning difference (wealth vs provision)",,,,,,
+,,,,,,,,,pro,3,11-12,12,,,,,,,,,love,,,,love,whom the Lord loveth,,,of GOD,AR,,,,,correction,"correction, reproof",,,guidance,,,,,,,,,,,could flip (or add separate) by including 11 and interpreting as accept (or not reject/hate) discipline/correction -> God's love/delight
+,,,,,,,,,pro,3,11-12,12,,,,,,,,,delight,,,,joy,the son in whom he delighteth,,,of father,AR,,,,,correction,,,,guidance,,,,,,,,,,,could flip (or add separate) by including 11 and interpreting as accept (or not reject/hate) discipline/correction -> God's love/delight
+,,,,,,,,,pro,3,13-18,13,,,,,,,,,wisdom,,,,wisdom,findeth wisdom,,,,,,,,,?? ,"happiness, blessing, ",,,joy/blessing,,,,,,,,,,,
+,,,,,,,,,pro,3,13-18,13,,,,,,,,,understanding,,,,wisdom,getteth understanding,,,,,,,,,?? ,"happiness, blessing, ",,,joy/blessing,,,,,,,,,,,
+,,,,,,,,,pro,3,13-18,"13,14",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,"""her"", validate",,,,,profit,"profit, merchandise",,,wealth/provision,the merchandise of it,,,,"or just ""better""",,,,,,"if better, need to decide"
+,,,,,,,,,pro,3,13-18,"13,14",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,"""her"", validate",,,,,wealth,,,,wealth/provision,the gain thereof,,,,"or just ""better""",,,,,,"if better, need to decide"
+F,,,,,,,,,pro,3,13-18,"13,15",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,"""she"", validate",,,,,value,,,,wealth/provision,is more precious than rubies: and all the things thou canst desire are not to be compared,,,,x2? ,,,,,,
+,,,,,,,,,pro,3,13-18,"13,16",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,"""she"", validate",,,,,life,,,,life,"""length of days"", ""riches"", ""honour"", ""pleasantness"", ""peace"", ""tree of life"", ""happy"" ",,,,and time like before? ,,,,,,
+,,,,,,,,,pro,3,13-18,"13,16",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,"""she"", validate",,,,,riches,,,,wealth/provision,,,,,,,,,,,
+,,,,,,,,,pro,3,13-18,"13,16",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,"""she"", validate",,,,,honor,,,,honor,,,,,,,,,,,
+,,,,,,,,,pro,3,13-18,"13,17",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,,,,,,pleasure,,,,?? ,,,,,CG,,,,,,
+,,,,,,,,,pro,3,13-18,"13,17",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,,,,,,peace,,,,peace,,,,,,,,,,,
+,,,,,,,,,pro,3,13-18,"13,18",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,,,,,,life,,,,life,,,,,,,,,,,
+,,,,,,,,,pro,3,13-18,"13,18",,,,,,,,,wisdom,,,,wisdom,findeth wisdom | getteth understanding,,,,,,,,,happiness,,,,joy,,,,,,,,,,,
+F,,,,,,,,,pro,3,13-18,18,,,,,,,,,pursuit ,,"(take hold of & hold/retain, of wisdom, like treasure in ch2)",,pursuit,lay hold upon her | retaineth,,,,"also deeper int ""pursuit"" too? ",,,,,?? ,,,,?? ,,,,,,,,,,,
+F,,,,,,,,,pro,3,19-20,19,,,,,,,,,"wisdom, understanding, knowledge",,,,wisdom,,,by/through/using,of God,,,,,,"establishment (of earth, heavens, depths, sky)",,,,provision,,,establishment,,"different scope, but cool idea and may be able to apply generally",,,,,,
+F,,,,,,,,,,,(19-?)21-24,21-22,,,,,,,,,?? ,,"awareness, pursuit; keep for second part? ",,pursuit,,,,,,,,,,?? ,,"same 6 as below? not wisdom & discretion, right? ",,?? ,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,salvation,"life, salvation","(to soul, salvation?)",,salvation,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,?? ,"grace, ",honor/wealth/status? ,,?? ,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,?? ,"safety, security",,,salvation/peace? ,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,?? ,,not stumble (need int),,salvation/peace? ,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,peace,,no fear? ,,peace,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,rest,,rest,,rest,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,discretion,,,,wisdom,,,,,"maybe understanding, sometimes is? and would make more sense if 19-",,,,,salvation,"life, salvation","(to soul, salvation?)",,salvation,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,discretion,,,,wisdom,,,,,"maybe understanding, sometimes is? and would make more sense if 19-",,,,,?? ,"grace, ",honor/wealth/status? ,,?? ,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,discretion,,,,wisdom,,,,,"maybe understanding, sometimes is? and would make more sense if 19-",,,,,?? ,"safety, security",,,salvation/peace? ,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,discretion,,,,wisdom,,,,,"maybe understanding, sometimes is? and would make more sense if 19-",,,,,?? ,,not stumble (need int),,salvation/peace? ,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,discretion,,,,wisdom,,,,,"maybe understanding, sometimes is? and would make more sense if 19-",,,,,peace,,no fear? ,,peace,,,,,,,,,,,
+,,,,,,,,,pro,3,(19-?)21-24,21,,,,,,,,,discretion,,,,wisdom,,,,,"maybe understanding, sometimes is? and would make more sense if 19-",,,,,rest,,rest,,rest,,,,,,,,,,,
+,,,,,,,,,pro,3,25-26,25-26,,,,,,,,,?? ,,"do not be afraid: faith, trust, etc",,faith,,,,,"different pair relationship? but suggestive would make Y an int ""not"" instead; x2? ",,,,,?? ,,int security/peace/protection or guidance,,peace/trust/salvation? ,,,,from God,IM,,,,,,"different pair relationship? but suggestive would make Y an int ""not"" instead"
+,,,,,,,,,pro,3,25-26,25-26,,,,,,,,,?? ,,"do not be afraid: faith, trust, etc",,faith,,,,,"different pair relationship? but suggestive would make Y an int ""not"" instead",,,,,?? ,,"keep from ""snare"" (need to decide int)",,safety,,,,from God,IM,,,,,,"different pair relationship? but suggestive would make Y an int ""not"" instead"
+F,,,,,,,,,pro,3,27-32,27-32,,,,,,,,,do not... ,,,,?? ,,,,,do suggestive in v1? ,,,,,intimacy,"intimacy, confidence, private counsel",,,"intimacy, relationship, love",,,,with God,CG,,,,,,
+,,,,,,,,,pro,3,27-32,32,,,,,,,,,?? ,"righteousness, uprightness",,,righteousness ,,,,,,,,,,intimacy,"intimacy, confidence, private counsel",,,"intimacy, relationship, love",,,,with God,CG,,,,,,
+,,,,,,,,,pro,3,"27-/32-35, or individually? ",33,,,,,,,,,?? ,"righteousness, just/uprightness",,,righteousness ,"""just"" ",,,,,,,,,blessing,,establishment? since of house ,,provision/blessing,"""blesseth""",,of house,from God,,,,,,,
+,,,,,,,,,pro,3,"27-/32-35, or individually? ",34,,,,,,,,,?? ,,humble? or oppression/etc,,?? ,"""grace""",,,,,,,,,grace,,,,grace,"""lowly"" ",,,from God,,,,,,,
+,,,,,,,,,pro,3,"27-/32-35, or individually? ",35,,,,,,,,,wisdom,,,,wisdom,"""wise""",,,,,,,,,?? ,"honor, glory, ",,,honor,"""inherit glory"" ",,,from God,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,4,1-2,1,,,,,,,,,listening,,,,guidance/pursuit,,,,,"AC: own X, or mode of instruction ↓; for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)",,,,,understanding,,,,wisdom,,,,,listening also just relates to getting/receiving instruction? figure out and apply to all similar in chapter,,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+P,,,,,,,,,pro,4,1-2,1,,,,,,,,,instruction,,,,guidance,,,,,,,,,,understanding,,,,wisdom,,,,,,,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+P,,,,,,,,,pro,4,1-2,1,,,,,,,,,attentiveness,,,,guidance/pursuit,,,,,"check key and group, make sure none better later, also AC like above",,,,,understanding,,,,wisdom,,,,,,,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+IP,,,,,,,,,pro,4,1-2,2,,,,,,,,,?? ,,"just general idea of relationship of instruction, or specific obedience, heedance, righteousness of? ",,guidance/righteousness,,,,,need to either CG or IM/AR for best key(s),,,,,?? ,,instruction? or guidance? ,,guidance,,,,,AR/IM: idek,,,,,,"very confusing to perfectly interpret, pairs could even be connected to verse 1"
+P,,,,,,,,,pro,4,3-9,4,,,,,,,,,sonship,,,,sonship,,,,,"CG/AC: very deep, maybe do later? ",,,,,instruction,,"instruction, teaching",,guidance,,,,,"int from teaching, so CG and validation ",,,,,,
+IP,,,,,,,,,pro,4,3-9,4,,,,,,,,,?? ,,,,guidance/pursuit,let thine heart retain my words,,,,need to determine key,,,,,life,,,,life,,,,,is keeping the commandments also a Y (separate),,,,,,could be start/X for all 4-9
+P,,,,,,,,,pro,4,3-9,4,,,,,,,,,obedience,,"obedience, heedance? ",,guidance/pursuit,,,,,Check key for consistency later,,,,,life,,,,life,,,,,,,,,,,
+F,,,,,,,,,pro,4,3-9,5-6,,,,,,,,,wisdom & understanding & instruction (don't forget & accept),,,,wisdom/pursuit,,,,,,,,,,?? ,,,,?? ,,,,,,,,,,,
+F,,,,,,,,,pro,4,3-9,,,,,,,,,,wisdom,,,,wisdom/pursuit,get wisdom,,,,,,,,,wisdom & understanding,,,,?? ,,,,,,,,,,,relationship tbd
+P,,,,,,,,,pro,4,3-9,7,,,,,,,,,pursuit,,,,guidance/pursuit,,,,,"is this the X, or just declarative? ",,,,,wisdom & understanding,,,,wisdom,,,,,,,,,,,"declarative/instructive, or actual causative? "
+P,,,,,,,,,pro,4,3-9,8,,,,,,,,,wisdom,,wisdom,,wisdom/pursuit,,,,,"wisdom generally, or specifically valuing/exalting it?",,,,,?? ,"exaltation, promotion",glory? ,,honor,,,,,,,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+P,,,,,,,,,pro,4,3-9,8,,,,,,,,,wisdom,,wisdom,,wisdom/pursuit,,,,,"wisdom generally, or specifically embracing (int accept?) it?",,,,,honor,,,,honor,,,,,,,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+P,,,,,,,,,pro,4,3-9,(8-?) 9,,,,,,,,,wisdom,,wisdom,,wisdom/pursuit,,,,,"wisdom generally, or specifics referring to 8?",,,,,?? ,grace,"honor, glory, status, etc",,honor,,,,,need to int and CK/CG,,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+P,,,,,,,,,pro,4,3-9,(8-?) 9,,,,,,,,,wisdom,,wisdom,,wisdom/pursuit,,,,,"wisdom generally, or specifics referring to 8?",,,,,?? ,grace,"honor, glory, status, etc",,honor,,,,,need to int and CK/CG,,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+P,,,,,,,,,pro,4,10-19,10,,,,,,,,,listening,,,,guidance/pursuit,,,,,"AC: own X, or mode of instruction ↓",,,,,life,,,,life,,,,,"CG: life/salvation, and long life better key or just mode? ",,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+P,,,,,,,,,pro,4,10-19,10,,,,,,,,,instruction,,"int from sayings, also maybe something like word of God ",,guidance/pursuit,,,,,"instruction with mode, or different keys under instruction group? ",,,,,life,,,,life,,,,,"CG: life/salvation, and long life better key or just mode? ",,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+P,,,,,,,,,pro,4,10-19,10,,,,,,,,,?? ,"receptivity, acceptance",,,guidance/pursuit,,,,,"check key and group, make sure none better later, also AC like above",,,,,life,,,,life,,,,,"CG: life/salvation, and long life better key or just mode? ",,,,,,"for all like this, combining a mode/pursuit with virtue, NEED TO DECIDE GROUP AND FORMAT (SPLIT OR KEEP WITH MODE)"
+P,,,,,,,,,pro,4,10-19,11-12?,,,,,,,,,instruction,,,,guidance/pursuit,,,,,"gen = of wisdom, or separate from wisdom",,,,,wisdom & uprightness/guidance? ,,,,wisdom/guidance (path),,,,,,,,,,,"is this self contained to this verse with this relationship, or connected to 10-13"
+P,,,,,,,,,pro,4,10-19,11-12,,,,,,,,,wisdom & uprightness (paths),,,,wisdom/pursuit & guidance/pursuit,,,,,,,,,,straight/clear path,,,,guidance (path),,,,,,,,,,,
+P,,,,,,,,,pro,4,10-19,13,,,,,,,,,instruction,,,,guidance/pursuit,,,,,"mode or separate?: take hold, keep, retain, don't let go, etc; she=instruction, not wisdom? ",,,,,life,,,,life,,,,,,,,,,,
+F,,,,,,,,,pro,4,10-19,14-16 (-19?),,,,,,,,,don't do.... ,,,,?? ,,,,,,,,,,avoid .... ,,,,?? ,,,,,,,,,,,
+P,,,,,,,,,pro,4,10-19,18 (-19 comp?),,,,,,,,,righteousness,"righteous, just",,,righteousness,,,,,"path just mode, right?, check specific .keys like others",,,,,guidance,,guidance/safety/path: int from: clear/lighted path,,guidance (path),,,,,,,,,,,
+P,,,,,,,,,pro,4,20-22,"20,22",,,,,,,,,attentiveness(instruction of words& sayings),,,,guidance/pursuit,,,,,"keep modes separate like 1/10, also 8-9?",,,,,life & health,,,,life & health,,,,,,,,,,,
+P,,,,,,,,,pro,4,20-22,"20,22",,,,,,,,,listening(instruction of words& sayings),,,,guidance/pursuit,,,,,"keep modes separate like 1/10, also 8-9?",,,,,life & health,,,,life & health,,,,,,,,,,,
+P,,,,,,,,,pro,4,20-22,"20,22",,,,,,,,,instruction,,,,guidance/pursuit,,,,,like ^,,,,,life & health,,,,life & health,,,,,,,,,,,
+P,,,,,,,,,pro,4,20-22,"21,22",,,,,,,,,seek? (instruction),,,,guidance/pursuit,,,,,,,,,,life & health,,,,life & health,,,,,,,,,,,
+P,,,,,,,,,pro,4,20-22,"21,22",,,,,,,,,treasure in heart (instruction of words& sayings),,,,guidance/pursuit,,,,,,,,,,life & health,,,,life & health,,,,,,,,,,,
+P,,,,,,,,,pro,4,20-22,"21,22",,,,,,,,,find instruction (instruction of words& sayings),,,,guidance/pursuit,,,,,,,,,,life & health,,,,life & health,,,,,,,,,,,
+P,,,,,,,,,pro,4,23,23,,,,,,,,,?? ,,"guard heart: self control, good desires, obedience, etc? ",,righteousness,,,,,"guard heart: self control, good desires, obedience, etc? ",,,,,life,,,,life,,,,,validation? ,,,,,,
+P,,,,,,,,,pro,4,23,23,,,,,,,,,diligence,,,,?? / righteousness ,,,,,,,,,,life,,,,life,,,,,validation? ,,,,,,
+F,,,,,,,,,pro,4,24 (likely only if do 23-24),24,,,,,,,,,?? ,,"honesty/etc, self control/good speech (speech maybe just mode?),",,?? ,,,,,"no Y? maybe future; similar X as 23, that's why",,,,,?? ,?? ,?? ,,?? ,,,,,,,,,,,
+IP,,,,,,,,,pro,4,20-27,25-27,,,,,,,,,"focus on/ponder/not turn (27)/repentance/etc, right path",,,,,,,,,"maybe later, didn't spend much time",,,,,establishment (of ways)/guidance,,,,?? ,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,5,1-2,1-2,,,,,,,,,wisdom,,,,wisdom,attend unto my wisdom,,"give attention to, attentiveness",,,,,,,discretion,,,,wisdom,regard discretion,,,,,,,,,,
+P,,,,,,,,,pro,5,1-2,1-2,,,,,,,,,wisdom,,,,wisdom,attend unto my wisdom,,"give attention to, attentiveness",,,,,,,knowledge,,,,wisdom,lips may keep knowledge,,,,,,,,,,
+IP,,,,,,,,,pro,5,1-2,1-2,,,,,,,,,attentiveness ,,,,guidance,attend unto my wisdom,,to wisdom,,"own pair, or mode? ",,,,,discretion,,,,wisdom,regard discretion,,,,,,,,,,"own pair, or mode? "
+IP,,,,,,,,,pro,5,1-2,1-2,,,,,,,,,attentiveness ,,,,guidance,attend unto my wisdom,,to wisdom,,"own pair, or mode? ",,,,,knowledge,,,,wisdom,lips may keep knowledge,,,,,,,,,,"own pair, or mode? "
+P,,,,,,,,,pro,5,1-2,1-2,,,,,,,,,understanding,,,,wisdom,bow thine ear to my understanding,,,,,,,,,discretion,,,,wisdom,regard discretion,,,,,,,,,,
+P,,,,,,,,,pro,5,1-2,1-2,,,,,,,,,understanding,,,,wisdom,bow thine ear to my understanding,,,,,,,,,knowledge,,,,wisdom,lips may keep knowledge,,,,,,,,,,
+IP,,,,,,,,,pro,5,1-2,1-2,,,,,,,,,listening,,,,guidance,bow thine ear to my understanding,,,,"own pair, or mode? ",,,,,discretion,,,,wisdom,regard discretion,,,,,,,,,,"own pair, or mode? "
+IP,,,,,,,,,pro,5,1-2,1-2,,,,,,,,,listening,,,,guidance,bow thine ear to my understanding,,,,"own pair, or mode? ",,,,,knowledge,,,,wisdom,lips may keep knowledge,,,,,,,,,,"own pair, or mode? "
+IP,,,,,,,,,pro,5,15-23,"15,17,18,19",,,,,,,,,?? ,,"sexual purity, ",,?? ,?? ,,,,,,,,,blessing,,,,blessing,,,,,,,,,,,
+IP,,,,,,,,,pro,5,15-23,"15,17,18,19",,,,,,,,,?? ,,"sexual purity, ",,?? ,?? ,,,,,,,,,joy,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,5,15-23,"15,17,18,19",,,,,,,,,?? ,,"sexual purity, ",,?? ,?? ,,,,,,,,,love & grace? ,,,,?? ,,,,,,,,,,,
+IP,,,,,,,,,pro,5,15-23,"15,17,18,19",,,,,,,,,?? ,,"sexual purity, ",,?? ,?? ,,,,,,,,,satisfaction,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,5,15-23,"15,17,18,19",,,,,,,,,?? ,,"sexual purity, ",,?? ,?? ,,,,,,,,,love,,,,love,,,exhilaration,,,,,,,,
+IP,,,,,,,,,pro,5,15-23,"15,17,18,19",,,,,,,,,?? ,,"sexual purity, ",,?? ,?? ,,,,,,,,,?? ,"exhilaration, intoxication, ravishment",,,?? ,,,,,"own pair, or mode? ",,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,6,"1-5 (split 1-3,4-5?)",3,,,,,,,,,humility,,,,humility,humble thyself,,,,,,,,,deliverance,,"freedom, forgiveness, mercy/grace, life(5)",,salvation,deliver thyself,,"from (financial) promises broadly (verses 1-2), or keep life (5)",neighbor,"int in context as freedom or mercy/grace in forgiveness (of debt/contract); maybe not change, but potentially add as separate pairs or synonyms/keys later; could also interpret ""instruction/guidance"" as well, pretty much true for all instructive types",,,,,,"int in context as freedom or mercy/grace in forgiveness (of debt/contract); maybe not change, but potentially add as separate pairs or synonyms/keys later; could also interpret ""instruction/guidance"" as well, pretty much true for all instructive types"
+p,,,,,,,,,pro,6,"1-5 (split 1-3,4-5?)",3,,,,,,,,,supplication,"""importunance"", begging","supplication broadly? def of NASB ""importune"" is persistent/desperate begging or pleading",,supplication,make sure thy friend,,,,,,,,,deliverance,,"freedom, forgiveness, mercy/grace, life(5)",,salvation,deliver thyself,,"from (financial) promises broadly (verses 1-2), or keep life (5)",neighbor,"int in context as freedom or mercy/grace in forgiveness (of debt/contract); maybe not change, but potentially add as separate pairs or synonyms/keys later; could also interpret ""instruction/guidance"" as well, pretty much true for all instructive types",,,,,,"int in context as freedom or mercy/grace in forgiveness (of debt/contract); maybe not change, but potentially add as separate pairs or synonyms/keys later; could also interpret ""instruction/guidance"" as well, pretty much true for all instructive types"
+IP,,,,,,,,,pro,6,"1-5 (split 1-3,4-5?)",3,,,,,,,,,"""proactiveness""/action, or obedience/""heed instruction""",,"""proactiveness""/action, or obedience/""heed instruction""",,?? ,do this now,,,,example of deep/nuanced pairs with complex and subjective interpretation that could be added later,,,,,deliverance,,"freedom, forgiveness, mercy/grace, life(5)",,salvation,deliver thyself,,"from (financial) promises broadly (verses 1-2), or keep life (5)",neighbor,"int in context as freedom or mercy/grace in forgiveness (of debt/contract); maybe not change, but potentially add as separate pairs or synonyms/keys later; could also interpret ""instruction/guidance"" as well, pretty much true for all instructive types",,,,,,"int in context as freedom or mercy/grace in forgiveness (of debt/contract); maybe not change, but potentially add as separate pairs or synonyms/keys later; could also interpret ""instruction/guidance"" as well, pretty much true for all instructive types"
+,,,,,,,,,pro,6,"1-5 (split 1-3,4-5?)",4-5,,,,,,,,,"""not rest""",,"hard work, diligence, persistence, sacrifice, etc",,hard work?/?? ,"give not sleep to thine eyes, nor slumber to thine eyelids",,,,"""not"" pair, AC when done; better word as interpretation? CG also",,,,,deliverance,,"life, freedom, forgiveness, mercy/grace, life(5)",,salvation,deliver thyself,,"from (financial) promises broadly (verses 1-2), or keep life (5)",,"int in context as freedom or mercy/grace in forgiveness (of debt/contract); maybe not change, but potentially add as separate pairs or synonyms/keys later; could also interpret ""instruction/guidance"" as well, pretty much true for all instructive types",,,,,,"int in context as freedom or mercy/grace in forgiveness (of debt/contract); maybe not change, but potentially add as separate pairs or synonyms/keys later; could also interpret ""instruction/guidance"" as well, pretty much true for all instructive types"
+,,,,,,,,,pro,6,6-8,"6,8",,,,,,,,,pursuit,,"pursuit (with ""go to the ant"")",,pursuit,,,,,,,,,,wisdom,,,,wisdom,,,,,"understand correct, right? ",,,,,,
+,,,,,,,,,pro,6,6-8,"6,8",,,,,,,,,pursuit,,"pursuit (with ""go to the ant"")",,pursuit,,,,,,,,,,provision,,,,provision,,,,,only to wisdom? ,,,,,,
+,,,,,,,,,pro,6,6-8,"6,8",,,,,,,,,?? ,"consideration, observation",attentiveness,,heedance,,,,,,,,,,wisdom,,,,wisdom,,,,,"understand correct, right? ",,,,,,
+,,,,,,,,,pro,6,6-8,"6,8",,,,,,,,,?? ,"consideration, observation",attentiveness,,heedance,,,,,,,,,,provision,,,,provision,,,,,"nuanced difference in NASB; also, provision & hard work? ",,,,,,
+,,,,,,,,,pro,6,6-8,"6,8",,,,,,,,,wisdom,,,,wisdom,,,,,Y for first part only? ,,,,,provision,,,,provision,,,,,"nuanced difference in NASB; also, provision & hard work? ",,,,,,
+,,,,,,,,,pro,6,6-8,"6,8",,,,,,,,,hard work,,"hard work/responsibility/diligence/etc, and/or without instruction/guidance (int? self sufficient?)",,hard work?/?? ,"deep reverse int, and only really correlative/ stating that it is wise maybe not makes up wisdom",,,,,,,,,wisdom & self sufficient,,,,wisdom,,,,,,,,,,,
+,,,,,,,,,pro,6,6-8,"6,8",,,,,,,,,hard work,,"hard work/responsibility/diligence/etc, and/or without instruction/guidance (int? self sufficient?)",,hard work?/?? ,"deep reverse int, and only really correlative/ stating that it is wise maybe not makes up wisdom",,,,,,,,,provision,,,,provision,,,,,NASB difference makes it more clear and straightforward with preparation -> provision ,,,,,,
+,,,,,,,,,pro,6,20-24,"20,22",,,,,,,,,"""observe/keep"" ",,obedience,,righteousness,,,,,general obedience? and/or as separate from obedience m,,,,,"guidance, protection/peace/etc, counsel?",,,,,,,,,,,,,,,
+,,,,,,,,,pro,6,20-24,"20,22",,,,,,,,,"""commandment"" ",,,,guidance,,,,,,,,,,"guidance, protection/peace/etc, counsel?",,,,,,,,,,,,,,,
+,,,,,,,,,pro,6,20-24,"20,22",,,,,,,,,"""not forsake"" ",,obedience,,righteousness,,,,,general obedience? and/or as separate from obedience m,,,,,"guidance, protection/peace/etc, counsel?",,,,,,,,,,,,,,,
+,,,,,,,,,pro,6,20-24,"20,22",,,,,,,,,"""teaching/law"" ",,,,guidance,,,,,,,,,,"guidance, protection/peace/etc, counsel?",,,,,,,,,,,,,,,
+,,,,,,,,,pro,6,20-24,"21,22",,,,,,,,,"""bind to heart"" ",,bind to desires,,?? ,,,,,,,,,,"guidance, protection/peace/etc, counsel?",,,,,,,,,,,,,,,
+,,,,,,,,,pro,6,20-24,"21,22",,,,,,,,,"""tie around neck"" ",,,,?? ,,,,,,,,,,"guidance, protection/peace/etc, counsel?",,,,,,,,,,,,,,,
+,,,,,,,,,pro,6,20-24,23,,,,,,,,,"""commandment"" ",,,,guidance,,,,,,,,,,guidance,,guidance,lamp ,guidance,,,,,,,,,,,
+,,,,,,,,,pro,6,20-24,23,,,,,,,,,"""teaching/law"" ",,,,guidance,,,,,,,,,,guidance,,guidance,light,guidance,,,,,,,,,,,
+,,,,,,,,,pro,6,20-24,23,,,,,,,,,correction &/or instruction/discipline,"""reproof of instruction/for discipline""",correction,,guidance,,,,,,,,,,life,,,,life,,,way of,,,,,,,,
+,,,,,,,,,pro,6,20-24,24,,,,,,,,,"""commandment"" & ""teaching/law"" & correction &/or instruction/discipline &/OR guidance & ""way of life"" ",,,,,,,,,,,,,,self control/keep from temptation/(sexual) purity,,,,purity,,,,,,,,,,,
+,,,,,,,,,pro,6,25-35,30,,,,,,,,,poverty/humility,,poverty/humility,,,,,,,"really deep, significantly interpreted, and likely not even a positive (as in not an X you ""choose"", but rather a neutral declarative statement, but I can see an interpretation from the generalized neutral statement of it being better to have nothing and be humble (from externally or internally) and therefore when we choose to be humble and hold on to nothing, we will have more grace and (even more debatable) provision)",,,,,grace/mercy,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,7,1-5 (1-3? 4-5?),"1,2,3,4,5",,,,,,,,,words & commandments; modes of keep and treasure,,,,instruction & obedience,,,,,,,,,,,,"Y? life and/or like others in 1-3, or all pointing to later (5, and avoid 6-23)",,,,,,,,,,,,,just instruction? no firm/obvious meaning apart from a general instruction/guidance and obedience/righteousness to them -> life/sexual purit/avoid a bunch of bad things
+F,,,,,,,,,pro,7,1-5 (1-3? 4-5?),"1,2,3,4,5",,,,,,,,,modes of instruction,,,,,,,,,,,,,,instruction,,instruction/guidance (gain/have),,instruction,,,,,"very loosely interpreted, gain/have instruction/guidance by doing those",,,,,,"very loosely interpreted, gain/have instruction/guidance by doing those"
+P,,,,,,,,,pro,7,1-5 (1-3? 4-5?),2,,,,,,,,,instruction,,instruction,,instruction,commandments,,,,,,,,,life,,,,life,live,,,,,,,,,,
+P,,,,,,,,,pro,7,1-5 (1-3? 4-5?),2,,,,,,,,,obedience,,obedience,,righteousness,keep my commandments,,,,,,,,,life,,,,life,live,,,,,,,,,,
+F,,,,,,,,,pro,7,1-5 (1-3? 4-5?),2,,,,,,,,,guard instruction,,,,instruction/righteousness,keep|my law as the apple of thine eye,,,,,,,,,"either, something that's the same Y as guard eyes, or just simple command of focus on it",,,,,,,,,,,,,,,
+P,,,,,,,,,pro,7,1-5 (1-3? 4-5?),"4,5",,,,,,,,,wisdom,,,,wisdom,wisdom,,,,int context of valuing/loving it for mode or even separate? ,,,,,"""keep from strange woman"" & ""flattering stranger"" ",,self control/keep from temptation/(sexual) purity/ or protection from deception/prudence/etc,,purity,"keep thee from the strange woman, from the stranger which flattereth with her words",,,,,,,,,,
+P,,,,,,,,,pro,7,1-5 (1-3? 4-5?),"4,5",,,,,,,,,understanding,,,,wisdom,understanding,,,,int context of valuing/loving it for mode or even separate? ,,,,,"""keep from strange woman"" & ""flattering stranger"" ",,self control/keep from temptation/(sexual) purity/ or protection from deception/prudence/etc,,purity,"keep thee from the strange woman, from the stranger which flattereth with her words",,,,,,,,,,
+F,,,,,,,,,pro,7,24-27,"24,25",,,,,,,,,instruction,,,,instruction,,,,,& modes (listening & attention/heed),,,,,"either low confidence int of general ""righteousness"" (from 25, or other int); or just negative/things to avoid",,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+F,,,,,,,,,pro,8,1-9 (-11?),"5,10,11",,,,,,,,,"understanding & prudence & wisdom & ""heart""",,,,,,,,,,,,,,?? maybe better/value in 10-11,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,8,1-9 (-11?),6,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,excellence (knowledge),,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),6,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,right things (knowledge/truth general),,truth/knowledge,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),6,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,revelation,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,1-9 (-11?),6,,,,,,,,,listening (from 1-6),,,,,,,,,,,,,,excellence (knowledge),,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),6,,,,,,,,,listening (from 1-6),,,,,,,,,,,,,,right things (knowledge/truth general),,truth/knowledge,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),6,,,,,,,,,listening (from 1-6),,,,,,,,,,,,,,revelation,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,1-9 (-11?),7,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,truth,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),7,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,see wickedness as an abomination'/! wicked,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),7,,,,,,,,,listening (from 1-6),,,,,,,,,,,,,,truth & see wickedness as an abomination'/! wicked,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,1-9 (-11?),8,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,righteousness,,,,,,,,,,,,,,,"relationship, or just statement? "
+IP,,,,,,,,,pro,8,1-9 (-11?),8,,,,,,,,,wisdom ,,,,wisdom,,,,,,,,,,! froward ,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),8,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,! perverse,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),8,,,,,,,,,listening (from 1-6),,,,,,,,,,,,,,righteousness & ! froward & ! perverse,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),9,,,,,,,,,understanding,,,,,,,,,,,,,,wise words are plain,,"clarity, understanding, knowledge, wisdom",,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),9,,,,,,,,,knowledge,,,,,,,,,,,,,,right (of wisdom) words,,truth,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),9,,,,,,,,,"pursuit, or revelation? (find, mode only?)",,,,,,,,,,,,,,right (of wisdom) words,,truth,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,1-9 (-11?),9,,,,,,,,,wisdom (int from wise words bringing truth/knowledge from being straightforward and right),,,,,,,,,,,,,,^,,,,,,,,,,,,,,,
+F,,,,,,,,,pro,8,10-11,"10,11",,,,,,,,,instruction & wisdom (mode) & 'pursuit' & knowledge,,,,,,,,,,,,,,better/value,,,,,,,,,,,,,,,
+F,,,,,,,,,pro,8,10-11,"10,11",,,,,,,,,wisdom & wisdom,,,,,,,,,,,,,,better/value,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,12,,,,,,,,,wisdom (/prudence?),,,,wisdom,,,,,,,,,,(wisdom/) prudence,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,12-21,12,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,find (revelation int?),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,12,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,knowledge,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,12,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,witty inventions (discretion NASB),,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,12-21,13,,,,,,,,,reverence/ ! evil,,,,reverence/ ! evil,,,,,,,,,,reverence/ ! evil,,,,,,,,,,,,,,,"relationship, or just statement? "
+IP,,,,,,,,,pro,8,12-21,13,,,,,,,,,wisdom,,,,wisdom,,,,,,,,,,! arrogance & ! evil way & ! froward mouth,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,14,,,,,,,,,wisdom,,,,,,,,,,,,,,counsel/guidance,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,14,,,,,,,,,wisdom,,,,,,,,,,,,,,wisdom,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,14,,,,,,,,,wisdom,,,,,,,,,,,,,,understanding,,,,,,,,,,,,,,,"relationship, or just statement? "
+P,,,,,,,,,pro,8,12-21,14,,,,,,,,,wisdom,,,,,,,,,,,,,,strength/power,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,12-21,15,,,,,,,,,wisdom,,,,,,,,,,,,,,kings reign,,,,,,,,,,,,,,,"relationship, or just statement? "
+IP,,,,,,,,,pro,8,12-21,15,,,,,,,,,wisdom,,,,,,,,,,,,,,justice,,,,,,,,,,,,,,,"relationship, or just statement? "
+IP,,,,,,,,,pro,8,12-21,16,,,,,,,,,wisdom,,,,,,,,,,,,,,rule,,,,,,,,,,,,,,,"relationship, or just statement? "
+IP,,,,,,,,,pro,8,12-21,16,,,,,,,,,wisdom,,,,,,,,,,,,,,nobility,,,,,,,,,,,,,,,"relationship, or just statement? "
+IP,,,,,,,,,pro,8,12-21,16,,,,,,,,,wisdom,,,,,,,,,,,,,,justice,,,,,,,,,,,,,,,"relationship, or just statement? "
+IP,,,,,,,,,pro,8,12-21,17,,,,,,,,,"devotion'/love wisdom, just wisdom itself? ",,,,,,,,,,,,,,wisdom love you (int 'wisdom'?),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,17,,,,,,,,,wisdom,,,,,,,,,,,,,,wisdom (& find int as revelation?),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,17,,,,,,,,,pursuit,,,,,,,,,,,,,,wisdom (& find int as revelation?),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,17,,,,,,,,,diligence (NASB),,,,,,,,,,,,,,wisdom (& find int as revelation?),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,18,,,,,,,,,wisdom,,,,,,,,,,,,,,riches,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,18,,,,,,,,,wisdom,,,,,,,,,,,,,,honor,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,18,,,,,,,,,wisdom,,,,,,,,,,,,,,enduring wealth/riches ,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,18,,,,,,,,,wisdom,,,,,,,,,,,,,,righteousness,,,,,,,,,,,,,,,
+F,,,,,,,,,pro,8,12-21,19,,,,,,,,,"wisdom (fruit, y=fruit instead?)",,,,,,,,,,,,,,"better/value, &/fruit",,,,,,,,,,,,,,,
+F,,,,,,,,,pro,8,12-21,19,,,,,,,,,"wisdom (revenue, y=revenue instead?)",,,,,,,,,,,,,,"better/value, &/revenue",,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,12-21,20,,,,,,,,,wisdom,,,,,,,,,,,,,,guidance/instruction (or int as own X?),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,20,,,,,,,,,wisdom (& guidance?),,,,,,,,,,,,,,righteousness,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,20,,,,,,,,,wisdom (& guidance?),,,,,,,,,,,,,,justice/judgement,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,21,,,,,,,,,wisdom,,,,,,,,,,,,,,inherit substance (wealth gen),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,21,,,,,,,,,wisdom,,,,,,,,,,,,,,full treasuries (wealth gen),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,21,,,,,,,,,devotion/love wisdom,,,,,,,,,,,,,,inherit substance (wealth gen),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,12-21,21,,,,,,,,,devotion/love wisdom,,,,,,,,,,,,,,full treasuries (wealth gen),,,,,,,,,,,,,,,
+F,,,,,,,,,pro,8,(22-) 30-31,"30,31",,,,,,,,,wisdom (being the architect),,,,,,,,,,,,,,intimacy & use/purpose & delight of God & joy && joy & delight,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),32,,,,,,,,,listening,,,,,,,,,,,,,,blessed,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),32,,,,,,,,,obedience,,,,,,,,,,,,,,blessed,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),32,,,,,,,,,instruction,,,,,,,,,,,,,,blessed,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),32,,,,,,,,,wisdom,,,,,,,,,,,,,,blessed,,,,,,,,,,,,,,,
+F,,,,,,,,,pro,8,32-35 (-36 for future),33,,,,,,,,,listening & instruction & wisdom & ! refuse,,,,,,,,,,,,,,"wisdom (if hear instruction ->), or blessed in 34",,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),34,,,,,,,,,listening,,,,,,,,,,,,,,blessed,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),34,,,,,,,,,wisdom,,,,,,,,,,,,,,blessed,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),34,,,,,,,,,watching (pursuit),,,,,,,,,,,,,,blessed,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),34,,,,,,,,,waiting (/patience int) (pursuit),,,,,,,,,,,,,,blessed,,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),35,,,,,,,,,wisdom,,,,,,,,,,,,,,life (find),,,,,,,,,,,,,,,
+P,,,,,,,,,pro,8,32-35 (-36 for future),35,,,,,,,,,wisdom,,,,,,,,,,,,,,favor (of God),,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,32-35 (-36 for future),35,,,,,,,,,pursuit/revelation (maybe only statement?),,,,,,,,,,,,,,life (find),,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,8,32-35 (-36 for future),35,,,,,,,,,pursuit/revelation (maybe only statement?),,,,,,,,,,,,,,favor (of God),,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,9,1-6,"1,2,3",,,,,,,,,wisdom,,,,wisdom,wisdom | she,,,,,,,,,establishment & .... ,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,9,1-6,"1,2,3",,,,,,,,,wisdom,,,,wisdom,wisdom | she,,,,,,,,,wisdom & wisdom & ... ,,,,wisdom,her,,,,very int from seeing as metaphorical with establishing things of wisdom,,,,,,
+IP,,,,,,,,,pro,9,1-6,4,,,,,,,,,pursuit/repentance,,,,,,,,,,,,,,instruction &/ wisdom,,,,,,,in hither (int wisdom?) or own pair? ,,relationship very unclear,,,,,,
+IP,,,,,,,,,pro,9,1-6,4,,,,,,,,,understanding? ,,,,,,,wanteth? NASB says lacks? ,,need to IM/AR; NASB paints a different story ,,,,,instruction &/ wisdom,,,,,,,in hither (int wisdom?) or own pair? ,,relationship very unclear,,,,,,
+IP,,,,,,,,,pro,9,1-6,5,,,,,,,,,pursuit (come),,,,,,,,,,,,,,"provision (food or gen, if lit)",,,,,,,,,metaphorical/literal int? ,,,,,,
+IP,,,,,,,,,pro,9,1-6,5,,,,,,,,,pursuit (come),,,,,,,,,,,,,,wisdom (if int as metaphor),,,,,,,,,metaphorical/literal int? ,,,,,,
+IP,,,,,,,,,pro,9,1-6,5,,,,,,,,,pursuit (come),,,,,,,,,,,,,,"provision (wine/food or gen, if lit)",,,,,,,,,metaphorical/literal int? ,,,,,,
+IP,,,,,,,,,pro,9,1-6,5,,,,,,,,,pursuit (come),,,,,,,,,,,,,,wisdom (if int as metaphor),,,,,,,,,metaphorical/literal int? ,,,,,,
+IP,,,,,,,,,pro,9,1-6,5,,,,,,,,,wisdom,,,,,,,,,,,,,,"provision (food & wine, or gen, if lit)",,,,,,,,,metaphorical/literal int? ,,,,,,
+p,,,,,,,,,pro,9,1-6,6,,,,,,,,,repentance,,,,,,,,,,,,,,life,,,,,,,,,slight chance just command? ,,,,,,
+IP,,,,,,,,,pro,9,1-6,6,,,,,,,,,! foolish (separate or part of ^?),,,,,,,,,,,,,,life & understanding? ↓,,,,,,,,,pairs? relationship? or just command,,,,,,
+IP,,,,,,,,,pro,9,1-6,6,,,,,,,,,"understanding &/ ""go in the way of""/obedience/guidance/etc (or even mode)",,,,,,,,,,,,,,"""go in the way of""/guidance/obedience/etc (or even mode) &/ life (very loosely int back to) &/ other",,,,,,,,,pairs? relationship? or just command,,,,,,
+IP,,,,,,,,,pro,9,1-6,1-6,,,,,,,,,listening (in there somewhere),,,,,,,,,,,,,,^^^,,,,,,,,,,,,,,,
+f,,,,,,,,,pro,9,7-9/-12,7,,,,,,,,,rebuke/reproof/correction/,,,,,,,,scorner,?? +/- or neutral command/MoF,,,,,shame,,,,,,,,,,,,,,,
+f,,,,,,,,,pro,9,7-9/-12,7,,,,,,,,,rebuke/reproof/correction/,,,,,,,,wicked,?? +/- or neutral command/MoF,,,,,insult/blot/blemish,,,,,,,,,,,,,,,
+f,,,,,,,,,pro,9,7-9/-12,8,,,,,,,,,rebuke/reproof/correction/,,,,,,,,scorner ,?? +/- or neutral command/MoF,,,,,hate,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,9,7-9/-12,8,,,,,,,,,rebuke/reproof/correction/,,,,,,,,wise,,,,,,love,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,9,7-9/-12,8,,,,,,,,,wisdom,,,,,,,,,,,,,,love,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,9,7-9/-12,9,,,,,,,,,sacrifice or generosity/giving,,,,,,,,,"this int is almost implied in all instruction pairs, just explicit here",,,,,wisdom,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,9,7-9/-12,9,,,,,,,,,instruction,,,,,,,,,,,,,,wisdom,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,9,7-9/-12,9,,,,,,,,,wisdom,,,,,,,,,,,,,,wisdom,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,9,7-9/-12,9,,,,,,,,,teaching (instruction/etc?),,,,,,,,,,,,,,"""increased learning"", understanding/knowledge/even wisdom? or learning? ",,,,,,,,,,,,,,,
+p,,,,,,,,,pro,9,7-9/-12,9,,,,,,,,,"""just man"", righteousness/uprightness/",,,,,,,,,,,,,,"""increased learning"", understanding/knowledge/even wisdom? or learning? ",,,,,,,,,,,,,,,
+p,,,,,,,,,pro,9,7-/10-12,10,,,,,,,,,reverence,,,,,,,of God,,,,,,,wisdom,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,9,7-/10-12,10,,,,,,,,,knowledge,,,,,,,of holy/Holy One/God,,,,,,,understanding,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,9,7-/10-12,11,,,,,,,,,wisdom,,,,,,,,,,,,,,life,,,,,,,,,maybe long days/years also int as time? ,,,,,,
+p,,,,,,,,,pro,9,7-/10-12,11,,,,,,,,,wisdom,,,,,,,,,,,,,,life,,,,,,,,,maybe long days/years also int as time? ,,,,,,
+p,,,,,,,,,pro,9,7-/10-12,12,,,,,,,,,wisdom,,,,,,,,,,,,,,wisdom,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,12,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+f,,,,,,,,,pro,17,1,1,,,,,,,,,"""quietness"" ",,peace ,,,,,,,,,,,,betterment,,,,,,,,,,,,,,,
+ip,,,,,,,,,pro,17,2,2,,,,,,,,,wisdom,,,,,,,,,,,,,,betterment (rule over),,,,,,,,,,,,,,,
+ip,,,,,,,,,pro,17,7,7,,,,,,,,,! fool,,,,,,,,,,,,,,"""excellent"" (speech)",,,,,,,,,,,,,,,
+ip,,,,,,,,,pro,17,7,7,,,,,,,,,"""Prince"" ",,,,,,,,,,,,,,"! lying (lips, speech)",,,,,,,,,,,,,,,
+p,,,,,,,,,pro,17,9,9,,,,,,,,,"""cover a transgression"" ",,forgiveness,,,,,,,,,,,,"love (""seeks"", int to produce)",,,,,,,,,,,,,,,inverse as corr
+p,,,,,,,,,pro,17,10,10,,,,,,,,,wisdom/understanding,,,,,,,,,,,,,,"betterment?/ ""reproof goes deeper into"" (int as instruction actually happens)",,instruction,,,,,,,,,,,,,
+p,,,,,,,,,pro,17,22,22,,,,,,,,,"""merry/joyful heart""",,joy/positivity ,,,,,,,,,,,,"""good medicine""",,,,,,,,,,,,,,,
+p,,,,,,,,,pro,17,24,24,,,,,,,,,understanding,,,,,,,,,,,,,,wisdom,,,,,,,,,,,correlative? ,,,,inverse as corr
+p,,,,,,,,,pro,17,27 (27-28),27,,,,,,,,,knowledge,,,,,,,,,,,,,,"""restrain words"" ",,self control (speech),,,,,,,,,,,,,inverse as corr
+p,,,,,,,,,pro,17,27 (27-28),27,,,,,,,,,understanding,,,,,,,,,,,,,,"""excellent/cool spirit"" ",,self control? ,,,,,,,,,,,,,
+p,,,,,,,,,pro,17,28 (27-28),28,,,,,,,,,"""silence"" of/""withhold peace"" of 'speech'",,"self control, silence of speech specifically",,,,,,,,,,,,"""considered wise"" ",,reputation (as wise),,,,,,,,,,,,,
+p,,,,,,,,,pro,17,28 (27-28),28,,,,,,,,,"""closed lips"" ",,"self control, silence of speech specifically",,,,,,,,,,,,"""considered prudent/of understanding"" ",,reputation (as prudent/of understanding),,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,10,,pro,18,10,10,,righteousness,,safety,,fs,10,vir,righteousness,,,,righteousness,the righteous (runneth into it),,,,root same or separate? ,,fs,10,rec,safety,,,,salvation,,,,,int corr idea of ->y=pursuit too? ,,,,,,
+p,,,ac,ac,fs,go,8,,pro,18,10,10,,pursuit,,safety,,ac,8,act,"""run to (God)""",,pursuit/supplicate? ,,pursuit,,,,,,,fs,10,rec,safety,,,,salvation,,,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,10,,pro,18,12,12,,humility,,honor,,fs,10,vir,humility,,,,humility,,,,,,,fs,10,rec,honor,,,,honor,,,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,10,,pro,18,15,15,,prudence,,knowledge,,fs,10,vir,prudence,,,,wisdom,the heart of the prudent,,heart of,,,,fs,10,vir,knowledge,,,,wisdom,getteth knowledge,,get (not mode necessarily?),,,,,,,,
+p,,,ac,fs,ac,go,8,,pro,18,15,15,,wisdom,,pursuit,,fs,10,vir,wisdom,,,,wisdom,the ear of the wise,,ear of,,,,ac,8,act,,,pursuit,,pursuit,seeketh knowledge,,seeking ,knowledge,"(pursuit (of knowledge) &/ knowledge (pursuit of); I think both, but first is safer as meaning (even if normally mode) and second is int (generally safe from rest of examples)), inverse Corr also? ",,,,,,
+ip,,,go,go,go,,4,,pro,18,16,16,,generosity,,opportunity,,go,4,act,,,generosity,,,,,,,"or bribery, like NLT &/other examples",,go,6,rec,,,provision,,provision/opportunity,,,,,or also opportunity? ,,,,,,
+ip,,,go,go,go,,4,,pro,18,16,16,,generosity,,opportunity,,go,4,act,,,generosity,,,,,,,"or bribery, like NLT &/other examples",,go,8,rec,,,opportunity,,provision/opportunity,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r,1.0.0,,vd,fs,vd,,10,,pro,19,8,8,,understanding ,,goodness,,,10,,understanding ,,,,wisdom,,,"""keep""/devotion?",,,,,10,,goodness,,,,goodness,"""find good""",,,,,,,,,,
+p,,,go,vd,go,,8,,pro,19,11,11,,discretion,,self control ,,,10,,discretion,,,,wisdom/righteousness,,,,,,,go,8,,,,patience/self control/peace,,self control ,"""deferreth his anger""",,,,,,,,,,
+r,1.0.0,,vd,vd,vd,,9,,pro,19,11,11,,forgiveness,,glory,,,9,,,,forgiveness,,forgiveness,,,,,,,,10,,glory,,,,glory,"""glory"" ",,,,slightly diff from -> direct?,,,,,,"maybe not perfect causation, or something else, slightly diff from -> direct?"
+r,1.0.0,,vd,vd,vd,,9,,pro,19,16,16,,instruction,,salvation ,,,9,,commandment,,instruction,,instruction,,,keep,,,,,9,,,,salvation ,"""keep soul""",salvation ,"""keepeth his own soul""",,keep,soul,,,,,,,"interpreted input, should interpret output and what to use if? "
+r,1.0.0,,vd,vd,vd,,9,,pro,19,16,16,,obedience,,salvation ,,,9,,,,obedience,,obedience,,,keep,,,,,9,,,,salvation ,"""keep soul""",salvation ,"""keepeth his own soul""",,keep,soul,,,,,,,"interpreted input, should interpret output and what to use if? "
+p,,,go,go,go,,7,,pro,19,17,17,,grace,,reward,,,8,,grace,"grace, pity",mercy better? also & generosity ,,kindness,,,to poor,to poor,,,go,7,,,reward/payment,int: provision/blessing/justice(in good way),,reward /provision,"""pay him again"" ",,repaid for/in grace,from God ,& lends to God (if good enough Y alone),,,,,,"maybe add another pair for output of giving to the LORD, as an idea of sacrifice and idea of how to give to God if someone wanted to know what that looks. Bit different idea from most other pairs, bigger idea outside of Proverbs and could be future extension or slightly different focus/project with similar search function"
+r,1.0.0,,fs,fs,fs,,10,,pro,19,20,20,,counsel,,wisdom,,,10,,counsel,,,,instruction,,,listen to,,mode-pair,,,10,,wisdom,,,,wisdom,"""wise""",,for rest of days,,,,,,,,"hear/listen counsel/advice, hearing important part indicating willingness and desire to receive it (like seeking); keep 2 in 1 input or separate? "
+p,,,go,go,fs,,8,,pro,19,20,20,,instruction,,wisdom,,,8,,,"instruction, discipline ",correction?,,instruction,,,to receive,,mode-pair,,,10,,wisdom,,,,wisdom,"""wise""",,for rest of days,,,,,,,,"hear/listen counsel/advice, hearing important part indicating willingness and desire to receive it (like seeking); keep 2 in 1 input or separate? "
+p,1.0.0,,cg,fs,cg,,8,,pro,19,22,22,,kindness,,desirability,,,10,,kindness,,,,kindness,,,,,,,go,8,,desirability,,"or gen ""attractiveness""",,desirability,"""desire""",,,,,,,,,,"2nd part more obviously not, but similar to 1 as input -> better. Also not sure if this one fits the pair idea fully. it might be just saying kindness is a/the desire, not necessarily about the man/person themselves"
+r,1.0.0,,fs,fs,fs,,10,,pro,19,23,23,,reverence,,life,,,10,,reverence,,,,reverence,,,,of God,2x?,,,10,,life,,,,life,"""life"" ",,tend to,,,,,,,,
+r,1.0.0,,cg,fs,cg,,10,,pro,19,23,23,,reverence,,satisfaction,,,10,,reverence,,,,reverence,,,,of God,2x?,,,10,,satisfaction,,,,satisfaction,"""abide satisfied""",,abide in,,abide/rest/etc separately?,,,,,,could interpret as peace/comfort/etc
+p,,,ac,fs,ac,,4,,pro,19,23,23,,reverence,,protection ,,,10,,reverence,,,,reverence,,,,of God,2x?,,ac,4,,,,protection/safety /gen salv?,,salvation ,"""not be visited with evil""",,,,! (touched by) evil?,,,,,,"int as protection, lit is untouched or visited by evil/harm"
+p,,,go,go,go,,4,,pro,19,25,25,,punishment,,prudence,,,7,,,smite/strike,"gen punishment, diff?",,instruction,,,strike,scorner/scoffer,,,go,4,,,"""become shrewd/beware""","prudence, awareness /pursuit /heedance/devotion",,,"""simple will beware""",,,,,,,,,,"prudence of others specifically, and prudence of others as a warning or lesson, interpretation makes more general and message might be slightly different. and maybe meaning in comparison with second part (of fool vs wise)? "
+r,1.0.0,,cg,cg,fs,,9,,pro,19,25,25,,correction,,knowledge ,,,9,,reproof,,correction,,instruction,,,,understanding ,,,,10,,knowledge,,,,knowledge,"""understand knowledge""",,discernment/understanding of,,& discernment/understanding,,,,,,"int as correction for simplicity, but all versions reprove/rebuke. not sure if invalid"
+r,1.0.0,,fs,fs,fs,,10,,pro,19,25,25,,understanding ,,knowledge ,,,10,,understanding ,,,,understanding,,,reproof of,,,,,10,,knowledge,,,,knowledge,"""understand knowledge""",,discernment/understanding of,,& discernment/understanding,,,,,,"int as correction for simplicity, but all versions reprove/rebuke. not sure if invalid"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,3,,,,,,,,,,patience/self control,,,,,,,,,,,,,,honor,,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,5,,,,,,,,,,understanding,,,,,,,,,,,,,,discernment or counsel/understanding,,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,7,,,,,,,,,,just,,,,,,,,,,,,,,integrity ,,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,7,,,,,,,,,,just,,,,,,,,,,,,,,blessing,,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,8,,,,,,,,,,judgement/ int seeking justice/purity,,,,,,,,,,,,,,purity/goodness/?,,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,11,,,,,,,,,,purity & righteousness in action,,,,,,,,,,,,,,reputation of the same (good and bad),,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,13,,,,,,,,,,not slothful (awake)?,,,,,,,,,,,,,,food/provision/satisfaction,,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,18,,,,,,,,,,good counsel,,,,,,,,,,,,,,"success (int NLT, and in suggesting war ""with counsel"" wouldn't make sense unless it means that's when it's good to do)",,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,22,,,,,,,,,,patience/wait on the LORD,,,,,,,,,,,,,,salvation/safety,,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,26,,,,,,,,,,wisdom,,,,,,,,,,,,,,"scatter wicked int goodness/purity, maybe meaning a command of what to do as a wise king, and not a result of one",,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,28,,,,,,,,,,mercy & truth,,,,,,,,,,,,,,preservation/uphold throne,,,,,,,,,,,,,,,
+,,,,,,,,,pro,20,30,,,,,,,,,,punishment/discipline,,,,,,,,,,,,,,purity/purification (purging? unsure like others in this chapter and last about wise king punishment/purity,,,,,,,,,x2? ,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+p,1.0.0,,cg,cg,vd,,7,,pro,21,5,5,,diligence,,prosperity,,cg,10,,diligence,,,,,,thoughts/plans of,,,,,vd,7,,,plenteousness/advantage,prosperity,,,,,,,abundance/profit/success/provision overall? ,,,,,,
+p,1.0.0,,cg,cg,fs,,10,,pro,21,8,8,,purity,,righteousness,,cg,10,,purity,,,,,,,,,,,fs,10,,righteousness,upright/right,,,righteousness,,of work/conduct,,,,,,,,,inv?
+r,1.0.0,,fs,fs,fs,,10,,pro,21,11,11,,punishment,,wisdom,,fs,10,,punishment,,,,instruction,,,,,,,fs,10,,wisdom,,,,wisdom,,becomes,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,10,,pro,21,11,11,,instruction,,knowledge,,fs,10,,instruction,,,,instruction,,of wise,,,,,fs,10,,knowledge,,,,wisdom,,receive,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,10,,pro,21,11,11,,wisdom,,knowledge,,fs,10,,wisdom,,,,wisdom,,when instructed ,,,,,fs,10,,knowledge,,,,wisdom,,receive,,,,,,,,,
+p,,,go,go,go,,6,,pro,21,12,12,,righteousness,,discernment (AI),,go,6,,righteousness,,,,righteousness,,,,,"Some trans = 'God'/or just personified like ""Wisdom""",,go,6,,consideration,,discernment (AI),,,,of the house of the wicked,,,"wise consideration = discernment, could be safer as just 'attention' (wisdom mode &/ separate, but with some trans not and hebrew as one verb more like discern, just mode)",,,,,,"own pair, or mode? IM maybe (actually whole thing as one, with deep int?)"
+r,1.0.0,,fs,fs,fs,,10,,pro,21,15,15,,justice,,joy,,fs,10,,justice,justice/judgement,,,justice,,,,,,,fs,10,,joy,,,,joy,,for righteous,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,10,,pro,21,15,15,,righteousness ,,joy,,fs,10,,righteousness ,righteousness/just,,,righteousness,,,,,,,fs,10,,joy,,,,joy,,to give judgment/justice,,,,,,,,,
+p,1.0.0,,vd,fs,vd,,8,,pro,21,20,20,,wisdom,,prosperity,,fs,10,,wisdom,,,,wisdom,,,,,,,vd,8,,treasure & oil,,prosperity,,,,in house,,,"separate, also potentially more specific than prosperity?",,,,,,inv?
+r,1.0.0,,fs,fs,fs,,10,,pro,21,21,21,,righteousness,,life,,fs,10,,righteousness,,,,righteousness,,pursuit of,,,,,fs,10,,life,,,,salvation ,,,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,10,,pro,21,21,21,,righteousness,,righteousness,,fs,10,,righteousness,,,,righteousness,,pursuit of,,,,,fs,10,,righteousness,,,,righteousness,,,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,10,,pro,21,21,21,,righteousness,,honor,,fs,10,,righteousness,,,,righteousness,,pursuit of,,,,,fs,10,,honor,,,,honor,,,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,8,,pro,21,21,21,,mercy,,life,,fs,8,,,loyalty/mercy,,mercy (H2617),grace,,pursuit of,,,"NASB loyalty, Contract mapping - mercy",,fs,10,,life,,,,salvation ,,,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,8,,pro,21,21,21,,mercy,,righteousness,,fs,8,,,loyalty/mercy,,mercy (H2617),grace,,pursuit of,,,"NASB loyalty, Contract mapping - mercy",,fs,10,,righteousness,,,,righteousness,,,,,,,,,,,
+r,1.0.0,,fs,fs,fs,,8,,pro,21,21,21,,mercy,,honor,,fs,8,,,loyalty/mercy,,mercy (H2617),grace,,pursuit of,,,"NASB loyalty, Contract mapping - mercy",,fs,10,,honor,,,,honor,,,,,,,,,,,
+p,1.0.0,,vd,fs,vd,,8,,pro,21,22,22,,wisdom,,victory,,fs,10,,wisdom,,,,wisdom,,,,,,,vd,8,,,,victory,,success/salvation ,,,,,"int, military=victory vs gen success, cg/ck",,,,,,
+r,1.0.0,,fs,fs,fs,,10,,pro,21,26,26,,righteousness,,generosity,,fs,10,,righteousness,,,,righteousness,,,,,,,fs,10,,generosity,,,,generosity,,,,,,,,,,,inv?
+p,,,go,vd,go,,8,,pro,21,29,29,,integrity ,,prudence,,vd,8,,upright,,integrity ,H3477,righteousness,,,,,Contract mapping,,go,8,,,,prudence,,,,,,,"any separation &/ focus on direction, go int",,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,22,,3,,,,,,,,,prudence,,,,,,,,,,,,,,forsee danger (int as guidance/wisdom/protection?,,,,,,,,,,,,,,,"could be incorrectly int, maybe just mean that a prudent man hides/runs from evil, not in the ""blessed with awareness"" way, but just saying what a prudent man does/would do)"
+,,,,,,,,,pro,22,,4,,,,,,,,,humility,,,,,humility,,,,,,,,,riches,,,,,riches,,,,,,,,,,
+,,,,,,,,,pro,22,,4,,,,,,,,,humility,,,,,humility,,,,,,,,,honor,,,,,honour,,,,,,,,,,
+,,,,,,,,,pro,22,,4,,,,,,,,,humility,,,,,humility,,,,,,,,,life,,,,,life,,,,,,,,,,
+,,,,,,,,,pro,22,,4,,,,,,,,,fear of the LORD,,,,,fear of the LORD ,,,,,,,,,riches,,,,,riches,,,,,,,,,,
+,,,,,,,,,pro,22,,4,,,,,,,,,fear of the LORD,,,,,fear of the LORD ,,,,,,,,,honor,,,,,honour,,,,,,,,,,
+,,,,,,,,,pro,22,,4,,,,,,,,,fear of the LORD,,,,,fear of the LORD ,,,,,,,,,life,,,,,life,,,,,,,,,,
+,,,,,,,,,pro,22,,5,,,,,,,,,one who guards himself (int prudence?),,,,,,,,,,,,,,"no thorns and snares (int less troubles and danger/sin, need better word(s)",,,,,,,,,,,,,,,"same as 3, logic might actually instead be ""if you were prudent you wouldn't go near it/be in this situation"""
+,,,,,,,,,pro,22,,6,,,,,,,,,instruction (of children),,,,,,,,,,,,,,wise children/wisdom (needs int),,,,,,,,,,,,,,,
+,,,,,,,,,pro,22,,9,,,,,,,,,generosity,,,,,hath a bountiful eye,,,,,,,,,blessing,prosperity; wealth,,,,blessed,,,,,,,,,,
+,,,,,,,,,pro,22,,10,,,,,,,,,remove scoffer (int?),,,,,,,,,,,,,,remove contention/strife/reproach (int peace),,,,,,,,,,,,,,,
+,,,,,,,,,pro,22,,11,,,,,,,,,love purity (of heart) & grace (speech),,,,,,,,,,,,,,friend (of king)/ int opportunity/else? ,,,,,,,,,,,,,,,
+,,,,,,,,,pro,22,,12,,,,,,,,,knowledge,,,,,,,,,,,,,,preservation (int already?),,,,,,,,,,,,,,,
+,,,,,,,,,pro,22,,15,,,,,,,,,discipline/correction,,,,,,,,,,,,,,wisdom/remove foolishness,,,,,,,,,,,,,,,
+,,,,,,,,,pro,22,,17-19,,,,,,,,,"listen to/hear wisdom (or just wisdom) & apply mind to knowledge/teaching, & 19 teach these ",,,,,,,,,,,,,,pleasant & available knowledge and wisdom & trust in the LORD,,,,,,,,,,,,,,,
+,,,,,,,,,pro,22,,20-21 (17-21?),,,,,,,,,"counsel & knowledge (give to, implied son)",,,,,,,,,,,,,,teach knowledge/understanding/certainty/wisdom,,,,,,,,,,,,,,,
+,,,,,,,,,pro,22,,22-23?,,,,,,,,,poverty/oppression,,,,,,,,,,,,,,defense/protection,,,,,,,,,,,,,,,"kinda different idea, maybe separate category in future? "
+,,,,,,,,,pro,22,,29?,,,,,,,,,skilled man/diligence (diligent or int from hard work?),,,,,,,,,,,,,,opportunity?,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,23,,5-11,,,,,,,,,things not to do,,,,,,,,,,,,,,things avoided ,,,,,,,,,,,,,,,future stuff 
+,,,,,,,,,pro,23:13-14,,14,,,,,,,,,correction,correction; discipline; punishment,,,,beat him with the rod,,,,,,,,,salvation,salvation; deliverance,,,,deliver his soul from hell ,,,,,,,,,,"x discipline better? but KJV correction | salvation best interpretation?, deliverance also used elsewhere"
+,,,,,,,,,pro,23:15,,15,,,,,,,,,wisdom,,,,,heart is wise,,,,,,,,,joy of father ,joy of father ; gladness of father; pleasing of father,,,,rejoice,,,,,,,,,,God's joy/rejoicing/gladness will group later
+,,,,,,,,,pro,23:16,,16,,,,,,,,,righteousness,,,,,lips speak right things,,,,,,,,,joy of father ,joy of father; pleasing of father,,,,rejoice,,,,,,,,,,righteousness/right speech | God's joy/rejoicing will group later
+,,,,,,,,,pro,23,,17-18,,,,,,,,,"don't envy (int gratitude, content?) & fear of the LORD",,,,,,,,,,,,,,(future? &) hope fulfilled,,,,,,,,,,,,,,,
+,,,,,,,,,pro,23,,19,,,,,,,,,listening ,,,,,,,,,,,,,,wisdom,,,,,,,,,,,,,,,
+,,,,,,,,,pro,23:24,,24,,,,,,,,,righteousness,,,,,righteous,,,,,,,,,joy of father ,joy of father; pleasing of father,,,,rejoice,,,,,,,,,,
+,,,,,,,,,pro,23:24,,24,,,,,,,,,wisdom,,,,,wise,,,,,,,,,joy of father ,joy of father ; gladness of father; pleasing of father,,,,joy,,,,,,,,,,
+,,,,,,,,,pro,23,,19-35,,,,,,,,,do/don't do,,,,,,,,,,,,,,to avoid,,,,,,,,,,,,,,,future
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,24:3-4,,3,,,,,,,,,wisdom,,,,,wisdom,,,,,,,,,house built,int success/blessing (family?),,,,house builded,,,,,,,,,,"need to int y, group once rest are done"
+,,,,,,,,,pro,24:3-4,,3,,,,,,,,,understanding,,,,,understanding,,,,,,,,,house established,int success/blessing (family?),,,,it is established,,,,,,,,,,"need to int y, group once rest are done"
+,,,,,,,,,pro,24:3-4,,4,,,,,,,,,knowledge,,,,,knowledge,,,,,,,,,house blessed,int success/blessing (family?),,,,chambers be filled with all precious and pleasant riches,,,,,,,,,,"need to int y, group once rest are done"
+,,,,,,,,,pro,24:5,,5,,,,,,,,,wisdom,,,,,wise,,,,,,,,,strength,,,,,strong,,,,,,,,,,
+,,,,,,,,,pro,24:5,,5,,,,,,,,,knowledge,,,,,knowledge,,,,,,,,,strength,,,,,increaseth strength,,,,,,,,,,maybe different word for increasing strength? 
+,,,,,,,,,pro,24:6,,6,,,,,,,,,wisdom,,,,,wise counsel,,,,,,,,,success/victory (interpreted),,,,,make thy war,,,,,,,,,,(& counsel separate?)
+,,,,,,,,,pro,24:6,,6,,,,,,,,,counsel,guidance,,,,in multitude of counsellors,,,,,,,,,safety,victory,,,,safety,,,,,,,,,,"y.keys nasb and most victory, other ideas or similar used elsewhere, and could depend on final grouping: success; protection; salvation"
+,,,,,,,,,pro,24:13-14,,13,,,,,,,,,eat honey & honeycomb (lol),,,,,eat thou honey | and the honeycomb,,,,,,,,,goodness,int? ,,,,good | sweet to thy taste,,,,,,,,,,kinda funny to include
+,,,,,,,,,pro,24:13-14,,14,,,,,,,,,wisdom,,,,,knowledge of wisdom,,,,,,,,,goodness/enjoyment? (of soul),,,,,above (about honey) | unto thy soul,,,,,,,,,,x.keys include knowledge? 
+,,,,,,,,,pro,24:13-14,,14,,,,,,,,,wisdom,,,,,wisdom | find it,,,,,,,,,reward,future; life; salvation; ,,,,reward,,,,,,,,,,
+,,,,,,,,,pro,24:13-14,,14,,,,,,,,,wisdom,,,,,wisdom | find it,,,,,,,,,hopes (expectations),,,,,expectation shall not be cut off,,,,,,,,,,
+,,,,,,,,,pro,24:15-16,,16,,,,,,,,,righteousness,just;,,,,just,,,,,,,,,perseverance,persistence; motivation?; provision/strength?,,,,"falleth seven times, and riseth up again",,,,,,,,,,
+,,,,,,,,,pro,24:19-20,,19-20,,,,,,,,,faith,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,24:21-22,,21-22,,,,,,,,,fear of the LORD (and the king?),reverence? ,,,,fear thou the LORD and the king,,,,,,,,,safety (int from avoiding calamity),,,,,,,,,,,,,,,
+,,,,,,,,,pro,24:21-22,,21-22,,,,,,,,,don't associate with fools (all same as above,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,24:24-25,,25,,,,,,,,,rebuke wicked,,,,,wicked | rebuke him,,,,,,,,,delight,,,,,delight,,,,,,,,,,
+,,,,,,,,,pro,24:24-25,,25,,,,,,,,,rebuke wicked,,,,,wicked | rebuke him,,,,,,,,,blessing,,,,,good blessing shall come upon them,,,,,,,,,,
+,,,,,,,,,pro,24:30-32,,32,,,,,,,,,consideration,reflection,,,,considered it well,,,,,,,,,instruction,,,,,received instruction ,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,25,,2,,,,,,,,,Kingship (int ?) &/ search (pursuit),,,,,,,,,,,,,,honor/glory (int understanding knowledge?),,,,,,,,,,,,,,,
+IP,,,,,,,,,,,,3,,,,,,,,,Kingship (int ?),,,,,,,,,,,,,,heart/desire is unsearchable? or just weird deep Proverbial meaning,,,,,,,,,,,,,,,
+p,,,,,,,,,,,,4,,,,,,,,,purity,,,,,,,,,,,,,,usability/purpose,,,,,,,,,,,,,,,
+p,,,,,,,,,,,,5,,,,,,,,,"purity (of people, of kingdom",,,,,,,,,,,,,,establishment (of throne),,,,,,,,,,,,,,,
+f,,,,,,,,,,,,"6,7",,,,,,,,,! honor self (humility) & honor self (! humility),,,,,,,,,,,,,,better; honor & humility,,,,,,,,,,,,,,,
+,,,,,,,,,,,,8,,,,,,,,,(haste & striving/contend/argue defense) & (! all),,,,,,,,,,,,,,shame/humility (& ! shame/humility),,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,argue case with neighbor (vs in court?),,,,,,,,,,,,,,better,,,,,,,,,,,,,,,
+,,,,,,,,,,,,9-10,,,,,,,,,gossip/! trustworthiness/! loyalty (& ! all),,,,,,,,,,,,,,shame/reproach & bad reputation (& ! all),,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,11,,,,,,,,,advice guidance council,,,,,,,,,,,,,,value good,,,,,,,,,,,,,,,
+,,,,,,,,,,,,12,,,,,,,,,listening receiving correction instruction,,,,,,,,,,,,,,value good guidance,,,,,,,,,,,,,,,
+,,,,,,,,,,,,13,,,,,,,,,trustworthiness reliability,,,,,,,,,,,,,,refreshment revive spirit,,,,,,,,,,,,,,,
+,,,,,,,,,,,,15,,,,,,,,,Patience,,,,,,,,,,,,,,persuasion success protection victory,,,,,,,,,,,,,,,
+,,,,,,,,,,,,15,,,,,,,,,soft speech,,,,,,,,,,,,,,brake bones,,,,,,,,,,,,,,,
+,,,,,,,,,,,,21-22,,,,,,,,,generosity of enemies,,,,,,,,,,,,,,shame enemies,,,,,,,,,,,,,,,
+,,,,,,,,,,,,21-22,,,,,,,,,generosity of enemies,,,,,,,,,,,,,,reward,,,,,,,,,,,,,,,
+,,,,,,,,,,,,25,,,,,,,,,Good news like 13,,,,,,,,,,,,,,refreshment,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IP,,,,,,,,,pro,26,1,1,,,,,,,,,! fool & fool,,,,,,,,,,,,,,honor & ! honor,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,26,3,3,,,,,,,,,rod (punishment/discipline/etc),,,,,,,on back of fools,,,,,,,guidance/control/instruction/correction,,,,,,,,,,,,,,,foolishness -> rod in future
+f,,,,,,,,,pro,26,4,4,,,,,,,,,answer foolishness (& ! answer foolishness),,,,,,,,,,,,,,foolishness (& ! foolishness),,,,,,,,,,,,,,,
+p,,,,,,,,,pro,26,5,5,,,,,,,,,answer foolishness (inv implied?),,,,,,,,,,,,,,humility/ awareness/truth/ ! false wisdom/! pride,,,,,,,,,,,,,,,
+f,,,,,,,,,pro,26,8,8,,,,,,,,,honor (fool),,,,,,,,,,,,,,harm ,,,,,,,,,,,,,,,
+p,,,,,,,,,pro,26,20-22,20,,,,,,,,,! gossip & gossip,,,,,,,,,,,,,,! strife/contention/etc (peace) & strife/contention/etc (! peace),,,,,,,,,,,,,,,
+f,,,,,,,,,pro,26,20-22,21,,,,,,,,,contention,,,,,,,,,,,,,,strife (/ contention?),,,,,,,,,,,,,,,
+f,,,,,,,,,pro,26,20-22,22,,,,,,,,,gossip,,,,,,,,,,,,,,deep wounds,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,5,,,,,,,,,correction,,,,,,,,,,,,,,better,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,6,,,,,,,,,correction,,,,,,,,,,,,,,better? ,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,7?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,9,,,,,,,,,ointment and perfume?,,,,,,,,,,,,,,joy/gladness,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,9,,,,,,,,,friends counsel,,,,,,,,,,,,,,provision,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,10,,,,,,,,,close companionship ,,,,,,,,,,,,,,better,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:11:00,,11,,,,,,,,,wisdom,,,,,wise,,,,,,,,,joy/gladness of father,,,,,make my heart glad,,,,,,,,,,check above for Father's joy
+,,,,,,,,,pro,,,11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,12,,,,,,,,,prudence,,,,,,,,,,,,,,"safety/protection (int, maybe something better)/ foresee danger/precaution?",,,,,,,,,,,,,,,like 24:21-22
+,,,,,,,,,pro,27:,,17,,,,,,,,,counsel? ,,,,,,,,,,,,,,countenance? ,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,18,,,,,,,,,hard work/stewardship,,,,,,,,,,,,,,provision,,,,,,,,,,,,,,,"could just be used for analogy, not actually ->"
+,,,,,,,,,pro,27:,,18,,,,,,,,,integrity/stewardship,,,,,,,,,,,,,,honor,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,21,,,,,,,,,praise,,,,,,,,,,,,,,testing? ,,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,25,,,,,,,,,death,,,,,,,,,,,,,,growth/new change & provision (gathered),,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,"23,26",,,,,,,,,stewardship/knowledge? ,,,,,,,,,,,,,,provision (clothing),,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,"23,26",,,,,,,,,stewardship/knowledge? ,,,,,,,,,,,,,,provision (money/wealth),,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,"23,27",,,,,,,,,stewardship/knowledge? ,,,,,,,,,,,,,,provision (food),,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,"23,26",,,,,,,,,stewardship/prudence? ,,,,,,,,,,,,,,provision (clothing),,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,"23,26",,,,,,,,,stewardship/prudence? ,,,,,,,,,,,,,,provision (money/wealth),,,,,,,,,,,,,,,
+,,,,,,,,,pro,27:,,"23,27",,,,,,,,,stewardship/prudence? ,,,,,,,,,,,,,,provision (food),,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,28,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,pro,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+R,1.0.0,,,,,,,,pro,29,2,2,,,,,,,,,righteousness,,,,righteousness,righteous,,increase/presence of,,,,,,,joy,joy,,,joy,rejoice,,of people,,,,,,"when x, y",,
+P,1.0.0,,,,,,,,pro,29,3,3,,,,,,,,,wisdom,,,,wisdom,wisdom,,love of,,,,,,,joy,"joy, gladness",,joy,joy,rejoiceth,,of father,,CG: joy/joy of father,,,,"has x, makes y",,
+P,1.0.0,,,,,,,,pro,29,4,4,,,,,,,,,justice,"justice, judgement",,judgment,justice,judgment,,by king,king,CG,,,,,establishment,"establishment,stability",,establishment,provision,establisheth the land,,of the land?,,CG,,,,,,
+P,1.0.0,,,,,,,,pro,29,6,6,,,,,,,,,righteousness,,,,righteousness,righteous,,property of,,,,,,,joy,"joy,singing,cheer,praise",,singing,joy,sing,,,,CG: singing/cheer/praise/joy,,,,,,
+R,1.0.0,,,,,,,,pro,29,6,6,,,,,,,,,righteousness,,,,righteousness,righteous,,property of,,,,,,,joy,joy,,,joy,rejoice,,,,"DK,CG",,,,,,
+P,1.0.0,,,,,,,,pro,29,7,7,,,,,,,,,righteousness,,,,righteousness,righteous,,property of,,,,,,,compassion,"compassion,empathy,consideration,concern,knowledge,understanding",,consideration,compassion,considereth the cause of the poor,,of rights of poor,,CG,,causative or correlative?,,,,
+P,1.0.0,,,,,,,,pro,29,8,8,,,,,,,,,wisdom,,,,wisdom,wise,,property of,,,,,,,peace,peace,,,peace,turn away wrath,,by turning away wrath/anger,,CG/AC,,causative or correlative,,,,
+P,1.0.0,,,,,,,,pro,29,10,10,,,,,,,,,uprightness,"uprightness, just",,just (justice?),righteousness,just,,property of,,"DK,CK: upright/just, CG",,,,,compassion,"compassion,empathy,consideration,concern,love,mercy",,"seek (his soul), concern (NASB)",compassion,seek his soul,,,,"CK (GPT compassion ok), DK, CG",,causative or correlative,,,,
+P,1.0.0,,,,,,,,pro,29,11,11,,,,,,,,,wisdom,,,,wisdom,wise,,property of,,,,,,,self control,"restraint, self-control, composure, discipline,patience",,keep mind,self control,all his mind | keepeth it in till afterwards,,,,"CK, CG",,,,,,
+P,1.0.0,,,,,,,,pro,29,14,14,,,,,,,,,justice,"justice, judgement",,judgment,justice,faithfully judgeth the poor,,"faithfully/with truth, by king","king, poor",CG,,,,,establishment,"establishment (,sustenance/protection/success?)",,establishment,provision,be established for ever,,"of throne, forever",,"DK: established /sustained, CG",,,,,,
+P,1.0.0,,,,,,,,pro,29,15,15,,,,,,,,,punishment,"punishment,discipline,correction",,the rod,guidance,rod,,,,CG,,,,,wisdom,wisdom,,,wisdom,wisdom,,give,,,,,,,,
+P,1.0.0,,,,,,,,pro,29,15,15,,,,,,,,,correction,"correction,reproof, rebuke,discipline",,reproof,guidance,reproof,,of son,"son,",CG,,,,,wisdom,wisdom,,,wisdom,wisdom,,give,,,,,,,,
+F,,,,,,,,,pro,29,16,16,,,,,,,,,righteousness,,,,righteousness,righteous,,property of,,,,,,,??,receive justice or life/protection to see justice?,,see (justice),justice,see their fall,,,,"IM: need to int really far, tbd",,,,,,
+P,1.0.0,,,,,,,,pro,29,17,17,,,,,,,,,correction,"correction,reproof, rebuke,discipline",,correction,guidance,correct,,of son,"son,",,,,,,,"rest,comfort,peace",,rest,peace,rest,,given by,son ,,,,,,,
+P,1.0.0,,,,,,,,pro,29,17,17,,,,,,,,,correction,"correction,reproof, rebuke,discipline",,correction,guidance,correct,,of son,"son,",,,,,,,"delight,refreshment,etc",,,refreshment,,,,,,,,,,,
+P,1.0.0,,,,,,,,pro,29,18,18,,,,,,,,,obedience,"obedience, upright, just,integrety,righteous","obedience, upright, just,integrety,righteous",keep the law,righteousness,keepeth the law,,,,,,,,,happiness,"happiness, blessing, joy",,happiness,joy,happy,,to be,subject,AC,,correlation,,,,
+F,,,,,,,,,pro,29,19,19,,,,,,,,,?? ,?? ,int punishment/discipline,,guidance,will not be corrected by words,,"not by words, so by rod",servant,"IM, AR",,,,,?? ,"instruction/correction, obedience/","instruction, from punishment/correction X; ""no response"" potentially indicates the result of production, hard work, respect, obedience",correction,guidance,corrected,,"not by words, by x",,"AR, DK, CK",,,,,,very much interpreted
+F,,,,,,,,,pro,29,21,21,,,,,,,,,?? ,?? ,"pampering, (delicate) instruction; lack of discipline, lack of correction",?? ,guidance,delicately bringeth up,,delicately,servant/slave,"IM, AR",,,,,?? ,"son, provision/blessing/establishment; dependent/loss of wealth","son; misinterpreting? NLT and logic feels like it should be bad, like a dependent needing provision or to take inheritance?",son,?? ,become his son at the length,,(provision) of family,,IM/AR,,,positive or negative,,,"either positive and y = son/provision(family), or negative and y = lose wealth? "
+P,1.0.0,,,,,,,,pro,29,23,23,,,,,,,,,humility,,,humility,righteousness,humble in spirit,,in spirit,,,,,,,honor,,,,honor,honour shall uphold,,uphold,,,,,,,,
+P,1.0.0,,,,,,,,pro,29,25-26?,25,,,,,,,,,trust,"trust, faith",,trust,faith,putteth his trust in the LORD,,,God,,,,,,safety,"safety,protection,exhaltation",,safety,salvation,safe,,,,,,,,,,
+IP,,,,,,,,,pro,29,25-26?,26,,,,,,,,,?? ,"seek the LORD, pursuit","seek (the LORD), pursuit, confide? (or broadly trust/faith/etc)",seek the favor,faith/pursuit,seek the ruler's favour | cometh from the LORD,,seek the favor,God ,CG: need to determine once group for seeking is determined; AR/AC for interpretation,,,,,justice,"justice,judgment",,judgment,justice,judgment,,to receive,from God,"maybe not justice/judgement as in deliverance, but SoF that God alone judges (and implied is just)",,,,,,"need to determine if can validate interpretation, and that it is a relationship and not just SoF"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+R,1.0.0,,,,,,,,pro,30,5,5,,,,,,,,,trust,"trust, take refuge in, seek protection from (God)",,trust,faith,put their trust in him,,of God,,,,,,,protection,"protection, safety, defense",,shield,salvation,he is a shield unto them,,,,,,,,,,
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,truth,"truth, honesty, faithfulness, righteousness, integrity",,opposite of vanity,righteousness,remove far from me vanity,,,,"CK, CG",,,,,each of below,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,honesty,"honesty, truth, integrity, faithfulness",,opposite of lies,righteousness,remove far from me | lies,,,,CG,,,,,each of below,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,"provision (not poverty or riches, separate and interpret deeper?)",,,neither poverty nor riches,provision,give me neither poverty nor riches,,,,IM,,,,,each of below,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,provision (same as last),"provision, food, ",,food ,provision,feed me with food convenient for me,,,,"CK,CG",,,,,each of below,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,last 3 inputs for each,,,,,,,,,,,,,,complacent/ opposite of? ,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,last 3 inputs for each,,,,,,,,,,,,,,deny God/opposite of ? ,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,last 3 inputs for each,,,,,,,,,,,,,,forget God/opposite of? ,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,last 3 inputs for each,,,,,,,,,,,,,,desire/opposite of? ,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,last 3 inputs for each,,,,,,,,,,,,,,stealing/opposite of? ,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+F,,,,,,,,,pro,30,7-9,"8,9",,,,,,,,,last 3 inputs for each,,,,,,,,,,,,,,profanity/opposite of? ,,,,,,,,,,,,negative (positive?),,,"explaining positive, by showing negative. "
+IP,,,,,,,,,pro,30,24-28,"24,25",,,,,,,,,wisdom,,,wisdom,wisdom,exceeding wise,,,,"AR, changes if x/y flipped",,,,,provision,"provision, food",,food ,provision,they prepare their meat in the summer,,,,"AR, changes if x/y flipped",,causative or correlative,,,,"could be opposite relationship, or correlation without direction"
+IP,,,,,,,,,pro,30,24-28,"24,26",,,,,,,,,wisdom,,,wisdom,wisdom,exceeding wise,,,,"AR, changes if x/y flipped",,,,,provision,"provision, shelter",,shelter ,provision,make they their houses in the rocks,,,,"AR, changes if x/y flipped",,causative or correlative,,,,"could be opposite relationship, or correlation without direction"
+IP,,,,,,,,,pro,30,24-28,"24,27",,,,,,,,,wisdom,,,wisdom,wisdom,exceeding wise,,,,"AR, changes if x/y flipped",,,,,order,"order,?? ",,,?? ,go they forth all of them by bands,,,,"AR, changes if x/y flipped, IM",,causative or correlative,,,,"could be opposite relationship, or correlation without direction"
+IP,,,,,,,,,pro,30,24-28,"24,28",,,,,,,,,wisdom,,,wisdom,wisdom,exceeding wise,,,,"AR, changes if x/y flipped",,,,,?? ,?? ,,?? ,?? ,is in kings' palaces,,,,"AR, changes if x/y flipped, IM",,causative or correlative,,,,"could be opposite relationship, or correlation without direction"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+F,,,,,,,,,pro,31,4-7,4-6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+F,,,,,,,,,pro,31,4-7,7,,,,,,,,,drinking,,,,,,,,,,,,,,forget poverty & troubles,,,,,,,,,,,,,,,"definitely not ""good"" in terms of something to promote, but it's not necessarily a bad thing, although interpretation with wisdom says it's not good to forget"
+IP,,,,,,,,,pro,31,8-9,8 & 9,,,,,,,,,,speak up,"compassion, empathy, etc (29:7,10)",,,,,,,,,,,,justice,,,,,,,,,,,,,,,"could purely just be separate commands, not implying a relationship"
+IP,,,,,,,,,pro,31,10-29,10,,,,,,,,,excellence (wife),"virtue, excellence, nobility, worthiness (wife/woman)",,,,,,,,,,,,,,,"""value""",,,,,,,AR,,correlate? ,,,,not sure how to handle value statements yet
+IP,,,,,,,,,pro,31,10-29,"10,11",,,,,,,,,,,,,,,,,,,,,,,,,trust/confidence? or ability to trust? ,,,,,,,IM,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,11",,,,,,,,,,,,,,,,,,,,,,,,"""no lack of gain"", enrichment, gain",blessing/provision/value/fulfillment/etc? ,,,,,,,"IM, DK/CK, CG",,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,12",,,,,,,,,,,,,,,,,,,,,,,goodness,,,,,,,,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,13",,,,,,,,,,,,,,,,,,,,,,,,"hard work (& others in group), stewardship/diligence (diff from group), provision, wealth/value",,,,,,,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,14",,,,,,,,,,,,,,,,,,,,,,,,,"provision, success/opportunity? (for first part)",,,,,,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,",,,,,,,,,,,,,,,,,,,,,,,,,"discipline/hard work, order/leadership/etc, stewardship/diligence/, serve/help other",,,,,of food ,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,16",,,,,,,,,,,,,,,,,,,,,,,,,"hard work, ""good business"", opportunity, stewardship, success/wealth, prudence/wisdom (in consideration)",,,,,,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,",,,,,,,,,,,,,,,,,,,,,,,,,hard work/strength/girds??? ,,,,,,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+IP,,,,,,,,,pro,31,10-29,"10,",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,correlate? ,,,,"if X specifically about finding/having a virtuous wife, then Y is all ways she ""brings value"" into a relationship; if X is general excellence/virtue, then Y is general;"
+R,1.0.0,,,,,,,,pro,31,30-31,30,,,,,,,,,fear of the LORD,"fear of the LORD, reverence",,fear of the LORD,reverence,feareth the LORD,,,woman,CG ,,,,,praise,,,praise,praise/honor/glory,praised,,,,CG,,,,,,
+,,,,,,,,,pro,31,30-31,,,,,,,,,,"fear of the LORD or ""works""","fear of the LORD, reverence; ""works"" ",,fear of the LORD,reverence,feareth the LORD,,,woman,IM,,,,,reward,,,,praise/honor/glory,,,,,,,,,,,
