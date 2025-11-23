@@ -137,7 +137,7 @@ permalink: /tools-games/tools/pps/
     display: flex;
     flex-direction: column;
     gap: 4px;
-    min-width: 120px;
+    min-width: 140px;
   }
 
   .pps-label {
@@ -263,6 +263,7 @@ permalink: /tools-games/tools/pps/
     font-size: 0.8rem;
     color: var(--pps-text-muted);
     margin-top: 4px;
+    gap: 10px;
   }
 
   .pps-stats-counts {
@@ -549,12 +550,109 @@ permalink: /tools-games/tools/pps/
     text-align: right;
     margin-top: 8px;
   }
+
+  /* Mode toggle (Key / Group) */
+  .pps-toggle {
+    display: inline-flex;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.8);
+    overflow: hidden;
+  }
+
+  .pps-toggle button {
+    border: none;
+    background: transparent;
+    color: var(--pps-text-muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+
+  .pps-toggle button.pps-toggle-active {
+    background: rgba(250, 204, 21, 0.12);
+    color: var(--pps-accent);
+  }
+
+  /* Multi-select dropdown with checkboxes */
+  .pps-multi {
+    position: relative;
+    min-width: 160px;
+  }
+
+  .pps-multi-toggle {
+    width: 100%;
+    border-radius: var(--pps-radius-md);
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.9);
+    color: var(--pps-text);
+    padding: 7px 10px;
+    font-size: 0.9rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .pps-multi-toggle span {
+    pointer-events: none;
+  }
+
+  .pps-multi-toggle-chevron {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+
+  .pps-multi-menu {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.98);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+    padding: 6px 6px 8px;
+    max-height: 260px;
+    overflow: auto;
+    display: none;
+    z-index: 50;
+  }
+
+  .pps-multi-menu.pps-open {
+    display: block;
+  }
+
+  .pps-multi-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 4px;
+    font-size: 0.85rem;
+    color: var(--pps-text);
+  }
+
+  .pps-multi-item input[type="checkbox"] {
+    accent-color: #facc15;
+  }
+
+  .pps-multi-item-label-main {
+    flex: 1;
+  }
+
+  .pps-multi-item-label-secondary {
+    font-size: 0.75rem;
+    color: var(--pps-text-muted);
+  }
 </style>
 
 <main class="pps-page" id="pps-page">
   <header class="pps-header">
     <div class="pps-title-row">
-      <h1 class="pps-title">Proverb Pair Search</h1>
+      <h1 class="pps-title">Proverb Pair Search (PPS)</h1>
       <span class="pps-pill">Study Tool</span>
     </div>
     <p class="pps-subtitle">
@@ -567,9 +665,9 @@ permalink: /tools-games/tools/pps/
     <!-- MAIN PANEL -->
     <section class="pps-panel-main" aria-label="Pair list panel">
       <div class="pps-panel-main-inner">
-        <!-- Filters -->
+        <!-- Primary filters -->
         <div class="pps-controls-top">
-          <div class="pps-group" aria-label="Pair filters">
+          <div class="pps-group" aria-label="Primary filters">
             <div class="pps-field">
               <label class="pps-label" for="pps-book-select">Book</label>
               <select id="pps-book-select">
@@ -605,33 +703,55 @@ permalink: /tools-games/tools/pps/
           </div>
         </div>
 
-        <!-- X/Y filters row -->
+        <!-- X/Y + mode + reset row -->
         <div class="pps-controls-top" style="margin-top: 4px;">
           <div class="pps-group" aria-label="X/Y filters">
             <div class="pps-field">
-              <label class="pps-label" for="pps-mode-select">Mode</label>
-              <select id="pps-mode-select">
-                <option value="key">Key</option>
-                <option value="group">Group</option>
-              </select>
+              <span class="pps-label">Mode</span>
+              <div class="pps-toggle" id="pps-mode-toggle" role="radiogroup">
+                <button
+                  type="button"
+                  class="pps-toggle-active"
+                  data-mode="key"
+                  aria-pressed="true"
+                >
+                  Key
+                </button>
+                <button
+                  type="button"
+                  data-mode="group"
+                  aria-pressed="false"
+                >
+                  Group
+                </button>
+              </div>
             </div>
 
             <div class="pps-field">
-              <label class="pps-label" for="pps-x-select">X</label>
-              <!-- ADD `multiple` -->
-              <select id="pps-x-select" multiple>
-                <option value="">All X</option>
-              </select>
+              <label class="pps-label">X (inputs)</label>
+              <div class="pps-multi" data-side="x">
+                <button type="button" class="pps-multi-toggle" data-role="toggle">
+                  <span class="pps-multi-summary" id="pps-x-summary">All X</span>
+                  <span class="pps-multi-toggle-chevron">▾</span>
+                </button>
+                <div class="pps-multi-menu" id="pps-x-menu" data-side="x">
+                  <!-- populated by JS -->
+                </div>
+              </div>
             </div>
 
             <div class="pps-field">
-              <label class="pps-label" for="pps-y-select">Y</label>
-              <!-- ADD `multiple` -->
-              <select id="pps-y-select" multiple>
-                <option value="">All Y</option>
-              </select>
+              <label class="pps-label">Y (outputs)</label>
+              <div class="pps-multi" data-side="y">
+                <button type="button" class="pps-multi-toggle" data-role="toggle">
+                  <span class="pps-multi-summary" id="pps-y-summary">All Y</span>
+                  <span class="pps-multi-toggle-chevron">▾</span>
+                </button>
+                <div class="pps-multi-menu" id="pps-y-menu" data-side="y">
+                  <!-- populated by JS -->
+                </div>
+              </div>
             </div>
-
 
             <button type="button" class="pps-button-ghost" id="pps-reset-filters">
               Reset Filters
@@ -639,8 +759,16 @@ permalink: /tools-games/tools/pps/
           </div>
 
           <div class="pps-group" style="justify-content: flex-end;">
-            <div class="pps-inline-label" id="pps-filter-summary">
-              No filters applied.
+            <div class="pps-field">
+              <label class="pps-label" for="pps-sort-select">Sort by</label>
+              <select id="pps-sort-select">
+                <option value="ref">Reference (default)</option>
+                <option value="book_ch">Book + chapter</option>
+                <option value="x_key">X key (A–Z)</option>
+                <option value="y_key">Y key (A–Z)</option>
+                <option value="x_group">X group (A–Z)</option>
+                <option value="y_group">Y group (A–Z)</option>
+              </select>
             </div>
           </div>
         </div>
@@ -651,6 +779,9 @@ permalink: /tools-games/tools/pps/
             <span class="pps-stats-pill" id="pps-count-main">– pairs</span>
             <span class="pps-stats-pill" id="pps-count-book">Book: –</span>
             <span class="pps-stats-pill" id="pps-count-chapter">Chapter: –</span>
+          </div>
+          <div class="pps-inline-label" id="pps-filter-summary">
+            No filters applied.
           </div>
         </div>
 
@@ -750,9 +881,10 @@ permalink: /tools-games/tools/pps/
             <span class="pps-tag">Status filter</span>
             <span class="pps-tag">X/Y key mode</span>
             <span class="pps-tag">X/Y group mode</span>
+            <span class="pps-tag">Sortable results</span>
           </div>
           <p class="pps-side-note">
-            Future versions can add more complex X/Y queries and links into other SHK tools.
+            Future versions can add multi-book and multi-chapter selection and more advanced X/Y queries.
           </p>
         </section>
 
@@ -769,7 +901,6 @@ permalink: /tools-games/tools/pps/
   (function () {
     "use strict";
 
-    // Data/config URLs resolved via Jekyll's relative_url.
     const PPS_DATA_URL = "{{ '/data/v1/pps/final_pairs.json' | relative_url }}";
     const PPS_CONFIG_URL = "{{ '/data/v1/pps/pps_export_config.v1.json' | relative_url }}";
     const PPS_WARNINGS_URL = "{{ '/data/v1/pps/final_pairs_warnings.json' | relative_url }}";
@@ -777,10 +908,16 @@ permalink: /tools-games/tools/pps/
     const bookSelect = document.getElementById("pps-book-select");
     const chapterSelect = document.getElementById("pps-chapter-select");
     const statusSelect = document.getElementById("pps-status-select");
-    const modeSelect = document.getElementById("pps-mode-select");
-    const xSelect = document.getElementById("pps-x-select");
-    const ySelect = document.getElementById("pps-y-select");
+    const sortSelect = document.getElementById("pps-sort-select");
     const resetButton = document.getElementById("pps-reset-filters");
+
+    const modeToggle = document.getElementById("pps-mode-toggle");
+    const modeButtons = modeToggle.querySelectorAll("button[data-mode]");
+
+    const xMenu = document.getElementById("pps-x-menu");
+    const yMenu = document.getElementById("pps-y-menu");
+    const xSummary = document.getElementById("pps-x-summary");
+    const ySummary = document.getElementById("pps-y-summary");
 
     const statusDot = document.getElementById("pps-status-dot");
     const statusText = document.getElementById("pps-status-text");
@@ -802,9 +939,11 @@ permalink: /tools-games/tools/pps/
     const sideConfigSource = document.getElementById("pps-side-config-source");
     const sideWarningsTotal = document.getElementById("pps-side-warnings-total");
 
+    const EMPTY_TOKEN = "__EMPTY__";
+
     const state = {
       allPairs: [],
-      booksIndex: new Map(), // bookCode -> { name, chapters: Set }
+      booksIndex: new Map(),
       statuses: new Set(),
       keyOptions: { x: new Set(), y: new Set() },
       groupOptions: { x: new Set(), y: new Set() },
@@ -814,9 +953,10 @@ permalink: /tools-games/tools/pps/
         book: "",
         chapter: "",
         status: "",
-        mode: "key",   // "key" or "group"
-        x: [],         // multi-select: array of values
-        y: []          // multi-select: array of values
+        mode: "key", // "key" or "group"
+        x: [],       // array of values (including EMPTY_TOKEN)
+        y: [],
+        sort: "ref"
       }
     };
 
@@ -842,12 +982,6 @@ permalink: /tools-games/tools/pps/
       return String(value);
     }
 
-    function getMultiValues(selectEl) {
-      return Array.from(selectEl.options)
-        .filter((opt) => opt.selected && opt.value !== "")
-        .map((opt) => opt.value);
-    }
-
     function buildIndexes() {
       const booksIndex = new Map();
       const statuses = new Set();
@@ -862,7 +996,6 @@ permalink: /tools-games/tools/pps/
         const x = pair.x || {};
         const y = pair.y || {};
 
-        // Book/chapter index
         const bookCodeRaw = ref.book;
         if (bookCodeRaw !== undefined && bookCodeRaw !== null && bookCodeRaw !== "") {
           const bookCode = String(bookCodeRaw);
@@ -882,13 +1015,11 @@ permalink: /tools-games/tools/pps/
           }
         }
 
-        // Status options
         const statusVal = status.status;
         if (statusVal !== undefined && statusVal !== null && statusVal !== "") {
           statuses.add(String(statusVal));
         }
 
-        // Key/group options for X/Y
         const xKey = x.key;
         const yKey = y.key;
         const xGroup = x.group;
@@ -896,15 +1027,26 @@ permalink: /tools-games/tools/pps/
 
         if (xKey !== undefined && xKey !== null && xKey !== "") {
           keyOptionsX.add(String(xKey));
+        } else {
+          keyOptionsX.add(EMPTY_TOKEN);
         }
+
         if (yKey !== undefined && yKey !== null && yKey !== "") {
           keyOptionsY.add(String(yKey));
+        } else {
+          keyOptionsY.add(EMPTY_TOKEN);
         }
+
         if (xGroup !== undefined && xGroup !== null && xGroup !== "") {
           groupOptionsX.add(String(xGroup));
+        } else {
+          groupOptionsX.add(EMPTY_TOKEN);
         }
+
         if (yGroup !== undefined && yGroup !== null && yGroup !== "") {
           groupOptionsY.add(String(yGroup));
+        } else {
+          groupOptionsY.add(EMPTY_TOKEN);
         }
       });
 
@@ -1021,53 +1163,155 @@ permalink: /tools-games/tools/pps/
       statusSelect.value = current;
     }
 
-    function populateXYSelects() {
-      const mode = state.filters.mode || "key";
+    function getBaseFilteredPairs() {
+      // Filter only by book/chapter/status (used to derive X/Y options)
+      const { book, chapter, status } = state.filters;
+      let filtered = state.allPairs;
 
-      xSelect.innerHTML = "";
-      ySelect.innerHTML = "";
-
-      const anyX = document.createElement("option");
-      anyX.value = "";
-      anyX.textContent = "All X";
-      xSelect.appendChild(anyX);
-
-      const anyY = document.createElement("option");
-      anyY.value = "";
-      anyY.textContent = "All Y";
-      ySelect.appendChild(anyY);
-
-      let xValues;
-      let yValues;
-
-      if (mode === "group") {
-        xValues = Array.from(state.groupOptions.x);
-        yValues = Array.from(state.groupOptions.y);
-      } else {
-        xValues = Array.from(state.keyOptions.x);
-        yValues = Array.from(state.keyOptions.y);
+      if (book) {
+        filtered = filtered.filter((pair) => {
+          const ref = pair.ref || {};
+          return toStringOrEmpty(ref.book) === book;
+        });
       }
 
-      xValues.sort((a, b) => a.localeCompare(b));
-      yValues.sort((a, b) => a.localeCompare(b));
+      if (chapter) {
+        filtered = filtered.filter((pair) => {
+          const ref = pair.ref || {};
+          const chVal = ref.chapter;
+          return toStringOrEmpty(chVal) === chapter;
+        });
+      }
 
-      xValues.forEach((val) => {
-        const opt = document.createElement("option");
-        opt.value = val;
-        opt.textContent = val;
-        xSelect.appendChild(opt);
+      if (status) {
+        filtered = filtered.filter((pair) => {
+          const st = pair.status || {};
+          return toStringOrEmpty(st.status) === status;
+        });
+      }
+
+      return filtered;
+    }
+
+    function buildXYOptionsForBase() {
+      const mode = state.filters.mode || "key";
+      const basePairs = getBaseFilteredPairs();
+
+      const xSet = new Set();
+      const ySet = new Set();
+
+      basePairs.forEach((pair) => {
+        const x = pair.x || {};
+        const y = pair.y || {};
+
+        const xVal =
+          mode === "group"
+            ? toStringOrEmpty(x.group)
+            : toStringOrEmpty(x.key);
+        const yVal =
+          mode === "group"
+            ? toStringOrEmpty(y.group)
+            : toStringOrEmpty(y.key);
+
+        if (xVal === "") {
+          xSet.add(EMPTY_TOKEN);
+        } else {
+          xSet.add(xVal);
+        }
+
+        if (yVal === "") {
+          ySet.add(EMPTY_TOKEN);
+        } else {
+          ySet.add(yVal);
+        }
       });
 
-      yValues.forEach((val) => {
-        const opt = document.createElement("option");
-        opt.value = val;
-        opt.textContent = val;
-        ySelect.appendChild(opt);
+      return { xSet, ySet };
+    }
+
+    function renderMultiMenu(side, valuesSet) {
+      const menu = side === "x" ? xMenu : yMenu;
+      const summaryEl = side === "x" ? xSummary : ySummary;
+      const selectedValues = side === "x" ? state.filters.x : state.filters.y;
+
+      menu.innerHTML = "";
+
+      const values = Array.from(valuesSet).sort((a, b) => {
+        if (a === EMPTY_TOKEN && b !== EMPTY_TOKEN) return -1;
+        if (b === EMPTY_TOKEN && a !== EMPTY_TOKEN) return 1;
+        if (a === EMPTY_TOKEN && b === EMPTY_TOKEN) return 0;
+        return a.localeCompare(b);
       });
 
-      // After mode change or reset, start with nothing selected = "All"
-      state.filters.x = [];
-      state.filters.y = [];
+      // "All" pseudo-item
+      const allItem = document.createElement("div");
+      allItem.className = "pps-multi-item";
+      const allCheckbox = document.createElement("input");
+      allCheckbox.type = "checkbox";
+      allCheckbox.value = "";
+      allCheckbox.dataset.side = side;
+      allCheckbox.dataset.role = "all";
+      allCheckbox.checked = selectedValues.length === 0;
+      const allLabel = document.createElement("span");
+      allLabel.className = "pps-multi-item-label-main";
+      allLabel.textContent = side === "x" ? "All X" : "All Y";
+      allItem.appendChild(allCheckbox);
+      allItem.appendChild(allLabel);
+      menu.appendChild(allItem);
+
+      values.forEach((val) => {
+        const item = document.createElement("div");
+        item.className = "pps-multi-item";
+
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.dataset.side = side;
+        cb.dataset.role = "value";
+        cb.value = val;
+
+        if (selectedValues.includes(val)) {
+          cb.checked = true;
+        }
+
+        const main = document.createElement("span");
+        main.className = "pps-multi-item-label-main";
+        main.textContent = val === EMPTY_TOKEN ? "– (blank)" : val;
+
+        item.appendChild(cb);
+        item.appendChild(main);
+        menu.appendChild(item);
+      });
+
+      updateMultiSummary(side);
+    }
+
+    function updateMultiSummary(side) {
+      const summaryEl = side === "x" ? xSummary : ySummary;
+      const selected = side === "x" ? state.filters.x : state.filters.y;
+
+      if (!selected || selected.length === 0) {
+        summaryEl.textContent = side === "x" ? "All X" : "All Y";
+        return;
+      }
+
+      if (selected.length === 1) {
+        const val = selected[0] === EMPTY_TOKEN ? "– (blank)" : selected[0];
+        summaryEl.textContent = val;
+        return;
+      }
+
+      summaryEl.textContent = selected.length + " selected";
+    }
+
+    function populateXYMenus() {
+      const { xSet, ySet } = buildXYOptionsForBase();
+
+      // Shrink selections to the currently valid set
+      state.filters.x = (state.filters.x || []).filter((v) => xSet.has(v));
+      state.filters.y = (state.filters.y || []).filter((v) => ySet.has(v));
+
+      renderMultiMenu("x", xSet);
+      renderMultiMenu("y", ySet);
     }
 
     function applyFilters() {
@@ -1100,26 +1344,70 @@ permalink: /tools-games/tools/pps/
       if (Array.isArray(x) && x.length > 0) {
         filtered = filtered.filter((pair) => {
           const side = pair.x || {};
-          const value =
+          const raw =
             mode === "group"
               ? toStringOrEmpty(side.group)
               : toStringOrEmpty(side.key);
-          return x.includes(value);
+          const val = raw === "" ? EMPTY_TOKEN : raw;
+          return x.includes(val);
         });
       }
 
       if (Array.isArray(y) && y.length > 0) {
         filtered = filtered.filter((pair) => {
           const side = pair.y || {};
-          const value =
+          const raw =
             mode === "group"
               ? toStringOrEmpty(side.group)
               : toStringOrEmpty(side.key);
-          return y.includes(value);
+          const val = raw === "" ? EMPTY_TOKEN : raw;
+          return y.includes(val);
         });
       }
 
-      return filtered;
+      return sortPairs(filtered);
+    }
+
+    function sortPairs(pairs) {
+      const mode = state.filters.sort || "ref";
+      const copy = pairs.slice();
+
+      copy.sort((a, b) => {
+        const refA = a.ref || {};
+        const refB = b.ref || {};
+        const xA = a.x || {};
+        const xB = b.x || {};
+        const yA = a.y || {};
+        const yB = b.y || {};
+
+        function cmpStr(sa, sb) {
+          const a = toStringOrEmpty(sa);
+          const b = toStringOrEmpty(sb);
+          return a.localeCompare(b);
+        }
+
+        switch (mode) {
+          case "book_ch":
+            return (
+              cmpStr(refA.book, refB.book) ||
+              (Number(refA.chapter) || 0) - (Number(refB.chapter) || 0) ||
+              cmpStr(refA.ref_id, refB.ref_id)
+            );
+          case "x_key":
+            return cmpStr(xA.key, xB.key) || cmpStr(refA.ref_id, refB.ref_id);
+          case "y_key":
+            return cmpStr(yA.key, yB.key) || cmpStr(refA.ref_id, refB.ref_id);
+          case "x_group":
+            return cmpStr(xA.group, xB.group) || cmpStr(refA.ref_id, refB.ref_id);
+          case "y_group":
+            return cmpStr(yA.group, yB.group) || cmpStr(refA.ref_id, refB.ref_id);
+          case "ref":
+          default:
+            return cmpStr(refA.ref_id || refA.ref_str, refB.ref_id || refB.ref_str);
+        }
+      });
+
+      return copy;
     }
 
     function updateCounts(filtered) {
@@ -1263,54 +1551,149 @@ permalink: /tools-games/tools/pps/
       renderPairs(filtered);
     }
 
+    function setMode(mode) {
+      state.filters.mode = mode === "group" ? "group" : "key";
+      // persist mode only
+      try {
+        localStorage.setItem("pps_mode", state.filters.mode);
+      } catch (e) {}
+
+      modeButtons.forEach((btn) => {
+        const m = btn.getAttribute("data-mode");
+        const active = m === state.filters.mode;
+        btn.classList.toggle("pps-toggle-active", active);
+        btn.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+
+      // When mode changes, keep current X/Y selections if they still exist in the new option set
+      populateXYMenus();
+      updateUI();
+    }
+
+    function closeAllMenus() {
+      document.querySelectorAll(".pps-multi-menu.pps-open").forEach((el) => {
+        el.classList.remove("pps-open");
+      });
+    }
+
     function attachFilterHandlers() {
       bookSelect.addEventListener("change", () => {
         state.filters.book = bookSelect.value || "";
         state.filters.chapter = "";
         populateChapterSelect();
+        populateXYMenus();
         updateUI();
       });
 
       chapterSelect.addEventListener("change", () => {
         state.filters.chapter = chapterSelect.value || "";
+        populateXYMenus();
         updateUI();
       });
 
       statusSelect.addEventListener("change", () => {
         state.filters.status = statusSelect.value || "";
+        populateXYMenus();
         updateUI();
       });
 
-      modeSelect.addEventListener("change", () => {
-        state.filters.mode = modeSelect.value || "key";
-        populateXYSelects(); // resets X/Y and options
+      sortSelect.addEventListener("change", () => {
+        state.filters.sort = sortSelect.value || "ref";
         updateUI();
       });
 
-      xSelect.addEventListener("change", () => {
-        state.filters.x = getMultiValues(xSelect);
-        updateUI();
+      modeButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const mode = btn.getAttribute("data-mode");
+          setMode(mode);
+        });
       });
 
-      ySelect.addEventListener("change", () => {
-        state.filters.y = getMultiValues(ySelect);
-        updateUI();
+      // Multi dropdown toggles
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        const toggle = target.closest(".pps-multi-toggle");
+        const menu = target.closest(".pps-multi-menu");
+
+        if (toggle) {
+          const parent = toggle.closest(".pps-multi");
+          const side = parent.getAttribute("data-side");
+          const menuEl = side === "x" ? xMenu : yMenu;
+          const isOpen = menuEl.classList.contains("pps-open");
+          closeAllMenus();
+          if (!isOpen) {
+            menuEl.classList.add("pps-open");
+          }
+          return;
+        }
+
+        if (!menu) {
+          closeAllMenus();
+        }
       });
+
+      // Multi dropdown checkbox handling
+      xMenu.addEventListener("change", handleMultiChange);
+      yMenu.addEventListener("change", handleMultiChange);
 
       resetButton.addEventListener("click", () => {
         state.filters.book = "";
         state.filters.chapter = "";
         state.filters.status = "";
-        state.filters.mode = "key";
         state.filters.x = [];
         state.filters.y = [];
-        modeSelect.value = "key";
+        state.filters.sort = "ref";
+
+        // Mode stays as last-used; do not reset mode on full reset.
+        bookSelect.value = "";
         populateBookSelect();
         populateChapterSelect();
         populateStatusSelect();
-        populateXYSelects();
+        sortSelect.value = "ref";
+        populateXYMenus();
         updateUI();
       });
+    }
+
+    function handleMultiChange(event) {
+      const cb = event.target;
+      if (!cb || cb.type !== "checkbox") return;
+      const side = cb.dataset.side;
+      if (!side) return;
+
+      const menu = side === "x" ? xMenu : yMenu;
+      const values = [];
+      const checkboxes = menu.querySelectorAll('input[type="checkbox"][data-role="value"]');
+
+      if (cb.dataset.role === "all") {
+        // All X/Y -> clear selections
+        checkboxes.forEach((c) => {
+          c.checked = false;
+        });
+        if (side === "x") state.filters.x = [];
+        else state.filters.y = [];
+      } else {
+        // Turn off "all" if any specific is selected
+        const allCb = menu.querySelector('input[type="checkbox"][data-role="all"]');
+        if (allCb) allCb.checked = false;
+
+        checkboxes.forEach((c) => {
+          if (c.checked) {
+            values.push(c.value);
+          }
+        });
+
+        if (side === "x") state.filters.x = values;
+        else state.filters.y = values;
+
+        // If nothing selected, revert to "all"
+        if (values.length === 0 && allCb) {
+          allCb.checked = true;
+        }
+      }
+
+      updateMultiSummary(side);
+      updateUI();
     }
 
     async function loadConfigMeta() {
@@ -1350,6 +1733,17 @@ permalink: /tools-games/tools/pps/
     async function loadData() {
       setStatus("loading", "Loading PPS data…");
       try {
+        const storedMode = (function () {
+          try {
+            return localStorage.getItem("pps_mode");
+          } catch (e) {
+            return null;
+          }
+        })();
+        if (storedMode === "key" || storedMode === "group") {
+          state.filters.mode = storedMode;
+        }
+
         const res = await fetch(PPS_DATA_URL, { cache: "no-store" });
         if (!res.ok) {
           throw new Error("Failed to load final_pairs.json");
@@ -1362,8 +1756,10 @@ permalink: /tools-games/tools/pps/
         populateBookSelect();
         populateChapterSelect();
         populateStatusSelect();
-        populateXYSelects();
+
+        sortSelect.value = state.filters.sort || "ref";
         attachFilterHandlers();
+        setMode(state.filters.mode);
 
         const meta = json.meta || {};
         const stats = meta.stats || {};
