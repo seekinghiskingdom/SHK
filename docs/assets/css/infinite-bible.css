@@ -28,10 +28,10 @@
   flex-wrap: wrap;
   gap: 1rem;
   align-items: flex-end;
-  padding: 1rem 1.25rem;
+  padding: 0.8rem 1.1rem;
   border-radius: 14px;
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6; /* slightly darker than the canvas so it stands out */
 }
 
 .infinite-bible-bible .bible-chapter-picker .form-field {
@@ -158,3 +158,23 @@
 }
 
 /* You can later add Notes Mode styles here (e.g., .infinite-bible-notes …) */
+
+/* Force good contrast for Infinite Bible – text colors */
+
+.infinite-bible-bible .tool-controls,
+.infinite-bible-bible .tool-controls label,
+.infinite-bible-bible .tool-controls input,
+.infinite-bible-bible .tool-controls select,
+.infinite-bible-bible .tool-canvas,
+.infinite-bible-bible .tool-canvas p,
+.infinite-bible-bible .tool-canvas h2,
+.infinite-bible-bible .tool-canvas h3,
+.infinite-bible-bible .bible-chapter-block {
+  color: #111827; /* near-black */
+}
+
+/* Make chapter blocks read clearly against the canvas */
+.infinite-bible-bible .bible-chapter-block {
+  background: #ffffff;
+  border-color: #e5e7eb;
+}
