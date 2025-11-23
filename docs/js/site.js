@@ -73,6 +73,7 @@
   });
 })();
 
+
 // 7) Left Nav CTA: automatic path links + collapse
 (() => {
   const navCta = document.getElementById('nav-cta');
@@ -80,6 +81,12 @@
 
   const linksContainer = navCta.querySelector('.nav-cta-links');
   const toggle = navCta.querySelector('.nav-cta-toggle');
+
+  // default collapsed on small screens
+  if (window.matchMedia('(max-width: 700px)').matches) {
+    navCta.classList.add('nav-cta--collapsed');
+    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+  }
 
   // Build path segments from current URL
   const base = navCta.dataset.baseurl || '';
@@ -136,6 +143,35 @@
     a.className = 'btn nav-cta-link';
     linksContainer.appendChild(a);
   });
+
+  // after crumbs.forEach(...) has run
+  const prevUrl = navCta.dataset.prevUrl;
+  const prevLabel = navCta.dataset.prevLabel || 'Prev';
+  const nextUrl = navCta.dataset.nextUrl;
+  const nextLabel = navCta.dataset.nextLabel || 'Next';
+  if (prevUrl || nextUrl) {
+    const row = document.createElement('div');
+    row.className = 'nav-cta-prevnext';
+
+    if (prevUrl) {
+        const aPrev = document.createElement('a');
+        aPrev.href = prevUrl;
+        aPrev.textContent = '← ' + prevLabel;
+        aPrev.className = 'btn nav-cta-link nav-cta-prev';
+        row.appendChild(aPrev);
+    }
+
+    if (nextUrl) {
+        const aNext = document.createElement('a');
+        aNext.href = nextUrl;
+        aNext.textContent = nextLabel + ' →';
+        aNext.className = 'btn nav-cta-link nav-cta-next';
+        row.appendChild(aNext);
+    }
+
+    linksContainer.appendChild(row);
+  }
+
 
   // Collapse / expand behavior (similar to Help CTA)
   if (toggle) {

@@ -55,6 +55,11 @@
         class="nav-cta-toggle"
         aria-label="Hide navigation panel"
         aria-expanded="true"
+
+        data-prev-url="{{ page.nav_prev_url | default: '' }}"
+        data-prev-label="{{ page.nav_prev_label | default: '' }}"
+        data-next-url="{{ page.nav_next_url | default: '' }}"
+        data-next-label="{{ page.nav_next_label | default: '' }}"
       >
         <span class="nav-cta-icon">⤳</span>
       </button>
