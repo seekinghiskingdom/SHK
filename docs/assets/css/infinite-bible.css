@@ -1,32 +1,25 @@
-/* Infinite Bible (Tool) – Bible Mode + Notes Mode styles */
+/* Infinite Bible – Bible Mode */
 /* Content and wording assisted by AI (-AI) */
 
-
-/* === Infinite Bible – Bible Mode: Header strip === */
-
-/* Make header text white on whatever dark background it's sitting on */
+/* Make header text work on a dark background */
 .infinite-bible-bible .ib-header {
   margin-bottom: 1.75rem;
   color: #ffffff;
 }
 
-/* We explicitly style internal text to stay light */
 .infinite-bible-bible .ib-header h1,
 .infinite-bible-bible .ib-header p,
-.infinite-bible-bible .ib-header button,
 .infinite-bible-bible .ib-header span {
   color: #ffffff;
 }
 
-/* Main header layout */
+/* Header layout */
 
 .infinite-bible-bible .ib-header-main {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
-
-/* Title + pill row */
 
 .infinite-bible-bible .ib-title-row {
   display: flex;
@@ -41,12 +34,12 @@
   margin: 0;
 }
 
-/* Bible Mode pill: thin yellow outline, yellow text, transparent bg */
+/* Bible Mode pill: thin gold outline, gold text */
 
 .infinite-bible-bible .ib-pill {
   padding: 3px 10px;
   border-radius: 999px;
-  border: 1px solid #facc15;  /* yellow */
+  border: 1px solid #facc15;  /* gold */
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -54,7 +47,7 @@
   background: transparent;
 }
 
-/* Intro text + More info button in one row */
+/* Intro line (no button here now) */
 
 .infinite-bible-bible .ib-intro-row {
   display: flex;
@@ -69,32 +62,7 @@
   flex: 1 1 auto;
 }
 
-/* Small compact "More info" button on the right */
-
-.infinite-bible-bible .ib-info-toggle {
-  flex: 0 0 auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.3rem 0.8rem;
-  border-radius: 999px;
-  border: 1px solid rgba(249, 250, 251, 0.7);
-  background: rgba(15, 23, 42, 0.3); /* subtle dark overlay */
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  cursor: pointer;
-}
-
-.infinite-bible-bible .ib-info-toggle:hover {
-  background: rgba(15, 23, 42, 0.55);
-}
-
-.infinite-bible-bible .ib-info-toggle-icon {
-  font-size: 0.75rem;
-}
-
-/* Collapsible More Info panel */
+/* Collapsible More Info panel under header */
 
 .infinite-bible-bible .ib-info-panel {
   margin-top: 0.8rem;
@@ -102,7 +70,7 @@
   border-radius: 12px;
   border: 1px solid rgba(148, 163, 184, 0.8);
   background: rgba(15, 23, 42, 0.9);
-  max-width: 48rem;        /* don't get excessively wide */
+  max-width: 48rem;
 }
 
 .infinite-bible-bible .ib-info-section + .ib-info-section {
@@ -125,90 +93,18 @@
   color: #e5e7eb;
 }
 
-/* Make sure hidden panel actually hides */
-
 .infinite-bible-bible .ib-info-panel[hidden] {
   display: none;
 }
 
-/* Small-screen adjustments */
-
-@media (max-width: 640px) {
-  .infinite-bible-bible .ib-intro-row {
-    align-items: flex-start;
-  }
-
-  .infinite-bible-bible .ib-info-toggle {
-    margin-left: auto;
-  }
-}
-
-
-/* Intro row: subtitle + small button in one line on desktop */
-
-.infinite-bible-bible .ib-intro-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.infinite-bible-bible .ib-subtitle {
-  margin: 0;
-  font-size: 0.95rem;
-  flex: 1 1 auto;
-}
-
-/* Small compact "More info" button, gold text + outline */
-
-.infinite-bible-bible .ib-info-toggle {
-  flex: 0 0 auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.28rem 0.75rem;
-  border-radius: 999px;
-  border: 1px solid #facc15;   /* gold outline */
-  background: rgba(0, 0, 0, 0.1); /* subtle transparent background */
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  cursor: pointer;
-  color: #facc15;              /* gold text */
-}
-
-.infinite-bible-bible .ib-info-toggle span,
-.infinite-bible-bible .ib-info-toggle .ib-info-toggle-icon {
-  color: #facc15;
-}
-
-.infinite-bible-bible .ib-info-toggle:hover {
-  background: rgba(0, 0, 0, 0.25);
-}
-
-/* Mobile: stack text above button */
-
-@media (max-width: 640px) {
-  .infinite-bible-bible .ib-intro-row {
-    align-items: flex-start;
-  }
-
-  .infinite-bible-bible .ib-info-toggle {
-    margin-left: auto;
-    margin-top: 0.35rem;
-  }
-}
-
-
-/* === Infinite Bible – Bible Mode: top toolbar ribbon === */
+/* === Sticky toolbar ribbon === */
 
 .infinite-bible-bible .ib-toolbar {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.5);
-  background: rgba(15, 23, 42, 0.92); /* dark, so white text still works */
+  border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+  background: #020617; /* almost-black */
   backdrop-filter: blur(6px);
 }
 
@@ -247,4 +143,55 @@
   border-color: #facc15;
   color: #facc15;
   background: rgba(0, 0, 0, 0.2);
+}
+
+/* === Canvas shell === */
+
+.infinite-bible-bible .ib-canvas-shell {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.infinite-bible-bible .ib-canvas-inner {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  padding: 1.5rem 1.75rem;
+  min-height: 800px; /* ensures scroll on most screens */
+}
+
+.infinite-bible-bible .ib-canvas-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.infinite-bible-bible .ib-canvas-text {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Extra height to really test scrolling under the toolbar */
+
+.infinite-bible-bible .ib-canvas-scroll-test {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  min-height: 600px;
+  color: #374151;
+}
+
+/* Small-screen tweaks */
+
+@media (max-width: 640px) {
+  .infinite-bible-bible .ib-header-main {
+    gap: 0.5rem;
+  }
+
+  .infinite-bible-bible .ib-intro-row {
+    align-items: flex-start;
+  }
 }

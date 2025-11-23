@@ -5,6 +5,9 @@ permalink: /tools-games/tools/infinite-bible/bible/
 extra_css:
   - /assets/css/infinite-bible.css
 ---
+
+<!-- Content and wording assisted by AI (-AI) -->
+
 <main class="tool-page infinite-bible-mode infinite-bible-bible">
   <header class="ib-header">
     <div class="ib-header-main">
@@ -17,16 +20,6 @@ extra_css:
         <p class="ib-subtitle">
           Work through Scripture one chapter at a time in a single visual Infinite Bible workspace.
         </p>
-        <button
-          type="button"
-          class="ib-info-toggle"
-          id="ib-info-toggle"
-          aria-expanded="false"
-          aria-controls="ib-info-panel"
-        >
-          More info
-          <span class="ib-info-toggle-icon">▾</span>
-        </button>
       </div>
     </div>
 
@@ -60,6 +53,7 @@ extra_css:
     </div>
   </header>
 
+  <!-- Sticky toolbar ribbon -->
   <div class="ib-toolbar" aria-label="Infinite Bible tools">
     <div class="ib-toolbar-inner">
       <div class="ib-toolbar-left">
@@ -74,6 +68,13 @@ extra_css:
         </button>
       </div>
       <div class="ib-toolbar-right">
+        <button
+          type="button"
+          class="ib-toolbar-btn"
+          id="ib-toolbar-more-info"
+        >
+          More info
+        </button>
         <button type="button" class="ib-toolbar-btn">
           Help
         </button>
@@ -81,22 +82,39 @@ extra_css:
     </div>
   </div>
 
+  <!-- Canvas shell (placeholder for now) -->
+  <section class="ib-canvas-shell" aria-label="Infinite Bible board">
+    <div class="ib-canvas-inner">
+      <h2 class="ib-canvas-title">Bible board (placeholder)</h2>
+      <p class="ib-canvas-text">
+        This area will become the main canvas for Bible Mode. Chapters, verse blocks, and notes
+        will live here as the tool develops.
+      </p>
 
-
-
+      <!-- Just to force some scroll so you can test sticky behavior -->
+      <div class="ib-canvas-scroll-test">
+        <p>Scroll down to confirm the toolbar stays pinned while this content moves underneath.</p>
+      </div>
+    </div>
+  </section>
 </main>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var btn = document.getElementById("ib-info-toggle");
+    var moreBtn = document.getElementById("ib-toolbar-more-info");
     var panel = document.getElementById("ib-info-panel");
-    if (!btn || !panel) return;
+    var header = document.querySelector(".infinite-bible-bible .ib-header");
 
-    btn.addEventListener("click", function () {
-      var isOpen = btn.getAttribute("aria-expanded") === "true";
-      btn.setAttribute("aria-expanded", String(!isOpen));
-      panel.hidden = isOpen;
-    });
+    if (moreBtn && panel) {
+      moreBtn.addEventListener("click", function () {
+        var isOpen = !panel.hidden;
+        panel.hidden = isOpen;
+
+        // If we just opened the panel, scroll the header into view
+        if (!isOpen && header) {
+          header.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    }
   });
 </script>
-

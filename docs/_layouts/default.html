@@ -109,6 +109,27 @@
         </a>
       </div>
     </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Left nav CTA
+      var navToggle = document.querySelector("#nav-cta .nav-cta-toggle");
+      if (navToggle && navToggle.getAttribute("aria-expanded") === "true") {
+        navToggle.click();
+      }
+
+      // Right help CTA
+      var helpToggle = document.querySelector("#help-cta .help-cta-toggle");
+      if (helpToggle && helpToggle.getAttribute("aria-expanded") === "true") {
+        helpToggle.click();
+      }
+    });
+  </script>
+
+
+
+
+
   </main>
 
   {% include footer.html %}
