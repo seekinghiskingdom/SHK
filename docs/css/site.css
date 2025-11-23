@@ -1655,76 +1655,55 @@ footer.container,
   }
 }
 
+/* ========== Nav outlines, highlights, and Nav CTA ========== */
 
-
-/* ========== Header Nav Accents & Outlines ========== */
-
-/* 1) Thin yellow line under the whole header */
+/* Thin yellow line under the whole header */
 .site-header {
   border-bottom: 1px solid var(--accent);
 }
 
-/* 2) Header tabs container: black box with yellow outline */
+/* Yellow outline around the header tabs container (row of tabs) */
 .site-header .nav-links {
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid var(--accent);   /* yellow around the whole tabs container */
-  border-radius: 999px;
-  padding: 0.3rem 0.6rem;
-  gap: 0.4rem;
-}
-
-/* 3) Yellow buttons with black accents (top tabs + dropdown tiles) */
-.site-header .nav-button,
-.site-header .nav-dropdown-item {
-  background: var(--gold);           /* yellow tiles */
-  color: #111;
-  border: 1px solid #000;            /* black outline around yellow buttons */
-  border-radius: 999px;
-  padding: 0.35rem 0.9rem;
-  text-decoration: none;
-  font-size: 0.9rem;
-  white-space: nowrap;
-}
-
-.site-header .nav-button:hover,
-.site-header .nav-button:focus-visible,
-.site-header .nav-dropdown-item:hover,
-.site-header .nav-dropdown-item:focus-visible {
-  background: var(--dark-gold);
-  color: #000;
-}
-
-/* 4) Dropdown containers: black with yellow outline */
-.nav-dropdown {
-  background: var(--panel);          /* black/dark panel */
-  border: 1px solid var(--accent);   /* yellow around the dropdown container */
+  border: 1px solid var(--accent);      /* yellow around container */
   border-radius: 0.75rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  padding: 0.25rem 0.5rem;
+  background: rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
 }
 
-/* 5) Mobile: dropdown stays outlined, container still yellow-framed */
+/* Black accents around yellow buttons (tabs + dropdown tiles) */
+.nav-button,
+.nav-dropdown-item {
+  border: 1px solid #000;               /* thin black outline */
+  box-sizing: border-box;
+}
+
+/* Optional: subtle hover emphasis */
+.nav-button:hover,
+.nav-button:focus-visible,
+.nav-dropdown-item:hover,
+.nav-dropdown-item:focus-visible {
+  box-shadow: 0 0 0 1px #000;
+}
+
+/* Yellow outline around black dropdown containers (desktop) */
+.nav-dropdown {
+  border: 1px solid var(--accent);      /* yellow around dropdown panel */
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+}
+
+/* Mobile: same yellow outline on the inline dropdown panel */
 @media (max-width: 700px) {
   .nav-item .nav-dropdown {
-    background: var(--panel);
-    border: 1px solid var(--accent); /* yellow outline for the mobile dropdown box */
+    border: 1px solid var(--accent);
     border-radius: 0.75rem;
-    box-shadow: none;
-    margin-top: 0.35rem;
-    padding: 0.5rem 0.6rem;
-  }
-
-  /* Keep the header tabs container outlined in mobile too */
-  .site-header .nav-links {
-    border-radius: 0.75rem;
+    box-sizing: border-box;
   }
 }
 
+/* ===== Left Navigation CTA (floating breadcrumb stack) ===== */
 
-
-/* ================= Left-side Navigation CTA ================= */
-
-/* Left-side Navigation CTA (desktop) */
 .nav-cta {
   position: fixed;
   left: 1rem;
@@ -1740,7 +1719,21 @@ footer.container,
   gap: 0.4rem;
 }
 
-/* Path icon toggle (little “path” control) */
+/* Stack links bottom-up: Home at bottom, deeper path above */
+.nav-cta-links {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.35rem;
+  margin-top: 2.4rem; /* room for toggle icon */
+}
+
+.nav-cta-link {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  white-space: nowrap;
+}
+
+/* Path toggle icon (⤳) */
 .nav-cta-toggle {
   position: absolute;
   top: 0.35rem;
@@ -1763,21 +1756,7 @@ footer.container,
   color: var(--accent);
 }
 
-/* Stack links vertically, Home at the bottom (column-reverse) */
-.nav-cta-links {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 0.35rem;
-  margin-top: 2.4rem; /* space under the toggle button */
-}
-
-.nav-cta-link {
-  font-size: 0.85rem;
-  padding: 0.4rem 0.8rem;
-  white-space: nowrap;
-}
-
-/* Collapsed: just show the round icon pill */
+/* Collapsed: only show the round icon pill */
 .nav-cta.nav-cta--collapsed {
   padding: 0.35rem;
   border-radius: 999px;
@@ -1793,12 +1772,9 @@ footer.container,
   height: 2.3rem;
 }
 
-/* Hide nav CTA on small screens if you want it desktop-only */
+/* Desktop-only nav CTA (hide on small screens) */
 @media (max-width: 700px) {
   .nav-cta {
     display: none;
   }
 }
-
-
-/* End of Hunter's CSS Style Additions */

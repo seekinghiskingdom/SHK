@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "data_version": "v1",
+
+  "default_language": "en",
+  "default_translation": "kjv",
+
+  "languages": [
+    {
+      "code": "en",
+      "label": "English",
+      "translations": [
+        {
+          "code": "kjv",
+          "slug": "kjv",
+          "title": "King James Version",
+          "short_label": "KJV",
+          "kind": "translation",
+
+          "language_code": "en",
+          "language_label": "English",
+
+          "path": "/data/v1/lit/bible/en/kjv",
+          "chapters_dir": "chapters",
+
+          "translation_page": "/literature/bible/translations/en/kjv/",
+          "manifest_path": "/data/v1/lit/bible/en/kjv/manifest.json",
+
+          "tags": ["formal-equivalence", "public-domain"],
+          "order": 1
+        }
+      ]
+    }
+  ]
+}
