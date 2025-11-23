@@ -735,3 +735,34 @@ body.tool-app-body #content.tool-app-container {
 .infinite-bible-app .ib-toolbar-right {
   margin-left: 0;
 }
+
+
+/* === FINAL OVERRIDES: keep toolbar buttons horizontal === */
+
+/* Sections themselves should not wrap their children */
+.infinite-bible-app .ib-toolbar-left,
+.infinite-bible-app .ib-toolbar-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+/* Buttons in left/right sections should not stretch or wrap */
+.infinite-bible-app .ib-toolbar-left .ib-toolbar-btn,
+.infinite-bible-app .ib-toolbar-right .ib-toolbar-btn {
+  flex: 0 0 auto;
+}
+
+/* Keep left section compact (Navigator + Add + File) */
+.infinite-bible-app .ib-toolbar-left {
+  flex: 0 0 auto;
+  gap: 0.35rem;
+}
+
+/* Right section: already horizontal; just ensure no wrapping on desktop */
+@media (min-width: 641px) {
+  .infinite-bible-app .ib-toolbar-right {
+    flex-wrap: nowrap;
+  }
+}

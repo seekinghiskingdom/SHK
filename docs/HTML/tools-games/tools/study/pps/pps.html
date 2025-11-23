@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Proverb Pair Search
-permalink: /tools-games/tools/proverb-pair-search/
+title: Proverb Pair Search (PPS)
+permalink: /tools-games/tools/pps/
 ---
 
 <style>
@@ -655,7 +655,7 @@ permalink: /tools-games/tools/proverb-pair-search/
             <div class="pps-side-section-title">Data snapshot</div>
             <a
               class="pps-link"
-              href="{{ site.baseurl }}/data/v1/pps/final_pairs.json"
+              href="{{ '/data/v1/pps/final_pairs.json' | relative_url }}"
             >
               Raw JSON
             </a>
@@ -687,7 +687,7 @@ permalink: /tools-games/tools/proverb-pair-search/
             <div class="pps-side-section-title">Export config</div>
             <a
               class="pps-link"
-              href="{{ site.baseurl }}/data/v1/pps/pps_export_config.v1.json"
+              href="{{ '/data/v1/pps/pps_export_config.v1.json' | relative_url }}"
             >
               View config
             </a>
@@ -723,7 +723,7 @@ permalink: /tools-games/tools/proverb-pair-search/
         </section>
 
         <div class="pps-footer-note">
-          Data source: <code>/data/v1/pps/final_pairs.json</code><br />
+          Data&nbsp;source: <code>/data/v1/pps/final_pairs.json</code><br />
           Config: <code>/data/v1/pps/pps_export_config.v1.json</code>
         </div>
       </div>
@@ -735,9 +735,11 @@ permalink: /tools-games/tools/proverb-pair-search/
   (function () {
     "use strict";
 
-    const BASEURL = "{{ site.baseurl | default: '' }}";
-    const PPS_DATA_URL = BASEURL + "/data/v1/pps/final_pairs.json";
-    const PPS_CONFIG_URL = BASEURL + "/data/v1/pps/pps_export_config.v1.json";
+    // Data/config URLs resolved via Jekyll's relative_url (no explicit site.baseurl).
+    const PPS_DATA_URL = "{{ '/data/v1/pps/final_pairs.json' | relative_url }}";
+    const PPS_CONFIG_URL = "{{ '/data/v1/pps/pps_export_config.v1.json' | relative_url }}";
+    // Optional warnings file; if not present, the fetch will be ignored.
+    const PPS_WARNINGS_URL = "{{ '/data/v1/pps/final_pairs_warnings.json' | relative_url }}";
 
     const bookSelect = document.getElementById("pps-book-select");
     const chapterSelect = document.getElementById("pps-chapter-select");
@@ -748,7 +750,6 @@ permalink: /tools-games/tools/proverb-pair-search/
     const statusText = document.getElementById("pps-status-text");
     const statusLabel = document.getElementById("pps-status-label");
 
-    const pairsShell = document.getElementById("pps-pairs-shell");
     const pairsList = document.getElementById("pps-pairs-list");
     const pairsSubtitle = document.getElementById("pps-pairs-subtitle");
 
@@ -1116,7 +1117,6 @@ permalink: /tools-games/tools/proverb-pair-search/
     function attachFilterHandlers() {
       bookSelect.addEventListener("change", () => {
         state.filters.book = bookSelect.value || "";
-        // When book changes, reset chapter
         state.filters.chapter = "";
         populateChapterSelect();
         updateUI();
@@ -1163,10 +1163,8 @@ permalink: /tools-games/tools/proverb-pair-search/
     }
 
     async function loadWarningsMeta() {
-      // Optional: just use the warnings count if present
-      const warningsPath = BASEURL + "/tools/pps/data/output/final_pairs_warnings.json";
       try {
-        const res = await fetch(warningsPath, { cache: "no-store" });
+        const res = await fetch(PPS_WARNINGS_URL, { cache: "no-store" });
         if (!res.ok) return;
         const json = await res.json();
         const stats = json.meta && json.meta.stats ? json.meta.stats : null;
@@ -1208,7 +1206,7 @@ permalink: /tools-games/tools/proverb-pair-search/
           ? String(stats.chapters.length)
           : "–";
 
-        if (meta.generated_at) {
+        if (meta.generated_at && !state.metaGeneratedAt) {
           sideGeneratedAt.textContent = meta.generated_at;
           state.metaGeneratedAt = meta.generated_at;
         }
@@ -1216,7 +1214,6 @@ permalink: /tools-games/tools/proverb-pair-search/
         setStatus("ok", "Ready");
         updateUI();
 
-        // Load config meta + warnings in background
         loadConfigMeta();
         loadWarningsMeta();
       } catch (err) {
@@ -1230,7 +1227,7 @@ permalink: /tools-games/tools/proverb-pair-search/
         pairsList.appendChild(div);
       }
     }
-
+I
     document.addEventListener("DOMContentLoaded", loadData);
   })();
 </script>
