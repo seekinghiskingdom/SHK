@@ -1,187 +1,372 @@
 ---
-layout: default
-title: Infinite Bible Tool
+layout: tool-app
+title: Infinite Bible
 permalink: /tools-games/tools/infinite-bible/
 extra_css:
   - /assets/css/infinite-bible.css
 ---
 
+
 <!-- Content and wording assisted by AI (-AI) -->
 
-<main class="tool-page infinite-bible-home">
-  <header class="tool-hero">
-    <p class="tool-breadcrumb">
-      Tools &amp; Games · Bible Tools
-    </p>
+<main class="tool-page infinite-bible-app">
+  <!-- Header band -->
+  <header class="ib-header">
+    <div class="ib-header-main">
+      <div class="ib-title-row">
+        <h1 class="ib-title">Infinite Bible</h1>
+        <span class="ib-pill" id="ib-mode-pill">Bible mode</span>
+      </div>
 
-    <h1>Infinite Bible (Tool)</h1>
-
-    <p class="tool-tagline">
-      A visual Bible workspace for reading, studying, and mapping Scripture, with two modes:
-      <strong>Infinite Bible</strong> (Bible Mode) and <strong>Infinite Bible Notes</strong> (Notes Mode).
-    </p>
-
-    <div class="tool-mode-buttons">
-      <a class="btn btn-primary" href="{{ site.baseurl }}/tools-games/tools/infinite-bible/bible/">
-        Open Bible Mode
-      </a>
-      <a class="btn btn-secondary" href="{{ site.baseurl }}/tools-games/tools/infinite-bible/notes/">
-        Open Notes Mode
-      </a>
+      <div class="ib-intro-row">
+        <p class="ib-subtitle">
+          Work through Scripture one chapter at a time—or build free-form boards—as part of a single Infinite Bible workspace.
+        </p>
+      </div>
     </div>
-
-    <p class="tool-beta-note">
-      Early version: all boards and layouts are stored locally in your browser on this device. No accounts, no sync yet.
-    </p>
   </header>
 
-  <section class="tool-section tool-section--modes">
-    <h2>Choose how you want to study</h2>
+  <!-- Sticky toolbar ribbon -->
+  <div class="ib-toolbar" aria-label="Infinite Bible tools">
+    <div class="ib-toolbar-inner">
+      <!-- Left: modes and views -->
+      <div class="ib-toolbar-section ib-toolbar-left">
+        <!-- Primary app modes -->
+        <button
+          type="button"
+          class="ib-toolbar-btn ib-toolbar-btn-primary"
+          data-mode="bible"
+          id="ib-btn-mode-bible"
+        >
+          Bible
+        </button>
+        <button
+          type="button"
+          class="ib-toolbar-btn ib-toolbar-btn-plain"
+          data-mode="notes"
+          id="ib-btn-mode-boards"
+        >
+          Boards
+        </button>
 
-    <div class="tool-mode-grid">
-      <article class="tool-mode-card">
-        <h3>Infinite Bible (Bible Mode)</h3>
-        <p class="tool-mode-subtitle">
-          Chapter-based reading and study, in a single “Infinite Bible” workspace.
-        </p>
-        <ul>
-          <li>Start from a blank Bible board and load chapters as you need them.</li>
-          <li>Each chapter appears as a structured layout of verses you can rearrange and annotate.</li>
-          <li>Only the chapter you are working in needs to stay open, so performance stays manageable.</li>
-          <li>Use notes and spacing to build visual chapter maps, proverb webs, and exegesis layouts.</li>
-        </ul>
-        <p class="tool-mode-cta">
-          <a href="{{ site.baseurl }}/tools-games/tools/infinite-bible/bible/" class="btn btn-link">
-            Go to Bible Mode →
-          </a>
-        </p>
-      </article>
+        <span class="ib-toolbar-divider" aria-hidden="true"></span>
 
-      <article class="tool-mode-card">
-        <h3>Infinite Bible Notes (Notes Mode)</h3>
-        <p class="tool-mode-subtitle">
-          Free-form boards for verses, notes, themes, and connections.
-        </p>
-        <ul>
-          <li>Create multiple named boards for topics, projects, or sermons.</li>
-          <li>Insert any passage or verse by reference; drag blocks around a large canvas.</li>
-          <li>Add notes directly beside the text to capture questions, observations, and cross-links.</li>
-          <li>Use boards for thematic studies, Proverbs pairs, counseling notes, or teaching prep.</li>
-        </ul>
-        <p class="tool-mode-cta">
-          <a href="{{ site.baseurl }}/tools-games/tools/infinite-bible/notes/" class="btn btn-link">
-            Go to Notes Mode →
-          </a>
-        </p>
-      </article>
+        <!-- Secondary views (filters) – wired later -->
+        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
+          Notes
+        </button>
+        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
+          Bookmarks
+        </button>
+        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
+          Sections
+        </button>
+        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
+          Highlights
+        </button>
+      </div>
+
+      <!-- Middle: formatting / tools (placeholders for now) -->
+      <div class="ib-toolbar-section ib-toolbar-middle">
+        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Bold">
+          <span class="ib-toolbar-label">B</span>
+        </button>
+        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Italic">
+          <span class="ib-toolbar-label ib-toolbar-label-italic">I</span>
+        </button>
+        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Underline">
+          <span class="ib-toolbar-label ib-toolbar-label-underline">U</span>
+        </button>
+        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-icon" aria-label="Highlight">
+          <span class="ib-toolbar-label">A</span>
+        </button>
+        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-plain">
+          + Note
+        </button>
+      </div>
+
+      <!-- Right: theme / settings / info -->
+      <div class="ib-toolbar-section ib-toolbar-right">
+        <button
+          type="button"
+          class="ib-toolbar-btn ib-toolbar-btn-plain"
+          id="ib-toolbar-theme"
+        >
+          Theme: Light
+        </button>
+        <button
+          type="button"
+          class="ib-toolbar-btn ib-toolbar-btn-plain"
+          id="ib-toolbar-settings"
+        >
+          Settings
+        </button>
+        <button
+          type="button"
+          class="ib-toolbar-btn ib-toolbar-btn-plain"
+          id="ib-toolbar-more"
+        >
+          More info
+        </button>
+        <button
+          type="button"
+          class="ib-toolbar-btn ib-toolbar-btn-plain"
+          id="ib-toolbar-help"
+        >
+          Help
+        </button>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="tool-section tool-section--quickstart">
-    <h2>Quick start</h2>
+  <!-- Dropdown panels under toolbar -->
+  <div class="ib-toolbar-dropdowns">
+    <!-- More info dropdown -->
+    <section
+      class="ib-dropdown"
+      id="ib-dropdown-more"
+      aria-label="Infinite Bible information"
+      hidden
+    >
+      <h2 class="ib-dropdown-heading">Infinite Bible – unified Bible &amp; Boards</h2>
+      <p class="ib-dropdown-text">
+        Infinite Bible is a single workspace with two main modes:
+        chapter-based Bible boards and free-form boards for topics and notes.
+      </p>
 
-    <div class="tool-quickstart-columns">
-      <div class="tool-quickstart-card">
-        <h3>Quick start in Bible Mode</h3>
-        <ol>
-          <li>Open <strong>Bible Mode</strong>.</li>
-          <li>Select a book and chapter (for example, Proverbs 1) and click <strong>Load Chapter</strong>.</li>
-          <li>Optionally choose to split into one block per verse and whether to include verse numbers.</li>
-          <li>Drag verses and notes to group ideas, mark contrasts, or build a visual outline.</li>
-          <li>Load more chapters over time; use the chapter list to jump between them.</li>
-        </ol>
+      <div class="ib-dropdown-columns">
+        <div class="ib-dropdown-column">
+          <h3 class="ib-dropdown-subheading">Bible mode</h3>
+          <ul class="ib-dropdown-list">
+            <li>One board per chapter, using the shared Bible Tools v1 data.</li>
+            <li>Ideal for repeated work in specific passages (e.g., Genesis 1, Romans 8).</li>
+            <li>Boards only persist if you add your own content (notes, highlights, etc.).</li>
+          </ul>
+        </div>
+        <div class="ib-dropdown-column">
+          <h3 class="ib-dropdown-subheading">Boards mode</h3>
+          <ul class="ib-dropdown-list">
+            <li>Named boards for topics, projects, or sermon prep.</li>
+            <li>Can hold any mix of verse blocks and notes from across Scripture.</li>
+            <li>Also stored locally on the device where you use them.</li>
+          </ul>
+        </div>
+        <div class="ib-dropdown-column">
+          <h3 class="ib-dropdown-subheading">Notes &amp; limitations</h3>
+          <ul class="ib-dropdown-list">
+            <li>No accounts or sync yet; everything is local to one browser.</li>
+            <li>Design and tools are still in early development and may change.</li>
+            <li>You can always fall back to the main Bible Viewer for traditional reading.</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="tool-quickstart-card">
-        <h3>Quick start in Notes Mode</h3>
-        <ol>
-          <li>Open <strong>Notes Mode</strong> and create a new board (e.g., “Proverbs Pairs” or “Sermon – James 1”).</li>
-          <li>Click <strong>Insert passage</strong> and type a reference (for example, “Proverbs 1:7–9”).</li>
-          <li>Choose whether to make each verse its own block and whether to include verse numbers.</li>
-          <li>Add notes around the verses to record insights, questions, and links to other passages.</li>
-          <li>Repeat on other boards for different topics or projects as needed.</li>
-        </ol>
+    <!-- Help dropdown -->
+    <section
+      class="ib-dropdown"
+      id="ib-dropdown-help"
+      aria-label="Help and feedback"
+      hidden
+    >
+      <h2 class="ib-dropdown-heading">Help &amp; feedback</h2>
+      <p class="ib-dropdown-text">
+        This is an early version of Infinite Bible. If something feels confusing or broken,
+        feedback is welcome.
+      </p>
+      <ul class="ib-dropdown-list">
+        <li>
+          <a href="{{ '/help/feedback/' | relative_url }}">
+            Send feedback or report an issue
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/help/' | relative_url }}">
+            Visit the general Help hub
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/help/technical/' | relative_url }}">
+            Technical notes &amp; known limitations
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Workspace strip -->
+  <section
+    class="ib-workspace ib-workspace-theme-light ib-mode-bible"
+    aria-label="Infinite Bible workspace"
+    id="ib-workspace"
+  >
+    <div class="ib-canvas-inner">
+      <h2 class="ib-canvas-title">
+        Workspace – <span id="ib-current-mode-label">Bible mode</span>
+      </h2>
+      <p class="ib-canvas-text" id="ib-mode-description">
+        In Bible mode, each board represents a single chapter. As the tool develops,
+        this area will hold your chapter layouts, verse blocks, and notes.
+      </p>
+
+      <div class="ib-canvas-scroll-test">
+        <p>
+          Scroll down to confirm the toolbar stays pinned while this content moves underneath.
+          On mobile, the toolbar should stay accessible while the workspace scrolls.
+        </p>
       </div>
     </div>
-  </section>
-
-  <section class="tool-section tool-section--details">
-    <h2>Details and roadmap</h2>
-
-    <details class="tool-details-block" open>
-      <summary>How data is stored</summary>
-      <div class="tool-details-content">
-        <ul>
-          <li><strong>Local only:</strong> In v1, all boards live in your browser’s storage on this device.</li>
-          <li><strong>Per-device:</strong> Using another browser or device gives you a separate set of boards.</li>
-          <li><strong>Clearing data:</strong> Clearing browser storage or using private browsing can remove saved boards.</li>
-          <li><strong>Future plans:</strong> Export/import, and eventually optional cloud sync, are planned for later versions.</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="tool-details-block">
-      <summary>What Bible Mode is designed for</summary>
-      <div class="tool-details-content">
-        <p>
-          Bible Mode is built for chapter-based study where you want to stay inside one continuous Bible workspace instead of
-          jumping between separate tools.
-        </p>
-        <ul>
-          <li>Devotional reading with notes layered directly on the chapter.</li>
-          <li>Word-level or verse-level layouts (especially in books like Proverbs or Romans).</li>
-          <li>Side-by-side chapter comparisons over time (e.g., revisiting the same chapter in different seasons).</li>
-        </ul>
-        <p>
-          Under the hood, chapters are loaded on demand so you do not have to load the entire Bible at once.
-          Only the active chapter needs to be expanded at any given time.
-        </p>
-      </div>
-    </details>
-
-    <details class="tool-details-block">
-      <summary>What Notes Mode is designed for</summary>
-      <div class="tool-details-content">
-        <p>
-          Notes Mode is intentionally flexible. Each board is a blank canvas for Scripture and notes, without forcing a
-          single pattern of study.
-        </p>
-        <ul>
-          <li>Topical studies (e.g., “Humility,” “Justice,” “Prayer in the Psalms”).</li>
-          <li>Proverb pair mapping and virtue webs.</li>
-          <li>Sermon or teaching planning with supporting passages around a central text.</li>
-          <li>Personal journaling with verses and reflections connected visually.</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="tool-details-block">
-      <summary>Planned future features</summary>
-      <div class="tool-details-content">
-        <ul>
-          <li>Export and import of boards as files.</li>
-          <li>Stickers and markers (e.g., “!”, “?”, cross-links) around verses and notes.</li>
-          <li>Bookmarks and table-of-contents views per board or per Bible Mode chapter set.</li>
-          <li>Template boards (for example, “Chapter template,” “Sermon prep template,” “Random verse starter”).</li>
-          <li>Optional accounts and sync when dynamic infrastructure is available.</li>
-        </ul>
-      </div>
-    </details>
-  </section>
-
-  <section class="tool-section tool-section--usage">
-    <h2>Which mode should I use?</h2>
-    <ul class="tool-usage-list">
-      <li>
-        <strong>Use Bible Mode</strong> when you want one continuous Bible workspace,
-        organized primarily by book and chapter.
-      </li>
-      <li>
-        <strong>Use Notes Mode</strong> when you want multiple separate boards for themes, projects, or experiments.
-      </li>
-      <li>
-        You can switch between modes at any time; they are separate views built on the same underlying Scripture data.
-      </li>
-    </ul>
   </section>
 </main>
+
+<!-- Infinite Bible core: settings + boards (must exist at this path) -->
+<script src="{{ site.baseurl }}/assets/js/infinite-bible-core.js"></script>
+
+<!-- Infinite Bible app wiring (UI only for now) -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var root = document.querySelector(".infinite-bible-app");
+    var workspace = document.getElementById("ib-workspace");
+    var modePill = document.getElementById("ib-mode-pill");
+    var modeLabel = document.getElementById("ib-current-mode-label");
+    var modeDescription = document.getElementById("ib-mode-description");
+
+    var btnBible = document.getElementById("ib-btn-mode-bible");
+    var btnBoards = document.getElementById("ib-btn-mode-boards");
+
+    var moreBtn = document.getElementById("ib-toolbar-more");
+    var helpBtn = document.getElementById("ib-toolbar-help");
+    var morePanel = document.getElementById("ib-dropdown-more");
+    var helpPanel = document.getElementById("ib-dropdown-help");
+
+    var themeBtn = document.getElementById("ib-toolbar-theme");
+
+    // Fallback if IBT core isn't loaded for some reason
+    var IBT = window.IBT || {
+      settings: {
+        lastMode: "bible",
+        canvasTheme: "light"
+      },
+      saveSettings: function () {}
+    };
+
+    function closeAllDropdowns() {
+      if (morePanel) morePanel.hidden = true;
+      if (helpPanel) helpPanel.hidden = true;
+    }
+
+    function toggleDropdown(panel) {
+      if (!panel) return;
+      var willShow = panel.hidden;
+      closeAllDropdowns();
+      panel.hidden = !willShow;
+    }
+
+    // Mode switching: "bible" vs "notes" (Boards)
+    function setMode(mode) {
+      var normalized = mode === "notes" ? "notes" : "bible";
+      var isBible = normalized === "bible";
+
+      // Update active button styles
+      if (btnBible && btnBoards) {
+        btnBible.classList.toggle("ib-toolbar-btn-primary", isBible);
+        btnBible.classList.toggle("ib-toolbar-btn-plain", !isBible);
+        btnBoards.classList.toggle("ib-toolbar-btn-primary", !isBible);
+        btnBoards.classList.toggle("ib-toolbar-btn-plain", isBible);
+      }
+
+      // Update root/workspace mode classes
+      if (workspace) {
+        workspace.classList.toggle("ib-mode-bible", isBible);
+        workspace.classList.toggle("ib-mode-boards", !isBible);
+      }
+
+      // Update labels
+      var labelText = isBible ? "Bible mode" : "Boards mode";
+      if (modePill) modePill.textContent = labelText;
+      if (modeLabel) modeLabel.textContent = labelText;
+
+      if (modeDescription) {
+        if (isBible) {
+          modeDescription.textContent =
+            "In Bible mode, each board represents a single chapter. As the tool develops, this area will hold your chapter layouts, verse blocks, and notes.";
+        } else {
+          modeDescription.textContent =
+            "In Boards mode, each board is a named workspace for topics, projects, or sermon prep. As the tool develops, you will be able to mix verses and notes freely here.";
+        }
+      }
+
+      // Persist choice
+      IBT.settings.lastMode = normalized;
+      IBT.saveSettings();
+    }
+
+    // Theme toggle: light/dark (canvas only for now)
+    function applyTheme(theme) {
+      var normalized = theme === "dark" ? "dark" : "light";
+      if (workspace) {
+        workspace.classList.toggle("ib-workspace-theme-light", normalized === "light");
+        workspace.classList.toggle("ib-workspace-theme-dark", normalized === "dark");
+      }
+      if (themeBtn) {
+        themeBtn.textContent = normalized === "light" ? "Theme: Light" : "Theme: Dark";
+      }
+      IBT.settings.canvasTheme = normalized;
+      IBT.saveSettings();
+    }
+
+    // Hook up toolbar buttons
+    if (btnBible) {
+      btnBible.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        setMode("bible");
+      });
+    }
+    if (btnBoards) {
+      btnBoards.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        setMode("notes");
+      });
+    }
+
+    if (moreBtn && morePanel) {
+      moreBtn.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        toggleDropdown(morePanel);
+      });
+    }
+
+    if (helpBtn && helpPanel) {
+      helpBtn.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        toggleDropdown(helpPanel);
+      });
+    }
+
+    if (themeBtn) {
+      themeBtn.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        var nextTheme = IBT.settings.canvasTheme === "dark" ? "light" : "dark";
+        applyTheme(nextTheme);
+      });
+    }
+
+    // Close dropdowns when clicking outside toolbar + dropdown area
+    document.addEventListener("click", function (ev) {
+      var dropdownRoot = document.querySelector(".ib-toolbar-dropdowns");
+      var toolbar = document.querySelector(".ib-toolbar");
+      if (!dropdownRoot || !toolbar) {
+        closeAllDropdowns();
+        return;
+      }
+      if (toolbar.contains(ev.target) || dropdownRoot.contains(ev.target)) {
+        return;
+      }
+      closeAllDropdowns();
+    });
+
+    // Initial state based on saved settings
+    setMode(IBT.settings.lastMode || "bible");
+    applyTheme(IBT.settings.canvasTheme || "light");
+  });
+</script>

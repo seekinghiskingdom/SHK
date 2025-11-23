@@ -2,119 +2,17 @@
 layout: default
 title: Infinite Bible – Bible Mode
 permalink: /tools-games/tools/infinite-bible/bible/
-extra_css:
-  - /assets/css/infinite-bible.css
 ---
 
-<!-- Content and wording assisted by AI (-AI) -->
-
-<main class="tool-page infinite-bible-mode infinite-bible-bible">
-  <header class="ib-header">
-    <div class="ib-header-main">
-      <div class="ib-title-row">
-        <h1 class="ib-title">Infinite Bible</h1>
-        <span class="ib-pill">Bible Mode</span>
-      </div>
-
-      <div class="ib-intro-row">
-        <p class="ib-subtitle">
-          Work through Scripture one chapter at a time in a single visual Infinite Bible workspace.
-        </p>
-      </div>
-    </div>
-
-    <div class="ib-info-panel" id="ib-info-panel" hidden>
-      <section class="ib-info-section">
-        <h2 class="ib-info-heading">How to use (current beta)</h2>
-        <ul class="ib-info-list">
-          <li>This page will become the main “Bible board” for chapter-based study and layouts.</li>
-          <li>Upcoming steps will let you load chapters, see them as blocks, and add notes nearby.</li>
-          <li>All layouts and notes will be stored locally in your browser on this device.</li>
-        </ul>
-      </section>
-
-      <section class="ib-info-section">
-        <h2 class="ib-info-heading">Early work in progress</h2>
-        <ul class="ib-info-list">
-          <li>Bible Mode is still under construction; features may change as Infinite Bible develops.</li>
-          <li>Text formatting, canvas behavior, and tools for notes and connections will evolve.</li>
-          <li>If something feels off, you can always fall back to the main Bible Viewer for now.</li>
-        </ul>
-      </section>
-
-      <section class="ib-info-section">
-        <h2 class="ib-info-heading">Tips &amp; notes</h2>
-        <ul class="ib-info-list">
-          <li>Use Bible Mode for chapter-based layouts you want to revisit and refine over time.</li>
-          <li>Use Notes Mode for free-form topic boards, Proverbs webs, and sermon outlines.</li>
-          <li>Nothing is synced yet; everything lives only in the browser where you use it.</li>
-        </ul>
-      </section>
-    </div>
-  </header>
-
-  <!-- Sticky toolbar ribbon -->
-  <div class="ib-toolbar" aria-label="Infinite Bible tools">
-    <div class="ib-toolbar-inner">
-      <div class="ib-toolbar-left">
-        <button type="button" class="ib-toolbar-btn ib-toolbar-btn-primary">
-          Board
-        </button>
-        <button type="button" class="ib-toolbar-btn">
-          Notes
-        </button>
-        <button type="button" class="ib-toolbar-btn">
-          View
-        </button>
-      </div>
-      <div class="ib-toolbar-right">
-        <button
-          type="button"
-          class="ib-toolbar-btn"
-          id="ib-toolbar-more-info"
-        >
-          More info
-        </button>
-        <button type="button" class="ib-toolbar-btn">
-          Help
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Canvas shell (placeholder for now) -->
-  <section class="ib-canvas-shell" aria-label="Infinite Bible board">
-    <div class="ib-canvas-inner">
-      <h2 class="ib-canvas-title">Bible board (placeholder)</h2>
-      <p class="ib-canvas-text">
-        This area will become the main canvas for Bible Mode. Chapters, verse blocks, and notes
-        will live here as the tool develops.
-      </p>
-
-      <!-- Just to force some scroll so you can test sticky behavior -->
-      <div class="ib-canvas-scroll-test">
-        <p>Scroll down to confirm the toolbar stays pinned while this content moves underneath.</p>
-      </div>
-    </div>
-  </section>
+<main class="tool-page">
+  <h1>Infinite Bible – Bible Mode</h1>
+  <p>
+    The Infinite Bible app now lives on a single unified page.
+    Please use the main Infinite Bible tool:
+  </p>
+  <p>
+    <a href="{{ '/tools-games/tools/infinite-bible/' | relative_url }}">
+      Open Infinite Bible (Tool)
+    </a>
+  </p>
 </main>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var moreBtn = document.getElementById("ib-toolbar-more-info");
-    var panel = document.getElementById("ib-info-panel");
-    var header = document.querySelector(".infinite-bible-bible .ib-header");
-
-    if (moreBtn && panel) {
-      moreBtn.addEventListener("click", function () {
-        var isOpen = !panel.hidden;
-        panel.hidden = isOpen;
-
-        // If we just opened the panel, scroll the header into view
-        if (!isOpen && header) {
-          header.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      });
-    }
-  });
-</script>

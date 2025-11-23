@@ -1,45 +1,37 @@
-/* Infinite Bible – Bible Mode */
+/* Infinite Bible – unified Bible + Boards app */
 /* Content and wording assisted by AI (-AI) */
 
-/* Make header text work on a dark background */
-.infinite-bible-bible .ib-header {
-  margin-bottom: 1.75rem;
+/* === Header band === */
+
+.infinite-bible-app .ib-header {
+  margin-bottom: 1.25rem;
   color: #ffffff;
 }
 
-.infinite-bible-bible .ib-header h1,
-.infinite-bible-bible .ib-header p,
-.infinite-bible-bible .ib-header span {
-  color: #ffffff;
-}
-
-/* Header layout */
-
-.infinite-bible-bible .ib-header-main {
+.infinite-bible-app .ib-header-main {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
 
-.infinite-bible-bible .ib-title-row {
+.infinite-bible-app .ib-title-row {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.infinite-bible-bible .ib-title {
+.infinite-bible-app .ib-title {
   font-size: 1.6rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0;
 }
 
-/* Bible Mode pill: thin gold outline, gold text */
-
-.infinite-bible-bible .ib-pill {
+.infinite-bible-app .ib-pill {
   padding: 3px 10px;
   border-radius: 999px;
-  border: 1px solid #facc15;  /* gold */
+  border: 1px solid #facc15; /* gold */
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -47,59 +39,22 @@
   background: transparent;
 }
 
-/* Intro line (no button here now) */
-
-.infinite-bible-bible .ib-intro-row {
+.infinite-bible-app .ib-intro-row {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   flex-wrap: wrap;
 }
 
-.infinite-bible-bible .ib-subtitle {
+.infinite-bible-app .ib-subtitle {
   margin: 0;
   font-size: 0.95rem;
   flex: 1 1 auto;
 }
 
-/* Collapsible More Info panel under header */
-
-.infinite-bible-bible .ib-info-panel {
-  margin-top: 0.8rem;
-  padding: 0.9rem 1rem;
-  border-radius: 12px;
-  border: 1px solid rgba(148, 163, 184, 0.8);
-  background: rgba(15, 23, 42, 0.9);
-  max-width: 48rem;
-}
-
-.infinite-bible-bible .ib-info-section + .ib-info-section {
-  margin-top: 0.75rem;
-}
-
-.infinite-bible-bible .ib-info-heading {
-  margin: 0 0 0.25rem;
-  font-size: 0.92rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-  color: #e5e7eb;
-}
-
-.infinite-bible-bible .ib-info-list {
-  margin: 0;
-  padding-left: 1.1rem;
-  font-size: 0.88rem;
-  color: #e5e7eb;
-}
-
-.infinite-bible-bible .ib-info-panel[hidden] {
-  display: none;
-}
-
 /* === Sticky toolbar ribbon === */
 
-.infinite-bible-bible .ib-toolbar {
+.infinite-bible-app .ib-toolbar {
   position: sticky;
   top: 0;
   z-index: 20;
@@ -108,52 +63,162 @@
   backdrop-filter: blur(6px);
 }
 
-.infinite-bible-bible .ib-toolbar-inner {
+.infinite-bible-app .ib-toolbar-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0.75rem;
   padding: 0.4rem 0;
+  flex-wrap: wrap;
 }
 
-.infinite-bible-bible .ib-toolbar-left,
-.infinite-bible-bible .ib-toolbar-right {
+.infinite-bible-app .ib-toolbar-section {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
+  flex-wrap: wrap;
 }
 
-.infinite-bible-bible .ib-toolbar-btn {
+.infinite-bible-app .ib-toolbar-left {
+  flex: 1 1 100%;
+}
+
+.infinite-bible-app .ib-toolbar-middle {
+  flex: 0 1 auto;
+}
+
+.infinite-bible-app .ib-toolbar-right {
+  flex: 0 1 auto;
+  margin-left: auto;
+}
+
+/* Toolbar buttons */
+
+.infinite-bible-app .ib-toolbar-btn {
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   background: transparent;
   color: #e5e7eb;
   cursor: pointer;
+  white-space: nowrap;
 }
 
-.infinite-bible-bible .ib-toolbar-btn:hover {
+.infinite-bible-app .ib-toolbar-btn:hover {
   background: rgba(31, 41, 55, 0.85);
 }
 
-.infinite-bible-bible .ib-toolbar-btn-primary {
+.infinite-bible-app .ib-toolbar-btn-primary {
   border-color: #facc15;
   color: #facc15;
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* === Canvas shell === */
-
-.infinite-bible-bible .ib-canvas-shell {
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
+.infinite-bible-app .ib-toolbar-btn-plain {
+  border-color: transparent;
 }
 
-.infinite-bible-bible .ib-canvas-inner {
-  background: #ffffff;
+.infinite-bible-app .ib-toolbar-btn-icon {
+  width: 1.9rem;
+  padding-inline: 0;
+  justify-content: center;
+}
+
+/* Label variants inside icon-like buttons */
+
+.infinite-bible-app .ib-toolbar-label {
+  font-weight: 600;
+}
+
+.infinite-bible-app .ib-toolbar-label-italic {
+  font-style: italic;
+}
+
+.infinite-bible-app .ib-toolbar-label-underline {
+  text-decoration: underline;
+}
+
+/* Vertical divider */
+
+.infinite-bible-app .ib-toolbar-divider {
+  width: 1px;
+  height: 1.6rem;
+  background: rgba(55, 65, 81, 0.8);
+}
+
+/* === Dropdown panels under toolbar === */
+
+.infinite-bible-app .ib-toolbar-dropdowns {
+  margin-top: 0.35rem;
+}
+
+.infinite-bible-app .ib-dropdown {
+  margin-bottom: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  background: rgba(15, 23, 42, 0.96);
+  color: #e5e7eb;
+}
+
+.infinite-bible-app .ib-dropdown[hidden] {
+  display: none;
+}
+
+.infinite-bible-app .ib-dropdown-heading {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.infinite-bible-app .ib-dropdown-text {
+  margin: 0 0 0.6rem;
+  font-size: 0.88rem;
+}
+
+.infinite-bible-app .ib-dropdown-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.infinite-bible-app .ib-dropdown-column {
+  flex: 1 1 200px;
+}
+
+.infinite-bible-app .ib-dropdown-subheading {
+  margin: 0 0 0.25rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.infinite-bible-app .ib-dropdown-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+}
+
+.infinite-bible-app .ib-dropdown-list li + li {
+  margin-top: 0.2rem;
+}
+
+.infinite-bible-app .ib-dropdown a {
+  color: #facc15;
+  text-decoration: underline;
+}
+
+/* === Workspace (canvas shell) === */
+
+.infinite-bible-app .ib-workspace {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
   border-radius: 14px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
@@ -161,20 +226,42 @@
   min-height: 800px; /* ensures scroll on most screens */
 }
 
-.infinite-bible-bible .ib-canvas-title {
+/* Themes */
+
+.infinite-bible-app .ib-workspace-theme-light {
+  background: #ffffff;
+}
+
+.infinite-bible-app .ib-workspace-theme-dark {
+  background: #020617;
+  border-color: #111827;
+  color: #e5e7eb;
+}
+
+/* Inner content */
+
+.infinite-bible-app .ib-canvas-inner {
+  max-width: 100%;
+}
+
+.infinite-bible-app .ib-canvas-title {
   margin: 0 0 0.5rem;
   font-size: 1.1rem;
 }
 
-.infinite-bible-bible .ib-canvas-text {
+.infinite-bible-app .ib-canvas-text {
   margin: 0 0 1rem;
   font-size: 0.95rem;
   color: #4b5563;
 }
 
-/* Extra height to really test scrolling under the toolbar */
+.infinite-bible-app .ib-workspace-theme-dark .ib-canvas-text {
+  color: #e5e7eb;
+}
 
-.infinite-bible-bible .ib-canvas-scroll-test {
+/* Extra height to test scrolling under the toolbar */
+
+.infinite-bible-app .ib-canvas-scroll-test {
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 12px;
@@ -184,14 +271,53 @@
   color: #374151;
 }
 
-/* Small-screen tweaks */
+.infinite-bible-app .ib-workspace-theme-dark .ib-canvas-scroll-test {
+  background: #020617;
+  border-color: #111827;
+  color: #e5e7eb;
+}
+
+/* Mode-specific tweaks (placeholder for future use) */
+
+.infinite-bible-app .ib-mode-bible .ib-canvas-title {
+  /* Bible mode specific styling can go here later */
+}
+
+.infinite-bible-app .ib-mode-boards .ib-canvas-title {
+  /* Boards mode specific styling can go here later */
+}
+
+/* === Responsive tweaks === */
+
+@media (min-width: 900px) {
+  .infinite-bible-app .ib-toolbar-left {
+    flex: 1 1 auto;
+  }
+
+  .infinite-bible-app .ib-toolbar-middle {
+    flex: 0 1 auto;
+    justify-content: center;
+  }
+
+  .infinite-bible-app .ib-toolbar-right {
+    flex: 0 1 auto;
+  }
+}
 
 @media (max-width: 640px) {
-  .infinite-bible-bible .ib-header-main {
+  .infinite-bible-app .ib-header-main {
     gap: 0.5rem;
   }
 
-  .infinite-bible-bible .ib-intro-row {
-    align-items: flex-start;
+  .infinite-bible-app .ib-toolbar-inner {
+    gap: 0.4rem;
+  }
+
+  .infinite-bible-app .ib-toolbar-section {
+    gap: 0.3rem;
+  }
+
+  .infinite-bible-app .ib-workspace {
+    padding: 1.2rem 1.2rem;
   }
 }
