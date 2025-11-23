@@ -1,0 +1,153 @@
+---
+layout: default
+title: Infinite Bible – Bible Mode
+permalink: /tools-games/tools/infinite-bible/bible/
+---
+
+<!-- Content and wording assisted by AI (-AI) -->
+
+<main class="tool-page infinite-bible-mode infinite-bible-bible">
+  <header class="tool-hero">
+    <p class="tool-breadcrumb">
+      <a href="{{ site.baseurl }}/tools-games/tools/infinite-bible/">Infinite Bible (Tool)</a> · Bible Mode
+    </p>
+
+    <h1>Infinite Bible – Bible Mode</h1>
+
+    <p class="tool-tagline">
+      Work through Scripture one chapter at a time in a single, visual “Infinite Bible” workspace.
+    </p>
+
+    <div class="tool-mode-switch">
+      <a class="btn btn-primary" href="{{ site.baseurl }}/tools-games/tools/infinite-bible/bible/">
+        Bible Mode
+      </a>
+      <a class="btn btn-outline" href="{{ site.baseurl }}/tools-games/tools/infinite-bible/notes/">
+        Notes Mode
+      </a>
+    </div>
+
+    <p class="tool-beta-note">
+      Early version: chapter layouts and notes are saved locally in your browser on this device. No accounts or sync yet.
+    </p>
+  </header>
+
+  <!-- Top controls: book/chapter picker and view options -->
+  <section class="tool-section tool-controls">
+    <h2 class="visually-hidden">Chapter controls</h2>
+
+    <div class="tool-controls-row bible-chapter-controls">
+      <form class="bible-chapter-picker" action="javascript:void(0);" id="bible-chapter-form">
+        <div class="form-field">
+          <label for="bible-book-select">Book</label>
+          <select id="bible-book-select" name="book">
+            <!-- JS will populate with Bible books -->
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="bible-chapter-select">Chapter</label>
+          <select id="bible-chapter-select" name="chapter">
+            <!-- JS will populate with chapter numbers -->
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Load chapter
+        </button>
+      </form>
+
+      <div class="bible-chapter-options">
+        <label class="checkbox-inline">
+          <input type="checkbox" id="bible-split-verses-checkbox">
+          Make each verse a separate block
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="bible-include-versenums-checkbox">
+          Include verse numbers in text
+        </label>
+      </div>
+    </div>
+
+    <div class="tool-controls-row bible-view-options">
+      <div class="bible-view-buttons">
+        <button type="button" class="btn btn-small" id="bible-collapse-all-btn">
+          Collapse other chapters
+        </button>
+        <button type="button" class="btn btn-small" id="bible-expand-all-btn">
+          Expand all chapters
+        </button>
+      </div>
+      <span class="tool-hint">
+        Infinite Bible treats all loaded chapters as one Bible board. Only the chapter you focus on has to stay expanded.
+      </span>
+    </div>
+  </section>
+
+  <!-- Main layout: chapter list + canvas -->
+  <section class="tool-section tool-main-layout">
+    <aside class="tool-sidebar bible-chapter-list" aria-label="Chapter navigation">
+      <h2>Chapters in this Bible board</h2>
+      <ul id="bible-chapter-list">
+        <!-- JS will list loaded chapters: Proverbs 1, Proverbs 2, Luke 12, etc. -->
+      </ul>
+      <p class="tool-hint">
+        Click a chapter to jump to it on the canvas. Collapsed chapters stay saved but hidden.
+      </p>
+
+      <details class="tool-details-block bible-help-block">
+        <summary>Quick help</summary>
+        <div class="tool-details-content">
+          <ul>
+            <li>Use the book and chapter controls above to load chapters into this Bible board.</li>
+            <li>Each chapter can be laid out, annotated, and revisited later.</li>
+            <li>Collapsing a chapter hides it visually but keeps your layout and notes.</li>
+          </ul>
+        </div>
+      </details>
+    </aside>
+
+    <section class="tool-canvas-wrapper">
+      <div class="tool-canvas-toolbar">
+        <div class="tool-canvas-heading">
+          <h2>Bible board</h2>
+          <span class="tool-canvas-subtitle">
+            Visual chapter layouts for the whole Bible, one chapter at a time.
+          </span>
+        </div>
+
+        <div class="tool-canvas-actions">
+          <button type="button" class="btn btn-small" id="bible-pan-mode-btn">
+            Pan
+          </button>
+          <button type="button" class="btn btn-small" id="bible-select-mode-btn">
+            Select / Move
+          </button>
+          <button type="button" class="btn btn-small" id="bible-add-note-btn">
+            Add note
+          </button>
+          <button type="button" class="btn btn-small" id="bible-delete-selection-btn">
+            Delete selection
+          </button>
+        </div>
+      </div>
+
+      <!-- JS will hook into this element to render the chapter-based canvas -->
+      <div id="bible-canvas-root" class="tool-canvas">
+        <!-- Infinite Bible chapter layout will render here -->
+      </div>
+    </section>
+  </section>
+
+  <!-- Bottom help / quick start -->
+  <section class="tool-section tool-help-summary">
+    <h2>How to use Bible Mode</h2>
+    <ol>
+      <li>Choose a <strong>Book</strong> and <strong>Chapter</strong>, then click <strong>Load chapter</strong>.</li>
+      <li>Decide whether to <strong>Make each verse a separate block</strong> and whether to <strong>Include verse numbers</strong>.</li>
+      <li>On the canvas, pan to move around, and use Select / Move to rearrange verses and notes.</li>
+      <li>Load new chapters as needed; use the chapter list to jump between them and collapse older chapters.</li>
+      <li>Your layouts and notes are saved locally and restored the next time you open Bible Mode on this device.</li>
+    </ol>
+  </section>
+</main>

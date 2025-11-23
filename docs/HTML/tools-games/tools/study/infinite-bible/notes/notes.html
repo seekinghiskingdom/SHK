@@ -11,9 +11,11 @@ permalink: /tools-games/tools/infinite-bible/notes/
     <p class="tool-breadcrumb">
       <a href="{{ site.baseurl }}/tools-games/tools/infinite-bible/">Infinite Bible (Tool)</a> · Notes Mode
     </p>
+
     <h1>Infinite Bible Notes – Notes Mode</h1>
+
     <p class="tool-tagline">
-      Build free-form boards of verses and notes, move them around a large canvas, and map out themes, questions, and connections.
+      Create free-form boards of verses and notes on a large canvas for topical studies, Proverbs pairs, sermons, and more.
     </p>
 
     <div class="tool-mode-switch">
@@ -26,15 +28,17 @@ permalink: /tools-games/tools/infinite-bible/notes/
     </div>
 
     <p class="tool-beta-note">
-      Early version: boards are saved locally in your browser on this device (no accounts or sync).
+      Early version: boards and layouts are stored locally in your browser on this device. No accounts or sync yet.
     </p>
   </header>
 
-  <section class="tool-main-layout">
-    <aside class="tool-sidebar notes-board-list" aria-label="Boards">
+  <!-- Main layout: boards sidebar + canvas -->
+  <section class="tool-section tool-main-layout">
+    <aside class="tool-sidebar notes-board-sidebar" aria-label="Boards and settings">
       <h2>Your boards</h2>
-      <ul id="notes-board-list">
-        <!-- JS will list boards: Board 1, Proverbs Pairs, etc. -->
+
+      <ul id="notes-board-list" class="notes-board-list">
+        <!-- JS will list boards: Board 1, Proverbs Pairs, Sermon – James 1, etc. -->
       </ul>
 
       <div class="notes-board-actions">
@@ -50,11 +54,11 @@ permalink: /tools-games/tools/infinite-bible/notes/
       </div>
 
       <p class="tool-hint">
-        Boards are per-device. For stability, there will be a soft limit on how many boards you can create.
+        Boards are per-device. A soft limit will help keep things stable if you create many boards.
       </p>
 
       <details class="tool-details-block notes-settings-block">
-        <summary>Settings</summary>
+        <summary>Settings &amp; backup</summary>
         <div class="tool-details-content">
           <label class="checkbox-block">
             <input type="checkbox" id="notes-default-versenums-checkbox">
@@ -83,6 +87,10 @@ permalink: /tools-games/tools/infinite-bible/notes/
             </label>
             <input type="file" id="notes-import-board-input" accept="application/json" style="display:none;">
           </div>
+
+          <p class="tool-hint">
+            Exporting creates a file you can store or move to another device. Importing will add that board here.
+          </p>
         </div>
       </details>
 
@@ -90,10 +98,10 @@ permalink: /tools-games/tools/infinite-bible/notes/
         <summary>Quick help</summary>
         <div class="tool-details-content">
           <ul>
-            <li>Create a new board for each topic or project.</li>
-            <li>Add verses by reference, then drag them into clusters.</li>
-            <li>Add notes around verses to record observations and questions.</li>
-            <li>Boards auto-save locally and reopen where you left off.</li>
+            <li>Create a board for each topic, project, or study you want to keep separate.</li>
+            <li>Use “Insert passage” to add verses to the canvas, then drag them into clusters.</li>
+            <li>Add notes around verses to capture observations, connections, and questions.</li>
+            <li>Boards save automatically in this browser; reopen Notes Mode to continue where you left off.</li>
           </ul>
         </div>
       </details>
@@ -127,12 +135,12 @@ permalink: /tools-games/tools/infinite-bible/notes/
         </div>
       </div>
 
-      <!-- Insert-passage dialog placeholder (JS can convert this into a modal) -->
+      <!-- Insert-passage dialog placeholder (JS can turn this into a modal) -->
       <section class="tool-dialog notes-insert-passage-dialog" aria-hidden="true">
         <h3>Insert passage</h3>
-        <form action="javascript:void(0);">
+        <form action="javascript:void(0);" id="notes-insert-passage-form">
           <label for="notes-ref-input">Reference</label>
-          <input id="notes-ref-input" type="text" placeholder="e.g., Proverbs 1:1–7 or Luke 12:31">
+          <input id="notes-ref-input" type="text" placeholder="e.g., Proverbs 1:7–9 or Luke 12:31">
 
           <label class="checkbox-block">
             <input type="checkbox" id="notes-split-verses-checkbox">
@@ -150,25 +158,27 @@ permalink: /tools-games/tools/infinite-bible/notes/
           </div>
 
           <p class="tool-hint">
-            Long passages may be slower to insert. You can start with a few verses and expand later.
+            Long passages can be harder to arrange. You can start with a few verses and expand later.
           </p>
         </form>
       </section>
 
-      <!-- JS hooks into this element to render the free-form notes canvas -->
+      <!-- JS will hook into this element to render the notes canvas -->
       <div id="notes-canvas-root" class="tool-canvas">
         <!-- Infinite Bible Notes board will render here -->
       </div>
     </section>
   </section>
 
-  <section class="tool-help-summary">
+  <!-- Bottom help / quick start -->
+  <section class="tool-section tool-help-summary">
     <h2>How to use Notes Mode</h2>
     <ol>
-      <li>Create or select a board from the sidebar.</li>
-      <li>Click <strong>Insert passage</strong> to add verses; choose whether to split into one block per verse.</li>
-      <li>Use <strong>Add note</strong> to place notes around verses and arrange them on the canvas.</li>
-      <li>Export a board if you want a backup or to move it to another device in the future.</li>
+      <li>Create or select a board in the sidebar.</li>
+      <li>Click <strong>Insert passage</strong> and enter a reference (e.g., “Proverbs 1:1–7” or “Romans 8:28”).</li>
+      <li>Choose whether to split into one block per verse and whether to include verse numbers.</li>
+      <li>Drag verses and notes around the canvas to build clusters, webs, and outlines.</li>
+      <li>Export boards when you want a backup or to move them to another device in the future.</li>
     </ol>
   </section>
 </main>

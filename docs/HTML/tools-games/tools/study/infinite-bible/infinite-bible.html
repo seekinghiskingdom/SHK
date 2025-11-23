@@ -8,9 +8,15 @@ permalink: /tools-games/tools/infinite-bible/
 
 <main class="tool-page infinite-bible-home">
   <header class="tool-hero">
+    <p class="tool-breadcrumb">
+      Tools &amp; Games · Bible Tools
+    </p>
+
     <h1>Infinite Bible (Tool)</h1>
+
     <p class="tool-tagline">
-      A visual Bible workspace with two modes: read and explore Scripture chapter by chapter, or build flexible boards of verses and notes.
+      A visual Bible workspace for reading, studying, and mapping Scripture, with two modes:
+      <strong>Infinite Bible</strong> (Bible Mode) and <strong>Infinite Bible Notes</strong> (Notes Mode).
     </p>
 
     <div class="tool-mode-buttons">
@@ -23,25 +29,24 @@ permalink: /tools-games/tools/infinite-bible/
     </div>
 
     <p class="tool-beta-note">
-      Infinite Bible is in early development. Data is stored locally on your device only (no accounts, no sync).
+      Early version: all boards and layouts are stored locally in your browser on this device. No accounts, no sync yet.
     </p>
   </header>
 
-  <section class="tool-modes-overview">
-    <h2>Two Modes, One Workspace</h2>
+  <section class="tool-section tool-section--modes">
+    <h2>Choose how you want to study</h2>
 
-    <div class="tool-mode-cards">
+    <div class="tool-mode-grid">
       <article class="tool-mode-card">
         <h3>Infinite Bible (Bible Mode)</h3>
-        <p>
-          Bible Mode treats the Bible as a single, continuous workspace. You load chapters one at a time into a shared “Bible board,”
-          customize each chapter, and move between them as you study.
+        <p class="tool-mode-subtitle">
+          Chapter-based reading and study, in a single “Infinite Bible” workspace.
         </p>
         <ul>
-          <li>Start with a blank Bible board and add chapters as you need them.</li>
-          <li>Each chapter uses a default template: verses stacked in order, ready for spacing, grouping, and markup.</li>
-          <li>Only the chapter you are working in needs to be loaded at once, so performance stays manageable.</li>
-          <li>Notes and layout changes are stored locally on your device and restored the next time you visit.</li>
+          <li>Start from a blank Bible board and load chapters as you need them.</li>
+          <li>Each chapter appears as a structured layout of verses you can rearrange and annotate.</li>
+          <li>Only the chapter you are working in needs to stay open, so performance stays manageable.</li>
+          <li>Use notes and spacing to build visual chapter maps, proverb webs, and exegesis layouts.</li>
         </ul>
         <p class="tool-mode-cta">
           <a href="{{ site.baseurl }}/tools-games/tools/infinite-bible/bible/" class="btn btn-link">
@@ -52,15 +57,14 @@ permalink: /tools-games/tools/infinite-bible/
 
       <article class="tool-mode-card">
         <h3>Infinite Bible Notes (Notes Mode)</h3>
-        <p>
-          Notes Mode gives you a collection of free-form boards where you can drop any verses you want, arrange them, and surround them
-          with notes, questions, and themes.
+        <p class="tool-mode-subtitle">
+          Free-form boards for verses, notes, themes, and connections.
         </p>
         <ul>
-          <li>Create multiple named boards (e.g., “Proverbs Pairs,” “Sermon Prep,” “Theme: Faith and Works”).</li>
-          <li>Add passages or single verses to each board and drag them around the canvas.</li>
-          <li>Attach typed notes nearby to capture insights, questions, and cross-links.</li>
-          <li>Use templates or random verse prompts (planned) to spark new studies.</li>
+          <li>Create multiple named boards for topics, projects, or sermons.</li>
+          <li>Insert any passage or verse by reference; drag blocks around a large canvas.</li>
+          <li>Add notes directly beside the text to capture questions, observations, and cross-links.</li>
+          <li>Use boards for thematic studies, Proverbs pairs, counseling notes, or teaching prep.</li>
         </ul>
         <p class="tool-mode-cta">
           <a href="{{ site.baseurl }}/tools-games/tools/infinite-bible/notes/" class="btn btn-link">
@@ -71,101 +75,111 @@ permalink: /tools-games/tools/infinite-bible/
     </div>
   </section>
 
-  <section class="tool-details">
-    <h2>More About Infinite Bible</h2>
+  <section class="tool-section tool-section--quickstart">
+    <h2>Quick start</h2>
+
+    <div class="tool-quickstart-columns">
+      <div class="tool-quickstart-card">
+        <h3>Quick start in Bible Mode</h3>
+        <ol>
+          <li>Open <strong>Bible Mode</strong>.</li>
+          <li>Select a book and chapter (for example, Proverbs 1) and click <strong>Load Chapter</strong>.</li>
+          <li>Optionally choose to split into one block per verse and whether to include verse numbers.</li>
+          <li>Drag verses and notes to group ideas, mark contrasts, or build a visual outline.</li>
+          <li>Load more chapters over time; use the chapter list to jump between them.</li>
+        </ol>
+      </div>
+
+      <div class="tool-quickstart-card">
+        <h3>Quick start in Notes Mode</h3>
+        <ol>
+          <li>Open <strong>Notes Mode</strong> and create a new board (e.g., “Proverbs Pairs” or “Sermon – James 1”).</li>
+          <li>Click <strong>Insert passage</strong> and type a reference (for example, “Proverbs 1:7–9”).</li>
+          <li>Choose whether to make each verse its own block and whether to include verse numbers.</li>
+          <li>Add notes around the verses to record insights, questions, and links to other passages.</li>
+          <li>Repeat on other boards for different topics or projects as needed.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="tool-section tool-section--details">
+    <h2>Details and roadmap</h2>
 
     <details class="tool-details-block" open>
-      <summary>How Bible Mode works</summary>
-      <div class="tool-details-content">
-        <p>
-          Bible Mode is designed for chapter-based study that still feels like one continuous Bible workspace.
-          At first, your Bible board is empty. When you want to study a chapter, you:
-        </p>
-        <ol>
-          <li>Open Bible Mode.</li>
-          <li>Select a book and chapter (for example, Proverbs 1).</li>
-          <li>Click to insert the chapter template into the board.</li>
-          <li>Adjust spacing, group verses, and add notes as needed.</li>
-        </ol>
-        <p>
-          As you move to other chapters (for example, Proverbs 2 the next day), you load those chapters into the same Bible board.
-          The tool can show one chapter at a time (or collapse others) to avoid overloading your device, while still treating the whole
-          thing as a single “Infinite Bible” view.
-        </p>
-      </div>
-    </details>
-
-    <details class="tool-details-block">
-      <summary>How Notes Mode works</summary>
-      <div class="tool-details-content">
-        <p>
-          Notes Mode is closer to a “Bible whiteboard.” You work with multiple boards, each with its own canvas:
-        </p>
-        <ul>
-          <li>Create, rename, and delete boards for different topics or projects.</li>
-          <li>Add passages by reference, optionally splitting them into one block per verse.</li>
-          <li>Drag verse blocks and notes into clusters, lines, and webs of connections.</li>
-          <li>Use boards for exegesis, thematic mapping, sermon preparation, or personal reflection.</li>
-        </ul>
-        <p>
-          In v1, everything stays on your device. Future versions may add export/import, templates, stickers, and accounts/sync.
-        </p>
-      </div>
-    </details>
-
-    <details class="tool-details-block">
-      <summary>Saving, privacy, and device limits</summary>
+      <summary>How data is stored</summary>
       <div class="tool-details-content">
         <ul>
-          <li>
-            <strong>Local only:</strong> In early versions, all boards and layouts are saved in your browser (local storage / similar).
-            No data is sent to a server and no account is required.
-          </li>
-          <li>
-            <strong>Per-device:</strong> Boards live on the device and browser where you use the tool. Using another device or browser
-            will give you a separate, empty set of boards.
-          </li>
-          <li>
-            <strong>Limits:</strong> For stability, Notes Mode will enforce a soft cap on how many boards you can create on one device.
-          </li>
-          <li>
-            <strong>Future features:</strong> Export/import and optional cloud sync may be added later so you can back up your boards
-            or move them between devices.
-          </li>
+          <li><strong>Local only:</strong> In v1, all boards live in your browser’s storage on this device.</li>
+          <li><strong>Per-device:</strong> Using another browser or device gives you a separate set of boards.</li>
+          <li><strong>Clearing data:</strong> Clearing browser storage or using private browsing can remove saved boards.</li>
+          <li><strong>Future plans:</strong> Export/import, and eventually optional cloud sync, are planned for later versions.</li>
         </ul>
       </div>
     </details>
 
     <details class="tool-details-block">
-      <summary>Version status and roadmap</summary>
+      <summary>What Bible Mode is designed for</summary>
       <div class="tool-details-content">
         <p>
-          Infinite Bible is being built in stages. Early versions will focus on:
+          Bible Mode is built for chapter-based study where you want to stay inside one continuous Bible workspace instead of
+          jumping between separate tools.
         </p>
         <ul>
-          <li>Single-board Bible Mode with chapter templates loaded on demand.</li>
-          <li>Notes Mode with basic boards, verse blocks, and typed notes.</li>
-          <li>Local auto-save and restore on the same device.</li>
+          <li>Devotional reading with notes layered directly on the chapter.</li>
+          <li>Word-level or verse-level layouts (especially in books like Proverbs or Romans).</li>
+          <li>Side-by-side chapter comparisons over time (e.g., revisiting the same chapter in different seasons).</li>
         </ul>
         <p>
-          Later updates may include:
+          Under the hood, chapters are loaded on demand so you do not have to load the entire Bible at once.
+          Only the active chapter needs to be expanded at any given time.
+        </p>
+      </div>
+    </details>
+
+    <details class="tool-details-block">
+      <summary>What Notes Mode is designed for</summary>
+      <div class="tool-details-content">
+        <p>
+          Notes Mode is intentionally flexible. Each board is a blank canvas for Scripture and notes, without forcing a
+          single pattern of study.
         </p>
         <ul>
-          <li>Export/import of boards as files.</li>
-          <li>Stickers, markers, and simple visual tags around verses and notes.</li>
-          <li>Bookmarks, table-of-contents views, and chapter templates for quick setup.</li>
-          <li>Account-based sync and sharing (when infrastructure allows).</li>
+          <li>Topical studies (e.g., “Humility,” “Justice,” “Prayer in the Psalms”).</li>
+          <li>Proverb pair mapping and virtue webs.</li>
+          <li>Sermon or teaching planning with supporting passages around a central text.</li>
+          <li>Personal journaling with verses and reflections connected visually.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="tool-details-block">
+      <summary>Planned future features</summary>
+      <div class="tool-details-content">
+        <ul>
+          <li>Export and import of boards as files.</li>
+          <li>Stickers and markers (e.g., “!”, “?”, cross-links) around verses and notes.</li>
+          <li>Bookmarks and table-of-contents views per board or per Bible Mode chapter set.</li>
+          <li>Template boards (for example, “Chapter template,” “Sermon prep template,” “Random verse starter”).</li>
+          <li>Optional accounts and sync when dynamic infrastructure is available.</li>
         </ul>
       </div>
     </details>
   </section>
 
-  <section class="tool-usage-notes">
-    <h2>Tips for Using Infinite Bible</h2>
-    <ul>
-      <li>Use Bible Mode when you want a single, chapter-organized Bible workspace.</li>
-      <li>Use Notes Mode when you want separate themed boards (e.g., Proverbs pairs, topical studies, sermon notes).</li>
-      <li>Remember that everything is local in early versions—clear browser data with care if you rely on stored boards.</li>
+  <section class="tool-section tool-section--usage">
+    <h2>Which mode should I use?</h2>
+    <ul class="tool-usage-list">
+      <li>
+        <strong>Use Bible Mode</strong> when you want one continuous Bible workspace,
+        organized primarily by book and chapter.
+      </li>
+      <li>
+        <strong>Use Notes Mode</strong> when you want multiple separate boards for themes, projects, or experiments.
+      </li>
+      <li>
+        You can switch between modes at any time; they are separate views built on the same underlying Scripture data.
+      </li>
     </ul>
   </section>
 </main>
