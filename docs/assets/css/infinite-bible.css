@@ -71,16 +71,30 @@
   padding: 0.4rem 0;
   flex-wrap: wrap;
 }
+.infinite-bible-app .ib-toolbar-inner {
+  width: 100%;
+}
 
+/* .infinite-bible-app .ib-toolbar-section {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+} */
 .infinite-bible-app .ib-toolbar-section {
   display: flex;
+  flex-direction: row;   /* force horizontal, even if a global style sets column */
   align-items: center;
   gap: 0.35rem;
   flex-wrap: wrap;
 }
 
-.infinite-bible-app .ib-toolbar-left {
+
+/* .infinite-bible-app .ib-toolbar-left {
   flex: 1 1 100%;
+} */
+.infinite-bible-app .ib-toolbar-left {
+  flex: 1 1 auto;
 }
 
 .infinite-bible-app .ib-toolbar-middle {
@@ -94,7 +108,12 @@
 
 /* Toolbar buttons */
 
+
 .infinite-bible-app .ib-toolbar-btn {
+  display: inline-flex;      /* override any global display:block */
+  align-items: center;
+  justify-content: center;
+  width: auto;               /* override any width:100% */
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
   border: 1px solid transparent;
@@ -106,6 +125,7 @@
   cursor: pointer;
   white-space: nowrap;
 }
+
 
 .infinite-bible-app .ib-toolbar-btn:hover {
   background: rgba(31, 41, 55, 0.85);
@@ -319,6 +339,7 @@
   max-width: 100%;
 }
 
+
 .infinite-bible-app .ib-canvas-title {
   margin: 0 0 0.5rem;
   font-size: 1.1rem;
@@ -396,6 +417,7 @@
   .infinite-bible-app .ib-toolbar-inner {
     gap: 0.4rem;
   }
+  
 
   .infinite-bible-app .ib-toolbar-section {
     gap: 0.3rem;
