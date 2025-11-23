@@ -766,3 +766,60 @@ body.tool-app-body #content.tool-app-container {
     flex-wrap: nowrap;
   }
 }
+
+/* === FINAL TOOLBAR LAYOUT RESET: three horizontal clusters, no overlap === */
+
+/* Toolbar row: single flex row, no wrapping */
+.infinite-bible-app .ib-toolbar-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;       /* do NOT wrap clusters on desktop */
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+/* Each section is its own horizontal cluster */
+.infinite-bible-app .ib-toolbar-left,
+.infinite-bible-app .ib-toolbar-middle,
+.infinite-bible-app .ib-toolbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;       /* buttons inside never stack vertically */
+  gap: 0.35rem;
+}
+
+/* Left: Navigator + Add + File, sized to content */
+.infinite-bible-app .ib-toolbar-left {
+  flex: 0 0 auto;
+}
+
+/* Middle: B / I / U, sized to content, with a little separation from left */
+.infinite-bible-app .ib-toolbar-middle {
+  flex: 0 0 auto;
+  margin-left: 0.5rem;
+}
+
+/* Right: pushed to far right, buttons in one row */
+.infinite-bible-app .ib-toolbar-right {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+/* Buttons in left/right clusters never stretch */
+.infinite-bible-app .ib-toolbar-left .ib-toolbar-btn,
+.infinite-bible-app .ib-toolbar-right .ib-toolbar-btn {
+  flex: 0 0 auto;
+}
+
+/* On very small screens, allow the clusters themselves to wrap if needed */
+@media (max-width: 640px) {
+  .infinite-bible-app .ib-toolbar-inner {
+    flex-wrap: wrap;
+  }
+
+  .infinite-bible-app .ib-toolbar-right {
+    margin-left: 0;
+  }
+}
