@@ -182,3 +182,18 @@ permalink: /tools-games/tools/infinite-bible/notes/
     </ol>
   </section>
 </main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!window.ScriptureCore) {
+      console.error("Notes Mode: ScriptureCore not available.");
+      return;
+    }
+
+    // For now, just ensure the index is loaded.
+    // Later we will hook Insert Passage and board logic into ScriptureCore.
+    ScriptureCore.loadIndex("v1").catch(function (err) {
+      console.error("Notes Mode: failed to initialize Scripture data:", err);
+    });
+  });
+</script>

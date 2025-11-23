@@ -23,6 +23,14 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta property="og:type" content="website">
+
+  <!-- Shared JS config and core Bible helper -->
+  <script>
+    window.SHK_BASEURL = '{{ site.baseurl }}';
+  </script>
+  <script src="{{ site.baseurl }}/assets/js/scripture-core.js" defer></script>
+  <!-- Main site JS (only once) -->
+  <script src="{{ site.baseurl }}/js/site.js" defer></script>
 </head>
 
 <body>
@@ -55,7 +63,6 @@
         class="nav-cta-toggle"
         aria-label="Hide navigation panel"
         aria-expanded="true"
-
         data-prev-url="{{ page.nav_prev_url | default: '' }}"
         data-prev-label="{{ page.nav_prev_label | default: '' }}"
         data-next-url="{{ page.nav_next_url | default: '' }}"
@@ -65,7 +72,6 @@
       </button>
       <div class="nav-cta-links"></div>
     </div>
-
 
     <!-- Right-side Help CTA with cross toggle -->
     <div class="help-cta" id="help-cta">
@@ -92,14 +98,12 @@
           Contact
         </a>
         <a href="{{ '/help/feedback/' | relative_url }}" class="btn help-cta-btn secondary">
-          Feedback & Errors
+          Feedback &amp; Errors
         </a>
       </div>
     </div>
   </main>
 
   {% include footer.html %}
-
-  <script src="{{ site.baseurl }}/js/site.js" defer></script>
 </body>
 </html>

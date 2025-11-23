@@ -1,48 +1,62 @@
 ---
 layout: default
-title: Study Tools Collection
+title: Study Tools
 permalink: /tools-games/tools/study/
 ---
 
-<section class="collection-page">
+<section class="hub-page">
   <h1>{{ page.title }}</h1>
-  <p class="collection-intro">
-    One or two sentences explaining what this collection groups together. (TBD)
+  <p class="hub-intro">
+    Study-focused interactive tools to help search, connect, and explore Scripture and related content. (TBD)
   </p>
   <hr class="hub-divider">
 
-  <!-- Section 1 -->
-  <section class="collection-section">
-    <h2>Section 1 Heading</h2>
-    <div class="collection-list">
-      <a href="{{ '/path/to/item-1/' | relative_url }}" class="collection-item">
-        <h3>Item 1 Title</h3>
-        <p>Short description of this item or sub-collection. (TBD)</p>
-      </a>
+  <div class="hub-grid">
+    
+    <!-- Bible Viewer -->
+    <a href="{{ '/tools-games/tools/bible-viewer/' | relative_url }}" class="hub-tile tile-tools-bible-viewer">
+      <h2>Bible Viewer Tool</h2>
+      <p>Read the bible! (TBD)</p>
+    </a>
 
-      <a href="{{ '/path/to/item-2/' | relative_url }}" class="collection-item">
-        <h3>Item 2 Title</h3>
-        <p>Short description. (TBD)</p>
-      </a>
-    </div>
-  </section>
+    <!-- Infinite Bible -->
+    <a href="{{ '/tools-games/tools/infinite-bible/' | relative_url }}" class="hub-tile tile-tools-infinite-bible">
+      <h2>Infinite Bible Tool</h2>
+      <p>Explore interconnected Scripture passages in a dynamic way. (TBD)</p>
+    </a>
 
-  <!-- Optional Section 2 -->
-  <section class="collection-section">
-    <h2>Section 2 Heading (Optional)</h2>
-    <div class="collection-list">
-      <a href="{{ '/path/to/another-item/' | relative_url }}" class="collection-item">
-        <h3>Another Item</h3>
-        <p>Short description. (TBD)</p>
-      </a>
-    </div>
-  </section>
+    <!-- Proverb Pairs Search (PPS) – Direct -->
+    <a href="{{ '/tools-games/tools/pps/direct/' | relative_url }}" class="hub-tile tile-tools-pps-direct">
+      <h2>Proverb Pairs Search (Direct)</h2>
+      <p>Search relationships across Proverbs using direct PPS mode. (TBD)</p>
+    </a>
 
-  <!-- Add more sections as needed -->
+    <!-- Proverb Pairs Search (PPS) – Bubble -->
+    <!-- <a href="{{ '/tools-games/tools/pps/bubble/' | relative_url }}" class="hub-tile tile-tools-pps-bubble">
+      <h2>Proverb Pairs Search (Bubble)</h2>
+      <p>Explore PPS in a more visual “bubble” view. (TBD)</p>
+    </a> -->
 
-  <nav class="collection-nav">
-    <!-- Adjust these links per collection -->
-    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
-    <!-- or e.g. <a href="{{ '/literature/' | relative_url }}">Back to Literature</a> -->
+    <!-- Strong’s Concordance Search (SCS) -->
+    <a href="{{ '/tools-games/tools/scs/' | relative_url }}" class="hub-tile tile-tools-scs">
+      <h2>Strong’s Concordance Search</h2>
+      <p>Look up words and references based on Strong’s numbers. (TBD)</p>
+    </a>
+
+    <!-- Blessings Jar -->
+    <a href="{{ '/tools-games/tools/blessings-jar/' | relative_url }}" class="hub-tile tile-tools-blessings-jar">
+      <h2>Blessings Jar</h2>
+      <p>Track and revisit blessings, answered prayers, and encouragements. (TBD)</p>
+    </a>
+
+    <!-- Map Tool -->
+    <a href="{{ '/tools-games/tools/map-tool/' | relative_url }}" class="hub-tile tile-community-map">
+      <h2>Map Tool</h2>
+      <p>Simple map-related functionality tied into SHK resources. (TBD)</p>
+    </a>
+  </div>
+
+  <nav class="tools-nav">
+    <a href="{{ '/' | relative_url }}">Back to Home</a>
   </nav>
 </section>

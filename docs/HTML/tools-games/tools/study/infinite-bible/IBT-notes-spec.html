@@ -1,0 +1,119 @@
+## Infinite Bible (Tool) – Data & Modes (v1 concept)
+
+- Infinite Bible has two modes sharing the same underlying data:
+  - **Bible Mode (“Infinite Bible”)** – one global Bible board, with chapters loaded as needed.
+  - **Notes Mode (“Infinite Bible Notes”)** – multiple named boards, each a free-form canvas.
+
+### Boards and items
+
+- Each device stores:
+  - A `schemaVersion` number.
+  - Global settings (default verse-number behavior, long-passage warning, export filename style).
+  - A list of **boards** and a `lastOpenBoardId`.
+
+- Each **board** has:
+  - An `id`, `name`, `createdAt`, `updatedAt`.
+  - A `viewState` (canvas pan/zoom).
+  - An `items` array.
+
+- Each **verse item** stores only:
+  - `translation` code (e.g., `"KJV"`),
+  - 3-letter `book` code,
+  - `chapter` number,
+  - `verses` array (one or more verse numbers),
+  - `layout` (at minimum: `x`, `y`, optionally width/height),
+  - optional `decorations` (stickers, highlights, connection endpoints; empty in v1).
+
+- Each **note item** stores:
+  - `text`,
+  - `layout` (x/y/width/height),
+  - optional `decorations`.
+
+- Verse text is **never** stored in boards. Rendering always resolves `{translation, book, chapter, verses[]}`
+  through the existing Bible Tools v1 / Bible Viewer data.
+
+### Mode behavior (v1)
+
+- **Bible Mode**
+  - Treats all loaded chapters as part of one “Bible board”.
+  - Chapters are loaded on demand from the Bible data (one chapter at a time, with an option to split into one block per verse).
+  - UI may collapse non-active chapters to keep the canvas manageable; layouts and notes remain saved.
+
+- **Notes Mode**
+  - Supports multiple named boards (soft limit, e.g., 50 boards per device).
+  - Each board can contain any mix of verse items and notes.
+  - Boards save automatically in local browser storage and can be exported/imported as JSON files.
+
+
+
+# Infinite Bible (Tool) – v1 Spec
+
+Infinite Bible has two modes on top of the shared Scripture Core API (see `bible-tools-v1.md`, §5.5):
+
+- **Bible Mode (“Infinite Bible”)** – one global Bible board, with chapters loaded as needed.
+- **Notes Mode (“Infinite Bible Notes”)** – multiple named boards, each a free-form canvas.
+
+## 1. Data & modes (summary)
+
+[Paste the “Infinite Bible (Tool) – Data & Modes (v1 concept)” block you already have here.]
+
+### Scripture Core API usage (v1)
+
+Infinite Bible (Tool) does not read Bible JSON files directly. Both modes rely on the shared Scripture Core API (see `bible-tools-v1.md`, §5.5):
+
+- **Bible Mode**
+  - On load, calls `loadIndex("v1")` once and uses `listBooks(translationCode)` to populate the Book + Chapter selectors.
+  - When the user loads a chapter, calls `getChapter(translationCode, bookCode3, chapterNumber)` to get `{ verse, text }[]` and builds verse/passage items from that result (optionally one item per verse).
+  - When restoring a saved Bible board, uses each item’s `{ translation, book, chapter, verses[] }` to call `getChapter` again as needed for expanded chapters.
+
+- **Notes Mode**
+  - On load, calls `loadIndex("v1")` once to prepare Bible metadata for the default translation.
+  - When the user inserts a passage, calls `parseReference(input)` to get `{ bookCode3, chapter, verses[] }`, then calls `getPassage(translationCode, bookCode3, chapter, verses[])` (or `getChapter` + filter) to obtain `{ verse, text }[]` and build verse items.
+  - When restoring a saved board, uses each verse item’s `{ translation, book, chapter, verses[] }` with `getPassage`/`getChapter` to resolve the current text, while layout comes from the saved board data.
+
+
+## 2. Roadmap (high-level)
+
+- Beta 1: single board, passages + notes, local auto-save.
+- Beta 2: multiple boards, settings, long-passage warning, first-time overlay.
+- v1.0: export/import, finalized settings, public tool page.
+- v1.x: stickers, bookmarks/TOC, templates, potential sync.
+
+## 3. Dependencies
+
+- Uses the shared Scripture Core API (`listBooks`, `getChapter`, `getPassage`, `parseReference`).
+- Uses Bible Tools v1 data (`/data/v1/tools/bible-viewer/index.json` and chapter JSONs).
+
+
+
+### Scripture Core API – JS module contract (v1)
+
+Front-end tools that read Scripture (Bible Viewer, Infinite Bible, etc.) should depend on a shared JS helper, e.g. `scripture-core.js`, which exposes:
+
+- `loadIndex(dataVersion: string = "v1") → Promise<Index>`
+  - Loads `/data/<dataVersion>/tools/bible-viewer/index.json`.
+  - Caches the result in memory so multiple calls do not re-fetch.
+
+- `listBooks(translationCode: string) → BookMeta[]`
+  - Uses the loaded index.
+  - Returns an ordered list of books for the given translation with:
+    - `code3` (3-letter book code, e.g. `PRO`, `JHN`),
+    - `title` (e.g. `"Proverbs"`),
+    - `chapters` (number of chapters).
+
+- `getChapter(translationCode: string, bookCode3: string, chapterNumber: number) → Promise<Verse[]>`
+  - Builds the chapter URL using `translation.path`, `translation.chapters_dir`, book code, and 3-digit chapter.
+  - Fetches and normalizes the JSON into an array of `{ verse: number, text: string }`.
+
+- `getPassage(translationCode: string, bookCode3: string, chapterNumber: number, verses: number[]) → Promise<Verse[]>`
+  - Calls `getChapter` internally and filters to the requested verse numbers.
+  - Returns the same `{ verse, text }` shape.
+
+- `parseReference(input: string) → ParsedRef | Error`
+  - Parses user input like `"Proverbs 1:7–9"` or `"Luke 12:31"`.
+  - Returns `{ bookCode3, chapter: number, verses: number[] }` on success, or an error object/enum for invalid or unsupported input.
+
+Notes:
+- All URLs must respect `{{ site.baseurl }}` in templates.
+- Verse text is always resolved through these helpers; tools never read chapter files directly.
+

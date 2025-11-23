@@ -159,6 +159,60 @@ Other tools (e.g., Strong’s-based tools) can use richer schemas, but those sho
 
 ---
 
+## 5.5. Scripture Core API (SCA)
+
+New Scripture tools (including Infinite Bible) do not read Bible files directly. Instead, they should call a small helper, the Scripture Core API (SCA), which wraps the existing Bible Tools v1 / Bible Viewer data:
+
+- `listBooks(translation)`  
+  - Returns ordered list of books with 3-letter codes and chapter counts.  
+  - Used to populate the Book and Chapter selectors.
+
+- `getChapter(translation, bookCode3, chapterNumber)`  
+  - Returns an array of `{ verse: number, text: string }` for that chapter.  
+  - Used for Bible Mode chapter templates and Notes Mode when inserting full chapters.
+
+- `getPassage(translation, bookCode3, chapterNumber, versesArray)`  
+  - Returns an array of `{ verse, text }` for the specific verses requested.  
+  - Used when inserting single verses or verse ranges into Notes Mode boards.
+
+- `parseReference(inputString)`  
+  - Parses strings like `"Proverbs 1:7–9"` or `"Luke 12:31"`  
+  - Returns `{ bookCode3, chapterNumber, versesArray }` or an error state for invalid input.
+
+
+### Scripture Core API – JS module contract (v1)
+
+Front-end tools that read Scripture (Bible Viewer, Infinite Bible, etc.) should depend on a shared JS helper, e.g. `scripture-core.js`, which exposes:
+
+- `loadIndex(dataVersion: string = "v1") → Promise<Index>`
+  - Loads `/data/<dataVersion>/tools/bible-viewer/index.json`.
+  - Caches the result in memory so multiple calls do not re-fetch.
+
+- `listBooks(translationCode: string) → BookMeta[]`
+  - Uses the loaded index.
+  - Returns an ordered list of books for the given translation with:
+    - `code3` (3-letter book code, e.g. `PRO`, `JHN`),
+    - `title` (e.g. `"Proverbs"`),
+    - `chapters` (number of chapters).
+
+- `getChapter(translationCode: string, bookCode3: string, chapterNumber: number) → Promise<Verse[]>`
+  - Builds the chapter URL using `translation.path`, `translation.chapters_dir`, book code, and 3-digit chapter.
+  - Fetches and normalizes the JSON into an array of `{ verse: number, text: string }`.
+
+- `getPassage(translationCode: string, bookCode3: string, chapterNumber: number, verses: number[]) → Promise<Verse[]>`
+  - Calls `getChapter` internally and filters to the requested verse numbers.
+  - Returns the same `{ verse, text }` shape.
+
+- `parseReference(input: string) → ParsedRef | Error`
+  - Parses user input like `"Proverbs 1:7–9"` or `"Luke 12:31"`.
+  - Returns `{ bookCode3, chapter: number, verses: number[] }` on success, or an error object/enum for invalid or unsupported input.
+
+Notes:
+- All URLs must respect `{{ site.baseurl }}` in templates.
+- Verse text is always resolved through these helpers; tools never read chapter files directly.
+
+
+
 ## 6. Front-end usage checklist (any new tool)
 
 For any new Scripture tool:
@@ -193,3 +247,70 @@ Tell ChatGPT explicitly:
 > – Assume chapter JSON is either `{ verses: [...] }`, `[...]`, or an object keyed by verse numbers, and normalize to `(verse, text)`.
 
 Then describe only the additional behavior unique to that tool (UI, modes, filters, etc.), so all tools stay consistent with the same Bible data contract.
+
+
+# Specific Tool Uses & Notes
+
+## Bible Viewer
+
+
+
+## Infinite Bible (Tool) – Data & Modes (v1 concept)
+
+Infinite Bible (Tool) uses the shared Scripture Core API defined in §5.5 for all Scripture lookups.
+
+- Infinite Bible has two modes sharing the same underlying data:
+  - **Bible Mode (“Infinite Bible”)** – one global Bible board, with chapters loaded as needed.
+  - **Notes Mode (“Infinite Bible Notes”)** – multiple named boards, each a free-form canvas.
+
+### Boards and items
+
+- Each device stores:
+  - A `schemaVersion` number.
+  - Global settings (default verse-number behavior, long-passage warning, export filename style).
+  - A list of **boards** and a `lastOpenBoardId`.
+
+- Each **board** has:
+  - An `id`, `name`, `createdAt`, `updatedAt`.
+  - A `viewState` (canvas pan/zoom).
+  - An `items` array.
+
+- Each **verse item** stores only:
+  - `translation` code (e.g., `"KJV"`),
+  - 3-letter `book` code,
+  - `chapter` number,
+  - `verses` array (one or more verse numbers),
+  - `layout` (at minimum: `x`, `y`, optionally width/height),
+  - optional `decorations` (stickers, highlights, connection endpoints; empty in v1).
+
+- Each **note item** stores:
+  - `text`,
+  - `layout` (x/y/width/height),
+  - optional `decorations`.
+
+- Verse text is **never** stored in boards. Rendering always resolves `{translation, book, chapter, verses[]}`
+  through the existing Bible Tools v1 / Bible Viewer data.
+
+### Mode behavior (v1)
+
+- **Bible Mode**
+  - Treats all loaded chapters as part of one “Bible board”.
+  - Chapters are loaded on demand from the Bible data (one chapter at a time, with an option to split into one block per verse).
+  - UI may collapse non-active chapters to keep the canvas manageable; layouts and notes remain saved.
+
+- **Notes Mode**
+  - Supports multiple named boards (soft limit, e.g., 50 boards per device).
+  - Each board can contain any mix of verse items and notes.
+  - Boards save automatically in local browser storage and can be exported/imported as JSON files.
+
+
+
+## PPS
+
+
+
+## SCS
+
+
+
+## 

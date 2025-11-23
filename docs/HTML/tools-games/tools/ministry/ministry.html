@@ -1,48 +1,38 @@
 ---
 layout: default
-title: Ministry Tools Collection
+title: Ministry Tools
 permalink: /tools-games/tools/ministry/
 ---
 
-<section class="collection-page">
+<section class="hub-page">
   <h1>{{ page.title }}</h1>
-  <p class="collection-intro">
-    One or two sentences explaining what this collection groups together. (TBD)
+  <p class="hub-intro">
+    Study-focused interactive tools to help search, connect, and explore Scripture and related content. (TBD)
   </p>
   <hr class="hub-divider">
 
-  <!-- Section 1 -->
-  <section class="collection-section">
-    <h2>Section 1 Heading</h2>
-    <div class="collection-list">
-      <a href="{{ '/path/to/item-1/' | relative_url }}" class="collection-item">
-        <h3>Item 1 Title</h3>
-        <p>Short description of this item or sub-collection. (TBD)</p>
-      </a>
+  <div class="hub-grid">
+    
+    <!-- Find a Church -->
+    <a href="{{ '/tools-games/tools/find-a-church/' | relative_url }}" class="hub-tile tile-tools-find-a-church">
+      <h2>Find a Church Tool</h2>
+      <p>Locate churches and ministries using SHK resources. (TBD)</p>
+    </a>
 
-      <a href="{{ '/path/to/item-2/' | relative_url }}" class="collection-item">
-        <h3>Item 2 Title</h3>
-        <p>Short description. (TBD)</p>
-      </a>
-    </div>
-  </section>
+    <!-- Blessings Jar -->
+    <a href="{{ '/tools-games/tools/blessings-jar/' | relative_url }}" class="hub-tile tile-tools-blessings-jar">
+      <h2>Blessings Jar Tool</h2>
+      <p>Track and revisit blessings, answered prayers, and encouragements. (TBD)</p>
+    </a>
 
-  <!-- Optional Section 2 -->
-  <section class="collection-section">
-    <h2>Section 2 Heading (Optional)</h2>
-    <div class="collection-list">
-      <a href="{{ '/path/to/another-item/' | relative_url }}" class="collection-item">
-        <h3>Another Item</h3>
-        <p>Short description. (TBD)</p>
-      </a>
-    </div>
-  </section>
+    <!-- Map Tool -->
+    <a href="{{ '/tools-games/tools/map-tool/' | relative_url }}" class="hub-tile tile-community-map">
+      <h2>Map Tool</h2>
+      <p>Simple map-related functionality tied into SHK resources. (TBD)</p>
+    </a>
+  </div>
 
-  <!-- Add more sections as needed -->
-
-  <nav class="collection-nav">
-    <!-- Adjust these links per collection -->
-    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
-    <!-- or e.g. <a href="{{ '/literature/' | relative_url }}">Back to Literature</a> -->
+  <nav class="tools-nav">
+    <a href="{{ '/' | relative_url }}">Back to Home</a>
   </nav>
 </section>

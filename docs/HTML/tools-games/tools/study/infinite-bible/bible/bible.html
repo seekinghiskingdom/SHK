@@ -151,3 +151,52 @@ permalink: /tools-games/tools/infinite-bible/bible/
     </ol>
   </section>
 </main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var DEFAULT_TRANSLATION = "kjv";
+    var bookSelect = document.getElementById("bible-book-select");
+    var chapterSelect = document.getElementById("bible-chapter-select");
+
+    if (!window.ScriptureCore || !bookSelect || !chapterSelect) {
+      console.error("Bible Mode: required elements or ScriptureCore missing.");
+      return;
+    }
+
+    ScriptureCore.loadIndex("v1")
+      .then(function () {
+        var books = ScriptureCore.listBooks(DEFAULT_TRANSLATION);
+
+        // Populate Book dropdown
+        books.forEach(function (b) {
+          var opt = document.createElement("option");
+          opt.value = b.code3;
+          opt.textContent = b.title;
+          bookSelect.appendChild(opt);
+        });
+
+        function updateChapters() {
+          var code3 = bookSelect.value;
+          var meta = books.find(function (b) { return b.code3 === code3; });
+          var chapterCount = meta ? meta.chapters : 0;
+
+          chapterSelect.innerHTML = "";
+          for (var i = 1; i <= chapterCount; i++) {
+            var opt = document.createElement("option");
+            opt.value = String(i);
+            opt.textContent = String(i);
+            chapterSelect.appendChild(opt);
+          }
+        }
+
+        // Update chapters when book changes
+        bookSelect.addEventListener("change", updateChapters);
+
+        // Initialize chapter list for the first book
+        updateChapters();
+      })
+      .catch(function (err) {
+        console.error("Bible Mode: failed to initialize Scripture data:", err);
+      });
+  });
+</script>
