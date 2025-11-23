@@ -1,24 +1,32 @@
 /* Infinite Bible (Tool) – Bible Mode + Notes Mode styles */
 /* Content and wording assisted by AI (-AI) */
+
+
 /* === Infinite Bible – Bible Mode: Header strip === */
 
+/* Make header text white on whatever dark background it's sitting on */
 .infinite-bible-bible .ib-header {
   margin-bottom: 1.75rem;
+  color: #ffffff;
 }
+
+/* We explicitly style internal text to stay light */
+.infinite-bible-bible .ib-header h1,
+.infinite-bible-bible .ib-header p,
+.infinite-bible-bible .ib-header button,
+.infinite-bible-bible .ib-header span {
+  color: #ffffff;
+}
+
+/* Main header layout */
 
 .infinite-bible-bible .ib-header-main {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-.infinite-bible-bible .ib-header-left {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
+/* Title + pill row */
 
 .infinite-bible-bible .ib-title-row {
   display: flex;
@@ -33,60 +41,68 @@
   margin: 0;
 }
 
+/* Bible Mode pill: thin yellow outline, yellow text, transparent bg */
+
 .infinite-bible-bible .ib-pill {
   padding: 3px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(250, 204, 21, 0.7);
+  border: 1px solid #facc15;  /* yellow */
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #92400e;
-  background: #fef3c7;
+  color: #facc15;
+  background: transparent;
+}
+
+/* Intro text + More info button in one row */
+
+.infinite-bible-bible .ib-intro-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .infinite-bible-bible .ib-subtitle {
   margin: 0;
   font-size: 0.95rem;
-  color: #4b5563;
-  max-width: 640px;
+  flex: 1 1 auto;
 }
 
-.infinite-bible-bible .ib-header-right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+/* Small compact "More info" button on the right */
 
 .infinite-bible-bible .ib-info-toggle {
+  flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.4rem 0.9rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 999px;
-  border: 1px solid #d1d5db;
-  background: #ffffff;
-  font-size: 0.8rem;
+  border: 1px solid rgba(249, 250, 251, 0.7);
+  background: rgba(15, 23, 42, 0.3); /* subtle dark overlay */
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   cursor: pointer;
 }
 
 .infinite-bible-bible .ib-info-toggle:hover {
-  background: #f9fafb;
+  background: rgba(15, 23, 42, 0.55);
 }
 
 .infinite-bible-bible .ib-info-toggle-icon {
   font-size: 0.75rem;
 }
 
-/* Collapsible info panel under the header */
+/* Collapsible More Info panel */
 
 .infinite-bible-bible .ib-info-panel {
-  margin-top: 0.75rem;
+  margin-top: 0.8rem;
   padding: 0.9rem 1rem;
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  background: rgba(15, 23, 42, 0.9);
+  max-width: 48rem;        /* don't get excessively wide */
 }
 
 .infinite-bible-bible .ib-info-section + .ib-info-section {
@@ -99,17 +115,30 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.09em;
-  color: #374151;
+  color: #e5e7eb;
 }
 
 .infinite-bible-bible .ib-info-list {
   margin: 0;
   padding-left: 1.1rem;
   font-size: 0.88rem;
-  color: #4b5563;
+  color: #e5e7eb;
 }
 
-/* `[hidden]` support, in case base styles don't handle it */
+/* Make sure hidden panel actually hides */
+
 .infinite-bible-bible .ib-info-panel[hidden] {
   display: none;
+}
+
+/* Small-screen adjustments */
+
+@media (max-width: 640px) {
+  .infinite-bible-bible .ib-intro-row {
+    align-items: flex-start;
+  }
+
+  .infinite-bible-bible .ib-info-toggle {
+    margin-left: auto;
+  }
 }
