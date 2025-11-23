@@ -9,172 +9,424 @@ permalink: /tools-games/tools/pps/
     --pps-bg: #0f172a;
     --pps-bg-alt: #020617;
     --pps-panel: #020617;
-    --pps-border: #1e293b;
-    --pps-accent: #facc15;
-    --pps-accent-alt: #f97316;
+    --pps-border: rgba(148, 163, 184, 0.4);
+    --pps-border-soft: rgba(148, 163, 184, 0.25);
     --pps-text: #e5e7eb;
+    --pps-text-soft: #cbd5f5;
     --pps-text-muted: #9ca3af;
+    --pps-accent: #eab308;
+    --pps-accent-soft: rgba(234, 179, 8, 0.14);
+    --pps-danger: #f97373;
+    --pps-danger-soft: rgba(248, 113, 113, 0.12);
     --pps-radius-lg: 20px;
     --pps-radius-md: 12px;
-    --pps-shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.75);
-    --pps-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --pps-shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.85);
   }
 
-  * {
+  .pps-page {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.12) 0, transparent 50%),
+      radial-gradient(circle at 100% 0, rgba(234, 179, 8, 0.16) 0, transparent 55%),
+      radial-gradient(circle at 50% 110%, rgba(59, 130, 246, 0.18) 0, transparent 60%),
+      linear-gradient(to bottom, #020617, #020617 160px, #020617);
+    color: var(--pps-text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+      "Segoe UI", sans-serif;
+    padding: 36px 16px 48px;
     box-sizing: border-box;
   }
 
-  body {
-    font-family: var(--pps-font);
-    background: radial-gradient(circle at top, #1f2937 0, #020617 45%, #000 100%);
-    color: var(--pps-text);
+  @media (min-width: 900px) {
+    .pps-page {
+      padding: 48px 32px 64px;
+    }
   }
 
-  main.pps-page {
-    max-width: 1200px;
+  .pps-container {
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 24px 16px 40px;
   }
 
   .pps-header {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 28px;
   }
 
-  .pps-title-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .pps-title {
-    font-size: 1.75rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  .pps-pill {
-    padding: 4px 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(250, 204, 21, 0.4);
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--pps-accent);
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .pps-subtitle {
-    font-size: 0.95rem;
-    color: var(--pps-text-muted);
+  .pps-title-block {
     max-width: 640px;
   }
 
-  .pps-shell {
+  .pps-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 10px 3px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.22) 0, transparent 55%);
+    font-size: 0.76rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pps-text-muted);
+    margin-bottom: 10px;
+  }
+
+  .pps-kicker-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(52, 211, 153, 0.9);
+    box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.26);
+  }
+
+  .pps-title {
+    font-size: clamp(1.8rem, 3vw, 2.1rem);
+    font-weight: 650;
+    letter-spacing: -0.03em;
+    color: #f9fafb;
+    margin-bottom: 6px;
+  }
+
+  .pps-subtitle {
+    font-size: 0.9rem;
+    color: var(--pps-text-soft);
+    max-width: 560px;
+  }
+
+  .pps-tagline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    background: radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.16) 0, transparent 50%);
+  }
+
+  .pps-tag-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(234, 179, 8, 0.9);
+  }
+
+  .pps-meta-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    min-width: 220px;
+  }
+
+  .pps-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.65);
+    box-shadow:
+      0 12px 30px rgba(15, 23, 42, 0.85),
+      0 0 0 1px rgba(15, 23, 42, 0.9);
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.6);
+  }
+
+  .pps-status-dot.pps-loading {
+    background: rgba(234, 179, 8, 0.94);
+    box-shadow:
+      0 0 0 4px rgba(234, 179, 8, 0.18),
+      0 0 0 1px rgba(15, 23, 42, 0.6);
+  }
+
+  .pps-status-dot.pps-ok {
+    background: rgba(52, 211, 153, 0.95);
+    box-shadow:
+      0 0 0 4px rgba(52, 211, 153, 0.2),
+      0 0 0 1px rgba(15, 23, 42, 0.6);
+  }
+
+  .pps-status-dot.pps-error {
+    background: rgba(248, 113, 113, 0.96);
+    box-shadow:
+      0 0 0 4px rgba(248, 113, 113, 0.25),
+      0 0 0 1px rgba(15, 23, 42, 0.6);
+  }
+
+  .pps-status-text {
+    font-weight: 500;
+  }
+
+  .pps-status-label {
+    color: var(--pps-text-muted);
+  }
+
+  .pps-badge-below {
+    font-size: 0.75rem;
+    color: var(--pps-text-muted);
+    text-align: right;
+  }
+
+  .pps-badge-below strong {
+    color: var(--pps-text-soft);
+    font-weight: 500;
+  }
+
+  .pps-layout {
     display: grid;
-    grid-template-columns: minmax(0, 2.3fr) minmax(260px, 1.1fr);
+    grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.1fr);
     gap: 18px;
   }
 
   @media (max-width: 900px) {
-    .pps-shell {
+    .pps-layout {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .pps-meta-block {
+      align-items: flex-start;
+    }
+
+    .pps-badge-below {
+      text-align: left;
+    }
+  }
+
+  .pps-maincard {
+    border-radius: var(--pps-radius-lg);
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    background:
+      radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.23) 0, transparent 55%),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 1));
+    box-shadow: var(--pps-shadow-soft);
+    padding: 14px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .pps-maincard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .pps-maincard-title {
+    font-size: 0.86rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-maincard-subtitle {
+    font-size: 0.82rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-maincard-kpis {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .pps-kpi {
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: rgba(15, 23, 42, 0.9);
+    font-size: 0.76rem;
+    color: var(--pps-text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .pps-kpi-label {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.72rem;
+  }
+
+  .pps-kpi-value {
+    color: var(--pps-text-soft);
+    font-weight: 500;
+  }
+
+  .pps-maincard-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1.65fr);
+    gap: 16px;
+  }
+
+  @media (max-width: 900px) {
+    .pps-maincard-body {
       grid-template-columns: minmax(0, 1fr);
     }
   }
 
-  .pps-panel-main {
-    background: radial-gradient(circle at top left, #111827 0, #020617 55%);
-    border-radius: 26px;
-    border: 1px solid rgba(148, 163, 184, 0.28);
-    box-shadow: var(--pps-shadow-soft);
-    padding: 16px 16px 18px;
+  .pps-filters-card {
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: rgba(15, 23, 42, 0.96);
+    padding: 10px 10px 12px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    position: relative;
-    overflow: hidden;
+    gap: 10px;
   }
 
-  .pps-panel-main::before {
-    content: "";
-    position: absolute;
-    inset: -25%;
-    background:
-      radial-gradient(circle at 0% 0%, rgba(250, 204, 21, 0.17) 0, transparent 55%),
-      radial-gradient(circle at 100% 0%, rgba(148, 163, 184, 0.16) 0, transparent 55%);
-    opacity: 0.8;
-    pointer-events: none;
-    mix-blend-mode: screen;
-  }
-
-  .pps-panel-main-inner {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .pps-controls-top {
+  .pps-fieldrow {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    align-items: flex-end;
-    justify-content: space-between;
+  }
+
+  .pps-field {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .pps-field-compact {
+    max-width: 160px;
+  }
+
+  .pps-label {
+    display: inline-block;
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--pps-text-muted);
+    margin-bottom: 3px;
+  }
+
+  .pps-label span {
+    font-weight: 500;
+    color: var(--pps-text-soft);
+  }
+
+  .pps-select,
+  .pps-input {
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.98);
+    color: var(--pps-text-soft);
+    padding: 7px 10px;
+    font-size: 0.8rem;
+    outline: none;
+    box-shadow:
+      0 0 0 1px rgba(15, 23, 42, 1),
+      0 10px 25px rgba(15, 23, 42, 0.8);
+  }
+
+  .pps-select:focus,
+  .pps-input:focus {
+    border-color: rgba(234, 179, 8, 0.9);
+    box-shadow:
+      0 0 0 1px rgba(234, 179, 8, 0.9),
+      0 0 0 6px rgba(234, 179, 8, 0.18);
+  }
+
+  .pps-select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, rgba(148, 163, 184, 0.9) 50%),
+      linear-gradient(135deg, rgba(148, 163, 184, 0.9) 50%, transparent 50%);
+    background-position:
+      calc(100% - 13px) calc(50% - 3px),
+      calc(100% - 9px) calc(50% - 3px);
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+  }
+
+  select.pps-select::-ms-expand {
+    display: none;
+  }
+
+  .pps-select option {
+    background: #020617;
+    color: #e5e7eb;
   }
 
   .pps-group {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     flex-wrap: wrap;
-    gap: 8px 10px;
-    align-items: flex-end;
   }
 
-  .pps-field {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    min-width: 140px;
-  }
-
-  .pps-label {
-    font-size: 0.75rem;
+  .pps-mode-toggle-label {
+    font-size: 0.76rem;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.16em;
     color: var(--pps-text-muted);
   }
 
-  select {
-    border-radius: var(--pps-radius-md);
+  .pps-mode-toggle {
+    display: inline-flex;
+    border-radius: 999px;
     border: 1px solid rgba(148, 163, 184, 0.7);
     background: rgba(15, 23, 42, 0.9);
-    color: var(--pps-text);
-    padding: 7px 10px;
-    font-size: 0.9rem;
-    outline: none;
-    min-height: 34px;
+    padding: 2px;
   }
 
-  select:focus {
-    border-color: var(--pps-accent);
-    box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.7);
+  .pps-mode-btn {
+    border: none;
+    background: transparent;
+    color: var(--pps-text-muted);
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+
+  .pps-mode-btn-active {
+    background: rgba(234, 179, 8, 0.15);
+    color: var(--pps-accent);
+    box-shadow:
+      0 0 0 1px rgba(234, 179, 8, 0.9),
+      0 0 12px rgba(234, 179, 8, 0.48);
+  }
+
+  .pps-mode-caption {
+    font-size: 0.74rem;
+    color: var(--pps-text-muted);
   }
 
   .pps-button,
   .pps-button-ghost {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
     border-radius: 999px;
     padding: 7px 14px;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
-    border: none;
+    letter-spacing: 0.16em;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.96);
+    color: var(--pps-text-soft);
     cursor: pointer;
     white-space: nowrap;
   }
@@ -189,94 +441,139 @@ permalink: /tools-games/tools/pps/
   }
 
   .pps-button:hover {
-    filter: brightness(1.02);
+    filter: brightness(1.03);
     transform: translateY(-0.5px);
   }
 
-  .pps-button:active {
-    transform: translateY(0.5px);
-    box-shadow:
-      0 0 0 1px rgba(15, 23, 42, 0.55),
-      0 10px 18px rgba(15, 23, 42, 0.9);
-  }
-
   .pps-button-ghost {
-    background: rgba(15, 23, 42, 0.7);
-    border: 1px solid rgba(148, 163, 184, 0.6);
+    background: transparent;
     color: var(--pps-text-muted);
   }
 
   .pps-button-ghost:hover {
-    background: rgba(15, 23, 42, 0.95);
-    color: var(--pps-text);
+    background: rgba(15, 23, 42, 0.9);
+    color: var(--pps-text-soft);
   }
 
-  .pps-status-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-    font-size: 0.78rem;
-    color: var(--pps-text-muted);
-    margin-top: 2px;
+  .pps-multi {
+    position: relative;
   }
 
-  .pps-status-badge {
-    padding: 4px 9px;
-    border-radius: 999px;
-    border: 1px solid rgba(148, 163, 184, 0.4);
-    background: rgba(15, 23, 42, 0.85);
+  .pps-multi-toggle {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-  }
-
-  .pps-status-dot {
-    width: 6px;
-    height: 6px;
+    justify-content: space-between;
+    width: 100%;
     border-radius: 999px;
-    background: rgba(148, 163, 184, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.98);
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    cursor: pointer;
   }
 
-  .pps-status-dot.pps-ok {
-    background: #22c55e;
+  .pps-multi-label {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 16px);
   }
 
-  .pps-status-dot.pps-loading {
-    background: #facc15;
+  .pps-multi-main {
+    color: var(--pps-text-soft);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
-  .pps-status-dot.pps-error {
-    background: #ef4444;
-  }
-
-  .pps-inline-label {
-    font-size: 0.8rem;
+  .pps-multi-sub {
+    font-size: 0.72rem;
     color: var(--pps-text-muted);
-    min-height: 1.1em;
   }
 
-  .pps-stats-row {
+  .pps-multi-caret {
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid rgba(148, 163, 184, 0.9);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.9);
+    transform: rotate(45deg);
+  }
+
+  .pps-multi-menu {
+    position: absolute;
+    z-index: 40;
+    left: 0;
+    right: 0;
+    margin-top: 4px;
+    border-radius: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.98);
+    box-shadow:
+      0 16px 40px rgba(15, 23, 42, 0.95),
+      0 0 0 1px rgba(15, 23, 42, 1);
+    max-height: 260px;
+    overflow-y: auto;
+    padding: 6px 0;
+    display: none;
+  }
+
+  .pps-multi-menu.pps-open {
+    display: block;
+  }
+
+  .pps-multi-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  .pps-multi-item:hover {
+    background: rgba(15, 23, 42, 0.9);
+  }
+
+  .pps-multi-item input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+  }
+
+  .pps-multi-item-label-main {
+    color: var(--pps-text-soft);
+  }
+
+  .pps-multi-item-label-sub {
+    font-size: 0.74rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-multi-item-blank {
+    font-style: italic;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-multi-footer {
+    padding: 6px 10px 4px;
+    border-top: 1px solid rgba(148, 163, 184, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.74rem;
     color: var(--pps-text-muted);
-    margin-top: 4px;
-    gap: 10px;
   }
 
-  .pps-stats-counts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 12px;
+  .pps-multi-footer span strong {
+    color: var(--pps-text-soft);
   }
 
-  .pps-stats-pill {
-    border-radius: 999px;
-    padding: 3px 10px;
-    border: 1px solid rgba(148, 163, 184, 0.5);
-    background: rgba(15, 23, 42, 0.9);
+  .pps-multi-footer button {
+    border: none;
+    background: transparent;
+    color: var(--pps-accent);
+    font-size: 0.74rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
   }
 
   .pps-pairs-shell {
@@ -316,6 +613,68 @@ permalink: /tools-games/tools/pps/
     color: var(--pps-text-muted);
   }
 
+  .pps-pairs-header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .pps-hidden {
+    display: none !important;
+  }
+
+  .pps-view-toggle {
+    display: inline-flex;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.85);
+    overflow: hidden;
+  }
+
+  .pps-view-button {
+    border: none;
+    background: transparent;
+    color: var(--pps-text-muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+
+  .pps-view-button.pps-view-active {
+    background: rgba(250, 204, 21, 0.14);
+    color: var(--pps-accent);
+  }
+
+  .pps-bubble-shell {
+    margin-top: 8px;
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background:
+      radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.18) 0, transparent 50%),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 1));
+    min-height: 320px;
+    max-height: calc(100vh - 260px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pps-bubble-shell svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .pps-bubble-empty {
+    font-size: 0.9rem;
+    color: var(--pps-text-muted);
+    text-align: center;
+    padding: 24px 8px 18px;
+  }
+
   .pps-pairs-empty {
     font-size: 0.9rem;
     color: var(--pps-text-muted);
@@ -326,508 +685,594 @@ permalink: /tools-games/tools/pps/
   .pps-pair-card {
     border-radius: 14px;
     border: 1px solid rgba(148, 163, 184, 0.5);
-    background: rgba(15, 23, 42, 0.96);
+    background:
+      radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.17) 0, transparent 50%),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 1));
     padding: 10px 10px 9px;
     margin-bottom: 8px;
-    font-size: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    transition: background 0.12s ease, box-shadow 0.12s ease, transform 0.08s ease;
   }
 
-  .pps-pair-card:hover {
-    background: rgba(15, 23, 42, 1);
-    box-shadow: 0 6px 12px rgba(15, 23, 42, 0.9);
-    transform: translateY(-0.5px);
-  }
-
-  .pps-pair-header-row {
+  .pps-pair-header {
     display: flex;
     justify-content: space-between;
-    gap: 8px;
-    align-items: baseline;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
   }
 
-  .pps-pair-ref {
+  .pps-ref-main {
     font-size: 0.86rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--pps-text-muted);
+    color: #e5e7eb;
   }
 
-  .pps-status-chip {
-    border-radius: 999px;
-    padding: 2px 8px;
-    border: 1px solid rgba(148, 163, 184, 0.6);
+  .pps-ref-sub {
     font-size: 0.74rem;
     color: var(--pps-text-muted);
   }
 
-  .pps-pair-columns {
+  .pps-status-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    background: rgba(15, 23, 42, 0.95);
+    font-size: 0.72rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-status-chip span {
+    font-weight: 500;
+    color: var(--pps-text-soft);
+  }
+
+  .pps-pair-body {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 10px;
+    margin-top: 4px;
   }
 
   @media (max-width: 700px) {
-    .pps-pair-columns {
+    .pps-pair-body {
       grid-template-columns: minmax(0, 1fr);
     }
   }
 
-  .pps-pair-col {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .pps-pair-label {
+  .pps-side-tag {
     font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 0.16em;
     color: var(--pps-text-muted);
+    margin-bottom: 2px;
   }
 
-  .pps-pair-key {
-    font-size: 0.97rem;
+  .pps-side-main {
+    font-size: 0.84rem;
+    color: #e5e7eb;
+    font-weight: 500;
   }
 
-  .pps-pair-group {
+  .pps-side-sub {
     font-size: 0.78rem;
     color: var(--pps-text-muted);
   }
 
-  .pps-pair-meta {
-    font-size: 0.75rem;
+  .pps-meta-row {
+    margin-top: 6px;
+    font-size: 0.74rem;
     color: var(--pps-text-muted);
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    flex-wrap: wrap;
+  }
+
+  .pps-meta-row strong {
+    color: var(--pps-text-soft);
   }
 
   .pps-sidepanel {
-    border-radius: 22px;
-    border: 1px solid rgba(148, 163, 184, 0.3);
-    background: linear-gradient(to bottom, #020617, #020617);
-    padding: 14px 14px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .pps-sidepanel::before {
-    content: "";
-    position: absolute;
-    inset: -30%;
+    border-radius: var(--pps-radius-lg);
+    border: 1px solid rgba(148, 163, 184, 0.55);
     background:
-      radial-gradient(circle at 0 0, rgba(250, 204, 21, 0.15) 0, transparent 50%),
-      radial-gradient(circle at 100% 0, rgba(55, 65, 81, 0.25) 0, transparent 55%);
-    opacity: 0.8;
-    mix-blend-mode: screen;
-    pointer-events: none;
+      radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.25) 0, transparent 50%),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 1));
+    box-shadow: var(--pps-shadow-soft);
+    padding: 12px 12px 14px;
   }
 
   .pps-sidepanel-inner {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 10px;
   }
 
   .pps-side-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     gap: 10px;
   }
 
   .pps-side-title {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    letter-spacing: 0.16em;
     color: var(--pps-text-muted);
   }
 
   .pps-side-pill {
-    font-size: 0.74rem;
-    padding: 4px 9px;
-    border-radius: 999px;
-    border: 1px solid rgba(148, 163, 184, 0.35);
-    background: rgba(15, 23, 42, 0.85);
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-  }
-
-  .pps-side-pill-dot {
-    width: 6px;
-    height: 6px;
+    gap: 7px;
+    padding: 4px 10px;
     border-radius: 999px;
-    background: var(--pps-accent);
-  }
-
-  .pps-side-section {
-    border-radius: 14px;
-    border: 1px solid rgba(148, 163, 184, 0.35);
-    background: rgba(15, 23, 42, 0.94);
-    padding: 10px 10px 10px;
-    font-size: 0.85rem;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .pps-side-section-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-  }
-
-  .pps-side-section-title {
-    font-size: 0.82rem;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
+    background: rgba(15, 23, 42, 0.98);
+    border: 1px solid rgba(148, 163, 184, 0.65);
+    font-size: 0.74rem;
     color: var(--pps-text-muted);
   }
 
-  .pps-link {
-    color: var(--pps-accent);
-    text-decoration: none;
-    font-size: 0.85rem;
+  .pps-side-pill-label {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
   }
 
-  .pps-link:hover {
-    text-decoration: underline;
+  .pps-side-pill-value {
+    color: var(--pps-text-soft);
+    font-weight: 500;
   }
 
   .pps-side-kv {
     display: flex;
     justify-content: space-between;
-    gap: 6px;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 0.78rem;
+    color: var(--pps-text-muted);
   }
 
   .pps-side-kv-label {
-    color: var(--pps-text-muted);
-    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.72rem;
   }
 
   .pps-side-kv-value {
-    font-size: 0.8rem;
-    text-align: right;
+    color: var(--pps-text-soft);
+    font-weight: 500;
   }
 
-  .pps-side-note {
-    font-size: 0.8rem;
-    color: var(--pps-text-muted);
-  }
-
-  .pps-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
+  .pps-warnings {
     margin-top: 2px;
+    padding: 6px 8px;
+    border-radius: 12px;
+    background: var(--pps-danger-soft);
+    border: 1px solid rgba(248, 113, 113, 0.6);
+    font-size: 0.76rem;
   }
 
-  .pps-tag {
-    border-radius: 999px;
-    padding: 3px 8px;
-    font-size: 0.75rem;
-    border: 1px solid rgba(148, 163, 184, 0.4);
-    background: rgba(15, 23, 42, 0.9);
+  .pps-warnings strong {
+    color: #fecaca;
+  }
+
+  .pps-filter-summary {
+    font-size: 0.76rem;
     color: var(--pps-text-muted);
+    margin-top: 4px;
   }
 
-  .pps-footer-note {
+  .pps-filter-summary strong {
+    color: var(--pps-text-soft);
+  }
+
+  .pps-stats-bar {
     font-size: 0.78rem;
     color: var(--pps-text-muted);
-    text-align: right;
-    margin-top: 8px;
-  }
-
-  /* Mode toggle (Key / Group) */
-  .pps-toggle {
-    display: inline-flex;
-    border-radius: 999px;
-    border: 1px solid rgba(148, 163, 184, 0.7);
-    background: rgba(15, 23, 42, 0.8);
-    overflow: hidden;
-  }
-
-  .pps-toggle button {
-    border: none;
-    background: transparent;
-    color: var(--pps-text-muted);
-    font-size: 0.8rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 6px 10px;
-    cursor: pointer;
-  }
-
-  .pps-toggle button.pps-toggle-active {
-    background: rgba(250, 204, 21, 0.12);
-    color: var(--pps-accent);
-  }
-
-  /* Multi-select dropdown with checkboxes */
-  .pps-multi {
-    position: relative;
-    min-width: 160px;
-  }
-
-  .pps-multi-toggle {
-    width: 100%;
-    border-radius: var(--pps-radius-md);
-    border: 1px solid rgba(148, 163, 184, 0.7);
-    background: rgba(15, 23, 42, 0.9);
-    color: var(--pps-text);
-    padding: 7px 10px;
-    font-size: 0.9rem;
-    text-align: left;
+    margin-top: 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
+    gap: 10px;
+    flex-wrap: wrap;
   }
 
-  .pps-multi-toggle span {
-    pointer-events: none;
+  .pps-stats-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
   }
 
-  .pps-multi-toggle-chevron {
-    font-size: 0.8rem;
-    opacity: 0.7;
+  .pps-stat-pill {
+    padding: 3px 9px 4px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: rgba(15, 23, 42, 0.96);
   }
 
-  .pps-multi-menu {
-    position: absolute;
-    top: calc(100% + 4px);
-    left: 0;
-    right: 0;
-    border-radius: 10px;
-    border: 1px solid rgba(148, 163, 184, 0.7);
-    background: rgba(15, 23, 42, 0.98);
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
-    padding: 6px 6px 8px;
-    max-height: 260px;
-    overflow: auto;
-    display: none;
-    z-index: 50;
+  .pps-stat-pill strong {
+    color: var(--pps-text-soft);
   }
 
-  .pps-multi-menu.pps-open {
-    display: block;
-  }
-
-  .pps-multi-item {
+  .pps-stats-right {
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 4px 4px;
-    font-size: 0.85rem;
-    color: var(--pps-text);
+    gap: 8px;
   }
 
-  .pps-multi-item input[type="checkbox"] {
-    accent-color: #facc15;
-  }
-
-  .pps-multi-item-label-main {
-    flex: 1;
-  }
-
-  .pps-multi-item-label-secondary {
-    font-size: 0.75rem;
+  .pps-stats-label {
+    font-size: 0.74rem;
     color: var(--pps-text-muted);
+  }
+
+  .pps-stats-value {
+    font-size: 0.78rem;
+    color: var(--pps-text-soft);
+  }
+
+  .pps-stats-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--pps-text-muted);
+    margin-top: 4px;
+    gap: 10px;
+  }
+
+  .pps-stats-counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+
+  .pps-stats-counts span strong {
+    color: var(--pps-text-soft);
+  }
+
+  .pps-stats-warnings {
+    font-size: 0.74rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-meta-guidance {
+    font-size: 0.76rem;
+    color: var(--pps-text-muted);
+    margin-top: 8px;
+  }
+
+  .pps-meta-guidance strong {
+    color: var(--pps-text-soft);
+  }
+
+  .pps-side-footer {
+    margin-top: 6px;
+    border-top: 1px dashed rgba(148, 163, 184, 0.5);
+    padding-top: 6px;
+    font-size: 0.76rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-side-footer a {
+    color: var(--pps-accent);
+    text-decoration: none;
+  }
+
+  .pps-side-footer a:hover {
+    text-decoration: underline;
   }
 </style>
 
-<main class="pps-page" id="pps-page">
-  <header class="pps-header">
-    <div class="pps-title-row">
-      <h1 class="pps-title">Proverb Pair Search (PPS)</h1>
-      <span class="pps-pill">Study Tool</span>
-    </div>
-    <p class="pps-subtitle">
-      Filter and browse curated proverb pairs by book, chapter, status, and X/Y key or group.
-      Data is loaded from the local PPS JSON generated by the PPS pipeline.
-    </p>
-  </header>
-
-  <section class="pps-shell" aria-label="Proverb Pair Search">
-    <!-- MAIN PANEL -->
-    <section class="pps-panel-main" aria-label="Pair list panel">
-      <div class="pps-panel-main-inner">
-        <!-- Primary filters -->
-        <div class="pps-controls-top">
-          <div class="pps-group" aria-label="Primary filters">
-            <div class="pps-field">
-              <label class="pps-label" for="pps-book-select">Book</label>
-              <select id="pps-book-select">
-                <!-- populated by JS -->
-              </select>
-            </div>
-
-            <div class="pps-field">
-              <label class="pps-label" for="pps-chapter-select">Chapter</label>
-              <select id="pps-chapter-select" disabled>
-                <option value="">Select book first</option>
-              </select>
-            </div>
-
-            <div class="pps-field">
-              <label class="pps-label" for="pps-status-select">Status</label>
-              <select id="pps-status-select">
-                <option value="">All statuses</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="pps-group" style="justify-content: flex-end;">
-            <div class="pps-status-row" aria-live="polite">
-              <div class="pps-inline-label" id="pps-status-label">
-                Loading PPS data…
-              </div>
-              <span class="pps-status-badge">
-                <span class="pps-status-dot" id="pps-status-dot"></span>
-                <span id="pps-status-text">Loading</span>
-              </span>
-            </div>
-          </div>
+<div class="pps-page">
+  <div class="pps-container">
+    <header class="pps-header">
+      <div class="pps-title-block">
+        <div class="pps-kicker">
+          <span class="pps-kicker-dot"></span>
+          <span>Study Tool &mdash; Proverbs</span>
         </div>
-
-        <!-- X/Y + mode + reset row -->
-        <div class="pps-controls-top" style="margin-top: 4px;">
-          <div class="pps-group" aria-label="X/Y filters">
-            <div class="pps-field">
-              <span class="pps-label">Mode</span>
-              <div class="pps-toggle" id="pps-mode-toggle" role="radiogroup">
-                <button
-                  type="button"
-                  class="pps-toggle-active"
-                  data-mode="key"
-                  aria-pressed="true"
-                >
-                  Key
-                </button>
-                <button
-                  type="button"
-                  data-mode="group"
-                  aria-pressed="false"
-                >
-                  Group
-                </button>
-              </div>
-            </div>
-
-            <div class="pps-field">
-              <label class="pps-label">X (inputs)</label>
-              <div class="pps-multi" data-side="x">
-                <button type="button" class="pps-multi-toggle" data-role="toggle">
-                  <span class="pps-multi-summary" id="pps-x-summary">All X</span>
-                  <span class="pps-multi-toggle-chevron">▾</span>
-                </button>
-                <div class="pps-multi-menu" id="pps-x-menu" data-side="x">
-                  <!-- populated by JS -->
-                </div>
-              </div>
-            </div>
-
-            <div class="pps-field">
-              <label class="pps-label">Y (outputs)</label>
-              <div class="pps-multi" data-side="y">
-                <button type="button" class="pps-multi-toggle" data-role="toggle">
-                  <span class="pps-multi-summary" id="pps-y-summary">All Y</span>
-                  <span class="pps-multi-toggle-chevron">▾</span>
-                </button>
-                <div class="pps-multi-menu" id="pps-y-menu" data-side="y">
-                  <!-- populated by JS -->
-                </div>
-              </div>
-            </div>
-
-            <button type="button" class="pps-button-ghost" id="pps-reset-filters">
-              Reset Filters
-            </button>
+        <h1 class="pps-title">Proverb Pair Search (PPS)</h1>
+        <p class="pps-subtitle">
+          Explore a curated set of X &rarr; Y proverb pairs from Proverbs, grouped by keys and
+          high-level themes. Use filters to find patterns, and switch to Bubble view to see how
+          ideas connect.
+        </p>
+        <div class="pps-tagline">
+          <div class="pps-tag-pill">
+            <span class="pps-tag-dot"></span>
+            <span>Pairs from Proverbs only</span>
           </div>
-
-          <div class="pps-group" style="justify-content: flex-end;">
-            <div class="pps-field">
-              <label class="pps-label" for="pps-sort-select">Sort by</label>
-              <select id="pps-sort-select">
-                <option value="ref">Reference (default)</option>
-                <option value="book_ch">Book + chapter</option>
-                <option value="x_key">X key (A–Z)</option>
-                <option value="y_key">Y key (A–Z)</option>
-                <option value="x_group">X group (A–Z)</option>
-                <option value="y_group">Y group (A–Z)</option>
-              </select>
-            </div>
+          <div class="pps-tag-pill">
+            <span class="pps-tag-dot"></span>
+            <span>Mode: Keys or Groups</span>
           </div>
-        </div>
-
-        <!-- Stats row -->
-        <div class="pps-stats-row">
-          <div class="pps-stats-counts">
-            <span class="pps-stats-pill" id="pps-count-main">– pairs</span>
-            <span class="pps-stats-pill" id="pps-count-book">Book: –</span>
-            <span class="pps-stats-pill" id="pps-count-chapter">Chapter: –</span>
-          </div>
-          <div class="pps-inline-label" id="pps-filter-summary">
-            No filters applied.
-          </div>
-        </div>
-
-        <!-- Pairs list -->
-        <div class="pps-pairs-shell" id="pps-pairs-shell">
-          <div class="pps-pairs-header">
-            <div class="pps-pairs-title">Pairs</div>
-            <div class="pps-pairs-subtitle" id="pps-pairs-subtitle">
-              Waiting for data…
-            </div>
-          </div>
-          <div id="pps-pairs-list">
-            <div class="pps-pairs-empty">
-              PPS data has not finished loading yet.
-            </div>
+          <div class="pps-tag-pill">
+            <span class="pps-tag-dot"></span>
+            <span>Front-end uses exported JSON only</span>
           </div>
         </div>
       </div>
-    </section>
+      <div class="pps-meta-block">
+        <div class="pps-badge" aria-live="polite">
+          <span class="pps-status-dot" id="pps-status-dot"></span>
+          <span class="pps-status-text" id="pps-status-text">Checking dataset&hellip;</span>
+          <span class="pps-status-label" id="pps-status-label">/tools-games/tools/pps/</span>
+        </div>
+        <div class="pps-badge-below">
+          <div>Data source: <strong>final_pairs.json</strong></div>
+          <div>Export config + warnings also loaded for context.</div>
+        </div>
+      </div>
+    </header>
 
-    <!-- SIDE PANEL -->
-    <aside class="pps-sidepanel" aria-label="PPS data and export details">
-      <div class="pps-sidepanel-inner">
-        <div class="pps-side-header">
-          <div class="pps-side-title">PPS Dataset</div>
-          <div class="pps-side-pill">
-            <span class="pps-side-pill-dot"></span>
-            <span id="pps-side-pill-label">Loading</span>
+    <main class="pps-layout">
+      <section aria-label="Proverb Pair filters and results">
+        <div class="pps-maincard">
+          <div class="pps-maincard-header">
+            <div>
+              <div class="pps-maincard-title">Filters + Results</div>
+              <div class="pps-maincard-subtitle">
+                Filter by reference, status, and X/Y keys or groups. Toggle between
+                list view and Bubble map without reloading data.
+              </div>
+            </div>
+            <div class="pps-maincard-kpis" aria-hidden="true">
+              <div class="pps-kpi">
+                <span class="pps-kpi-label">Pairs</span>
+                <span class="pps-kpi-value" id="pps-count-main">0</span>
+              </div>
+              <div class="pps-kpi">
+                <span class="pps-kpi-label">Book</span>
+                <span class="pps-kpi-value" id="pps-count-book">0</span>
+              </div>
+              <div class="pps-kpi">
+                <span class="pps-kpi-label">Chapter</span>
+                <span class="pps-kpi-value" id="pps-count-chapter">0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pps-maincard-body">
+            <div class="pps-filters-card" aria-label="Filters">
+              <div class="pps-fieldrow">
+                <div class="pps-field">
+                  <label class="pps-label" for="pps-book-select">
+                    Book
+                  </label>
+                  <select id="pps-book-select" class="pps-select">
+                    <option value="">All books (export)</option>
+                  </select>
+                </div>
+                <div class="pps-field">
+                  <label class="pps-label" for="pps-chapter-select">
+                    Chapter
+                  </label>
+                  <select id="pps-chapter-select" class="pps-select">
+                    <option value="">All chapters</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="pps-fieldrow">
+                <div class="pps-field">
+                  <label class="pps-label" for="pps-status-select">
+                    Status
+                  </label>
+                  <select id="pps-status-select" class="pps-select">
+                    <option value="">All statuses</option>
+                  </select>
+                </div>
+                <div class="pps-field-compact">
+                  <label class="pps-label">
+                    Mode
+                  </label>
+                  <div class="pps-mode-toggle" id="pps-mode-toggle" role="radiogroup" aria-label="X/Y mode">
+                    <button
+                      type="button"
+                      class="pps-mode-btn pps-mode-btn-active"
+                      data-mode="key"
+                      aria-pressed="true"
+                    >
+                      Keys
+                    </button>
+                    <button
+                      type="button"
+                      class="pps-mode-btn"
+                      data-mode="group"
+                      aria-pressed="false"
+                    >
+                      Groups
+                    </button>
+                  </div>
+                  <div class="pps-mode-caption">
+                    Choose whether X/Y filters use <strong>keys</strong> or
+                    <strong>groups</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="pps-fieldrow">
+                <div class="pps-field">
+                  <label class="pps-label">
+                    X (source)
+                  </label>
+                  <div class="pps-multi" data-side="x">
+                    <button
+                      type="button"
+                      class="pps-multi-toggle"
+                      id="pps-x-toggle"
+                      aria-haspopup="listbox"
+                      aria-expanded="false"
+                    >
+                      <div class="pps-multi-label">
+                        <span class="pps-multi-main" id="pps-x-main">All X</span>
+                        <span class="pps-multi-sub" id="pps-x-sub">
+                          No specific X filter
+                        </span>
+                      </div>
+                      <span class="pps-multi-caret"></span>
+                    </button>
+                    <div
+                      class="pps-multi-menu"
+                      id="pps-x-menu"
+                      role="listbox"
+                      aria-multiselectable="true"
+                    >
+                      <!-- populated dynamically -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pps-field">
+                  <label class="pps-label">
+                    Y (target)
+                  </label>
+                  <div class="pps-multi" data-side="y">
+                    <button
+                      type="button"
+                      class="pps-multi-toggle"
+                      id="pps-y-toggle"
+                      aria-haspopup="listbox"
+                      aria-expanded="false"
+                    >
+                      <div class="pps-multi-label">
+                        <span class="pps-multi-main" id="pps-y-main">All Y</span>
+                        <span class="pps-multi-sub" id="pps-y-sub">
+                          No specific Y filter
+                        </span>
+                      </div>
+                      <span class="pps-multi-caret"></span>
+                    </button>
+                    <div
+                      class="pps-multi-menu"
+                      id="pps-y-menu"
+                      role="listbox"
+                      aria-multiselectable="true"
+                    >
+                      <!-- populated dynamically -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pps-group">
+                <div class="pps-field">
+                  <label class="pps-label" for="pps-sort-select">Sort by</label>
+                  <select id="pps-sort-select" class="pps-select">
+                    <option value="ref">Reference (default)</option>
+                    <option value="book_ch">Book + chapter</option>
+                    <option value="x_key">X key (A–Z)</option>
+                    <option value="y_key">Y key (A–Z)</option>
+                    <option value="x_group">X group (A–Z)</option>
+                    <option value="y_group">Y group (A–Z)</option>
+                  </select>
+                </div>
+
+                <button type="button" class="pps-button-ghost" id="pps-reset-filters">
+                  Reset Filters
+                </button>
+              </div>
+
+              <div class="pps-filter-summary" id="pps-filter-summary">
+                No filters active yet. All exported pairs are in view.
+              </div>
+            </div>
+
+            <div class="pps-pairs-shell" id="pps-pairs-shell">
+              <div class="pps-pairs-header">
+                <div class="pps-pairs-title">Pairs</div>
+                <div class="pps-pairs-header-right">
+                  <div
+                    class="pps-view-toggle"
+                    id="pps-view-toggle"
+                    role="radiogroup"
+                    aria-label="View mode"
+                  >
+                    <button
+                      type="button"
+                      class="pps-view-button pps-view-active"
+                      data-view="list"
+                      aria-pressed="true"
+                    >
+                      List
+                    </button>
+                    <button
+                      type="button"
+                      class="pps-view-button"
+                      data-view="bubble"
+                      aria-pressed="false"
+                    >
+                      Bubble
+                    </button>
+                  </div>
+                  <div class="pps-pairs-subtitle" id="pps-pairs-subtitle">
+                    Waiting for data…
+                  </div>
+                </div>
+              </div>
+
+              <!-- List view container -->
+              <div id="pps-pairs-list-container">
+                <div id="pps-pairs-list">
+                  <div class="pps-pairs-empty">
+                    PPS data has not finished loading yet.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bubble view container -->
+              <div id="pps-bubble-shell" class="pps-bubble-shell pps-hidden">
+                <!-- SVG bubble map will be injected here -->
+              </div>
+            </div>
+          </div>
+
+          <div class="pps-stats-bar" aria-live="polite">
+            <div class="pps-stats-left">
+              <span class="pps-stat-pill">
+                <strong id="pps-count-main">0</strong> matching pairs
+              </span>
+              <span class="pps-stat-pill">
+                Book: <strong id="pps-count-book">0</strong>
+              </span>
+              <span class="pps-stat-pill">
+                Chapter: <strong id="pps-count-chapter">0</strong>
+              </span>
+            </div>
+            <div class="pps-stats-right">
+              <span class="pps-stats-label">Current view</span>
+              <span class="pps-stats-value" id="pps-view-label">
+                List of pairs
+              </span>
+            </div>
+          </div>
+
+          <div class="pps-stats-caption">
+            <div class="pps-stats-counts">
+              <span>Dataset pairs: <strong id="pps-side-pairs-total-inline">–</strong></span>
+              <span>Books: <strong id="pps-side-books-inline">–</strong></span>
+              <span>Chapters: <strong id="pps-side-chapters-inline">–</strong></span>
+            </div>
+            <div class="pps-stats-warnings">
+              Non-fatal row/field issues:
+              <strong id="pps-side-warnings-inline">loading…</strong>
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- Meta -->
-        <section class="pps-side-section" aria-label="PPS meta">
-          <div class="pps-side-section-header">
-            <div class="pps-side-section-title">Data snapshot</div>
-            <a
-              class="pps-link"
-              href="{{ '/data/v1/pps/final_pairs.json' | relative_url }}"
-            >
-              Raw JSON
-            </a>
+      <!-- SIDE PANEL -->
+      <aside class="pps-sidepanel" aria-label="PPS data and export details">
+        <div class="pps-sidepanel-inner">
+          <div class="pps-side-header">
+            <div class="pps-side-title">PPS Dataset</div>
+            <div class="pps-side-pill">
+              <span class="pps-side-pill-label" id="pps-side-pill-label">Status</span>
+              <span class="pps-side-pill-value" id="pps-side-pairs-total">–</span>
+            </div>
           </div>
-          <div class="pps-side-kv">
-            <span class="pps-side-kv-label">Pairs</span>
-            <span class="pps-side-kv-value" id="pps-side-pairs-total">–</span>
-          </div>
+
           <div class="pps-side-kv">
             <span class="pps-side-kv-label">Books</span>
             <span class="pps-side-kv-value" id="pps-side-books">–</span>
@@ -840,62 +1285,45 @@ permalink: /tools-games/tools/pps/
             <span class="pps-side-kv-label">Exported at</span>
             <span class="pps-side-kv-value" id="pps-side-generated-at">–</span>
           </div>
-          <p class="pps-side-note">
-            Values shown here are computed from <code>final_pairs.json</code> and the export metadata.
-          </p>
-        </section>
-
-        <!-- Export config -->
-        <section class="pps-side-section" aria-label="Export config">
-          <div class="pps-side-section-header">
-            <div class="pps-side-section-title">Export config</div>
-            <a
-              class="pps-link"
-              href="{{ '/data/v1/pps/pps_export_config.v1.json' | relative_url }}"
-            >
-              View config
-            </a>
-          </div>
           <div class="pps-side-kv">
             <span class="pps-side-kv-label">Config source</span>
-            <span class="pps-side-kv-value" id="pps-side-config-source">–</span>
+            <span class="pps-side-kv-value" id="pps-side-config-source">
+              /data/v1/pps/pps_export_config.v1.json
+            </span>
           </div>
-          <div class="pps-side-kv">
-            <span class="pps-side-kv-label">Warnings</span>
-            <span class="pps-side-kv-value" id="pps-side-warnings-total">–</span>
-          </div>
-          <p class="pps-side-note">
-            The config controls which fields are exported for the tool. Front-end filters are derived from the same
-            structure.
-          </p>
-        </section>
 
-        <!-- Notes -->
-        <section class="pps-side-section" aria-label="Usage notes">
-          <div class="pps-side-section-header">
-            <div class="pps-side-section-title">Usage notes</div>
+          <div class="pps-warnings">
+            <div>
+              <strong id="pps-side-warnings-total">–</strong> non-fatal issues were recorded when
+              building this export.
+            </div>
+            <div>
+              See <code>final_pairs_warnings.json</code> for details
+              (row numbers, columns, and messages).
+            </div>
           </div>
-          <div class="pps-tags">
-            <span class="pps-tag">Book filter</span>
-            <span class="pps-tag">Chapter filter</span>
-            <span class="pps-tag">Status filter</span>
-            <span class="pps-tag">X/Y key mode</span>
-            <span class="pps-tag">X/Y group mode</span>
-            <span class="pps-tag">Sortable results</span>
-          </div>
-          <p class="pps-side-note">
-            Future versions can add multi-book and multi-chapter selection and more advanced X/Y queries.
-          </p>
-        </section>
 
-        <div class="pps-footer-note">
-          Data source: <code>/data/v1/pps/final_pairs.json</code><br />
-          Config: <code>/data/v1/pps/pps_export_config.v1.json</code>
+          <div class="pps-meta-guidance">
+            <strong>Note:</strong> PPS uses the exported JSON
+            (<code>final_pairs.json</code>) as its only source of truth. The original spreadsheet
+            is not used directly on this page.
+          </div>
+
+          <div class="pps-side-footer">
+            <div>
+              Data format: <code>docs/data/v1/pps/final_pairs.json</code>. For details on how Bible
+              text is handled elsewhere in v1, see the Bible Tools v1 contract.
+            </div>
+            <div>
+              For raw data and tooling, see the GitHub repo under
+              <code>tools/pps/</code> and <code>docs/data/v1/pps/</code>.
+            </div>
+          </div>
         </div>
-      </div>
-    </aside>
-  </section>
-</main>
+      </aside>
+    </main>
+  </div>
+</div>
 
 <script>
   (function () {
@@ -904,6 +1332,12 @@ permalink: /tools-games/tools/pps/
     const PPS_DATA_URL = "{{ '/data/v1/pps/final_pairs.json' | relative_url }}";
     const PPS_CONFIG_URL = "{{ '/data/v1/pps/pps_export_config.v1.json' | relative_url }}";
     const PPS_WARNINGS_URL = "{{ '/data/v1/pps/final_pairs_warnings.json' | relative_url }}";
+
+    const VIEW_MODES = {
+      LIST: "list",
+      BUBBLE: "bubble"
+    };
+    const VIEW_MODE_STORAGE_KEY = "pps_view_mode";
 
     const bookSelect = document.getElementById("pps-book-select");
     const chapterSelect = document.getElementById("pps-chapter-select");
@@ -916,8 +1350,10 @@ permalink: /tools-games/tools/pps/
 
     const xMenu = document.getElementById("pps-x-menu");
     const yMenu = document.getElementById("pps-y-menu");
-    const xSummary = document.getElementById("pps-x-summary");
-    const ySummary = document.getElementById("pps-y-summary");
+    const xSummary = document.getElementById("pps-x-main");
+    const ySummary = document.getElementById("pps-y-main");
+    const xSubSummary = document.getElementById("pps-x-sub");
+    const ySubSummary = document.getElementById("pps-y-sub");
 
     const statusDot = document.getElementById("pps-status-dot");
     const statusText = document.getElementById("pps-status-text");
@@ -925,6 +1361,13 @@ permalink: /tools-games/tools/pps/
 
     const pairsList = document.getElementById("pps-pairs-list");
     const pairsSubtitle = document.getElementById("pps-pairs-subtitle");
+
+    const listContainer = document.getElementById("pps-pairs-list-container");
+    const bubbleShell = document.getElementById("pps-bubble-shell");
+    const viewToggle = document.getElementById("pps-view-toggle");
+    const viewButtons = viewToggle
+      ? viewToggle.querySelectorAll("button[data-view]")
+      : [];
 
     const countMain = document.getElementById("pps-count-main");
     const countBook = document.getElementById("pps-count-book");
@@ -938,6 +1381,13 @@ permalink: /tools-games/tools/pps/
     const sideGeneratedAt = document.getElementById("pps-side-generated-at");
     const sideConfigSource = document.getElementById("pps-side-config-source");
     const sideWarningsTotal = document.getElementById("pps-side-warnings-total");
+
+    const sidePairsTotalInline = document.getElementById("pps-side-pairs-total-inline");
+    const sideBooksInline = document.getElementById("pps-side-books-inline");
+    const sideChaptersInline = document.getElementById("pps-side-chapters-inline");
+    const sideWarningsInline = document.getElementById("pps-side-warnings-inline");
+
+    const viewLabel = document.getElementById("pps-view-label");
 
     const EMPTY_TOKEN = "__EMPTY__";
 
@@ -954,10 +1404,12 @@ permalink: /tools-games/tools/pps/
         chapter: "",
         status: "",
         mode: "key", // "key" or "group"
-        x: [],       // array of values (including EMPTY_TOKEN)
+        x: [], // array of values (including EMPTY_TOKEN)
         y: [],
         sort: "ref"
-      }
+      },
+      viewMode: VIEW_MODES.LIST,
+      bubbleGraph: null
     };
 
     function setStatus(mode, message) {
@@ -971,10 +1423,9 @@ permalink: /tools-games/tools/pps/
         statusDot.classList.add("pps-error");
       }
 
-      statusText.textContent = message || "";
-      statusLabel.textContent = message || "";
-      sidePillLabel.textContent =
-        mode === "ok" ? "Ready" : mode === "loading" ? "Loading" : "Error";
+      if (message != null) {
+        statusText.textContent = message;
+      }
     }
 
     function toStringOrEmpty(value) {
@@ -1001,7 +1452,9 @@ permalink: /tools-games/tools/pps/
           const bookCode = String(bookCodeRaw);
           const bookName = ref.book_name ? String(ref.book_name) : bookCode.toUpperCase();
           const chapterVal = ref.chapter;
-          const chapterKey = chapterVal !== undefined && chapterVal !== null ? String(chapterVal) : null;
+          const chapterKey = chapterVal !== undefined && chapterVal !== null && chapterVal !== ""
+            ? String(chapterVal)
+            : "";
 
           if (!booksIndex.has(bookCode)) {
             booksIndex.set(bookCode, {
@@ -1010,7 +1463,7 @@ permalink: /tools-games/tools/pps/
               chapters: new Set()
             });
           }
-          if (chapterKey !== null && chapterKey !== "") {
+          if (chapterKey) {
             booksIndex.get(bookCode).chapters.add(chapterKey);
           }
         }
@@ -1020,34 +1473,22 @@ permalink: /tools-games/tools/pps/
           statuses.add(String(statusVal));
         }
 
-        const xKey = x.key;
-        const yKey = y.key;
-        const xGroup = x.group;
-        const yGroup = y.group;
+        const xKey = toStringOrEmpty(x.key);
+        const yKey = toStringOrEmpty(y.key);
+        const xGroup = toStringOrEmpty(x.group);
+        const yGroup = toStringOrEmpty(y.group);
 
-        if (xKey !== undefined && xKey !== null && xKey !== "") {
-          keyOptionsX.add(String(xKey));
-        } else {
-          keyOptionsX.add(EMPTY_TOKEN);
-        }
+        if (xKey === "") keyOptionsX.add(EMPTY_TOKEN);
+        else keyOptionsX.add(xKey);
 
-        if (yKey !== undefined && yKey !== null && yKey !== "") {
-          keyOptionsY.add(String(yKey));
-        } else {
-          keyOptionsY.add(EMPTY_TOKEN);
-        }
+        if (yKey === "") keyOptionsY.add(EMPTY_TOKEN);
+        else keyOptionsY.add(yKey);
 
-        if (xGroup !== undefined && xGroup !== null && xGroup !== "") {
-          groupOptionsX.add(String(xGroup));
-        } else {
-          groupOptionsX.add(EMPTY_TOKEN);
-        }
+        if (xGroup === "") groupOptionsX.add(EMPTY_TOKEN);
+        else groupOptionsX.add(xGroup);
 
-        if (yGroup !== undefined && yGroup !== null && yGroup !== "") {
-          groupOptionsY.add(String(yGroup));
-        } else {
-          groupOptionsY.add(EMPTY_TOKEN);
-        }
+        if (yGroup === "") groupOptionsY.add(EMPTY_TOKEN);
+        else groupOptionsY.add(yGroup);
       });
 
       state.booksIndex = booksIndex;
@@ -1056,72 +1497,51 @@ permalink: /tools-games/tools/pps/
       state.groupOptions = { x: groupOptionsX, y: groupOptionsY };
     }
 
-    function sortChapterValues(values) {
-      return values.slice().sort((a, b) => {
-        const na = Number(a);
-        const nb = Number(b);
-        const aNum = !isNaN(na);
-        const bNum = !isNaN(nb);
-
-        if (aNum && bNum) return na - nb;
-        if (aNum && !bNum) return -1;
-        if (!aNum && bNum) return 1;
-        return String(a).localeCompare(String(b));
-      });
-    }
-
     function populateBookSelect() {
       bookSelect.innerHTML = "";
-      const defaultOpt = document.createElement("option");
-      defaultOpt.value = "";
-      defaultOpt.textContent = "All books";
-      bookSelect.appendChild(defaultOpt);
+      const optAll = document.createElement("option");
+      optAll.value = "";
+      optAll.textContent = "All books (export)";
+      bookSelect.appendChild(optAll);
 
-      const books = Array.from(state.booksIndex.values()).sort((a, b) =>
+      const entries = Array.from(state.booksIndex.values()).sort((a, b) =>
         a.name.localeCompare(b.name)
       );
 
-      books.forEach((book) => {
+      entries.forEach((book) => {
         const opt = document.createElement("option");
         opt.value = book.code;
         opt.textContent = book.name;
         bookSelect.appendChild(opt);
       });
 
-      bookSelect.value = state.filters.book || "";
+      if (state.filters.book) {
+        bookSelect.value = state.filters.book;
+      }
     }
 
     function populateChapterSelect() {
       chapterSelect.innerHTML = "";
+      const optAll = document.createElement("option");
+      optAll.value = "";
+      optAll.textContent = "All chapters";
+      chapterSelect.appendChild(optAll);
 
-      if (!state.filters.book) {
-        chapterSelect.disabled = true;
-        const opt = document.createElement("option");
-        opt.value = "";
-        opt.textContent = "Select book first";
-        chapterSelect.appendChild(opt);
-        state.filters.chapter = "";
-        return;
-      }
-
-      const book = state.booksIndex.get(state.filters.book);
+      const { book } = state.filters;
       if (!book) {
-        chapterSelect.disabled = true;
-        const opt = document.createElement("option");
-        opt.value = "";
-        opt.textContent = "No chapters";
-        chapterSelect.appendChild(opt);
-        state.filters.chapter = "";
+        chapterSelect.value = "";
         return;
       }
 
-      const chapters = sortChapterValues(Array.from(book.chapters));
-      chapterSelect.disabled = false;
+      const bookEntry = state.booksIndex.get(book);
+      if (!bookEntry) {
+        chapterSelect.value = "";
+        return;
+      }
 
-      const anyOpt = document.createElement("option");
-      anyOpt.value = "";
-      anyOpt.textContent = "All chapters";
-      chapterSelect.appendChild(anyOpt);
+      const chapters = Array.from(bookEntry.chapters).sort((a, b) =>
+        Number(a) - Number(b)
+      );
 
       chapters.forEach((ch) => {
         const opt = document.createElement("option");
@@ -1130,128 +1550,101 @@ permalink: /tools-games/tools/pps/
         chapterSelect.appendChild(opt);
       });
 
-      if (
-        state.filters.chapter &&
-        !chapters.includes(state.filters.chapter)
-      ) {
-        state.filters.chapter = "";
+      if (state.filters.chapter) {
+        chapterSelect.value = state.filters.chapter;
       }
-
-      chapterSelect.value = state.filters.chapter || "";
     }
 
     function populateStatusSelect() {
-      const current = state.filters.status || "";
       statusSelect.innerHTML = "";
+      const optAll = document.createElement("option");
+      optAll.value = "";
+      optAll.textContent = "All statuses";
+      statusSelect.appendChild(optAll);
 
-      const anyOpt = document.createElement("option");
-      anyOpt.value = "";
-      anyOpt.textContent = "All statuses";
-      statusSelect.appendChild(anyOpt);
-
-      const statuses = Array.from(state.statuses).sort((a, b) =>
-        a.localeCompare(b)
-      );
-
-      statuses.forEach((s) => {
+      const statuses = Array.from(state.statuses).sort((a, b) => a.localeCompare(b));
+      statuses.forEach((code) => {
         const opt = document.createElement("option");
-        opt.value = s;
-        opt.textContent = s;
+        opt.value = code;
+        opt.textContent = code;
         statusSelect.appendChild(opt);
       });
 
-      statusSelect.value = current;
-    }
-
-    function getBaseFilteredPairs() {
-      // Filter only by book/chapter/status (used to derive X/Y options)
-      const { book, chapter, status } = state.filters;
-      let filtered = state.allPairs;
-
-      if (book) {
-        filtered = filtered.filter((pair) => {
-          const ref = pair.ref || {};
-          return toStringOrEmpty(ref.book) === book;
-        });
+      if (state.filters.status) {
+        statusSelect.value = state.filters.status;
       }
-
-      if (chapter) {
-        filtered = filtered.filter((pair) => {
-          const ref = pair.ref || {};
-          const chVal = ref.chapter;
-          return toStringOrEmpty(chVal) === chapter;
-        });
-      }
-
-      if (status) {
-        filtered = filtered.filter((pair) => {
-          const st = pair.status || {};
-          return toStringOrEmpty(st.status) === status;
-        });
-      }
-
-      return filtered;
     }
 
     function buildXYOptionsForBase() {
-      const mode = state.filters.mode || "key";
-      const basePairs = getBaseFilteredPairs();
-
+      const { book, chapter, status } = state.filters;
       const xSet = new Set();
       const ySet = new Set();
 
-      basePairs.forEach((pair) => {
+      state.allPairs.forEach((pair) => {
+        const ref = pair.ref || {};
+        const st = pair.status || {};
         const x = pair.x || {};
         const y = pair.y || {};
 
-        const xVal =
-          mode === "group"
-            ? toStringOrEmpty(x.group)
-            : toStringOrEmpty(x.key);
-        const yVal =
-          mode === "group"
-            ? toStringOrEmpty(y.group)
-            : toStringOrEmpty(y.key);
-
-        if (xVal === "") {
-          xSet.add(EMPTY_TOKEN);
-        } else {
-          xSet.add(xVal);
+        if (book) {
+          const bookCode = toStringOrEmpty(ref.book);
+          if (bookCode !== book) return;
         }
 
-        if (yVal === "") {
-          ySet.add(EMPTY_TOKEN);
-        } else {
-          ySet.add(yVal);
+        if (chapter) {
+          const chapterVal = ref.chapter;
+          const chapterKey =
+            chapterVal !== undefined && chapterVal !== null && chapterVal !== ""
+              ? String(chapterVal)
+              : "";
+          if (chapterKey !== chapter) return;
         }
+
+        if (status) {
+          const stVal = toStringOrEmpty(st.status);
+          if (stVal !== status) return;
+        }
+
+        const xKey = toStringOrEmpty(x.key);
+        const yKey = toStringOrEmpty(y.key);
+        const xGroup = toStringOrEmpty(x.group);
+        const yGroup = toStringOrEmpty(y.group);
+
+        const xValue =
+          state.filters.mode === "group"
+            ? xGroup === "" ? EMPTY_TOKEN : xGroup
+            : xKey === "" ? EMPTY_TOKEN : xKey;
+
+        const yValue =
+          state.filters.mode === "group"
+            ? yGroup === "" ? EMPTY_TOKEN : yGroup
+            : yKey === "" ? EMPTY_TOKEN : yKey;
+
+        xSet.add(xValue);
+        ySet.add(yValue);
       });
 
       return { xSet, ySet };
     }
 
-    function renderMultiMenu(side, valuesSet) {
+    function renderMultiMenu(side, values) {
       const menu = side === "x" ? xMenu : yMenu;
-      const summaryEl = side === "x" ? xSummary : ySummary;
-      const selectedValues = side === "x" ? state.filters.x : state.filters.y;
-
+      const selected = side === "x" ? state.filters.x : state.filters.y;
       menu.innerHTML = "";
 
-      const values = Array.from(valuesSet).sort((a, b) => {
+      const valuesArr = Array.from(values).sort((a, b) => {
         if (a === EMPTY_TOKEN && b !== EMPTY_TOKEN) return -1;
-        if (b === EMPTY_TOKEN && a !== EMPTY_TOKEN) return 1;
-        if (a === EMPTY_TOKEN && b === EMPTY_TOKEN) return 0;
+        if (a !== EMPTY_TOKEN && b === EMPTY_TOKEN) return 1;
         return a.localeCompare(b);
       });
 
-      // "All" pseudo-item
       const allItem = document.createElement("div");
       allItem.className = "pps-multi-item";
       const allCheckbox = document.createElement("input");
       allCheckbox.type = "checkbox";
-      allCheckbox.value = "";
       allCheckbox.dataset.side = side;
       allCheckbox.dataset.role = "all";
-      allCheckbox.checked = selectedValues.length === 0;
+      allCheckbox.checked = selected.length === 0;
       const allLabel = document.createElement("span");
       allLabel.className = "pps-multi-item-label-main";
       allLabel.textContent = side === "x" ? "All X" : "All Y";
@@ -1259,7 +1652,7 @@ permalink: /tools-games/tools/pps/
       allItem.appendChild(allLabel);
       menu.appendChild(allItem);
 
-      values.forEach((val) => {
+      valuesArr.forEach((val) => {
         const item = document.createElement("div");
         item.className = "pps-multi-item";
 
@@ -1268,104 +1661,128 @@ permalink: /tools-games/tools/pps/
         cb.dataset.side = side;
         cb.dataset.role = "value";
         cb.value = val;
+        cb.checked = selected.includes(val);
 
-        if (selectedValues.includes(val)) {
-          cb.checked = true;
+        const labelWrapper = document.createElement("div");
+        labelWrapper.style.display = "flex";
+        labelWrapper.style.flexDirection = "column";
+
+        const labelMain = document.createElement("span");
+        labelMain.className = "pps-multi-item-label-main";
+
+        if (val === EMPTY_TOKEN) {
+          labelMain.textContent = "(blank)";
+          labelMain.classList.add("pps-multi-item-blank");
+        } else {
+          labelMain.textContent = val;
         }
 
-        const main = document.createElement("span");
-        main.className = "pps-multi-item-label-main";
-        main.textContent = val === EMPTY_TOKEN ? "– (blank)" : val;
+        labelWrapper.appendChild(labelMain);
+
+        const labelSub = document.createElement("span");
+        labelSub.className = "pps-multi-item-label-sub";
+        labelSub.textContent =
+          val === EMPTY_TOKEN
+            ? "Pairs where this side has no key/group"
+            : "Appears at least once in this subset";
+        labelWrapper.appendChild(labelSub);
 
         item.appendChild(cb);
-        item.appendChild(main);
+        item.appendChild(labelWrapper);
         menu.appendChild(item);
       });
 
-      updateMultiSummary(side);
-    }
+      const footer = document.createElement("div");
+      footer.className = "pps-multi-footer";
 
-    function updateMultiSummary(side) {
-      const summaryEl = side === "x" ? xSummary : ySummary;
-      const selected = side === "x" ? state.filters.x : state.filters.y;
+      const info = document.createElement("span");
+      const count =
+        valuesArr.length === 0
+          ? "0"
+          : String(valuesArr.length);
+      info.innerHTML = `Showing <strong>${count}</strong> options`;
+      footer.appendChild(info);
 
-      if (!selected || selected.length === 0) {
-        summaryEl.textContent = side === "x" ? "All X" : "All Y";
-        return;
-      }
+      const clearBtn = document.createElement("button");
+      clearBtn.type = "button";
+      clearBtn.dataset.side = side;
+      clearBtn.dataset.role = "clear";
+      clearBtn.textContent = "Clear";
+      footer.appendChild(clearBtn);
 
-      if (selected.length === 1) {
-        const val = selected[0] === EMPTY_TOKEN ? "– (blank)" : selected[0];
-        summaryEl.textContent = val;
-        return;
-      }
-
-      summaryEl.textContent = selected.length + " selected";
+      menu.appendChild(footer);
     }
 
     function populateXYMenus() {
       const { xSet, ySet } = buildXYOptionsForBase();
 
-      // Shrink selections to the currently valid set
       state.filters.x = (state.filters.x || []).filter((v) => xSet.has(v));
       state.filters.y = (state.filters.y || []).filter((v) => ySet.has(v));
 
       renderMultiMenu("x", xSet);
       renderMultiMenu("y", ySet);
+      updateMultiSummary("x");
+      updateMultiSummary("y");
     }
 
     function applyFilters() {
       const { book, chapter, status, mode, x, y } = state.filters;
 
-      let filtered = state.allPairs;
+      let filtered = state.allPairs.filter((pair) => {
+        const ref = pair.ref || {};
+        const st = pair.status || {};
+        const xSide = pair.x || {};
+        const ySide = pair.y || {};
 
-      if (book) {
-        filtered = filtered.filter((pair) => {
-          const ref = pair.ref || {};
-          return toStringOrEmpty(ref.book) === book;
-        });
-      }
+        if (book) {
+          const bookCode = toStringOrEmpty(ref.book);
+          if (bookCode !== book) return false;
+        }
 
-      if (chapter) {
-        filtered = filtered.filter((pair) => {
-          const ref = pair.ref || {};
-          const chVal = ref.chapter;
-          return toStringOrEmpty(chVal) === chapter;
-        });
-      }
+        if (chapter) {
+          const chapterVal = ref.chapter;
+          const chapterKey =
+            chapterVal !== undefined && chapterVal !== null && chapterVal !== ""
+              ? String(chapterVal)
+              : "";
+          if (chapterKey !== chapter) return false;
+        }
 
-      if (status) {
-        filtered = filtered.filter((pair) => {
-          const st = pair.status || {};
-          return toStringOrEmpty(st.status) === status;
-        });
-      }
+        if (status) {
+          const stVal = toStringOrEmpty(st.status);
+          if (stVal !== status) return false;
+        }
 
-      if (Array.isArray(x) && x.length > 0) {
-        filtered = filtered.filter((pair) => {
-          const side = pair.x || {};
-          const raw =
-            mode === "group"
-              ? toStringOrEmpty(side.group)
-              : toStringOrEmpty(side.key);
-          const val = raw === "" ? EMPTY_TOKEN : raw;
-          return x.includes(val);
-        });
-      }
+        const xKey = toStringOrEmpty(xSide.key);
+        const yKey = toStringOrEmpty(ySide.key);
+        const xGroup = toStringOrEmpty(xSide.group);
+        const yGroup = toStringOrEmpty(ySide.group);
 
-      if (Array.isArray(y) && y.length > 0) {
-        filtered = filtered.filter((pair) => {
-          const side = pair.y || {};
-          const raw =
-            mode === "group"
-              ? toStringOrEmpty(side.group)
-              : toStringOrEmpty(side.key);
-          const val = raw === "" ? EMPTY_TOKEN : raw;
-          return y.includes(val);
-        });
-      }
+        const xVal =
+          mode === "group"
+            ? xGroup === "" ? EMPTY_TOKEN : xGroup
+            : xKey === "" ? EMPTY_TOKEN : xKey;
+        const yVal =
+          mode === "group"
+            ? yGroup === "" ? EMPTY_TOKEN : yGroup
+            : yKey === "" ? EMPTY_TOKEN : yKey;
 
-      return sortPairs(filtered);
+        if (x && x.length > 0 && !x.includes(xVal)) return false;
+        if (y && y.length > 0 && !y.includes(yVal)) return false;
+
+        return true;
+      });
+
+      filtered = sortPairs(filtered);
+      return filtered;
+    }
+
+    function cmpStr(a, b) {
+      const aa = (a || "").toString().toLowerCase();
+      const bb = (b || "").toString().toLowerCase();
+      if (aa < bb) return -1;
+      if (aa > bb) return 1;
+      return 0;
     }
 
     function sortPairs(pairs) {
@@ -1380,19 +1797,12 @@ permalink: /tools-games/tools/pps/
         const yA = a.y || {};
         const yB = b.y || {};
 
-        function cmpStr(sa, sb) {
-          const a = toStringOrEmpty(sa);
-          const b = toStringOrEmpty(sb);
-          return a.localeCompare(b);
-        }
-
         switch (mode) {
-          case "book_ch":
-            return (
-              cmpStr(refA.book, refB.book) ||
-              (Number(refA.chapter) || 0) - (Number(refB.chapter) || 0) ||
-              cmpStr(refA.ref_id, refB.ref_id)
-            );
+          case "book_ch": {
+            const comboA = `${refA.book || ""}.${refA.chapter || ""}`;
+            const comboB = `${refB.book || ""}.${refB.chapter || ""}`;
+            return cmpStr(comboA, comboB) || cmpStr(refA.ref_id, refB.ref_id);
+          }
           case "x_key":
             return cmpStr(xA.key, xB.key) || cmpStr(refA.ref_id, refB.ref_id);
           case "y_key":
@@ -1410,44 +1820,248 @@ permalink: /tools-games/tools/pps/
       return copy;
     }
 
+    function buildBubbleGraph(pairs) {
+      const mode = state.filters.mode || "key";
+      const nodesMap = new Map();
+      const edgesMap = new Map();
+
+      function getOrCreateNode(val, isX) {
+        if (!nodesMap.has(val)) {
+          nodesMap.set(val, {
+            id: val,
+            label: val,
+            count: 0,
+            xCount: 0,
+            yCount: 0
+          });
+        }
+        const node = nodesMap.get(val);
+        node.count += 1;
+        if (isX) node.xCount += 1;
+        else node.yCount += 1;
+        return node;
+      }
+
+      pairs.forEach((pair) => {
+        const xSide = pair.x || {};
+        const ySide = pair.y || {};
+
+        const rawX =
+          mode === "group"
+            ? toStringOrEmpty(xSide.group)
+            : toStringOrEmpty(xSide.key);
+        const rawY =
+          mode === "group"
+            ? toStringOrEmpty(ySide.group)
+            : toStringOrEmpty(ySide.key);
+
+        const hasX = rawX !== "";
+        const hasY = rawY !== "";
+        const xVal = hasX ? rawX : "(blank)";
+        const yVal = hasY ? rawY : "(blank)";
+
+        if (!hasX && !hasY) return;
+
+        if (hasX) getOrCreateNode(xVal, true);
+        if (hasY) getOrCreateNode(yVal, false);
+
+        if (hasX && hasY) {
+          const edgeKey = xVal + "→" + yVal;
+          if (!edgesMap.has(edgeKey)) {
+            edgesMap.set(edgeKey, {
+              source: xVal,
+              target: yVal,
+              count: 0,
+              pairs: []
+            });
+          }
+          const edge = edgesMap.get(edgeKey);
+          edge.count += 1;
+          if (pair.id) {
+            edge.pairs.push(String(pair.id));
+          }
+        }
+      });
+
+      return {
+        nodes: Array.from(nodesMap.values()),
+        edges: Array.from(edgesMap.values()),
+        meta: {
+          totalPairs: pairs.length,
+          mode
+        }
+      };
+    }
+
+    function renderBubbleFromPairs(filtered) {
+      if (!bubbleShell) return;
+
+      bubbleShell.innerHTML = "";
+
+      if (!filtered.length) {
+        const div = document.createElement("div");
+        div.className = "pps-bubble-empty";
+        div.textContent = "No pairs match the current filters.";
+        bubbleShell.appendChild(div);
+        return;
+      }
+
+      const graph = buildBubbleGraph(filtered);
+      state.bubbleGraph = graph;
+
+      const rect = bubbleShell.getBoundingClientRect();
+      const width = Math.max(rect.width || 600, 320);
+      const height = Math.max(rect.height || 400, 320);
+
+      const svgNS = "http://www.w3.org/2000/svg";
+      const svg = document.createElementNS(svgNS, "svg");
+      svg.setAttribute("viewBox", "0 0 " + width + " " + height);
+      svg.setAttribute("role", "img");
+      svg.setAttribute(
+        "aria-label",
+        "Bubble map of X to Y relationships for current filters"
+      );
+
+      const edgesGroup = document.createElementNS(svgNS, "g");
+      const nodesGroup = document.createElementNS(svgNS, "g");
+      const labelsGroup = document.createElementNS(svgNS, "g");
+
+      const centerX = width / 2;
+      const centerY = height / 2;
+
+      const nodeCount = graph.nodes.length || 1;
+      const maxCount = graph.nodes.reduce(
+        (m, n) => (n.count > m ? n.count : m),
+        1
+      );
+
+      const minR = 10;
+      const maxR = 40;
+      const radiusForCount = (c) =>
+        minR + (maxR - minR) * (c / maxCount);
+
+      const orbitRadius = Math.max(
+        Math.min(width, height) / 2 - maxR - 10,
+        60
+      );
+
+      graph.nodes.forEach((node, i) => {
+        const angle = (2 * Math.PI * i) / nodeCount;
+        const x = centerX + orbitRadius * Math.cos(angle);
+        const y = centerY + orbitRadius * Math.sin(angle);
+        const r = radiusForCount(node.count);
+
+        node._x = x;
+        node._y = y;
+        node._r = r;
+      });
+
+      graph.edges.forEach((edge) => {
+        const source = graph.nodes.find((n) => n.id === edge.source);
+        const target = graph.nodes.find((n) => n.id === edge.target);
+        if (!source || !target) return;
+
+        const line = document.createElementNS(svgNS, "line");
+        line.setAttribute("x1", source._x);
+        line.setAttribute("y1", source._y);
+        line.setAttribute("x2", target._x);
+        line.setAttribute("y2", target._y);
+
+        const thickness = 0.5 + Math.min(edge.count, 5) * 0.7;
+        line.setAttribute("stroke-width", thickness);
+        line.setAttribute("stroke", "rgba(148,163,184,0.7)");
+        line.setAttribute("stroke-linecap", "round");
+
+        edgesGroup.appendChild(line);
+      });
+
+      graph.nodes.forEach((node) => {
+        const circle = document.createElementNS(svgNS, "circle");
+        circle.setAttribute("cx", node._x);
+        circle.setAttribute("cy", node._y);
+        circle.setAttribute("r", node._r);
+        circle.setAttribute("fill", "rgba(250,204,21,0.12)");
+        circle.setAttribute("stroke", "rgba(250,204,21,0.9)");
+        circle.setAttribute("stroke-width", "1.5");
+
+        nodesGroup.appendChild(circle);
+
+        const label = document.createElementNS(svgNS, "text");
+        label.setAttribute("x", node._x);
+        label.setAttribute("y", node._y);
+        label.setAttribute("text-anchor", "middle");
+        label.setAttribute("dominant-baseline", "middle");
+        label.setAttribute("font-size", "10");
+        label.setAttribute("fill", "#e5e7eb");
+        label.textContent = node.label;
+
+        labelsGroup.appendChild(label);
+      });
+
+      svg.appendChild(edgesGroup);
+      svg.appendChild(nodesGroup);
+      svg.appendChild(labelsGroup);
+
+      bubbleShell.appendChild(svg);
+    }
+
+    function updateViewModeUI() {
+      const isBubble = state.viewMode === VIEW_MODES.BUBBLE;
+
+      if (listContainer) {
+        listContainer.classList.toggle("pps-hidden", isBubble);
+      }
+      if (bubbleShell) {
+        bubbleShell.classList.toggle("pps-hidden", !isBubble);
+      }
+
+      if (viewButtons && viewButtons.length) {
+        viewButtons.forEach((btn) => {
+          const view = btn.getAttribute("data-view");
+          const active =
+            (view === "bubble" && isBubble) ||
+            (view === "list" && !isBubble);
+          btn.classList.toggle("pps-view-active", active);
+          btn.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+      }
+
+      if (viewLabel) {
+        viewLabel.textContent =
+          isBubble ? "Bubble map of X→Y relationships" : "List of pairs";
+      }
+    }
+
     function updateCounts(filtered) {
       const total = state.allPairs.length;
-      const selected = filtered.length;
+      const subsetCount = filtered.length;
 
-      countMain.textContent = selected + " / " + total + " pairs";
+      countMain.textContent = String(subsetCount);
 
-      if (state.filters.book) {
-        const bookInfo = state.booksIndex.get(state.filters.book);
-        const label = bookInfo ? bookInfo.name : state.filters.book;
-        countBook.textContent = "Book: " + label;
+      const { book, chapter } = state.filters;
+      if (!book) {
+        countBook.textContent = "0";
+        countChapter.textContent = "0";
       } else {
-        countBook.textContent = "Book: All";
+        const bookEntry = state.booksIndex.get(book);
+        countBook.textContent = bookEntry ? "1" : "0";
+
+        if (!chapter) {
+          countChapter.textContent = bookEntry
+            ? String(bookEntry.chapters.size)
+            : "0";
+        } else {
+          countChapter.textContent = "1";
+        }
       }
 
-      if (!state.filters.book || !state.filters.chapter) {
-        countChapter.textContent = "Chapter: All";
-      } else {
-        countChapter.textContent = "Chapter: " + state.filters.chapter;
+      sidePairsTotalInline.textContent = total != null ? String(total) : "–";
+      sideBooksInline.textContent = sideBooks.textContent || "–";
+      sideChaptersInline.textContent = sideChapters.textContent || "–";
+
+      if (state.totalWarnings != null) {
+        sideWarningsInline.textContent = String(state.totalWarnings);
       }
-
-      const activeFilters = [];
-      if (state.filters.book) activeFilters.push("Book");
-      if (state.filters.chapter) activeFilters.push("Chapter");
-      if (state.filters.status) activeFilters.push("Status");
-      if (Array.isArray(state.filters.x) && state.filters.x.length) activeFilters.push("X");
-      if (Array.isArray(state.filters.y) && state.filters.y.length) activeFilters.push("Y");
-
-      if (!activeFilters.length) {
-        filterSummary.textContent = "No filters applied.";
-      } else {
-        filterSummary.textContent =
-          "Active filters: " + activeFilters.join(", ") + ".";
-      }
-
-      pairsSubtitle.textContent =
-        selected === 0
-          ? "No pairs match the current filters."
-          : "Showing " + selected + " pair" + (selected === 1 ? "" : "s") + ".";
     }
 
     function renderPairs(filtered) {
@@ -1458,122 +2072,280 @@ permalink: /tools-games/tools/pps/
         div.className = "pps-pairs-empty";
         div.textContent = "No pairs match the current filters.";
         pairsList.appendChild(div);
+        pairsSubtitle.textContent = "0 matching pairs.";
         return;
       }
 
+      pairsSubtitle.textContent = `${filtered.length} matching pairs.`;
+
       filtered.forEach((pair) => {
+        const card = document.createElement("article");
+        card.className = "pps-pair-card";
+
         const ref = pair.ref || {};
         const status = pair.status || {};
         const x = pair.x || {};
         const y = pair.y || {};
 
-        const card = document.createElement("article");
-        card.className = "pps-pair-card";
-        card.dataset.id = toStringOrEmpty(pair.id);
-
         const header = document.createElement("div");
-        header.className = "pps-pair-header-row";
+        header.className = "pps-pair-header";
 
-        const refLabel = document.createElement("div");
-        refLabel.className = "pps-pair-ref";
-        refLabel.textContent = toStringOrEmpty(ref.ref_str || ref.ref_id || ref.book);
+        const left = document.createElement("div");
+        const refMain = document.createElement("div");
+        refMain.className = "pps-ref-main";
+        refMain.textContent = ref.ref_str || ref.ref_id || "Unknown ref";
+        left.appendChild(refMain);
 
-        const statusChip = document.createElement("div");
-        statusChip.className = "pps-status-chip";
-        const stVal = toStringOrEmpty(status.status);
-        const rvVal = toStringOrEmpty(status.rv);
-        const uvVal = toStringOrEmpty(status.uv);
-        statusChip.textContent = stVal
-          ? stVal + (uvVal ? " • " + uvVal : rvVal ? " • " + rvVal : "")
-          : "–";
+        const refSub = document.createElement("div");
+        refSub.className = "pps-ref-sub";
+        refSub.textContent = `${ref.book_name || ref.book || ""} • ch. ${
+          ref.chapter != null ? ref.chapter : "?"
+        }`;
+        left.appendChild(refSub);
 
-        header.appendChild(refLabel);
-        header.appendChild(statusChip);
+        header.appendChild(left);
 
-        const cols = document.createElement("div");
-        cols.className = "pps-pair-columns";
+        const chip = document.createElement("div");
+        chip.className = "pps-status-chip";
+        const codeSpan = document.createElement("span");
+        codeSpan.textContent = status.status || "–";
+        chip.appendChild(codeSpan);
 
-        const xCol = document.createElement("div");
-        xCol.className = "pps-pair-col";
-        const xLabel = document.createElement("div");
-        xLabel.className = "pps-pair-label";
-        xLabel.textContent = "X side";
-        const xKey = document.createElement("div");
-        xKey.className = "pps-pair-key";
-        xKey.textContent = toStringOrEmpty(x.key) || "–";
-        const xGroup = document.createElement("div");
-        xGroup.className = "pps-pair-group";
-        const xGroupVal = toStringOrEmpty(x.group);
-        xGroup.textContent = xGroupVal ? "Group: " + xGroupVal : "";
-        xCol.appendChild(xLabel);
-        xCol.appendChild(xKey);
-        if (xGroupVal) xCol.appendChild(xGroup);
+        const verSpan = document.createElement("span");
+        const rv = status.rv || "";
+        const uv = status.uv || "";
+        verSpan.textContent = rv || uv ? `rv ${rv || uv}` : "no version";
+        chip.appendChild(verSpan);
 
-        const yCol = document.createElement("div");
-        yCol.className = "pps-pair-col";
-        const yLabel = document.createElement("div");
-        yLabel.className = "pps-pair-label";
-        yLabel.textContent = "Y side";
-        const yKey = document.createElement("div");
-        yKey.className = "pps-pair-key";
-        yKey.textContent = toStringOrEmpty(y.key) || "–";
-        const yGroup = document.createElement("div");
-        yGroup.className = "pps-pair-group";
-        const yGroupVal = toStringOrEmpty(y.group);
-        yGroup.textContent = yGroupVal ? "Group: " + yGroupVal : "";
-        yCol.appendChild(yLabel);
-        yCol.appendChild(yKey);
-        if (yGroupVal) yCol.appendChild(yGroup);
-
-        cols.appendChild(xCol);
-        cols.appendChild(yCol);
-
-        const meta = document.createElement("div");
-        meta.className = "pps-pair-meta";
-        const idSpan = document.createElement("span");
-        idSpan.textContent = "ID: " + toStringOrEmpty(pair.id);
-        const refIdSpan = document.createElement("span");
-        refIdSpan.textContent = "ref_id: " + toStringOrEmpty(ref.ref_id);
-        meta.appendChild(idSpan);
-        meta.appendChild(refIdSpan);
+        header.appendChild(chip);
 
         card.appendChild(header);
-        card.appendChild(cols);
-        card.appendChild(meta);
+
+        const body = document.createElement("div");
+        body.className = "pps-pair-body";
+
+        const xCol = document.createElement("div");
+        const xTag = document.createElement("div");
+        xTag.className = "pps-side-tag";
+        xTag.textContent = "X (source)";
+        xCol.appendChild(xTag);
+
+        const xMain = document.createElement("div");
+        xMain.className = "pps-side-main";
+        xMain.textContent = x.key || "(blank)";
+        xCol.appendChild(xMain);
+
+        const xSub = document.createElement("div");
+        xSub.className = "pps-side-sub";
+        xSub.textContent =
+          x.group && x.key
+            ? `Group: ${x.group}`
+            : x.group
+            ? x.group
+            : x.key
+            ? "No group assigned"
+            : "No key/group assigned";
+        xCol.appendChild(xSub);
+
+        body.appendChild(xCol);
+
+        const yCol = document.createElement("div");
+        const yTag = document.createElement("div");
+        yTag.className = "pps-side-tag";
+        yTag.textContent = "Y (target)";
+        yCol.appendChild(yTag);
+
+        const yMain = document.createElement("div");
+        yMain.className = "pps-side-main";
+        yMain.textContent = y.key || "(blank)";
+        yCol.appendChild(yMain);
+
+        const ySub = document.createElement("div");
+        ySub.className = "pps-side-sub";
+        ySub.textContent =
+          y.group && y.key
+            ? `Group: ${y.group}`
+            : y.group
+            ? y.group
+            : y.key
+            ? "No group assigned"
+            : "No key/group assigned";
+        yCol.appendChild(ySub);
+
+        body.appendChild(yCol);
+
+        card.appendChild(body);
+
+        const metaRow = document.createElement("div");
+        metaRow.className = "pps-meta-row";
+        const leftMeta = document.createElement("span");
+        leftMeta.innerHTML = `<strong>ID:</strong> ${pair.id || "n/a"}`;
+        const rightMeta = document.createElement("span");
+        rightMeta.innerHTML = `<strong>Ref ID:</strong> ${ref.ref_id || "n/a"}`;
+        metaRow.appendChild(leftMeta);
+        metaRow.appendChild(rightMeta);
+        card.appendChild(metaRow);
 
         pairsList.appendChild(card);
       });
     }
 
+    function updateMultiSummary(side) {
+      const selected = side === "x" ? state.filters.x : state.filters.y;
+      const summaryMain = side === "x" ? xSummary : ySummary;
+      const summarySub = side === "x" ? xSubSummary : ySubSummary;
+
+      if (!selected || selected.length === 0) {
+        summaryMain.textContent = side === "x" ? "All X" : "All Y";
+        summarySub.textContent = "No specific filter";
+        return;
+      }
+
+      if (selected.length === 1 && selected[0] === EMPTY_TOKEN) {
+        summaryMain.textContent = "(blank only)";
+        summarySub.textContent = "Only pairs with no key/group";
+        return;
+      }
+
+      if (selected.length === 1) {
+        const single = selected[0] === EMPTY_TOKEN ? "(blank)" : selected[0];
+        summaryMain.textContent = single;
+        summarySub.textContent = "Single selection";
+        return;
+      }
+
+      summaryMain.textContent = `${selected.length} selected`;
+      summarySub.textContent = "Multiple values";
+    }
+
+    function closeAllMenus() {
+      xMenu.classList.remove("pps-open");
+      yMenu.classList.remove("pps-open");
+
+      const toggles = document.querySelectorAll(".pps-multi-toggle");
+      toggles.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
+    }
+
+    function updateFilterSummaryText() {
+      const { book, chapter, status, x, y, mode } = state.filters;
+      const parts = [];
+
+      if (book) {
+        const bookEntry = state.booksIndex.get(book);
+        parts.push(`Book: ${bookEntry ? bookEntry.name : book}`);
+      } else {
+        parts.push("Book: all");
+      }
+
+      if (chapter) {
+        parts.push(`Chapter: ${chapter}`);
+      } else {
+        parts.push("Chapter: all");
+      }
+
+      if (status) {
+        parts.push(`Status: ${status}`);
+      } else {
+        parts.push("Status: all");
+      }
+
+      const modeLabel = mode === "group" ? "groups" : "keys";
+
+      if (x && x.length > 0) {
+        parts.push(`X (${modeLabel}): ${x.length} selected`);
+      } else {
+        parts.push(`X (${modeLabel}): all`);
+      }
+
+      if (y && y.length > 0) {
+        parts.push(`Y (${modeLabel}): ${y.length} selected`);
+      } else {
+        parts.push(`Y (${modeLabel}): all`);
+      }
+
+      filterSummary.textContent = parts.join(" · ");
+    }
+
     function updateUI() {
       const filtered = applyFilters();
       updateCounts(filtered);
-      renderPairs(filtered);
+
+      if (state.viewMode === VIEW_MODES.BUBBLE) {
+        renderBubbleFromPairs(filtered);
+      } else {
+        renderPairs(filtered);
+      }
+
+      updateFilterSummaryText();
     }
 
     function setMode(mode) {
       state.filters.mode = mode === "group" ? "group" : "key";
-      // persist mode only
       try {
         localStorage.setItem("pps_mode", state.filters.mode);
       } catch (e) {}
 
       modeButtons.forEach((btn) => {
         const m = btn.getAttribute("data-mode");
-        const active = m === state.filters.mode;
-        btn.classList.toggle("pps-toggle-active", active);
-        btn.setAttribute("aria-pressed", active ? "true" : "false");
+        const isActive = m === state.filters.mode;
+        btn.classList.toggle("pps-mode-btn-active", isActive);
+        btn.setAttribute("aria-pressed", isActive ? "true" : "false");
       });
 
-      // When mode changes, keep current X/Y selections if they still exist in the new option set
       populateXYMenus();
       updateUI();
     }
 
-    function closeAllMenus() {
-      document.querySelectorAll(".pps-multi-menu.pps-open").forEach((el) => {
-        el.classList.remove("pps-open");
-      });
+    function handleMultiChange(event) {
+      const cb = event.target;
+      if (!cb || cb.type !== "checkbox") return;
+      const side = cb.dataset.side;
+      if (!side) return;
+
+      const menu = side === "x" ? xMenu : yMenu;
+      const values = Array.from(
+        menu.querySelectorAll('input[type="checkbox"][data-role="value"]')
+      );
+
+      const allCb = menu.querySelector('input[type="checkbox"][data-role="all"]');
+      const clearBtn = menu.querySelector('button[data-role="clear"]');
+
+      if (cb.dataset.role === "all") {
+        const checkAll = cb.checked;
+        values.forEach((v) => {
+          v.checked = false;
+        });
+
+        if (!checkAll) {
+          if (side === "x") state.filters.x = [];
+          else state.filters.y = [];
+        } else {
+          const allValues = values.map((v) => v.value);
+          if (side === "x") state.filters.x = allValues;
+          else state.filters.y = allValues;
+        }
+      } else if (cb.dataset.role === "value") {
+        const selectedValues = values
+          .filter((v) => v.checked)
+          .map((v) => v.value);
+
+        if (side === "x") state.filters.x = selectedValues;
+        else state.filters.y = selectedValues;
+
+        allCb.checked = selectedValues.length === 0;
+      }
+
+      updateMultiSummary(side);
+      updateUI();
+
+      if (clearBtn && event.target === clearBtn) {
+        if (side === "x") state.filters.x = [];
+        else state.filters.y = [];
+        values.forEach((v) => (v.checked = false));
+        allCb.checked = true;
+        updateMultiSummary(side);
+        updateUI();
+      }
     }
 
     function attachFilterHandlers() {
@@ -1609,7 +2381,6 @@ permalink: /tools-games/tools/pps/
         });
       });
 
-      // Multi dropdown toggles
       document.addEventListener("click", (event) => {
         const target = event.target;
         const toggle = target.closest(".pps-multi-toggle");
@@ -1623,6 +2394,9 @@ permalink: /tools-games/tools/pps/
           closeAllMenus();
           if (!isOpen) {
             menuEl.classList.add("pps-open");
+            toggle.setAttribute("aria-expanded", "true");
+          } else {
+            toggle.setAttribute("aria-expanded", "false");
           }
           return;
         }
@@ -1632,9 +2406,24 @@ permalink: /tools-games/tools/pps/
         }
       });
 
-      // Multi dropdown checkbox handling
       xMenu.addEventListener("change", handleMultiChange);
       yMenu.addEventListener("change", handleMultiChange);
+
+      xMenu.addEventListener("click", (event) => {
+        if (event.target.dataset.role === "clear") {
+          state.filters.x = [];
+          populateXYMenus();
+          updateUI();
+        }
+      });
+
+      yMenu.addEventListener("click", (event) => {
+        if (event.target.dataset.role === "clear") {
+          state.filters.y = [];
+          populateXYMenus();
+          updateUI();
+        }
+      });
 
       resetButton.addEventListener("click", () => {
         state.filters.book = "";
@@ -1644,7 +2433,6 @@ permalink: /tools-games/tools/pps/
         state.filters.y = [];
         state.filters.sort = "ref";
 
-        // Mode stays as last-used; do not reset mode on full reset.
         bookSelect.value = "";
         populateBookSelect();
         populateChapterSelect();
@@ -1653,80 +2441,64 @@ permalink: /tools-games/tools/pps/
         populateXYMenus();
         updateUI();
       });
-    }
 
-    function handleMultiChange(event) {
-      const cb = event.target;
-      if (!cb || cb.type !== "checkbox") return;
-      const side = cb.dataset.side;
-      if (!side) return;
+      if (viewToggle && viewButtons && viewButtons.length) {
+        viewButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const view = btn.getAttribute("data-view");
+            const nextMode =
+              view === "bubble" ? VIEW_MODES.BUBBLE : VIEW_MODES.LIST;
 
-      const menu = side === "x" ? xMenu : yMenu;
-      const values = [];
-      const checkboxes = menu.querySelectorAll('input[type="checkbox"][data-role="value"]');
+            if (state.viewMode === nextMode) return;
 
-      if (cb.dataset.role === "all") {
-        // All X/Y -> clear selections
-        checkboxes.forEach((c) => {
-          c.checked = false;
+            state.viewMode = nextMode;
+            try {
+              localStorage.setItem(VIEW_MODE_STORAGE_KEY, state.viewMode);
+            } catch (e) {}
+
+            updateViewModeUI();
+            updateUI();
+          });
         });
-        if (side === "x") state.filters.x = [];
-        else state.filters.y = [];
-      } else {
-        // Turn off "all" if any specific is selected
-        const allCb = menu.querySelector('input[type="checkbox"][data-role="all"]');
-        if (allCb) allCb.checked = false;
-
-        checkboxes.forEach((c) => {
-          if (c.checked) {
-            values.push(c.value);
-          }
-        });
-
-        if (side === "x") state.filters.x = values;
-        else state.filters.y = values;
-
-        // If nothing selected, revert to "all"
-        if (values.length === 0 && allCb) {
-          allCb.checked = true;
-        }
       }
-
-      updateMultiSummary(side);
-      updateUI();
     }
 
     async function loadConfigMeta() {
       try {
         const res = await fetch(PPS_CONFIG_URL, { cache: "no-store" });
-        if (!res.ok) return;
-        const cfg = await res.json();
-
-        const exportMeta = cfg.export_meta || {};
-        sideConfigSource.textContent = exportMeta.config_source_file
-          ? exportMeta.config_source_file
-          : "tools-side config";
-        if (exportMeta.generated_at) {
-          sideGeneratedAt.textContent = exportMeta.generated_at;
-          state.metaGeneratedAt = exportMeta.generated_at;
+        if (!res.ok) throw new Error("Config fetch failed");
+        const json = await res.json();
+        const metaSource = json && json.meta && json.meta.source;
+        if (metaSource) {
+          sideConfigSource.textContent = metaSource;
         }
       } catch (err) {
-        console.warn("Failed to load PPS export config:", err);
+        console.warn("Unable to load PPS export config:", err);
       }
     }
 
     async function loadWarningsMeta() {
       try {
         const res = await fetch(PPS_WARNINGS_URL, { cache: "no-store" });
-        if (!res.ok) return;
+        if (!res.ok) throw new Error("Warnings fetch failed");
         const json = await res.json();
-        const stats = json.meta && json.meta.stats ? json.meta.stats : null;
-        if (stats && typeof stats.warnings_total === "number") {
-          state.totalWarnings = stats.warnings_total;
-          sideWarningsTotal.textContent = String(stats.warnings_total);
+        const total = json && typeof json.total === "number"
+          ? json.total
+          : Array.isArray(json.warnings)
+          ? json.warnings.length
+          : null;
+        state.totalWarnings = total;
+        if (total != null) {
+          sideWarningsTotal.textContent = String(total);
+          sideWarningsInline.textContent = String(total);
+        } else {
+          sideWarningsTotal.textContent = "0";
+          sideWarningsInline.textContent = "0";
         }
       } catch (err) {
-        console.warn("Failed to load PPS warnings file:", err);
+        console.warn("Unable to load PPS warnings:", err);
+        sideWarningsTotal.textContent = "–";
+        sideWarningsInline.textContent = "–";
       }
     }
 
@@ -1743,6 +2515,13 @@ permalink: /tools-games/tools/pps/
         if (storedMode === "key" || storedMode === "group") {
           state.filters.mode = storedMode;
         }
+
+        try {
+          const storedView = localStorage.getItem(VIEW_MODE_STORAGE_KEY);
+          if (storedView === VIEW_MODES.BUBBLE) {
+            state.viewMode = VIEW_MODES.BUBBLE;
+          }
+        } catch (e) {}
 
         const res = await fetch(PPS_DATA_URL, { cache: "no-store" });
         if (!res.ok) {
@@ -1779,6 +2558,7 @@ permalink: /tools-games/tools/pps/
         }
 
         setStatus("ok", "Ready");
+        updateViewModeUI();
         updateUI();
 
         loadConfigMeta();
@@ -1786,12 +2566,14 @@ permalink: /tools-games/tools/pps/
       } catch (err) {
         console.error(err);
         setStatus("error", "Failed to load PPS data.");
-        pairsList.innerHTML = "";
-        const div = document.createElement("div");
-        div.className = "pps-pairs-empty";
-        div.textContent =
-          "Unable to load PPS data. Check that final_pairs.json is present and valid.";
-        pairsList.appendChild(div);
+        if (pairsList) {
+          pairsList.innerHTML = "";
+          const div = document.createElement("div");
+          div.className = "pps-pairs-empty";
+          div.textContent =
+            "Unable to load PPS data. Check that final_pairs.json is present and valid.";
+          pairsList.appendChild(div);
+        }
       }
     }
 

@@ -1,39 +1,590 @@
 ---
-layout: default
-title: Daily Tools
+layout: tool
+title: "Daily"
 permalink: /daily/
+tool_id: daily
+data_version: v1
+bible_config_path: /data/v1/tools/bible-viewer/index.json
+daily_verse_calendar_path: /data/v1/tools/daily/daily-verse-calendar.v1.json
 ---
 
-<section class="hub-page">
-  <h1>{{ page.title }}</h1>
-  <p class="hub-intro">
-    Quick daily tools for Scripture and reflection. (TBD)
-  </p>
-  <hr class="hub-divider">
+<div
+  class="tool-page tool-page-daily"
+  data-tool-id="daily"
+  data-site-baseurl="{{ site.baseurl }}"
+  data-bible-config="{{ site.baseurl }}{{ page.bible_config_path }}"
+  data-daily-verse-calendar="{{ site.baseurl }}{{ page.daily_verse_calendar_path }}"
+>
 
-  <div class="hub-grid">
-    <a href="{{ '/daily/verse/' | relative_url }}" class="hub-tile tile-daily-verse">
-      <h2>Daily Verse</h2>
-      <p>See a verse of the day.</p>
-    </a>
+  <header class="tool-page-header">
+    <h1 class="tool-page-title">Daily</h1>
+    <p class="tool-page-subtitle">
+      Start with something fun, move into Scripture, reflect, and then step outward.
+    </p>
+  </header>
 
-    <a href="{{ '/daily/proverb/' | relative_url }}" class="hub-tile tile-daily-proverb">
-      <h2>Daily Proverb</h2>
-      <p>See a proverb of the day.</p>
-    </a>
+  <!-- 1. Daily Game (BibleLE placeholder) -->
+  <section id="daily-game" class="daily-section" aria-labelledby="daily-game-title">
+    <header class="daily-section-header">
+      <h2 id="daily-game-title" class="daily-section-title">Daily Game</h2>
+      <p class="daily-section-subtitle">Today’s puzzle to get you started.</p>
+    </header>
 
-    <a href="{{ '/daily/trivia/' | relative_url }}" class="hub-tile tile-daily-trivia">
-      <h2>Daily Trivia</h2>
-      <p>Play the daily trivia questions.</p>
-    </a>
+    <div class="daily-card" data-role="daily-game-card">
+      <div class="daily-meta" id="daily-game-meta">
+        Game of the day: BibleLE (placeholder)
+      </div>
 
-    <a href="{{ '/daily/game/' | relative_url }}" class="hub-tile tile-daily-game">
-      <h2>Daily Game</h2>
-      <p>Jump into a rotating daily game.</p>
-    </a>
-  </div>
+      <div id="daily-game-container" class="daily-placeholder">
+        BibleLE board / launch UI will be rendered here.
+      </div>
 
-  <nav class="daily-nav">
-    <a href="{{ '/' | relative_url }}">Back to Home</a>
-  </nav>
-</section>
+      <div class="daily-cta-row">
+        <button
+          type="button"
+          class="daily-btn primary"
+          id="daily-game-play-btn"
+          data-game-id="biblele"
+        >
+          Play today’s BibleLE
+        </button>
+        <button
+          type="button"
+          class="daily-btn"
+          id="daily-game-howto-btn"
+          data-game-id="biblele"
+        >
+          How to play
+        </button>
+      </div>
+    </div>
+
+    <div class="daily-cta-row daily-archive-row">
+      <a
+        href="{{ site.baseurl }}/daily/game/"
+        class="daily-btn"
+        id="daily-game-archive-link"
+      >
+        See past daily games
+      </a>
+    </div>
+  </section>
+
+  <!-- 2. Daily Trivia -->
+  <section id="daily-trivia" class="daily-section" aria-labelledby="daily-trivia-title">
+    <header class="daily-section-header">
+      <h2 id="daily-trivia-title" class="daily-section-title">Daily Trivia</h2>
+      <p class="daily-section-subtitle">Test your Bible knowledge in one question.</p>
+    </header>
+
+    <div class="daily-card" data-role="daily-trivia-card">
+      <div class="daily-meta" id="daily-trivia-meta">
+        <!-- Example: “Difficulty: Medium • OT Narrative” -->
+        Trivia metadata placeholder.
+      </div>
+
+      <div id="daily-trivia-question" class="daily-placeholder">
+        Daily trivia question text will be inserted here (from JSON or data file).
+      </div>
+
+      <div class="daily-cta-row">
+        <button
+          type="button"
+          class="daily-btn primary"
+          id="daily-trivia-reveal-btn"
+          data-role="daily-trivia-reveal-btn"
+        >
+          Reveal answer
+        </button>
+        <a
+          href="{{ site.baseurl }}/tools/trivia/"
+          class="daily-link"
+          id="daily-trivia-more-link"
+        >
+          More trivia
+        </a>
+      </div>
+
+      <div
+        id="daily-trivia-answer"
+        class="daily-placeholder"
+        data-role="daily-trivia-answer"
+        hidden
+      >
+        Trivia answer and references will be shown here.
+      </div>
+    </div>
+
+    <div class="daily-cta-row daily-archive-row">
+      <a
+        href="{{ site.baseurl }}/daily/trivia/"
+        class="daily-btn"
+        id="daily-trivia-archive-link"
+      >
+        See past daily trivia
+      </a>
+    </div>
+  </section>
+
+  <!-- 3. Daily Verse -->
+  <section id="daily-verse" class="daily-section" aria-labelledby="daily-verse-title">
+    <header class="daily-section-header">
+      <h2 id="daily-verse-title" class="daily-section-title">Daily Verse</h2>
+      <p class="daily-section-subtitle">A short passage to carry with you today.</p>
+    </header>
+
+    <div
+      class="daily-card"
+      data-role="daily-verse-card"
+    >
+      <div class="daily-meta" id="daily-verse-reference" data-role="daily-verse-ref">
+        Daily verse reference placeholder.
+      </div>
+
+      <div id="daily-verse-text" class="daily-placeholder" data-role="daily-verse-text">
+        Daily verse text will be inserted here from the calendar JSON.
+      </div>
+
+      <div class="daily-cta-row">
+        <a
+          href="#"
+          class="daily-btn"
+          id="daily-verse-open-link"
+          data-role="daily-verse-open-link"
+        >
+          Open in Bible viewer
+        </a>
+      </div>
+    </div>
+
+    <div class="daily-cta-row daily-archive-row">
+      <a
+        href="{{ site.baseurl }}/daily/verses/"
+        class="daily-btn"
+        id="daily-verse-archive-link"
+      >
+        See past daily verses
+      </a>
+    </div>
+  </section>
+
+  <!-- 4. Daily Proverb (hooked to day-of-month) -->
+  <section id="daily-proverb" class="daily-section" aria-labelledby="daily-proverb-title">
+    <header class="daily-section-header">
+      <h2 id="daily-proverb-title" class="daily-section-title">Daily Proverb</h2>
+      <p class="daily-section-subtitle">A deeper wisdom passage for meditation.</p>
+    </header>
+
+    <div
+      class="daily-card"
+      data-role="daily-proverb-card"
+      data-book-code="PRO"
+      data-chapter-mode="day-of-month"
+    >
+      <div
+        class="daily-meta"
+        id="daily-proverb-reference"
+        data-role="daily-proverb-ref"
+      >
+        Proverb reference placeholder.
+      </div>
+
+      <div
+        id="daily-proverb-text"
+        class="daily-placeholder"
+        data-role="daily-proverb-text"
+      >
+        Daily proverb text (e.g., Proverbs [day-of-month]) will be inserted here once wired
+        to Bible JSON.
+      </div>
+
+      <p
+        id="daily-proverb-prompt"
+        class="daily-reflection-hint"
+        data-role="daily-proverb-prompt"
+      >
+        What aspect of this wisdom speaks to your life today?
+      </p>
+
+      <div class="daily-cta-row">
+        <a
+          href="#"
+          class="daily-link"
+          id="daily-proverb-open-link"
+          data-role="daily-proverb-open-link"
+        >
+          Read this proverb in context
+        </a>
+      </div>
+    </div>
+
+    <div class="daily-cta-row daily-archive-row">
+      <a
+        href="{{ site.baseurl }}/daily/proverbs/"
+        class="daily-btn"
+        id="daily-proverb-archive-link"
+      >
+        See past daily proverbs
+      </a>
+    </div>
+  </section>
+
+  <!-- 5. Daily Reflection Question -->
+  <section id="daily-reflection" class="daily-section" aria-labelledby="daily-reflection-title">
+    <header class="daily-section-header">
+      <h2 id="daily-reflection-title" class="daily-section-title">Daily Reflection</h2>
+      <p class="daily-section-subtitle">Pause, think, and respond.</p>
+    </header>
+
+    <div class="daily-card" data-role="daily-reflection-card">
+      <p
+        id="daily-reflection-question"
+        class="daily-reflection-question"
+        data-role="daily-reflection-question"
+      >
+        Reflection question placeholder (e.g., “What is one way you can respond to today’s
+        verse?”).
+      </p>
+      <p
+        class="daily-reflection-hint"
+        id="daily-reflection-hint"
+        data-role="daily-reflection-hint"
+      >
+        Write 1–3 sentences. Your response may be shared to the community reflections board.
+      </p>
+
+      <form
+        id="daily-reflection-form"
+        action="#"
+        method="post"
+        data-target="community-reflection-endpoint"
+      >
+        <label for="daily-reflection-text" class="visually-hidden">Your reflection</label>
+        <textarea
+          id="daily-reflection-text"
+          name="reflection_text"
+          class="daily-reflection-textarea"
+          placeholder="Type your reflection here..."
+        ></textarea>
+
+        <div class="daily-cta-row" style="margin-top: 0.75rem;">
+          <button
+            type="submit"
+            class="daily-btn primary"
+            id="daily-reflection-submit-btn"
+            data-role="daily-reflection-submit-btn"
+          >
+            Share reflection
+          </button>
+        </div>
+
+        <p
+          class="daily-reflection-note"
+          id="daily-reflection-note"
+          data-role="daily-reflection-note"
+        >
+          Note: In a future dynamic version, this will post to a community board under your
+          profile or as an anonymous entry.
+        </p>
+      </form>
+    </div>
+
+    <div class="daily-cta-row daily-archive-row">
+      <a
+        href="{{ site.baseurl }}/daily/reflections/"
+        class="daily-btn"
+        id="daily-reflection-archive-link"
+      >
+        See past daily reflections
+      </a>
+    </div>
+  </section>
+
+  <!-- 6. Next Steps / Suggested Actions -->
+  <section
+    id="daily-next-steps"
+    class="daily-section"
+    aria-labelledby="daily-next-steps-title"
+  >
+    <header class="daily-section-header">
+      <h2 id="daily-next-steps-title" class="daily-section-title">Next Steps</h2>
+      <p class="daily-section-subtitle">Keep going with prayer, community, and serving.</p>
+    </header>
+
+    <div class="daily-next-grid">
+      <div class="daily-card">
+        <div class="daily-next-item-title">Prayer Board</div>
+        <div class="daily-next-item-text">
+          Share a prayer request or pray for others in the community.
+        </div>
+        <a
+          href="{{ site.baseurl }}/community/prayer-board/"
+          class="daily-btn"
+          id="daily-next-prayer-link"
+        >
+          Go to Prayer Board
+        </a>
+      </div>
+
+      <div class="daily-card">
+        <div class="daily-next-item-title">Testimony Board</div>
+        <div class="daily-next-item-text">
+          Read what God is doing in others’ lives or share your own story.
+        </div>
+        <a
+          href="{{ site.baseurl }}/community/testimonies/"
+          class="daily-btn"
+          id="daily-next-testimony-link"
+        >
+          Go to Testimonies
+        </a>
+      </div>
+
+      <div class="daily-card">
+        <div class="daily-next-item-title">Serving &amp; Community</div>
+        <div class="daily-next-item-text">
+          Explore ideas and opportunities for serving and caring for others.
+        </div>
+        <a
+          href="{{ site.baseurl }}/serving/"
+          class="daily-btn"
+          id="daily-next-serving-link"
+        >
+          Explore Serving
+        </a>
+      </div>
+
+      <div class="daily-card">
+        <div class="daily-next-item-title">Keep Studying</div>
+        <div class="daily-next-item-text">
+          Open today’s passage in the Bible viewer and keep reading in context.
+        </div>
+        <a
+          href="{{ site.baseurl }}/tools/bible-viewer/"
+          class="daily-btn"
+          id="daily-next-bible-link"
+        >
+          Open Bible Viewer
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  (function () {
+    var root = document.querySelector(".tool-page-daily");
+    if (!root) return;
+
+    var baseUrl = root.getAttribute("data-site-baseurl") || "";
+    var bibleConfigUrl = root.getAttribute("data-bible-config");
+    var calendarUrl = root.getAttribute("data-daily-verse-calendar");
+
+    // --- Daily Proverb: Proverbs [day-of-month] ---
+    var today = new Date();
+    var day = today.getDate(); // 1–31
+    var bookCode = "PRO";
+
+    var proverbRefEl = document.querySelector('[data-role="daily-proverb-ref"]');
+    if (proverbRefEl) {
+      proverbRefEl.textContent = "Proverbs " + day + " (placeholder translation)";
+    }
+
+    var chapPadded = String(day).padStart(3, "0");
+    var proverbRefCode = bookCode + "." + chapPadded;
+
+    var proverbLink = document.querySelector('[data-role="daily-proverb-open-link"]');
+    if (proverbLink) {
+      proverbLink.href =
+        baseUrl +
+        "/tools/bible-viewer/?ref=" +
+        encodeURIComponent(proverbRefCode);
+    }
+
+    // --- Trivia: simple reveal behavior ---
+    var triviaRevealBtn = document.querySelector(
+      '[data-role="daily-trivia-reveal-btn"]'
+    );
+    var triviaAnswer = document.querySelector('[data-role="daily-trivia-answer"]');
+    if (triviaRevealBtn && triviaAnswer) {
+      triviaRevealBtn.addEventListener("click", function () {
+        triviaAnswer.hidden = false;
+      });
+    }
+
+    // --- Daily Verse: calendar-based JSON + Bible tools v1 contract ---
+    if (typeof fetch === "function" && bibleConfigUrl && calendarUrl) {
+      (async function () {
+        try {
+          var responses = await Promise.all([
+            fetch(bibleConfigUrl),
+            fetch(calendarUrl)
+          ]);
+
+          var configResp = responses[0];
+          var calendarResp = responses[1];
+
+          if (!configResp.ok || !calendarResp.ok) return;
+
+          var config = await configResp.json();
+          var calendar = await calendarResp.json();
+
+          var month = today.getMonth() + 1; // 1–12
+          var entries = Array.isArray(calendar.entries) ? calendar.entries : [];
+          var entry = entries.find(function (e) {
+            return e.month === month && e.day === day;
+          });
+          if (!entry) return;
+
+          var verseRefEl = document.querySelector('[data-role="daily-verse-ref"]');
+          var verseTextEl = document.querySelector('[data-role="daily-verse-text"]');
+          var verseLinkEl = document.querySelector(
+            '[data-role="daily-verse-open-link"]'
+          );
+
+          // Determine translation
+          var defaultLang = config.default_language || "en";
+          var defaultTransFromCalendar =
+            entry.translation || calendar.default_translation;
+          var defaultTransFromConfig = config.default_translation;
+          var targetTransCode =
+            defaultTransFromCalendar || defaultTransFromConfig;
+
+          var languages = Array.isArray(config.languages) ? config.languages : [];
+          var lang =
+            languages.find(function (l) {
+              return l.code === defaultLang || l.id === defaultLang;
+            }) || languages[0];
+
+          var translation =
+            lang && Array.isArray(lang.translations)
+              ? lang.translations.find(function (t) {
+                  return t.code === targetTransCode;
+                }) || lang.translations[0]
+              : null;
+
+          if (!translation) return;
+
+          // Build chapter URL
+          var chap = String(entry.chapter).padStart(3, "0");
+          var pathRoot = (translation.path || "").replace(/\/+$/, "");
+          var chaptersDir = (translation.chapters_dir || "chapters").replace(
+            /^\/+|\/+$/g,
+            ""
+          );
+          var chapterUrl =
+            baseUrl +
+            pathRoot +
+            "/" +
+            chaptersDir +
+            "/" +
+            entry.book +
+            "/" +
+            chap +
+            ".json";
+
+          var chapterResp = await fetch(chapterUrl);
+          if (!chapterResp.ok) return;
+          var chapterData = await chapterResp.json();
+
+          function normalizeVerses(data) {
+            if (!data) return [];
+            if (Array.isArray(data.verses)) return data.verses;
+            if (Array.isArray(data)) return data;
+            if (typeof data === "object") {
+              return Object.keys(data)
+                .filter(function (k) {
+                  return /^[0-9]+$/.test(k);
+                })
+                .map(function (k) {
+                  return { verse: parseInt(k, 10), text: data[k] };
+                })
+                .sort(function (a, b) {
+                  return a.verse - b.verse;
+                });
+            }
+            return [];
+          }
+
+          function parseVerseSpec(spec) {
+            var s = String(spec || "").trim();
+            if (!s) return null;
+            var out = new Set();
+            s.split(",").forEach(function (part) {
+              var p = part.trim();
+              if (!p) return;
+              var range = p.split("-").map(function (x) {
+                return x.trim();
+              });
+              if (range.length === 2) {
+                var start = parseInt(range[0], 10);
+                var end = parseInt(range[1], 10);
+                if (!isNaN(start) && !isNaN(end)) {
+                  var step = start <= end ? 1 : -1;
+                  for (var v = start; step > 0 ? v <= end : v >= end; v += step) {
+                    out.add(v);
+                  }
+                }
+              } else {
+                var val = parseInt(p, 10);
+                if (!isNaN(val)) out.add(val);
+              }
+            });
+            return out;
+          }
+
+          var allVerses = normalizeVerses(chapterData);
+          var targetSet = parseVerseSpec(entry.verses);
+          var selected = targetSet
+            ? allVerses.filter(function (v) {
+                var num = v.verse || v.verseNumber || v.v;
+                return targetSet.has(num);
+              })
+            : allVerses;
+
+          if (verseTextEl && selected.length > 0) {
+            verseTextEl.classList.remove("daily-placeholder");
+            verseTextEl.innerHTML = selected
+              .map(function (v) {
+                var num = v.verse || v.verseNumber || "";
+                var text = v.text || "";
+                return (
+                  '<span class="daily-verse-line"><span class="daily-verse-number">' +
+                  num +
+                  "</span> " +
+                  text +
+                  "</span>"
+                );
+              })
+              .join(" ");
+          }
+
+          if (verseRefEl) {
+            var refHuman =
+              entry.ref_human ||
+              (entry.book + " " + entry.chapter + ":" + entry.verses);
+            var transLabel = translation.code
+              ? translation.code.toUpperCase()
+              : "";
+            verseRefEl.textContent =
+              refHuman + (transLabel ? " (" + transLabel + ")" : "");
+          }
+
+          if (verseLinkEl) {
+            var refCode = entry.book + "." + chap;
+            if (entry.verses) {
+              refCode +=
+                ":" + String(entry.verses).replace(/\s+/g, "");
+            }
+            verseLinkEl.href =
+              baseUrl +
+              "/tools/bible-viewer/?ref=" +
+              encodeURIComponent(refCode);
+          }
+        } catch (e) {
+          console.error("Daily verse load failed", e);
+        }
+      })();
+    }
+  })();
+</script>
