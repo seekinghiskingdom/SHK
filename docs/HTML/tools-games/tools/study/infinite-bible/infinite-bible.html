@@ -6,7 +6,6 @@ extra_css:
   - /assets/css/infinite-bible.css
 ---
 
-
 <!-- Content and wording assisted by AI (-AI) -->
 
 <main class="tool-page infinite-bible-app">
@@ -29,8 +28,20 @@ extra_css:
   <!-- Sticky toolbar ribbon -->
   <div class="ib-toolbar" aria-label="Infinite Bible tools">
     <div class="ib-toolbar-inner">
-      <!-- Left: modes and views -->
+      <!-- Left: Navigator + modes and views -->
       <div class="ib-toolbar-section ib-toolbar-left">
+        <!-- Navigator toggle -->
+        <button
+          type="button"
+          class="ib-toolbar-btn ib-toolbar-btn-plain"
+          id="ib-toolbar-nav"
+          aria-pressed="true"
+        >
+          Navigator
+        </button>
+
+        <span class="ib-toolbar-divider" aria-hidden="true"></span>
+
         <!-- Primary app modes -->
         <button
           type="button"
@@ -194,29 +205,55 @@ extra_css:
     </section>
   </div>
 
-  <!-- Workspace strip -->
-  <section
-    class="ib-workspace ib-workspace-theme-light ib-mode-bible"
-    aria-label="Infinite Bible workspace"
-    id="ib-workspace"
-  >
-    <div class="ib-canvas-inner">
-      <h2 class="ib-canvas-title">
-        Workspace – <span id="ib-current-mode-label">Bible mode</span>
-      </h2>
-      <p class="ib-canvas-text" id="ib-mode-description">
-        In Bible mode, each board represents a single chapter. As the tool develops,
-        this area will hold your chapter layouts, verse blocks, and notes.
-      </p>
-
-      <div class="ib-canvas-scroll-test">
-        <p>
-          Scroll down to confirm the toolbar stays pinned while this content moves underneath.
-          On mobile, the toolbar should stay accessible while the workspace scrolls.
+  <!-- Layout: sidebar + workspace (sidebar is toggleable) -->
+  <div class="ib-layout" id="ib-layout">
+    <!-- Left sidebar driven by Navigator; placeholder for now -->
+    <aside class="ib-sidebar" aria-label="Infinite Bible navigator" id="ib-sidebar">
+      <div class="ib-sidebar-header">
+        <h2 class="ib-sidebar-title" id="ib-sidebar-title">Bible</h2>
+        <p class="ib-sidebar-mode-hint" id="ib-sidebar-mode-hint">
+          Chapter boards will appear here in Bible mode.
         </p>
       </div>
-    </div>
-  </section>
+      <div class="ib-sidebar-body">
+        <div class="ib-sidebar-section">
+          <h3 class="ib-sidebar-section-title">Coming soon</h3>
+          <p class="ib-sidebar-text">
+            This navigator will list books &amp; chapters in Bible mode and named boards in Boards mode.
+          </p>
+        </div>
+        <div class="ib-sidebar-section ib-sidebar-section-muted">
+          <p class="ib-sidebar-text">
+            For now it is just a placeholder so we can shape the layout on desktop and mobile.
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Workspace (canvas shell) -->
+    <section
+      class="ib-workspace ib-workspace-theme-light ib-mode-bible"
+      aria-label="Infinite Bible workspace"
+      id="ib-workspace"
+    >
+      <div class="ib-canvas-inner">
+        <h2 class="ib-canvas-title">
+          Workspace – <span id="ib-current-mode-label">Bible mode</span>
+        </h2>
+        <p class="ib-canvas-text" id="ib-mode-description">
+          In Bible mode, each board represents a single chapter. As the tool develops,
+          this area will hold your chapter layouts, verse blocks, and notes.
+        </p>
+
+        <div class="ib-canvas-scroll-test">
+          <p>
+            Scroll down to confirm the toolbar stays pinned while this content moves underneath.
+            On mobile, the toolbar should stay accessible while the workspace scrolls.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 </main>
 
 <!-- Infinite Bible core: settings + boards (must exist at this path) -->
@@ -225,12 +262,16 @@ extra_css:
 <!-- Infinite Bible app wiring (UI only for now) -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var root = document.querySelector(".infinite-bible-app");
+    var layout = document.getElementById("ib-layout");
     var workspace = document.getElementById("ib-workspace");
     var modePill = document.getElementById("ib-mode-pill");
     var modeLabel = document.getElementById("ib-current-mode-label");
     var modeDescription = document.getElementById("ib-mode-description");
 
+    var sidebarTitle = document.getElementById("ib-sidebar-title");
+    var sidebarModeHint = document.getElementById("ib-sidebar-mode-hint");
+
+    var btnNav = document.getElementById("ib-toolbar-nav");
     var btnBible = document.getElementById("ib-btn-mode-bible");
     var btnBoards = document.getElementById("ib-btn-mode-boards");
 
@@ -245,7 +286,8 @@ extra_css:
     var IBT = window.IBT || {
       settings: {
         lastMode: "bible",
-        canvasTheme: "light"
+        canvasTheme: "light",
+        showSidebar: true
       },
       saveSettings: function () {}
     };
@@ -262,6 +304,21 @@ extra_css:
       panel.hidden = !willShow;
     }
 
+    // Sidebar open/close
+    function setSidebar(open) {
+      var isOpen = !!open;
+      if (layout) {
+        layout.classList.toggle("ib-sidebar-closed", !isOpen);
+      }
+      if (btnNav) {
+        btnNav.classList.toggle("ib-toolbar-btn-primary", isOpen);
+        btnNav.classList.toggle("ib-toolbar-btn-plain", !isOpen);
+        btnNav.setAttribute("aria-pressed", isOpen ? "true" : "false");
+      }
+      IBT.settings.showSidebar = isOpen;
+      IBT.saveSettings();
+    }
+
     // Mode switching: "bible" vs "notes" (Boards)
     function setMode(mode) {
       var normalized = mode === "notes" ? "notes" : "bible";
@@ -275,7 +332,7 @@ extra_css:
         btnBoards.classList.toggle("ib-toolbar-btn-plain", isBible);
       }
 
-      // Update root/workspace mode classes
+      // Update workspace mode classes
       if (workspace) {
         workspace.classList.toggle("ib-mode-bible", isBible);
         workspace.classList.toggle("ib-mode-boards", !isBible);
@@ -293,6 +350,18 @@ extra_css:
         } else {
           modeDescription.textContent =
             "In Boards mode, each board is a named workspace for topics, projects, or sermon prep. As the tool develops, you will be able to mix verses and notes freely here.";
+        }
+      }
+
+      if (sidebarTitle && sidebarModeHint) {
+        if (isBible) {
+          sidebarTitle.textContent = "Bible";
+          sidebarModeHint.textContent =
+            "Chapter boards will appear here in Bible mode.";
+        } else {
+          sidebarTitle.textContent = "Boards";
+          sidebarModeHint.textContent =
+            "Named boards will appear here in Boards mode.";
         }
       }
 
@@ -316,6 +385,14 @@ extra_css:
     }
 
     // Hook up toolbar buttons
+    if (btnNav) {
+      btnNav.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        var next = !(IBT.settings.showSidebar !== false);
+        setSidebar(next);
+      });
+    }
+
     if (btnBible) {
       btnBible.addEventListener("click", function (ev) {
         ev.preventDefault();
@@ -368,5 +445,6 @@ extra_css:
     // Initial state based on saved settings
     setMode(IBT.settings.lastMode || "bible");
     applyTheme(IBT.settings.canvasTheme || "light");
+    setSidebar(IBT.settings.showSidebar !== false);
   });
 </script>

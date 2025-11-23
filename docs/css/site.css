@@ -1771,3 +1771,17 @@ footer.container,
 
 
 
+
+/* Tool app layout base styles (for app-like tools such as Infinite Bible) */
+/* Content and wording assisted by AI (-AI) */
+
+body.tool-app-body {
+  background: #020617; /* same dark navy you’re using elsewhere */
+}
+
+.tool-app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+

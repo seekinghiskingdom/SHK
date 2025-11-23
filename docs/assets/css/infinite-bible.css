@@ -214,11 +214,86 @@
   text-decoration: underline;
 }
 
-/* === Workspace (canvas shell) === */
+/* === Layout: sidebar + workspace === */
 
-.infinite-bible-app .ib-workspace {
+.infinite-bible-app .ib-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: stretch;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
+}
+
+/* When sidebar is closed, hide it and let workspace span full width */
+
+.infinite-bible-app .ib-layout.ib-sidebar-closed .ib-sidebar {
+  display: none;
+}
+
+.infinite-bible-app .ib-layout.ib-sidebar-closed .ib-workspace {
+  flex: 1 1 100%;
+}
+
+/* Sidebar */
+
+.infinite-bible-app .ib-sidebar {
+  flex: 0 0 260px;
+  max-width: 260px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #020617;
+  color: #e5e7eb;
+  padding: 1rem 1rem 1.25rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
+}
+
+.infinite-bible-app .ib-sidebar-header {
+  margin-bottom: 0.75rem;
+}
+
+.infinite-bible-app .ib-sidebar-title {
+  margin: 0 0 0.15rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.infinite-bible-app .ib-sidebar-mode-hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.infinite-bible-app .ib-sidebar-body {
+  font-size: 0.86rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.infinite-bible-app .ib-sidebar-section-title {
+  margin: 0 0 0.25rem;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: #e5e7eb;
+}
+
+.infinite-bible-app .ib-sidebar-text {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #d1d5db;
+}
+
+.infinite-bible-app .ib-sidebar-section-muted .ib-sidebar-text {
+  color: #9ca3af;
+}
+
+/* Workspace (canvas shell) */
+
+.infinite-bible-app .ib-workspace {
+  flex: 1 1 auto;
   border-radius: 14px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
@@ -304,9 +379,18 @@
   }
 }
 
-@media (max-width: 640px) {
-  .infinite-bible-app .ib-header-main {
-    gap: 0.5rem;
+@media (max-width: 768px) {
+  .infinite-bible-app .ib-layout {
+    flex-direction: column;
+  }
+
+  .infinite-bible-app .ib-sidebar {
+    max-width: 100%;
+  }
+
+  .infinite-bible-app .ib-workspace {
+    min-height: 600px;
+    padding: 1.2rem 1.2rem;
   }
 
   .infinite-bible-app .ib-toolbar-inner {
@@ -315,9 +399,5 @@
 
   .infinite-bible-app .ib-toolbar-section {
     gap: 0.3rem;
-  }
-
-  .infinite-bible-app .ib-workspace {
-    padding: 1.2rem 1.2rem;
   }
 }
