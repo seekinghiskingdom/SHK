@@ -1,0 +1,174 @@
+---
+layout: default
+title: Infinite Bible Notes – Notes Mode
+permalink: /tools-games/tools/infinite-bible/notes/
+---
+
+<!-- Content and wording assisted by AI (-AI) -->
+
+<main class="tool-page infinite-bible-mode infinite-bible-notes">
+  <header class="tool-hero">
+    <p class="tool-breadcrumb">
+      <a href="{{ site.baseurl }}/tools-games/tools/infinite-bible/">Infinite Bible (Tool)</a> · Notes Mode
+    </p>
+    <h1>Infinite Bible Notes – Notes Mode</h1>
+    <p class="tool-tagline">
+      Build free-form boards of verses and notes, move them around a large canvas, and map out themes, questions, and connections.
+    </p>
+
+    <div class="tool-mode-switch">
+      <a class="btn btn-outline" href="{{ site.baseurl }}/tools-games/tools/infinite-bible/bible/">
+        Bible Mode
+      </a>
+      <a class="btn btn-primary" href="{{ site.baseurl }}/tools-games/tools/infinite-bible/notes/">
+        Notes Mode
+      </a>
+    </div>
+
+    <p class="tool-beta-note">
+      Early version: boards are saved locally in your browser on this device (no accounts or sync).
+    </p>
+  </header>
+
+  <section class="tool-main-layout">
+    <aside class="tool-sidebar notes-board-list" aria-label="Boards">
+      <h2>Your boards</h2>
+      <ul id="notes-board-list">
+        <!-- JS will list boards: Board 1, Proverbs Pairs, etc. -->
+      </ul>
+
+      <div class="notes-board-actions">
+        <button type="button" class="btn btn-small" id="notes-new-board-btn">
+          New board
+        </button>
+        <button type="button" class="btn btn-small" id="notes-rename-board-btn">
+          Rename
+        </button>
+        <button type="button" class="btn btn-small" id="notes-delete-board-btn">
+          Delete
+        </button>
+      </div>
+
+      <p class="tool-hint">
+        Boards are per-device. For stability, there will be a soft limit on how many boards you can create.
+      </p>
+
+      <details class="tool-details-block notes-settings-block">
+        <summary>Settings</summary>
+        <div class="tool-details-content">
+          <label class="checkbox-block">
+            <input type="checkbox" id="notes-default-versenums-checkbox">
+            Include verse numbers in new verse blocks by default
+          </label>
+
+          <label class="checkbox-block">
+            <input type="checkbox" id="notes-longpassage-warning-checkbox">
+            Warn me before inserting long passages
+          </label>
+
+          <div class="settings-group">
+            <label for="notes-export-filename-style">Export filename style</label>
+            <select id="notes-export-filename-style">
+              <option value="board-date">&lt;board&gt;_canvasbible_YYYYMMDD.json</option>
+              <option value="board-only">&lt;board&gt;.json</option>
+            </select>
+          </div>
+
+          <div class="settings-group notes-import-export">
+            <button type="button" class="btn btn-small" id="notes-export-board-btn">
+              Export current board
+            </button>
+            <label class="btn btn-small" for="notes-import-board-input">
+              Import board
+            </label>
+            <input type="file" id="notes-import-board-input" accept="application/json" style="display:none;">
+          </div>
+        </div>
+      </details>
+
+      <details class="tool-details-block notes-help-block">
+        <summary>Quick help</summary>
+        <div class="tool-details-content">
+          <ul>
+            <li>Create a new board for each topic or project.</li>
+            <li>Add verses by reference, then drag them into clusters.</li>
+            <li>Add notes around verses to record observations and questions.</li>
+            <li>Boards auto-save locally and reopen where you left off.</li>
+          </ul>
+        </div>
+      </details>
+    </aside>
+
+    <section class="tool-canvas-wrapper">
+      <div class="tool-canvas-toolbar">
+        <div class="tool-canvas-heading">
+          <h2 id="notes-current-board-name">Current board</h2>
+          <span class="tool-canvas-subtitle">
+            Free-form canvas for verses and notes
+          </span>
+        </div>
+
+        <div class="tool-canvas-actions">
+          <button type="button" class="btn btn-small" id="notes-insert-passage-btn">
+            Insert passage
+          </button>
+          <button type="button" class="btn btn-small" id="notes-add-note-btn">
+            Add note
+          </button>
+          <button type="button" class="btn btn-small" id="notes-pan-mode-btn">
+            Pan
+          </button>
+          <button type="button" class="btn btn-small" id="notes-select-mode-btn">
+            Select / Move
+          </button>
+          <button type="button" class="btn btn-small" id="notes-delete-selection-btn">
+            Delete selection
+          </button>
+        </div>
+      </div>
+
+      <!-- Insert-passage dialog placeholder (JS can convert this into a modal) -->
+      <section class="tool-dialog notes-insert-passage-dialog" aria-hidden="true">
+        <h3>Insert passage</h3>
+        <form action="javascript:void(0);">
+          <label for="notes-ref-input">Reference</label>
+          <input id="notes-ref-input" type="text" placeholder="e.g., Proverbs 1:1–7 or Luke 12:31">
+
+          <label class="checkbox-block">
+            <input type="checkbox" id="notes-split-verses-checkbox">
+            Make each verse a separate block
+          </label>
+
+          <label class="checkbox-block">
+            <input type="checkbox" id="notes-include-versenums-checkbox">
+            Include verse numbers in text
+          </label>
+
+          <div class="dialog-actions">
+            <button type="submit" class="btn btn-primary">Insert</button>
+            <button type="button" class="btn btn-ghost" id="notes-cancel-insert-btn">Cancel</button>
+          </div>
+
+          <p class="tool-hint">
+            Long passages may be slower to insert. You can start with a few verses and expand later.
+          </p>
+        </form>
+      </section>
+
+      <!-- JS hooks into this element to render the free-form notes canvas -->
+      <div id="notes-canvas-root" class="tool-canvas">
+        <!-- Infinite Bible Notes board will render here -->
+      </div>
+    </section>
+  </section>
+
+  <section class="tool-help-summary">
+    <h2>How to use Notes Mode</h2>
+    <ol>
+      <li>Create or select a board from the sidebar.</li>
+      <li>Click <strong>Insert passage</strong> to add verses; choose whether to split into one block per verse.</li>
+      <li>Use <strong>Add note</strong> to place notes around verses and arrange them on the canvas.</li>
+      <li>Export a board if you want a backup or to move it to another device in the future.</li>
+    </ol>
+  </section>
+</main>
