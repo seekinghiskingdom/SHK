@@ -4,8 +4,8 @@
 /Resources/                         (HUB-ish; legacy path segment)
 ├── PPS/Bubble                      (PAGE - Proverb Pairs Search, bubble mode)
 /Resources/PPS/Bubble
-└── PPS/Direct                      (PAGE - Proverb Pairs Search, direct mode)
-/Resources/PPS/Direct
+└── PPS/                            (PAGE - Proverb Pairs Search)
+/Resources/PPS/
 
 /about/                             (HUB)
 ├── beliefs/                        (PAGE)

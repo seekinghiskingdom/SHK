@@ -155,17 +155,41 @@ permalink: /tools-games/tools/infinite-bible/bible/
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var DEFAULT_TRANSLATION = "kjv";
+
     var bookSelect = document.getElementById("bible-book-select");
     var chapterSelect = document.getElementById("bible-chapter-select");
+    var chapterForm = document.getElementById("bible-chapter-form");
+    var canvasRoot = document.getElementById("bible-canvas-root");
+    var chapterList = document.getElementById("bible-chapter-list");
+    var includeVerseNumsCheckbox = document.getElementById("bible-include-versenums-checkbox");
 
-    if (!window.ScriptureCore || !bookSelect || !chapterSelect) {
+    if (
+      !window.ScriptureCore ||
+      !bookSelect ||
+      !chapterSelect ||
+      !chapterForm ||
+      !canvasRoot ||
+      !chapterList
+    ) {
       console.error("Bible Mode: required elements or ScriptureCore missing.");
       return;
     }
 
+    var booksCache = [];
+    var loadedChapters = {}; // key "CODE3:chapter" -> { label, element, listItem }
+
+    // Helper: find human label like "Proverbs 1"
+    function chapterLabel(code3, chapterNumber) {
+      var meta = booksCache.find(function (b) { return b.code3 === code3; });
+      var title = meta ? meta.title : code3;
+      return title + " " + chapterNumber;
+    }
+
+    // Populate book + chapter dropdowns
     ScriptureCore.loadIndex("v1")
       .then(function () {
         var books = ScriptureCore.listBooks(DEFAULT_TRANSLATION);
+        booksCache = books;
 
         // Populate Book dropdown
         books.forEach(function (b) {
@@ -189,14 +213,92 @@ permalink: /tools-games/tools/infinite-bible/bible/
           }
         }
 
-        // Update chapters when book changes
         bookSelect.addEventListener("change", updateChapters);
-
-        // Initialize chapter list for the first book
-        updateChapters();
+        updateChapters(); // initialize chapters for the first book
       })
       .catch(function (err) {
         console.error("Bible Mode: failed to initialize Scripture data:", err);
       });
+
+    // Render a chapter into the canvas + sidebar list (appends; does not clear previous)
+    function renderChapter(code3, chapterNumber, verses) {
+      var key = code3 + ":" + chapterNumber;
+      if (loadedChapters[key]) {
+        // Already loaded: just scroll to it
+        loadedChapters[key].element.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+
+      var label = chapterLabel(code3, chapterNumber);
+
+      // Chapter block in canvas
+      var container = document.createElement("section");
+      container.className = "bible-chapter-block";
+
+      var heading = document.createElement("h3");
+      heading.textContent = label;
+      container.appendChild(heading);
+
+      var body = document.createElement("div");
+      body.className = "bible-chapter-verses";
+
+      var includeNums = !!(includeVerseNumsCheckbox && includeVerseNumsCheckbox.checked);
+
+      verses.forEach(function (v) {
+        var p = document.createElement("p");
+        p.className = "bible-verse-line";
+
+        if (includeNums) {
+          var span = document.createElement("span");
+          span.className = "bible-verse-num";
+          span.textContent = v.verse + " ";
+          p.appendChild(span);
+        }
+
+        p.appendChild(document.createTextNode(v.text));
+        body.appendChild(p);
+      });
+
+      container.appendChild(body);
+      canvasRoot.appendChild(container);
+
+      // Sidebar chapter list entry
+      var li = document.createElement("li");
+      li.className = "bible-chapter-list-item";
+      li.textContent = label;
+      li.dataset.chapterKey = key;
+      li.addEventListener("click", function () {
+        container.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      chapterList.appendChild(li);
+
+      loadedChapters[key] = { label: label, element: container, listItem: li };
+    }
+
+    // Hook up the "Load chapter" form
+    chapterForm.addEventListener("submit", function (evt) {
+      evt.preventDefault();
+
+      var code3 = bookSelect.value;
+      var chapterNumber = parseInt(chapterSelect.value, 10) || 1;
+
+      if (!code3 || !chapterNumber) {
+        alert("Please select a book and chapter.");
+        return;
+      }
+
+      ScriptureCore.getChapter(DEFAULT_TRANSLATION, code3, chapterNumber)
+        .then(function (verses) {
+          if (!verses || verses.length === 0) {
+            alert("No verses found for this chapter.");
+            return;
+          }
+          renderChapter(code3, chapterNumber, verses);
+        })
+        .catch(function (err) {
+          console.error("Bible Mode: failed to load chapter:", err);
+          alert("There was a problem loading that chapter.");
+        });
+    });
   });
 </script>
