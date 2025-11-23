@@ -618,17 +618,20 @@ permalink: /tools-games/tools/pps/
 
             <div class="pps-field">
               <label class="pps-label" for="pps-x-select">X</label>
-              <select id="pps-x-select">
+              <!-- ADD `multiple` -->
+              <select id="pps-x-select" multiple>
                 <option value="">All X</option>
               </select>
             </div>
 
             <div class="pps-field">
               <label class="pps-label" for="pps-y-select">Y</label>
-              <select id="pps-y-select">
+              <!-- ADD `multiple` -->
+              <select id="pps-y-select" multiple>
                 <option value="">All Y</option>
               </select>
             </div>
+
 
             <button type="button" class="pps-button-ghost" id="pps-reset-filters">
               Reset Filters
@@ -811,9 +814,9 @@ permalink: /tools-games/tools/pps/
         book: "",
         chapter: "",
         status: "",
-        mode: "key",
-        x: "",
-        y: ""
+        mode: "key",   // "key" or "group"
+        x: [],         // multi-select: array of values
+        y: []          // multi-select: array of values
       }
     };
 
@@ -837,6 +840,12 @@ permalink: /tools-games/tools/pps/
     function toStringOrEmpty(value) {
       if (value === undefined || value === null) return "";
       return String(value);
+    }
+
+    function getMultiValues(selectEl) {
+      return Array.from(selectEl.options)
+        .filter((opt) => opt.selected && opt.value !== "")
+        .map((opt) => opt.value);
     }
 
     function buildIndexes() {
@@ -1014,8 +1023,6 @@ permalink: /tools-games/tools/pps/
 
     function populateXYSelects() {
       const mode = state.filters.mode || "key";
-      const currentX = state.filters.x || "";
-      const currentY = state.filters.y || "";
 
       xSelect.innerHTML = "";
       ySelect.innerHTML = "";
@@ -1058,16 +1065,9 @@ permalink: /tools-games/tools/pps/
         ySelect.appendChild(opt);
       });
 
-      // Reset X/Y selections if values no longer exist under this mode
-      if (currentX && !xValues.includes(currentX)) {
-        state.filters.x = "";
-      }
-      if (currentY && !yValues.includes(currentY)) {
-        state.filters.y = "";
-      }
-
-      xSelect.value = state.filters.x || "";
-      ySelect.value = state.filters.y || "";
+      // After mode change or reset, start with nothing selected = "All"
+      state.filters.x = [];
+      state.filters.y = [];
     }
 
     function applyFilters() {
@@ -1097,25 +1097,25 @@ permalink: /tools-games/tools/pps/
         });
       }
 
-      if (x) {
+      if (Array.isArray(x) && x.length > 0) {
         filtered = filtered.filter((pair) => {
           const side = pair.x || {};
           const value =
             mode === "group"
               ? toStringOrEmpty(side.group)
               : toStringOrEmpty(side.key);
-          return value === x;
+          return x.includes(value);
         });
       }
 
-      if (y) {
+      if (Array.isArray(y) && y.length > 0) {
         filtered = filtered.filter((pair) => {
           const side = pair.y || {};
           const value =
             mode === "group"
               ? toStringOrEmpty(side.group)
               : toStringOrEmpty(side.key);
-          return value === y;
+          return y.includes(value);
         });
       }
 
@@ -1146,8 +1146,8 @@ permalink: /tools-games/tools/pps/
       if (state.filters.book) activeFilters.push("Book");
       if (state.filters.chapter) activeFilters.push("Chapter");
       if (state.filters.status) activeFilters.push("Status");
-      if (state.filters.x) activeFilters.push("X");
-      if (state.filters.y) activeFilters.push("Y");
+      if (Array.isArray(state.filters.x) && state.filters.x.length) activeFilters.push("X");
+      if (Array.isArray(state.filters.y) && state.filters.y.length) activeFilters.push("Y");
 
       if (!activeFilters.length) {
         filterSummary.textContent = "No filters applied.";
@@ -1283,20 +1283,17 @@ permalink: /tools-games/tools/pps/
 
       modeSelect.addEventListener("change", () => {
         state.filters.mode = modeSelect.value || "key";
-        // Reset X/Y when switching mode to avoid mismatched values
-        state.filters.x = "";
-        state.filters.y = "";
-        populateXYSelects();
+        populateXYSelects(); // resets X/Y and options
         updateUI();
       });
 
       xSelect.addEventListener("change", () => {
-        state.filters.x = xSelect.value || "";
+        state.filters.x = getMultiValues(xSelect);
         updateUI();
       });
 
       ySelect.addEventListener("change", () => {
-        state.filters.y = ySelect.value || "";
+        state.filters.y = getMultiValues(ySelect);
         updateUI();
       });
 
@@ -1305,8 +1302,8 @@ permalink: /tools-games/tools/pps/
         state.filters.chapter = "";
         state.filters.status = "";
         state.filters.mode = "key";
-        state.filters.x = "";
-        state.filters.y = "";
+        state.filters.x = [];
+        state.filters.y = [];
         modeSelect.value = "key";
         populateBookSelect();
         populateChapterSelect();
