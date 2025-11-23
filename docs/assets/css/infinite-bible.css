@@ -1,250 +1,115 @@
 /* Infinite Bible (Tool) – Bible Mode + Notes Mode styles */
 /* Content and wording assisted by AI (-AI) */
+/* === Infinite Bible – Bible Mode: Header strip === */
 
-/* === Infinite Bible – Bible Mode UI (tool shell + blocks) === */
-
-.infinite-bible-bible .tool-main-layout {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-}
-
-.infinite-bible-bible .tool-sidebar {
-  flex: 0 0 260px;
-}
-
-.infinite-bible-bible .tool-canvas-wrapper {
-  flex: 1 1 auto;
-}
-
-/* Top controls block */
-
-.infinite-bible-bible .tool-section.tool-controls {
+.infinite-bible-bible .ib-header {
   margin-bottom: 1.75rem;
 }
 
-.infinite-bible-bible .tool-controls-row.bible-chapter-controls {
+.infinite-bible-bible .ib-header-main {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: space-between;
   align-items: flex-end;
-  padding: 0.8rem 1.1rem;
-  border-radius: 14px;
-  border: 1px solid #d1d5db;
-  background: #f3f4f6; /* slightly darker than the canvas so it stands out */
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.infinite-bible-bible .bible-chapter-picker .form-field {
+.infinite-bible-bible .ib-header-left {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.4rem;
 }
 
-.infinite-bible-bible .bible-chapter-picker select {
-  min-width: 140px;
-  padding: 0.35rem 0.5rem;
-}
-
-/* Options row under the main picker */
-
-.infinite-bible-bible .tool-controls-row.bible-view-options {
+.infinite-bible-bible .ib-title-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
+  gap: 0.5rem;
 }
 
-.infinite-bible-bible .bible-view-buttons .btn.btn-small {
-  margin-right: 0.25rem;
-}
-
-/* Canvas shell */
-
-.infinite-bible-bible .tool-canvas-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.infinite-bible-bible .tool-canvas-toolbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.25rem;
-}
-
-.infinite-bible-bible .tool-canvas-heading h2 {
+.infinite-bible-bible .ib-title {
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   margin: 0;
 }
 
-.infinite-bible-bible .tool-canvas-subtitle {
-  display: block;
-  font-size: 0.9rem;
-  color: #6b7280;
+.infinite-bible-bible .ib-pill {
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(250, 204, 21, 0.7);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #92400e;
+  background: #fef3c7;
 }
 
-/* Actual “canvas” area where chapters render */
+.infinite-bible-bible .ib-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 640px;
+}
 
-.infinite-bible-bible .tool-canvas {
+.infinite-bible-bible .ib-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.infinite-bible-bible .ib-info-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
   background: #ffffff;
-  border-radius: 14px;
-  border: 1px solid #e5e7eb;
-  padding: 1.5rem 1.75rem;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
-  min-height: 420px;
-  overflow: auto;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  cursor: pointer;
 }
 
-/* Chapter blocks */
-
-.infinite-bible-bible .bible-chapter-block {
+.infinite-bible-bible .ib-info-toggle:hover {
   background: #f9fafb;
+}
+
+.infinite-bible-bible .ib-info-toggle-icon {
+  font-size: 0.75rem;
+}
+
+/* Collapsible info panel under the header */
+
+.infinite-bible-bible .ib-info-panel {
+  margin-top: 0.75rem;
+  padding: 0.9rem 1rem;
   border-radius: 12px;
   border: 1px solid #e5e7eb;
-  padding: 0.9rem 1.2rem;
-  margin-bottom: 1rem;
+  background: #f9fafb;
 }
 
-.infinite-bible-bible .bible-chapter-block h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.05rem;
+.infinite-bible-bible .ib-info-section + .ib-info-section {
+  margin-top: 0.75rem;
 }
 
-/* Verse lines */
-
-.infinite-bible-bible .bible-chapter-verses {
-  margin: 0;
-}
-
-.infinite-bible-bible .bible-verse-line {
-  margin: 0.18rem 0;
-  line-height: 1.55;
-}
-
-.infinite-bible-bible .bible-verse-num {
+.infinite-bible-bible .ib-info-heading {
+  margin: 0 0 0.25rem;
+  font-size: 0.92rem;
   font-weight: 600;
-  margin-right: 0.35rem;
-  color: #6b21a8;
-}
-
-/* Sidebar chapter list */
-
-.infinite-bible-bible .bible-chapter-list {
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0 0;
-}
-
-.infinite-bible-bible .bible-chapter-list-item {
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  margin-bottom: 0.25rem;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-.infinite-bible-bible .bible-chapter-list-item:hover {
-  background: #f3f4f6;
-}
-
-.infinite-bible-bible .bible-chapter-list + .tool-hint {
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin-top: 0.5rem;
-}
-
-/* You can later add Notes Mode styles here (e.g., .infinite-bible-notes …) */
-
-/* Force good contrast for Infinite Bible – text colors */
-
-.infinite-bible-bible .tool-controls,
-.infinite-bible-bible .tool-controls label,
-.infinite-bible-bible .tool-controls input,
-.infinite-bible-bible .tool-controls select,
-.infinite-bible-bible .tool-canvas,
-.infinite-bible-bible .tool-canvas p,
-.infinite-bible-bible .tool-canvas h2,
-.infinite-bible-bible .tool-canvas h3,
-.infinite-bible-bible .bible-chapter-block {
-  color: #111827; /* near-black */
-}
-
-/* Make chapter blocks read clearly against the canvas */
-.infinite-bible-bible .bible-chapter-block {
-  background: #ffffff;
-  border-color: #e5e7eb;
-}
-
-/* ==== Infinite Bible – Bible Mode polish overrides ==== */
-
-/* Make all text in this tool high-contrast by default */
-.infinite-bible-bible {
-  color: #111827;
-}
-
-/* Tool hints: darker text and subtle background so they don't disappear */
-.infinite-bible-bible .tool-hint {
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
   color: #374151;
-  background: rgba(249, 250, 251, 0.9); /* very light gray */
-  border-radius: 8px;
-  padding: 0.35rem 0.6rem;
 }
 
-/* Subtitle under "Bible board" heading: lighter + clearer */
-.infinite-bible-bible .tool-canvas-subtitle {
-  color: #9ca3af;        /* lighter gray */
-  font-size: 0.9rem;
+.infinite-bible-bible .ib-info-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.88rem;
+  color: #4b5563;
 }
 
-/* Chapter controls card: make sure it's distinct and not white-on-white */
-.infinite-bible-bible .tool-controls-row.bible-chapter-controls {
-  background: #f3f4f6;
-  border-color: #d1d5db;
-}
-
-/* Dropdowns: white background, dark text, subtle border */
-.infinite-bible-bible .bible-chapter-picker select {
-  background: #ffffff;
-  color: #111827;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-}
-
-/* Checkboxes + labels: readable */
-.infinite-bible-bible .bible-chapter-options,
-.infinite-bible-bible .bible-chapter-options label,
-.infinite-bible-bible .bible-chapter-options input {
-  color: #111827;
-}
-
-/* Chapter blocks: clearly separate cards inside the canvas */
-.infinite-bible-bible .bible-chapter-block {
-  background: #ffffff;
-  border-color: #e5e7eb;
-}
-
-/* Make sure verse text is dark enough */
-.infinite-bible-bible .bible-verse-line {
-  color: #111827;
-}
-
-
-/* Stack sidebar and canvas on small screens so the board isn't tiny */
-@media (max-width: 768px) {
-  .infinite-bible-bible .tool-main-layout {
-    flex-direction: column;
-  }
-
-  .infinite-bible-bible .tool-sidebar {
-    flex: 1 1 auto;
-    width: 100%;
-  }
-
-  .infinite-bible-bible .tool-canvas-wrapper {
-    width: 100%;
-  }
+/* `[hidden]` support, in case base styles don't handle it */
+.infinite-bible-bible .ib-info-panel[hidden] {
+  display: none;
 }

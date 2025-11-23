@@ -9,298 +9,73 @@ extra_css:
 <!-- Content and wording assisted by AI (-AI) -->
 
 <main class="tool-page infinite-bible-mode infinite-bible-bible">
-  <header class="tool-hero">
-    <p class="tool-breadcrumb">
-      <a href="{{ site.baseurl }}/tools-games/tools/infinite-bible/">Infinite Bible (Tool)</a> · Bible Mode
-    </p>
+  <header class="ib-header">
+    <div class="ib-header-main">
+      <div class="ib-header-left">
+        <div class="ib-title-row">
+          <h1 class="ib-title">Infinite Bible</h1>
+          <span class="ib-pill">Bible Mode</span>
+        </div>
+        <p class="ib-subtitle">
+          Work through Scripture one chapter at a time in a single visual Infinite Bible workspace.
+        </p>
+      </div>
 
-    <h1>Infinite Bible – Bible Mode</h1>
-
-    <p class="tool-tagline">
-      Work through Scripture one chapter at a time in a single, visual “Infinite Bible” workspace.
-    </p>
-
-    <div class="tool-mode-switch">
-      <a class="btn btn-primary" href="{{ site.baseurl }}/tools-games/tools/infinite-bible/bible/">
-        Bible Mode
-      </a>
-      <a class="btn btn-outline" href="{{ site.baseurl }}/tools-games/tools/infinite-bible/notes/">
-        Notes Mode
-      </a>
+      <div class="ib-header-right">
+        <button
+          type="button"
+          class="ib-info-toggle"
+          id="ib-info-toggle"
+          aria-expanded="false"
+          aria-controls="ib-info-panel"
+        >
+          More info
+          <span class="ib-info-toggle-icon">▾</span>
+        </button>
+      </div>
     </div>
 
-    <p class="tool-beta-note">
-      Early version: chapter layouts and notes are saved locally in your browser on this device. No accounts or sync yet.
-    </p>
+    <div class="ib-info-panel" id="ib-info-panel" hidden>
+      <section class="ib-info-section">
+        <h2 class="ib-info-heading">How to use (current beta)</h2>
+        <ul class="ib-info-list">
+          <li>This page will become the main “Bible board” for chapter-based study and layouts.</li>
+          <li>In the next steps, you’ll be able to load chapters, see them as blocks, and add notes nearby.</li>
+          <li>All layouts and notes will be stored locally in your browser on this device.</li>
+        </ul>
+      </section>
+
+      <section class="ib-info-section">
+        <h2 class="ib-info-heading">Early work in progress</h2>
+        <ul class="ib-info-list">
+          <li>Bible Mode is still under construction; features may change as Infinite Bible Notes matures.</li>
+          <li>Text formatting, canvas behavior, and tools for notes and connections will improve over time.</li>
+          <li>If something looks broken or confusing, you can always fall back to the main Bible Viewer for now.</li>
+        </ul>
+      </section>
+
+      <section class="ib-info-section">
+        <h2 class="ib-info-heading">Tips &amp; notes</h2>
+        <ul class="ib-info-list">
+          <li>Use Bible Mode when you want a chapter-based visual layout that you can revisit later.</li>
+          <li>Use Notes Mode when you want free-form boards for topics, Proverbs pairs, or sermon outlines.</li>
+          <li>Remember that nothing is synced yet; everything lives only in the browser where you use it.</li>
+        </ul>
+      </section>
+    </div>
   </header>
-
-  <!-- Top controls: book/chapter picker and view options -->
-  <section class="tool-section tool-controls">
-    <h2 class="visually-hidden">Chapter Controls</h2>
-
-    <div class="tool-controls-row bible-chapter-controls">
-      <form class="bible-chapter-picker" action="javascript:void(0);" id="bible-chapter-form">
-        <div class="form-field">
-          <label for="bible-book-select">Book</label>
-          <select id="bible-book-select" name="book">
-            <!-- JS will populate with Bible books -->
-          </select>
-        </div>
-
-        <div class="form-field">
-          <label for="bible-chapter-select">Chapter</label>
-          <select id="bible-chapter-select" name="chapter">
-            <!-- JS will populate with chapter numbers -->
-          </select>
-        </div>
-
-        <button type="submit" class="btn btn-primary">
-          Load chapter
-        </button>
-      </form>
-
-      <div class="bible-chapter-options">
-        <label class="checkbox-inline">
-          <input type="checkbox" id="bible-split-verses-checkbox">
-          Make each verse a separate block
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="bible-include-versenums-checkbox">
-          Include verse numbers in text
-        </label>
-      </div>
-    </div>
-
-    <div class="tool-controls-row bible-view-options">
-      <div class="bible-view-buttons">
-        <button type="button" class="btn btn-small" id="bible-collapse-all-btn">
-          Collapse other chapters
-        </button>
-        <button type="button" class="btn btn-small" id="bible-expand-all-btn">
-          Expand all chapters
-        </button>
-      </div>
-      <span class="tool-hint">
-        Infinite Bible treats all loaded chapters as one Bible board. Only the chapter you focus on has to stay expanded.
-      </span>
-    </div>
-  </section>
-
-  <!-- Main layout: chapter list + canvas -->
-  <section class="tool-section tool-main-layout">
-    <aside class="tool-sidebar bible-chapter-list" aria-label="Chapter navigation">
-      <h2>Chapters in this Bible board</h2>
-      <ul id="bible-chapter-list">
-        <!-- JS will list loaded chapters: Proverbs 1, Proverbs 2, Luke 12, etc. -->
-      </ul>
-      <p class="tool-hint">
-        Click a chapter to jump to it on the canvas. Collapsed chapters stay saved but hidden.
-      </p>
-
-      <details class="tool-details-block bible-help-block">
-        <summary>Quick help</summary>
-        <div class="tool-details-content">
-          <ul>
-            <li>Use the book and chapter controls above to load chapters into this Bible board.</li>
-            <li>Each chapter can be laid out, annotated, and revisited later.</li>
-            <li>Collapsing a chapter hides it visually but keeps your layout and notes.</li>
-          </ul>
-        </div>
-      </details>
-    </aside>
-
-    <section class="tool-canvas-wrapper">
-      <div class="tool-canvas-toolbar">
-        <div class="tool-canvas-heading">
-          <h2>Bible board</h2>
-          <span class="tool-canvas-subtitle">
-            Visual chapter layouts for the whole Bible, one chapter at a time.
-          </span>
-        </div>
-
-        <div class="tool-canvas-actions">
-          <button type="button" class="btn btn-small" id="bible-pan-mode-btn">
-            Pan
-          </button>
-          <button type="button" class="btn btn-small" id="bible-select-mode-btn">
-            Select / Move
-          </button>
-          <button type="button" class="btn btn-small" id="bible-add-note-btn">
-            Add note
-          </button>
-          <button type="button" class="btn btn-small" id="bible-delete-selection-btn">
-            Delete selection
-          </button>
-        </div>
-      </div>
-
-      <!-- JS will hook into this element to render the chapter-based canvas -->
-      <div id="bible-canvas-root" class="tool-canvas">
-        <!-- Infinite Bible chapter layout will render here -->
-      </div>
-    </section>
-  </section>
-
-  <!-- Bottom help / quick start -->
-  <section class="tool-section tool-help-summary">
-    <h2>How to use Bible Mode</h2>
-    <ol>
-      <li>Choose a <strong>Book</strong> and <strong>Chapter</strong>, then click <strong>Load chapter</strong>.</li>
-      <li>Decide whether to <strong>Make each verse a separate block</strong> and whether to <strong>Include verse numbers</strong>.</li>
-      <li>On the canvas, pan to move around, and use Select / Move to rearrange verses and notes.</li>
-      <li>Load new chapters as needed; use the chapter list to jump between them and collapse older chapters.</li>
-      <li>Your layouts and notes are saved locally and restored the next time you open Bible Mode on this device.</li>
-    </ol>
-  </section>
 </main>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var DEFAULT_TRANSLATION = "kjv";
+    var btn = document.getElementById("ib-info-toggle");
+    var panel = document.getElementById("ib-info-panel");
+    if (!btn || !panel) return;
 
-    var bookSelect = document.getElementById("bible-book-select");
-    var chapterSelect = document.getElementById("bible-chapter-select");
-    var chapterForm = document.getElementById("bible-chapter-form");
-    var canvasRoot = document.getElementById("bible-canvas-root");
-    var chapterList = document.getElementById("bible-chapter-list");
-    var includeVerseNumsCheckbox = document.getElementById("bible-include-versenums-checkbox");
-
-    if (
-      !window.ScriptureCore ||
-      !bookSelect ||
-      !chapterSelect ||
-      !chapterForm ||
-      !canvasRoot ||
-      !chapterList
-    ) {
-      console.error("Bible Mode: required elements or ScriptureCore missing.");
-      return;
-    }
-
-    var booksCache = [];
-    var loadedChapters = {}; // key "CODE3:chapter" -> { label, element, listItem }
-
-    // Helper: find human label like "Proverbs 1"
-    function chapterLabel(code3, chapterNumber) {
-      var meta = booksCache.find(function (b) { return b.code3 === code3; });
-      var title = meta ? meta.title : code3;
-      return title + " " + chapterNumber;
-    }
-
-    // Populate book + chapter dropdowns
-    ScriptureCore.loadIndex("v1")
-      .then(function () {
-        var books = ScriptureCore.listBooks(DEFAULT_TRANSLATION);
-        booksCache = books;
-
-        // Populate Book dropdown
-        books.forEach(function (b) {
-          var opt = document.createElement("option");
-          opt.value = b.code3;
-          opt.textContent = b.title;
-          bookSelect.appendChild(opt);
-        });
-
-        function updateChapters() {
-          var code3 = bookSelect.value;
-          var meta = books.find(function (b) { return b.code3 === code3; });
-          var chapterCount = meta ? meta.chapters : 0;
-
-          chapterSelect.innerHTML = "";
-          for (var i = 1; i <= chapterCount; i++) {
-            var opt = document.createElement("option");
-            opt.value = String(i);
-            opt.textContent = String(i);
-            chapterSelect.appendChild(opt);
-          }
-        }
-
-        bookSelect.addEventListener("change", updateChapters);
-        updateChapters(); // initialize chapters for the first book
-      })
-      .catch(function (err) {
-        console.error("Bible Mode: failed to initialize Scripture data:", err);
-      });
-
-    // Render a chapter into the canvas + sidebar list (appends; does not clear previous)
-    function renderChapter(code3, chapterNumber, verses) {
-      var key = code3 + ":" + chapterNumber;
-      if (loadedChapters[key]) {
-        // Already loaded: just scroll to it
-        loadedChapters[key].element.scrollIntoView({ behavior: "smooth", block: "start" });
-        return;
-      }
-
-      var label = chapterLabel(code3, chapterNumber);
-
-      // Chapter block in canvas
-      var container = document.createElement("section");
-      container.className = "bible-chapter-block";
-
-      var heading = document.createElement("h3");
-      heading.textContent = label;
-      container.appendChild(heading);
-
-      var body = document.createElement("div");
-      body.className = "bible-chapter-verses";
-
-      var includeNums = !!(includeVerseNumsCheckbox && includeVerseNumsCheckbox.checked);
-
-      verses.forEach(function (v) {
-        var p = document.createElement("p");
-        p.className = "bible-verse-line";
-
-        if (includeNums) {
-          var span = document.createElement("span");
-          span.className = "bible-verse-num";
-          span.textContent = v.verse + " ";
-          p.appendChild(span);
-        }
-
-        p.appendChild(document.createTextNode(v.text));
-        body.appendChild(p);
-      });
-
-      container.appendChild(body);
-      canvasRoot.appendChild(container);
-
-      // Sidebar chapter list entry
-      var li = document.createElement("li");
-      li.className = "bible-chapter-list-item";
-      li.textContent = label;
-      li.dataset.chapterKey = key;
-      li.addEventListener("click", function () {
-        container.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-      chapterList.appendChild(li);
-
-      loadedChapters[key] = { label: label, element: container, listItem: li };
-    }
-
-    // Hook up the "Load chapter" form
-    chapterForm.addEventListener("submit", function (evt) {
-      evt.preventDefault();
-
-      var code3 = bookSelect.value;
-      var chapterNumber = parseInt(chapterSelect.value, 10) || 1;
-
-      if (!code3 || !chapterNumber) {
-        alert("Please select a book and chapter.");
-        return;
-      }
-
-      ScriptureCore.getChapter(DEFAULT_TRANSLATION, code3, chapterNumber)
-        .then(function (verses) {
-          if (!verses || verses.length === 0) {
-            alert("No verses found for this chapter.");
-            return;
-          }
-          renderChapter(code3, chapterNumber, verses);
-        })
-        .catch(function (err) {
-          console.error("Bible Mode: failed to load chapter:", err);
-          alert("There was a problem loading that chapter.");
-        });
+    btn.addEventListener("click", function () {
+      var isOpen = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      panel.hidden = isOpen;
     });
   });
 </script>
