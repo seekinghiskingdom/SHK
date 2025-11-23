@@ -823,3 +823,57 @@ body.tool-app-body #content.tool-app-container {
     margin-left: 0;
   }
 }
+
+/* === HARD RESET: Infinite Bible toolbar layout (3 clean horizontal clusters) === */
+
+/* Whole toolbar row: single flex row, no wrapping */
+.infinite-bible-app .ib-toolbar-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 1rem !important;
+}
+
+/* Each section = its own horizontal cluster */
+.infinite-bible-app .ib-toolbar-section {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 0.4rem !important;
+}
+
+/* Left: Navigator + Add + File, tight and compact */
+.infinite-bible-app .ib-toolbar-left {
+  flex: 0 0 auto !important;
+}
+
+/* Middle: B / I / U, separated from left */
+.infinite-bible-app .ib-toolbar-middle {
+  flex: 0 0 auto !important;
+  margin-left: 1.5rem !important;  /* creates clear gap from File */
+}
+
+/* Right: pushed to far right, one row */
+.infinite-bible-app .ib-toolbar-right {
+  flex: 0 0 auto !important;
+  margin-left: auto !important;
+}
+
+/* Buttons inside clusters never stretch or wrap */
+.infinite-bible-app .ib-toolbar-section .ib-toolbar-btn {
+  flex: 0 0 auto !important;
+  width: auto !important;
+}
+
+/* On very small screens, allow clusters themselves to wrap under each other */
+@media (max-width: 640px) {
+  .infinite-bible-app .ib-toolbar-inner {
+    flex-wrap: wrap !important;
+  }
+
+  .infinite-bible-app .ib-toolbar-right {
+    margin-left: 0 !important;
+  }
+}
