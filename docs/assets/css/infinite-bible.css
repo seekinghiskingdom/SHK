@@ -702,3 +702,16 @@ body.tool-app-body #content.tool-app-container {
   }
 }
 
+/* === OVERRIDE: keep Navigator button compact === */
+
+/* Left toolbar section should only be as wide as its contents */
+.infinite-bible-app .ib-toolbar-left {
+  flex: 0 0 auto;
+}
+
+/* Optional: slightly tighter Navigator pill */
+.infinite-bible-app #ib-toolbar-nav {
+  padding-left: 0.55rem;
+  padding-right: 0.55rem;
+  font-size: 0.78rem;
+}

@@ -1,0 +1,43 @@
+{
+  "input_file": "tools/pps/data/input/input_pairs.json",
+  "output_file": "docs/data/v1/pps/final_pairs.json",
+  "warnings_file": "tools/pps/data/output/final_pairs_warnings.json",
+  "mappings": {
+    "id": "pair_id",
+    "ref": {
+      "book": "R.book",
+      "book_name": "R.book_name",
+      "chapter": "R.chapter",
+      "pv": "R.pv",
+      "ref_id": "R.ref_id",
+      "ref_str": "R.ref_str"
+    },
+    "status": {
+      "status": "S.status",
+      "rv": "S.rv",
+      "uv": "S.uv"
+    },
+    "x": {
+      "key": "X.key",
+      "group": "X.group"
+    },
+    "y": {
+      "key": "Y.key",
+      "group": "Y.group"
+    }
+  },
+  "required_fields": [
+    "ref.book",
+    "ref.chapter",
+    "ref.ref_id",
+    "x.key",
+    "y.key"
+  ],
+  "export_meta": {
+    "generated_at": "2025-11-23T11:37:56Z",
+    "master_file": "C:\\Users\\hrbncv\\SHK\\SHK\\tools\\pps\\data\\input\\input_pairs.json",
+    "config_source_file": "C:\\Users\\hrbncv\\SHK\\SHK\\tools\\pps\\data\\config\\pps_export_config.v1.json",
+    "final_pairs_file": "C:\\Users\\hrbncv\\SHK\\SHK\\docs\\data\\v1\\pps\\final_pairs.json",
+    "warnings_file": "C:\\Users\\hrbncv\\SHK\\SHK\\tools\\pps\\data\\output\\final_pairs_warnings.json"
+  }
+}
