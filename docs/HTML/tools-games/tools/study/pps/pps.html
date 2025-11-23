@@ -1,0 +1,1236 @@
+---
+layout: default
+title: Proverb Pair Search
+permalink: /tools-games/tools/proverb-pair-search/
+---
+
+<style>
+  :root {
+    --pps-bg: #0f172a;
+    --pps-bg-alt: #020617;
+    --pps-panel: #020617;
+    --pps-border: #1e293b;
+    --pps-accent: #facc15;
+    --pps-accent-alt: #f97316;
+    --pps-text: #e5e7eb;
+    --pps-text-muted: #9ca3af;
+    --pps-radius-lg: 20px;
+    --pps-radius-md: 12px;
+    --pps-shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.75);
+    --pps-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--pps-font);
+    background: radial-gradient(circle at top, #1f2937 0, #020617 45%, #000 100%);
+    color: var(--pps-text);
+  }
+
+  main.pps-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+  }
+
+  .pps-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .pps-title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pps-title {
+    font-size: 1.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .pps-pill {
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(250, 204, 21, 0.4);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--pps-accent);
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .pps-subtitle {
+    font-size: 0.95rem;
+    color: var(--pps-text-muted);
+    max-width: 640px;
+  }
+
+  .pps-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 2.3fr) minmax(260px, 1.1fr);
+    gap: 18px;
+  }
+
+  @media (max-width: 900px) {
+    .pps-shell {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .pps-panel-main {
+    background: radial-gradient(circle at top left, #111827 0, #020617 55%);
+    border-radius: 26px;
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    box-shadow: var(--pps-shadow-soft);
+    padding: 16px 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pps-panel-main::before {
+    content: "";
+    position: absolute;
+    inset: -25%;
+    background:
+      radial-gradient(circle at 0% 0%, rgba(250, 204, 21, 0.17) 0, transparent 55%),
+      radial-gradient(circle at 100% 0%, rgba(148, 163, 184, 0.16) 0, transparent 55%);
+    opacity: 0.8;
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+
+  .pps-panel-main-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pps-controls-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .pps-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    align-items: flex-end;
+  }
+
+  .pps-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 120px;
+  }
+
+  .pps-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--pps-text-muted);
+  }
+
+  select {
+    border-radius: var(--pps-radius-md);
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.9);
+    color: var(--pps-text);
+    padding: 7px 10px;
+    font-size: 0.9rem;
+    outline: none;
+    min-height: 34px;
+  }
+
+  select:focus {
+    border-color: var(--pps-accent);
+    box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.7);
+  }
+
+  .pps-button,
+  .pps-button-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 999px;
+    padding: 7px 14px;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .pps-button {
+    background: linear-gradient(135deg, #facc15, #f97316);
+    color: #111827;
+    font-weight: 600;
+    box-shadow:
+      0 0 0 1px rgba(15, 23, 42, 0.55),
+      0 16px 30px rgba(15, 23, 42, 0.9);
+  }
+
+  .pps-button:hover {
+    filter: brightness(1.02);
+    transform: translateY(-0.5px);
+  }
+
+  .pps-button:active {
+    transform: translateY(0.5px);
+    box-shadow:
+      0 0 0 1px rgba(15, 23, 42, 0.55),
+      0 10px 18px rgba(15, 23, 42, 0.9);
+  }
+
+  .pps-button-ghost {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    color: var(--pps-text-muted);
+  }
+
+  .pps-button-ghost:hover {
+    background: rgba(15, 23, 42, 0.95);
+    color: var(--pps-text);
+  }
+
+  .pps-status-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.78rem;
+    color: var(--pps-text-muted);
+    margin-top: 2px;
+  }
+
+  .pps-status-badge {
+    padding: 4px 9px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    background: rgba(15, 23, 42, 0.85);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pps-status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.8);
+  }
+
+  .pps-status-dot.pps-ok {
+    background: #22c55e;
+  }
+
+  .pps-status-dot.pps-loading {
+    background: #facc15;
+  }
+
+  .pps-status-dot.pps-error {
+    background: #ef4444;
+  }
+
+  .pps-inline-label {
+    font-size: 0.8rem;
+    color: var(--pps-text-muted);
+    min-height: 1.1em;
+  }
+
+  .pps-stats-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--pps-text-muted);
+    margin-top: 4px;
+  }
+
+  .pps-stats-counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+
+  .pps-stats-pill {
+    border-radius: 999px;
+    padding: 3px 10px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: rgba(15, 23, 42, 0.9);
+  }
+
+  .pps-pairs-shell {
+    border-radius: 20px;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    background: radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.18) 0, transparent 50%),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 1));
+    padding: 12px 12px 16px;
+    max-height: calc(100vh - 260px);
+    overflow: auto;
+    position: relative;
+  }
+
+  @media (max-width: 900px) {
+    .pps-pairs-shell {
+      max-height: none;
+    }
+  }
+
+  .pps-pairs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .pps-pairs-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-pairs-subtitle {
+    font-size: 0.82rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-pairs-empty {
+    font-size: 0.9rem;
+    color: var(--pps-text-muted);
+    text-align: center;
+    padding: 24px 8px 18px;
+  }
+
+  .pps-pair-card {
+    border-radius: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: rgba(15, 23, 42, 0.96);
+    padding: 10px 10px 9px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: background 0.12s ease, box-shadow 0.12s ease, transform 0.08s ease;
+  }
+
+  .pps-pair-card:hover {
+    background: rgba(15, 23, 42, 1);
+    box-shadow: 0 6px 12px rgba(15, 23, 42, 0.9);
+    transform: translateY(-0.5px);
+  }
+
+  .pps-pair-header-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: baseline;
+  }
+
+  .pps-pair-ref {
+    font-size: 0.86rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-status-chip {
+    border-radius: 999px;
+    padding: 2px 8px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    font-size: 0.74rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-pair-columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  @media (max-width: 700px) {
+    .pps-pair-columns {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .pps-pair-col {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .pps-pair-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-pair-key {
+    font-size: 0.97rem;
+  }
+
+  .pps-pair-group {
+    font-size: 0.78rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-pair-meta {
+    font-size: 0.75rem;
+    color: var(--pps-text-muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .pps-sidepanel {
+    border-radius: 22px;
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    background: linear-gradient(to bottom, #020617, #020617);
+    padding: 14px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pps-sidepanel::before {
+    content: "";
+    position: absolute;
+    inset: -30%;
+    background:
+      radial-gradient(circle at 0 0, rgba(250, 204, 21, 0.15) 0, transparent 50%),
+      radial-gradient(circle at 100% 0, rgba(55, 65, 81, 0.25) 0, transparent 55%);
+    opacity: 0.8;
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+
+  .pps-sidepanel-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .pps-side-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pps-side-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-side-pill {
+    font-size: 0.74rem;
+    padding: 4px 9px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(15, 23, 42, 0.85);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pps-side-pill-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--pps-accent);
+  }
+
+  .pps-side-section {
+    border-radius: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(15, 23, 42, 0.94);
+    padding: 10px 10px 10px;
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .pps-side-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .pps-side-section-title {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-link {
+    color: var(--pps-accent);
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .pps-link:hover {
+    text-decoration: underline;
+  }
+
+  .pps-side-kv {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .pps-side-kv-label {
+    color: var(--pps-text-muted);
+    font-size: 0.8rem;
+  }
+
+  .pps-side-kv-value {
+    font-size: 0.8rem;
+    text-align: right;
+  }
+
+  .pps-side-note {
+    font-size: 0.8rem;
+    color: var(--pps-text-muted);
+  }
+
+  .pps-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 2px;
+  }
+
+  .pps-tag {
+    border-radius: 999px;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    background: rgba(15, 23, 42, 0.9);
+    color: var(--pps-text-muted);
+  }
+
+  .pps-footer-note {
+    font-size: 0.78rem;
+    color: var(--pps-text-muted);
+    text-align: right;
+    margin-top: 8px;
+  }
+</style>
+
+<main class="pps-page" id="pps-page">
+  <header class="pps-header">
+    <div class="pps-title-row">
+      <h1 class="pps-title">Proverb Pair Search</h1>
+      <span class="pps-pill">Study Tool</span>
+    </div>
+    <p class="pps-subtitle">
+      Filter and browse curated proverb pairs by book, chapter, and status. Data is loaded from the local PPS JSON
+      generated by the PPS pipeline.
+    </p>
+  </header>
+
+  <section class="pps-shell" aria-label="Proverb Pair Search">
+    <!-- MAIN PANEL -->
+    <section class="pps-panel-main" aria-label="Pair list panel">
+      <div class="pps-panel-main-inner">
+        <!-- Filters -->
+        <div class="pps-controls-top">
+          <div class="pps-group" aria-label="Pair filters">
+            <div class="pps-field">
+              <label class="pps-label" for="pps-book-select">Book</label>
+              <select id="pps-book-select">
+                <!-- populated by JS -->
+              </select>
+            </div>
+
+            <div class="pps-field">
+              <label class="pps-label" for="pps-chapter-select">Chapter</label>
+              <select id="pps-chapter-select" disabled>
+                <option value="">Select book first</option>
+              </select>
+            </div>
+
+            <div class="pps-field">
+              <label class="pps-label" for="pps-status-select">Status</label>
+              <select id="pps-status-select">
+                <option value="">All statuses</option>
+              </select>
+            </div>
+
+            <button type="button" class="pps-button-ghost" id="pps-reset-filters">
+              Reset Filters
+            </button>
+          </div>
+
+          <div class="pps-group" style="justify-content: flex-end;">
+            <div class="pps-status-row" aria-live="polite">
+              <div class="pps-inline-label" id="pps-status-label">
+                Loading PPS data…
+              </div>
+              <span class="pps-status-badge">
+                <span class="pps-status-dot" id="pps-status-dot"></span>
+                <span id="pps-status-text">Loading</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="pps-stats-row">
+          <div class="pps-stats-counts">
+            <span class="pps-stats-pill" id="pps-count-main">– pairs</span>
+            <span class="pps-stats-pill" id="pps-count-book">Book: –</span>
+            <span class="pps-stats-pill" id="pps-count-chapter">Chapter: –</span>
+          </div>
+          <div class="pps-inline-label" id="pps-filter-summary">
+            No filters applied.
+          </div>
+        </div>
+
+        <!-- Pairs list -->
+        <div class="pps-pairs-shell" id="pps-pairs-shell">
+          <div class="pps-pairs-header">
+            <div class="pps-pairs-title">Pairs</div>
+            <div class="pps-pairs-subtitle" id="pps-pairs-subtitle">
+              Waiting for data…
+            </div>
+          </div>
+          <div id="pps-pairs-list">
+            <div class="pps-pairs-empty">
+              PPS data has not finished loading yet.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIDE PANEL -->
+    <aside class="pps-sidepanel" aria-label="PPS data and export details">
+      <div class="pps-sidepanel-inner">
+        <div class="pps-side-header">
+          <div class="pps-side-title">PPS Dataset</div>
+          <div class="pps-side-pill">
+            <span class="pps-side-pill-dot"></span>
+            <span id="pps-side-pill-label">Loading</span>
+          </div>
+        </div>
+
+        <!-- Meta -->
+        <section class="pps-side-section" aria-label="PPS meta">
+          <div class="pps-side-section-header">
+            <div class="pps-side-section-title">Data snapshot</div>
+            <a
+              class="pps-link"
+              href="{{ site.baseurl }}/data/v1/pps/final_pairs.json"
+            >
+              Raw JSON
+            </a>
+          </div>
+          <div class="pps-side-kv">
+            <span class="pps-side-kv-label">Pairs</span>
+            <span class="pps-side-kv-value" id="pps-side-pairs-total">–</span>
+          </div>
+          <div class="pps-side-kv">
+            <span class="pps-side-kv-label">Books</span>
+            <span class="pps-side-kv-value" id="pps-side-books">–</span>
+          </div>
+          <div class="pps-side-kv">
+            <span class="pps-side-kv-label">Chapters</span>
+            <span class="pps-side-kv-value" id="pps-side-chapters">–</span>
+          </div>
+          <div class="pps-side-kv">
+            <span class="pps-side-kv-label">Exported at</span>
+            <span class="pps-side-kv-value" id="pps-side-generated-at">–</span>
+          </div>
+          <p class="pps-side-note">
+            Values shown here are computed from <code>final_pairs.json</code> and the export metadata.
+          </p>
+        </section>
+
+        <!-- Export config -->
+        <section class="pps-side-section" aria-label="Export config">
+          <div class="pps-side-section-header">
+            <div class="pps-side-section-title">Export config</div>
+            <a
+              class="pps-link"
+              href="{{ site.baseurl }}/data/v1/pps/pps_export_config.v1.json"
+            >
+              View config
+            </a>
+          </div>
+          <div class="pps-side-kv">
+            <span class="pps-side-kv-label">Config source</span>
+            <span class="pps-side-kv-value" id="pps-side-config-source">–</span>
+          </div>
+          <div class="pps-side-kv">
+            <span class="pps-side-kv-label">Warnings</span>
+            <span class="pps-side-kv-value" id="pps-side-warnings-total">–</span>
+          </div>
+          <p class="pps-side-note">
+            The config controls which fields are exported for the tool. Front-end filters are derived from the same
+            structure.
+          </p>
+        </section>
+
+        <!-- Notes -->
+        <section class="pps-side-section" aria-label="Usage notes">
+          <div class="pps-side-section-header">
+            <div class="pps-side-section-title">Usage notes</div>
+          </div>
+          <div class="pps-tags">
+            <span class="pps-tag">Book filter</span>
+            <span class="pps-tag">Chapter filter</span>
+            <span class="pps-tag">Status filter</span>
+            <span class="pps-tag">Client-side JSON</span>
+          </div>
+          <p class="pps-side-note">
+            Future versions can add key/group toggles, deeper filtering, and links into other SHK tools.
+          </p>
+        </section>
+
+        <div class="pps-footer-note">
+          Data source: <code>/data/v1/pps/final_pairs.json</code><br />
+          Config: <code>/data/v1/pps/pps_export_config.v1.json</code>
+        </div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<script>
+  (function () {
+    "use strict";
+
+    const BASEURL = "{{ site.baseurl | default: '' }}";
+    const PPS_DATA_URL = BASEURL + "/data/v1/pps/final_pairs.json";
+    const PPS_CONFIG_URL = BASEURL + "/data/v1/pps/pps_export_config.v1.json";
+
+    const bookSelect = document.getElementById("pps-book-select");
+    const chapterSelect = document.getElementById("pps-chapter-select");
+    const statusSelect = document.getElementById("pps-status-select");
+    const resetButton = document.getElementById("pps-reset-filters");
+
+    const statusDot = document.getElementById("pps-status-dot");
+    const statusText = document.getElementById("pps-status-text");
+    const statusLabel = document.getElementById("pps-status-label");
+
+    const pairsShell = document.getElementById("pps-pairs-shell");
+    const pairsList = document.getElementById("pps-pairs-list");
+    const pairsSubtitle = document.getElementById("pps-pairs-subtitle");
+
+    const countMain = document.getElementById("pps-count-main");
+    const countBook = document.getElementById("pps-count-book");
+    const countChapter = document.getElementById("pps-count-chapter");
+    const filterSummary = document.getElementById("pps-filter-summary");
+
+    const sidePillLabel = document.getElementById("pps-side-pill-label");
+    const sidePairsTotal = document.getElementById("pps-side-pairs-total");
+    const sideBooks = document.getElementById("pps-side-books");
+    const sideChapters = document.getElementById("pps-side-chapters");
+    const sideGeneratedAt = document.getElementById("pps-side-generated-at");
+    const sideConfigSource = document.getElementById("pps-side-config-source");
+    const sideWarningsTotal = document.getElementById("pps-side-warnings-total");
+
+    const state = {
+      allPairs: [],
+      booksIndex: new Map(), // bookCode -> { name, chapters: Set }
+      statuses: new Set(),
+      totalWarnings: null,
+      metaGeneratedAt: null,
+      filters: {
+        book: "",
+        chapter: "",
+        status: ""
+      }
+    };
+
+    function setStatus(mode, message) {
+      statusDot.classList.remove("pps-ok", "pps-loading", "pps-error");
+
+      if (mode === "ok") {
+        statusDot.classList.add("pps-ok");
+      } else if (mode === "loading") {
+        statusDot.classList.add("pps-loading");
+      } else if (mode === "error") {
+        statusDot.classList.add("pps-error");
+      }
+
+      statusText.textContent = message || "";
+      statusLabel.textContent = message || "";
+      sidePillLabel.textContent =
+        mode === "ok" ? "Ready" : mode === "loading" ? "Loading" : "Error";
+    }
+
+    function toStringOrEmpty(value) {
+      if (value === undefined || value === null) return "";
+      return String(value);
+    }
+
+    function buildIndexes() {
+      const booksIndex = new Map();
+      const statuses = new Set();
+
+      state.allPairs.forEach((pair) => {
+        const ref = pair.ref || {};
+        const status = pair.status || {};
+
+        const bookCodeRaw = ref.book;
+        if (bookCodeRaw !== undefined && bookCodeRaw !== null && bookCodeRaw !== "") {
+          const bookCode = String(bookCodeRaw);
+          const bookName = ref.book_name ? String(ref.book_name) : bookCode.toUpperCase();
+          const chapterVal = ref.chapter;
+          const chapterKey = chapterVal !== undefined && chapterVal !== null ? String(chapterVal) : null;
+
+          if (!booksIndex.has(bookCode)) {
+            booksIndex.set(bookCode, {
+              code: bookCode,
+              name: bookName,
+              chapters: new Set()
+            });
+          }
+          if (chapterKey !== null && chapterKey !== "") {
+            booksIndex.get(bookCode).chapters.add(chapterKey);
+          }
+        }
+
+        const statusVal = status.status;
+        if (statusVal !== undefined && statusVal !== null && statusVal !== "") {
+          statuses.add(String(statusVal));
+        }
+      });
+
+      state.booksIndex = booksIndex;
+      state.statuses = statuses;
+    }
+
+    function sortChapterValues(values) {
+      return values.slice().sort((a, b) => {
+        const na = Number(a);
+        const nb = Number(b);
+        const aNum = !isNaN(na);
+        const bNum = !isNaN(nb);
+
+        if (aNum && bNum) return na - nb;
+        if (aNum && !bNum) return -1;
+        if (!aNum && bNum) return 1;
+        return String(a).localeCompare(String(b));
+      });
+    }
+
+    function populateBookSelect() {
+      bookSelect.innerHTML = "";
+      const defaultOpt = document.createElement("option");
+      defaultOpt.value = "";
+      defaultOpt.textContent = "All books";
+      bookSelect.appendChild(defaultOpt);
+
+      const books = Array.from(state.booksIndex.values()).sort((a, b) =>
+        a.name.localeCompare(b.name)
+      );
+
+      books.forEach((book) => {
+        const opt = document.createElement("option");
+        opt.value = book.code;
+        opt.textContent = book.name;
+        bookSelect.appendChild(opt);
+      });
+
+      bookSelect.value = state.filters.book || "";
+    }
+
+    function populateChapterSelect() {
+      chapterSelect.innerHTML = "";
+
+      if (!state.filters.book) {
+        chapterSelect.disabled = true;
+        const opt = document.createElement("option");
+        opt.value = "";
+        opt.textContent = "Select book first";
+        chapterSelect.appendChild(opt);
+        state.filters.chapter = "";
+        return;
+      }
+
+      const book = state.booksIndex.get(state.filters.book);
+      if (!book) {
+        chapterSelect.disabled = true;
+        const opt = document.createElement("option");
+        opt.value = "";
+        opt.textContent = "No chapters";
+        chapterSelect.appendChild(opt);
+        state.filters.chapter = "";
+        return;
+      }
+
+      const chapters = sortChapterValues(Array.from(book.chapters));
+      chapterSelect.disabled = false;
+
+      const anyOpt = document.createElement("option");
+      anyOpt.value = "";
+      anyOpt.textContent = "All chapters";
+      chapterSelect.appendChild(anyOpt);
+
+      chapters.forEach((ch) => {
+        const opt = document.createElement("option");
+        opt.value = ch;
+        opt.textContent = ch;
+        chapterSelect.appendChild(opt);
+      });
+
+      if (
+        state.filters.chapter &&
+        !chapters.includes(state.filters.chapter)
+      ) {
+        state.filters.chapter = "";
+      }
+
+      chapterSelect.value = state.filters.chapter || "";
+    }
+
+    function populateStatusSelect() {
+      const current = state.filters.status || "";
+      statusSelect.innerHTML = "";
+
+      const anyOpt = document.createElement("option");
+      anyOpt.value = "";
+      anyOpt.textContent = "All statuses";
+      statusSelect.appendChild(anyOpt);
+
+      const statuses = Array.from(state.statuses).sort((a, b) =>
+        a.localeCompare(b)
+      );
+
+      statuses.forEach((s) => {
+        const opt = document.createElement("option");
+        opt.value = s;
+        opt.textContent = s;
+        statusSelect.appendChild(opt);
+      });
+
+      statusSelect.value = current;
+    }
+
+    function applyFilters() {
+      const { book, chapter, status } = state.filters;
+
+      let filtered = state.allPairs;
+
+      if (book) {
+        filtered = filtered.filter((pair) => {
+          const ref = pair.ref || {};
+          return toStringOrEmpty(ref.book) === book;
+        });
+      }
+
+      if (chapter) {
+        filtered = filtered.filter((pair) => {
+          const ref = pair.ref || {};
+          const chVal = ref.chapter;
+          return toStringOrEmpty(chVal) === chapter;
+        });
+      }
+
+      if (status) {
+        filtered = filtered.filter((pair) => {
+          const st = pair.status || {};
+          return toStringOrEmpty(st.status) === status;
+        });
+      }
+
+      return filtered;
+    }
+
+    function updateCounts(filtered) {
+      const total = state.allPairs.length;
+      const selected = filtered.length;
+
+      countMain.textContent = selected + " / " + total + " pairs";
+
+      if (state.filters.book) {
+        const bookInfo = state.booksIndex.get(state.filters.book);
+        const label = bookInfo ? bookInfo.name : state.filters.book;
+        countBook.textContent = "Book: " + label;
+      } else {
+        countBook.textContent = "Book: All";
+      }
+
+      if (!state.filters.book || !state.filters.chapter) {
+        countChapter.textContent = "Chapter: All";
+      } else {
+        countChapter.textContent = "Chapter: " + state.filters.chapter;
+      }
+
+      const activeFilters = [];
+      if (state.filters.book) activeFilters.push("Book");
+      if (state.filters.chapter) activeFilters.push("Chapter");
+      if (state.filters.status) activeFilters.push("Status");
+
+      if (!activeFilters.length) {
+        filterSummary.textContent = "No filters applied.";
+      } else {
+        filterSummary.textContent =
+          "Active filters: " + activeFilters.join(", ") + ".";
+      }
+
+      pairsSubtitle.textContent =
+        selected === 0
+          ? "No pairs match the current filters."
+          : "Showing " + selected + " pair" + (selected === 1 ? "" : "s") + ".";
+    }
+
+    function renderPairs(filtered) {
+      pairsList.innerHTML = "";
+
+      if (!filtered.length) {
+        const div = document.createElement("div");
+        div.className = "pps-pairs-empty";
+        div.textContent = "No pairs match the current filters.";
+        pairsList.appendChild(div);
+        return;
+      }
+
+      filtered.forEach((pair) => {
+        const ref = pair.ref || {};
+        const status = pair.status || {};
+        const x = pair.x || {};
+        const y = pair.y || {};
+
+        const card = document.createElement("article");
+        card.className = "pps-pair-card";
+        card.dataset.id = toStringOrEmpty(pair.id);
+
+        const header = document.createElement("div");
+        header.className = "pps-pair-header-row";
+
+        const refLabel = document.createElement("div");
+        refLabel.className = "pps-pair-ref";
+        refLabel.textContent = toStringOrEmpty(ref.ref_str || ref.ref_id || ref.book);
+
+        const statusChip = document.createElement("div");
+        statusChip.className = "pps-status-chip";
+        const stVal = toStringOrEmpty(status.status);
+        const rvVal = toStringOrEmpty(status.rv);
+        const uvVal = toStringOrEmpty(status.uv);
+        statusChip.textContent = stVal
+          ? stVal + (uvVal ? " • " + uvVal : rvVal ? " • " + rvVal : "")
+          : "–";
+
+        header.appendChild(refLabel);
+        header.appendChild(statusChip);
+
+        const cols = document.createElement("div");
+        cols.className = "pps-pair-columns";
+
+        const xCol = document.createElement("div");
+        xCol.className = "pps-pair-col";
+        const xLabel = document.createElement("div");
+        xLabel.className = "pps-pair-label";
+        xLabel.textContent = "X side";
+        const xKey = document.createElement("div");
+        xKey.className = "pps-pair-key";
+        xKey.textContent = toStringOrEmpty(x.key) || "–";
+        const xGroup = document.createElement("div");
+        xGroup.className = "pps-pair-group";
+        const xGroupVal = toStringOrEmpty(x.group);
+        xGroup.textContent = xGroupVal ? "Group: " + xGroupVal : "";
+        xCol.appendChild(xLabel);
+        xCol.appendChild(xKey);
+        if (xGroupVal) xCol.appendChild(xGroup);
+
+        const yCol = document.createElement("div");
+        yCol.className = "pps-pair-col";
+        const yLabel = document.createElement("div");
+        yLabel.className = "pps-pair-label";
+        yLabel.textContent = "Y side";
+        const yKey = document.createElement("div");
+        yKey.className = "pps-pair-key";
+        yKey.textContent = toStringOrEmpty(y.key) || "–";
+        const yGroup = document.createElement("div");
+        yGroup.className = "pps-pair-group";
+        const yGroupVal = toStringOrEmpty(y.group);
+        yGroup.textContent = yGroupVal ? "Group: " + yGroupVal : "";
+        yCol.appendChild(yLabel);
+        yCol.appendChild(yKey);
+        if (yGroupVal) yCol.appendChild(yGroup);
+
+        cols.appendChild(xCol);
+        cols.appendChild(yCol);
+
+        const meta = document.createElement("div");
+        meta.className = "pps-pair-meta";
+        const idSpan = document.createElement("span");
+        idSpan.textContent = "ID: " + toStringOrEmpty(pair.id);
+        const refIdSpan = document.createElement("span");
+        refIdSpan.textContent = "ref_id: " + toStringOrEmpty(ref.ref_id);
+        meta.appendChild(idSpan);
+        meta.appendChild(refIdSpan);
+
+        card.appendChild(header);
+        card.appendChild(cols);
+        card.appendChild(meta);
+
+        pairsList.appendChild(card);
+      });
+    }
+
+    function updateUI() {
+      const filtered = applyFilters();
+      updateCounts(filtered);
+      renderPairs(filtered);
+    }
+
+    function attachFilterHandlers() {
+      bookSelect.addEventListener("change", () => {
+        state.filters.book = bookSelect.value || "";
+        // When book changes, reset chapter
+        state.filters.chapter = "";
+        populateChapterSelect();
+        updateUI();
+      });
+
+      chapterSelect.addEventListener("change", () => {
+        state.filters.chapter = chapterSelect.value || "";
+        updateUI();
+      });
+
+      statusSelect.addEventListener("change", () => {
+        state.filters.status = statusSelect.value || "";
+        updateUI();
+      });
+
+      resetButton.addEventListener("click", () => {
+        state.filters.book = "";
+        state.filters.chapter = "";
+        state.filters.status = "";
+        populateBookSelect();
+        populateChapterSelect();
+        populateStatusSelect();
+        updateUI();
+      });
+    }
+
+    async function loadConfigMeta() {
+      try {
+        const res = await fetch(PPS_CONFIG_URL, { cache: "no-store" });
+        if (!res.ok) return;
+        const cfg = await res.json();
+
+        const exportMeta = cfg.export_meta || {};
+        sideConfigSource.textContent = exportMeta.config_source_file
+          ? exportMeta.config_source_file
+          : "tools-side config";
+        if (exportMeta.generated_at) {
+          sideGeneratedAt.textContent = exportMeta.generated_at;
+          state.metaGeneratedAt = exportMeta.generated_at;
+        }
+      } catch (err) {
+        console.warn("Failed to load PPS export config:", err);
+      }
+    }
+
+    async function loadWarningsMeta() {
+      // Optional: just use the warnings count if present
+      const warningsPath = BASEURL + "/tools/pps/data/output/final_pairs_warnings.json";
+      try {
+        const res = await fetch(warningsPath, { cache: "no-store" });
+        if (!res.ok) return;
+        const json = await res.json();
+        const stats = json.meta && json.meta.stats ? json.meta.stats : null;
+        if (stats && typeof stats.warnings_total === "number") {
+          state.totalWarnings = stats.warnings_total;
+          sideWarningsTotal.textContent = String(stats.warnings_total);
+        }
+      } catch (err) {
+        console.warn("Failed to load PPS warnings file:", err);
+      }
+    }
+
+    async function loadData() {
+      setStatus("loading", "Loading PPS data…");
+      try {
+        const res = await fetch(PPS_DATA_URL, { cache: "no-store" });
+        if (!res.ok) {
+          throw new Error("Failed to load final_pairs.json");
+        }
+        const json = await res.json();
+        const pairs = Array.isArray(json.pairs) ? json.pairs : [];
+        state.allPairs = pairs;
+
+        buildIndexes();
+        populateBookSelect();
+        populateChapterSelect();
+        populateStatusSelect();
+        attachFilterHandlers();
+
+        const meta = json.meta || {};
+        const stats = meta.stats || {};
+        sidePairsTotal.textContent = stats.pairs_total != null
+          ? String(stats.pairs_total)
+          : String(pairs.length);
+        sideBooks.textContent = Array.isArray(stats.books)
+          ? String(stats.books.length)
+          : "–";
+        sideChapters.textContent = Array.isArray(stats.chapters)
+          ? String(stats.chapters.length)
+          : "–";
+
+        if (meta.generated_at) {
+          sideGeneratedAt.textContent = meta.generated_at;
+          state.metaGeneratedAt = meta.generated_at;
+        }
+
+        setStatus("ok", "Ready");
+        updateUI();
+
+        // Load config meta + warnings in background
+        loadConfigMeta();
+        loadWarningsMeta();
+      } catch (err) {
+        console.error(err);
+        setStatus("error", "Failed to load PPS data.");
+        pairsList.innerHTML = "";
+        const div = document.createElement("div");
+        div.className = "pps-pairs-empty";
+        div.textContent =
+          "Unable to load PPS data. Check that final_pairs.json is present and valid.";
+        pairsList.appendChild(div);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadData);
+  })();
+</script>

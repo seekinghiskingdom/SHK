@@ -715,3 +715,23 @@ body.tool-app-body #content.tool-app-container {
   padding-right: 0.55rem;
   font-size: 0.78rem;
 }
+
+
+/* === OVERRIDE: space toolbar into three compartments === */
+
+/* Spread left / middle / right sections across the bar */
+.infinite-bible-app .ib-toolbar-inner {
+  justify-content: space-between;
+}
+
+/* Each section sizes to its content; no auto-stretching */
+.infinite-bible-app .ib-toolbar-left,
+.infinite-bible-app .ib-toolbar-middle,
+.infinite-bible-app .ib-toolbar-right {
+  flex: 0 0 auto;
+}
+
+/* Right section no longer needs the auto-push margin */
+.infinite-bible-app .ib-toolbar-right {
+  margin-left: 0;
+}

@@ -47,18 +47,42 @@ extra_css:
   <section class="ib-toolbar-shell" aria-label="Infinite Bible toolbar and helpers">
     <div class="ib-toolbar" aria-label="Infinite Bible tools">
       <div class="ib-toolbar-inner">
+
         <!-- Left: Navigator only -->
         <div class="ib-toolbar-section ib-toolbar-left">
-          <!-- Navigator toggle -->
-          <button
-            type="button"
-            class="ib-toolbar-btn ib-toolbar-btn-primary"
-            id="ib-toolbar-nav"
-            aria-pressed="true"
-          >
-            Navigator
-          </button>
+            <!-- Navigator toggle -->
+            <button
+                type="button"
+                class="ib-toolbar-btn ib-toolbar-btn-primary"
+                id="ib-toolbar-nav"
+                aria-pressed="true"
+            >
+                Navigator
+            </button>
+
+            <!-- Add block (stub; will grow into verse/note/section insert) -->
+            <button
+                type="button"
+                class="ib-toolbar-btn ib-toolbar-btn-plain"
+                id="ib-toolbar-add"
+                disabled
+                title="Add verse blocks, notes, and sections – coming soon."
+            >
+                + Add
+            </button>
+
+            <!-- File menu (stub; future import/export) -->
+            <button
+                type="button"
+                class="ib-toolbar-btn ib-toolbar-btn-plain"
+                id="ib-toolbar-file"
+                disabled
+                title="Import/export and board file actions – coming soon."
+            >
+                File
+            </button>
         </div>
+
 
         <!-- Middle: formatting / tools (placeholders for now) -->
         <div class="ib-toolbar-section ib-toolbar-middle">
