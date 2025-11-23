@@ -1,304 +1,1117 @@
----
-layout: default
-title: Bible Viewer
-permalink: /tools-games/tools/bible-viewer/
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bible Viewer | Seeking His Kingdom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<section class="tool bible-viewer">
-  <h1>Bible Viewer</h1>
+  <!-- TODO: If you have a global stylesheet, link it here -->
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"> -->
 
-  <form id="bv-form" class="bv-form">
-    <div class="bv-field">
-      <label for="bv-translation">Translation</label>
-      <select id="bv-translation" name="translation">
-        <!-- Populated by JS -->
-      </select>
-    </div>
+  <style>
+    :root {
+      --bv-bg: #0f172a;
+      --bv-bg-alt: #020617;
+      --bv-panel: #020617;
+      --bv-panel-alt: #020617;
+      --bv-border: #1e293b;
+      --bv-accent: #facc15;
+      --bv-accent-soft: rgba(250, 204, 21, 0.15);
+      --bv-text: #e5e7eb;
+      --bv-text-muted: #9ca3af;
+      --bv-radius-lg: 18px;
+      --bv-radius-md: 12px;
+      --bv-radius-sm: 8px;
+      --bv-shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.75);
+      --bv-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
 
-    <div class="bv-field">
-      <label for="bv-ref">Reference</label>
-      <input
-        id="bv-ref"
-        name="ref"
-        type="text"
-        placeholder="e.g. John 3:16 or John 3:16-18 or John 3"
-        required
-      />
-    </div>
+    * {
+      box-sizing: border-box;
+    }
 
-    <button type="submit">Go</button>
-  </form>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--bv-font);
+      background: radial-gradient(circle at top, #1f2937 0, #020617 45%, #000 100%);
+      color: var(--bv-text);
+      min-height: 100vh;
+    }
 
-  <div id="bv-message" class="bv-message"></div>
+    .bv-page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
 
-  <div id="bv-chapter" class="bv-chapter"></div>
-</section>
+    .bv-header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
 
-<style>
-  .bible-viewer {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+    .bv-title-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 
-  .bv-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    align-items: flex-end;
-    margin-bottom: 1.5rem;
-  }
+    .bv-title {
+      font-size: 1.75rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
 
-  .bv-field {
-    display: flex;
-    flex-direction: column;
-  }
+    .bv-pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(250, 204, 21, 0.4);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--bv-accent);
+      background: rgba(0, 0, 0, 0.5);
+    }
 
-  .bv-field label {
-    font-size: 0.9rem;
-    margin-bottom: 0.25rem;
-  }
+    .bv-subtitle {
+      font-size: 0.95rem;
+      color: var(--bv-text-muted);
+      max-width: 640px;
+    }
 
-  #bv-ref {
-    min-width: 220px;
-  }
+    .bv-shell {
+      display: grid;
+      grid-template-columns: minmax(0, 2.4fr) minmax(260px, 1.2fr);
+      gap: 18px;
+    }
 
-  .bv-message {
-    min-height: 1.2em;
-    margin-bottom: 0.75rem;
-    font-size: 0.9rem;
-  }
-
-  .bv-message.error {
-    color: #b00020;
-  }
-
-  .bv-message.info {
-    color: #555;
-  }
-
-  .bv-chapter {
-    border-top: 1px solid #ddd;
-    padding-top: 1rem;
-  }
-
-  .bv-chapter-header {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  .bv-verse {
-    margin: 0.1rem 0;
-    line-height: 1.5;
-  }
-
-  .bv-verse-number {
-    font-weight: 600;
-    margin-right: 0.3rem;
-    font-size: 0.85rem;
-  }
-
-  .bv-verse.highlight {
-    background: rgba(255, 230, 150, 0.7);
-  }
-</style>
-
-<script>
-(function () {
-  // URL to the central translations list (docs/data/v1/lit/bible/translations.json)
-  const TRANSLATIONS_URL = '{{ "/data/v1/lit/bible/translations.json" | relative_url }}';
-  // Handles GitHub Pages subdirectory vs root
-  const SITE_BASE = '{{ "" | relative_url }}'.replace(/\/$/, "");
-
-  let TRANSLATIONS = [];
-
-  const form = document.getElementById('bv-form');
-  const translationSelect = document.getElementById('bv-translation');
-  const refInput = document.getElementById('bv-ref');
-  const messageEl = document.getElementById('bv-message');
-  const chapterEl = document.getElementById('bv-chapter');
-
-  function setMessage(text, type) {
-    messageEl.textContent = text || '';
-    messageEl.className = 'bv-message' + (type ? ' ' + type : '');
-  }
-
-  function leftPad(num, size) {
-    let s = String(num);
-    while (s.length < size) s = '0' + s;
-    return s;
-  }
-
-  function resolveTranslation(id) {
-    return TRANSLATIONS.find(tr => tr.id === id) || TRANSLATIONS[0] || null;
-  }
-
-  // Load translations.json and populate the dropdown
-  async function initTranslations() {
-    try {
-      const res = await fetch(TRANSLATIONS_URL);
-      if (!res.ok) {
-        throw new Error('Could not load translations list.');
+    @media (max-width: 900px) {
+      .bv-shell {
+        grid-template-columns: minmax(0, 1fr);
       }
-      const data = await res.json();
-      TRANSLATIONS = data;
+    }
 
-      translationSelect.innerHTML = '';
-      TRANSLATIONS.forEach(tr => {
-        const opt = document.createElement('option');
-        opt.value = tr.id;      // e.g., "kjv", "asv"
-        opt.textContent = tr.name; // e.g., "King James Version"
-        translationSelect.appendChild(opt);
-      });
+    .bv-panel-main {
+      background: radial-gradient(circle at top left, #111827 0, #020617 55%);
+      border-radius: 26px;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      box-shadow: var(--bv-shadow-soft);
+      padding: 16px 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+      overflow: hidden;
+    }
 
-      if (TRANSLATIONS.length === 0) {
-        setMessage('No translations are available.', 'error');
+    .bv-panel-main::before {
+      content: "";
+      position: absolute;
+      inset: -25%;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(250, 204, 21, 0.17) 0, transparent 55%),
+        radial-gradient(circle at 100% 0%, rgba(148, 163, 184, 0.16) 0, transparent 55%);
+      opacity: 0.8;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+
+    .bv-panel-main-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .bv-controls-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .bv-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      align-items: flex-end;
+    }
+
+    .bv-field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-width: 120px;
+    }
+
+    .bv-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--bv-text-muted);
+    }
+
+    select,
+    input[type="number"],
+    input[type="text"] {
+      border-radius: var(--bv-radius-md);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--bv-text);
+      padding: 7px 10px;
+      font-size: 0.9rem;
+      outline: none;
+      min-height: 34px;
+    }
+
+    select:focus,
+    input:focus {
+      border-color: var(--bv-accent);
+      box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.7);
+    }
+
+    .bv-inline-label {
+      font-size: 0.8rem;
+      color: var(--bv-text-muted);
+    }
+
+    .bv-button,
+    .bv-button-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 7px 14px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .bv-button {
+      background: linear-gradient(135deg, #facc15, #f97316);
+      color: #111827;
+      font-weight: 600;
+      box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.55),
+        0 16px 30px rgba(15, 23, 42, 0.9);
+    }
+
+    .bv-button:hover {
+      filter: brightness(1.02);
+      transform: translateY(-0.5px);
+    }
+
+    .bv-button:active {
+      transform: translateY(0.5px);
+      box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.55),
+        0 10px 18px rgba(15, 23, 42, 0.9);
+    }
+
+    .bv-button-ghost {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: var(--bv-text-muted);
+    }
+
+    .bv-button-ghost:hover {
+      background: rgba(15, 23, 42, 0.95);
+      color: var(--bv-text);
+    }
+
+    .bv-nav-buttons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .bv-reference-form {
+      display: flex;
+      align-items: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .bv-reference-input {
+      min-width: 140px;
+    }
+
+    .bv-status-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--bv-text-muted);
+      margin-top: 2px;
+    }
+
+    .bv-status-left span {
+      opacity: 0.85;
+    }
+
+    .bv-status-badge {
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.85);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .bv-status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(148, 163, 184, 0.8);
+    }
+
+    .bv-status-dot.bv-status-ok {
+      background: #22c55e;
+    }
+
+    .bv-status-dot.bv-status-loading {
+      background: #facc15;
+    }
+
+    .bv-status-dot.bv-status-error {
+      background: #ef4444;
+    }
+
+    .bv-status-text {
+      min-height: 1.4em;
+    }
+
+    .bv-text-shell {
+      border-radius: 20px;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      background: radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.18) 0, transparent 50%),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 1));
+      padding: 12px 12px 16px;
+      max-height: calc(100vh - 260px);
+      overflow: auto;
+      position: relative;
+    }
+
+    @media (max-width: 900px) {
+      .bv-text-shell {
+        max-height: none;
       }
-    } catch (err) {
-      console.error(err);
-      setMessage('Error loading translations.', 'error');
-    }
-  }
-
-  // Very small book map for now; you can extend this at any time.
-  const BOOK_MAP = {
-    'genesis': 'GEN',
-    'gen': 'GEN',
-    'exodus': 'EXO',
-    'exo': 'EXO',
-    'leviticus': 'LEV',
-    'lev': 'LEV',
-    'numbers': 'NUM',
-    'num': 'NUM',
-    'deuteronomy': 'DEU',
-    'deut': 'DEU',
-    'deu': 'DEU',
-    'john': 'JHN',
-    'jn': 'JHN',
-    'joh': 'JHN'
-    // TODO: fill out full mapping when convenient
-  };
-
-  // Parse "John 3:16-18" / "John 3:16" / "John 3"
-  function parseReference(input) {
-    const raw = input.trim().replace(/\s+/g, ' ');
-    const match = raw.match(/^(.+?)\s+(\d+)(?::(\d+)(?:[-–](\d+))?)?$/i);
-    if (!match) {
-      throw new Error('Could not understand reference. Try "John 3:16" or "John 3".');
     }
 
-    const bookPart = match[1].trim().toLowerCase();
-    const chapter = parseInt(match[2], 10);
-    const startVerse = match[3] ? parseInt(match[3], 10) : null;
-    const endVerse = match[4] ? parseInt(match[4], 10) : startVerse;
-
-    const bookId = BOOK_MAP[bookPart];
-    if (!bookId) {
-      throw new Error('Unknown book: "' + bookPart + '".');
+    .bv-text-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 8px;
     }
 
-    return {
-      bookId,
-      chapter,
-      startVerse,
-      endVerse
-    };
-  }
-
-  function buildChapterUrl(translation, bookId, chapter) {
-    const chapterStr = leftPad(chapter, 3);
-    // base_url from translations.json, e.g. "/data/v1/lit/bible/en/kjv"
-    const baseUrl = SITE_BASE + translation.base_url;
-    // -> "/.../data/v1/lit/bible/en/kjv/chapters/JOH/003.json"
-    return baseUrl.replace(/\/$/, "") + '/chapters/' + bookId + '/' + chapterStr + '.json';
-  }
-
-  async function fetchChapter(url) {
-    const res = await fetch(url);
-    if (!res.ok) {
-      throw new Error('Could not load chapter data (HTTP ' + res.status + ').');
+    .bv-text-ref {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--bv-text-muted);
     }
-    return res.json();
-  }
 
-  function renderChapter(chapterData, refInfo) {
-    chapterEl.innerHTML = '';
+    .bv-text-translation {
+      font-size: 0.85rem;
+      color: var(--bv-text-muted);
+    }
 
-    const header = document.createElement('div');
-    header.className = 'bv-chapter-header';
-    header.textContent = chapterData.book_id + ' ' + chapterData.chapter;
-    chapterEl.appendChild(header);
+    .bv-text {
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
 
-    let firstHighlightedEl = null;
+    .bv-verse {
+      margin-bottom: 4px;
+      padding: 4px 4px;
+      border-radius: 10px;
+      transition: background 0.12s ease, box-shadow 0.12s ease;
+      position: relative;
+    }
 
-    (chapterData.verses || []).forEach(v => {
-      const p = document.createElement('p');
-      p.className = 'bv-verse';
-      p.id = 'v-' + v.verse;
+    .bv-verse:hover {
+      background: rgba(15, 23, 42, 0.95);
+      box-shadow: 0 6px 12px rgba(15, 23, 42, 0.9);
+    }
 
-      const numSpan = document.createElement('span');
-      numSpan.className = 'bv-verse-number';
-      numSpan.textContent = v.verse;
-      p.appendChild(numSpan);
+    .bv-verse-num {
+      font-size: 0.7rem;
+      vertical-align: top;
+      margin-right: 6px;
+      color: var(--bv-accent);
+      opacity: 0.85;
+    }
 
-      const textSpan = document.createElement('span');
-      // For now we render raw text (including any Strong’s markup as plain text)
-      textSpan.textContent = ' ' + v.text;
-      p.appendChild(textSpan);
+    .bv-verse-text {
+      font-size: 0.98rem;
+    }
 
-      const { startVerse, endVerse } = refInfo || {};
-      if (
-        startVerse != null &&
-        v.verse >= startVerse &&
-        (endVerse == null || v.verse <= endVerse)
-      ) {
-        p.classList.add('highlight');
-        if (!firstHighlightedEl) firstHighlightedEl = p;
+    .bv-text-empty {
+      font-size: 0.9rem;
+      color: var(--bv-text-muted);
+      text-align: center;
+      padding: 24px 8px 18px;
+    }
+
+    .bv-sidepanel {
+      border-radius: 22px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      background: linear-gradient(to bottom, #020617, #020617);
+      padding: 14px 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bv-sidepanel::before {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      background:
+        radial-gradient(circle at 0 0, rgba(250, 204, 21, 0.15) 0, transparent 50%),
+        radial-gradient(circle at 100% 0, rgba(55, 65, 81, 0.25) 0, transparent 55%);
+      opacity: 0.8;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .bv-sidepanel-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .bv-side-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bv-side-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--bv-text-muted);
+    }
+
+    .bv-side-pill {
+      font-size: 0.74rem;
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background: rgba(15, 23, 42, 0.85);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .bv-side-section {
+      border-radius: 14px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background: rgba(15, 23, 42, 0.94);
+      padding: 10px 10px 10px;
+      font-size: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .bv-side-section + .bv-side-section {
+      margin-top: 4px;
+    }
+
+    .bv-side-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .bv-side-section-title {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--bv-text-muted);
+    }
+
+    .bv-link {
+      color: var(--bv-accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    .bv-link:hover {
+      text-decoration: underline;
+    }
+
+    .bv-side-kv {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .bv-side-kv-label {
+      color: var(--bv-text-muted);
+      font-size: 0.8rem;
+    }
+
+    .bv-side-kv-value {
+      font-size: 0.8rem;
+      text-align: right;
+    }
+
+    .bv-side-note {
+      font-size: 0.8rem;
+      color: var(--bv-text-muted);
+    }
+
+    .bv-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 2px;
+    }
+
+    .bv-tag {
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 0.75rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--bv-text-muted);
+    }
+
+    .bv-footer-note {
+      font-size: 0.78rem;
+      color: var(--bv-text-muted);
+      text-align: right;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main class="bv-page" id="bible-viewer-page">
+    <header class="bv-header">
+      <div class="bv-title-row">
+        <h1 class="bv-title">Bible Viewer</h1>
+        <span class="bv-pill">Study Tool</span>
+      </div>
+      <p class="bv-subtitle">
+        Select a translation, choose a book and chapter, or jump directly to a reference (for example:
+        <code>John 3:16</code>). Text is loaded from the local SHK data files.
+      </p>
+    </header>
+
+    <section class="bv-shell" aria-label="Bible Viewer">
+      <!-- MAIN PANEL -->
+      <section class="bv-panel-main" aria-label="Bible text panel">
+        <div class="bv-panel-main-inner">
+          <!-- Controls -->
+          <div class="bv-controls-top">
+            <!-- Left: translation / book / chapter -->
+            <div class="bv-group" aria-label="Passage selection">
+              <div class="bv-field">
+                <label class="bv-label" for="bv-translation-select">Translation</label>
+                <select id="bv-translation-select">
+                  <!-- Populated by JS; KJV default -->
+                </select>
+                <div class="bv-inline-label" id="bv-translation-inline"></div>
+              </div>
+
+              <div class="bv-field">
+                <label class="bv-label" for="bv-book-select">Book</label>
+                <select id="bv-book-select">
+                  <!-- Populated by JS -->
+                </select>
+              </div>
+
+              <div class="bv-field">
+                <label class="bv-label" for="bv-chapter-input">Chapter</label>
+                <input
+                  id="bv-chapter-input"
+                  type="number"
+                  min="1"
+                  step="1"
+                  value="1"
+                  inputmode="numeric"
+                />
+              </div>
+
+              <button type="button" class="bv-button" id="bv-load-button">
+                Load Passage
+              </button>
+            </div>
+
+            <!-- Right: navigation & reference jump -->
+            <div class="bv-group" style="justify-content: flex-end;">
+              <div class="bv-nav-buttons">
+                <button type="button" class="bv-button-ghost" id="bv-prev-chapter">
+                  ← Prev
+                </button>
+                <button type="button" class="bv-button-ghost" id="bv-next-chapter">
+                  Next →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reference jump row -->
+          <div class="bv-controls-top" style="margin-top: 4px;">
+            <form class="bv-reference-form" id="bv-reference-form" autocomplete="off">
+              <div class="bv-field bv-reference-input">
+                <label class="bv-label" for="bv-reference-input">Jump to reference</label>
+                <input
+                  id="bv-reference-input"
+                  type="text"
+                  placeholder="e.g., John 3:16 or 1 Ch 1"
+                  spellcheck="false"
+                />
+              </div>
+              <button type="submit" class="bv-button-ghost">
+                Go
+              </button>
+            </form>
+          </div>
+
+          <!-- Status row -->
+          <div class="bv-status-row" aria-live="polite">
+            <div class="bv-status-left">
+              <span id="bv-current-ref-label">No passage loaded yet.</span>
+            </div>
+            <div class="bv-status-right">
+              <span class="bv-status-badge">
+                <span class="bv-status-dot" id="bv-status-dot"></span>
+                <span id="bv-status-text" class="bv-status-text">Idle</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Text output -->
+          <div class="bv-text-shell" id="bv-text-shell">
+            <div class="bv-text-header">
+              <div class="bv-text-ref" id="bv-heading-ref">
+                <!-- Filled by JS -->
+              </div>
+              <div class="bv-text-translation" id="bv-heading-translation">
+                <!-- Filled by JS -->
+              </div>
+            </div>
+
+            <div class="bv-text" id="bv-text">
+              <div class="bv-text-empty">
+                Select a translation and passage, then choose <strong>Load Passage</strong> to display the text.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIDE PANEL -->
+      <aside class="bv-sidepanel" aria-label="Passage and translation details">
+        <div class="bv-sidepanel-inner">
+          <div class="bv-side-header">
+            <div class="bv-side-title">Translation &amp; Passage</div>
+            <div class="bv-side-pill">
+              <span style="width: 6px; height: 6px; border-radius: 999px; background: var(--bv-accent);"></span>
+              <span id="bv-side-pill-label">Ready</span>
+            </div>
+          </div>
+
+          <!-- Translation Info -->
+          <section class="bv-side-section" aria-label="Translation info">
+            <div class="bv-side-section-header">
+              <div class="bv-side-section-title">Translation</div>
+              <a
+                class="bv-link"
+                id="bv-translation-link"
+                href="/literature/bible/translations/en/kjv/"
+              >
+                Full details
+              </a>
+            </div>
+            <div class="bv-side-kv">
+              <span class="bv-side-kv-label">Name</span>
+              <span class="bv-side-kv-value" id="bv-side-translation-name">King James Version</span>
+            </div>
+            <div class="bv-side-kv">
+              <span class="bv-side-kv-label">Code</span>
+              <span class="bv-side-kv-value" id="bv-side-translation-code">KJV (en)</span>
+            </div>
+            <p class="bv-side-note" id="bv-side-translation-note">
+              This panel can be wired to your translation metadata page. For now it shows static info for KJV.
+            </p>
+          </section>
+
+          <!-- Passage Summary -->
+          <section class="bv-side-section" aria-label="Passage summary">
+            <div class="bv-side-section-header">
+              <div class="bv-side-section-title">Current passage</div>
+            </div>
+            <div class="bv-side-kv">
+              <span class="bv-side-kv-label">Reference</span>
+              <span class="bv-side-kv-value" id="bv-side-passage-ref">–</span>
+            </div>
+            <div class="bv-side-kv">
+              <span class="bv-side-kv-label">Verses</span>
+              <span class="bv-side-kv-value" id="bv-side-passage-verse-count">–</span>
+            </div>
+            <p class="bv-side-note">
+              This summary will update when a chapter is loaded. It can later be extended with themes, tags, or links to other tools.
+            </p>
+          </section>
+
+          <!-- Tool Modes / Future Features -->
+          <section class="bv-side-section" aria-label="Viewer modes">
+            <div class="bv-side-section-header">
+              <div class="bv-side-section-title">Viewer modes</div>
+            </div>
+            <div class="bv-tags">
+              <span class="bv-tag">Single chapter</span>
+              <span class="bv-tag">Reference jump</span>
+              <span class="bv-tag">Local JSON data</span>
+            </div>
+            <p class="bv-side-note">
+              Future modes (like parallel translations, part-of-speech highlighting, or cross-links to other SHK tools)
+              can be toggles here without changing the core viewer layout.
+            </p>
+          </section>
+
+          <div class="bv-footer-note">
+            Data root for this tool (v1): <code>/data/v1/</code>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      "use strict";
+
+      // Adjust this if you use Jekyll's site.baseurl; for now assume docs/ is the web root
+      const BASE_URL = ""; // e.g., "{{ site.baseurl | default: '' }}"
+
+      // v1: single translation configured in code; later you can pull this from:
+      // /data/v1/tools/bible-viewer/manifest.json
+      const TRANSLATIONS = {
+        kjv: {
+          id: "kjv",
+          label: "King James Version (KJV)",
+          language: "en",
+          languageLabel: "English",
+          pathRoot: "/data/v1/lit/bible/en/kjv/chapters",
+          translationPage: "/literature/bible/translations/en/kjv/",
+          description: "Formal equivalence translation first published in 1611."
+        }
+      };
+
+      // Basic book list with codes that match your example ("1CH" for 1 Chronicles)
+      const BOOKS = [
+        { code: "GEN", name: "Genesis" },
+        { code: "EXO", name: "Exodus" },
+        { code: "LEV", name: "Leviticus" },
+        { code: "NUM", name: "Numbers" },
+        { code: "DEU", name: "Deuteronomy" },
+        { code: "JOS", name: "Joshua" },
+        { code: "JDG", name: "Judges" },
+        { code: "RUT", name: "Ruth" },
+        { code: "1SA", name: "1 Samuel" },
+        { code: "2SA", name: "2 Samuel" },
+        { code: "1KI", name: "1 Kings" },
+        { code: "2KI", name: "2 Kings" },
+        { code: "1CH", name: "1 Chronicles" },
+        { code: "2CH", name: "2 Chronicles" },
+        { code: "EZR", name: "Ezra" },
+        { code: "NEH", name: "Nehemiah" },
+        { code: "EST", name: "Esther" },
+        { code: "JOB", name: "Job" },
+        { code: "PSA", name: "Psalms" },
+        { code: "PRO", name: "Proverbs" },
+        { code: "ECC", name: "Ecclesiastes" },
+        { code: "SNG", name: "Song of Songs" },
+        { code: "ISA", name: "Isaiah" },
+        { code: "JER", name: "Jeremiah" },
+        { code: "LAM", name: "Lamentations" },
+        { code: "EZK", name: "Ezekiel" },
+        { code: "DAN", name: "Daniel" },
+        { code: "HOS", name: "Hosea" },
+        { code: "JOL", name: "Joel" },
+        { code: "AMO", name: "Amos" },
+        { code: "OBA", name: "Obadiah" },
+        { code: "JON", name: "Jonah" },
+        { code: "MIC", name: "Micah" },
+        { code: "NAM", name: "Nahum" },
+        { code: "HAB", name: "Habakkuk" },
+        { code: "ZEP", name: "Zephaniah" },
+        { code: "HAG", name: "Haggai" },
+        { code: "ZEC", name: "Zechariah" },
+        { code: "MAL", name: "Malachi" },
+        { code: "MAT", name: "Matthew" },
+        { code: "MRK", name: "Mark" },
+        { code: "LUK", name: "Luke" },
+        { code: "JHN", name: "John" },
+        { code: "ACT", name: "Acts" },
+        { code: "ROM", name: "Romans" },
+        { code: "1CO", name: "1 Corinthians" },
+        { code: "2CO", name: "2 Corinthians" },
+        { code: "GAL", name: "Galatians" },
+        { code: "EPH", name: "Ephesians" },
+        { code: "PHP", name: "Philippians" },
+        { code: "COL", name: "Colossians" },
+        { code: "1TH", name: "1 Thessalonians" },
+        { code: "2TH", name: "2 Thessalonians" },
+        { code: "1TI", name: "1 Timothy" },
+        { code: "2TI", name: "2 Timothy" },
+        { code: "TIT", name: "Titus" },
+        { code: "PHM", name: "Philemon" },
+        { code: "HEB", name: "Hebrews" },
+        { code: "JAS", name: "James" },
+        { code: "1PE", name: "1 Peter" },
+        { code: "2PE", name: "2 Peter" },
+        { code: "1JN", name: "1 John" },
+        { code: "2JN", name: "2 John" },
+        { code: "3JN", name: "3 John" },
+        { code: "JUD", name: "Jude" },
+        { code: "REV", name: "Revelation" }
+      ];
+
+      // DOM references
+      const translationSelect = document.getElementById("bv-translation-select");
+      const translationInline = document.getElementById("bv-translation-inline");
+      const bookSelect = document.getElementById("bv-book-select");
+      const chapterInput = document.getElementById("bv-chapter-input");
+      const loadButton = document.getElementById("bv-load-button");
+      const prevButton = document.getElementById("bv-prev-chapter");
+      const nextButton = document.getElementById("bv-next-chapter");
+      const refForm = document.getElementById("bv-reference-form");
+      const refInput = document.getElementById("bv-reference-input");
+
+      const currentRefLabel = document.getElementById("bv-current-ref-label");
+      const statusDot = document.getElementById("bv-status-dot");
+      const statusText = document.getElementById("bv-status-text");
+
+      const textShell = document.getElementById("bv-text-shell");
+      const textHeadingRef = document.getElementById("bv-heading-ref");
+      const textHeadingTranslation = document.getElementById("bv-heading-translation");
+      const textContainer = document.getElementById("bv-text");
+
+      const sideTranslationLink = document.getElementById("bv-translation-link");
+      const sideTranslationName = document.getElementById("bv-side-translation-name");
+      const sideTranslationCode = document.getElementById("bv-side-translation-code");
+      const sideTranslationNote = document.getElementById("bv-side-translation-note");
+      const sidePassageRef = document.getElementById("bv-side-passage-ref");
+      const sideVerseCount = document.getElementById("bv-side-passage-verse-count");
+      const sidePillLabel = document.getElementById("bv-side-pill-label");
+
+      let currentState = {
+        translationId: "kjv",
+        bookCode: "JHN",
+        chapter: 1
+      };
+
+      function setStatus(mode, message) {
+        statusDot.classList.remove("bv-status-ok", "bv-status-loading", "bv-status-error");
+        if (mode === "ok") {
+          statusDot.classList.add("bv-status-ok");
+        } else if (mode === "loading") {
+          statusDot.classList.add("bv-status-loading");
+        } else if (mode === "error") {
+          statusDot.classList.add("bv-status-error");
+        }
+        statusText.textContent = message || "";
       }
 
-      chapterEl.appendChild(p);
-    });
+      function initTranslationSelect() {
+        translationSelect.innerHTML = "";
+        Object.values(TRANSLATIONS).forEach((t) => {
+          const opt = document.createElement("option");
+          opt.value = t.id;
+          opt.textContent = t.label;
+          translationSelect.appendChild(opt);
+        });
+        // Default
+        translationSelect.value = currentState.translationId;
+        updateTranslationUI();
+      }
 
-    if (firstHighlightedEl) {
-      firstHighlightedEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  }
+      function initBookSelect() {
+        bookSelect.innerHTML = "";
+        BOOKS.forEach((b) => {
+          const opt = document.createElement("option");
+          opt.value = b.code;
+          opt.textContent = b.name;
+          bookSelect.appendChild(opt);
+        });
+        bookSelect.value = currentState.bookCode;
+      }
 
-  form.addEventListener('submit', async function (evt) {
-    evt.preventDefault();
-    setMessage('', '');
+      function updateTranslationUI() {
+        const t = TRANSLATIONS[currentState.translationId];
+        if (!t) return;
+        translationInline.textContent = t.languageLabel
+          ? t.languageLabel + " • " + t.id.toUpperCase()
+          : t.id.toUpperCase();
 
-    const translationId = translationSelect.value;
-    const translation = resolveTranslation(translationId);
-    if (!translation) {
-      setMessage('No translation selected.', 'error');
-      return;
-    }
+        sideTranslationName.textContent = t.label;
+        sideTranslationCode.textContent = t.id.toUpperCase() + " (" + (t.language || "–") + ")";
+        if (t.translationPage) {
+          sideTranslationLink.href = t.translationPage;
+        }
+        sideTranslationNote.textContent =
+          t.description ||
+          "Translation metadata can be pulled from your translation pages or a shared JSON manifest.";
+      }
 
-    const refString = refInput.value;
+      function getCurrentBookName() {
+        const b = BOOKS.find((bk) => bk.code === currentState.bookCode);
+        return b ? b.name : currentState.bookCode;
+      }
 
-    let refInfo;
-    try {
-      refInfo = parseReference(refString);
-    } catch (err) {
-      setMessage(err.message, 'error');
-      return;
-    }
+      function updateHeading(refString) {
+        const t = TRANSLATIONS[currentState.translationId];
+        textHeadingRef.textContent = refString || "";
+        textHeadingTranslation.textContent = t ? t.label : "";
+        currentRefLabel.textContent = refString
+          ? "Loaded: " + refString + " (" + (t ? t.id.toUpperCase() : "?") + ")"
+          : "No passage loaded yet.";
+        sidePassageRef.textContent = refString || "–";
+      }
 
-    const url = buildChapterUrl(translation, refInfo.bookId, refInfo.chapter);
-    setMessage('Loading...', 'info');
+      function clearText(message) {
+        textContainer.innerHTML = "";
+        const div = document.createElement("div");
+        div.className = "bv-text-empty";
+        div.textContent = message || "No text available.";
+        textContainer.appendChild(div);
+      }
 
-    try {
-      const chapterData = await fetchChapter(url);
-      renderChapter(chapterData, refInfo);
-      setMessage('', '');
-    } catch (err) {
-      console.error(err);
-      setMessage(err.message || 'Error loading chapter.', 'error');
-    }
-  });
+      function renderChapter(data) {
+        // Try to normalize likely shapes:
+        // 1) { verses: [{ verse: 1, text: "..." }, ...] }
+        // 2) [{ verse: 1, text: "..." }, ...]
+        // 3) { "1": "In the beginning...", ... }
+        let verses = [];
 
-  // Initialize on load
-  initTranslations();
-})();
-</script>
+        if (Array.isArray(data)) {
+          verses = data;
+        } else if (Array.isArray(data.verses)) {
+          verses = data.verses;
+        } else if (data && typeof data === "object") {
+          const keys = Object.keys(data).filter((k) => /^\d+$/.test(k)).sort((a, b) => Number(a) - Number(b));
+          if (keys.length) {
+            verses = keys.map((k) => ({ verse: Number(k), text: data[k] }));
+          }
+        }
 
+        if (!verses || !verses.length) {
+          clearText("Chapter data was loaded, but no verse list was detected. Adjust renderChapter() to match your JSON schema.");
+          sideVerseCount.textContent = "0";
+          return;
+        }
+
+        textContainer.innerHTML = "";
+        verses.forEach((v, index) => {
+          const num = v.verse || v.v || v.n || index + 1;
+          const text =
+            v.text || v.t || v.content || (typeof v === "string" ? v : JSON.stringify(v));
+
+          const wrapper = document.createElement("div");
+          wrapper.className = "bv-verse";
+          wrapper.dataset.verse = String(num);
+
+          const numSpan = document.createElement("span");
+          numSpan.className = "bv-verse-num";
+          numSpan.textContent = num;
+
+          const textSpan = document.createElement("span");
+          textSpan.className = "bv-verse-text";
+          textSpan.textContent = " " + text;
+
+          wrapper.appendChild(numSpan);
+          wrapper.appendChild(textSpan);
+          textContainer.appendChild(wrapper);
+        });
+
+        sideVerseCount.textContent = String(verses.length);
+      }
+
+      function buildChapterUrl(translationId, bookCode, chapter) {
+        const t = TRANSLATIONS[translationId];
+        if (!t) {
+          throw new Error("Unknown translation: " + translationId);
+        }
+        const chapStr = String(chapter).padStart(3, "0");
+        let root = t.pathRoot || "";
+        if (root.endsWith("/")) root = root.slice(0, -1);
+        return BASE_URL + root + "/" + bookCode + "/" + chapStr + ".json";
+      }
+
+      async function loadCurrentChapter() {
+        const translationId = currentState.translationId;
+        const bookCode = currentState.bookCode;
+        const chapter = currentState.chapter;
+
+        if (!translationId || !bookCode || !chapter || chapter < 1) {
+          setStatus("error", "Please choose a valid translation, book, and chapter.");
+          return;
+        }
+
+        const refString = getCurrentBookName() + " " + chapter;
+        setStatus("loading", "Loading " + refString + "…");
+        sidePillLabel.textContent = "Loading";
+        textShell.scrollTop = 0;
+
+        try {
+          const url = buildChapterUrl(translationId, bookCode, chapter);
+          const response = await fetch(url, { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error("HTTP " + response.status + " when fetching " + url);
+          }
+          const data = await response.json();
+          renderChapter(data);
+          updateHeading(refString);
+          setStatus("ok", "Loaded " + refString);
+          sidePillLabel.textContent = "Loaded";
+        } catch (err) {
+          console.error(err);
+          clearText("Unable to load " + refString + ". Check that the JSON file exists and matches the expected schema.");
+          updateHeading("");
+          setStatus("error", "Error loading passage (check console).");
+          sidePillLabel.textContent = "Error";
+        }
+      }
+
+      function parseReferenceString(refStr) {
+        if (!refStr) return null;
+        const raw = refStr.trim().replace(/\s+/g, " ");
+
+        // Split out chapter[:verse]
+        const match = raw.match(/(.+?)\s+(\d+)(?::(\d+))?$/);
+        if (!match) return null;
+
+        let bookPart = match[1].trim();
+        const chapter = Number(match[2]);
+
+        // Normalize bookPart (e.g., "1 Ch", "1Ch", "1 Chronicles")
+        bookPart = bookPart
+          .replace(/\./g, "")
+          .replace(/\s+/g, " ")
+          .trim();
+
+        // Move leading digit to front if needed
+        const leadingDigitMatch = bookPart.match(/^(\d)\s*(.+)$/);
+        let normalizedBook = bookPart;
+        if (leadingDigitMatch) {
+          normalizedBook = leadingDigitMatch[1] + " " + leadingDigitMatch[2];
+        }
+
+        const normalized = normalizedBook.toLowerCase();
+
+        // Simple lookups (you can expand aliases as needed)
+        const candidates = BOOKS.filter((b) => {
+          const name = b.name.toLowerCase();
+          if (name === normalized) return true;
+          if (name.replace("first ", "1 ").replace("second ", "2 ").replace("third ", "3 ") === normalized) return true;
+          if (normalized === b.code.toLowerCase()) return true;
+          // very basic short forms
+          if (normalized === "jn" && b.code === "JHN") return true;
+          if (normalized === "jhn" && b.code === "JHN") return true;
+          if (normalized === "ps" && b.code === "PSA") return true;
+          if (normalized === "psa" && b.code === "PSA") return true;
+          if (normalized === "1 ch" && b.code === "1CH") return true;
+          if (normalized === "2 ch" && b.code === "2CH") return true;
+          return false;
+        });
+
+        if (!candidates.length) return null;
+
+        return {
+          bookCode: candidates[0].code,
+          chapter: chapter
+        };
+      }
+
+      function shiftChapter(delta) {
+        let chapter = Number(currentState.chapter) || 1;
+        chapter += delta;
+        if (chapter < 1) chapter = 1;
+        currentState.chapter = chapter;
+        chapterInput.value = String(chapter);
+        loadCurrentChapter();
+      }
+
+      function attachHandlers() {
+        translationSelect.addEventListener("change", () => {
+          currentState.translationId = translationSelect.value;
+          updateTranslationUI();
+        });
+
+        bookSelect.addEventListener("change", () => {
+          currentState.bookCode = bookSelect.value;
+        });
+
+        chapterInput.addEventListener("change", () => {
+          const val = Number(chapterInput.value);
+          currentState.chapter = isNaN(val) || val < 1 ? 1 : val;
+          chapterInput.value = String(currentState.chapter);
+        });
+
+        loadButton.addEventListener("click", () => {
+          const val = Number(chapterInput.value);
+          currentState.chapter = isNaN(val) || val < 1 ? 1 : val;
+          chapterInput.value = String(currentState.chapter);
+          loadCurrentChapter();
+        });
+
+        prevButton.addEventListener("click", () => shiftChapter(-1));
+        nextButton.addEventListener("click", () => shiftChapter(1));
+
+        refForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const value = refInput.value;
+          const parsed = parseReferenceString(value);
+          if (!parsed) {
+            setStatus("error", "Could not parse that reference.");
+            return;
+          }
+          currentState.bookCode = parsed.bookCode;
+          currentState.chapter = parsed.chapter;
+          bookSelect.value = parsed.bookCode;
+          chapterInput.value = String(parsed.chapter);
+          loadCurrentChapter();
+        });
+      }
+
+      function init() {
+        initTranslationSelect();
+        initBookSelect();
+        attachHandlers();
+        setStatus("ok", "Ready");
+        sidePillLabel.textContent = "Ready";
+      }
+
+      document.addEventListener("DOMContentLoaded", init);
+    })();
+  </script>
+</body>
+</html>

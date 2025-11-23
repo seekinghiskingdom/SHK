@@ -1655,74 +1655,150 @@ footer.container,
   }
 }
 
-/* Left-side floating back CTA (desktop only) */
-.floating-back-cta {
-  position: fixed;
-  left: 1rem;
-  bottom: 1.5rem;
-  z-index: 998;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+
+
+/* ========== Header Nav Accents & Outlines ========== */
+
+/* 1) Thin yellow line under the whole header */
+.site-header {
+  border-bottom: 1px solid var(--accent);
 }
 
-.back-cta-btn {
+/* 2) Header tabs container: black box with yellow outline */
+.site-header .nav-links {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--accent);   /* yellow around the whole tabs container */
+  border-radius: 999px;
+  padding: 0.3rem 0.6rem;
+  gap: 0.4rem;
+}
+
+/* 3) Yellow buttons with black accents (top tabs + dropdown tiles) */
+.site-header .nav-button,
+.site-header .nav-dropdown-item {
+  background: var(--gold);           /* yellow tiles */
+  color: #111;
+  border: 1px solid #000;            /* black outline around yellow buttons */
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.site-header .nav-button:hover,
+.site-header .nav-button:focus-visible,
+.site-header .nav-dropdown-item:hover,
+.site-header .nav-dropdown-item:focus-visible {
+  background: var(--dark-gold);
+  color: #000;
+}
+
+/* 4) Dropdown containers: black with yellow outline */
+.nav-dropdown {
+  background: var(--panel);          /* black/dark panel */
+  border: 1px solid var(--accent);   /* yellow around the dropdown container */
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  box-sizing: border-box;
+}
+
+/* 5) Mobile: dropdown stays outlined, container still yellow-framed */
+@media (max-width: 700px) {
+  .nav-item .nav-dropdown {
+    background: var(--panel);
+    border: 1px solid var(--accent); /* yellow outline for the mobile dropdown box */
+    border-radius: 0.75rem;
+    box-shadow: none;
+    margin-top: 0.35rem;
+    padding: 0.5rem 0.6rem;
+  }
+
+  /* Keep the header tabs container outlined in mobile too */
+  .site-header .nav-links {
+    border-radius: 0.75rem;
+  }
+}
+
+
+
+/* ================= Left-side Navigation CTA ================= */
+
+/* Left-side Navigation CTA (desktop) */
+.nav-cta {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 998;
+  background: var(--panel);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+  padding: 0.6rem 0.9rem 0.6rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.4rem;
+}
+
+/* Path icon toggle (little “path” control) */
+.nav-cta-toggle {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 2.0rem;
+  height: 2.0rem;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  background: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-cta-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--accent);
+}
+
+/* Stack links vertically, Home at the bottom (column-reverse) */
+.nav-cta-links {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.35rem;
+  margin-top: 2.4rem; /* space under the toggle button */
+}
+
+.nav-cta-link {
   font-size: 0.85rem;
   padding: 0.4rem 0.8rem;
   white-space: nowrap;
 }
 
-/* Hide left back CTA on small screens; phone users use browser back */
+/* Collapsed: just show the round icon pill */
+.nav-cta.nav-cta--collapsed {
+  padding: 0.35rem;
+  border-radius: 999px;
+}
+
+.nav-cta.nav-cta--collapsed .nav-cta-links {
+  display: none;
+}
+
+.nav-cta.nav-cta--collapsed .nav-cta-toggle {
+  position: static;
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+/* Hide nav CTA on small screens if you want it desktop-only */
 @media (max-width: 700px) {
-  .floating-back-cta {
+  .nav-cta {
     display: none;
   }
 }
 
-/* Outline the main header/nav bar */
-.site-header {
-  border-bottom: 1px solid var(--accent); /* your gold */
-}
-
-/* Outline the black/nav panel area in mobile menu */
-@media (max-width: 700px) {
-  .site-header .nav-links {
-    border: 1px solid var(--accent);
-    border-radius: 0.75rem;
-  }
-}
-@media (max-width: 900px) and (min-width: 701px) {
-  .site-header .nav-button {
-    font-size: 0.9rem;
-    padding-inline: 0.6rem;
-  }
-}
-
-/* Give each tab a soft accent outline on hover/active */
-.site-header .nav-button {
-  border-radius: 999px;
-  border: 1px solid transparent;
-}
-
-.site-header .nav-button:hover,
-.site-header .nav-button:focus-visible,
-.site-header .nav-button.is-active {
-  border-color: var(--panel);
-}
-
-/* Outline the main header nav container (desktop + mobile) */
-.site-header .nav-links {
-  border: 1px solid var(--accent);  /* thin yellow line */
-  border-radius: 0.75rem;           /* soften corners */
-  padding: 0.4rem 0.5rem;           /* keep tiles off the edge */
-}
-
-/* (Optional) if you only want this in the mobile dropdown: */
-@media (max-width: 700px) {
-  .site-header .nav-links {
-    border: 1px solid var(--accent);
-    border-radius: 0.75rem;
-  }
-}
 
 /* End of Hunter's CSS Style Additions */
