@@ -178,3 +178,73 @@
   background: #ffffff;
   border-color: #e5e7eb;
 }
+
+/* ==== Infinite Bible – Bible Mode polish overrides ==== */
+
+/* Make all text in this tool high-contrast by default */
+.infinite-bible-bible {
+  color: #111827;
+}
+
+/* Tool hints: darker text and subtle background so they don't disappear */
+.infinite-bible-bible .tool-hint {
+  color: #374151;
+  background: rgba(249, 250, 251, 0.9); /* very light gray */
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+}
+
+/* Subtitle under "Bible board" heading: lighter + clearer */
+.infinite-bible-bible .tool-canvas-subtitle {
+  color: #9ca3af;        /* lighter gray */
+  font-size: 0.9rem;
+}
+
+/* Chapter controls card: make sure it's distinct and not white-on-white */
+.infinite-bible-bible .tool-controls-row.bible-chapter-controls {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+/* Dropdowns: white background, dark text, subtle border */
+.infinite-bible-bible .bible-chapter-picker select {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+/* Checkboxes + labels: readable */
+.infinite-bible-bible .bible-chapter-options,
+.infinite-bible-bible .bible-chapter-options label,
+.infinite-bible-bible .bible-chapter-options input {
+  color: #111827;
+}
+
+/* Chapter blocks: clearly separate cards inside the canvas */
+.infinite-bible-bible .bible-chapter-block {
+  background: #ffffff;
+  border-color: #e5e7eb;
+}
+
+/* Make sure verse text is dark enough */
+.infinite-bible-bible .bible-verse-line {
+  color: #111827;
+}
+
+
+/* Stack sidebar and canvas on small screens so the board isn't tiny */
+@media (max-width: 768px) {
+  .infinite-bible-bible .tool-main-layout {
+    flex-direction: column;
+  }
+
+  .infinite-bible-bible .tool-sidebar {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .infinite-bible-bible .tool-canvas-wrapper {
+    width: 100%;
+  }
+}
