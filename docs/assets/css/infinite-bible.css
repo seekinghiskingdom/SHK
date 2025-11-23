@@ -661,3 +661,44 @@
     gap: 0.3rem;
   }
 }
+
+
+
+
+
+/* === OVERRIDES: make Infinite Bible truly full-width and fix toolbar === */
+
+/* 1. Make the tool-app container full-width on this page */
+body.tool-app-body #content.tool-app-container {
+  max-width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 2. Ensure the Infinite Bible app stretches toward full viewport height */
+.infinite-bible-app.tool-page {
+  min-height: calc(100vh - 140px); /* adjust 140px if header/footer sizing is different */
+}
+
+/* 3. Keep the right toolbar buttons in a single horizontal row on desktop */
+.infinite-bible-app .ib-toolbar .ib-toolbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: nowrap;        /* no wrapping on wider screens */
+}
+
+.infinite-bible-app .ib-toolbar .ib-toolbar-right .ib-toolbar-btn {
+  width: auto;              /* prevent full-width buttons */
+}
+
+/* On small screens, allow wrapping again so it doesn’t overflow */
+@media (max-width: 640px) {
+  .infinite-bible-app .ib-toolbar .ib-toolbar-right {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+

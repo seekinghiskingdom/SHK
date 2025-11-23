@@ -158,9 +158,9 @@ def _parse_pairs(
         book = str(R.get("book", "")).strip()
         chapter_raw = str(R.get("chapter", "")).strip()
 
-        # Inclusion rule: must have a usable reference AND content on at least one side.
+        # Inclusion rule: must have a usable reference AND at least some content on X/Y/P.
         has_ref = bool(book) and bool(chapter_raw)
-        has_content = bool(X.get("key") or Y.get("key") or P.get("label"))
+        has_content = bool(X or Y or P)
 
         if not (has_ref and has_content):
             skipped_rows += 1
@@ -178,6 +178,7 @@ def _parse_pairs(
         # book_name from books_names (if provided)
         book_name: Optional[str] = None
         if book and books_names:
+            # books.json is assumed to use upper-case codes as keys
             book_upper = book.upper()
             if book_upper in books_names:
                 book_name = books_names[book_upper]
@@ -250,17 +251,33 @@ def build_input_pairs(
     if not rows:
         raise SystemExit(f"CSV appears to be empty: {csv_path}")
 
+    # First, assume row 0 is the header.
     header_row = rows[0]
     mapping = _build_header_mapping(header_row)
+
+    def _schema_has_fields(m: HeaderMapping) -> bool:
+        return any(m.schema[sec] for sec in m.schema)
+
+    # If we didn't recognize any fields at all, try treating row 1 as header instead.
+    rows_for_parse = rows
+    if not _schema_has_fields(mapping) and len(rows) > 1:
+        alt_header_row = rows[1]
+        alt_mapping = _build_header_mapping(alt_header_row)
+        if _schema_has_fields(alt_mapping):
+            mapping = alt_mapping
+            rows_for_parse = rows[1:]  # drop row 0, use row 1 as header
 
     # Load book names, if available.
     books_names: Optional[Dict[str, str]] = None
     if books_json_path and books_json_path.exists():
         with books_json_path.open("r", encoding="utf-8") as f:
             data = json.load(f)
-        books_names = data.get("names", {})
+        # Expecting a mapping of code → name under a "names" key
+        names_field = data.get("names")
+        if isinstance(names_field, dict):
+            books_names = names_field
 
-    pairs, stats = _parse_pairs(rows, mapping, books_names)
+    pairs, stats = _parse_pairs(rows_for_parse, mapping, books_names)
 
     meta = {
         "generated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
@@ -288,19 +305,17 @@ def build_input_pairs(
 def _default_paths() -> Tuple[Path, Path, Optional[Path]]:
     """
     Provide reasonable default paths when running from the repo root.
-    Adjust these if your repo layout differs.
+
+    - Input CSV:  tools/pps/data/input/pairs.csv
+    - Output JSON: tools/pps/data/input/input_pairs.json
     """
     base = Path(".").resolve()
     csv_default = base / "tools" / "pps" / "data" / "input" / "pairs.csv"
     out_default = base / "tools" / "pps" / "data" / "input" / "input_pairs.json"
 
-    # Try a few common guesses for where books.json might live; if none
-    # exist, we simply skip external book-name resolution.
+    # books.json is at docs/data/v1/lit/bible/books.json per your layout.
     candidates = [
-        base / "docs" / "data" / "v1" / "books.json",
         base / "docs" / "data" / "v1" / "lit" / "bible" / "books.json",
-        base / "docs" / "data" / "v1" / "tools" / "bible-viewer" / "books.json",
-        
     ]
     books_default: Optional[Path] = None
     for cand in candidates:
@@ -309,7 +324,6 @@ def _default_paths() -> Tuple[Path, Path, Optional[Path]]:
             break
 
     return csv_default, out_default, books_default
-
 
 
 def main() -> None:

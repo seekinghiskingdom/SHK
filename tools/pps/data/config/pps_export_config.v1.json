@@ -1,0 +1,42 @@
+{
+  "input_file": "tools/pps/data/input/input_pairs.json",
+  "output_file": "docs/data/v1/pps/final_pairs.json",
+  "warnings_file": "tools/pps/data/output/final_pairs_warnings.json",
+
+  "mappings": {
+    "id": "pair_id",
+
+    "ref": {
+      "book": "R.book",
+      "book_name": "R.book_name",
+      "chapter": "R.chapter",
+      "pv": "R.pv",
+      "ref_id": "R.ref_id",
+      "ref_str": "R.ref_str"
+    },
+
+    "status": {
+      "status": "S.status",
+      "rv": "S.rv",
+      "uv": "S.uv"
+    },
+
+    "x": {
+      "key": "X.key",
+      "group": "X.group"
+    },
+
+    "y": {
+      "key": "Y.key",
+      "group": "Y.group"
+    }
+  },
+
+  "required_fields": [
+    "ref.book",
+    "ref.chapter",
+    "ref.ref_id",
+    "x.key",
+    "y.key"
+  ]
+}
