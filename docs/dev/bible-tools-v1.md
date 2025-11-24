@@ -249,13 +249,15 @@ Tell ChatGPT explicitly:
 Then describe only the additional behavior unique to that tool (UI, modes, filters, etc.), so all tools stay consistent with the same Bible data contract.
 
 
+
+
 # Specific Tool Uses & Notes
 
-## Bible Viewer
+## 1.1 Bible Viewer
 
 
 
-## Infinite Bible (Tool) – Data & Modes (v1 concept)
+## 2.1 Infinite Bible (Tool) – Data & Modes (v1 concept)
 
 Infinite Bible (Tool) uses the shared Scripture Core API defined in §5.5 for all Scripture lookups.
 
@@ -303,8 +305,8 @@ Infinite Bible (Tool) uses the shared Scripture Core API defined in §5.5 for al
   - Each board can contain any mix of verse items and notes.
   - Boards save automatically in local browser storage and can be exported/imported as JSON files.
 
-### New Design
-## Infinite Bible – Unified Board Model (Bible + Boards)
+
+## 2.2 Infinite Bible – Unified Board Model (Bible + Boards)
 
 Infinite Bible is a single tool with two primary modes built on the same board model:
 
@@ -421,13 +423,28 @@ When rendering, the app resolves those via Scripture Core into `{ verse, text }`
 
 
 
-## PPS
+## 3.1 Proverb Pair Search (PPS)
 
 
 
-## SCS
+## 4.1 Strong's Concordance Search (SCS)
+
+SCS (Strong's Concordance Search) is a Strong's-entry-centric tool that lives alongside the Scripture Core API but uses its own data index:
+
+- **Tool config entrypoint:** `/data/v1/tools/scs/index.json`  
+  - Defines the SCS work IDs (lexicon, concordance, aligned Bible) and the filter configuration for the UI.
+- **Entries dataset:** `/data/v1/lit/strongs/concordance/entries.v1.jsonl`  
+  - One line per Strong’s ID, combining lexicon fields (lemma, definitions) with usage statistics derived from the aligned KJV+Strong’s work (`bible.en.kjv_strongs`), including:
+    - total occurrence count,
+    - list of books and per-book counts,
+    - top KJV renderings,
+    - one example verse reference + text.
+- **Data source:** the entries file is produced offline by the `scs_entries_builder` tool under `tools/scs`, which reads the Strong’s lexicon and the KJV+Strong’s chapters.  
+  The SCS frontend reads only `index.json` and `entries.v1.jsonl`; it does **not** read chapter JSON directly.
+
+SCS does not currently call the Scripture Core API; future versions may use SCA when SCS needs live verse lookups or non-KJV translations.
 
 
 
-##
+## 
 

@@ -1110,29 +1110,31 @@ permalink: /tools-games/tools/scs/
 
   async function initSCS() {
     try {
-      updateStatus("loading", "Fetching config…");
-      clearError();
+        updateStatus("loading", "Fetching config…");
+        clearError();
 
-      SCS_CONFIG = await fetchJson(SCS_INDEX_URL);
+        SCS_CONFIG = await fetchJson(SCS_INDEX_URL);
 
-      buildFiltersUI();
-
-      if (!SCS_CONFIG || !SCS_CONFIG.data || !SCS_CONFIG.data.entries) {
+        if (!SCS_CONFIG || !SCS_CONFIG.data || !SCS_CONFIG.data.entries) {
         throw new Error("SCS index.json missing data.entries path.");
-      }
+        }
 
-      updateStatus("loading", "Loading Strong's entries…");
-      SCS_ENTRIES = await loadEntriesFromJsonl(SCS_CONFIG.data.entries);
+        updateStatus("loading", "Loading Strong's entries…");
+        SCS_ENTRIES = await loadEntriesFromJsonl(SCS_CONFIG.data.entries);
 
-      updateStatus("ok", "Loaded " + SCS_ENTRIES.length + " entries.");
-      resetFilters();
-      applyFiltersAndRender();
+        // Move this down so books options see the entries
+        buildFiltersUI();
+
+        updateStatus("ok", "Loaded " + SCS_ENTRIES.length + " entries.");
+        resetFilters();
+        applyFiltersAndRender();
     } catch (err) {
-      console.error(err);
-      updateStatus("error", "Failed to initialize SCS.");
-      showError(String(err.message || err));
+        console.error(err);
+        updateStatus("error", "Failed to initialize SCS.");
+        showError(String(err.message || err));
     }
-  }
+    }
+
 
   document.addEventListener("DOMContentLoaded", initSCS);
 </script>

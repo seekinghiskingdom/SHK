@@ -49,12 +49,16 @@
     },
     "strongs": {
       "paths": [
-        "lit/strongs"
+        "lit/strongs",
+        "lit/strongs/concordance"
       ],
       "data_version": "0"
     },
     "tools": {
-      "paths": [],
+      "paths": [
+        "tools/bible-viewer",
+        "tools/scs"
+      ],
       "data_version": "0"
     }
   }
