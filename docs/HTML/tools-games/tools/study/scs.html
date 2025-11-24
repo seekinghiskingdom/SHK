@@ -1,100 +1,1138 @@
 ---
 layout: default
-title: Strong’s Concordance Search Tool
+title: Strong's Concordance Search (SCS)
 permalink: /tools-games/tools/scs/
 ---
 
-<section class="content-page">
-  <h1>{{ page.title }}</h1>
-  <p class="content-intro">
-    Search Strong’s entries by number, language, part of speech, or word, and see a simple list of matching
-    words that can be tied into other SHK tools and studies. (TBD)
-  </p>
-  <hr class="hub-divider">
+<style>
+  :root {
+    --scs-bg: #0f172a;
+    --scs-bg-alt: #020617;
+    --scs-panel: #020617;
+    --scs-border: rgba(148, 163, 184, 0.45);
+    --scs-border-soft: rgba(148, 163, 184, 0.25);
+    --scs-text: #e5e7eb;
+    --scs-text-soft: #cbd5f5;
+    --scs-text-muted: #9ca3af;
+    --scs-accent: #facc15;
+    --scs-accent-soft: rgba(250, 204, 21, 0.14);
+    --scs-danger: #f97373;
 
-  <div class="content-body">
-    <h2>Search Filters</h2>
-    <p>
-      Use one or more filters to narrow the Strong’s entries. Results will appear below as a list of words
-      with basic details. (TBD)
-    </p>
+    --scs-radius-lg: 20px;
+    --scs-radius-xl: 26px;
 
-    <div class="controls scs-controls">
-      <div>
-        <label for="scs-language">Language</label>
-        <select id="scs-language" name="language">
-          <option value="">Hebrew &amp; Greek</option>
-          <option value="hebrew">Hebrew only</option>
-          <option value="greek">Greek only</option>
-        </select>
+    --scs-shadow-soft:
+      0 24px 60px rgba(15, 23, 42, 0.92),
+      0 0 0 1px rgba(15, 23, 42, 1.0),
+      0 0 0 1px rgba(15, 23, 42, 0.8);
+    --scs-shadow-chip:
+      0 0 0 1px rgba(148, 163, 184, 0.6),
+      0 10px 30px rgba(15, 23, 42, 0.9);
+
+    --scs-chip-bg: rgba(15, 23, 42, 0.95);
+  }
+
+  body {
+    background: radial-gradient(circle at top, #020617 0, #020617 38%, #020617 55%, #020617 100%);
+  }
+
+  .scs-page {
+    min-height: 100vh;
+    padding: 24px 16px 48px;
+    display: flex;
+    justify-content: center;
+    color: var(--scs-text);
+  }
+
+  .scs-shell {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .scs-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .scs-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .scs-title-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .scs-title-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 0%, #facc15 0, #fbbf24 40%, #f59e0b 80%, #f97316 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+      0 0 0 1px rgba(15, 23, 42, 0.9),
+      0 0 0 6px rgba(248, 250, 252, 0.04),
+      0 18px 45px rgba(250, 204, 21, 0.45);
+  }
+
+  .scs-title-badge span {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .scs-title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .scs-title-text h1 {
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    font-weight: 650;
+  }
+
+  .scs-title-sub {
+    font-size: 13px;
+    color: var(--scs-text-muted);
+  }
+
+  .scs-status-chip-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .scs-status-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.98);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    font-size: 11px;
+    color: var(--scs-text-muted);
+    box-shadow:
+      0 16px 40px rgba(15, 23, 42, 0.95);
+  }
+
+  .scs-status-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.6);
+  }
+
+  .scs-status-dot.scs-loading {
+    background: rgba(234, 179, 8, 0.95);
+    box-shadow:
+      0 0 0 4px rgba(234, 179, 8, 0.2),
+      0 0 0 1px rgba(15, 23, 42, 0.8);
+  }
+
+  .scs-status-dot.scs-ok {
+    background: rgba(52, 211, 153, 0.97);
+    box-shadow:
+      0 0 0 4px rgba(52, 211, 153, 0.18),
+      0 0 0 1px rgba(15, 23, 42, 0.8);
+  }
+
+  .scs-status-dot.scs-error {
+    background: rgba(248, 113, 113, 0.97);
+    box-shadow:
+      0 0 0 4px rgba(248, 113, 113, 0.2),
+      0 0 0 1px rgba(15, 23, 42, 0.8);
+  }
+
+  .scs-status-label {
+    font-weight: 500;
+  }
+
+  .scs-status-meta {
+    opacity: 0.7;
+  }
+
+  .scs-main {
+    display: grid;
+    grid-template-columns: minmax(0, 320px) minmax(0, 1.4fr);
+    gap: 16px;
+  }
+
+  .scs-panel {
+    border-radius: var(--scs-radius-xl);
+    border: 1px solid var(--scs-border-soft);
+    background:
+      radial-gradient(circle at top left, rgba(30, 64, 175, 0.22) 0, transparent 55%),
+      radial-gradient(circle at top right, rgba(6, 95, 70, 0.22) 0, transparent 60%),
+      linear-gradient(to bottom, #020617, #020617);
+    box-shadow: var(--scs-shadow-soft);
+    padding: 14px 14px 16px;
+    position: relative;
+  }
+
+  .scs-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid rgba(15, 23, 42, 0.9);
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+
+  .scs-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .scs-panel-title {
+    font-size: 13px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--scs-text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .scs-panel-title-badge {
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    background: rgba(15, 23, 42, 0.96);
+  }
+
+  .scs-panel-subtitle {
+    font-size: 11px;
+    color: var(--scs-text-muted);
+    opacity: 0.85;
+  }
+
+  .scs-filters-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    margin-top: 4px;
+  }
+
+  .scs-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .scs-filter-label-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .scs-filter-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--scs-text-soft);
+  }
+
+  .scs-filter-hint {
+    font-size: 10px;
+    color: var(--scs-text-muted);
+  }
+
+  .scs-input,
+  .scs-select {
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.65);
+    background: rgba(15, 23, 42, 0.98);
+    color: var(--scs-text);
+    padding: 6px 11px;
+    font-size: 12px;
+    outline: none;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.9);
+  }
+
+  .scs-input::placeholder {
+    color: rgba(148, 163, 184, 0.7);
+  }
+
+  .scs-input:focus,
+  .scs-select:focus {
+    border-color: var(--scs-accent);
+    box-shadow:
+      0 0 0 1px rgba(250, 204, 21, 0.7),
+      0 14px 40px rgba(15, 23, 42, 0.95);
+  }
+
+  .scs-select[multiple] {
+    min-height: 90px;
+    padding: 6px 9px;
+    border-radius: 18px;
+  }
+
+  .scs-range-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 6px;
+  }
+
+  .scs-range-row .scs-input {
+    border-radius: 15px;
+  }
+
+  .scs-filters-footer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 11px;
+    color: var(--scs-text-muted);
+  }
+
+  .scs-reset-btn {
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    background: rgba(15, 23, 42, 0.96);
+    color: var(--scs-text-soft);
+    font-size: 11px;
+    padding: 4px 9px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.9);
+  }
+
+  .scs-reset-btn:hover {
+    border-color: rgba(250, 204, 21, 0.9);
+    color: #fde68a;
+  }
+
+  .scs-reset-btn span {
+    font-size: 10px;
+  }
+
+  .scs-summary-chip {
+    border-radius: 999px;
+    padding: 3px 9px;
+    background: rgba(15, 23, 42, 0.96);
+    border: 1px dashed rgba(148, 163, 184, 0.5);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .scs-summary-chip strong {
+    color: var(--scs-text-soft);
+  }
+
+  .scs-results-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .scs-results-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .scs-results-title {
+    font-size: 13px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--scs-text-muted);
+  }
+
+  .scs-results-meta {
+    font-size: 11px;
+    color: var(--scs-text-muted);
+  }
+
+  .scs-results-meta strong {
+    color: var(--scs-text-soft);
+  }
+
+  .scs-results-list {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 640px;
+    overflow: auto;
+    padding-right: 4px;
+  }
+
+  .scs-entry {
+    position: relative;
+    border-radius: 18px;
+    padding: 10px 12px 11px;
+    background:
+      radial-gradient(circle at top left, rgba(30, 64, 175, 0.19) 0, transparent 55%),
+      linear-gradient(to bottom right, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.98));
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    box-shadow:
+      0 16px 45px rgba(15, 23, 42, 0.98),
+      0 0 0 1px rgba(15, 23, 42, 0.96);
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 0.8fr);
+    gap: 8px;
+  }
+
+  .scs-entry-main {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .scs-entry-header {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .scs-entry-id {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.96);
+    box-shadow: var(--scs-shadow-chip);
+  }
+
+  .scs-entry-lemma {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .scs-entry-translit {
+    font-size: 11px;
+    color: var(--scs-text-soft);
+  }
+
+  .scs-entry-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .scs-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: var(--scs-chip-bg);
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    font-size: 10px;
+    color: var(--scs-text-muted);
+    box-shadow: var(--scs-shadow-chip);
+  }
+
+  .scs-chip strong {
+    color: var(--scs-text-soft);
+    font-weight: 500;
+  }
+
+  .scs-entry-def {
+    margin-top: 4px;
+    font-size: 11px;
+    color: var(--scs-text-soft);
+  }
+
+  .scs-entry-example {
+    font-size: 11px;
+    color: var(--scs-text-muted);
+    margin-top: 4px;
+    border-left: 2px solid rgba(148, 163, 184, 0.6);
+    padding-left: 8px;
+  }
+
+  .scs-entry-meta {
+    font-size: 10px;
+    color: var(--scs-text-muted);
+    margin-top: 4px;
+  }
+
+  .scs-entry-meta span {
+    white-space: nowrap;
+  }
+
+  .scs-entry-right {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .scs-kv-line {
+    font-size: 10px;
+    color: var(--scs-text-muted);
+    text-align: right;
+  }
+
+  .scs-kv-line strong {
+    color: var(--scs-text-soft);
+  }
+
+  .scs-words-list {
+    font-size: 10px;
+    text-align: right;
+  }
+
+  .scs-words-list span {
+    white-space: nowrap;
+  }
+
+  .scs-books-list {
+    font-size: 10px;
+    color: var(--scs-text-muted);
+    text-align: right;
+  }
+
+  .scs-books-list span {
+    white-space: nowrap;
+  }
+
+  .scs-empty {
+    padding: 18px 14px;
+    border-radius: 18px;
+    border: 1px dashed rgba(148, 163, 184, 0.6);
+    background: rgba(15, 23, 42, 0.96);
+    font-size: 12px;
+    color: var(--scs-text-muted);
+  }
+
+  .scs-error {
+    padding: 14px 12px;
+    border-radius: 18px;
+    border: 1px solid rgba(248, 113, 113, 0.8);
+    background: rgba(127, 29, 29, 0.9);
+    font-size: 12px;
+    color: #fee2e2;
+  }
+
+  @media (max-width: 900px) {
+    .scs-main {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .scs-entry {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>
+
+<div class="scs-page">
+  <div class="scs-shell">
+    <header class="scs-header">
+      <div class="scs-title-row">
+        <div class="scs-title-main">
+          <div class="scs-title-badge"><span>Ω</span></div>
+          <div class="scs-title-text">
+            <h1>Strong's Concordance Search</h1>
+            <div class="scs-title-sub">
+              Filter and explore Strong's entries (Greek &amp; Hebrew) using the aligned KJV+Strong's dataset.
+            </div>
+          </div>
+        </div>
+        <div class="scs-status-chip-row">
+          <div class="scs-status-chip" id="scs-status-chip">
+            <span class="scs-status-dot scs-loading" id="scs-status-dot"></span>
+            <span class="scs-status-label" id="scs-status-label">Loading dataset…</span>
+            <span class="scs-status-meta" id="scs-status-meta"></span>
+          </div>
+        </div>
       </div>
+    </header>
 
-      <div>
-        <label for="scs-pos">Part of speech</label>
-        <select id="scs-pos" name="pos">
-          <option value="">Any</option>
-          <option value="noun">Noun</option>
-          <option value="verb">Verb</option>
-          <option value="adj">Adjective</option>
-          <option value="adv">Adverb</option>
-          <option value="prep">Preposition</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
+    <main class="scs-main">
+      <section class="scs-panel scs-filters-panel">
+        <div class="scs-panel-header">
+          <div>
+            <div class="scs-panel-title">
+              <span class="scs-panel-title-badge">F</span>
+              Filters
+            </div>
+            <div class="scs-panel-subtitle">
+              Configure filters and search terms. UI is driven by the SCS index.json config.
+            </div>
+          </div>
+        </div>
+        <div class="scs-filters-grid" id="scs-filters-root">
+          <!-- Filters will be injected here -->
+        </div>
+        <div class="scs-filters-footer">
+          <button type="button" class="scs-reset-btn" id="scs-reset-btn">
+            <span>⟲</span>
+            <span>Reset</span>
+          </button>
+          <div class="scs-summary-chip" id="scs-summary-chip">
+            <span>Entries: <strong id="scs-summary-total">–</strong></span>
+            <span>Visible: <strong id="scs-summary-visible">–</strong></span>
+          </div>
+        </div>
+      </section>
 
-      <div>
-        <label for="scs-number">Strong’s number</label>
-        <input id="scs-number" name="number" type="text" placeholder="e.g., G1510 or H0430">
-      </div>
-
-      <div>
-        <label for="scs-start-letter">Starts with (lemma)</label>
-        <input id="scs-start-letter" name="start-letter" type="text" placeholder="e.g., α, א, or a letter combo">
-      </div>
-
-      <div>
-        <label for="scs-text">Contains (English gloss)</label>
-        <input id="scs-text" name="text" type="text" placeholder="e.g., love, faith, kingdom">
-      </div>
-
-      <button type="button">
-        Search (TBD)
-      </button>
-    </div>
-
-    <h2 style="margin-top: 2rem;">Results (TBD)</h2>
-    <div id="scs-results" class="results">
-      <!-- Example result item structure -->
-      <div class="scs-entry">
-        <p>
-          <strong>G0001</strong> – <em>ἀγάπη</em> (agapē) — Noun, Greek  
-          <br>
-          Basic gloss: “love” (TBD – actual data and formatting)
-        </p>
-        <button type="button">
-          View occurrences (TBD)
-        </button>
-      </div>
-
-      <div class="scs-entry">
-        <p>
-          <strong>H0430</strong> – <em>אֱלֹהִים</em> (’elohim) — Noun, Hebrew  
-          <br>
-          Basic gloss: “God, gods” (TBD)
-        </p>
-        <button type="button">
-          View occurrences (TBD)
-        </button>
-      </div>
-
-      <p>
-        Additional results will be rendered in a similar format once the data and logic are wired up. (TBD)
-      </p>
-    </div>
+      <section class="scs-panel scs-results-panel">
+        <div class="scs-results-header">
+          <div class="scs-results-title">Results</div>
+          <div class="scs-results-meta">
+            <span id="scs-results-meta-text">Loading…</span>
+          </div>
+        </div>
+        <div id="scs-error" class="scs-error" style="display:none;"></div>
+        <div id="scs-results" class="scs-results-list"></div>
+      </section>
+    </main>
   </div>
+</div>
 
-  <nav class="content-nav">
-    <a href="{{ '/resources/tools/' | relative_url }}">Back to Tools</a> ·
-    <a href="{{ '/resources/' | relative_url }}">Back to Resources</a>
-  </nav>
-</section>
+<script>
+  const BASEURL = "{{ site.baseurl | default: '' }}";
+  const SCS_INDEX_URL = BASEURL + "/data/v1/tools/scs/index.json";
+
+  let SCS_CONFIG = null;
+  let SCS_ENTRIES = [];
+  let SCS_FILTER_STATE = {
+    language: null,
+    testament: null,
+    books: [],
+    occurrence_min: null,
+    occurrence_max: null,
+    query: ""
+  };
+
+  const SCS_FILTER_ELEMS = {};
+
+  async function fetchJson(url) {
+    const res = await fetch(url);
+    if (!res.ok) {
+      throw new Error("Failed to fetch " + url + " (" + res.status + ")");
+    }
+    return res.json();
+  }
+
+  async function fetchText(url) {
+    const res = await fetch(url);
+    if (!res.ok) {
+      throw new Error("Failed to fetch " + url + " (" + res.status + ")");
+    }
+    return res.text();
+  }
+
+  function updateStatus(state, metaText) {
+    const dot = document.getElementById("scs-status-dot");
+    const label = document.getElementById("scs-status-label");
+    const meta = document.getElementById("scs-status-meta");
+
+    dot.classList.remove("scs-loading", "scs-ok", "scs-error");
+
+    if (state === "loading") {
+      dot.classList.add("scs-loading");
+      label.textContent = "Loading dataset…";
+    } else if (state === "ok") {
+      dot.classList.add("scs-ok");
+      label.textContent = "Ready";
+    } else if (state === "error") {
+      dot.classList.add("scs-error");
+      label.textContent = "Error";
+    }
+    meta.textContent = metaText || "";
+  }
+
+  function showError(message) {
+    const el = document.getElementById("scs-error");
+    el.textContent = message;
+    el.style.display = "block";
+  }
+
+  function clearError() {
+    const el = document.getElementById("scs-error");
+    el.textContent = "";
+    el.style.display = "none";
+  }
+
+  function buildFiltersUI() {
+    const root = document.getElementById("scs-filters-root");
+    root.innerHTML = "";
+
+    if (!SCS_CONFIG || !Array.isArray(SCS_CONFIG.filters)) {
+      return;
+    }
+
+    SCS_FILTER_ELEMS.language = null;
+    SCS_FILTER_ELEMS.testament = null;
+    SCS_FILTER_ELEMS.book = null;
+    SCS_FILTER_ELEMS.occurrence_min = null;
+    SCS_FILTER_ELEMS.occurrence_max = null;
+    SCS_FILTER_ELEMS.query = null;
+
+    for (const filter of SCS_CONFIG.filters) {
+      const group = document.createElement("div");
+      group.className = "scs-filter-group";
+
+      const labelRow = document.createElement("div");
+      labelRow.className = "scs-filter-label-row";
+
+      const label = document.createElement("div");
+      label.className = "scs-filter-label";
+      label.textContent = filter.label || filter.id;
+
+      const hint = document.createElement("div");
+      hint.className = "scs-filter-hint";
+      if (filter.id === "query") {
+        hint.textContent = "ID, lemma, gloss, KJV rendering…";
+      } else if (filter.id === "book") {
+        hint.textContent = "Select one or more books (Ctrl/Cmd-click).";
+      } else if (filter.id === "occurrence_range") {
+        hint.textContent = "Min/max Strong's occurrences in KJV.";
+      } else {
+        hint.textContent = "";
+      }
+
+      labelRow.appendChild(label);
+      labelRow.appendChild(hint);
+      group.appendChild(labelRow);
+
+      if (filter.type === "single-select") {
+        const select = document.createElement("select");
+        select.className = "scs-select";
+        select.dataset.filterId = filter.id;
+
+        const anyOpt = document.createElement("option");
+        anyOpt.value = "";
+        anyOpt.textContent = "Any";
+        select.appendChild(anyOpt);
+
+        if (Array.isArray(filter.options)) {
+          for (const opt of filter.options) {
+            const o = document.createElement("option");
+            o.value = opt.value;
+            o.textContent = opt.label || opt.value;
+            select.appendChild(o);
+          }
+        }
+
+        select.addEventListener("change", () => {
+          const val = select.value || null;
+          if (filter.id === "language") {
+            SCS_FILTER_STATE.language = val;
+          } else if (filter.id === "testament") {
+            SCS_FILTER_STATE.testament = val;
+          }
+          applyFiltersAndRender();
+        });
+
+        group.appendChild(select);
+
+        if (filter.id === "language") {
+          SCS_FILTER_ELEMS.language = select;
+        } else if (filter.id === "testament") {
+          SCS_FILTER_ELEMS.testament = select;
+        }
+      } else if (filter.type === "multi-select" && filter.id === "book") {
+        const select = document.createElement("select");
+        select.multiple = true;
+        select.className = "scs-select";
+        select.dataset.filterId = filter.id;
+
+        if (filter.options_source && filter.options_source.type === "books-from-work") {
+          const workId = filter.options_source.work_id;
+          // For v1, we derive from entries' books + a small cache of book names from books.json
+          const bookCodes = collectAllBookCodesFromEntries();
+          for (const code of bookCodes) {
+            const o = document.createElement("option");
+            o.value = code;
+            o.textContent = code;
+            select.appendChild(o);
+          }
+        }
+
+        select.addEventListener("change", () => {
+          const selected = Array.from(select.selectedOptions).map(o => o.value);
+          SCS_FILTER_STATE.books = selected;
+          applyFiltersAndRender();
+        });
+
+        group.appendChild(select);
+        SCS_FILTER_ELEMS.book = select;
+      } else if (filter.type === "range" && filter.id === "occurrence_range") {
+        const row = document.createElement("div");
+        row.className = "scs-range-row";
+
+        const inputMin = document.createElement("input");
+        inputMin.type = "number";
+        inputMin.min = "0";
+        inputMin.placeholder = "Min";
+        inputMin.className = "scs-input";
+        inputMin.addEventListener("input", () => {
+          const v = inputMin.value.trim();
+          SCS_FILTER_STATE.occurrence_min = v === "" ? null : Number(v);
+          applyFiltersAndRender();
+        });
+
+        const inputMax = document.createElement("input");
+        inputMax.type = "number";
+        inputMax.min = "0";
+        inputMax.placeholder = "Max";
+        inputMax.className = "scs-input";
+        inputMax.addEventListener("input", () => {
+          const v = inputMax.value.trim();
+          SCS_FILTER_STATE.occurrence_max = v === "" ? null : Number(v);
+          applyFiltersAndRender();
+        });
+
+        row.appendChild(inputMin);
+        row.appendChild(inputMax);
+        group.appendChild(row);
+
+        SCS_FILTER_ELEMS.occurrence_min = inputMin;
+        SCS_FILTER_ELEMS.occurrence_max = inputMax;
+      } else if (filter.type === "text" && filter.id === "query") {
+        const input = document.createElement("input");
+        input.type = "search";
+        input.placeholder = "Search Strong's ID, lemma, gloss, or rendering…";
+        input.className = "scs-input";
+        input.addEventListener("input", () => {
+          SCS_FILTER_STATE.query = input.value || "";
+          applyFiltersAndRender();
+        });
+        group.appendChild(input);
+        SCS_FILTER_ELEMS.query = input;
+      }
+
+      root.appendChild(group);
+    }
+
+    const resetBtn = document.getElementById("scs-reset-btn");
+    resetBtn.addEventListener("click", () => {
+      resetFilters();
+      applyFiltersAndRender();
+    });
+  }
+
+  function resetFilters() {
+    SCS_FILTER_STATE.language = null;
+    SCS_FILTER_STATE.testament = null;
+    SCS_FILTER_STATE.books = [];
+    SCS_FILTER_STATE.occurrence_min = null;
+    SCS_FILTER_STATE.occurrence_max = null;
+    SCS_FILTER_STATE.query = "";
+
+    if (SCS_FILTER_ELEMS.language) SCS_FILTER_ELEMS.language.value = "";
+    if (SCS_FILTER_ELEMS.testament) SCS_FILTER_ELEMS.testament.value = "";
+    if (SCS_FILTER_ELEMS.book) {
+      for (const opt of SCS_FILTER_ELEMS.book.options) {
+        opt.selected = false;
+      }
+    }
+    if (SCS_FILTER_ELEMS.occurrence_min) SCS_FILTER_ELEMS.occurrence_min.value = "";
+    if (SCS_FILTER_ELEMS.occurrence_max) SCS_FILTER_ELEMS.occurrence_max.value = "";
+    if (SCS_FILTER_ELEMS.query) SCS_FILTER_ELEMS.query.value = "";
+  }
+
+  function collectAllBookCodesFromEntries() {
+    const set = new Set();
+    for (const e of SCS_ENTRIES) {
+      if (Array.isArray(e.books)) {
+        for (const b of e.books) {
+          set.add(b);
+        }
+      }
+    }
+    return Array.from(set).sort();
+  }
+
+  function applyFiltersAndRender() {
+    clearError();
+
+    const total = SCS_ENTRIES.length;
+    let filtered = SCS_ENTRIES;
+
+    if (SCS_FILTER_STATE.language) {
+      filtered = filtered.filter(e => e.lang === SCS_FILTER_STATE.language);
+    }
+
+    if (SCS_FILTER_STATE.testament) {
+      filtered = filtered.filter(e => e.testament === SCS_FILTER_STATE.testament);
+    }
+
+    if (SCS_FILTER_STATE.books && SCS_FILTER_STATE.books.length > 0) {
+      const selectedBooks = new Set(SCS_FILTER_STATE.books);
+      filtered = filtered.filter(e => {
+        if (!Array.isArray(e.books) || e.books.length === 0) return false;
+        return e.books.some(b => selectedBooks.has(b));
+      });
+    }
+
+    if (SCS_FILTER_STATE.occurrence_min != null) {
+      const min = SCS_FILTER_STATE.occurrence_min;
+      filtered = filtered.filter(e => (e.occurrence_count || 0) >= min);
+    }
+
+    if (SCS_FILTER_STATE.occurrence_max != null) {
+      const max = SCS_FILTER_STATE.occurrence_max;
+      filtered = filtered.filter(e => (e.occurrence_count || 0) <= max);
+    }
+
+    const q = (SCS_FILTER_STATE.query || "").trim().toLowerCase();
+    if (q) {
+      filtered = filtered.filter(e => {
+        if (!SCS_CONFIG) return true;
+        const filterDef = SCS_CONFIG.filters.find(f => f.id === "query");
+        if (!filterDef || !Array.isArray(filterDef.fields)) return true;
+
+        for (const field of filterDef.fields) {
+          if (field === "top_kjv_words.w") {
+            if (Array.isArray(e.top_kjv_words)) {
+              for (const w of e.top_kjv_words) {
+                if (String(w.w || "").toLowerCase().includes(q)) return true;
+              }
+            }
+          } else {
+            const val = (e[field] != null ? String(e[field]) : "").toLowerCase();
+            if (val.includes(q)) return true;
+          }
+        }
+        return false;
+      });
+    }
+
+    renderResults(filtered, total);
+  }
+
+  function renderResults(entries, total) {
+    const resultsEl = document.getElementById("scs-results");
+    const metaEl = document.getElementById("scs-results-meta-text");
+    const summaryTotal = document.getElementById("scs-summary-total");
+    const summaryVisible = document.getElementById("scs-summary-visible");
+
+    resultsEl.innerHTML = "";
+
+    summaryTotal.textContent = String(total);
+    summaryVisible.textContent = String(entries.length);
+
+    metaEl.textContent = entries.length === 0
+      ? "No entries match the current filters."
+      : "Showing " + entries.length + " entr" + (entries.length === 1 ? "y" : "ies") + " (of " + total + ").";
+
+    if (entries.length === 0) {
+      const empty = document.createElement("div");
+      empty.className = "scs-empty";
+      empty.textContent = "No matching Strong's entries. Try widening your filters, clearing the query, or adjusting occurrence counts.";
+      resultsEl.appendChild(empty);
+      return;
+    }
+
+    const maxRender = 200;
+    const slice = entries.slice(0, maxRender);
+
+    if (entries.length > maxRender) {
+      const info = document.createElement("div");
+      info.className = "scs-empty";
+      info.textContent = "Showing first " + maxRender + " entries. Refine filters to narrow further.";
+      resultsEl.appendChild(info);
+    }
+
+    for (const e of slice) {
+      resultsEl.appendChild(renderEntry(e));
+    }
+  }
+
+  function renderEntry(e) {
+    const root = document.createElement("article");
+    root.className = "scs-entry";
+
+    const left = document.createElement("div");
+    left.className = "scs-entry-main";
+
+    const header = document.createElement("div");
+    header.className = "scs-entry-header";
+
+    const idChip = document.createElement("div");
+    idChip.className = "scs-entry-id";
+    idChip.textContent = e.id || "";
+
+    const lemmaSpan = document.createElement("div");
+    lemmaSpan.className = "scs-entry-lemma";
+    lemmaSpan.textContent = e.lemma_unicode || "";
+
+    const translitSpan = document.createElement("div");
+    translitSpan.className = "scs-entry-translit";
+    translitSpan.textContent = e.lemma_translit || "";
+
+    header.appendChild(idChip);
+    header.appendChild(lemmaSpan);
+    header.appendChild(translitSpan);
+
+    left.appendChild(header);
+
+    const chipsRow = document.createElement("div");
+    chipsRow.className = "scs-entry-chips";
+
+    const langChip = document.createElement("div");
+    langChip.className = "scs-chip";
+    langChip.innerHTML = "<strong>" + (e.lang === "grc" ? "Greek" : (e.lang === "he" ? "Hebrew" : (e.lang || "Lang"))) + "</strong>";
+    chipsRow.appendChild(langChip);
+
+    const testChip = document.createElement("div");
+    testChip.className = "scs-chip";
+    let testLabel = "Testament: –";
+    if (e.testament === "ot") testLabel = "OT";
+    else if (e.testament === "nt") testLabel = "NT";
+    else if (e.testament === "dc") testLabel = "Deutero";
+    testChip.innerHTML = "<strong>" + testLabel + "</strong>";
+    chipsRow.appendChild(testChip);
+
+    const occChip = document.createElement("div");
+    occChip.className = "scs-chip";
+    occChip.innerHTML = "<strong>" + (e.occurrence_count || 0) + "</strong><span>occurrences</span>";
+    chipsRow.appendChild(occChip);
+
+    left.appendChild(chipsRow);
+
+    if (e.definition || e.kjv_def) {
+      const def = document.createElement("div");
+      def.className = "scs-entry-def";
+      const baseDef = e.definition || "";
+      const kjvDef = e.kjv_def || "";
+      def.textContent = baseDef + (baseDef && kjvDef ? " " : "") + kjvDef;
+      left.appendChild(def);
+    }
+
+    if (e.example && e.example.text) {
+      const ex = document.createElement("div");
+      ex.className = "scs-entry-example";
+      const ref = (e.example.book_id || "") + " " + (e.example.chapter || "") + ":" + (e.example.verse || "");
+      ex.textContent = "[" + ref + "] " + e.example.text;
+      left.appendChild(ex);
+    }
+
+    const meta = document.createElement("div");
+    meta.className = "scs-entry-meta";
+    const booksList = Array.isArray(e.books) ? e.books.join(", ") : "–";
+    meta.innerHTML = "<span><strong>Books:</strong> " + booksList + "</span>";
+    left.appendChild(meta);
+
+    const right = document.createElement("div");
+    right.className = "scs-entry-right";
+
+    const wordsLine = document.createElement("div");
+    wordsLine.className = "scs-words-list";
+    if (Array.isArray(e.top_kjv_words) && e.top_kjv_words.length > 0) {
+      const parts = e.top_kjv_words.map(w => w.w + " (" + w.c + ")");
+      wordsLine.innerHTML = "<span><strong>KJV renderings:</strong> " + parts.join(", ") + "</span>";
+    } else {
+      wordsLine.innerHTML = "<span><strong>KJV renderings:</strong> –</span>";
+    }
+
+    const booksStatsLine = document.createElement("div");
+    booksStatsLine.className = "scs-books-list";
+    if (e.book_stats && Object.keys(e.book_stats).length > 0) {
+      const parts = [];
+      const entries = Object.entries(e.book_stats);
+      const max = 5;
+      for (let i = 0; i < entries.length && i < max; i++) {
+        const [b, c] = entries[i];
+        parts.push(b + " (" + c + ")");
+      }
+      if (entries.length > max) {
+        parts.push("…");
+      }
+      booksStatsLine.innerHTML = "<span><strong>By book:</strong> " + parts.join(", ") + "</span>";
+    } else {
+      booksStatsLine.innerHTML = "<span><strong>By book:</strong> –</span>";
+    }
+
+    const totalsLine = document.createElement("div");
+    totalsLine.className = "scs-kv-line";
+    totalsLine.innerHTML = "<span><strong>#:</strong> " + (e.strongs_num != null ? e.strongs_num : "–") + "</span>";
+
+    right.appendChild(wordsLine);
+    right.appendChild(booksStatsLine);
+    right.appendChild(totalsLine);
+
+    root.appendChild(left);
+    root.appendChild(right);
+
+    return root;
+  }
+
+  async function loadEntriesFromJsonl(entriesPath) {
+    const url = BASEURL + "/data/v1/" + entriesPath.replace(/^\/?data\/v1\//, "");
+    const txt = await fetchText(url);
+    const lines = txt.split(/\r?\n/);
+    const out = [];
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed) continue;
+      try {
+        const obj = JSON.parse(trimmed);
+        out.push(obj);
+      } catch (err) {
+        console.warn("Failed to parse JSONL line:", err);
+      }
+    }
+    return out;
+  }
+
+  async function initSCS() {
+    try {
+      updateStatus("loading", "Fetching config…");
+      clearError();
+
+      SCS_CONFIG = await fetchJson(SCS_INDEX_URL);
+
+      buildFiltersUI();
+
+      if (!SCS_CONFIG || !SCS_CONFIG.data || !SCS_CONFIG.data.entries) {
+        throw new Error("SCS index.json missing data.entries path.");
+      }
+
+      updateStatus("loading", "Loading Strong's entries…");
+      SCS_ENTRIES = await loadEntriesFromJsonl(SCS_CONFIG.data.entries);
+
+      updateStatus("ok", "Loaded " + SCS_ENTRIES.length + " entries.");
+      resetFilters();
+      applyFiltersAndRender();
+    } catch (err) {
+      console.error(err);
+      updateStatus("error", "Failed to initialize SCS.");
+      showError(String(err.message || err));
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", initSCS);
+</script>

@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "id": "tools.scs",
+  "title": "Strong's Concordance Search",
+
+  "works": {
+    "lexicon": "lang.strongs.lexicon",
+    "concordance": "lang.strongs.concordance",
+    "aligned_bible": "bible.en.kjv_strongs"
+  },
+
+  "data": {
+    "entries": "lit/strongs/concordance/entries.v1.jsonl"
+  },
+
+  "filters": [
+    {
+      "id": "language",
+      "label": "Language",
+      "type": "single-select",
+      "field": "lang",
+      "options": [
+        { "value": "grc", "label": "Greek" },
+        { "value": "he",  "label": "Hebrew" }
+      ]
+    },
+    {
+      "id": "testament",
+      "label": "Testament",
+      "type": "single-select",
+      "field": "testament",
+      "options": [
+        { "value": "ot", "label": "Old Testament" },
+        { "value": "nt", "label": "New Testament" },
+        { "value": "dc", "label": "Deuterocanon/Apocrypha" }
+      ]
+    },
+    {
+      "id": "book",
+      "label": "Book",
+      "type": "multi-select",
+      "field": "books",
+      "options_source": {
+        "type": "books-from-work",
+        "work_id": "bible.en.kjv_strongs"
+      }
+    },
+    {
+      "id": "occurrence_range",
+      "label": "Occurrences",
+      "type": "range",
+      "field": "occurrence_count"
+    },
+    {
+      "id": "query",
+      "label": "Search",
+      "type": "text",
+      "fields": [
+        "id",
+        "lemma_unicode",
+        "lemma_translit",
+        "definition",
+        "kjv_def",
+        "top_kjv_words.w"
+      ]
+    }
+  ]
+}

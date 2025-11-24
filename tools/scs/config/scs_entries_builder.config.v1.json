@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "data_root": "docs/data/v1",
+  "works_index": "docs/data/v1/lit/index.json",
+  "books_file": "docs/data/v1/lit/bible/books.json",
+
+  "lexicon": {
+    "grc": "docs/data/v1/lit/strongs/grc/lexicon.jsonl",
+    "he":  "docs/data/v1/lit/strongs/he/lexicon.jsonl"
+  },
+
+  "aligned_bible_work_id": "bible.en.kjv_strongs",
+
+  "output_entries": "docs/data/v1/lit/strongs/concordance/entries.v1.jsonl",
+
+  "top_kjv_words_limit": 5,
+  "include_zero_occurrence_entries": true,
+  "missing_strongs_policy": "log_and_skip"
+}
