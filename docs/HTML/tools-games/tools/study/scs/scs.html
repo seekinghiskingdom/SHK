@@ -6,14 +6,14 @@ permalink: /tools-games/tools/scs/
 
 <style>
   :root {
-    --scs-bg: #050308;
-    --scs-bg-alt: #090310;
-    --scs-panel: #050308;
+    --scs-bg: #424037;
+    --scs-bg-alt: #36332c;
+    --scs-panel: #312e27;
     --scs-border: rgba(148, 163, 184, 0.45);
     --scs-border-soft: rgba(148, 163, 184, 0.25);
     --scs-text: #e5e7eb;
-    --scs-text-soft: #e5e7ff;
-    --scs-text-muted: #a9b0c4;
+    --scs-text-soft: #f3f4ff;
+    --scs-text-muted: #b3b8c8;
     --scs-accent: #facc15;
     --scs-accent-soft: rgba(250, 204, 21, 0.16);
     --scs-danger: #f97373;
@@ -22,18 +22,19 @@ permalink: /tools-games/tools/scs/
     --scs-radius-xl: 26px;
 
     --scs-shadow-soft:
-      0 24px 60px rgba(10, 10, 12, 0.96),
-      0 0 0 1px rgba(15, 23, 42, 1.0),
-      0 0 0 1px rgba(15, 23, 42, 0.8);
+      0 24px 60px rgba(16, 12, 8, 0.95),
+      0 0 0 1px rgba(15, 23, 42, 0.95),
+      0 0 0 1px rgba(15, 23, 42, 0.75);
     --scs-shadow-chip:
       0 0 0 1px rgba(148, 163, 184, 0.6),
-      0 10px 30px rgba(10, 10, 12, 0.96);
+      0 10px 30px rgba(16, 12, 8, 0.95);
 
-    --scs-chip-bg: rgba(14, 10, 3, 0.97);
+    --scs-chip-bg: rgba(30, 28, 22, 0.98);
   }
 
   body {
-    background: radial-gradient(circle at top, #050308 0, #050308 38%, #050308 55%, #050308 100%);
+    background:
+      radial-gradient(circle at top, #5a5648 0, #4a463d 40%, #424037 70%, #3a3630 100%);
   }
 
   .scs-page {
@@ -123,12 +124,12 @@ permalink: /tools-games/tools/scs/
     gap: 6px;
     padding: 4px 9px;
     border-radius: 999px;
-    background: rgba(10, 10, 12, 0.98);
+    background: rgba(30, 28, 22, 0.98);
     border: 1px solid rgba(148, 163, 184, 0.35);
     font-size: 12px;
     color: var(--scs-text-muted);
     box-shadow:
-      0 16px 40px rgba(10, 10, 12, 0.95);
+      0 16px 40px rgba(16, 12, 8, 0.95);
   }
 
   .scs-status-dot {
@@ -179,7 +180,7 @@ permalink: /tools-games/tools/scs/
     background:
       radial-gradient(circle at top left, rgba(222, 176, 0, 0.22) 0, transparent 55%),
       radial-gradient(circle at top right, rgba(140, 98, 0, 0.20) 0, transparent 60%),
-      linear-gradient(to bottom, #050308, #050308);
+      linear-gradient(to bottom, #312e27, #26231e);
     box-shadow: var(--scs-shadow-soft);
     padding: 14px 14px 16px;
     position: relative;
@@ -223,7 +224,7 @@ permalink: /tools-games/tools/scs/
     align-items: center;
     justify-content: center;
     font-size: 10px;
-    background: rgba(10, 10, 12, 0.96);
+    background: rgba(30, 28, 22, 0.98);
   }
 
   .scs-panel-subtitle {
@@ -246,19 +247,19 @@ permalink: /tools-games/tools/scs/
   .scs-sort-select {
     border-radius: 999px;
     border: 1px solid rgba(148, 163, 184, 0.7);
-    background: rgba(10, 10, 12, 0.98);
+    background: rgba(30, 28, 22, 0.98);
     color: var(--scs-text);
     padding: 5px 9px;
     font-size: 13px;
     outline: none;
-    box-shadow: 0 10px 30px rgba(10, 10, 12, 0.96);
+    box-shadow: 0 10px 30px rgba(16, 12, 8, 0.96);
   }
 
   .scs-sort-select:focus {
     border-color: var(--scs-accent);
     box-shadow:
       0 0 0 1px rgba(250, 204, 21, 0.7),
-      0 14px 40px rgba(10, 10, 12, 0.98);
+      0 14px 40px rgba(16, 12, 8, 0.98);
   }
 
   .scs-filters-grid {
@@ -298,12 +299,12 @@ permalink: /tools-games/tools/scs/
     width: 100%;
     border-radius: 999px;
     border: 1px solid rgba(148, 163, 184, 0.75);
-    background: rgba(10, 10, 12, 0.98);
+    background: rgba(30, 28, 22, 0.98);
     color: var(--scs-text);
     padding: 8px 13px;
     font-size: 15px;
     outline: none;
-    box-shadow: 0 10px 30px rgba(10, 10, 12, 0.96);
+    box-shadow: 0 10px 30px rgba(16, 12, 8, 0.96);
   }
 
   .scs-input::placeholder {
@@ -315,7 +316,7 @@ permalink: /tools-games/tools/scs/
     border-color: var(--scs-accent);
     box-shadow:
       0 0 0 1px rgba(250, 204, 21, 0.7),
-      0 14px 40px rgba(10, 10, 12, 0.98);
+      0 14px 40px rgba(16, 12, 8, 0.98);
   }
 
   .scs-select[multiple] {
@@ -347,7 +348,7 @@ permalink: /tools-games/tools/scs/
   .scs-reset-btn {
     border-radius: 999px;
     border: 1px solid rgba(148, 163, 184, 0.7);
-    background: rgba(10, 10, 12, 0.96);
+    background: rgba(30, 28, 22, 0.96);
     color: var(--scs-text-soft);
     font-size: 13px;
     padding: 5px 10px;
@@ -355,7 +356,7 @@ permalink: /tools-games/tools/scs/
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    box-shadow: 0 10px 30px rgba(10, 10, 12, 0.96);
+    box-shadow: 0 10px 30px rgba(16, 12, 8, 0.96);
   }
 
   .scs-reset-btn:hover {
@@ -370,7 +371,7 @@ permalink: /tools-games/tools/scs/
   .scs-summary-chip {
     border-radius: 999px;
     padding: 4px 10px;
-    background: rgba(10, 10, 12, 0.96);
+    background: rgba(30, 28, 22, 0.96);
     border: 1px dashed rgba(148, 163, 184, 0.5);
     display: inline-flex;
     align-items: center;
@@ -414,10 +415,16 @@ permalink: /tools-games/tools/scs/
     color: var(--scs-text-soft);
   }
 
+  .scs-export-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
   .scs-export-btn {
     border-radius: 999px;
     border: 1px solid rgba(148, 163, 184, 0.7);
-    background: rgba(10, 10, 12, 0.96);
+    background: rgba(30, 28, 22, 0.96);
     color: var(--scs-text-soft);
     font-size: 12px;
     padding: 4px 9px;
@@ -425,12 +432,72 @@ permalink: /tools-games/tools/scs/
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    box-shadow: 0 10px 30px rgba(10, 10, 12, 0.96);
+    box-shadow: 0 10px 30px rgba(16, 12, 8, 0.96);
   }
 
   .scs-export-btn:hover {
     border-color: rgba(250, 204, 21, 0.9);
     color: #fde68a;
+  }
+
+  .scs-export-info-btn {
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(30, 28, 22, 0.96);
+    color: var(--scs-text-soft);
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(16, 12, 8, 0.96);
+  }
+
+  .scs-export-info-btn:hover {
+    border-color: rgba(250, 204, 21, 0.9);
+    color: #fde68a;
+  }
+
+  .scs-export-info-panel {
+    position: absolute;
+    right: 14px;
+    top: 58px;
+    max-width: 360px;
+    padding: 10px 12px;
+    border-radius: 16px;
+    background: rgba(22, 20, 15, 0.98);
+    border: 1px solid rgba(148, 163, 184, 0.75);
+    box-shadow:
+      0 20px 50px rgba(16, 12, 8, 0.98),
+      0 0 0 1px rgba(15, 23, 42, 0.9);
+    font-size: 12px;
+    color: var(--scs-text-soft);
+    z-index: 20;
+  }
+
+  .scs-export-info-panel.hidden {
+    display: none;
+  }
+
+  .scs-export-info-panel h3 {
+    margin: 0 0 4px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .scs-export-info-panel p {
+    margin: 2px 0;
+  }
+
+  .scs-export-info-panel ul {
+    margin: 4px 0 0 16px;
+    padding: 0;
+  }
+
+  .scs-export-info-panel li {
+    margin: 0 0 2px;
   }
 
   .scs-results-list {
@@ -449,13 +516,13 @@ permalink: /tools-games/tools/scs/
     padding: 10px 12px 11px;
     background:
       radial-gradient(circle at top left, rgba(222, 176, 0, 0.16) 0, transparent 55%),
-      linear-gradient(to bottom right, rgba(10, 10, 12, 0.98), rgba(10, 10, 12, 0.98));
+      linear-gradient(to bottom right, #2e2a23, #26231e);
     border: 1px solid rgba(148, 163, 184, 0.4);
     box-shadow:
-      0 16px 45px rgba(10, 10, 12, 0.98),
-      0 0 0 1px rgba(10, 10, 12, 0.96);
+      0 16px 45px rgba(16, 12, 8, 0.98),
+      0 0 0 1px rgba(16, 12, 8, 0.96);
     display: grid;
-    grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.7fr); /* wider left column */
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.7fr);
     gap: 10px;
   }
 
@@ -479,17 +546,17 @@ permalink: /tools-games/tools/scs/
     padding: 2px 7px;
     border-radius: 999px;
     border: 1px solid rgba(148, 163, 184, 0.7);
-    background: rgba(10, 10, 12, 0.96);
+    background: rgba(30, 28, 22, 0.96);
     box-shadow: var(--scs-shadow-chip);
   }
 
   .scs-entry-lemma {
-    font-size: 32px;   /* bigger lemma */
+    font-size: 32px;
     font-weight: 500;
   }
 
   .scs-entry-translit {
-    font-size: 22px;   /* bigger transliteration */
+    font-size: 22px;
     color: var(--scs-text-soft);
   }
 
@@ -524,22 +591,22 @@ permalink: /tools-games/tools/scs/
     color: var(--scs-text-soft);
   }
 
+  .scs-kjv-line {
+    margin-top: 4px;
+    font-size: 13px;
+    color: var(--scs-text-muted);
+  }
+
+  .scs-kjv-line strong {
+    color: var(--scs-text-soft);
+  }
+
   .scs-entry-example {
     font-size: 14px;
     color: var(--scs-text-muted);
     margin-top: 4px;
     border-left: 2px solid rgba(148, 163, 184, 0.6);
     padding-left: 8px;
-  }
-
-  .scs-entry-meta {
-    font-size: 13px;
-    color: var(--scs-text-muted);
-    margin-top: 4px;
-  }
-
-  .scs-entry-meta span {
-    white-space: nowrap;
   }
 
   .scs-entry-right {
@@ -560,30 +627,11 @@ permalink: /tools-games/tools/scs/
     color: var(--scs-text-soft);
   }
 
-  .scs-words-list {
-    font-size: 12px;
-    text-align: right;
-  }
-
-  .scs-words-list span {
-    white-space: nowrap;
-  }
-
-  .scs-books-list {
-    font-size: 12px;
-    color: var(--scs-text-muted);
-    text-align: right;
-  }
-
-  .scs-books-list span {
-    white-space: nowrap;
-  }
-
   .scs-empty {
     padding: 18px 14px;
     border-radius: 18px;
     border: 1px dashed rgba(148, 163, 184, 0.6);
-    background: rgba(10, 10, 12, 0.96);
+    background: rgba(30, 28, 22, 0.96);
     font-size: 13px;
     color: var(--scs-text-muted);
   }
@@ -604,6 +652,11 @@ permalink: /tools-games/tools/scs/
 
     .scs-entry {
       grid-template-columns: minmax(0, 1fr);
+    }
+
+    .scs-export-info-panel {
+      right: 12px;
+      left: 12px;
     }
   }
 </style>
@@ -653,7 +706,7 @@ permalink: /tools-games/tools/scs/
           </div>
         </div>
         <div class="scs-filters-grid" id="scs-filters-root">
-          <!-- Filters will be injected here -->
+          <!-- Filters injected here -->
         </div>
         <div class="scs-filters-footer">
           <button type="button" class="scs-reset-btn" id="scs-reset-btn">
@@ -672,8 +725,23 @@ permalink: /tools-games/tools/scs/
           <div class="scs-results-title">Results</div>
           <div class="scs-results-meta">
             <span id="scs-results-meta-text">Loading…</span>
-            <button type="button" class="scs-export-btn" id="scs-export-btn">Export CSV</button>
+            <div class="scs-export-wrap">
+              <button type="button" class="scs-export-btn" id="scs-export-btn">Export CSV</button>
+              <button type="button" class="scs-export-info-btn" id="scs-export-info-btn">?</button>
+            </div>
           </div>
+        </div>
+        <div id="scs-export-info-panel" class="scs-export-info-panel hidden">
+          <h3>Exporting your study list</h3>
+          <p>Export creates a <strong>CSV file</strong> with the currently visible entries only.</p>
+          <p>You can:</p>
+          <ul>
+            <li>Open it directly in Excel, Google Sheets, or Numbers.</li>
+            <li>Sort, tag, or group Strong’s numbers for your own word studies.</li>
+            <li>Save sets of words to re-use later or share with others.</li>
+            <li>In the future, import it into SHK language-learning / study tools.</li>
+          </ul>
+          <p>The CSV columns include Strong’s ID, lemma, transliteration, counts, books, top KJV renderings, and an example verse.</p>
         </div>
         <div id="scs-error" class="scs-error" style="display:none;"></div>
         <div id="scs-results" class="scs-results-list"></div>
@@ -937,6 +1005,28 @@ permalink: /tools-games/tools/scs/
     return Array.from(set).sort();
   }
 
+  function getBooksSummary(e) {
+    if (e.book_stats && typeof e.book_stats === "object" && Object.keys(e.book_stats).length > 0) {
+      const parts = [];
+      const entries = Object.entries(e.book_stats);
+      const max = 4;
+      for (let i = 0; i < entries.length && i < max; i++) {
+        const [b, c] = entries[i];
+        parts.push(b + " (" + c + ")");
+      }
+      if (entries.length > max) {
+        parts.push("…");
+      }
+      return parts.join(", ");
+    } else if (Array.isArray(e.books) && e.books.length > 0) {
+      const max = 4;
+      const shown = e.books.slice(0, max);
+      const suffix = e.books.length > max ? ", …" : "";
+      return shown.join(", ") + suffix;
+    }
+    return "";
+  }
+
   function getFilteredEntries() {
     let filtered = SCS_ENTRIES;
 
@@ -1125,25 +1215,30 @@ permalink: /tools-games/tools/scs/
     const chipsRow = document.createElement("div");
     chipsRow.className = "scs-entry-chips";
 
-    const langChip = document.createElement("div");
-    langChip.className = "scs-chip";
-    langChip.innerHTML = "<strong>" + (e.lang === "grc" ? "Greek" : (e.lang === "he" ? "Hebrew" : (e.lang || "Lang"))) + "</strong>";
-    chipsRow.appendChild(langChip);
+    const summaryChip = document.createElement("div");
+    summaryChip.className = "scs-chip";
 
-    const testChip = document.createElement("div");
-    testChip.className = "scs-chip";
-    let testLabel = "Testament: –";
+    let langLabel = "Lang";
+    if (e.lang === "grc") langLabel = "Greek";
+    else if (e.lang === "he") langLabel = "Hebrew";
+    else if (e.lang) langLabel = e.lang;
+
+    let testLabel = "";
     if (e.testament === "ot") testLabel = "OT";
     else if (e.testament === "nt") testLabel = "NT";
     else if (e.testament === "dc") testLabel = "Deutero";
-    testChip.innerHTML = "<strong>" + testLabel + "</strong>";
-    chipsRow.appendChild(testChip);
 
-    const occChip = document.createElement("div");
-    occChip.className = "scs-chip";
-    occChip.innerHTML = "<strong>" + (e.occurrence_count || 0) + "</strong><span>occurrences</span>";
-    chipsRow.appendChild(occChip);
+    const occ = e.occurrence_count || 0;
+    const booksSummary = getBooksSummary(e);
 
+    const parts = [];
+    if (langLabel) parts.push(langLabel);
+    if (testLabel) parts.push(testLabel);
+    parts.push(occ + " occ");
+    if (booksSummary) parts.push(booksSummary);
+
+    summaryChip.innerHTML = "<strong>" + parts.join(" · ") + "</strong>";
+    chipsRow.appendChild(summaryChip);
     left.appendChild(chipsRow);
 
     if (e.definition || e.kjv_def) {
@@ -1155,6 +1250,14 @@ permalink: /tools-games/tools/scs/
       left.appendChild(def);
     }
 
+    if (Array.isArray(e.top_kjv_words) && e.top_kjv_words.length > 0) {
+      const wordsLine = document.createElement("div");
+      wordsLine.className = "scs-kjv-line";
+      const parts = e.top_kjv_words.map(w => w.w + " (" + w.c + ")");
+      wordsLine.innerHTML = "<strong>KJV renderings:</strong> " + parts.join(", ");
+      left.appendChild(wordsLine);
+    }
+
     if (e.example && e.example.text) {
       const ex = document.createElement("div");
       ex.className = "scs-entry-example";
@@ -1163,46 +1266,13 @@ permalink: /tools-games/tools/scs/
       left.appendChild(ex);
     }
 
-    const meta = document.createElement("div");
-    meta.className = "scs-entry-meta";
-
-    let booksText = "–";
-    if (e.book_stats && Object.keys(e.book_stats).length > 0) {
-      const parts = [];
-      const entries = Object.entries(e.book_stats);
-      const max = 10;
-      for (let i = 0; i < entries.length && i < max; i++) {
-        const [b, c] = entries[i];
-        parts.push(b + " (" + c + ")");
-      }
-      if (entries.length > max) {
-        parts.push("…");
-      }
-      booksText = parts.join(", ");
-    } else if (Array.isArray(e.books) && e.books.length > 0) {
-      booksText = e.books.join(", ");
-    }
-
-    meta.innerHTML = "<span><strong>Books:</strong> " + booksText + "</span>";
-    left.appendChild(meta);
-
     const right = document.createElement("div");
     right.className = "scs-entry-right";
-
-    const wordsLine = document.createElement("div");
-    wordsLine.className = "scs-words-list";
-    if (Array.isArray(e.top_kjv_words) && e.top_kjv_words.length > 0) {
-      const parts = e.top_kjv_words.map(w => w.w + " (" + w.c + ")");
-      wordsLine.innerHTML = "<span><strong>KJV renderings:</strong> " + parts.join(", ") + "</span>";
-    } else {
-      wordsLine.innerHTML = "<span><strong>KJV renderings:</strong> –</span>";
-    }
 
     const totalsLine = document.createElement("div");
     totalsLine.className = "scs-kv-line";
     totalsLine.innerHTML = "<span><strong>#:</strong> " + (e.strongs_num != null ? e.strongs_num : "–") + "</span>";
 
-    right.appendChild(wordsLine);
     right.appendChild(totalsLine);
 
     root.appendChild(left);
@@ -1239,6 +1309,7 @@ permalink: /tools-games/tools/scs/
   }
 
   function buildCsvFromEntries(entries) {
+    // Simplified, user-friendly export
     const headers = [
       "id",
       "strongs_num",
@@ -1247,10 +1318,8 @@ permalink: /tools-games/tools/scs/
       "lemma_unicode",
       "lemma_translit",
       "definition",
-      "kjv_def",
       "occurrence_count",
       "books",
-      "book_stats",
       "top_kjv_words",
       "example_ref",
       "example_text"
@@ -1260,14 +1329,6 @@ permalink: /tools-games/tools/scs/
 
     for (const e of entries) {
       const booksStr = Array.isArray(e.books) ? e.books.join("|") : "";
-      let bookStatsStr = "";
-      if (e.book_stats && typeof e.book_stats === "object") {
-        const parts = [];
-        for (const [b, c] of Object.entries(e.book_stats)) {
-          parts.push(b + ":" + c);
-        }
-        bookStatsStr = parts.join(";");
-      }
       let topWordsStr = "";
       if (Array.isArray(e.top_kjv_words)) {
         topWordsStr = e.top_kjv_words.map(w => (w.w || "") + " (" + (w.c || 0) + ")").join(";");
@@ -1290,10 +1351,8 @@ permalink: /tools-games/tools/scs/
         csvEscape(e.lemma_unicode),
         csvEscape(e.lemma_translit),
         csvEscape(e.definition),
-        csvEscape(e.kjv_def),
         csvEscape(e.occurrence_count),
         csvEscape(booksStr),
-        csvEscape(bookStatsStr),
         csvEscape(topWordsStr),
         csvEscape(exampleRef),
         csvEscape(exampleText)
@@ -1328,6 +1387,22 @@ permalink: /tools-games/tools/scs/
     }
   }
 
+  function initExportInfo() {
+    const infoBtn = document.getElementById("scs-export-info-btn");
+    const panel = document.getElementById("scs-export-info-panel");
+
+    infoBtn.addEventListener("click", () => {
+      panel.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", (evt) => {
+      const target = evt.target;
+      if (!panel.contains(target) && target !== infoBtn && !infoBtn.contains(target)) {
+        panel.classList.add("hidden");
+      }
+    });
+  }
+
   async function initSCS() {
     try {
       updateStatus("loading", "Fetching config…");
@@ -1352,6 +1427,8 @@ permalink: /tools-games/tools/scs/
 
       const exportBtn = document.getElementById("scs-export-btn");
       exportBtn.addEventListener("click", handleExportCSV);
+
+      initExportInfo();
 
       updateStatus("ok", "Loaded " + SCS_ENTRIES.length + " entries.");
       resetFilters();
