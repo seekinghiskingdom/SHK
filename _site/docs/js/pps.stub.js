@@ -11,8 +11,8 @@
   chapter.innerHTML = `<option value="All">All</option>` + (cfg.chapters||[]).map(c=>`<option>${c}</option>`).join('');
 
   // Load tags
-  const inputTags = await (await fetch('data/pps/input_tags.json')).json().catch(()=>[]);
-  const outputTags = await (await fetch('data/pps/output_tags.json')).json().catch(()=>[]);
+  const inputTags = await (await fetch('data/v1/tools/pps/input_tags.json')).json().catch(()=>[]);
+  const outputTags = await (await fetch('data/v1/tools/pps/output_tags.json')).json().catch(()=>[]);
   inputs.innerHTML = inputTags.map(t=>`<option value="${t.id}">${t.label}</option>`).join('');
   outputs.innerHTML = outputTags.map(t=>`<option value="${t.id}">${t.label}</option>`).join('');
 
@@ -21,7 +21,7 @@
   attribution.textContent = `KJV: ${at.KJV||'Public domain in the U.S.'} | WEB: ${at.WEB||'Public Domain'}`;
 
   // Load dataset and show all
-  const data = await (await fetch('data/pps/proverbs.json')).json().catch(()=>({data:[]}));
+  const data = await (await fetch('data/v1/tools/pps/proverbs.json')).json().catch(()=>({data:[]}));
   const verses = data.data||[];
 
   function render(list){

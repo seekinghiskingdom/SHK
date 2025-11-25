@@ -7,7 +7,7 @@ PPS v1 – Step 4.2: input_pairs.json → final_pairs.json (+ warnings)
 - Produces:
   - final_pairs.json (site-facing data under docs/)
   - final_pairs_warnings.json (diagnostic log under tools/)
-- Also writes a site-side copy of the config to docs/data/v1/pps/ with
+- Also writes a site-side copy of the config to docs/data/v1/tools/pps/ with
   export_meta attached, so the front-end can see which fields/filters
   are in use and when the export was built.
 """

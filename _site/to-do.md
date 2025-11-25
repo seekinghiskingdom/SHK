@@ -9,7 +9,7 @@
 
 ### PPS (Proverb Pair Search)
 - [ ] Replace stub logic with real loader for `docs/data/v1/tools/pps/shk_pairs.json`.
-- [ ] Remove all references to legacy `docs/data/shk_pairs.json`.
+- [ ] Remove all references to legacy `docs/data/v1/tools/pps/shk_pairs.json`.
 - [ ] Filters UI: book, chapter range, X term, Y term, “has X only / has Y only / has both”.
 - [ ] Results list: verse ref, matched terms highlight, pair meta (score/counts).
 - [ ] Empty state + error state (bad bundle, fetch failure).
@@ -104,7 +104,7 @@
 ---
 
 ## 🗑️ Cleanups
-- [ ] Remove `docs/data/shk_pairs.json` (legacy) and any codepaths that reference it.
+- [ ] Remove `docs/data/v1/tools/pps/shk_pairs.json` (legacy) and any codepaths that reference it.
 - [ ] Verify there are no hardcoded paths to non-`v1` data.
 - [ ] Trim leftover placeholder JS/CSS once real components are in place.
 

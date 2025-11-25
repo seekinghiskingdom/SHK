@@ -58,16 +58,16 @@ Purpose of `input_pairs.json`:
 These are the files consumed by front-end tools (list view, Bubble Map, etc.).
 
 1. **Final pairs data (main source of truth):**
-   - Repo path: `docs/data/v1/pps/final_pairs.json`
-   - Jekyll URL: `{{ '/data/v1/pps/final_pairs.json' | relative_url }}`
+   - Repo path: `docs/data/v1/tools/pps/final_pairs.json`
+   - Jekyll URL: `{{ '/data/v1/tools/pps/final_pairs.json' | relative_url }}`
 
 2. **Export config (describes which fields are exposed):**
-   - Repo path: `docs/data/v1/pps/pps_export_config.v1.json`
-   - Jekyll URL: `{{ '/data/v1/pps/pps_export_config.v1.json' | relative_url }}`
+   - Repo path: `docs/data/v1/tools/pps/pps_export_config.v1.json`
+   - Jekyll URL: `{{ '/data/v1/tools/pps/pps_export_config.v1.json' | relative_url }}`
 
 3. **Warnings report (non-fatal issues during export):**
-   - Repo path: `docs/data/v1/pps/final_pairs_warnings.json`
-   - Jekyll URL: `{{ '/data/v1/pps/final_pairs_warnings.json' | relative_url }}`
+   - Repo path: `docs/data/v1/tools/pps/final_pairs_warnings.json`
+   - Jekyll URL: `{{ '/data/v1/tools/pps/final_pairs_warnings.json' | relative_url }}`
 
 All front-end tooling should treat `final_pairs.json` as the canonical data file, and may optionally read the config/warnings files for metadata and diagnostics.
 
@@ -230,7 +230,7 @@ The list view always sorts the final filtered set using one of these strategies.
 The Bubble Map (or any future PPS visualizations) should follow these rules:
 
 1. **Data source**
-   - Use **only** `docs/data/v1/pps/final_pairs.json` for the pair-level data.
+   - Use **only** `docs/data/v1/tools/pps/final_pairs.json` for the pair-level data.
    - Optionally use `pps_export_config.v1.json` for sanity checks (fields, versions, etc.).
 
 2. **Shared filters**

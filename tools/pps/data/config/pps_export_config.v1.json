@@ -1,6 +1,6 @@
 {
   "input_file": "tools/pps/data/input/input_pairs.json",
-  "output_file": "docs/data/v1/pps/final_pairs.json",
+  "output_file": "docs/data/v1/tools/pps/final_pairs.json",
   "warnings_file": "tools/pps/data/output/final_pairs_warnings.json",
 
   "mappings": {

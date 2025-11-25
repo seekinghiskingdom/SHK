@@ -206,19 +206,19 @@ Specific moderation algorithms and thresholds are left as **implementation detai
 ### 7.1 Testimony Hub (Info Page)
 
 - **URL:**  
-  - `"/testimonies/"` (or `/community/testimonies/` depending on site structure)
+  - `"/testimony/"` (or `/testimony/` depending on site structure)
 - **Content:**
   - Explanation of what a testimony is, why it matters for the gospel, Scripture references.
   - Guidance on how to write and share a testimony.
   - Big buttons linking to:
-    - **Testimonies Wall** (`/testimony-wall/`)
+    - **Testimonies Wall** (`/testimony/wall/`)
     - Mode-specific views: Prayer / Blessings / Miracles (via query params).
     - Future: Timeline view, Map view, etc.
 
 ### 7.2 Testimonies Wall (Global Feed)
 
 - **URL:**  
-  - `"/testimony-wall/"`
+  - `"/testimony/wall/"`
 
 - **Default view:**
   - All testimonies, **Today** (last 24h in user’s timezone), newest first.
@@ -278,9 +278,9 @@ Specific moderation algorithms and thresholds are left as **implementation detai
       - (Future: “Share” – can be hidden in v1.0 if not implemented.)
 
 - **Entry points from other pages:**
-  - Prayer page → `/testimony-wall/?mode=prayer`
-  - Blessings page → `/testimony-wall/?mode=blessings`
-  - Miracles page → `/testimony-wall/?mode=miracles`
+  - Prayer page → `/testimony/wall/?mode=prayer`
+  - Blessings page → `/testimony/wall/?mode=blessings`
+  - Miracles page → `/testimony/wall/?mode=miracles`
   - These just pre-select the type filter.
 
 ### 7.3 Personal Testimony Page (“My Testimony”)
