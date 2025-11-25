@@ -10,7 +10,7 @@
 /about/                             (HUB)
 ├── beliefs/                        (PAGE)
 ├── contact/                        (PAGE)
-├── faqs/                           (PAGE)
+├── faq/                           (PAGE)
 ├── legal/                          (PAGE - legal + AI notes)
 └── team/                           (PAGE)
 
@@ -34,7 +34,7 @@
 │   ├── greek/                      (PAGE)
 │   └── hebrew/                     (PAGE)
 │
-├── faqs/                           (PAGE - “Big Questions”)
+├── faq/                           (PAGE - “Big Questions”)
 │
 ├── games/                          (HUB)
 │   ├── biblele/                    (PAGE)

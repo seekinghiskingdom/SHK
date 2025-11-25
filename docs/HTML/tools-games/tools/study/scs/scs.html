@@ -319,18 +319,13 @@ permalink: /tools-games/tools/scs/
       0 14px 40px rgba(16, 12, 8, 0.98);
   }
 
-  .scs-select[multiple] {
-    min-height: 120px;
-    padding: 6px 9px;
-    border-radius: 18px;
-  }
-
   .scs-range-row {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 6px;
   }
 
+  .scs-range-row .scs-select,
   .scs-range-row .scs-input {
     border-radius: 15px;
   }
@@ -736,12 +731,12 @@ permalink: /tools-games/tools/scs/
           <p>Export creates a <strong>CSV file</strong> with the currently visible entries only.</p>
           <p>You can:</p>
           <ul>
-            <li>Open it directly in Excel, Google Sheets, or Numbers.</li>
+            <li>Open it in Excel, Google Sheets, or Numbers.</li>
             <li>Sort, tag, or group Strong’s numbers for your own word studies.</li>
             <li>Save sets of words to re-use later or share with others.</li>
             <li>In the future, import it into SHK language-learning / study tools.</li>
           </ul>
-          <p>The CSV columns include Strong’s ID, lemma, transliteration, counts, books, top KJV renderings, and an example verse.</p>
+          <p>The CSV includes Strong’s ID, lemma, transliteration, counts, books, top KJV renderings, and an example verse.</p>
         </div>
         <div id="scs-error" class="scs-error" style="display:none;"></div>
         <div id="scs-results" class="scs-results-list"></div>
@@ -753,20 +748,57 @@ permalink: /tools-games/tools/scs/
 <script>
   const BASEURL = "{{ site.baseurl | default: '' }}";
   const SCS_INDEX_URL = BASEURL + "/data/v1/tools/scs/index.json";
+  const SCS_BOOKS_URL = BASEURL + "/data/v1/lit/bible/books.json";
+
+  // Canonical letter order for Greek and Hebrew
+  const SCS_GREEK_ORDER = [
+    "Α","Β","Γ","Δ","Ε","Ζ","Η","Θ","Ι","Κ","Λ","Μ","Ν","Ξ","Ο","Π","Ρ","Σ","Τ","Υ","Φ","Χ","Ψ","Ω"
+  ];
+  const SCS_HEBREW_ORDER = [
+    "א","ב","ג","ד","ה","ו","ז","ח","ט","י","כ","ל","מ","נ","ס","ע","פ","צ","ק","ר","ש","ת"
+  ];
 
   let SCS_CONFIG = null;
   let SCS_ENTRIES = [];
+  let SCS_BOOKS_META = null;
+  let SCS_BOOK_ORDER = [];
+  let SCS_INITIAL_LETTERS = { grc: [], he: [] };
+
   let SCS_FILTER_STATE = {
     language: null,
     testament: null,
     books: [],
     occurrence_min: null,
     occurrence_max: null,
-    query: ""
+    query: "",
+    initial_letters: {
+      grc: [],
+      he: []
+    }
   };
-  let SCS_SORT = "strongs";
 
-  const SCS_FILTER_ELEMS = {};
+  let SCS_SORT = "strongs";
+  let SCS_GLOBAL_RANKS = { grc: {}, he: {} };
+
+  const SCS_FILTER_ELEMS = {
+    language: null,
+    testament: null,
+    book_from: null,
+    book_to: null,
+    occurrence_min: null,
+    occurrence_max: null,
+    query: null,
+    letter_from_grc: null,
+    letter_to_grc: null,
+    letter_from_he: null,
+    letter_to_he: null
+  };
+
+  function ordinal(n) {
+    const s = ["th", "st", "nd", "rd"];
+    const v = n % 100;
+    return n + (s[(v - 20) % 10] || s[v] || s[0]);
+  }
 
   async function fetchJson(url) {
     const res = await fetch(url);
@@ -816,6 +848,170 @@ permalink: /tools-games/tools/scs/
     el.style.display = "none";
   }
 
+  function strongsSortKey(e) {
+    const id = e.id || "";
+    const prefix = id ? id[0] : "";
+    const num = e.strongs_num;
+    let n = 0;
+    if (num != null) {
+      const parsed = Number(num);
+      if (!Number.isNaN(parsed)) {
+        n = parsed;
+      }
+    } else {
+      const digits = id.slice(1);
+      const parsed = Number(digits);
+      if (!Number.isNaN(parsed)) {
+        n = parsed;
+      }
+    }
+    return { prefix, n };
+  }
+
+  function buildGlobalOccurrenceRanks() {
+    const groups = {};
+
+    for (const e of SCS_ENTRIES) {
+      const lang = e.lang;
+      if (!lang) continue;
+      if (!groups[lang]) groups[lang] = [];
+      groups[lang].push(e);
+    }
+
+    const ranks = {};
+    for (const [lang, arr] of Object.entries(groups)) {
+      const sorted = arr.slice().sort((a, b) => {
+        const ca = a.occurrence_count || 0;
+        const cb = b.occurrence_count || 0;
+        if (cb !== ca) return cb - ca;
+        const ka = strongsSortKey(a);
+        const kb = strongsSortKey(b);
+        if (ka.prefix < kb.prefix) return -1;
+        if (ka.prefix > kb.prefix) return 1;
+        return ka.n - kb.n;
+      });
+
+      const map = {};
+      for (let i = 0; i < sorted.length; i++) {
+        map[sorted[i].id] = i + 1; // 1-based rank
+      }
+      ranks[lang] = map;
+    }
+
+    SCS_GLOBAL_RANKS = ranks;
+  }
+
+  function getInitialLetterForEntry(e) {
+    const lemma = (e.lemma_unicode || "").trim();
+    if (!lemma) return null;
+    const ch = lemma[0];
+    if (e.lang === "grc") {
+      return ch.toUpperCase();
+    } else if (e.lang === "he") {
+      return ch;
+    }
+    return ch;
+  }
+
+  function sortInitialLetters(lang, set) {
+    const arr = Array.from(set || []);
+    const order = lang === "grc" ? SCS_GREEK_ORDER :
+                  lang === "he" ? SCS_HEBREW_ORDER : null;
+    if (order) {
+      arr.sort((a, b) => {
+        const ia = order.indexOf(a);
+        const ib = order.indexOf(b);
+        return ia - ib;
+      });
+    } else {
+      arr.sort((a, b) => a.localeCompare(b));
+    }
+    return arr;
+  }
+
+  function buildInitialLetters() {
+    const sets = { grc: new Set(), he: new Set() };
+
+    for (const e of SCS_ENTRIES) {
+      if (!e.lang || (e.lang !== "grc" && e.lang !== "he")) continue;
+      const ch = getInitialLetterForEntry(e);
+      if (!ch) continue;
+      sets[e.lang].add(ch);
+    }
+
+    SCS_INITIAL_LETTERS = {
+      grc: sortInitialLetters("grc", sets.grc),
+      he: sortInitialLetters("he", sets.he)
+    };
+  }
+
+  function collectAllBookCodesFromEntries() {
+    const set = new Set();
+    for (const e of SCS_ENTRIES) {
+      if (Array.isArray(e.books)) {
+        for (const b of e.books) {
+          set.add(b);
+        }
+      }
+    }
+    return Array.from(set).sort();
+  }
+
+  function getBookOrderList() {
+    if (Array.isArray(SCS_BOOK_ORDER) && SCS_BOOK_ORDER.length > 0) {
+      return SCS_BOOK_ORDER.slice();
+    }
+    return collectAllBookCodesFromEntries();
+  }
+
+  function getBookRangeCodes(fromVal, toVal) {
+    const order = getBookOrderList();
+    if (!fromVal && !toVal) return [];
+    if (fromVal && !toVal) return [fromVal];
+    if (!fromVal && toVal) return [toVal];
+    const idxFrom = order.indexOf(fromVal);
+    const idxTo = order.indexOf(toVal);
+    if (idxFrom === -1 || idxTo === -1) return [];
+    const start = Math.min(idxFrom, idxTo);
+    const end = Math.max(idxFrom, idxTo);
+    return order.slice(start, end + 1);
+  }
+
+  function getLetterRange(lang, fromVal, toVal) {
+    const letters = SCS_INITIAL_LETTERS[lang] || [];
+    if (!fromVal && !toVal) return [];
+    if (fromVal && !toVal) return [fromVal];
+    if (!fromVal && toVal) return [toVal];
+    const idxFrom = letters.indexOf(fromVal);
+    const idxTo = letters.indexOf(toVal);
+    if (idxFrom === -1 || idxTo === -1) return [];
+    const start = Math.min(idxFrom, idxTo);
+    const end = Math.max(idxFrom, idxTo);
+    return letters.slice(start, end + 1);
+  }
+
+  function getBooksSummary(e) {
+    if (e.book_stats && typeof e.book_stats === "object" && Object.keys(e.book_stats).length > 0) {
+      const parts = [];
+      const entries = Object.entries(e.book_stats);
+      const max = 4;
+      for (let i = 0; i < entries.length && i < max; i++) {
+        const [b, c] = entries[i];
+        parts.push(b + " (" + c + ")");
+      }
+      if (entries.length > max) {
+        parts.push("…");
+      }
+      return parts.join(", ");
+    } else if (Array.isArray(e.books) && e.books.length > 0) {
+      const max = 4;
+      const shown = e.books.slice(0, max);
+      const suffix = e.books.length > max ? ", …" : "";
+      return shown.join(", ") + suffix;
+    }
+    return "";
+  }
+
   function buildFiltersUI() {
     const root = document.getElementById("scs-filters-root");
     root.innerHTML = "";
@@ -826,10 +1022,15 @@ permalink: /tools-games/tools/scs/
 
     SCS_FILTER_ELEMS.language = null;
     SCS_FILTER_ELEMS.testament = null;
-    SCS_FILTER_ELEMS.book = null;
+    SCS_FILTER_ELEMS.book_from = null;
+    SCS_FILTER_ELEMS.book_to = null;
     SCS_FILTER_ELEMS.occurrence_min = null;
     SCS_FILTER_ELEMS.occurrence_max = null;
     SCS_FILTER_ELEMS.query = null;
+    SCS_FILTER_ELEMS.letter_from_grc = null;
+    SCS_FILTER_ELEMS.letter_to_grc = null;
+    SCS_FILTER_ELEMS.letter_from_he = null;
+    SCS_FILTER_ELEMS.letter_to_he = null;
 
     for (const filter of SCS_CONFIG.filters) {
       const group = document.createElement("div");
@@ -847,9 +1048,13 @@ permalink: /tools-games/tools/scs/
       if (filter.id === "query") {
         hint.textContent = "ID, lemma, gloss, KJV rendering…";
       } else if (filter.id === "book") {
-        hint.textContent = "Select one or more books (Ctrl/Cmd-click).";
+        hint.textContent = "Filter by book range (From → To).";
       } else if (filter.id === "occurrence_range") {
         hint.textContent = "Min/max Strong's occurrences in KJV.";
+      } else if (filter.id === "language") {
+        hint.textContent = "Greek, Hebrew, or both.";
+      } else if (filter.id === "testament") {
+        hint.textContent = "Old / New Testament (or Deuterocanon).";
       } else {
         hint.textContent = "";
       }
@@ -858,7 +1063,7 @@ permalink: /tools-games/tools/scs/
       labelRow.appendChild(hint);
       group.appendChild(labelRow);
 
-      if (filter.type === "single-select") {
+      if (filter.type === "single-select" && filter.id !== "book") {
         const select = document.createElement("select");
         select.className = "scs-select";
         select.dataset.filterId = filter.id;
@@ -894,30 +1099,55 @@ permalink: /tools-games/tools/scs/
         } else if (filter.id === "testament") {
           SCS_FILTER_ELEMS.testament = select;
         }
-      } else if (filter.type === "multi-select" && filter.id === "book") {
-        const select = document.createElement("select");
-        select.multiple = true;
-        select.className = "scs-select";
-        select.dataset.filterId = filter.id;
+      } else if (filter.id === "book") {
+        const row = document.createElement("div");
+        row.className = "scs-range-row";
 
-        if (filter.options_source && filter.options_source.type === "books-from-work") {
-          const bookCodes = collectAllBookCodesFromEntries();
-          for (const code of bookCodes) {
-            const o = document.createElement("option");
-            o.value = code;
-            o.textContent = code;
-            select.appendChild(o);
-          }
+        const fromSel = document.createElement("select");
+        fromSel.className = "scs-select";
+        const toSel = document.createElement("select");
+        toSel.className = "scs-select";
+
+        const booksList = getBookOrderList();
+        const fromPlaceholder = document.createElement("option");
+        fromPlaceholder.value = "";
+        fromPlaceholder.textContent = "From (Any)";
+        fromSel.appendChild(fromPlaceholder);
+
+        const toPlaceholder = document.createElement("option");
+        toPlaceholder.value = "";
+        toPlaceholder.textContent = "To (Optional)";
+        toSel.appendChild(toPlaceholder);
+
+        for (const code of booksList) {
+          const o1 = document.createElement("option");
+          o1.value = code;
+          o1.textContent = code;
+          fromSel.appendChild(o1);
+
+          const o2 = document.createElement("option");
+          o2.value = code;
+          o2.textContent = code;
+          toSel.appendChild(o2);
         }
 
-        select.addEventListener("change", () => {
-          const selected = Array.from(select.selectedOptions).map(o => o.value);
+        const onBookChange = () => {
+          const fromVal = fromSel.value || null;
+          const toVal = toSel.value || null;
+          const selected = getBookRangeCodes(fromVal, toVal);
           SCS_FILTER_STATE.books = selected;
           applyFiltersAndRender();
-        });
+        };
 
-        group.appendChild(select);
-        SCS_FILTER_ELEMS.book = select;
+        fromSel.addEventListener("change", onBookChange);
+        toSel.addEventListener("change", onBookChange);
+
+        row.appendChild(fromSel);
+        row.appendChild(toSel);
+        group.appendChild(row);
+
+        SCS_FILTER_ELEMS.book_from = fromSel;
+        SCS_FILTER_ELEMS.book_to = toSel;
       } else if (filter.type === "range" && filter.id === "occurrence_range") {
         const row = document.createElement("div");
         row.className = "scs-range-row";
@@ -966,11 +1196,103 @@ permalink: /tools-games/tools/scs/
       root.appendChild(group);
     }
 
+    // Initial letter filter group
+    buildLetterFilterUI(root);
+
     const resetBtn = document.getElementById("scs-reset-btn");
     resetBtn.addEventListener("click", () => {
       resetFilters();
       applyFiltersAndRender();
     });
+  }
+
+  function buildLetterFilterUI(root) {
+    const group = document.createElement("div");
+    group.className = "scs-filter-group";
+
+    const labelRow = document.createElement("div");
+    labelRow.className = "scs-filter-label-row";
+
+    const label = document.createElement("div");
+    label.className = "scs-filter-label";
+    label.textContent = "Initial Letter";
+
+    const hint = document.createElement("div");
+    hint.className = "scs-filter-hint";
+    hint.textContent = "Filter by first letter of the lemma (Greek / Hebrew).";
+
+    labelRow.appendChild(label);
+    labelRow.appendChild(hint);
+    group.appendChild(labelRow);
+
+    const buildLangLetterRow = (lang, labelText) => {
+      const letters = SCS_INITIAL_LETTERS[lang] || [];
+      if (!letters.length) return;
+
+      const subHint = document.createElement("div");
+      subHint.className = "scs-filter-hint";
+      subHint.textContent = labelText + " letters range (From → To).";
+      group.appendChild(subHint);
+
+      const row = document.createElement("div");
+      row.className = "scs-range-row";
+
+      const fromSel = document.createElement("select");
+      fromSel.className = "scs-select";
+
+      const toSel = document.createElement("select");
+      toSel.className = "scs-select";
+
+      const fromPlaceholder = document.createElement("option");
+      fromPlaceholder.value = "";
+      fromPlaceholder.textContent = "From (Any)";
+      fromSel.appendChild(fromPlaceholder);
+
+      const toPlaceholder = document.createElement("option");
+      toPlaceholder.value = "";
+      toPlaceholder.textContent = "To (Optional)";
+      toSel.appendChild(toPlaceholder);
+
+      for (const ch of letters) {
+        const o1 = document.createElement("option");
+        o1.value = ch;
+        o1.textContent = ch;
+        fromSel.appendChild(o1);
+
+        const o2 = document.createElement("option");
+        o2.value = ch;
+        o2.textContent = ch;
+        toSel.appendChild(o2);
+      }
+
+      const onLetterChange = () => {
+        const fromVal = fromSel.value || null;
+        const toVal = toSel.value || null;
+        const selected = getLetterRange(lang, fromVal, toVal);
+        SCS_FILTER_STATE.initial_letters[lang] = selected;
+        applyFiltersAndRender();
+      };
+
+      fromSel.addEventListener("change", onLetterChange);
+      toSel.addEventListener("change", onLetterChange);
+
+      row.appendChild(fromSel);
+      row.appendChild(toSel);
+      group.appendChild(row);
+
+      if (lang === "grc") {
+        SCS_FILTER_ELEMS.letter_from_grc = fromSel;
+        SCS_FILTER_ELEMS.letter_to_grc = toSel;
+      } else if (lang === "he") {
+        SCS_FILTER_ELEMS.letter_from_he = fromSel;
+        SCS_FILTER_ELEMS.letter_to_he = toSel;
+      }
+    };
+
+    buildLangLetterRow("grc", "Greek");
+    buildLangLetterRow("he", "Hebrew");
+
+    root.appendChild(group);
   }
 
   function resetFilters() {
@@ -980,51 +1302,19 @@ permalink: /tools-games/tools/scs/
     SCS_FILTER_STATE.occurrence_min = null;
     SCS_FILTER_STATE.occurrence_max = null;
     SCS_FILTER_STATE.query = "";
+    SCS_FILTER_STATE.initial_letters = { grc: [], he: [] };
 
     if (SCS_FILTER_ELEMS.language) SCS_FILTER_ELEMS.language.value = "";
     if (SCS_FILTER_ELEMS.testament) SCS_FILTER_ELEMS.testament.value = "";
-    if (SCS_FILTER_ELEMS.book) {
-      for (const opt of SCS_FILTER_ELEMS.book.options) {
-        opt.selected = false;
-      }
-    }
+    if (SCS_FILTER_ELEMS.book_from) SCS_FILTER_ELEMS.book_from.value = "";
+    if (SCS_FILTER_ELEMS.book_to) SCS_FILTER_ELEMS.book_to.value = "";
     if (SCS_FILTER_ELEMS.occurrence_min) SCS_FILTER_ELEMS.occurrence_min.value = "";
     if (SCS_FILTER_ELEMS.occurrence_max) SCS_FILTER_ELEMS.occurrence_max.value = "";
     if (SCS_FILTER_ELEMS.query) SCS_FILTER_ELEMS.query.value = "";
-  }
-
-  function collectAllBookCodesFromEntries() {
-    const set = new Set();
-    for (const e of SCS_ENTRIES) {
-      if (Array.isArray(e.books)) {
-        for (const b of e.books) {
-          set.add(b);
-        }
-      }
-    }
-    return Array.from(set).sort();
-  }
-
-  function getBooksSummary(e) {
-    if (e.book_stats && typeof e.book_stats === "object" && Object.keys(e.book_stats).length > 0) {
-      const parts = [];
-      const entries = Object.entries(e.book_stats);
-      const max = 4;
-      for (let i = 0; i < entries.length && i < max; i++) {
-        const [b, c] = entries[i];
-        parts.push(b + " (" + c + ")");
-      }
-      if (entries.length > max) {
-        parts.push("…");
-      }
-      return parts.join(", ");
-    } else if (Array.isArray(e.books) && e.books.length > 0) {
-      const max = 4;
-      const shown = e.books.slice(0, max);
-      const suffix = e.books.length > max ? ", …" : "";
-      return shown.join(", ") + suffix;
-    }
-    return "";
+    if (SCS_FILTER_ELEMS.letter_from_grc) SCS_FILTER_ELEMS.letter_from_grc.value = "";
+    if (SCS_FILTER_ELEMS.letter_to_grc) SCS_FILTER_ELEMS.letter_to_grc.value = "";
+    if (SCS_FILTER_ELEMS.letter_from_he) SCS_FILTER_ELEMS.letter_from_he.value = "";
+    if (SCS_FILTER_ELEMS.letter_to_he) SCS_FILTER_ELEMS.letter_to_he.value = "";
   }
 
   function getFilteredEntries() {
@@ -1056,6 +1346,17 @@ permalink: /tools-games/tools/scs/
       filtered = filtered.filter(e => (e.occurrence_count || 0) <= max);
     }
 
+    const initState = SCS_FILTER_STATE.initial_letters;
+    if (initState) {
+      filtered = filtered.filter(e => {
+        const lang = e.lang;
+        if (!lang || !initState[lang] || initState[lang].length === 0) return true;
+        const ch = getInitialLetterForEntry(e);
+        if (!ch) return false;
+        return initState[lang].includes(ch);
+      });
+    }
+
     const q = (SCS_FILTER_STATE.query || "").trim().toLowerCase();
     if (q) {
       filtered = filtered.filter(e => {
@@ -1080,26 +1381,6 @@ permalink: /tools-games/tools/scs/
     }
 
     return sortEntries(filtered);
-  }
-
-  function strongsSortKey(e) {
-    const id = e.id || "";
-    const prefix = id ? id[0] : "";
-    const num = e.strongs_num;
-    let n = 0;
-    if (num != null) {
-      const parsed = Number(num);
-      if (!Number.isNaN(parsed)) {
-        n = parsed;
-      }
-    } else {
-      const digits = id.slice(1);
-      const parsed = Number(digits);
-      if (!Number.isNaN(parsed)) {
-        n = parsed;
-      }
-    }
-    return { prefix, n };
   }
 
   function sortEntries(list) {
@@ -1179,12 +1460,27 @@ permalink: /tools-games/tools/scs/
       resultsEl.appendChild(info);
     }
 
+    const filteredRankById = {};
+    const sortedForRank = entries.slice().sort((a, b) => {
+      const ca = a.occurrence_count || 0;
+      const cb = b.occurrence_count || 0;
+      if (cb !== ca) return cb - ca;
+      const ka = strongsSortKey(a);
+      const kb = strongsSortKey(b);
+      if (ka.prefix < kb.prefix) return -1;
+      if (ka.prefix > kb.prefix) return 1;
+      return ka.n - kb.n;
+    });
+    for (let i = 0; i < sortedForRank.length; i++) {
+      filteredRankById[sortedForRank[i].id] = i + 1; // 1-based
+    }
+
     for (const e of slice) {
-      resultsEl.appendChild(renderEntry(e));
+      resultsEl.appendChild(renderEntry(e, filteredRankById));
     }
   }
 
-  function renderEntry(e) {
+  function renderEntry(e, filteredRankById) {
     const root = document.createElement("article");
     root.className = "scs-entry";
 
@@ -1212,11 +1508,9 @@ permalink: /tools-games/tools/scs/
 
     left.appendChild(header);
 
-    // === chips row: language, testament, occurrences, books (separate) ===
     const chipsRow = document.createElement("div");
     chipsRow.className = "scs-entry-chips";
 
-    // Language chip
     const langChip = document.createElement("div");
     langChip.className = "scs-chip";
     let langLabel = "Lang";
@@ -1226,7 +1520,6 @@ permalink: /tools-games/tools/scs/
     langChip.innerHTML = "<strong>" + langLabel + "</strong>";
     chipsRow.appendChild(langChip);
 
-    // Testament chip
     const testChip = document.createElement("div");
     testChip.className = "scs-chip";
     let testLabel = "Testament: –";
@@ -1236,50 +1529,63 @@ permalink: /tools-games/tools/scs/
     testChip.innerHTML = "<strong>" + testLabel + "</strong>";
     chipsRow.appendChild(testChip);
 
-    // Occurrence count chip
     const occChip = document.createElement("div");
     occChip.className = "scs-chip";
+
     const occ = e.occurrence_count || 0;
-    occChip.innerHTML = "<strong>" + occ + "</strong><span>occurrences</span>";
+    const langKey = e.lang || null;
+
+    let filteredRank = null;
+    let overallRank = null;
+
+    if (filteredRankById && filteredRankById[e.id] != null) {
+      filteredRank = filteredRankById[e.id];
+    }
+    if (langKey && SCS_GLOBAL_RANKS[langKey] && SCS_GLOBAL_RANKS[langKey][e.id] != null) {
+      overallRank = SCS_GLOBAL_RANKS[langKey][e.id];
+    }
+
+    let rankText = "";
+    if (filteredRank != null && overallRank != null) {
+      rankText = " (" + ordinal(filteredRank) + " of results – " + ordinal(overallRank) + " overall)";
+    }
+
+    occChip.innerHTML = "<strong>Frequency:</strong> " + occ + " times" + rankText;
     chipsRow.appendChild(occChip);
 
-    // Books chip
     const booksChip = document.createElement("div");
     booksChip.className = "scs-chip";
-    const booksSummary = getBooksSummary(e); // uses helper already defined above
+    const booksSummary = getBooksSummary(e);
     booksChip.innerHTML =
-        "<strong>Books</strong>" +
-        (booksSummary ? "<span>" + " · " + booksSummary + "</span>" : "<span> · –</span>");
+      "<strong>Books</strong>" +
+      (booksSummary ? "<span> · " + booksSummary + "</span>" : "<span> · –</span>");
     chipsRow.appendChild(booksChip);
 
     left.appendChild(chipsRow);
 
-    // Definition (same as before)
     if (e.definition || e.kjv_def) {
-        const def = document.createElement("div");
-        def.className = "scs-entry-def";
-        const baseDef = e.definition || "";
-        const kjvDef = e.kjv_def || "";
-        def.textContent = baseDef + (baseDef && kjvDef ? " " : "") + kjvDef;
-        left.appendChild(def);
+      const def = document.createElement("div");
+      def.className = "scs-entry-def";
+      const baseDef = e.definition || "";
+      const kjvDef = e.kjv_def || "";
+      def.textContent = baseDef + (baseDef && kjvDef ? " " : "") + kjvDef;
+      left.appendChild(def);
     }
 
-    // KJV renderings under definition
     if (Array.isArray(e.top_kjv_words) && e.top_kjv_words.length > 0) {
-        const wordsLine = document.createElement("div");
-        wordsLine.className = "scs-kjv-line";
-        const parts = e.top_kjv_words.map(w => w.w + " (" + w.c + ")");
-        wordsLine.innerHTML = "<strong>KJV renderings:</strong> " + parts.join(", ");
-        left.appendChild(wordsLine);
+      const wordsLine = document.createElement("div");
+      wordsLine.className = "scs-kjv-line";
+      const parts = e.top_kjv_words.map(w => w.w + " (" + w.c + ")");
+      wordsLine.innerHTML = "<strong>KJV renderings:</strong> " + parts.join(", ");
+      left.appendChild(wordsLine);
     }
 
-    // Example verse
     if (e.example && e.example.text) {
-        const ex = document.createElement("div");
-        ex.className = "scs-entry-example";
-        const ref = (e.example.book_id || "") + " " + (e.example.chapter || "") + ":" + (e.example.verse || "");
-        ex.textContent = "[" + ref + "] " + e.example.text;
-        left.appendChild(ex);
+      const ex = document.createElement("div");
+      ex.className = "scs-entry-example";
+      const ref = (e.example.book_id || "") + " " + (e.example.chapter || "") + ":" + (e.example.verse || "");
+      ex.textContent = "[" + ref + "] " + e.example.text;
+      left.appendChild(ex);
     }
 
     const right = document.createElement("div");
@@ -1288,7 +1594,7 @@ permalink: /tools-games/tools/scs/
     const totalsLine = document.createElement("div");
     totalsLine.className = "scs-kv-line";
     totalsLine.innerHTML =
-        "<span><strong>#:</strong> " + (e.strongs_num != null ? e.strongs_num : "–") + "</span>";
+      "<span><strong>#:</strong> " + (e.strongs_num != null ? e.strongs_num : "–") + "</span>";
 
     right.appendChild(totalsLine);
 
@@ -1297,7 +1603,6 @@ permalink: /tools-games/tools/scs/
 
     return root;
   }
-
 
   async function loadEntriesFromJsonl(entriesPath) {
     const url = BASEURL + "/data/v1/" + entriesPath.replace(/^\/?data\/v1\//, "");
@@ -1327,7 +1632,6 @@ permalink: /tools-games/tools/scs/
   }
 
   function buildCsvFromEntries(entries) {
-    // Simplified, user-friendly export
     const headers = [
       "id",
       "strongs_num",
@@ -1433,8 +1737,19 @@ permalink: /tools-games/tools/scs/
       }
 
       updateStatus("loading", "Loading Strong's entries…");
-      SCS_ENTRIES = await loadEntriesFromJsonl(SCS_CONFIG.data.entries);
+      const [entries, booksMeta] = await Promise.all([
+        loadEntriesFromJsonl(SCS_CONFIG.data.entries),
+        fetchJson(SCS_BOOKS_URL).catch(() => null)
+      ]);
 
+      SCS_ENTRIES = entries;
+      SCS_BOOKS_META = booksMeta;
+      if (booksMeta && Array.isArray(booksMeta.order)) {
+        SCS_BOOK_ORDER = booksMeta.order;
+      }
+
+      buildGlobalOccurrenceRanks();
+      buildInitialLetters();
       buildFiltersUI();
 
       const sortSelect = document.getElementById("scs-sort-select");

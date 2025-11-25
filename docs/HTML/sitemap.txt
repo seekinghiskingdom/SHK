@@ -72,7 +72,7 @@
 │   │   └── therapy/         (optional leaf)
 │   │
 │   ├── children/            [leaf: children’s resources]
-│   └── faqs/                [leaf: Christianity / Bible / faith FAQs]
+│   └── faq/                [leaf: Christianity / Bible / faith FAQs]
 │
 ├── community/               [hub: Community]
 │   ├── socials-connect/     [leaf: all SHK socials + Discord]
@@ -101,7 +101,7 @@
 │   ├── team/                [leaf: team/leadership]
 │   ├── social-media/        [leaf: site’s own social links; can cross-link to community/socials-connect/]
 │   ├── involvement/         [leaf: summary, linking to /serving/involvement/ as canonical]
-│   ├── faqs/                [leaf: FAQs about SHK as a project]
+│   ├── faq/                [leaf: FAQs about SHK as a project]
 │   ├── legal/               [leaf: legal + attribution + disclaimers]
 │   └── privacy/             [leaf: privacy policy]
 │

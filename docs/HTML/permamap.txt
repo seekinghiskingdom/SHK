@@ -100,8 +100,8 @@ resources/
   children/
     index.md                      # /resources/children/
 
-  faqs/
-    index.md                      # /resources/faqs/
+  faq/
+    index.md                      # /resources/faq/
 
 # --- COMMUNITY ---
 
@@ -156,8 +156,8 @@ about/
     index.md                      # /about/social-media/
   involvement/
     index.md                      # /about/involvement/
-  faqs/
-    index.md                      # /about/faqs/
+  faq/
+    index.md                      # /about/faq/
   legal/
     index.md                      # /about/legal/
   privacy/
