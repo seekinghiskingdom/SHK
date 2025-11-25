@@ -555,7 +555,7 @@ button:hover {
 .hub-page p.hub-intro {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  color: var(--muted);
+  color: var(--text);
   max-width: 60rem;
 }
 
@@ -620,7 +620,7 @@ button:hover {
 .collection-page p.collection-intro {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  color: var(--muted);
+  color: var(--text);
   max-width: 60rem;
 }
 
@@ -691,7 +691,7 @@ button:hover {
 .content-page p.content-intro {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  color: var(--muted);
+  color: var(--text);
   max-width: 60rem;
 }
 
@@ -1315,7 +1315,7 @@ footer.container,
 
 .help-cta-label {
   margin: 0 0 0.4rem;
-  color: var(--muted);
+  color: var(--text);
 }
 
 .help-cta-actions {

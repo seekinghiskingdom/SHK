@@ -1212,58 +1212,74 @@ permalink: /tools-games/tools/scs/
 
     left.appendChild(header);
 
+    // === chips row: language, testament, occurrences, books (separate) ===
     const chipsRow = document.createElement("div");
     chipsRow.className = "scs-entry-chips";
 
-    const summaryChip = document.createElement("div");
-    summaryChip.className = "scs-chip";
-
+    // Language chip
+    const langChip = document.createElement("div");
+    langChip.className = "scs-chip";
     let langLabel = "Lang";
     if (e.lang === "grc") langLabel = "Greek";
     else if (e.lang === "he") langLabel = "Hebrew";
     else if (e.lang) langLabel = e.lang;
+    langChip.innerHTML = "<strong>" + langLabel + "</strong>";
+    chipsRow.appendChild(langChip);
 
-    let testLabel = "";
+    // Testament chip
+    const testChip = document.createElement("div");
+    testChip.className = "scs-chip";
+    let testLabel = "Testament: –";
     if (e.testament === "ot") testLabel = "OT";
     else if (e.testament === "nt") testLabel = "NT";
     else if (e.testament === "dc") testLabel = "Deutero";
+    testChip.innerHTML = "<strong>" + testLabel + "</strong>";
+    chipsRow.appendChild(testChip);
 
+    // Occurrence count chip
+    const occChip = document.createElement("div");
+    occChip.className = "scs-chip";
     const occ = e.occurrence_count || 0;
-    const booksSummary = getBooksSummary(e);
+    occChip.innerHTML = "<strong>" + occ + "</strong><span>occurrences</span>";
+    chipsRow.appendChild(occChip);
 
-    const parts = [];
-    if (langLabel) parts.push(langLabel);
-    if (testLabel) parts.push(testLabel);
-    parts.push(occ + " occ");
-    if (booksSummary) parts.push(booksSummary);
+    // Books chip
+    const booksChip = document.createElement("div");
+    booksChip.className = "scs-chip";
+    const booksSummary = getBooksSummary(e); // uses helper already defined above
+    booksChip.innerHTML =
+        "<strong>Books</strong>" +
+        (booksSummary ? "<span>" + " · " + booksSummary + "</span>" : "<span> · –</span>");
+    chipsRow.appendChild(booksChip);
 
-    summaryChip.innerHTML = "<strong>" + parts.join(" · ") + "</strong>";
-    chipsRow.appendChild(summaryChip);
     left.appendChild(chipsRow);
 
+    // Definition (same as before)
     if (e.definition || e.kjv_def) {
-      const def = document.createElement("div");
-      def.className = "scs-entry-def";
-      const baseDef = e.definition || "";
-      const kjvDef = e.kjv_def || "";
-      def.textContent = baseDef + (baseDef && kjvDef ? " " : "") + kjvDef;
-      left.appendChild(def);
+        const def = document.createElement("div");
+        def.className = "scs-entry-def";
+        const baseDef = e.definition || "";
+        const kjvDef = e.kjv_def || "";
+        def.textContent = baseDef + (baseDef && kjvDef ? " " : "") + kjvDef;
+        left.appendChild(def);
     }
 
+    // KJV renderings under definition
     if (Array.isArray(e.top_kjv_words) && e.top_kjv_words.length > 0) {
-      const wordsLine = document.createElement("div");
-      wordsLine.className = "scs-kjv-line";
-      const parts = e.top_kjv_words.map(w => w.w + " (" + w.c + ")");
-      wordsLine.innerHTML = "<strong>KJV renderings:</strong> " + parts.join(", ");
-      left.appendChild(wordsLine);
+        const wordsLine = document.createElement("div");
+        wordsLine.className = "scs-kjv-line";
+        const parts = e.top_kjv_words.map(w => w.w + " (" + w.c + ")");
+        wordsLine.innerHTML = "<strong>KJV renderings:</strong> " + parts.join(", ");
+        left.appendChild(wordsLine);
     }
 
+    // Example verse
     if (e.example && e.example.text) {
-      const ex = document.createElement("div");
-      ex.className = "scs-entry-example";
-      const ref = (e.example.book_id || "") + " " + (e.example.chapter || "") + ":" + (e.example.verse || "");
-      ex.textContent = "[" + ref + "] " + e.example.text;
-      left.appendChild(ex);
+        const ex = document.createElement("div");
+        ex.className = "scs-entry-example";
+        const ref = (e.example.book_id || "") + " " + (e.example.chapter || "") + ":" + (e.example.verse || "");
+        ex.textContent = "[" + ref + "] " + e.example.text;
+        left.appendChild(ex);
     }
 
     const right = document.createElement("div");
@@ -1271,7 +1287,8 @@ permalink: /tools-games/tools/scs/
 
     const totalsLine = document.createElement("div");
     totalsLine.className = "scs-kv-line";
-    totalsLine.innerHTML = "<span><strong>#:</strong> " + (e.strongs_num != null ? e.strongs_num : "–") + "</span>";
+    totalsLine.innerHTML =
+        "<span><strong>#:</strong> " + (e.strongs_num != null ? e.strongs_num : "–") + "</span>";
 
     right.appendChild(totalsLine);
 
@@ -1280,6 +1297,7 @@ permalink: /tools-games/tools/scs/
 
     return root;
   }
+
 
   async function loadEntriesFromJsonl(entriesPath) {
     const url = BASEURL + "/data/v1/" + entriesPath.replace(/^\/?data\/v1\//, "");
