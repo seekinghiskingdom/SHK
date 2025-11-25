@@ -4,42 +4,126 @@ title: Ministry Resources
 permalink: /resources/ministries/
 ---
 
-<section class="hub-page">
-  <h1>{{[ page.title ]}}</h1>
+<section class="hub-page ministries-hub-page">
+  <h1>{{ page.title }}</h1>
   <p class="hub-intro">
-    Resources and information related to various forms of ministry, from your bedroom to global. (TBD)
+    MINISTRY RESOURCES TO HELP YOU LIVE OUT THE GOSPEL FROM YOUR HOME AND LOCAL CHURCH TO YOUR CAMPUS, WORKPLACE, COMMUNITY, AND THE NATIONS. -AI
+  </p>
+  <p class="hub-intro">
+    EACH TILE BELOW LINKS TO A DIFFERENT MINISTRY CONTEXT, GATHERING IDEAS, GUIDES, AND OUTSIDE RESOURCES THAT CAN SUPPORT YOU WHERE GOD HAS PLACED YOU. -AI
   </p>
   <hr class="hub-divider">
 
-  <h2>Minstries:</h2>
+  <!-- Quick jump chips -->
+  <nav class="ministries-hub-nav" aria-label="MINISTRY RESOURCE CATEGORIES -AI">
+    <a href="#min-personal">PERSONAL &amp; HOME -AI</a>
+    <a href="#min-family">FAMILY &amp; PARENTING -AI</a>
+    <a href="#min-youth">YOUTH &amp; STUDENT -AI</a>
+    <a href="#min-church">CHURCH -AI</a>
+    <a href="#min-campus">CAMPUS -AI</a>
+    <a href="#min-market">WORKPLACE &amp; MARKETPLACE -AI</a>
+    <a href="#min-international">INTERNATIONAL &amp; CROSS-CULTURAL -AI</a>
+    <a href="#min-missions">MISSIONS &amp; SENDING -AI</a>
+  </nav>
+
+  <h2>Ministries</h2>
   <div class="hub-grid">
-    
-    <a href="{{ '/resources/ministries/personal/' | relative_url }}" class="hub-tile">
-      <h3>Personal & Home</h3>
-      <p>Coming soon!</p>
+
+    <!-- Personal & Home -->
+    <a id="min-personal" href="{{ '/resources/ministries/personal/' | relative_url }}" class="hub-tile tile-min-personal">
+      <h3>Personal &amp; Home</h3>
+      <p>
+        RESOURCES ON LIVING AS A DISCIPLE IN YOUR EVERYDAY LIFE, INCLUDING PRAYER, HABITS, WITNESS IN THE HOME, AND FOLLOWING JESUS IN DIFFICULT FAMILY CONTEXTS. -AI
+      </p>
     </a>
 
-    <a href="{{ '/resources/ministries/church/' | relative_url }}" class="hub-tile">
-      <h3>Church</h3>
-      <p>Coming soon!</p>
+    <!-- Family & Parenting -->
+    <a id="min-family" href="{{ '/resources/ministries/family/' | relative_url }}" class="hub-tile tile-min-family">
+      <h3>Family &amp; Parenting</h3>
+      <p>
+        GUIDES, IDEAS, AND RECOMMENDED RESOURCES FOR FAMILY WORSHIP, PARENTING, MARRIAGE, AND SHAPING A CHRIST-CENTERED HOME LIFE. -AI
+      </p>
     </a>
 
-    <a href="{{ '/resources/ministries/campus/' | relative_url }}" class="hub-tile">
-      <h3>Campus</h3>
-      <p>Coming soon!</p>
+    <!-- Youth & Student -->
+    <a id="min-youth" href="{{ '/resources/ministries/youth/' | relative_url }}" class="hub-tile tile-min-youth">
+      <h3>Youth &amp; Student Ministry</h3>
+      <p>
+        MATERIALS FOR SERVING TEENS AND STUDENTS, INCLUDING IDEAS FOR YOUTH MINISTRY, SMALL GROUPS, DISCIPLESHIP, AND WORKING WITH PARENTS AND LEADERS. -AI
+      </p>
     </a>
 
-    <a href="{{ '/resources/ministries/international/' | relative_url }}" class="hub-tile">
-      <h3>International</h3>
-      <p>Coming soon!</p>
+    <!-- Church -->
+    <a id="min-church" href="{{ '/resources/ministries/church/' | relative_url }}" class="hub-tile tile-min-church">
+      <h3>Church Ministry</h3>
+      <p>
+        RESOURCES RELATED TO LOCAL CHURCH LIFE—SERVING, TEACHING, SHEPHERDING, SMALL GROUPS, AND SUPPORTING YOUR LEADERS AND COMMUNITY. -AI
+      </p>
     </a>
 
-    <a href="{{ '/resources/ministries/market/' | relative_url }}" class="hub-tile">
-      <h3>Market</h3>
-      <p>Coming soon!</p>
+    <!-- Campus -->
+    <a id="min-campus" href="{{ '/resources/ministries/campus/' | relative_url }}" class="hub-tile tile-min-campus">
+      <h3>Campus Ministry</h3>
+      <p>
+        IDEAS AND LINKS FOR SERVING ON YOUR CAMPUS, INCLUDING EVANGELISM, DISCIPLESHIP, BIBLE STUDIES, AND PARTNERSHIPS WITH CAMPUS MINISTRIES. -AI
+      </p>
+    </a>
+
+    <!-- Workplace & Marketplace -->
+    <a id="min-market" href="{{ '/resources/ministries/market/' | relative_url }}" class="hub-tile tile-min-market">
+      <h3>Workplace &amp; Marketplace</h3>
+      <p>
+        RESOURCES FOR FOLLOWING JESUS IN YOUR JOB, INDUSTRY, OR TRADE, INCLUDING INTEGRATING FAITH AND WORK, ETHICS, AND WITNESS IN SECULAR SETTINGS. -AI
+      </p>
+    </a>
+
+    <!-- International & Cross-Cultural -->
+    <a id="min-international" href="{{ '/resources/ministries/international/' | relative_url }}" class="hub-tile tile-min-international">
+      <h3>International &amp; Cross-Cultural</h3>
+      <p>
+        GUIDES AND LINKS FOR SERVING INTERNATIONAL STUDENTS, REFUGEES, AND CROSS-CULTURAL COMMUNITIES WHERE YOU LIVE, INCLUDING PRACTICAL NEXT STEPS. -AI
+      </p>
+    </a>
+
+    <!-- Missions & Sending -->
+    <a id="min-missions" href="{{ '/resources/ministries/missions/' | relative_url }}" class="hub-tile tile-min-missions">
+      <h3>Missions &amp; Sending</h3>
+      <p>
+        INFORMATION AND RESOURCES ABOUT GLOBAL MISSIONS, DISCERNING A CALL, PARTNERING WITH MISSIONARIES, AND CONNECTING WITH MISSION AGENCIES AND OPPORTUNITIES. -AI
+      </p>
     </a>
 
   </div>
-
 </section>
 
+<style>
+  .ministries-hub-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+
+  /* Quick nav chips */
+  .ministries-hub-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  .ministries-hub-nav a {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid var(--accent); /* THIN ACCENT BORDER FOR CONTRAST -AI */
+    background: rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+  }
+
+  .ministries-hub-nav a:hover,
+  .ministries-hub-nav a:focus {
+    border-color: var(--accent);
+  }
+</style>
