@@ -330,6 +330,92 @@ permalink: /tools-games/tools/scs/
     border-radius: 15px;
   }
 
+  /* Multi-select dropdowns (books & letters) */
+
+  .scs-multi-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+  }
+
+  .scs-multi-select {
+    position: relative;
+    width: 100%;
+  }
+
+  .scs-multi-btn {
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.75);
+    background: rgba(30, 28, 22, 0.98);
+    color: var(--scs-text);
+    padding: 7px 13px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(16, 12, 8, 0.96);
+  }
+
+  .scs-multi-btn span {
+    pointer-events: none;
+  }
+
+  .scs-multi-btn-chevron {
+    font-size: 11px;
+    opacity: 0.85;
+  }
+
+  .scs-multi-btn:focus {
+    border-color: var(--scs-accent);
+    box-shadow:
+      0 0 0 1px rgba(250, 204, 21, 0.7),
+      0 14px 40px rgba(16, 12, 8, 0.98);
+  }
+
+  .scs-multi-panel {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    max-height: 220px;
+    overflow-y: auto;
+    border-radius: 16px;
+    background: rgba(22, 20, 15, 0.98);
+    border: 1px solid rgba(148, 163, 184, 0.75);
+    box-shadow:
+      0 18px 45px rgba(16, 12, 8, 0.98),
+      0 0 0 1px rgba(15, 23, 42, 0.9);
+    padding: 6px 8px;
+  }
+
+  .scs-multi-panel.hidden {
+    display: none;
+  }
+
+  .scs-multi-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 4px;
+    font-size: 13px;
+    color: var(--scs-text-soft);
+  }
+
+  .scs-multi-option label {
+    cursor: pointer;
+    flex: 1;
+  }
+
+  .scs-multi-option input[type="checkbox"] {
+    accent-color: var(--scs-accent);
+  }
+
   .scs-filters-footer {
     margin-top: 10px;
     display: flex;
@@ -750,7 +836,6 @@ permalink: /tools-games/tools/scs/
   const SCS_INDEX_URL = BASEURL + "/data/v1/tools/scs/index.json";
   const SCS_BOOKS_URL = BASEURL + "/data/v1/lit/bible/books.json";
 
-  // Canonical letter order for Greek and Hebrew
   const SCS_GREEK_ORDER = [
     "Α","Β","Γ","Δ","Ε","Ζ","Η","Θ","Ι","Κ","Λ","Μ","Ν","Ξ","Ο","Π","Ρ","Σ","Τ","Υ","Φ","Χ","Ψ","Ω"
   ];
@@ -780,6 +865,10 @@ permalink: /tools-games/tools/scs/
   let SCS_SORT = "strongs";
   let SCS_GLOBAL_RANKS = { grc: {}, he: {} };
 
+  // Extra state for multi-selects (books + letters)
+  let SCS_BOOKS_SELECTED = [];
+  let SCS_INITIAL_LETTERS_SELECTED = { grc: [], he: [] };
+
   const SCS_FILTER_ELEMS = {
     language: null,
     testament: null,
@@ -791,7 +880,10 @@ permalink: /tools-games/tools/scs/
     letter_from_grc: null,
     letter_to_grc: null,
     letter_from_he: null,
-    letter_to_he: null
+    letter_to_he: null,
+    book_multi_label: null,
+    letter_multi_label_grc: null,
+    letter_multi_label_he: null
   };
 
   function ordinal(n) {
@@ -893,7 +985,7 @@ permalink: /tools-games/tools/scs/
 
       const map = {};
       for (let i = 0; i < sorted.length; i++) {
-        map[sorted[i].id] = i + 1; // 1-based rank
+        map[sorted[i].id] = i + 1;
       }
       ranks[lang] = map;
     }
@@ -904,7 +996,14 @@ permalink: /tools-games/tools/scs/
   function getInitialLetterForEntry(e) {
     const lemma = (e.lemma_unicode || "").trim();
     if (!lemma) return null;
-    const ch = lemma[0];
+    let ch = lemma[0];
+    // Strip combining diacritics (breathing marks, tonos, vowel points)
+    try {
+      ch = ch.normalize("NFD").replace(/\p{M}+/gu, "");
+    } catch (err) {
+      ch = ch.normalize ? ch.normalize("NFD").replace(/[\u0300-\u036f]/g, "") : ch;
+    }
+    if (!ch) return null;
     if (e.lang === "grc") {
       return ch.toUpperCase();
     } else if (e.lang === "he") {
@@ -990,6 +1089,45 @@ permalink: /tools-games/tools/scs/
     return letters.slice(start, end + 1);
   }
 
+  function updateBooksFilter() {
+    const fromVal = SCS_FILTER_ELEMS.book_from ? (SCS_FILTER_ELEMS.book_from.value || null) : null;
+    const toVal = SCS_FILTER_ELEMS.book_to ? (SCS_FILTER_ELEMS.book_to.value || null) : null;
+    const rangeCodes = getBookRangeCodes(fromVal, toVal);
+    const set = new Set([...SCS_BOOKS_SELECTED, ...rangeCodes]);
+    SCS_FILTER_STATE.books = Array.from(set);
+    // Update summary label
+    if (SCS_FILTER_ELEMS.book_multi_label) {
+      if (SCS_BOOKS_SELECTED.length === 0 && rangeCodes.length === 0) {
+        SCS_FILTER_ELEMS.book_multi_label.textContent = "Any book(s)";
+      } else {
+        const count = SCS_FILTER_STATE.books.length;
+        SCS_FILTER_ELEMS.book_multi_label.textContent = count + " selected";
+      }
+    }
+  }
+
+  function updateInitialLettersFilter(lang) {
+    const fromElem = lang === "grc" ? SCS_FILTER_ELEMS.letter_from_grc : SCS_FILTER_ELEMS.letter_from_he;
+    const toElem   = lang === "grc" ? SCS_FILTER_ELEMS.letter_to_grc   : SCS_FILTER_ELEMS.letter_to_he;
+
+    const fromVal = fromElem ? (fromElem.value || null) : null;
+    const toVal   = toElem ? (toElem.value || null) : null;
+
+    const rangeLetters = getLetterRange(lang, fromVal, toVal);
+    const set = new Set([...(SCS_INITIAL_LETTERS_SELECTED[lang] || []), ...rangeLetters]);
+    SCS_FILTER_STATE.initial_letters[lang] = Array.from(set);
+
+    const labelElem = lang === "grc" ? SCS_FILTER_ELEMS.letter_multi_label_grc : SCS_FILTER_ELEMS.letter_multi_label_he;
+    if (labelElem) {
+      if ((SCS_INITIAL_LETTERS_SELECTED[lang] || []).length === 0 && rangeLetters.length === 0) {
+        labelElem.textContent = "Any " + (lang === "grc" ? "Greek" : "Hebrew") + " letter(s)";
+      } else {
+        const count = SCS_FILTER_STATE.initial_letters[lang].length;
+        labelElem.textContent = count + " selected";
+      }
+    }
+  }
+
   function getBooksSummary(e) {
     if (e.book_stats && typeof e.book_stats === "object" && Object.keys(e.book_stats).length > 0) {
       const parts = [];
@@ -1031,6 +1169,9 @@ permalink: /tools-games/tools/scs/
     SCS_FILTER_ELEMS.letter_to_grc = null;
     SCS_FILTER_ELEMS.letter_from_he = null;
     SCS_FILTER_ELEMS.letter_to_he = null;
+    SCS_FILTER_ELEMS.book_multi_label = null;
+    SCS_FILTER_ELEMS.letter_multi_label_grc = null;
+    SCS_FILTER_ELEMS.letter_multi_label_he = null;
 
     for (const filter of SCS_CONFIG.filters) {
       const group = document.createElement("div");
@@ -1048,7 +1189,7 @@ permalink: /tools-games/tools/scs/
       if (filter.id === "query") {
         hint.textContent = "ID, lemma, gloss, KJV rendering…";
       } else if (filter.id === "book") {
-        hint.textContent = "Filter by book range (From → To).";
+        hint.textContent = "Select specific books and/or a range (From → To).";
       } else if (filter.id === "occurrence_range") {
         hint.textContent = "Min/max Strong's occurrences in KJV.";
       } else if (filter.id === "language") {
@@ -1100,6 +1241,73 @@ permalink: /tools-games/tools/scs/
           SCS_FILTER_ELEMS.testament = select;
         }
       } else if (filter.id === "book") {
+        // Multi-select (checkbox) + range for books
+        const booksList = getBookOrderList();
+
+        const multiRow = document.createElement("div");
+        multiRow.className = "scs-multi-row";
+
+        const multiHint = document.createElement("div");
+        multiHint.className = "scs-filter-hint";
+        multiHint.textContent = "Select one or many books (checkbox), plus optional range.";
+        multiRow.appendChild(multiHint);
+
+        const multiWrap = document.createElement("div");
+        multiWrap.className = "scs-multi-select";
+
+        const multiBtn = document.createElement("button");
+        multiBtn.type = "button";
+        multiBtn.className = "scs-multi-btn";
+
+        const multiLabelSpan = document.createElement("span");
+        multiLabelSpan.textContent = "Any book(s)";
+
+        const chevronSpan = document.createElement("span");
+        chevronSpan.className = "scs-multi-btn-chevron";
+        chevronSpan.textContent = "▾";
+
+        multiBtn.appendChild(multiLabelSpan);
+        multiBtn.appendChild(chevronSpan);
+
+        const multiPanel = document.createElement("div");
+        multiPanel.className = "scs-multi-panel hidden";
+
+        for (const code of booksList) {
+          const opt = document.createElement("div");
+          opt.className = "scs-multi-option";
+
+          const cb = document.createElement("input");
+          cb.type = "checkbox";
+          cb.value = code;
+          cb.setAttribute("data-scs-book-checkbox", "1");
+
+          const lb = document.createElement("label");
+          lb.textContent = code;
+
+          cb.addEventListener("change", () => {
+            const checked = Array.from(multiPanel.querySelectorAll('input[type="checkbox"][data-scs-book-checkbox="1"]:checked')).map(el => el.value);
+            SCS_BOOKS_SELECTED = checked;
+            updateBooksFilter();
+            applyFiltersAndRender();
+          });
+
+          opt.appendChild(cb);
+          opt.appendChild(lb);
+          multiPanel.appendChild(opt);
+        }
+
+        multiBtn.addEventListener("click", () => {
+          multiPanel.classList.toggle("hidden");
+        });
+
+        multiWrap.appendChild(multiBtn);
+        multiWrap.appendChild(multiPanel);
+        multiRow.appendChild(multiWrap);
+        group.appendChild(multiRow);
+
+        SCS_FILTER_ELEMS.book_multi_label = multiLabelSpan;
+
+        // Range row
         const row = document.createElement("div");
         row.className = "scs-range-row";
 
@@ -1108,7 +1316,6 @@ permalink: /tools-games/tools/scs/
         const toSel = document.createElement("select");
         toSel.className = "scs-select";
 
-        const booksList = getBookOrderList();
         const fromPlaceholder = document.createElement("option");
         fromPlaceholder.value = "";
         fromPlaceholder.textContent = "From (Any)";
@@ -1132,10 +1339,7 @@ permalink: /tools-games/tools/scs/
         }
 
         const onBookChange = () => {
-          const fromVal = fromSel.value || null;
-          const toVal = toSel.value || null;
-          const selected = getBookRangeCodes(fromVal, toVal);
-          SCS_FILTER_STATE.books = selected;
+          updateBooksFilter();
           applyFiltersAndRender();
         };
 
@@ -1196,7 +1400,6 @@ permalink: /tools-games/tools/scs/
       root.appendChild(group);
     }
 
-    // Initial letter filter group
     buildLetterFilterUI(root);
 
     const resetBtn = document.getElementById("scs-reset-btn");
@@ -1225,10 +1428,79 @@ permalink: /tools-games/tools/scs/
     labelRow.appendChild(hint);
     group.appendChild(labelRow);
 
-    const buildLangLetterRow = (lang, labelText) => {
+    const buildLangLetterBlock = (lang, labelText) => {
       const letters = SCS_INITIAL_LETTERS[lang] || [];
       if (!letters.length) return;
 
+      // Multi-select block
+      const multiRow = document.createElement("div");
+      multiRow.className = "scs-multi-row";
+
+      const multiHint = document.createElement("div");
+      multiHint.className = "scs-filter-hint";
+      multiHint.textContent = labelText + " letters: specific selection + optional range.";
+      multiRow.appendChild(multiHint);
+
+      const multiWrap = document.createElement("div");
+      multiWrap.className = "scs-multi-select";
+
+      const multiBtn = document.createElement("button");
+      multiBtn.type = "button";
+      multiBtn.className = "scs-multi-btn";
+
+      const multiLabelSpan = document.createElement("span");
+      multiLabelSpan.textContent = "Any " + labelText + " letter(s)";
+
+      const chevronSpan = document.createElement("span");
+      chevronSpan.className = "scs-multi-btn-chevron";
+      chevronSpan.textContent = "▾";
+
+      multiBtn.appendChild(multiLabelSpan);
+      multiBtn.appendChild(chevronSpan);
+
+      const multiPanel = document.createElement("div");
+      multiPanel.className = "scs-multi-panel hidden";
+
+      for (const ch of letters) {
+        const opt = document.createElement("div");
+        opt.className = "scs-multi-option";
+
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.value = ch;
+        cb.setAttribute("data-scs-letter-checkbox", lang);
+
+        const lb = document.createElement("label");
+        lb.textContent = ch;
+
+        cb.addEventListener("change", () => {
+          const checked = Array.from(multiPanel.querySelectorAll('input[type="checkbox"][data-scs-letter-checkbox="' + lang + '"]:checked')).map(el => el.value);
+          SCS_INITIAL_LETTERS_SELECTED[lang] = checked;
+          updateInitialLettersFilter(lang);
+          applyFiltersAndRender();
+        });
+
+        opt.appendChild(cb);
+        opt.appendChild(lb);
+        multiPanel.appendChild(opt);
+      }
+
+      multiBtn.addEventListener("click", () => {
+        multiPanel.classList.toggle("hidden");
+      });
+
+      multiWrap.appendChild(multiBtn);
+      multiWrap.appendChild(multiPanel);
+      multiRow.appendChild(multiWrap);
+      group.appendChild(multiRow);
+
+      if (lang === "grc") {
+        SCS_FILTER_ELEMS.letter_multi_label_grc = multiLabelSpan;
+      } else if (lang === "he") {
+        SCS_FILTER_ELEMS.letter_multi_label_he = multiLabelSpan;
+      }
+
+      // Range row
       const subHint = document.createElement("div");
       subHint.className = "scs-filter-hint";
       subHint.textContent = labelText + " letters range (From → To).";
@@ -1266,10 +1538,7 @@ permalink: /tools-games/tools/scs/
       }
 
       const onLetterChange = () => {
-        const fromVal = fromSel.value || null;
-        const toVal = toSel.value || null;
-        const selected = getLetterRange(lang, fromVal, toVal);
-        SCS_FILTER_STATE.initial_letters[lang] = selected;
+        updateInitialLettersFilter(lang);
         applyFiltersAndRender();
       };
 
@@ -1289,8 +1558,8 @@ permalink: /tools-games/tools/scs/
       }
     };
 
-    buildLangLetterRow("grc", "Greek");
-    buildLangLetterRow("he", "Hebrew");
+    buildLangLetterBlock("grc", "Greek");
+    buildLangLetterBlock("he", "Hebrew");
 
     root.appendChild(group);
   }
@@ -1304,6 +1573,9 @@ permalink: /tools-games/tools/scs/
     SCS_FILTER_STATE.query = "";
     SCS_FILTER_STATE.initial_letters = { grc: [], he: [] };
 
+    SCS_BOOKS_SELECTED = [];
+    SCS_INITIAL_LETTERS_SELECTED = { grc: [], he: [] };
+
     if (SCS_FILTER_ELEMS.language) SCS_FILTER_ELEMS.language.value = "";
     if (SCS_FILTER_ELEMS.testament) SCS_FILTER_ELEMS.testament.value = "";
     if (SCS_FILTER_ELEMS.book_from) SCS_FILTER_ELEMS.book_from.value = "";
@@ -1315,6 +1587,27 @@ permalink: /tools-games/tools/scs/
     if (SCS_FILTER_ELEMS.letter_to_grc) SCS_FILTER_ELEMS.letter_to_grc.value = "";
     if (SCS_FILTER_ELEMS.letter_from_he) SCS_FILTER_ELEMS.letter_from_he.value = "";
     if (SCS_FILTER_ELEMS.letter_to_he) SCS_FILTER_ELEMS.letter_to_he.value = "";
+
+    if (SCS_FILTER_ELEMS.book_multi_label) {
+      SCS_FILTER_ELEMS.book_multi_label.textContent = "Any book(s)";
+    }
+    if (SCS_FILTER_ELEMS.letter_multi_label_grc) {
+      SCS_FILTER_ELEMS.letter_multi_label_grc.textContent = "Any Greek letter(s)";
+    }
+    if (SCS_FILTER_ELEMS.letter_multi_label_he) {
+      SCS_FILTER_ELEMS.letter_multi_label_he.textContent = "Any Hebrew letter(s)";
+    }
+
+    document.querySelectorAll('input[data-scs-book-checkbox="1"]').forEach(cb => {
+      cb.checked = false;
+    });
+    document.querySelectorAll('input[data-scs-letter-checkbox]').forEach(cb => {
+      cb.checked = false;
+    });
+
+    updateBooksFilter();
+    updateInitialLettersFilter("grc");
+    updateInitialLettersFilter("he");
   }
 
   function getFilteredEntries() {
@@ -1472,7 +1765,7 @@ permalink: /tools-games/tools/scs/
       return ka.n - kb.n;
     });
     for (let i = 0; i < sortedForRank.length; i++) {
-      filteredRankById[sortedForRank[i].id] = i + 1; // 1-based
+      filteredRankById[sortedForRank[i].id] = i + 1;
     }
 
     for (const e of slice) {
