@@ -168,10 +168,23 @@ permalink: /tools-games/tools/scs/
     opacity: 0.7;
   }
 
+  /* MAIN LAYOUT: flex, independent heights */
+
   .scs-main {
-    display: grid;
-    grid-template-columns: minmax(0, 360px) minmax(0, 1.6fr);
+    display: flex;
+    align-items: flex-start;
     gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .scs-filters-panel {
+    flex: 0 0 360px;
+    max-width: 100%;
+  }
+
+  .scs-results-panel {
+    flex: 1 1 0;
+    min-width: 0;
   }
 
   .scs-panel {
@@ -452,34 +465,12 @@ permalink: /tools-games/tools/scs/
     background: rgba(148, 163, 184, 0.16);
   }
 
-  /* Occurrence sliders */
+  /* Occurrence controls */
 
   .scs-occ-wrapper {
     display: flex;
     flex-direction: column;
     gap: 4px;
-  }
-
-  .scs-occ-sliders {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .scs-occ-slider-row {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    color: var(--scs-text-muted);
-  }
-
-  .scs-occ-slider-row input[type="range"] {
-    flex: 1;
-  }
-
-  .scs-occ-slider-row span {
-    white-space: nowrap;
   }
 
   input[type="range"] {
@@ -513,6 +504,32 @@ permalink: /tools-games/tools/scs/
     box-shadow:
       0 0 0 3px rgba(250, 204, 21, 0.25),
       0 12px 30px rgba(16, 12, 8, 0.98);
+  }
+
+  /* Dual-handle slider container */
+
+  .scs-range-slider {
+    position: relative;
+    height: 24px;
+    margin-top: 4px;
+  }
+
+  .scs-range-slider input[type="range"] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent; /* track from base style still applies visually */
+    pointer-events: none;    /* thumbs will re-enable pointer-events */
+  }
+
+  .scs-range-slider input[type="range"]::-webkit-slider-thumb {
+    pointer-events: auto;
+  }
+
+  .scs-range-slider input[type="range"]::-moz-range-thumb {
+    pointer-events: auto;
   }
 
   .scs-filters-footer {
@@ -687,6 +704,7 @@ permalink: /tools-games/tools/scs/
     gap: 8px;
     overflow: auto;
     padding-right: 4px;
+    max-height: calc(80vh - 180px); /* fixed-ish scroll area, so page doesn't get long */
   }
 
   .scs-entry {
@@ -826,7 +844,7 @@ permalink: /tools-games/tools/scs/
 
   @media (max-width: 900px) {
     .scs-main {
-      grid-template-columns: minmax(0, 1fr);
+      flex-direction: column;
     }
 
     .scs-entry {
@@ -1594,20 +1612,11 @@ permalink: /tools-games/tools/scs/
         occWrapper.appendChild(boxesRow);
 
         const slidersBlock = document.createElement("div");
-        slidersBlock.className = "scs-occ-sliders";
-
-        const rowMin = document.createElement("div");
-        rowMin.className = "scs-occ-slider-row";
-        const rowMax = document.createElement("div");
-        rowMax.className = "scs-occ-slider-row";
-
-        const labelMin = document.createElement("span");
-        labelMin.textContent = "Min slider:";
-        const labelMax = document.createElement("span");
-        labelMax.textContent = "Max slider:";
+        slidersBlock.className = "scs-range-slider";
 
         const sliderMin = document.createElement("input");
         sliderMin.type = "range";
+
         const sliderMax = document.createElement("input");
         sliderMax.type = "range";
 
@@ -1633,14 +1642,8 @@ permalink: /tools-games/tools/scs/
           applyFiltersAndRender();
         });
 
-        rowMin.appendChild(labelMin);
-        rowMin.appendChild(sliderMin);
-
-        rowMax.appendChild(labelMax);
-        rowMax.appendChild(sliderMax);
-
-        slidersBlock.appendChild(rowMin);
-        slidersBlock.appendChild(rowMax);
+        slidersBlock.appendChild(sliderMin);
+        slidersBlock.appendChild(sliderMax);
         occWrapper.appendChild(slidersBlock);
 
         group.appendChild(occWrapper);
@@ -2206,24 +2209,6 @@ permalink: /tools-games/tools/scs/
     return root;
   }
 
-  async function loadEntriesFromJsonl(entriesPath) {
-    const url = BASEURL + "/data/v1/" + entriesPath.replace(/^\/?data\/v1\//, "");
-    const txt = await fetchText(url);
-    const lines = txt.split(/\r?\n/);
-    const out = [];
-    for (const line of lines) {
-      const trimmed = line.trim();
-      if (!trimmed) continue;
-      try {
-        const obj = JSON.parse(trimmed);
-        out.push(obj);
-      } catch (err) {
-        console.warn("Failed to parse JSONL line:", err);
-      }
-    }
-    return out;
-  }
-
   function csvEscape(value) {
     if (value == null) return "";
     const s = String(value);
@@ -2325,6 +2310,24 @@ permalink: /tools-games/tools/scs/
         panel.classList.add("hidden");
       }
     });
+  }
+
+  async function loadEntriesFromJsonl(entriesPath) {
+    const url = BASEURL + "/data/v1/" + entriesPath.replace(/^\/?data\/v1\//, "");
+    const txt = await fetchText(url);
+    const lines = txt.split(/\r?\n/);
+    const out = [];
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed) continue;
+      try {
+        const obj = JSON.parse(trimmed);
+        out.push(obj);
+      } catch (err) {
+        console.warn("Failed to parse JSONL line:", err);
+      }
+    }
+    return out;
   }
 
   async function initSCS() {
