@@ -14,7 +14,6 @@
     {% endfor %}
   {% endif %}
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -58,77 +57,108 @@
 
     {{ content }}
 
-    <!-- Left-side navigation CTA (auto breadcrumbs) -->
-    <div
-      class="nav-cta"
-      id="nav-cta"
-      data-baseurl="{{ site.baseurl }}"
-      aria-label="Page navigation shortcuts"
-    >
-      <button
-        type="button"
-        class="nav-cta-toggle"
-        aria-label="Hide navigation panel"
-        aria-expanded="false"
-        data-prev-url="{{ page.nav_prev_url | default: '' }}"
-        data-prev-label="{{ page.nav_prev_label | default: '' }}"
-        data-next-url="{{ page.nav_next_url | default: '' }}"
-        data-next-label="{{ page.nav_next_label | default: '' }}"
+    <!-- Right-side CTA stack: Testimony / Navigation / Help -->
+    <div class="cta-stack" aria-label="Quick actions">
+      <!-- Top: Testimony CTA -->
+      <div
+        class="testimony-cta testimony-cta--collapsed"
+        id="testimony-cta"
+        aria-label="Testimony quick actions"
       >
-        <span class="nav-cta-icon">⤳</span>
-      </button>
-      <div class="nav-cta-links"></div>
-    </div>
+        <button
+          type="button"
+          class="testimony-cta-toggle"
+          aria-label="Toggle testimony panel"
+          aria-expanded="false"
+        >
+          <span class="testimony-cta-icon">✎</span>
+        </button>
 
-    <!-- Right-side Help CTA with cross toggle -->
-    <div class="help-cta" id="help-cta">
-      <button
-        type="button"
-        class="help-cta-toggle"
-        aria-label="Hide help panel"
-        aria-expanded="false"
+        <div class="testimony-cta-body">
+          <p class="testimony-cta-label">
+            SHARE OR EXPLORE TESTIMONIES, PRAYERS &amp; BLESSINGS. -AI
+          </p>
+          <div class="testimony-cta-actions">
+            <a href="{{ '/community/testimony/' | relative_url }}" class="btn testimony-cta-btn">
+              TESTIMONY HOME (COMING SOON) -AI
+            </a>
+            <a href="{{ '/help/prayer-blessing/' | relative_url }}" class="btn testimony-cta-btn secondary">
+              SHARE PRAYER OR BLESSING -AI
+            </a>
+            <a href="{{ '/community/testimony/boards/' | relative_url }}" class="btn testimony-cta-btn secondary">
+              BROWSE BOARDS (FUTURE) -AI
+            </a>
+          </div>
+          <p class="testimony-cta-note">
+            THIS PANEL IS A PLACEHOLDER FOR FUTURE TESTIMONY ACCOUNT FEATURES, INCLUDING PERSONAL PAGES, PRAYER LOGS, AND BLESSING BOARDS. -AI
+          </p>
+        </div>
+      </div>
+
+      <!-- Middle: Navigation CTA (auto breadcrumbs) -->
+      <div
+        class="nav-cta nav-cta--collapsed"
+        id="nav-cta"
+        data-baseurl="{{ site.baseurl }}"
+        aria-label="Page navigation shortcuts"
       >
-        <span class="help-cta-cross">✝</span>
-      </button>
+        <button
+          type="button"
+          class="nav-cta-toggle"
+          aria-label="Toggle navigation panel"
+          aria-expanded="false"
+          data-prev-url="{{ page.nav_prev_url | default: '' }}"
+          data-prev-label="{{ page.nav_prev_label | default: '' }}"
+          data-next-url="{{ page.nav_next_url | default: '' }}"
+          data-next-label="{{ page.nav_next_label | default: '' }}"
+        >
+          <span class="nav-cta-icon">↕</span>
+        </button>
+        <div class="nav-cta-links"></div>
+      </div>
 
-      <p class="help-cta-label">
-        You're not alone in your journey, we're here to help!
-      </p>
-      <div class="help-cta-actions">
-        <a href="{{ '/salvation/' | relative_url }}" class="btn help-cta-btn">
-          Salvation
-        </a>
-        <a href="{{ '/help/' | relative_url }}" class="btn help-cta-btn secondary">
-          Help
-        </a>
-        <a href="{{ '/help/contact/' | relative_url }}" class="btn help-cta-btn secondary">
-          Contact
-        </a>
-        <a href="{{ '/help/feedback/' | relative_url }}" class="btn help-cta-btn secondary">
-          Feedback &amp; Errors
-        </a>
+      <!-- Bottom: Help CTA with cross toggle -->
+      <div class="help-cta help-cta--collapsed" id="help-cta">
+        <button
+          type="button"
+          class="help-cta-toggle"
+          aria-label="Toggle help panel"
+          aria-expanded="false"
+        >
+          <span class="help-cta-cross">✝</span>
+        </button>
+
+        <p class="help-cta-label">
+          You're not alone in your journey, we're here to help!
+        </p>
+        <div class="help-cta-actions">
+          <a href="{{ '/salvation/' | relative_url }}" class="btn help-cta-btn">
+            Salvation
+          </a>
+          <a href="{{ '/help/start-here/' | relative_url }}" class="btn help-cta-btn secondary">
+            Where Do I Start?
+          </a>
+          <a href="{{ '/help/feedback/' | relative_url }}" class="btn help-cta-btn secondary">
+            Feedback
+          </a>
+          <a href="{{ '/help/' | relative_url }}" class="btn help-cta-btn secondary">
+            Help Hub
+          </a>
+          <a href="{{ '/help/crisis/' | relative_url }}" class="btn help-cta-btn secondary">
+            Crisis &amp; Immediate Help
+          </a>
+        </div>
       </div>
     </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Left nav CTA
-      var navToggle = document.querySelector("#nav-cta .nav-cta-toggle");
-      if (navToggle && navToggle.getAttribute("aria-expanded") === "true") {
-        navToggle.click();
-      }
-
-      // Right help CTA
-      var helpToggle = document.querySelector("#help-cta .help-cta-toggle");
-      if (helpToggle && helpToggle.getAttribute("aria-expanded") === "true") {
-        helpToggle.click();
-      }
-    });
-  </script>
-
-
-
-
+    <!-- Bottom-left Bible quick link CTA -->
+    <a
+      href="{{ '/literature/bible/' | relative_url }}"
+      class="bible-cta"
+      aria-label="Open Bible hub"
+    >
+      <span class="bible-cta-icon">📖</span>
+    </a>
 
   </main>
 

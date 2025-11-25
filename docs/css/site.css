@@ -1273,141 +1273,7 @@ footer.container,
   text-align: center;       /* keep text centered */
 }
 
-/* ================= Help CTA ================= */
 
-/* Right-side Help CTA with collapsible cross */
-.help-cta {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 999;
-  background: var(--panel);
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
-  padding: 0.75rem 1rem;
-  max-width: min(480px, 100% - 2rem);
-  /* max-width: 260px; */
-  font-size: 0.85rem;
-}
-
-/* Cross toggle */
-.help-cta-toggle {
-  position: absolute;
-  top: 0.35rem;
-  right: 0.35rem;
-  width: 2.1rem;
-  height: 2.1rem;
-  border-radius: 999px;
-  border: 2px solid var(--accent);
-  background: #000;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0;
-}
-
-.help-cta-cross {
-  font-size: 1.1rem;
-  line-height: 1;
-  color: var(--accent);
-}
-
-.help-cta-label {
-  margin: 0 0 0.4rem;
-  color: var(--text);
-}
-
-.help-cta-actions {
-  display: flex;
-  /* flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: flex-end; */
-  flex-direction: column;  
-  align-items: stretch;
-  gap: 0.4rem;
-}
-
-.help-cta-btn {
-  padding: 6px 10px;
-  font-size: 0.85rem;
-  white-space: nowrap;
-}
-
-.help-cta-btn.secondary {
-  background-color: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-}
-
-.help-cta-btn.secondary:hover {
-  background-color: var(--accent);
-  color: #000;
-}
-
-/* Collapsed: only show the cross pill */
-.help-cta.help-cta--collapsed {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.4rem;
-  border-radius: 999px;
-}
-
-.help-cta.help-cta--collapsed .help-cta-label,
-.help-cta.help-cta--collapsed .help-cta-actions {
-  display: none;
-}
-
-.help-cta.help-cta--collapsed .help-cta-toggle {
-  position: static;
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-/* Mobile: full-width bar on bottom, still collapsible */
-@media (max-width: 700px) {
-  body {
-    padding-bottom: 4.5rem; /* ensure footer content isn't hidden */
-  }
-
-  .help-cta {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-width: none;
-    border-radius: 0;
-    padding: 0.6rem 0.75rem;
-  }
-
-  .help-cta-label {
-    text-align: center;
-    margin: 0 2.8rem 0.35rem 0.75rem; /* space for cross on the right */
-  }
-
-  .help-cta-toggle {
-    top: 0.5rem;
-    right: 0.75rem;
-  }
-
-  .help-cta-actions {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .help-cta-btn {
-    flex: 0 1 auto;
-  }
-
-  /* When collapsed on mobile, behave like a small pill in bottom-right */
-  .help-cta.help-cta--collapsed {
-    left: auto;
-    right: 0.75rem;
-    bottom: 0.75rem;
-    border-radius: 999px;
-    max-width: none;
-  }
-}
 
 
 /* Mobile nav: full-width rows and a separate submenu toggle button */
@@ -1634,9 +1500,9 @@ footer.container,
 /* ========== Nav outlines, highlights, and Nav CTA ========== */
 
 /* Thin yellow line under the whole header */
-.site-header {
+/* .site-header {
   border-bottom: 1px solid var(--accent);
-}
+} */
 
 /* Yellow outline around the header tabs container (row of tabs) */
 .site-header .nav-links {
@@ -1678,98 +1544,6 @@ footer.container,
   }
 }
 
-/* ===== Left Navigation CTA (floating breadcrumb stack) ===== */
-
-.nav-cta {
-  position: fixed;
-  left: 1rem;
-  bottom: 1rem;
-  z-index: 998;
-  background: var(--panel);
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
-  padding: 0.6rem 0.9rem 0.6rem 0.6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0.4rem;
-}
-
-/* Stack links bottom-up: Home at bottom, deeper path above */
-.nav-cta-links {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 0.35rem;
-  margin-top: 2.4rem; /* room for toggle icon */
-}
-
-.nav-cta-link {
-  font-size: 0.85rem;
-  padding: 0.4rem 0.8rem;
-  white-space: nowrap;
-}
-
-/* Path toggle icon (⤳) */
-.nav-cta-toggle {
-  position: absolute;
-  top: 0.35rem;
-  right: 0.35rem;
-  width: 2.0rem;
-  height: 2.0rem;
-  border-radius: 999px;
-  border: 2px solid var(--accent);
-  background: #000;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0;
-}
-
-.nav-cta-icon {
-  font-size: 1.1rem;
-  line-height: 1;
-  color: var(--accent);
-}
-
-/* Collapsed: only show the round icon pill */
-.nav-cta.nav-cta--collapsed {
-  padding: 0.35rem;
-  border-radius: 999px;
-}
-
-.nav-cta.nav-cta--collapsed .nav-cta-links {
-  display: none;
-}
-
-.nav-cta.nav-cta--collapsed .nav-cta-toggle {
-  position: static;
-  width: 2.3rem;
-  height: 2.3rem;
-}
-
-/* Desktop-only nav CTA (hide on small screens) */
-@media (max-width: 700px) {
-  .nav-cta {
-    /* display: none; */
-    display: flex;       
-    left: 0.75rem;
-    bottom: 4.75rem;   
-  }
-}
-
-.nav-cta-prevnext {
-  display: flex;
-  gap: 0.35rem;
-}
-
-.nav-cta-prev,
-.nav-cta-next {
-  flex: 1 1 0;
-  text-align: center;
-}
-
-
 
 
 /* Tool app layout base styles (for app-like tools such as Infinite Bible) */
@@ -1783,5 +1557,239 @@ body.tool-app-body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem 1rem 3rem;
+}
+
+
+
+/* ================= Floating CTA stack (Testimony / Nav / Help) ================= */
+
+/* Wrapper that pins the three CTAs on the right, stacked vertically */
+.cta-stack {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+/* Base panel for each CTA when expanded */
+.testimony-cta,
+.nav-cta,
+.help-cta {
+  background: var(--panel);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+  padding: 0.75rem 1rem 0.75rem 0.75rem;
+  max-width: min(480px, 100% - 2rem);
+  position: relative;
+  font-size: 0.85rem;
+}
+
+/* Shared toggle button style: three matching circles */
+.testimony-cta-toggle,
+.nav-cta-toggle,
+.help-cta-toggle {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  background: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Icons inside the circles */
+.testimony-cta-icon,
+.nav-cta-icon,
+.help-cta-cross {
+  font-size: 1.35rem;
+  line-height: 1;
+  color: var(--accent);
+}
+
+/* Help panel content */
+.help-cta-label {
+  margin: 0 0 0.4rem;
+  color: var(--text);
+}
+
+.help-cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.4rem;
+}
+
+.help-cta-btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.help-cta-btn.secondary {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.help-cta-btn.secondary:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+/* Nav CTA links container (breadcrumbs + prev/next) */
+.nav-cta-links {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.35rem;
+  margin-top: 2.4rem; /* space for toggle at top-right */
+}
+
+.nav-cta-link {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  white-space: nowrap;
+}
+
+.nav-cta-prevnext {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.nav-cta-prev,
+.nav-cta-next {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+/* Testimony CTA panel content */
+.testimony-cta-body {
+  padding-right: 2.9rem; /* room for toggle */
+}
+
+.testimony-cta-label {
+  margin: 0 0 0.4rem;
+  color: var(--text);
+}
+
+.testimony-cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.testimony-cta-btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.testimony-cta-btn.secondary {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.testimony-cta-btn.secondary:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+.testimony-cta-note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Collapsed states: only show the circle, hide the panel body */
+.help-cta.help-cta--collapsed,
+.nav-cta.nav-cta--collapsed,
+.testimony-cta.testimony-cta--collapsed {
+  padding: 0.4rem;
+  border-radius: 999px;
+  max-width: none;
+}
+
+/* When collapsed, hide the internal content areas */
+.help-cta.help-cta--collapsed .help-cta-label,
+.help-cta.help-cta--collapsed .help-cta-actions {
+  display: none;
+}
+
+.nav-cta.nav-cta--collapsed .nav-cta-links {
+  display: none;
+}
+
+.testimony-cta.testimony-cta--collapsed .testimony-cta-body {
+  display: none;
+}
+
+/* When collapsed, center the circle toggle and keep full size */
+.help-cta.help-cta--collapsed .help-cta-toggle,
+.nav-cta.nav-cta--collapsed .nav-cta-toggle,
+.testimony-cta.testimony-cta--collapsed .testimony-cta-toggle {
+  position: static;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+/* Mobile: tuck the stack slightly inward and shrink gap */
+@media (max-width: 700px) {
+  .cta-stack {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .testimony-cta,
+  .nav-cta,
+  .help-cta {
+    max-width: min(360px, 100% - 1.5rem);
+  }
+}
+
+/* ================= Bottom-left Bible quick link CTA ================= */
+
+.bible-cta {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 999;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+}
+
+.bible-cta-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--accent);
+}
+
+/* Slightly tuck on mobile */
+@media (max-width: 700px) {
+  .bible-cta {
+    left: 0.75rem;
+    bottom: 0.75rem;
+  }
 }
 

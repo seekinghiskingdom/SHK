@@ -82,11 +82,10 @@
   const linksContainer = navCta.querySelector('.nav-cta-links');
   const toggle = navCta.querySelector('.nav-cta-toggle');
 
-  // default collapsed on small screens
-  if (window.matchMedia('(max-width: 700px)').matches) {
-    navCta.classList.add('nav-cta--collapsed');
-    if (toggle) toggle.setAttribute('aria-expanded', 'false');
-  }
+  // default collapsed on all screens
+  navCta.classList.add('nav-cta--collapsed');
+  if (toggle) toggle.setAttribute('aria-expanded', 'false');
+
 
   // Build path segments from current URL
   const base = navCta.dataset.baseurl || '';
@@ -180,4 +179,22 @@
       toggle.setAttribute('aria-expanded', isCollapsed ? 'false' : 'true');
     });
   }
+})();
+
+
+// 8) Testimony CTA collapse/expand
+(() => {
+  const cta = document.getElementById('testimony-cta');
+  if (!cta) return;
+  const toggle = cta.querySelector('.testimony-cta-toggle');
+  if (!toggle) return;
+
+  // default collapsed
+  cta.classList.add('testimony-cta--collapsed');
+  toggle.setAttribute('aria-expanded', 'false');
+
+  toggle.addEventListener('click', () => {
+    const isCollapsed = cta.classList.toggle('testimony-cta--collapsed');
+    toggle.setAttribute('aria-expanded', isCollapsed ? 'false' : 'true');
+  });
 })();
