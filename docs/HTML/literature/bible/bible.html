@@ -7,55 +7,342 @@ back_links:
     url: /literature/
   - label: Home
     url: /
-
 ---
 
-<section class="hub-page">
+<section class="hub-page bible-hub-page">
   <h1>{{ page.title }}</h1>
+
   <p class="hub-intro">
-    Bible-related resources and translations used within SHK. (TBD)
+    THIS HUB GATHERS SHK BIBLE TOOLS, TRANSLATION INFORMATION, AND LANGUAGE RESOURCES IN ONE PLACE, SO YOU CAN QUICKLY CHOOSE HOW YOU WANT TO READ OR STUDY SCRIPTURE. -AI
   </p>
+  <p class="hub-intro">
+    WHETHER YOU SIMPLY WANT TO READ A PASSAGE, COMPARE TRANSLATIONS, OR DIVE INTO ORIGINAL-LANGUAGE DETAILS, THE TILES AND SECTIONS BELOW ARE MEANT TO GUIDE YOU STEP BY STEP. -AI
+  </p>
+
   <hr class="hub-divider">
 
-  <div class="hub-grid">
-    <a href="{{ '/tools-games/tools/bible-viewer/' | relative_url }}" class="hub-tile tile-bible-viewer">
-      <h2>Bible Viewer</h2>
-      <p>Read and browse passages inside a simple on-site viewer. (TBD)</p>
-    </a>
+  <!-- Quick in-page navigation -->
+  <nav class="bible-hub-nav" aria-label="BIBLE HUB SECTIONS -AI">
+    <a href="#overview">OVERVIEW -AI</a>
+    <a href="#tools">TOOLS &amp; APPS -AI</a>
+    <a href="#translations">TRANSLATIONS -AI</a>
+    <a href="#languages-strongs">LANGUAGES &amp; STRONG’S -AI</a>
+    <a href="#getting-started">WHERE TO START -AI</a>
+    <a href="#back-links">BACK LINKS -AI</a>
+  </nav>
 
-    <a href="{{ '/tools-games/tools/infinite-bible/' | relative_url }}" class="hub-tile tile-infinite-bible">
-      <h2>Infinite Bible</h2>
-      <p>A new bible tool that has never been made before - Coming Soon!</p>
-    </a>
-
-    <a href="{{ '/literature/bible/translations/' | relative_url }}" class="hub-tile tile-translations">
-      <h2>Bible Translations</h2>
-      <p>See the details of all the translations our site uses!</p>
-    </a>
-
-    <a href="{{ '/literature/bible/languages/' | relative_url }}" class="hub-tile tile-lit-bible-languages">
-      <h2>Biblical Languages</h2>
-      <p>A breakdown of the original languages used in the Bible.</p>
-    </a>
-
-    <a href="{{ '/literature/bible/strongs/' | relative_url }}" class="hub-tile tile-lit-bible-strongs">
-      <h2>Strong's Concordance</h2>
-      <p>View and search Hebrew & Greek words from the Strong's Concordance.</p>
-    </a>
-
-
-  </div>
-
-  <section class="bible-notes">
-    <h2>How These Are Used</h2>
+  <!-- Overview -->
+  <section class="bible-section" id="overview">
+    <h2>OVERVIEW -AI</h2>
     <p>
-      These translations are used throughout SHK tools and content. Over time, this hub may include
-      translation notes, comparison views, and more. (TBD)
+      THE BIBLE IS AT THE CENTER OF EVERYTHING SHK DOES, AND THIS PAGE IS MEANT TO BE A SIMPLE LAUNCH POINT FOR THE DIFFERENT WAYS YOU CAN ENGAGE WITH IT ON THIS SITE. -AI
+    </p>
+    <p>
+      SOME TOOLS FOCUS ON READING AND NAVIGATING PASSAGES, OTHERS ON TRANSLATION DETAILS OR ORIGINAL LANGUAGES, AND SOME COMBINE MULTIPLE FEATURES INTO A SINGLE EXPERIENCE. -AI
+    </p>
+    <p>
+      YOU CAN START WITH A SINGLE TOOL THAT MAKES SENSE FOR WHERE YOU ARE RIGHT NOW AND ADD MORE LAYERS (TRANSLATIONS, STRONG’S, BIBLICAL LANGUAGES) AS YOUR CURIOSITY GROWS. -AI
     </p>
   </section>
 
-  <nav class="resources-nav">
-    <a href="{{ '/literature/' | relative_url }}">Back to Literature</a> ·
-    <a href="{{ '/' | relative_url }}">Back to Home</a>
+  <!-- Core tools & apps -->
+  <section class="bible-section" id="tools">
+    <h2>CORE BIBLE TOOLS &amp; APPS -AI</h2>
+    <p>
+      THESE ARE THE MAIN SHK BIBLE TOOLS AND EXPERIMENTAL APPS. THE GOAL IS TO KEEP READING SIMPLE WHILE ALLOWING OPTIONAL FEATURES LIKE NOTES, LAYERS, AND WORD STUDIES. -AI
+    </p>
+
+    <div class="hub-grid bible-hub-grid">
+      <a href="{{ '/tools-games/tools/bible-viewer/' | relative_url }}" class="hub-tile tile-bible-viewer">
+        <h2>BIBLE VIEWER -AI</h2>
+        <p>
+          A STRAIGHTFORWARD ON-SITE VIEWER FOR READING AND BROWSING PASSAGES, WITH ROOM TO ADD SIMPLE STUDY FEATURES OVER TIME. -AI
+        </p>
+      </a>
+
+      <a href="{{ '/tools-games/tools/infinite-bible/' | relative_url }}" class="hub-tile tile-infinite-bible">
+        <h2>INFINITE BIBLE -AI</h2>
+        <p>
+          AN EXPERIMENTAL TOOL DESIGNED TO LAYER READING, NOTES, LINKS, AND OTHER FEATURES INTO A FLEXIBLE, BOARD-LIKE BIBLE STUDY EXPERIENCE. -AI
+        </p>
+      </a>
+
+      <a href="{{ '/literature/bible/translations/' | relative_url }}" class="hub-tile tile-translations">
+        <h2>BIBLE TRANSLATIONS -AI</h2>
+        <p>
+          AN OVERVIEW OF THE TRANSLATIONS USED ON THIS SITE, INCLUDING BASIC DETAILS, SOURCES, AND HOW THEY CONNECT TO VARIOUS TOOLS. -AI
+        </p>
+      </a>
+
+      <a href="{{ '/literature/bible/languages/' | relative_url }}" class="hub-tile tile-lit-bible-languages">
+        <h2>BIBLICAL LANGUAGES -AI</h2>
+        <p>
+          A HUB FOR HEBREW, GREEK, AND ARAMAIC RESOURCES, INCLUDING LINKS TO STRONG’S INDEXES AND SIMPLE LANGUAGE-BASED GUIDES. -AI
+        </p>
+      </a>
+
+      <a href="{{ '/literature/bible/strongs/' | relative_url }}" class="hub-tile tile-lit-bible-strongs">
+        <h2>STRONG’S CONCORDANCE -AI</h2>
+        <p>
+          VIEW AND SEARCH HEBREW AND GREEK ENTRIES BY STRONG’S NUMBER, CONNECTING TRANSLATED WORDS BACK TO THEIR UNDERLYING LEMMAS. -AI
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Translations section -->
+  <section class="bible-section" id="translations">
+    <h2>BIBLE TRANSLATIONS ON SHK -AI</h2>
+    <p>
+      DIFFERENT TRANSLATIONS CAN HELP YOU SEE FAMILIAR PASSAGES FROM SLIGHTLY DIFFERENT ANGLES, WHILE STILL KEEPING TO THE SAME UNDERLYING BIBLICAL TEXT. -AI
+    </p>
+    <ul class="bible-list">
+      <li>
+        THE TRANSLATIONS HUB DESCRIBES WHICH TRANSLATIONS ARE AVAILABLE, THEIR BASIC CHARACTER (MORE LITERAL OR MORE DYNAMIC), AND HOW THEY ARE USED ACROSS TOOLS. -AI
+      </li>
+      <li>
+        OVER TIME, THIS AREA MAY INCLUDE SIMPLE COMPARISON VIEWS AND NOTES ON HOW TRANSLATION CHOICES RELATE TO THE ORIGINAL LANGUAGES. -AI
+      </li>
+    </ul>
+    <p>
+      TO SEE CURRENT TRANSLATION DETAILS, START HERE: -AI
+    </p>
+    <p>
+      <a href="{{ '/literature/bible/translations/' | relative_url }}" class="btn bible-hub-btn">
+        OPEN BIBLE TRANSLATIONS HUB -AI
+      </a>
+    </p>
+  </section>
+
+  <!-- Languages & Strong's -->
+  <section class="bible-section" id="languages-strongs">
+    <h2>BIBLICAL LANGUAGES &amp; STRONG’S INTEGRATION -AI</h2>
+    <p>
+      IF YOU WANT TO LOOK UNDER THE SURFACE OF AN ENGLISH (OR OTHER) TRANSLATION, BIBLICAL LANGUAGE RESOURCES AND STRONG’S NUMBERS GIVE YOU SIMPLE HANDLES INTO THE ORIGINAL TEXTS. -AI
+    </p>
+
+    <div class="bible-ls-grid">
+      <article class="bible-ls-card">
+        <h3>BIBLICAL LANGUAGES HUB -AI</h3>
+        <ul>
+          <li>INTRODUCES HEBREW, GREEK, AND ARAMAIC AND HOW THEY RELATE TO THE BIBLE. -AI</li>
+          <li>LINKS DIRECTLY TO STRONG’S HEBREW AND GREEK INDEX PAGES. -AI</li>
+          <li>LEAVES ROOM FOR SIMPLE WORD-STUDY GUIDES AND LANGUAGE NOTES. -AI</li>
+        </ul>
+        <a href="{{ '/literature/bible/languages/' | relative_url }}" class="btn bible-hub-btn">
+          GO TO BIBLICAL LANGUAGES HUB -AI
+        </a>
+      </article>
+
+      <article class="bible-ls-card">
+        <h3>STRONG’S CONCORDANCE HUB -AI</h3>
+        <ul>
+          <li>EXPLAINS HOW STRONG’S NUMBERS WORK FOR HEBREW (H-NUMBERS) AND GREEK (G-NUMBERS). -AI</li>
+          <li>CONNECTS TO HEBREW AND GREEK LEXICON INDEXES FOR BROWSE OR SEARCH. -AI</li>
+          <li>SHOWS HOW STRONG’S CAN BE USED ALONGSIDE OTHER BIBLE TOOLS. -AI</li>
+        </ul>
+        <a href="{{ '/literature/bible/strongs/' | relative_url }}" class="btn bible-hub-btn">
+          GO TO STRONG’S HUB -AI
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Getting started paths -->
+  <section class="bible-section" id="getting-started">
+    <h2>WHERE TO START -AI</h2>
+    <p>
+      IF YOU ARE NOT SURE WHICH TOOL OR RESOURCE TO USE FIRST, THESE SIMPLE PATHS MAY HELP YOU PICK A STARTING POINT THAT FITS YOUR CURRENT GOAL. -AI
+    </p>
+
+    <div class="bible-start-grid">
+      <article class="bible-start-card">
+        <h3>I JUST WANT TO READ THE BIBLE -AI</h3>
+        <ul>
+          <li>OPEN THE BIBLE VIEWER AND START WITH A FAMILIAR BOOK OR PASSAGE. -AI</li>
+          <li>IGNORE ADVANCED FEATURES AT FIRST AND SIMPLY FOCUS ON THE TEXT. -AI</li>
+        </ul>
+        <a href="{{ '/tools-games/tools/bible-viewer/' | relative_url }}" class="btn bible-hub-btn">
+          OPEN BIBLE VIEWER -AI
+        </a>
+      </article>
+
+      <article class="bible-start-card">
+        <h3>I WANT LIGHT STUDY HELPS -AI</h3>
+        <ul>
+          <li>VISIT THE TRANSLATIONS HUB TO SEE WHICH TRANSLATIONS ARE AVAILABLE. -AI</li>
+          <li>USE LANGUAGE OR STRONG’S FEATURES ONLY WHEN A WORD OR PHRASE RAISES QUESTIONS. -AI</li>
+        </ul>
+        <a href="{{ '/literature/bible/translations/' | relative_url }}" class="btn bible-hub-btn">
+          OPEN TRANSLATIONS HUB -AI
+        </a>
+      </article>
+
+      <article class="bible-start-card">
+        <h3>I WANT TO EXPLORE ORIGINAL LANGUAGES -AI</h3>
+        <ul>
+          <li>START AT THE BIBLICAL LANGUAGES HUB AND FOLLOW LINKS TO STRONG’S INDEXES. -AI</li>
+          <li>TRY SIMPLE WORD STUDIES, ALWAYS LETTING SCRIPTURE CONTEXT LEAD THE WAY. -AI</li>
+        </ul>
+        <a href="{{ '/literature/bible/languages/' | relative_url }}" class="btn bible-hub-btn">
+          GO TO BIBLICAL LANGUAGES -AI
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Back links -->
+  <nav class="resources-nav" id="back-links">
+    <a href="{{ '/literature/' | relative_url }}">BACK TO LITERATURE -AI</a> ·
+    <a href="{{ '/' | relative_url }}">BACK TO HOME -AI</a>
   </nav>
+
+  <p class="bible-editor-note">
+    EDITOR NOTE: UPDATE TOOL DESCRIPTIONS, ADD LINKS AS NEW FEATURES GO LIVE, AND REMOVE THE -AI SUFFIX AS TEXT IS REVIEWED AND FINALIZED. -AI
+  </p>
 </section>
+
+<style>
+  .bible-hub-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+
+  .bible-section {
+    margin-top: 2.25rem;
+  }
+
+  .bible-section h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+  }
+
+  /* QUICK NAV TABS */
+  .bible-hub-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  .bible-hub-nav a {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid var(--accent); /* THIN ACCENT BORDER FOR CONTRAST -AI */
+    background: rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+  }
+
+  .bible-hub-nav a:hover,
+  .bible-hub-nav a:focus {
+    border-color: var(--accent);
+  }
+
+  /* HUB GRID TWEAKS */
+  .bible-hub-grid .hub-tile {
+    border-radius: 1rem;
+    border: 1px solid #2a2f3a;
+  }
+
+  /* GENERIC LIST */
+  .bible-list {
+    margin-top: 0.75rem;
+    padding-left: 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .bible-list li + li {
+    margin-top: 0.35rem;
+  }
+
+  /* LANGUAGES & STRONG'S GRID */
+  .bible-ls-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  @media (min-width: 800px) {
+    .bible-ls-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .bible-ls-card {
+    background: var(--panel);
+    border-radius: 1rem;
+    border: 1px solid #2a2f3a;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .bible-ls-card h3 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .bible-ls-card ul {
+    margin-top: 0.4rem;
+    padding-left: 1.25rem;
+    font-size: 0.88rem;
+  }
+
+  .bible-ls-card ul li + li {
+    margin-top: 0.25rem;
+  }
+
+  /* GETTING STARTED GRID */
+  .bible-start-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  @media (min-width: 900px) {
+    .bible-start-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .bible-start-card {
+    background: var(--panel);
+    border-radius: 1rem;
+    border: 1px solid #2a2f3a;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .bible-start-card h3 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .bible-start-card ul {
+    margin-top: 0.4rem;
+    padding-left: 1.25rem;
+    font-size: 0.88rem;
+  }
+
+  .bible-start-card ul li + li {
+    margin-top: 0.25rem;
+  }
+
+  .bible-hub-btn {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .bible-editor-note {
+    margin-top: 2.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>

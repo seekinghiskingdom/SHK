@@ -4,98 +4,407 @@ title: Strong's Concordance
 permalink: /literature/bible/strongs/
 nav_weight: 30
 ---
-<!--
-STRONG'S CONCORDANCE HUB CHECKLIST
 
-1. Front matter
-   - `title`: Page title shown in the header.
-   - `permalink`: Base URL for the Strong's hub.
-   - `nav_weight`: Adjust ordering among Bible/Literature pages if needed.
-
-2. Header
-   - Update `.page-intro` if you change the overall purpose or scope of this hub. -AI
-
-3. Hebrew and Greek sections
-   - Each section should have:
-     - A short descriptive paragraph about the language and how Strong's indexes it. -AI
-     - A primary button linking to the corresponding Strong's index page.
-     - Optional extra notes or tips. -AI
-
-4. “How to use” section
-   - Briefly explain how Strong's numbers are used on this site (e.g., in tools, links from verses). -AI
-
-5. Back links
-   - Ensure the links back to the Bible hub and Literature hub match your actual permalinks.
--->
-
-<main class="page page-hub page-strongs">
+<main class="page page-hub strongs-hub-page">
   <header class="page-header">
     <h1>{{ page.title }}</h1>
     <p class="page-intro">
-      Strong’s Concordance assigns a unique number to many Hebrew and Greek words in the Bible, making it easier to study the original terms, their meanings, and where they appear in Scripture. -AI
+      STRONG’S CONCORDANCE ASSIGNS UNIQUE NUMBERS TO MANY HEBREW AND GREEK WORDS IN THE BIBLE, CREATING A BRIDGE BETWEEN TRANSLATIONS AND THE ORIGINAL TERMS USED IN SCRIPTURE. -AI
+    </p>
+    <p class="page-intro">
+      THIS HUB GATHERS BASIC ORIENTATION, LINKS TO HEBREW AND GREEK INDEXES, AND SIMPLE GUIDANCE FOR USING STRONG’S NUMBERS ALONGSIDE OTHER BIBLE TOOLS ON THIS SITE. -AI
     </p>
   </header>
 
-  <section class="page-section strongs-overview" id="strongs-overview">
-    <h2>About Strong’s Concordance</h2>
+  <hr class="hub-divider">
+
+  <!-- Quick in-page navigation -->
+  <nav class="strongs-hub-nav" aria-label="STRONG’S CONCORDANCE SECTIONS -AI">
+    <a href="#overview">OVERVIEW -AI</a>
+    <a href="#hebrew">HEBREW (H-NUMBERS) -AI</a>
+    <a href="#greek">GREEK (G-NUMBERS) -AI</a>
+    <a href="#using-strongs">USING STRONG’S -AI</a>
+    <a href="#tools">TOOLS &amp; INTEGRATION -AI</a>
+    <a href="#getting-started">WHERE TO START -AI</a>
+    <a href="#back-links">MORE &amp; BACK LINKS -AI</a>
+  </nav>
+
+  <!-- Overview -->
+  <section class="page-section strongs-section strongs-overview" id="overview">
+    <h2>ABOUT STRONG’S CONCORDANCE -AI</h2>
     <p>
-      In this site, Strong’s numbers act as a bridge between English translations and the underlying Hebrew and Greek words, so you can move from a verse to the original term, its basic gloss, and related occurrences. -AI
+      STRONG’S CONCORDANCE WAS DESIGNED TO HELP READERS MOVE FROM TRANSLATED WORDS BACK TO THEIR UNDERLYING HEBREW OR GREEK LEMMAS, WITHOUT REQUIRING FULL TRAINING IN BIBLICAL LANGUAGES. -AI
     </p>
     <p>
-      Each Strong’s entry page provides the Strong’s number, the lemma (original-language form), a brief gloss, and links or references that can be expanded in future versions of the project. -AI
+      ON THIS SITE, STRONG’S NUMBERS ACT AS SIMPLE HANDLES: FROM A VERSE VIEW OR TOOL, YOU CAN FOLLOW AN H- OR G-NUMBER TO ITS ENTRY PAGE, SEE THE ORIGINAL-WORD FORM, AND BEGIN BASIC WORD STUDY. -AI
+    </p>
+    <p>
+      EACH ENTRY CAN EVENTUALLY INCLUDE A LEMMA, A SHORT GLOSS, BASIC PRONUNCIATION, AND LINKS TO PASSAGES OR TOOLS THAT USE THAT WORD, LEAVING ROOM FOR FUTURE GROWTH AND CROSS-CONNECTIONS. -AI
     </p>
   </section>
 
-  <section class="page-section strongs-language" id="strongs-hebrew">
-    <h2>Strong’s Hebrew Lexicon (H-numbers)</h2>
+  <!-- Lexicon cards -->
+  <section class="page-section strongs-section strongs-lexicons" id="lexicons">
+    <h2>STRONG’S LEXICONS -AI</h2>
     <p>
-      The Hebrew Strong’s lexicon covers words from the Old Testament, which was primarily written in Biblical Hebrew (with some Aramaic), a consonant-rich Semitic language used by ancient Israel. -AI
+      STRONG’S NUMBERS ARE GROUPED INTO TWO MAIN SETS: HEBREW (H-NUMBERS) FOR THE OLD TESTAMENT AND GREEK (G-NUMBERS) FOR THE NEW TESTAMENT. -AI
     </p>
-    <p>
-      Each Hebrew entry is labeled with an H-number (e.g., H0001) and links the English translation back to a specific Hebrew lemma, providing a starting point for word studies and cross-references. -AI
-    </p>
-    <p>
-      <a href="/literature/bible/strongs/hebrew/" class="btn">
-        Open Hebrew Strong’s Index
+
+    <div class="strongs-grid">
+      <a href="{{ '/literature/bible/strongs/hebrew/' | relative_url }}" class="strongs-card" id="hebrew">
+        <h3>HEBREW LEXICON (H-NUMBERS) -AI</h3>
+        <p>
+          THE HEBREW STRONG’S LEXICON COVERS WORDS PRIMARILY FROM THE OLD TESTAMENT, WRITTEN IN BIBLICAL HEBREW (WITH SOME ARAMAIC), A CONSONANT-RICH SEMITIC LANGUAGE USED BY ANCIENT ISRAEL. -AI
+        </p>
+        <ul>
+          <li>EACH ENTRY IS TAGGED WITH AN H-NUMBER (E.G., H0001). -AI</li>
+          <li>ENTRIES CONNECT ENGLISH RENDERINGS BACK TO A SPECIFIC HEBREW LEMMA. -AI</li>
+          <li>USEFUL AS A STARTING POINT FOR WORD STUDIES AND CROSS-REFERENCES. -AI</li>
+        </ul>
+        <span class="strongs-card-link-label">OPEN HEBREW STRONG’S INDEX -AI</span>
       </a>
-    </p>
-  </section>
 
-  <section class="page-section strongs-language" id="strongs-greek">
-    <h2>Strong’s Greek Lexicon (G-numbers)</h2>
-    <p>
-      The Greek Strong’s lexicon covers words from the New Testament, written in Koine Greek, the common dialect of the eastern Mediterranean world during the first century. -AI
-    </p>
-    <p>
-      Each Greek entry is labeled with a G-number (e.g., G0001) and connects English translations to their underlying Greek lemmas, helping you trace how a term is used across different passages. -AI
-    </p>
-    <p>
-      <a href="/literature/bible/strongs/greek/" class="btn">
-        Open Greek Strong’s Index
+      <a href="{{ '/literature/bible/strongs/greek/' | relative_url }}" class="strongs-card" id="greek">
+        <h3>GREEK LEXICON (G-NUMBERS) -AI</h3>
+        <p>
+          THE GREEK STRONG’S LEXICON COVERS WORDS FROM THE NEW TESTAMENT, WRITTEN IN KOINE GREEK, THE COMMON DIALECT OF THE EASTERN MEDITERRANEAN IN THE FIRST CENTURY. -AI
+        </p>
+        <ul>
+          <li>EACH ENTRY IS TAGGED WITH A G-NUMBER (E.G., G0001). -AI</li>
+          <li>ENTRIES CONNECT TRANSLATED WORDS TO THEIR UNDERLYING GREEK LEMMAS. -AI</li>
+          <li>HELPS YOU TRACE HOW A TERM IS USED ACROSS MULTIPLE PASSAGES. -AI</li>
+        </ul>
+        <span class="strongs-card-link-label">OPEN GREEK STRONG’S INDEX -AI</span>
       </a>
-    </p>
+    </div>
   </section>
 
-  <section class="page-section strongs-usage" id="using-strongs">
-    <h2>Using Strong’s on this site</h2>
-    <ul>
+  <!-- Using Strong's -->
+  <section class="page-section strongs-section strongs-usage" id="using-strongs">
+    <h2>USING STRONG’S NUMBERS ON THIS SITE -AI</h2>
+    <p>
+      STRONG’S NUMBERS ARE BUILT INTO VARIOUS TOOLS SO THAT YOU CAN MOVE BACK AND FORTH BETWEEN VERSES, WORD ENTRIES, AND OTHER RESOURCES WITHOUT LOSING YOUR PLACE. -AI
+    </p>
+
+    <ul class="strongs-usage-list">
       <li>
-        Follow Strong’s numbers from Bible tools or verse views to open the corresponding word entry and see its lemma and basic gloss. -AI
+        WHEN YOU SEE A STRONG’S NUMBER NEXT TO A WORD OR PHRASE, YOU CAN OPEN THAT ENTRY TO VIEW THE LEMMA, BASIC GLOSS, AND RELATED INFO. -AI
       </li>
       <li>
-        Use the Hebrew and Greek index pages to browse or search for specific H- or G-numbers when doing more focused word studies. -AI
+        USE THE HEBREW AND GREEK INDEX PAGES TO BROWSE OR SEARCH FOR SPECIFIC H- OR G-NUMBERS WHEN DOING MORE FOCUSED WORD STUDIES. -AI
       </li>
       <li>
-        As the project grows, additional links, references, and cross-tools will be added to make Strong’s-based study faster and more connected. -AI
+        TREAT STRONG’S AS A STARTING POINT: IT POINTS YOU TOWARD THE ORIGINAL WORD, BUT THE FULL MEANING STILL DEPENDS ON CONTEXT, GRAMMAR, AND THE FLOW OF THE PASSAGE. -AI
       </li>
     </ul>
   </section>
 
-  <section class="page-section page-links" id="back-links">
-    <h2>More</h2>
+  <!-- Tools & integration -->
+  <section class="page-section strongs-section strongs-tools" id="tools">
+    <h2>TOOLS &amp; INTEGRATION -AI</h2>
+    <p>
+      STRONG’S ENTRIES ARE DESIGNED TO CONNECT WITH OTHER BIBLE TOOLS, SO THAT LANGUAGE INFORMATION CAN SUPPORT REGULAR STUDY RATHER THAN SITTING OFF TO THE SIDE. -AI
+    </p>
+
+    <div class="strongs-tools-grid">
+      <article class="strongs-tools-card">
+        <h3>BIBLE VIEWER &amp; VERSE TOOLS -AI</h3>
+        <ul>
+          <li>
+            FUTURE VERSIONS OF THE BIBLE VIEWER CAN LET YOU TAP OR CLICK A WORD TO SEE ITS STRONG’S NUMBER AND OPEN THE ENTRY IN A SIDE PANEL OR NEW VIEW. -AI
+          </li>
+          <li>
+            THIS MAKES IT EASIER TO CHECK KEY WORDS WITHOUT LEAVING THE PASSAGE YOU ARE READING. -AI
+          </li>
+        </ul>
+      </article>
+
+      <article class="strongs-tools-card">
+        <h3>CONCORDANCE &amp; SEARCH TOOLS -AI</h3>
+        <ul>
+          <li>
+            STRONG’S NUMBERS CAN BE USED AS SEARCH KEYS, HELPING YOU FIND OTHER VERSES THAT USE THE SAME UNDERLYING WORD EVEN WHEN TRANSLATIONS DIFFER. -AI
+          </li>
+          <li>
+            FUTURE TOOLS MAY LET YOU FILTER RESULTS BY LANGUAGE, PART OF SPEECH, OR RELATED WORD FAMILIES. -AI
+          </li>
+        </ul>
+      </article>
+
+      <article class="strongs-tools-card">
+        <h3>WORD STUDIES &amp; LANGUAGE PAGES -AI</h3>
+        <ul>
+          <li>
+            STRONG’S ENTRIES WILL EVENTUALLY LINK OUT TO THE BIBLICAL LANGUAGE HUB AND SPECIFIC HEBREW OR GREEK PAGES FOR DEEPER EXPLANATIONS. -AI
+          </li>
+          <li>
+            THIS KEEPS STRONG’S IN ITS INTENDED ROLE: A SIMPLE INDEX THAT POINTS INTO BROADER LANGUAGE AND CONTEXT RESOURCES. -AI
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Getting started -->
+  <section class="page-section strongs-section strongs-start" id="getting-started">
+    <h2>WHERE TO START WITH STRONG’S -AI</h2>
+    <p>
+      WHETHER YOU ARE BRAND NEW TO STRONG’S OR HAVE USED IT BEFORE, THESE SIMPLE PATHS CAN HELP YOU INTEGRATE IT INTO YOUR REGULAR BIBLE STUDY. -AI
+    </p>
+
+    <div class="strongs-start-grid">
+      <article class="strongs-start-card">
+        <h3>I HAVE NEVER USED STRONG’S BEFORE -AI</h3>
+        <ul>
+          <li>START BY NOTICING WHEN H- OR G-NUMBERS APPEAR NEXT TO WORDS IN VERSE-BASED TOOLS. -AI</li>
+          <li>OPEN A FEW ENTRIES JUST TO SEE HOW THEY LOOK AND WHAT INFORMATION THEY PROVIDE. -AI</li>
+        </ul>
+        <p class="strongs-start-note">
+          FOCUS ON A FEW KEY WORDS IN A FAVORITE PASSAGE RATHER THAN TRYING TO LOOK UP EVERYTHING AT ONCE. -AI
+        </p>
+      </article>
+
+      <article class="strongs-start-card">
+        <h3>I WANT TO DO SIMPLE WORD STUDIES -AI</h3>
+        <ul>
+          <li>CHOOSE ONE H- OR G-NUMBER FROM A PASSAGE AND FOLLOW IT THROUGH OTHER VERSES THAT USE THE SAME ENTRY. -AI</li>
+          <li>COMPARE HOW TRANSLATIONS RENDER THAT WORD IN DIFFERENT CONTEXTS. -AI</li>
+        </ul>
+        <p class="strongs-start-note">
+          LET THESE COMPARISONS SEND YOU BACK TO THE PASSAGES THEMSELVES, WATCHING HOW CONTEXT SHAPES MEANING. -AI
+        </p>
+      </article>
+
+      <article class="strongs-start-card">
+        <h3>I USE LANGUAGE TOOLS REGULARLY -AI</h3>
+        <ul>
+          <li>INTEGRATE STRONG’S ENTRIES WITH OTHER RESOURCES, SUCH AS LEXICONS OR GRAMMAR NOTES, WHERE AVAILABLE. -AI</li>
+          <li>USE STRONG’S AS AN INDEX, NOT AS YOUR ONLY SOURCE FOR MEANING OR THEOLOGICAL CONCLUSIONS. -AI</li>
+        </ul>
+        <p class="strongs-start-note">
+          KEEP SCRIPTURE CENTRAL, AND LET LANGUAGE TOOLS SERVE CLARITY, HUMILITY, AND OBEDIENCE. -AI
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Back links -->
+  <section class="page-section page-links strongs-section" id="back-links">
+    <h2>MORE &amp; BACK LINKS -AI</h2>
     <ul>
-      <li><a href="/literature/bible/">Back to Bible hub</a></li>
-      <li><a href="/literature/index/">Back to Literature index</a></li>
+      <li>
+        <a href="{{ '/literature/bible/languages/' | relative_url }}">
+          GO TO BIBLICAL LANGUAGES HUB -AI
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/literature/bible/' | relative_url }}">
+          BACK TO BIBLE HUB -AI
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/literature/index/' | relative_url }}">
+          BACK TO LITERATURE INDEX -AI
+        </a>
+      </li>
     </ul>
+    <p class="strongs-editor-note">
+      EDITOR NOTE: UPDATE TEXT, LINKS, AND TOOL REFERENCES AS STRONG’S ENTRIES AND BIBLE TOOLS GROW, AND REMOVE THE -AI SUFFIX AS CONTENT IS REVIEWED AND FINALIZED. -AI
+    </p>
   </section>
 </main>
+
+<style>
+  .strongs-hub-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+
+  .strongs-section {
+    margin-top: 2.25rem;
+  }
+
+  .strongs-section h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+  }
+
+  /* QUICK NAV TABS */
+  .strongs-hub-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  .strongs-hub-nav a {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid var(--accent); /* THIN ACCENT BORDER FOR CONTRAST -AI */
+    background: rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+  }
+
+  .strongs-hub-nav a:hover,
+  .strongs-hub-nav a:focus {
+    border-color: var(--accent);
+  }
+
+  /* LEXICON GRID */
+  .strongs-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  @media (min-width: 800px) {
+    .strongs-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .strongs-card {
+    background: var(--panel);
+    border-radius: 1rem;
+    border: 1px solid #2a2f3a;
+    padding: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+
+  .strongs-card h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .strongs-card p {
+    margin: 0;
+  }
+
+  .strongs-card ul {
+    margin: 0.4rem 0 0;
+    padding-left: 1.25rem;
+    font-size: 0.88rem;
+  }
+
+  .strongs-card ul li + li {
+    margin-top: 0.25rem;
+  }
+
+  .strongs-card-link-label {
+    margin-top: 0.4rem;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.9;
+  }
+
+  .strongs-card:hover,
+  .strongs-card:focus-within {
+    border-color: var(--accent);
+  }
+
+  /* USAGE LIST */
+  .strongs-usage-list {
+    margin-top: 0.75rem;
+    padding-left: 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .strongs-usage-list li + li {
+    margin-top: 0.35rem;
+  }
+
+  /* TOOLS GRID */
+  .strongs-tools-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  @media (min-width: 900px) {
+    .strongs-tools-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .strongs-tools-card {
+    background: var(--panel);
+    border-radius: 1rem;
+    border: 1px solid #2a2f3a;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .strongs-tools-card h3 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .strongs-tools-card ul {
+    margin-top: 0.4rem;
+    padding-left: 1.25rem;
+    font-size: 0.88rem;
+  }
+
+  .strongs-tools-card ul li + li {
+    margin-top: 0.25rem;
+  }
+
+  /* GETTING STARTED GRID */
+  .strongs-start-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  @media (min-width: 900px) {
+    .strongs-start-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .strongs-start-card {
+    background: var(--panel);
+    border-radius: 1rem;
+    border: 1px solid #2a2f3a;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .strongs-start-card h3 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .strongs-start-card ul {
+    margin-top: 0.4rem;
+    padding-left: 1.25rem;
+    font-size: 0.88rem;
+  }
+
+  .strongs-start-card ul li + li {
+    margin-top: 0.25rem;
+  }
+
+  .strongs-start-note {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .strongs-editor-note {
+    margin-top: 2.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>
