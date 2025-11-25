@@ -416,6 +416,105 @@ permalink: /tools-games/tools/scs/
     accent-color: var(--scs-accent);
   }
 
+  /* Segmented toggles */
+
+  .scs-toggle-group {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 2px;
+    background: rgba(22, 20, 15, 0.98);
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    box-shadow: 0 10px 30px rgba(16, 12, 8, 0.96);
+  }
+
+  .scs-toggle-btn {
+    border: none;
+    background: transparent;
+    color: var(--scs-text-muted);
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    min-width: 58px;
+    text-align: center;
+  }
+
+  .scs-toggle-btn.scs-toggle-active {
+    background: rgba(250, 204, 21, 0.14);
+    color: var(--scs-text-soft);
+    box-shadow:
+      0 0 0 1px rgba(250, 204, 21, 0.8),
+      0 12px 30px rgba(16, 12, 8, 0.98);
+  }
+
+  .scs-toggle-btn:not(.scs-toggle-active):hover {
+    background: rgba(148, 163, 184, 0.16);
+  }
+
+  /* Occurrence sliders */
+
+  .scs-occ-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .scs-occ-sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .scs-occ-slider-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--scs-text-muted);
+  }
+
+  .scs-occ-slider-row input[type="range"] {
+    flex: 1;
+  }
+
+  .scs-occ-slider-row span {
+    white-space: nowrap;
+  }
+
+  input[type="range"] {
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 999px;
+    background: rgba(30, 28, 22, 0.95);
+    outline: none;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    background: var(--scs-accent);
+    border: 1px solid rgba(15, 23, 42, 0.9);
+    box-shadow:
+      0 0 0 3px rgba(250, 204, 21, 0.25),
+      0 12px 30px rgba(16, 12, 8, 0.98);
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    background: var(--scs-accent);
+    border: 1px solid rgba(15, 23, 42, 0.9);
+    box-shadow:
+      0 0 0 3px rgba(250, 204, 21, 0.25),
+      0 12px 30px rgba(16, 12, 8, 0.98);
+  }
+
   .scs-filters-footer {
     margin-top: 10px;
     display: flex;
@@ -586,7 +685,6 @@ permalink: /tools-games/tools/scs/
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-height: 640px;
     overflow: auto;
     padding-right: 4px;
   }
@@ -865,17 +963,21 @@ permalink: /tools-games/tools/scs/
   let SCS_SORT = "strongs";
   let SCS_GLOBAL_RANKS = { grc: {}, he: {} };
 
-  // Extra state for multi-selects (books + letters)
   let SCS_BOOKS_SELECTED = [];
   let SCS_INITIAL_LETTERS_SELECTED = { grc: [], he: [] };
 
+  let SCS_OCC_MIN = 0;
+  let SCS_OCC_MAX = 0;
+
   const SCS_FILTER_ELEMS = {
-    language: null,
-    testament: null,
+    languageToggleButtons: [],
+    testamentToggleButtons: [],
     book_from: null,
     book_to: null,
-    occurrence_min: null,
-    occurrence_max: null,
+    occurrence_min_input: null,
+    occurrence_max_input: null,
+    occurrence_min_slider: null,
+    occurrence_max_slider: null,
     query: null,
     letter_from_grc: null,
     letter_to_grc: null,
@@ -993,11 +1095,23 @@ permalink: /tools-games/tools/scs/
     SCS_GLOBAL_RANKS = ranks;
   }
 
+  function computeOccurrenceMinMax() {
+    let min = Infinity;
+    let max = 0;
+    for (const e of SCS_ENTRIES) {
+      const c = e.occurrence_count || 0;
+      if (c < min) min = c;
+      if (c > max) max = c;
+    }
+    if (!Number.isFinite(min)) min = 0;
+    SCS_OCC_MIN = min;
+    SCS_OCC_MAX = max;
+  }
+
   function getInitialLetterForEntry(e) {
     const lemma = (e.lemma_unicode || "").trim();
     if (!lemma) return null;
     let ch = lemma[0];
-    // Strip combining diacritics (breathing marks, tonos, vowel points)
     try {
       ch = ch.normalize("NFD").replace(/\p{M}+/gu, "");
     } catch (err) {
@@ -1095,7 +1209,6 @@ permalink: /tools-games/tools/scs/
     const rangeCodes = getBookRangeCodes(fromVal, toVal);
     const set = new Set([...SCS_BOOKS_SELECTED, ...rangeCodes]);
     SCS_FILTER_STATE.books = Array.from(set);
-    // Update summary label
     if (SCS_FILTER_ELEMS.book_multi_label) {
       if (SCS_BOOKS_SELECTED.length === 0 && rangeCodes.length === 0) {
         SCS_FILTER_ELEMS.book_multi_label.textContent = "Any book(s)";
@@ -1158,12 +1271,14 @@ permalink: /tools-games/tools/scs/
       return;
     }
 
-    SCS_FILTER_ELEMS.language = null;
-    SCS_FILTER_ELEMS.testament = null;
+    SCS_FILTER_ELEMS.languageToggleButtons = [];
+    SCS_FILTER_ELEMS.testamentToggleButtons = [];
     SCS_FILTER_ELEMS.book_from = null;
     SCS_FILTER_ELEMS.book_to = null;
-    SCS_FILTER_ELEMS.occurrence_min = null;
-    SCS_FILTER_ELEMS.occurrence_max = null;
+    SCS_FILTER_ELEMS.occurrence_min_input = null;
+    SCS_FILTER_ELEMS.occurrence_max_input = null;
+    SCS_FILTER_ELEMS.occurrence_min_slider = null;
+    SCS_FILTER_ELEMS.occurrence_max_slider = null;
     SCS_FILTER_ELEMS.query = null;
     SCS_FILTER_ELEMS.letter_from_grc = null;
     SCS_FILTER_ELEMS.letter_to_grc = null;
@@ -1191,11 +1306,11 @@ permalink: /tools-games/tools/scs/
       } else if (filter.id === "book") {
         hint.textContent = "Select specific books and/or a range (From → To).";
       } else if (filter.id === "occurrence_range") {
-        hint.textContent = "Min/max Strong's occurrences in KJV.";
+        hint.textContent = "Min/max Strong's occurrences in KJV (slider + box).";
       } else if (filter.id === "language") {
         hint.textContent = "Greek, Hebrew, or both.";
       } else if (filter.id === "testament") {
-        hint.textContent = "Old / New Testament (or Deuterocanon).";
+        hint.textContent = "All / OT / NT (Deuterocanon follows All).";
       } else {
         hint.textContent = "";
       }
@@ -1204,7 +1319,85 @@ permalink: /tools-games/tools/scs/
       labelRow.appendChild(hint);
       group.appendChild(labelRow);
 
-      if (filter.type === "single-select" && filter.id !== "book") {
+      if (filter.id === "language") {
+        const tg = document.createElement("div");
+        tg.className = "scs-toggle-group";
+
+        const opts = [
+          { label: "Heb", value: "he", def: false },
+          { label: "Both", value: "", def: true },
+          { label: "Gr", value: "grc", def: false }
+        ];
+
+        const buttons = [];
+        for (const opt of opts) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "scs-toggle-btn" + (opt.def ? " scs-toggle-active" : "");
+          btn.textContent = opt.label;
+          btn.dataset.langValue = opt.value;
+          if (opt.def) {
+            btn.dataset.default = "true";
+          }
+
+          btn.addEventListener("click", () => {
+            buttons.forEach(b => b.classList.remove("scs-toggle-active"));
+            btn.classList.add("scs-toggle-active");
+            const v = btn.dataset.langValue;
+            SCS_FILTER_STATE.language = v === "" ? null : v;
+            applyFiltersAndRender();
+          });
+
+          tg.appendChild(btn);
+          buttons.push(btn);
+        }
+
+        SCS_FILTER_ELEMS.languageToggleButtons = buttons;
+        group.appendChild(tg);
+        root.appendChild(group);
+        continue;
+      }
+
+      if (filter.id === "testament") {
+        const tg = document.createElement("div");
+        tg.className = "scs-toggle-group";
+
+        const opts = [
+          { label: "All", value: "", def: true },
+          { label: "OT", value: "ot", def: false },
+          { label: "NT", value: "nt", def: false }
+        ];
+
+        const buttons = [];
+        for (const opt of opts) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "scs-toggle-btn" + (opt.def ? " scs-toggle-active" : "");
+          btn.textContent = opt.label;
+          btn.dataset.testValue = opt.value;
+          if (opt.def) {
+            btn.dataset.default = "true";
+          }
+
+          btn.addEventListener("click", () => {
+            buttons.forEach(b => b.classList.remove("scs-toggle-active"));
+            btn.classList.add("scs-toggle-active");
+            const v = btn.dataset.testValue;
+            SCS_FILTER_STATE.testament = v === "" ? null : v;
+            applyFiltersAndRender();
+          });
+
+          tg.appendChild(btn);
+          buttons.push(btn);
+        }
+
+        SCS_FILTER_ELEMS.testamentToggleButtons = buttons;
+        group.appendChild(tg);
+        root.appendChild(group);
+        continue;
+      }
+
+      if (filter.type === "single-select" && filter.id !== "book" && filter.id !== "language" && filter.id !== "testament") {
         const select = document.createElement("select");
         select.className = "scs-select";
         select.dataset.filterId = filter.id;
@@ -1234,14 +1427,7 @@ permalink: /tools-games/tools/scs/
         });
 
         group.appendChild(select);
-
-        if (filter.id === "language") {
-          SCS_FILTER_ELEMS.language = select;
-        } else if (filter.id === "testament") {
-          SCS_FILTER_ELEMS.testament = select;
-        }
       } else if (filter.id === "book") {
-        // Multi-select (checkbox) + range for books
         const booksList = getBookOrderList();
 
         const multiRow = document.createElement("div");
@@ -1307,7 +1493,6 @@ permalink: /tools-games/tools/scs/
 
         SCS_FILTER_ELEMS.book_multi_label = multiLabelSpan;
 
-        // Range row
         const row = document.createElement("div");
         row.className = "scs-range-row";
 
@@ -1353,37 +1538,117 @@ permalink: /tools-games/tools/scs/
         SCS_FILTER_ELEMS.book_from = fromSel;
         SCS_FILTER_ELEMS.book_to = toSel;
       } else if (filter.type === "range" && filter.id === "occurrence_range") {
-        const row = document.createElement("div");
-        row.className = "scs-range-row";
+        const occWrapper = document.createElement("div");
+        occWrapper.className = "scs-occ-wrapper";
+
+        const boxesRow = document.createElement("div");
+        boxesRow.className = "scs-range-row";
 
         const inputMin = document.createElement("input");
         inputMin.type = "number";
         inputMin.min = "0";
         inputMin.placeholder = "Min";
         inputMin.className = "scs-input";
-        inputMin.addEventListener("input", () => {
-          const v = inputMin.value.trim();
-          SCS_FILTER_STATE.occurrence_min = v === "" ? null : Number(v);
-          applyFiltersAndRender();
-        });
-
         const inputMax = document.createElement("input");
         inputMax.type = "number";
         inputMax.min = "0";
         inputMax.placeholder = "Max";
         inputMax.className = "scs-input";
-        inputMax.addEventListener("input", () => {
-          const v = inputMax.value.trim();
-          SCS_FILTER_STATE.occurrence_max = v === "" ? null : Number(v);
+
+        inputMin.addEventListener("input", () => {
+          const v = inputMin.value.trim();
+          let num = v === "" ? null : Number(v);
+          if (num != null && !Number.isNaN(num)) {
+            if (num < SCS_OCC_MIN) num = SCS_OCC_MIN;
+            if (SCS_FILTER_STATE.occurrence_max != null && num > SCS_FILTER_STATE.occurrence_max) {
+              num = SCS_FILTER_STATE.occurrence_max;
+              inputMin.value = String(num);
+            }
+          }
+          SCS_FILTER_STATE.occurrence_min = num;
+          if (SCS_FILTER_ELEMS.occurrence_min_slider && num != null) {
+            SCS_FILTER_ELEMS.occurrence_min_slider.value = String(num);
+          }
           applyFiltersAndRender();
         });
 
-        row.appendChild(inputMin);
-        row.appendChild(inputMax);
-        group.appendChild(row);
+        inputMax.addEventListener("input", () => {
+          const v = inputMax.value.trim();
+          let num = v === "" ? null : Number(v);
+          if (num != null && !Number.isNaN(num)) {
+            if (num > SCS_OCC_MAX) num = SCS_OCC_MAX;
+            if (SCS_FILTER_STATE.occurrence_min != null && num < SCS_FILTER_STATE.occurrence_min) {
+              num = SCS_FILTER_STATE.occurrence_min;
+              inputMax.value = String(num);
+            }
+          }
+          SCS_FILTER_STATE.occurrence_max = num;
+          if (SCS_FILTER_ELEMS.occurrence_max_slider && num != null) {
+            SCS_FILTER_ELEMS.occurrence_max_slider.value = String(num);
+          }
+          applyFiltersAndRender();
+        });
 
-        SCS_FILTER_ELEMS.occurrence_min = inputMin;
-        SCS_FILTER_ELEMS.occurrence_max = inputMax;
+        boxesRow.appendChild(inputMin);
+        boxesRow.appendChild(inputMax);
+        occWrapper.appendChild(boxesRow);
+
+        const slidersBlock = document.createElement("div");
+        slidersBlock.className = "scs-occ-sliders";
+
+        const rowMin = document.createElement("div");
+        rowMin.className = "scs-occ-slider-row";
+        const rowMax = document.createElement("div");
+        rowMax.className = "scs-occ-slider-row";
+
+        const labelMin = document.createElement("span");
+        labelMin.textContent = "Min slider:";
+        const labelMax = document.createElement("span");
+        labelMax.textContent = "Max slider:";
+
+        const sliderMin = document.createElement("input");
+        sliderMin.type = "range";
+        const sliderMax = document.createElement("input");
+        sliderMax.type = "range";
+
+        sliderMin.addEventListener("input", () => {
+          let val = Number(sliderMin.value);
+          if (SCS_FILTER_STATE.occurrence_max != null && val > SCS_FILTER_STATE.occurrence_max) {
+            val = SCS_FILTER_STATE.occurrence_max;
+            sliderMin.value = String(val);
+          }
+          SCS_FILTER_STATE.occurrence_min = val;
+          inputMin.value = String(val);
+          applyFiltersAndRender();
+        });
+
+        sliderMax.addEventListener("input", () => {
+          let val = Number(sliderMax.value);
+          if (SCS_FILTER_STATE.occurrence_min != null && val < SCS_FILTER_STATE.occurrence_min) {
+            val = SCS_FILTER_STATE.occurrence_min;
+            sliderMax.value = String(val);
+          }
+          SCS_FILTER_STATE.occurrence_max = val;
+          inputMax.value = String(val);
+          applyFiltersAndRender();
+        });
+
+        rowMin.appendChild(labelMin);
+        rowMin.appendChild(sliderMin);
+
+        rowMax.appendChild(labelMax);
+        rowMax.appendChild(sliderMax);
+
+        slidersBlock.appendChild(rowMin);
+        slidersBlock.appendChild(rowMax);
+        occWrapper.appendChild(slidersBlock);
+
+        group.appendChild(occWrapper);
+
+        SCS_FILTER_ELEMS.occurrence_min_input = inputMin;
+        SCS_FILTER_ELEMS.occurrence_max_input = inputMax;
+        SCS_FILTER_ELEMS.occurrence_min_slider = sliderMin;
+        SCS_FILTER_ELEMS.occurrence_max_slider = sliderMax;
       } else if (filter.type === "text" && filter.id === "query") {
         const input = document.createElement("input");
         input.type = "search";
@@ -1407,6 +1672,8 @@ permalink: /tools-games/tools/scs/
       resetFilters();
       applyFiltersAndRender();
     });
+
+    initOccurrenceSliders();
   }
 
   function buildLetterFilterUI(root) {
@@ -1432,7 +1699,6 @@ permalink: /tools-games/tools/scs/
       const letters = SCS_INITIAL_LETTERS[lang] || [];
       if (!letters.length) return;
 
-      // Multi-select block
       const multiRow = document.createElement("div");
       multiRow.className = "scs-multi-row";
 
@@ -1500,7 +1766,6 @@ permalink: /tools-games/tools/scs/
         SCS_FILTER_ELEMS.letter_multi_label_he = multiLabelSpan;
       }
 
-      // Range row
       const subHint = document.createElement("div");
       subHint.className = "scs-filter-hint";
       subHint.textContent = labelText + " letters range (From → To).";
@@ -1564,6 +1829,34 @@ permalink: /tools-games/tools/scs/
     root.appendChild(group);
   }
 
+  function initOccurrenceSliders() {
+    if (!SCS_FILTER_ELEMS.occurrence_min_slider || !SCS_FILTER_ELEMS.occurrence_max_slider) return;
+
+    const min = SCS_OCC_MIN;
+    const max = SCS_OCC_MAX;
+
+    const sMin = SCS_FILTER_ELEMS.occurrence_min_slider;
+    const sMax = SCS_FILTER_ELEMS.occurrence_max_slider;
+
+    sMin.min = String(min);
+    sMin.max = String(max);
+    sMax.min = String(min);
+    sMax.max = String(max);
+
+    sMin.value = String(min);
+    sMax.value = String(max);
+
+    if (SCS_FILTER_ELEMS.occurrence_min_input) {
+      SCS_FILTER_ELEMS.occurrence_min_input.value = "";
+    }
+    if (SCS_FILTER_ELEMS.occurrence_max_input) {
+      SCS_FILTER_ELEMS.occurrence_max_input.value = "";
+    }
+
+    SCS_FILTER_STATE.occurrence_min = null;
+    SCS_FILTER_STATE.occurrence_max = null;
+  }
+
   function resetFilters() {
     SCS_FILTER_STATE.language = null;
     SCS_FILTER_STATE.testament = null;
@@ -1576,12 +1869,10 @@ permalink: /tools-games/tools/scs/
     SCS_BOOKS_SELECTED = [];
     SCS_INITIAL_LETTERS_SELECTED = { grc: [], he: [] };
 
-    if (SCS_FILTER_ELEMS.language) SCS_FILTER_ELEMS.language.value = "";
-    if (SCS_FILTER_ELEMS.testament) SCS_FILTER_ELEMS.testament.value = "";
     if (SCS_FILTER_ELEMS.book_from) SCS_FILTER_ELEMS.book_from.value = "";
     if (SCS_FILTER_ELEMS.book_to) SCS_FILTER_ELEMS.book_to.value = "";
-    if (SCS_FILTER_ELEMS.occurrence_min) SCS_FILTER_ELEMS.occurrence_min.value = "";
-    if (SCS_FILTER_ELEMS.occurrence_max) SCS_FILTER_ELEMS.occurrence_max.value = "";
+    if (SCS_FILTER_ELEMS.occurrence_min_input) SCS_FILTER_ELEMS.occurrence_min_input.value = "";
+    if (SCS_FILTER_ELEMS.occurrence_max_input) SCS_FILTER_ELEMS.occurrence_max_input.value = "";
     if (SCS_FILTER_ELEMS.query) SCS_FILTER_ELEMS.query.value = "";
     if (SCS_FILTER_ELEMS.letter_from_grc) SCS_FILTER_ELEMS.letter_from_grc.value = "";
     if (SCS_FILTER_ELEMS.letter_to_grc) SCS_FILTER_ELEMS.letter_to_grc.value = "";
@@ -1604,6 +1895,24 @@ permalink: /tools-games/tools/scs/
     document.querySelectorAll('input[data-scs-letter-checkbox]').forEach(cb => {
       cb.checked = false;
     });
+
+    if (SCS_FILTER_ELEMS.languageToggleButtons && SCS_FILTER_ELEMS.languageToggleButtons.length) {
+      SCS_FILTER_ELEMS.languageToggleButtons.forEach(btn => {
+        const isDefault = btn.dataset.default === "true";
+        btn.classList.toggle("scs-toggle-active", isDefault);
+      });
+    }
+    if (SCS_FILTER_ELEMS.testamentToggleButtons && SCS_FILTER_ELEMS.testamentToggleButtons.length) {
+      SCS_FILTER_ELEMS.testamentToggleButtons.forEach(btn => {
+        const isDefault = btn.dataset.default === "true";
+        btn.classList.toggle("scs-toggle-active", isDefault);
+      });
+    }
+
+    if (SCS_FILTER_ELEMS.occurrence_min_slider && SCS_FILTER_ELEMS.occurrence_max_slider) {
+      SCS_FILTER_ELEMS.occurrence_min_slider.value = String(SCS_OCC_MIN);
+      SCS_FILTER_ELEMS.occurrence_max_slider.value = String(SCS_OCC_MAX);
+    }
 
     updateBooksFilter();
     updateInitialLettersFilter("grc");
@@ -2041,6 +2350,7 @@ permalink: /tools-games/tools/scs/
         SCS_BOOK_ORDER = booksMeta.order;
       }
 
+      computeOccurrenceMinMax();
       buildGlobalOccurrenceRanks();
       buildInitialLetters();
       buildFiltersUI();
