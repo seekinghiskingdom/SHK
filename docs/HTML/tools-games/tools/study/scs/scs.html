@@ -455,21 +455,22 @@ permalink: /tools-games/tools/scs/
       0 16px 45px rgba(10, 10, 12, 0.98),
       0 0 0 1px rgba(10, 10, 12, 0.96);
     display: grid;
-    grid-template-columns: minmax(0, 0.95fr) minmax(0, 0.8fr);
-    gap: 8px;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.7fr); /* wider left column */
+    gap: 10px;
   }
 
   .scs-entry-main {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
   }
 
   .scs-entry-header {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
+    margin-bottom: 4px;
   }
 
   .scs-entry-id {
@@ -483,12 +484,12 @@ permalink: /tools-games/tools/scs/
   }
 
   .scs-entry-lemma {
-    font-size: 18px;
+    font-size: 32px;   /* bigger lemma */
     font-weight: 500;
   }
 
   .scs-entry-translit {
-    font-size: 14px;
+    font-size: 22px;   /* bigger transliteration */
     color: var(--scs-text-soft);
   }
 
@@ -496,7 +497,7 @@ permalink: /tools-games/tools/scs/
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-top: 4px;
+    margin-top: 6px;
   }
 
   .scs-chip {
@@ -518,7 +519,7 @@ permalink: /tools-games/tools/scs/
   }
 
   .scs-entry-def {
-    margin-top: 4px;
+    margin-top: 6px;
     font-size: 14px;
     color: var(--scs-text-soft);
   }
