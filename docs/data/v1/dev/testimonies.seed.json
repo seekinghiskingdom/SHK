@@ -1,0 +1,241 @@
+{
+  "users": [
+    {
+      "id": "u_david",
+      "display_name": "David son of Jesse",
+      "email": "david@example.test",
+      "profile_image_url": "/assets/dev/avatars/david.png"
+    },
+    {
+      "id": "u_esther",
+      "display_name": "Esther in the Courts",
+      "email": "esther@example.test",
+      "profile_image_url": "/assets/dev/avatars/esther.png"
+    },
+    {
+      "id": "u_peter",
+      "display_name": "Peter the Fisherman",
+      "email": "peter@example.test",
+      "profile_image_url": "/assets/dev/avatars/peter.png"
+    },
+    {
+      "id": "u_mary_bethany",
+      "display_name": "Mary of Bethany",
+      "email": "mary.bethany@example.test",
+      "profile_image_url": "/assets/dev/avatars/mary_bethany.png"
+    },
+    {
+      "id": "u_paul",
+      "display_name": "Paul (formerly Saul)",
+      "email": "paul@example.test",
+      "profile_image_url": "/assets/dev/avatars/paul.png"
+    },
+    {
+      "id": "u_ruth",
+      "display_name": "Ruth the Moabite",
+      "email": "ruth@example.test",
+      "profile_image_url": "/assets/dev/avatars/ruth.png"
+    },
+    {
+      "id": "u_elijah",
+      "display_name": "Elijah on the Mountain",
+      "email": "elijah@example.test",
+      "profile_image_url": "/assets/dev/avatars/elijah.png"
+    },
+    {
+      "id": "u_hannah",
+      "display_name": "Hannah at Shiloh",
+      "email": "hannah@example.test",
+      "profile_image_url": "/assets/dev/avatars/hannah.png"
+    },
+    {
+      "id": "u_daniel",
+      "display_name": "Daniel in Babylon",
+      "email": "daniel@example.test",
+      "profile_image_url": "/assets/dev/avatars/daniel.png"
+    },
+    {
+      "id": "u_mary_mag",
+      "display_name": "Mary Magdalene",
+      "email": "mary.mag@example.test",
+      "profile_image_url": "/assets/dev/avatars/mary_mag.png"
+    }
+  ],
+
+  "testimonies": [
+    {
+      "id": "t_david_salvation",
+      "author_user_id": "u_david",
+      "category": "salvation_testimony",
+      "status": "submitted",
+      "title": "From forgotten shepherd to singing King",
+      "body": "I was the youngest, mostly known as 'the one with the sheep and the harp.' I didn’t look like much next to my brothers, but the Lord saw my heart when no one else did. Being anointed while still smelling like sheep was His way of saying, 'I choose the overlooked.' Every victory and every failure since has just proven that my strength was never the point—His faithfulness was.",
+      "visibility": "public",
+      "tags": ["identity", "calling", "worship"],
+      "event_date": "1015-01-01",
+      "submitted_at": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "t_david_goliath",
+      "author_user_id": "u_david",
+      "category": "miracle_testimony",
+      "status": "submitted",
+      "title": "That time I brought snacks and fought a giant",
+      "body": "I left home delivering bread and cheese and somehow ended up staring at a giant who’d been mocking God all morning. Everyone else saw armor; I just saw someone insulting the Lord. A sling, five stones, one prayer, and suddenly the battlefield went from laughter to silence. I didn’t win because I was brave; I won because I knew the battle was His, not mine.",
+      "visibility": "public",
+      "tags": ["courage", "battle", "faith"],
+      "event_date": "1010-01-01",
+      "submitted_at": "2025-01-02T09:15:00Z"
+    },
+    {
+      "id": "t_david_prayer_psalm51",
+      "author_user_id": "u_david",
+      "category": "prayer_request",
+      "status": "submitted",
+      "title": "When my sin finally caught up with me",
+      "body": "I thought I could manage my own mess: the cover-up, the staged story, the silence. Then Nathan told a story that sounded uncomfortably like mine, and I realized God had seen all of it in real time. My prayer was simple and ugly: 'Create in me a clean heart.' I wasn’t asking for my throne back; I was begging not to lose His presence.",
+      "visibility": "public_anonymous",
+      "tags": ["repentance", "mercy"],
+      "event_date": "1005-01-01",
+      "submitted_at": "2025-01-03T20:30:00Z"
+    },
+
+    {
+      "id": "t_esther_salvation",
+      "author_user_id": "u_esther",
+      "category": "salvation_testimony",
+      "status": "submitted",
+      "title": "Hidden orphan, unexpected queen",
+      "body": "I grew up as the girl whose parents were a story, not a memory. I learned early that life could change without asking permission. Being taken into the palace felt more like being drafted than chosen. But when my people’s survival came down to whether I was brave enough to speak, I realized God hadn’t put me in the palace for comfort but for timing.",
+      "visibility": "public",
+      "tags": ["calling", "courage", "providence"],
+      "event_date": "0475-01-01",
+      "submitted_at": "2025-01-01T11:00:00Z"
+    },
+    {
+      "id": "t_esther_fast",
+      "author_user_id": "u_esther",
+      "category": "prayer_request",
+      "status": "submitted",
+      "title": "If I perish, I perish (but please pray I don’t)",
+      "body": "I had to walk into a room where one raised eyebrow from the king could mean my last day on earth. I didn’t ask people to hype me up; I asked them to fast. Three days of empty plates and full prayers. By the time I touched the scepter, my fear was still there, but so was a quiet sense that Heaven had already entered the room before I did.",
+      "visibility": "public",
+      "tags": ["fasting", "intercession", "favor"],
+      "event_date": "0473-01-01",
+      "submitted_at": "2025-01-02T12:10:00Z"
+    },
+
+    {
+      "id": "t_peter_salvation",
+      "author_user_id": "u_peter",
+      "category": "salvation_testimony",
+      "status": "submitted",
+      "title": "From loud fisherman to forgiven shepherd",
+      "body": "My mouth always moved faster than my faith. I promised I’d die for Him and then couldn’t even admit I knew Him to a servant girl. The rooster didn’t just crow; it exposed me. What changed me wasn’t my regret; it was breakfast on the beach when the risen Jesus asked, three times, if I loved Him—and didn’t fire me from the job.",
+      "visibility": "public",
+      "tags": ["restoration", "calling", "failure"],
+      "event_date": "0033-01-01",
+      "submitted_at": "2025-01-01T08:45:00Z"
+    },
+    {
+      "id": "t_peter_water",
+      "author_user_id": "u_peter",
+      "category": "life_testimony",
+      "status": "submitted",
+      "title": "Walking on water… for a few very honest seconds",
+      "body": "When He said 'come,' I actually stepped out. For a short moment the impossible felt normal, and then I remembered waves, wind, and physics. The second I started calculating odds instead of looking at Him, I sank. The real miracle wasn’t just that I walked; it’s that the hand that caught me didn’t let my failure be the last chapter.",
+      "visibility": "public",
+      "tags": ["faith", "fear", "focus"],
+      "event_date": "0031-01-01",
+      "submitted_at": "2025-01-03T07:30:00Z"
+    },
+
+    {
+      "id": "t_paul_salvation",
+      "author_user_id": "u_paul",
+      "category": "salvation_testimony",
+      "status": "submitted",
+      "title": "From church hunter to church planter",
+      "body": "My resume was spotless and my heart was hostile. I honestly thought I was defending God by hurting His people. Then a light brighter than my certainty knocked me off my animal and a voice asked why I was persecuting not just a group, but Him. When the man I came to arrest called me 'Brother Saul,' I realized grace could reach even someone like me.",
+      "visibility": "public",
+      "tags": ["grace", "conversion", "calling"],
+      "event_date": "0034-01-01",
+      "submitted_at": "2025-01-01T13:00:00Z"
+    },
+    {
+      "id": "t_paul_thorn",
+      "author_user_id": "u_paul",
+      "category": "prayer_request",
+      "status": "submitted",
+      "title": "The prayer He answered with 'no, but…'",
+      "body": "I asked three times for this thorn to go away. I know how to pray bold prayers; I’ve seen chains fall, doors open, and bodies healed. This time the answer wasn’t removal—it was a sentence: 'My grace is sufficient for you.' I didn’t get a lighter load; I got stronger shoulders because His power likes to set up shop in weakness.",
+      "visibility": "public",
+      "tags": ["suffering", "grace", "weakness"],
+      "event_date": "0055-01-01",
+      "submitted_at": "2025-01-04T14:20:00Z"
+    },
+
+    {
+      "id": "t_ruth_loyalty",
+      "author_user_id": "u_ruth",
+      "category": "life_testimony",
+      "status": "submitted",
+      "title": "Leaving my gods, choosing my mother-in-law’s God",
+      "body": "My future looked like empty fields and a bitter mother-in-law with nothing left to offer. Staying in Moab would have been easier, but I couldn’t walk away from the God I’d seen in her grief. ‘Your people will be my people and your God my God’ wasn’t a poetic line; it was my one-way ticket into a story I didn’t know He’d already written me into.",
+      "visibility": "public",
+      "tags": ["loyalty", "family", "providence"],
+      "event_date": "1100-01-01",
+      "submitted_at": "2025-01-02T16:00:00Z"
+    },
+    {
+      "id": "t_ruth_blessing",
+      "author_user_id": "u_ruth",
+      "category": "daily_blessing",
+      "status": "submitted",
+      "title": "From gleaning leftovers to owning the field",
+      "body": "I went out hoping someone would let me pick up what they dropped. I came home with more grain than made sense for a stranger, plus stories about a man who had heard of my loyalty. I didn’t ask God for marriage or a place in Israel’s future; I just asked for enough food for today. He answered with a husband, a child, and a spot in the Messiah’s family tree.",
+      "visibility": "public",
+      "tags": ["provision", "kindness", "future"],
+      "event_date": "1098-01-01",
+      "submitted_at": "2025-01-03T18:05:00Z"
+    },
+
+    {
+      "id": "t_daniel_lions",
+      "author_user_id": "u_daniel",
+      "category": "miracle_testimony",
+      "status": "submitted",
+      "title": "Sleeping fine in a room full of hungry lions",
+      "body": "I didn’t end up in the lions’ den because I forgot to pray; I ended up there because I refused to stop. The stone rolled over the entrance sounded a lot like 'this is how it ends.' But sometime in the night, growls turned into purring, and I realized the angels did more than I could see. By morning the king was more anxious than I was.",
+      "visibility": "public",
+      "tags": ["courage", "deliverance", "prayer"],
+      "event_date": "0538-01-01",
+      "submitted_at": "2025-01-02T21:10:00Z"
+    },
+
+    {
+      "id": "t_hannah_prayer",
+      "author_user_id": "u_hannah",
+      "category": "prayer_request",
+      "status": "submitted",
+      "title": "Ugly-cry prayer at the temple",
+      "body": "I was so tired of smiling through other people’s baby pictures. I went to pray and ran out of polite words, so my lips moved but sound didn’t. The priest thought I was drunk; I was just done pretending I was fine. I asked for one child and promised to give him back. The day I dropped Samuel off at the temple, I realized God had turned my private ache into public ministry.",
+      "visibility": "public",
+      "tags": ["barrenness", "prayer", "surrender"],
+      "event_date": "1105-01-01",
+      "submitted_at": "2025-01-01T19:40:00Z"
+    },
+    {
+      "id": "t_mary_mag_resurrection",
+      "author_user_id": "u_mary_mag",
+      "category": "miracle_testimony",
+      "status": "submitted",
+      "title": "When the gardener said my name",
+      "body": "I went to the tomb to finish caring for a dead body and argue with a stone. Instead, I found emptiness that looked like theft until He said my name. I’d heard His voice cast out the darkness in me before; this time it broke the funeral in my heart. The first time I met Him He freed me; this time He sent me: 'Go tell my brothers.'",
+      "visibility": "public",
+      "tags": ["resurrection", "identity", "mission"],
+      "event_date": "0033-01-01",
+      "submitted_at": "2025-01-02T06:30:00Z"
+    }
+  ]
+}

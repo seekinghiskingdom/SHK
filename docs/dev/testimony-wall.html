@@ -1,0 +1,673 @@
+---
+layout: default
+title: Testimonies Wall (Dev)
+permalink: /dev/testimony-wall/
+---
+
+<!-- SHK Testimony System – Testimonies Wall Dev Template (-AI) -->
+
+<section class="tw-page">
+  <header class="tw-header">
+    <h1 class="tw-title">Testimonies Wall</h1>
+    <p class="tw-subtitle">
+      See how God is moving today through prayers, blessings, miracles, and testimonies.
+    </p>
+    <div class="tw-cta-row">
+      <a href="/dev/account/testimony/" class="btn btn-primary">
+        Share a testimony (dev)
+      </a>
+    </div>
+    <p class="tw-dev-note">
+      Dev mode: loads from <code>/docs/data/dev/testimonies.seed.v1.json</code>.
+    </p>
+  </header>
+
+  <!-- Filters -->
+  <section class="tw-filters" aria-label="Testimonies filters">
+    <!-- Type filter -->
+    <div class="tw-filter-group tw-filter-type">
+      <span class="tw-filter-label">Type:</span>
+      <button class="tw-filter-chip is-active" data-type="all" type="button">All</button>
+      <button class="tw-filter-chip" data-type="prayer" type="button">Prayer</button>
+      <button class="tw-filter-chip" data-type="blessings" type="button">Blessings</button>
+      <button class="tw-filter-chip" data-type="miracles" type="button">Miracles</button>
+      <button class="tw-filter-chip" data-type="general" type="button">General</button>
+    </div>
+
+    <!-- Time filter -->
+    <div class="tw-filter-group tw-filter-time">
+      <span class="tw-filter-label">Time:</span>
+      <select class="tw-select" data-filter="time">
+        <option value="today" selected>Today</option>
+        <option value="7d">Last 7 days</option>
+        <option value="30d">Last 30 days</option>
+        <option value="all">All time</option>
+      </select>
+    </div>
+
+    <!-- Tags filter -->
+    <div class="tw-filter-group tw-filter-tags">
+      <span class="tw-filter-label">Tags:</span>
+      <input
+        type="text"
+        class="tw-tag-search"
+        placeholder="Type to search tags (e.g. healing, family)…"
+      />
+    </div>
+
+    <!-- Follow filter -->
+    <div class="tw-filter-group tw-filter-follow">
+      <label class="tw-checkbox-label">
+        <input type="checkbox" class="tw-follow-only-toggle">
+        Show only people I follow (dev, if any)
+      </label>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="tw-results" aria-label="Testimonies list">
+    <h2 class="tw-section-heading" id="tw-section-heading">Today</h2>
+
+    <div class="tw-feed" id="tw-feed">
+      <!-- Cards injected here -->
+    </div>
+
+    <!-- Empty state -->
+    <div class="tw-empty-state" id="tw-empty-state" hidden>
+      <p>No testimonies match these filters yet.</p>
+      <button class="btn btn-primary tw-share-from-empty" type="button">
+        Share a testimony – Are you sure you haven’t missed something God has done in your life recently?
+      </button>
+    </div>
+
+    <!-- Pagination / expand controls -->
+    <div class="tw-pagination">
+      <button class="btn btn-secondary tw-load-more-week" id="tw-load-more-week" type="button">
+        See more from this week
+      </button>
+      <button class="btn btn-outline tw-load-more-older" id="tw-load-more-older" type="button" hidden>
+        Load earlier testimonies (dev)
+      </button>
+    </div>
+  </section>
+</section>
+
+<style>
+/* Minimal dev styles – align loosely with account-testimony dev page */
+
+.tw-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.tw-header {
+  margin-bottom: 1.5rem;
+}
+
+.tw-title {
+  margin-bottom: 0.25rem;
+}
+
+.tw-subtitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.tw-dev-note {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.tw-cta-row {
+  margin: 0.5rem 0;
+}
+
+.tw-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 1rem;
+}
+
+.tw-filter-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tw-filter-label {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.tw-filter-chip {
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.85rem;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.tw-filter-chip.is-active {
+  background: #f4e6b0;
+  border-color: #e0c66a;
+  font-weight: 600;
+}
+
+.tw-select {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.tw-tag-search {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+  min-width: 180px;
+}
+
+.tw-checkbox-label {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.tw-section-heading {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.tw-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 800px) {
+  .tw-feed {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+.tw-card {
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  padding: 0.75rem 0.85rem;
+  background: #fff;
+}
+
+.tw-card-header,
+.tw-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tw-card-header {
+  margin-bottom: 0.35rem;
+}
+
+.tw-card-type {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+}
+
+.tw-type-pill {
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.8rem;
+  background: #f0f0f0;
+}
+
+.tw-follow-icon {
+  font-size: 0.85rem;
+}
+
+.tw-vis-icon {
+  font-size: 0.9rem;
+}
+
+.tw-card-title {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.tw-card-snippet {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.tw-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.tw-card-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.tw-tag {
+  border-radius: 999px;
+  padding: 0.05rem 0.4rem;
+  background: #f3f3f3;
+}
+
+.tw-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+.tw-empty-state {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px dashed #ccc;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.tw-pagination {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Button placeholders (same as previous template) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #e2b200;
+  border-color: #d09f00;
+  color: #222;
+}
+
+.btn-secondary {
+  background: #f5f5f5;
+  border-color: #ccc;
+  color: #222;
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: #ccc;
+  color: #222;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.85rem;
+  color: #0056b3;
+  cursor: pointer;
+}
+</style>
+
+<script>
+// SHK Testimony System – Testimonies Wall Dev Logic (-AI)
+
+const TESTIMONY_DATA_URL = "/docs/data/dev/testimonies.seed.v1.json";
+
+/**
+ * Map categories to high-level type groups and labels/icons.
+ * Groups: prayer, blessings, miracles, general
+ */
+function mapCategoryToUi(cat) {
+  switch (cat) {
+    case "salvation_testimony":
+      return { group: "general", label: "Salvation", icon: "✝️" };
+    case "prayer_request":
+      return { group: "prayer", label: "Prayer request", icon: "🙏" };
+    case "answered_prayer":
+      return { group: "prayer", label: "Answered prayer", icon: "✅" };
+    case "daily_blessing":
+      return { group: "blessings", label: "Blessing", icon: "🎁" };
+    case "miracle_testimony":
+      return { group: "miracles", label: "Miracle", icon: "✨" };
+    case "life_testimony":
+    default:
+      return { group: "general", label: "Testimony", icon: "📖" };
+  }
+}
+
+/**
+ * Simple dev-time: treat "today", "7d", "30d", "all" as filters on submitted_at or event_date.
+ */
+function getTimeRange(filter) {
+  const now = new Date();
+  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  if (filter === "today") {
+    return { from: todayStart, to: now };
+  }
+  if (filter === "7d") {
+    const from = new Date(todayStart);
+    from.setDate(from.getDate() - 6);
+    return { from, to: now };
+  }
+  if (filter === "30d") {
+    const from = new Date(todayStart);
+    from.setDate(from.getDate() - 29);
+    return { from, to: now };
+  }
+  // "all"
+  return { from: null, to: null };
+}
+
+function parseDateForFilter(t) {
+  const candidate = t.event_date || t.submitted_at;
+  if (!candidate) return null;
+  const d = new Date(candidate);
+  return isNaN(d) ? null : d;
+}
+
+function withinRange(d, range) {
+  if (!d) return false;
+  if (!range.from && !range.to) return true;
+  if (range.from && d < range.from) return false;
+  if (range.to && d > range.to) return false;
+  return true;
+}
+
+/**
+ * Filter testimonies based on current controls.
+ */
+function filterTestimonies(all, users, controls) {
+  const { typeFilter, timeFilter, tagQuery, followOnly, currentUserId } = controls;
+  const range = getTimeRange(timeFilter);
+
+  // Build "who I follow" set if follows are provided
+  const followSet = new Set();
+  if (Array.isArray(controls.follows)) {
+    controls.follows
+      .filter(f => f.follower_user_id === currentUserId)
+      .forEach(f => followSet.add(f.followee_user_id));
+  }
+
+  return all.filter(t => {
+    if (t.status !== "submitted") return false;
+    if (t.visibility !== "public" && t.visibility !== "public_anonymous") return false;
+
+    // time filter
+    const d = parseDateForFilter(t);
+    if (!withinRange(d, range)) return false;
+
+    // type filter
+    if (typeFilter !== "all") {
+      const ui = mapCategoryToUi(t.category);
+      if (ui.group !== typeFilter) return false;
+    }
+
+    // follow-only filter (dev: only if we have follows)
+    if (followOnly && followSet.size > 0) {
+      if (!followSet.has(t.author_user_id)) return false;
+    }
+
+    // tags filter
+    if (tagQuery) {
+      const q = tagQuery.toLowerCase();
+      const tags = (t.tags || []).map(x => String(x).toLowerCase());
+      const body = (t.body || "").toLowerCase();
+      const title = (t.title || "").toLowerCase();
+      const matchTag = tags.some(tag => tag.includes(q));
+      const matchText = body.includes(q) || title.includes(q);
+      if (!matchTag && !matchText) return false;
+    }
+
+    return true;
+  });
+}
+
+function formatDateShort(dateStr) {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  if (isNaN(d)) return "";
+  return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+}
+
+/**
+ * Render testimonies into cards.
+ */
+function renderFeed(testimonies, users, controls) {
+  const feed = document.getElementById("tw-feed");
+  const emptyState = document.getElementById("tw-empty-state");
+  const heading = document.getElementById("tw-section-heading");
+
+  // Set heading based on time filter
+  heading.textContent =
+    controls.timeFilter === "today"
+      ? "Today"
+      : controls.timeFilter === "7d"
+      ? "Last 7 days"
+      : controls.timeFilter === "30d"
+      ? "Last 30 days"
+      : "All testimonies";
+
+  feed.innerHTML = "";
+
+  if (testimonies.length === 0) {
+    emptyState.hidden = false;
+    return;
+  }
+  emptyState.hidden = true;
+
+  // newest first
+  testimonies.sort((a, b) => {
+    const aKey = a.submitted_at || a.event_date || a.id;
+    const bKey = b.submitted_at || b.event_date || b.id;
+    return aKey < bKey ? 1 : aKey > bKey ? -1 : 0;
+  });
+
+  testimonies.forEach(t => {
+    const ui = mapCategoryToUi(t.category);
+    const author = users.find(u => u.id === t.author_user_id);
+    const authorName =
+      t.visibility === "public" && author ? author.display_name : "Anonymous testimony";
+
+    const card = document.createElement("article");
+    card.className = "tw-card";
+
+    // dev: mark followed with star if controls.followSet
+    const isFollowed =
+      controls.followSet && controls.followSet.has && controls.followSet.has(t.author_user_id);
+
+    const visIcon =
+      t.visibility === "public"
+        ? "🌍"
+        : t.visibility === "public_anonymous"
+        ? "👤"
+        : "🔒";
+
+    card.innerHTML = `
+      <header class="tw-card-header">
+        <div class="tw-card-type">
+          <span class="tw-type-pill tw-type-${ui.group}">
+            ${ui.icon} ${ui.label}
+          </span>
+          ${isFollowed ? `<span class="tw-follow-icon" title="From someone you follow">★</span>` : ""}
+          <span class="tw-card-author">${authorName}</span>
+        </div>
+        <div class="tw-card-visibility">
+          <span class="tw-vis-icon" title="${t.visibility}">${visIcon}</span>
+        </div>
+      </header>
+
+      <div class="tw-card-body">
+        <h3 class="tw-card-title">${t.title || "(Untitled testimony)"}</h3>
+        <p class="tw-card-snippet">
+          ${(t.body || "").length > 260 ? (t.body || "").slice(0, 260) + "…" : (t.body || "")}
+        </p>
+      </div>
+
+      <footer class="tw-card-footer">
+        <div class="tw-card-meta">
+          ${
+            t.submitted_at
+              ? `<time class="tw-card-date">${formatDateShort(t.submitted_at)}</time>`
+              : ""
+          }
+          ${
+            t.tags && t.tags.length
+              ? `<span class="tw-card-tags">${t.tags
+                  .map(tag => `<span class="tw-tag">${tag}</span>`)
+                  .join("")}</span>`
+              : ""
+          }
+        </div>
+        <div class="tw-card-actions">
+          <button class="btn btn-link tw-view-details" type="button">View details (dev)</button>
+          <button class="btn btn-link tw-report" type="button">Report (dev)</button>
+        </div>
+      </footer>
+    `;
+
+    feed.appendChild(card);
+  });
+}
+
+/**
+ * Read mode from query (?mode=prayer / blessings / miracles / general)
+ * and translate into initial type filter.
+ */
+function getInitialTypeFromQuery() {
+  const params = new URLSearchParams(window.location.search);
+  const mode = (params.get("mode") || "").toLowerCase();
+  if (["prayer", "blessings", "miracles", "general"].includes(mode)) return mode;
+  return "all";
+}
+
+/**
+ * Main loader
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  const timeSelect = document.querySelector(".tw-select[data-filter='time']");
+  const typeChips = Array.from(document.querySelectorAll(".tw-filter-chip"));
+  const tagInput = document.querySelector(".tw-tag-search");
+  const followToggle = document.querySelector(".tw-follow-only-toggle");
+  const loadMoreWeekBtn = document.getElementById("tw-load-more-week");
+
+  // internal state
+  const controls = {
+    typeFilter: getInitialTypeFromQuery(),
+    timeFilter: "today",
+    tagQuery: "",
+    followOnly: false,
+    currentUserId: null, // dev: can be wired to logged-in user later
+    follows: [] // dev placeholder, in case you add follows to JSON later
+  };
+
+  // type chip init
+  typeChips.forEach(chip => {
+    const type = chip.dataset.type;
+    if (type === controls.typeFilter) {
+      chip.classList.add("is-active");
+    } else {
+      chip.classList.remove("is-active");
+    }
+  });
+
+  fetch(TESTIMONY_DATA_URL)
+    .then(resp => {
+      if (!resp.ok) throw new Error("Failed to load dev testimony data");
+      return resp.json();
+    })
+    .then(data => {
+      const users = data.users || [];
+      const testimonies = data.testimonies || [];
+      const follows = data.follows || [];
+      controls.follows = follows;
+
+      // dev: pick first user as "current" for follow filtering (if you want)
+      controls.currentUserId = users[0] ? users[0].id : null;
+
+      // Precompute follow set for render convenience (optional)
+      const followSet = new Set();
+      follows
+        .filter(f => f.follower_user_id === controls.currentUserId)
+        .forEach(f => followSet.add(f.followee_user_id));
+      controls.followSet = followSet;
+
+      function applyAndRender() {
+        const filtered = filterTestimonies(testimonies, users, controls);
+        renderFeed(filtered, users, controls);
+      }
+
+      // Initial render
+      applyAndRender();
+
+      // Type chips
+      typeChips.forEach(chip => {
+        chip.addEventListener("click", () => {
+          const t = chip.dataset.type;
+          if (!t || t === controls.typeFilter) return;
+          controls.typeFilter = t;
+          typeChips.forEach(c => c.classList.toggle("is-active", c === chip));
+          applyAndRender();
+        });
+      });
+
+      // Time select
+      timeSelect.addEventListener("change", () => {
+        controls.timeFilter = timeSelect.value || "today";
+        applyAndRender();
+      });
+
+      // Tags input
+      let tagDebounce = null;
+      tagInput.addEventListener("input", () => {
+        clearTimeout(tagDebounce);
+        tagDebounce = setTimeout(() => {
+          controls.tagQuery = tagInput.value.trim();
+          applyAndRender();
+        }, 200);
+      });
+
+      // Follow-only
+      followToggle.addEventListener("change", () => {
+        controls.followOnly = followToggle.checked;
+        applyAndRender();
+      });
+
+      // “See more from this week” – just bump time filter from today -> 7d
+      loadMoreWeekBtn.addEventListener("click", () => {
+        timeSelect.value = "7d";
+        controls.timeFilter = "7d";
+        applyAndRender();
+      });
+    })
+    .catch(err => {
+      console.error(err);
+      const feed = document.getElementById("tw-feed");
+      feed.innerHTML =
+        "<p style='color:#b00;font-size:0.9rem;'>Error loading dev testimony data.</p>";
+    });
+});
+</script>
