@@ -796,6 +796,27 @@ button:hover {
   padding: 1.5rem 1rem 3rem;
 }
 
+/* Shared blurred background for account-related pages */
+/* Content and wording assisted by AI (-AI) */
+
+.account-bg-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/img/SHK-Path.webp") center/cover no-repeat;
+  filter: blur(6px);
+  transform: scale(1.05);
+  z-index: -1;
+  opacity: 0.35;
+}
+
+/* Make sure account pages sit above the blur and have padding */
+.account-bg-page {
+  position: relative;
+}
+
+
+
 /* Verse block */
 .home-verse-section {
   background: rgba(23, 26, 33, 0.96); /* var(--panel) with slight alpha is fine too */

@@ -4,7 +4,7 @@ title: My Testimony
 permalink: /account/
 ---
 
-<section class="mt-page" id="mt-page">
+<section class="mt-page account-bg-page" id="mt-page">
   <header class="mt-header">
     <div class="mt-profile">
       <div class="mt-avatar" id="mt-avatar">
@@ -13,11 +13,11 @@ permalink: /account/
       <div class="mt-profile-main">
         <h1 class="mt-title" id="mt-display-name">My Testimony</h1>
         <p class="mt-subtitle" id="mt-email">
-          This is your story of how God is moving in your life.
+          Your personal hub for salvation and life testimonies.
         </p>
         <div class="mt-profile-actions">
           <a href="/account/settings/" class="btn btn-secondary">Account settings</a>
-          <button class="btn btn-outline" type="button" id="mt-sign-out">
+          <button class="btn btn-secondary" type="button" id="mt-sign-out">
             Sign out
           </button>
         </div>
@@ -40,10 +40,10 @@ permalink: /account/
     </div>
 
     <div class="mt-salvation-banner" id="mt-salvation-banner">
-      <h2 class="mt-section-title">✝️ Your salvation testimony isn’t written yet</h2>
+      <h2 class="mt-section-title">✝️ Your salvation testimony goes here</h2>
       <p>
-        Do you know why you follow Jesus and trust Him for salvation?
-        Writing your salvation testimony can help you remember and share what He has done.
+        This is where you’ll write and keep the story of how Jesus saved you —
+        so you can remember it, pray through it, and share it with others.
       </p>
       <div class="mt-salvation-actions">
         <a href="/testimony/salvation/new/" class="btn btn-primary">
@@ -56,7 +56,7 @@ permalink: /account/
     </div>
   </section>
 
-  <!-- Tabs / filters (containers only for now) -->
+  <!-- Tabs / filters -->
   <nav class="mt-tabs" aria-label="My testimonies filters">
     <button class="mt-tab is-active" data-tab="all" type="button">All</button>
     <button class="mt-tab" data-tab="prayer" type="button">🙏 Prayer</button>
@@ -75,7 +75,7 @@ permalink: /account/
   <!-- Testimonies list containers -->
   <section class="mt-list" aria-label="My testimonies">
     <div class="mt-list-header">
-      <button class="btn btn-primary" type="button" id="mt-add-testimony">
+      <button class="btn btn-primary mt-add-btn" type="button" id="mt-add-testimony">
         Add testimony
       </button>
     </div>
@@ -85,8 +85,8 @@ permalink: /account/
     </div>
 
     <div class="mt-empty-state" id="mt-empty-state">
-      <p>You haven’t written any testimonies in this section yet.</p>
-      <button class="btn btn-primary" type="button" id="mt-add-from-empty">
+      <p>Your future testimonies will show up here once you start writing.</p>
+      <button class="btn btn-primary mt-add-btn" type="button" id="mt-add-from-empty">
         Add testimony
       </button>
     </div>
@@ -103,7 +103,9 @@ permalink: /account/
 /* Header / profile */
 
 .mt-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .mt-profile {
@@ -135,11 +137,11 @@ permalink: /account/
 }
 
 .mt-title {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
 }
 
 .mt-subtitle {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.4rem;
   font-size: 0.95rem;
   color: #fafafa;
 }
@@ -148,15 +150,19 @@ permalink: /account/
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 0.25rem;
+  margin-top: 0.35rem;
+}
+
+.mt-profile-actions .btn {
+  width: auto;
 }
 
 /* Salvation block */
 
 .mt-salvation {
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(224, 198, 106, 0.35);
+  padding: 1rem 1.1rem;
   margin-bottom: 1.25rem;
   background: #fafafa;
 }
@@ -181,29 +187,37 @@ permalink: /account/
 .mt-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem;
-  margin-bottom: 1rem;
+  gap: 0.35rem;
+  margin-bottom: 0.9rem;
 }
 
 .mt-tab {
-  border: 1px solid #ddd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 999px;
-  padding: 0.3rem 0.8rem;
-  background: #f7f7f7;
-  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(17, 24, 39, 0.6);
+  font-size: 0.8rem;
   cursor: pointer;
+  color: #f9fafb;
+  white-space: nowrap;
 }
 
 .mt-tab.is-active {
   background: #f4e6b0;
   border-color: #e0c66a;
   font-weight: 600;
+  color: #111827;
 }
+
+/* User header */
 
 .mt-user-header {
   margin-bottom: 0.75rem;
   font-size: 0.9rem;
-  color: #444;
+  color: #f5f5f5;
 }
 
 /* List / cards */
@@ -212,6 +226,10 @@ permalink: /account/
   display: flex;
   justify-content: flex-end;
   margin-bottom: 0.5rem;
+}
+
+.mt-add-btn {
+  width: auto;
 }
 
 .mt-cards {
@@ -267,15 +285,22 @@ permalink: /account/
   border-color: #ccc;
   color: #222;
 }
+
+@media (max-width: 640px) {
+  .mt-profile {
+    align-items: flex-start;
+  }
+}
 </style>
 
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 <script>
-  // TODO: centralize in a shared config later
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
 
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+  const signOutBtn = document.getElementById('mt-sign-out');
 
   function setLoggedOutState() {
     const titleEl = document.getElementById('mt-display-name');
@@ -294,9 +319,13 @@ permalink: /account/
         <a href="/account/sign-up/">create an account</a> to start sharing.
       </p>
     `;
+
+    if (signOutBtn) {
+      signOutBtn.style.display = 'none';
+    }
   }
 
-  function setLoggedInState(user) {
+  async function setLoggedInState(user) {
     const titleEl = document.getElementById('mt-display-name');
     const emailEl = document.getElementById('mt-email');
     const avatarInitial = document.getElementById('mt-avatar-initial');
@@ -305,32 +334,51 @@ permalink: /account/
     const email = user.email || '';
     const initial = (email || user.id || '?').charAt(0).toUpperCase();
 
+    let displayName = '';
+
+    try {
+      const { data: profileData, error: profileError } = await supabase
+        .from('user_account')
+        .select('display_name')
+        .eq('auth_user_id', user.id)
+        .maybeSingle();
+
+      if (!profileError && profileData && profileData.display_name) {
+        displayName = profileData.display_name;
+      }
+    } catch (e) {
+      console.warn('Could not load user profile', e);
+    }
+
     avatarInitial.textContent = initial;
     titleEl.textContent = 'My Testimony';
-    emailEl.textContent = email ? ('Signed in as ' + email) : 'Signed in';
+    // Show display name if available, otherwise email, otherwise generic
+    emailEl.textContent = displayName || email || 'Signed in';
 
     userHeader.innerHTML = `
-      <strong>Account:</strong> ${email || user.id}
+      <strong>Account:</strong> ${displayName || email || user.id}
     `;
 
-    // For now, we leave salvation + testimonies as placeholders;
-    // later we will fetch and populate them from Supabase.
+    if (signOutBtn) {
+      signOutBtn.style.display = 'inline-flex';
+    }
   }
 
   async function initAccountPage() {
     const { data, error } = await supabase.auth.getUser();
-    const signOutBtn = document.getElementById('mt-sign-out');
 
     if (error || !data || !data.user) {
       setLoggedOutState();
     } else {
-      setLoggedInState(data.user);
+      await setLoggedInState(data.user);
     }
 
-    signOutBtn.addEventListener('click', async () => {
-      await supabase.auth.signOut();
-      window.location.href = '/';
-    });
+    if (signOutBtn) {
+      signOutBtn.addEventListener('click', async () => {
+        await supabase.auth.signOut();
+        window.location.href = '/';
+      });
+    }
 
     const addButtons = [
       document.getElementById('mt-add-testimony'),
