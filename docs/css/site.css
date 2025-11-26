@@ -772,22 +772,22 @@ button:hover {
 
 
 
-/* Home page background image layer */
-.home-page::before {
+/* Global background image layer for all pages */
+body::before {
   content: "";
-  position: fixed;          /* stays put while you scroll */
-  inset: 0;                 /* full viewport */
+  position: fixed;
+  inset: 0;
   background: url("/img/SHK-Path.webp") center/cover no-repeat;
   filter: blur(6px);
   transform: scale(1.05);   /* avoid blur edges */
   z-index: -1;              /* behind all content */
-  opacity: 0.35;            /* tone it down a bit */
+  opacity: 0.35;            /* tone it down */
 }
 
-/* Make sure home content sits above it */
-.home-page {
-  position: relative;
+body {
+  position: relative;       /* ensure stacking context above ::before */
 }
+
 
 
 /* Make main home sections sit on solid panels over the blur */
