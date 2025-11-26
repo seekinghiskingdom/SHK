@@ -1,0 +1,77 @@
+---
+layout: default
+title: Email confirmed
+permalink: /account/confirm/
+---
+
+<section class="account-page confirm-page">
+  <h1>Email confirmed</h1>
+
+  <p id="confirm-loading">Checking your account status...</p>
+
+  <div id="confirm-signed-in" style="display:none;">
+    <p>
+      Your email has been confirmed and you are signed in as
+      <strong id="confirm-email"></strong>.
+    </p>
+    <p>
+      <a href="/account/" class="btn-primary">Go to my account</a>
+    </p>
+  </div>
+
+  <div id="confirm-signed-out" style="display:none;">
+    <p>Your email has been confirmed. You can now sign in to your account.</p>
+    <p>
+      <a href="/account/sign-in/" class="btn-primary">Sign in</a>
+    </p>
+  </div>
+</section>
+
+<style>
+.confirm-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #d09f00;
+  background: #e2b200;
+  color: #222;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+</style>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+  async function initConfirmPage() {
+    const loadingEl = document.getElementById('confirm-loading');
+    const signedInEl = document.getElementById('confirm-signed-in');
+    const signedOutEl = document.getElementById('confirm-signed-out');
+    const emailEl = document.getElementById('confirm-email');
+
+    const { data, error } = await supabase.auth.getUser();
+
+    loadingEl.style.display = 'none';
+
+    if (error || !data || !data.user) {
+      signedOutEl.style.display = 'block';
+      return;
+    }
+
+    emailEl.textContent = data.user.email || '';
+    signedInEl.style.display = 'block';
+  }
+
+  document.addEventListener('DOMContentLoaded', initConfirmPage);
+</script>
