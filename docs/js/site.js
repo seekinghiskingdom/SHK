@@ -198,3 +198,12 @@
     toggle.setAttribute('aria-expanded', isCollapsed ? 'false' : 'true');
   });
 })();
+
+// 9) User Profile Picture Selection
+window.SHK_PROFILE_AVATARS = Array.from({ length: 90 }, (_, idx) => {
+  const id = idx + 1; // 1–90
+  return {
+    key: `avatar-${id}`, // logical key we store in metadata
+    src: `${window.SHK_BASEURL || ''}/img/profiles/${id}.png`
+  };
+});

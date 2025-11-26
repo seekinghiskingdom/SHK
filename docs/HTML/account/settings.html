@@ -63,6 +63,22 @@ permalink: /account/settings/
       </form>
     </section>
 
+    <!-- Preset profile picture picker -->
+    <section class="settings-section">
+      <h2>Profile picture</h2>
+      <p class="settings-note">
+        Choose one of the preset profile pictures below. You can change this anytime.
+      </p>
+
+      <div class="avatar-grid" id="avatar-grid"></div>
+
+      <button type="button" id="avatar-save-btn" class="avatar-save-btn">
+        Save profile picture
+      </button>
+      <p id="avatar-message" class="account-message"></p>
+    </section>
+
+
     <!-- Change email -->
     <section class="settings-section">
       <h2>Change email</h2>
@@ -270,8 +286,52 @@ permalink: /account/settings/
     align-items: flex-start;
   }
 }
-</style>
 
+/* Preset avatar grid */
+.avatar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  gap: 0.6rem;
+  max-width: 360px;
+  margin-top: 0.4rem;
+}
+
+.avatar-option {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  background: rgba(15, 23, 42, 0.85);
+  cursor: pointer;
+  padding: 0;
+}
+
+.avatar-option img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar-option.is-selected {
+  border-color: #facc15;
+  box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.5);
+}
+
+.avatar-save-btn {
+  margin-top: 0.6rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #b08900;
+  background: #f3c43a;
+  color: #111827;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+</style>
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 <script>
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
@@ -312,6 +372,7 @@ permalink: /account/settings/
 
     const email = user.email || '';
     const displayName = (user.user_metadata && user.user_metadata.display_name) || '';
+    const avatarKey = user.user_metadata && user.user_metadata.avatar_key;
 
     emailSpan.textContent = email;
 
@@ -319,7 +380,7 @@ permalink: /account/settings/
       displayNameInput.value = displayName;
     }
 
-    // Avatar initial
+    // Avatar initial (we’ll still show a letter here; avatar image is used on the account page later)
     let initial = '✝';
     if (displayName && displayName.trim()) {
       initial = displayName.trim().charAt(0).toUpperCase();
@@ -344,30 +405,81 @@ permalink: /account/settings/
 
         displayNameMsg.textContent = 'Saving display name…';
 
-        const { data, error } = await supabase.auth.updateUser({
+        const { data: updated, error: updateError } = await supabase.auth.updateUser({
           data: {
             display_name: newName || null
           }
         });
 
-        if (error) {
-          console.error('Display name update error:', error);
-          displayNameMsg.textContent = error.message || 'Unable to update display name.';
+        if (updateError) {
+          console.error('Display name update error:', updateError);
+          displayNameMsg.textContent = updateError.message || 'Unable to update display name.';
           displayNameMsg.classList.add('error');
           return;
         }
 
-        // Update avatar initial too
-        let newInitial = '✝';
-        if (newName) {
-          newInitial = newName.charAt(0).toUpperCase();
-        } else if (email) {
-          newInitial = email.charAt(0).toUpperCase();
-        }
-        avatarEl.textContent = newInitial;
-
         displayNameMsg.textContent = 'Display name updated.';
         displayNameMsg.classList.add('success');
+      });
+    }
+
+    // Avatar picker
+    const avatarGrid = document.getElementById('avatar-grid');
+    const avatarSaveBtn = document.getElementById('avatar-save-btn');
+    const avatarMsg = document.getElementById('avatar-message');
+
+    let selectedAvatarKey = avatarKey || null;
+
+    if (avatarGrid && window.SHK_PROFILE_AVATARS && window.SHK_PROFILE_AVATARS.length) {
+      window.SHK_PROFILE_AVATARS.forEach((avatar) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'avatar-option';
+        btn.dataset.key = avatar.key;
+
+        if (avatar.key === selectedAvatarKey) {
+          btn.classList.add('is-selected');
+        }
+
+        const img = document.createElement('img');
+        img.src = avatar.src;
+        img.alt = 'Profile picture option';
+        btn.appendChild(img);
+
+        btn.addEventListener('click', () => {
+          selectedAvatarKey = avatar.key;
+          document.querySelectorAll('.avatar-option').forEach((el) =>
+            el.classList.remove('is-selected')
+          );
+          btn.classList.add('is-selected');
+        });
+
+        avatarGrid.appendChild(btn);
+      });
+    }
+
+    if (avatarSaveBtn) {
+      avatarSaveBtn.addEventListener('click', async () => {
+        avatarMsg.textContent = '';
+        avatarMsg.className = 'account-message';
+
+        avatarMsg.textContent = 'Saving profile picture…';
+
+        const { data: updated, error: avatarError } = await supabase.auth.updateUser({
+          data: {
+            avatar_key: selectedAvatarKey || null
+          }
+        });
+
+        if (avatarError) {
+          console.error('Avatar update error:', avatarError);
+          avatarMsg.textContent = avatarError.message || 'Unable to update profile picture.';
+          avatarMsg.classList.add('error');
+          return;
+        }
+
+        avatarMsg.textContent = 'Profile picture updated.';
+        avatarMsg.classList.add('success');
       });
     }
 
@@ -387,13 +499,13 @@ permalink: /account/settings/
 
         emailMsg.textContent = 'Sending confirmation link…';
 
-        const { data, error } = await supabase.auth.updateUser({
+        const { data: emailUpdated, error: emailError } = await supabase.auth.updateUser({
           email: newEmail
         });
 
-        if (error) {
-          console.error('Email update error:', error);
-          emailMsg.textContent = error.message || 'Unable to start email change.';
+        if (emailError) {
+          console.error('Email update error:', emailError);
+          emailMsg.textContent = emailError.message || 'Unable to start email change.';
           emailMsg.classList.add('error');
           return;
         }
@@ -435,13 +547,13 @@ permalink: /account/settings/
 
         passwordMsg.textContent = 'Updating password…';
 
-        const { data, error } = await supabase.auth.updateUser({
+        const { data: pwUpdated, error: pwError } = await supabase.auth.updateUser({
           password: pw1
         });
 
-        if (error) {
-          console.error('Password update error:', error);
-          passwordMsg.textContent = error.message || 'Unable to update password.';
+        if (pwError) {
+          console.error('Password update error:', pwError);
+          passwordMsg.textContent = pwError.message || 'Unable to update password.';
           passwordMsg.classList.add('error');
           return;
         }
