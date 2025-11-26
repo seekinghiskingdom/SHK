@@ -10,23 +10,28 @@ permalink: /account/
       <div class="mt-avatar" id="mt-avatar">
         <span class="mt-avatar-initial" id="mt-avatar-initial">?</span>
       </div>
+
       <div class="mt-profile-main">
         <h1 class="mt-title" id="mt-display-name">My Testimony</h1>
         <p class="mt-subtitle" id="mt-email">
           Your personal hub for salvation and life testimonies.
         </p>
+
         <div class="mt-profile-actions">
           <a href="/account/settings/" class="btn btn-secondary">Account settings</a>
           <button class="btn btn-secondary" type="button" id="mt-sign-out">
             Sign out
           </button>
         </div>
+
+        <p class="mt-auth-note" id="mt-auth-note"></p>
       </div>
     </div>
   </header>
 
   <!-- Salvation testimony block -->
   <section class="mt-salvation" id="mt-salvation">
+    <!-- This will be used later when a salvation testimony exists -->
     <div class="mt-salvation-existing" id="mt-salvation-existing" hidden>
       <h2 class="mt-section-title">✝️ My Salvation Story</h2>
       <p class="mt-salvation-preview" id="mt-salvation-preview">
@@ -39,6 +44,7 @@ permalink: /account/
       </div>
     </div>
 
+    <!-- Default empty state / CTA -->
     <div class="mt-salvation-banner" id="mt-salvation-banner">
       <h2 class="mt-section-title">✝️ Your salvation testimony goes here</h2>
       <p>
@@ -67,7 +73,7 @@ permalink: /account/
     <button class="mt-tab" data-tab="drafts" type="button">📝 Drafts</button>
   </nav>
 
-  <!-- Active user heading -->
+  <!-- Active user heading (summary line under tabs) -->
   <section class="mt-user-header" id="mt-user-header">
     <!-- Filled with basic info / counts later -->
   </section>
@@ -157,6 +163,17 @@ permalink: /account/
   width: auto;
 }
 
+.mt-auth-note {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: #f5f5f5;
+}
+
+.mt-auth-note a {
+  color: #e2b200;
+  text-decoration: underline;
+}
+
 /* Salvation block */
 
 .mt-salvation {
@@ -165,6 +182,12 @@ permalink: /account/
   padding: 1rem 1.1rem;
   margin-bottom: 1.25rem;
   background: #fafafa;
+  color: #111827; /* dark text on light background */
+}
+
+.mt-salvation h2,
+.mt-salvation p {
+  color: #111827;
 }
 
 .mt-section-title {
@@ -301,6 +324,7 @@ permalink: /account/
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
   const signOutBtn = document.getElementById('mt-sign-out');
+  const authNoteEl = document.getElementById('mt-auth-note');
 
   function setLoggedOutState() {
     const titleEl = document.getElementById('mt-display-name');
@@ -312,13 +336,15 @@ permalink: /account/
     titleEl.textContent = 'My Testimony';
     emailEl.textContent = 'Please sign in to view and write your testimonies.';
 
-    userHeader.innerHTML = `
-      <p>
+    if (authNoteEl) {
+      authNoteEl.innerHTML = `
         You are not signed in.
         <a href="/account/sign-in/">Sign in</a> or
         <a href="/account/sign-up/">create an account</a> to start sharing.
-      </p>
-    `;
+      `;
+    }
+
+    userHeader.innerHTML = '';
 
     if (signOutBtn) {
       signOutBtn.style.display = 'none';
@@ -352,16 +378,23 @@ permalink: /account/
 
     avatarInitial.textContent = initial;
     titleEl.textContent = 'My Testimony';
-    // Show display name if available, otherwise email, otherwise generic
     emailEl.textContent = displayName || email || 'Signed in';
 
     userHeader.innerHTML = `
       <strong>Account:</strong> ${displayName || email || user.id}
     `;
 
+    if (authNoteEl) {
+      authNoteEl.textContent = '';
+    }
+
     if (signOutBtn) {
       signOutBtn.style.display = 'inline-flex';
     }
+
+    // Later, when salvation data exists, you’ll hide the banner and show existing:
+    // document.getElementById('mt-salvation-banner').hidden = true;
+    // document.getElementById('mt-salvation-existing').hidden = false;
   }
 
   async function initAccountPage() {
@@ -392,7 +425,7 @@ permalink: /account/
       });
     });
 
-    // Tabs are UI-only placeholders for now.
+    // Tabs: UI-only placeholders for now; filtering will come once data is wired.
     const tabs = Array.from(document.querySelectorAll('.mt-tab'));
     let currentTab = 'all';
 
@@ -401,7 +434,6 @@ permalink: /account/
       tabs.forEach(btn => {
         btn.classList.toggle('is-active', btn.dataset.tab === tabName);
       });
-      // Later: filter testimonies here once we have real data.
     }
 
     tabs.forEach(btn => {
