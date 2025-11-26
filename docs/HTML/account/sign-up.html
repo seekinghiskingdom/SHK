@@ -17,7 +17,20 @@ permalink: /account/sign-up/
       <form id="shk-signup-form" class="auth-form">
         <label>
           Display name (optional)
-          <input id="signup-display-name" type="text" name="display_name" autocomplete="nickname" maxlength="80">
+          <span
+            class="field-help-inline"
+            title="This is the name others may see on your testimonies. 2–40 characters; no emails, links, or offensive content."
+          >?</span>
+          <input
+            id="signup-display-name"
+            type="text"
+            name="display_name"
+            autocomplete="name"
+            maxlength="80"
+          >
+          <p class="field-help">
+            This is the name that may appear on your testimonies (first name or nickname).
+          </p>
         </label>
 
         <label>
@@ -27,7 +40,21 @@ permalink: /account/sign-up/
 
         <label>
           Password
-          <input id="signup-password" type="password" name="password" autocomplete="new-password" required minlength="8">
+          <span
+            class="field-help-inline"
+            title="Use at least 8 characters. Avoid reusing passwords from other sites."
+          >?</span>
+          <input
+            id="signup-password"
+            type="password"
+            name="password"
+            autocomplete="new-password"
+            required
+            minlength="8"
+          >
+          <p class="field-help">
+            At least 8 characters. Using a unique password helps keep your account secure.
+          </p>
         </label>
 
         <button type="submit" class="auth-btn-main">Create account</button>
@@ -47,28 +74,31 @@ permalink: /account/sign-up/
 </section>
 
 <style>
-/* Reuse same gold-card style as sign-in */
-
 .auth-page {
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem 1.25rem 3rem;
 }
 
+/* Center the card on the screen */
 .auth-shell {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
 }
 
+/* Translucent gold card */
 .auth-card {
   width: 100%;
   max-width: 420px;
-  background: rgba(222, 176, 0, 0.92);
+  background: rgba(222, 176, 0, 0.6); /* ~60% opacity gold */
   border-radius: 16px;
   border: 1px solid #d09f00;
   padding: 1.5rem 1.5rem 1.75rem;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
   color: #111827;
+  backdrop-filter: blur(6px);
 }
 
 .auth-title {
@@ -155,9 +185,34 @@ permalink: /account/sign-up/
   text-decoration: underline;
 }
 
+/* Small inline ? bubble + helper text */
+.field-help-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid #b08900;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: help;
+}
+
+.field-help {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  color: #1f2933;
+}
+
 @media (max-width: 640px) {
   .auth-page {
     padding-inline: 1rem;
+  }
+
+  .auth-shell {
+    min-height: 60vh;
   }
 }
 </style>
@@ -213,7 +268,7 @@ permalink: /account/sign-up/
         return;
       }
 
-      // Extra guard: don’t show “success” if we didn’t actually get a user back
+      // Extra guard
       if (!data || !data.user) {
         console.warn('Sign-up returned no user object:', data);
         messageEl.textContent =
