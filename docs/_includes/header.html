@@ -20,13 +20,6 @@
 
     <!-- Main nav -->
     <div id="primary-nav" class="nav-links">
-
-      <!-- Home (simple) -->
-      <!-- <div class="nav-item">
-        <a href="{{ '/' | relative_url }}" class="nav-button">Home</a>
-      </div> -->
-
-      
       <!-- Tools & Games (has dropdown) -->
       <div class="nav-item has-submenu">
         <a href="{{ '/tools-games/' | relative_url }}" class="nav-button nav-parent">
@@ -114,7 +107,7 @@
       <!-- Testimony (has dropdown) -->
       <div class="nav-item has-submenu">
         <a href="{{ '/testimony/' | relative_url }}" class="nav-button nav-parent">
-          Testimony 
+          Testimony
         </a>
         <button class="submenu-toggle"
                 aria-label="Toggle Testimony menu"
@@ -122,23 +115,22 @@
           ▾
         </button>
         <div class="nav-dropdown">
-            <div class="nav-dropdown-grid">
-                <a href="{{ '/testimony/' | relative_url }}" class="nav-dropdown-item">
-                Testimony Home &amp; Info
-                </a>
-                <a href="{{ '/dev/testimony/wall/' | relative_url }}" class="nav-dropdown-item">
-                View the "Testimony Wall"
-                </a>
-                <a href="{{ '/account/' | relative_url }}" class="nav-dropdown-item">
-                See your Testimony (account)
-                </a>
-                <a href="{{ '/help/prayer-testimony/' | relative_url }}" class="nav-dropdown-item">
-                Share prayers or testimonies
-                </a>
-            </div>
+          <div class="nav-dropdown-grid">
+            <a href="{{ '/testimony/' | relative_url }}" class="nav-dropdown-item">
+              Testimony Home &amp; Info
+            </a>
+            <a href="{{ '/dev/testimony/wall/' | relative_url }}" class="nav-dropdown-item">
+              View the "Testimony Wall"
+            </a>
+            <a href="{{ '/account/' | relative_url }}" class="nav-dropdown-item">
+              See your Testimony (account)
+            </a>
+            <a href="{{ '/help/prayer-testimony/' | relative_url }}" class="nav-dropdown-item">
+              Share prayers or testimonies
+            </a>
+          </div>
         </div>
       </div>
-
 
       <!-- Community (has dropdown) -->
       <div class="nav-item has-submenu">
@@ -153,7 +145,7 @@
         <div class="nav-dropdown">
           <div class="nav-dropdown-grid">
             <a href="{{ '/about/socials/' | relative_url }}" class="nav-dropdown-item">
-              Connect & Socials
+              Connect &amp; Socials
             </a>
             <a href="{{ '/community/find-community/' | relative_url }}" class="nav-dropdown-item">
               Find a Church/Community
@@ -179,7 +171,6 @@
           </div>
         </div>
       </div>
-
 
       <!-- Serving (has dropdown) -->
       <div class="nav-item has-submenu">
@@ -215,11 +206,6 @@
         </div>
       </div>
 
-      <!-- Salvation (simple) -->
-      <!-- <div class="nav-item">
-        <a href="{{ '/salvation/' | relative_url }}" class="nav-button">Salvation</a>
-      </div> -->
-
       <!-- About (has dropdown) -->
       <div class="nav-item has-submenu">
         <a href="{{ '/about/' | relative_url }}" class="nav-button nav-parent">
@@ -244,9 +230,6 @@
             <a href="{{ '/about/team/' | relative_url }}" class="nav-dropdown-item">
               Team
             </a>
-            <!-- <a href="{{ '/help/contact/' | relative_url }}" class="nav-dropdown-item">
-              Contact
-            </a> -->
             <a href="{{ '/about/legal/' | relative_url }}" class="nav-dropdown-item">
               Legal &amp; Attributions
             </a>
@@ -259,13 +242,13 @@
           </div>
         </div>
       </div>
-
-      <!-- Help (simple)
-      <div class="nav-item">
-        <a href="{{ '/help/' | relative_url }}" class="nav-button">Help</a>
-      </div> -->
-
     </div>
+
+    <!-- Account chip (top-right) -->
+    <a href="{{ '/account/' | relative_url }}" class="account-chip">
+      <span class="account-icon">👤</span>
+      <span class="account-label">Account</span>
+    </a>
   </nav>
 </header>
 <hr>

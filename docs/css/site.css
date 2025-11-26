@@ -1814,3 +1814,140 @@ body.tool-app-body {
   }
 }
 
+/* ==== SHK header revamp: gradient bar + account chip ==== */
+
+/* Sticky, slimmer header with gold-to-clear gradient */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 800;
+  padding-top: 0.35rem;
+  padding-bottom: 0.25rem;
+}
+
+/* Gradient background that starts gold at the nav line and fades upward */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+    rgba(222, 176, 0, 0.55) 0%,
+    rgba(222, 176, 0, 0.18) 45%,
+    rgba(222, 176, 0, 0) 100%
+  );
+  border-bottom: 1px solid var(--accent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Slightly smaller logo so the header isn't as tall */
+.site-header .logo-link img.rounded-img {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+@media (max-width: 700px) {
+  .site-header .logo-link img.rounded-img {
+    width: 56px !important;
+    height: 56px !important;
+  }
+}
+
+/* Make the tab row sit in a dark bar over the gradient */
+.site-header .nav-links {
+  border: 1px solid var(--accent);
+  border-radius: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+}
+
+/* Account chip in the top-right */
+.account-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
+  white-space: nowrap;
+}
+
+.account-chip:hover,
+.account-chip:focus-visible {
+  background: rgba(0, 0, 0, 1);
+  color: var(--accent);
+}
+
+.account-icon {
+  font-size: 1rem;
+}
+
+/* Desktop: logo | title | nav tabs | account */
+@media (min-width: 701px) {
+  .site-header .main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    column-gap: 0.75rem;
+    width: 100%;
+  }
+
+  .site-header .logo-link {
+    justify-self: start;
+  }
+
+  .site-header .site-title {
+    justify-self: center;
+    margin: 0;
+  }
+
+  .site-header .nav-links {
+    justify-self: end;
+  }
+
+  .site-header .account-chip {
+    justify-self: end;
+  }
+}
+
+/* Mobile: logo | title | hamburger, then nav, then account chip below */
+@media (max-width: 700px) {
+  .site-header .main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 0.5rem;
+    width: 100%;
+  }
+
+  .site-header .logo-link {
+    justify-self: start;
+  }
+
+  .site-header .site-title {
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .site-header .nav-toggle {
+    justify-self: end;
+  }
+
+  .site-header .nav-links {
+    grid-column: 1 / -1;
+    margin-top: 0.4rem;
+  }
+
+  .site-header .account-chip {
+    grid-column: 1 / -1;
+    justify-self: end;
+    margin-top: 0.35rem;
+  }
+}
