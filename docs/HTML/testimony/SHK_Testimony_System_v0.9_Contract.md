@@ -286,7 +286,7 @@ Specific moderation algorithms and thresholds are left as **implementation detai
 ### 7.3 Personal Testimony Page (“My Testimony”)
 
 - **URL:**  
-  - `"/account/testimony/"`
+  - `"/testimony/account/"`
 
 - **Header:**
   - Title: “My Testimony”.
