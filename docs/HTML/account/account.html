@@ -323,40 +323,66 @@ permalink: /account/
     }
   }
 
-  function setLoggedInState(user) {
-    const subtitleEl = document.getElementById('mt-subtitle');
-    const avatarEl = document.getElementById('mt-avatar');
-    const authNoteEl = document.getElementById('mt-auth-note');
-    const authToggleBtn = document.getElementById('mt-auth-toggle');
+function setLoggedInState(user) {
+  const subtitleEl = document.getElementById('mt-subtitle');
+  const avatarEl = document.getElementById('mt-avatar');
+  const authNoteEl = document.getElementById('mt-auth-note');
+  const authToggleBtn = document.getElementById('mt-auth-toggle');
 
-    const email = user.email || '';
-    const displayName = (user.user_metadata && user.user_metadata.display_name) || '';
-    const nameOrEmail = displayName || email || 'Your SHK account';
+  const email = user.email || '';
+  const displayName = (user.user_metadata && user.user_metadata.display_name) || '';
+  const avatarKey = user.user_metadata && user.user_metadata.avatar_key;
+  const nameOrEmail = displayName || email || 'Your SHK account';
 
-    subtitleEl.textContent = nameOrEmail;
-    authNoteEl.textContent = 'You are signed in. Your testimonies will live here as we build out the wall.';
+  subtitleEl.textContent = nameOrEmail;
+  authNoteEl.textContent =
+    'You are signed in. Your testimonies will live here as we build out the wall.';
 
-    // Avatar initial from display name or email
+  // Try to resolve a preset avatar image
+  let avatarSrc = null;
+  if (
+    avatarKey &&
+    window.SHK_PROFILE_AVATARS &&
+    Array.isArray(window.SHK_PROFILE_AVATARS)
+  ) {
+    const match = window.SHK_PROFILE_AVATARS.find((a) => a.key === avatarKey);
+    if (match) {
+      avatarSrc = match.src;
+    }
+  }
+
+  if (avatarSrc) {
+    // Use the chosen profile image
+    avatarEl.textContent = '';
+    avatarEl.style.backgroundImage = `url('${avatarSrc}')`;
+    avatarEl.style.backgroundSize = 'cover';
+    avatarEl.style.backgroundPosition = 'center';
+    avatarEl.style.backgroundRepeat = 'no-repeat';
+  } else {
+    // Fallback: avatar initial from display name or email
     let initial = '✝';
     if (displayName && displayName.trim()) {
       initial = displayName.trim().charAt(0).toUpperCase();
     } else if (email) {
       initial = email.charAt(0).toUpperCase();
     }
+    avatarEl.style.backgroundImage = '';
     avatarEl.textContent = initial;
-
-    if (authToggleBtn) {
-      authToggleBtn.textContent = 'Sign out';
-      authToggleBtn.onclick = async () => {
-        try {
-          await supabase.auth.signOut();
-        } catch (e) {
-          console.error('Error signing out:', e);
-        }
-        window.location.href = '/';
-      };
-    }
   }
+
+  if (authToggleBtn) {
+    authToggleBtn.textContent = 'Sign out';
+    authToggleBtn.onclick = async () => {
+      try {
+        await supabase.auth.signOut();
+      } catch (e) {
+        console.error('Error signing out:', e);
+      }
+      window.location.href = '/';
+    };
+  }
+}
+
 
   function setupTabs() {
     const tabs = Array.from(document.querySelectorAll('.mt-tab'));

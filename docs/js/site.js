@@ -200,7 +200,7 @@
 })();
 
 // 9) User Profile Picture Selection
-window.SHK_PROFILE_AVATARS = Array.from({ length: 90 }, (_, idx) => {
+window.SHK_PROFILE_AVATARS = Array.from({ length: 123 }, (_, idx) => {
   const id = idx + 1; // 1–90
   return {
     key: `avatar-${id}`, // logical key we store in metadata
