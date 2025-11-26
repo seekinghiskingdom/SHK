@@ -4,199 +4,203 @@ title: My Testimony
 permalink: /account/
 ---
 
-<section class="mt-page account-bg-page" id="mt-page">
+<!-- Layout and copy assisted by AI (-AI) -->
+<section class="account-page account-bg-page mt-page" id="mt-page">
+
   <header class="mt-header">
-    <div class="mt-profile">
-      <div class="mt-avatar" id="mt-avatar">
-        <span class="mt-avatar-initial" id="mt-avatar-initial">?</span>
-      </div>
-
-      <div class="mt-profile-main">
-        <h1 class="mt-title" id="mt-display-name">My Testimony</h1>
-        <p class="mt-subtitle" id="mt-email">
-          Your personal hub for salvation and life testimonies.
+    <div class="mt-header-main">
+      <div class="mt-avatar" id="mt-avatar">✝</div>
+      <div>
+        <h1 class="mt-title">My Testimony</h1>
+        <p class="mt-subtitle" id="mt-subtitle">
+          This is your story of how God is moving in your life.
         </p>
-
-        <div class="mt-profile-actions">
-          <a href="/account/settings/" class="btn btn-secondary">Account settings</a>
-          <button class="btn btn-secondary" type="button" id="mt-sign-out">
-            Sign out
-          </button>
-        </div>
-
-        <p class="mt-auth-note" id="mt-auth-note"></p>
       </div>
+    </div>
+
+    <div class="mt-actions">
+      <button
+        class="mt-settings-btn"
+        type="button"
+        id="mt-settings-btn"
+      >
+        Account settings
+      </button>
+
+      <button
+        class="mt-auth-btn"
+        type="button"
+        id="mt-auth-toggle"
+      >
+        Sign out
+      </button>
     </div>
   </header>
 
-  <!-- Salvation testimony block -->
-  <section class="mt-salvation" id="mt-salvation">
-    <!-- This will be used later when a salvation testimony exists -->
-    <div class="mt-salvation-existing" id="mt-salvation-existing" hidden>
-      <h2 class="mt-section-title">✝️ My Salvation Story</h2>
-      <p class="mt-salvation-preview" id="mt-salvation-preview">
-        <!-- Filled when we wire real data -->
-      </p>
-      <div class="mt-salvation-actions">
-        <a href="/testimony/salvation/edit/" class="btn btn-secondary">
-          View / edit my salvation story
-        </a>
-      </div>
-    </div>
+  <p id="mt-auth-note" class="mt-auth-note">
+    Checking your account…
+  </p>
 
-    <!-- Default empty state / CTA -->
-    <div class="mt-salvation-banner" id="mt-salvation-banner">
-      <h2 class="mt-section-title">✝️ Your salvation testimony goes here</h2>
-      <p>
-        This is where you’ll write and keep the story of how Jesus saved you —
-        so you can remember it, pray through it, and share it with others.
+  <hr class="mt-divider">
+
+  <!-- Personal salvation testimony card -->
+  <section class="mt-section">
+    <h2 class="mt-section-title">Your salvation testimony</h2>
+
+    <div class="mt-salvation-card">
+      <p class="mt-salvation-placeholder" id="mt-salvation-placeholder">
+        Your salvation testimony will live here. When you’re ready, you can write it out and update it over time.
       </p>
+
       <div class="mt-salvation-actions">
-        <a href="/testimony/salvation/new/" class="btn btn-primary">
+        <button class="mt-pill-button" type="button">
           Write my salvation story
-        </a>
-        <a href="/testimony/" class="btn btn-outline">
-          Learn more about salvation and testimony
-        </a>
+        </button>
+        <button class="mt-pill-button mt-pill-outline" type="button">
+          Learn more about salvation & testimonies
+        </button>
       </div>
     </div>
   </section>
 
-  <!-- Tabs / filters -->
-  <nav class="mt-tabs" aria-label="My testimonies filters">
-    <button class="mt-tab is-active" data-tab="all" type="button">All</button>
-    <button class="mt-tab" data-tab="prayer" type="button">🙏 Prayer</button>
-    <button class="mt-tab" data-tab="blessings" type="button">🎁 Blessings</button>
-    <button class="mt-tab" data-tab="miracles" type="button">✨ Miracles</button>
-    <button class="mt-tab" data-tab="general" type="button">📖 General</button>
-    <button class="mt-tab" data-tab="private" type="button">🔒 Private</button>
-    <button class="mt-tab" data-tab="drafts" type="button">📝 Drafts</button>
-  </nav>
-
-  <!-- Active user heading (summary line under tabs) -->
-  <section class="mt-user-header" id="mt-user-header">
-    <!-- Filled with basic info / counts later -->
-  </section>
-
-  <!-- Testimonies list containers -->
-  <section class="mt-list" aria-label="My testimonies">
-    <div class="mt-list-header">
-      <button class="btn btn-primary mt-add-btn" type="button" id="mt-add-testimony">
-        Add testimony
+  <!-- Other testimonies filters -->
+  <section class="mt-section">
+    <div class="mt-section-header">
+      <h2 class="mt-section-title">Other testimonies</h2>
+      <button class="mt-add-testimony-btn" type="button">
+        + Add testimony
       </button>
     </div>
 
-    <div class="mt-cards" id="mt-cards">
-      <!-- Testimony cards will go here when wired to Supabase -->
+    <div class="mt-tabs" role="tablist">
+      <button class="mt-tab is-active" data-filter="all" type="button">All</button>
+      <button class="mt-tab" data-filter="prayer" type="button">Prayers</button>
+      <button class="mt-tab" data-filter="blessing" type="button">Blessings</button>
+      <button class="mt-tab" data-filter="miracle" type="button">Miracles</button>
+      <button class="mt-tab" data-filter="general" type="button">General</button>
+      <button class="mt-tab" data-filter="draft" type="button">Private drafts</button>
     </div>
 
-    <div class="mt-empty-state" id="mt-empty-state">
-      <p>Your future testimonies will show up here once you start writing.</p>
-      <button class="btn btn-primary mt-add-btn" type="button" id="mt-add-from-empty">
-        Add testimony
-      </button>
+    <div class="mt-list-placeholder">
+      <p>
+        This is where your prayers, blessings, miracles, and other testimonies will appear once we wire up the Testimony Wall.
+      </p>
+      <p class="mt-list-subtext">
+        For now, you can explore your account settings and get familiar with the layout.
+      </p>
     </div>
   </section>
+
 </section>
 
 <style>
 .mt-page {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
+  padding: 2rem 1.25rem 3rem;
 }
-
-/* Header / profile */
 
 .mt-header {
-  margin-bottom: 1.25rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
-.mt-profile {
+.mt-header-main {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 .mt-avatar {
-  width: 64px;
-  height: 64px;
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 999px;
-  background: #f4e6b0;
-  border: 2px solid #e0c66a;
+  background: rgba(222, 176, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #222;
-}
-
-.mt-avatar-initial {
-  display: inline-block;
-}
-
-.mt-profile-main {
-  flex: 1;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
 }
 
 .mt-title {
-  margin-bottom: 0.15rem;
+  margin: 0;
+  font-size: 1.45rem;
 }
 
 .mt-subtitle {
-  margin: 0 0 0.4rem;
+  margin: 0.12rem 0 0;
   font-size: 0.95rem;
-  color: #fafafa;
+  color: #e5e7eb;
 }
 
-.mt-profile-actions {
+.mt-actions {
   display: flex;
+  gap: 0.6rem;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.35rem;
 }
 
-.mt-profile-actions .btn {
-  width: auto;
+.mt-settings-btn,
+.mt-auth-btn {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: rgba(0, 0, 0, 0.75);
+  color: #f9fafb;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.mt-auth-btn {
+  border-color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
 }
 
 .mt-auth-note {
-  margin-top: 0.4rem;
-  font-size: 0.85rem;
-  color: #f5f5f5;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
 }
 
-.mt-auth-note a {
-  color: #e2b200;
-  text-decoration: underline;
+.mt-divider {
+  margin: 1.4rem 0 1.1rem;
+  border: none;
+  border-top: 1px solid rgba(229, 231, 235, 0.4);
 }
 
-/* Salvation block */
-
-.mt-salvation {
-  border-radius: 10px;
-  border: 1px solid rgba(224, 198, 106, 0.35);
-  padding: 1rem 1.1rem;
-  margin-bottom: 1.25rem;
-  background: #fafafa;
-  color: #111827; /* dark text on light background */
-}
-
-.mt-salvation h2,
-.mt-salvation p {
-  color: #111827;
+.mt-section {
+  margin-bottom: 1.75rem;
 }
 
 .mt-section-title {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
 }
 
-.mt-salvation-preview {
-  margin-bottom: 0.75rem;
+.mt-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mt-salvation-card {
+  background: rgba(15, 23, 42, 0.85);
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem 1rem;
+  border: 1px solid rgba(249, 250, 251, 0.18);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+}
+
+.mt-salvation-placeholder {
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+  color: #f9fafb;
 }
 
 .mt-salvation-actions {
@@ -205,112 +209,83 @@ permalink: /account/
   gap: 0.5rem;
 }
 
-/* Tabs */
+.mt-pill-button {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #facc15;
+  background: rgba(250, 204, 21, 0.15);
+  color: #fefce8;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
 
+.mt-pill-outline {
+  border-color: rgba(249, 250, 251, 0.4);
+  background: transparent;
+}
+
+.mt-add-testimony-btn {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #facc15;
+  background: rgba(250, 204, 21, 0.1);
+  color: #fefce8;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* Tabs row – horizontal pills, not full-width */
 .mt-tabs {
+  margin-top: 0.8rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-bottom: 0.9rem;
+  gap: 0.4rem;
 }
 
 .mt-tab {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid #e5e7eb;
   border-radius: 999px;
-  padding: 0.25rem 0.75rem;
-  background: rgba(17, 24, 39, 0.6);
-  font-size: 0.8rem;
+  padding: 0.25rem 0.9rem;
+  background: rgba(15, 23, 42, 0.85);
+  font-size: 0.85rem;
   cursor: pointer;
-  color: #f9fafb;
+  color: #e5e7eb;
   white-space: nowrap;
 }
 
 .mt-tab.is-active {
-  background: #f4e6b0;
-  border-color: #e0c66a;
-  font-weight: 600;
-  color: #111827;
+  background: rgba(250, 204, 21, 0.15);
+  border-color: #facc15;
+  color: #fefce8;
 }
 
-/* User header */
-
-.mt-user-header {
-  margin-bottom: 0.75rem;
+.mt-list-placeholder {
+  margin-top: 0.8rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 12px;
+  border: 1px dashed rgba(229, 231, 235, 0.5);
+  background: rgba(15, 23, 42, 0.7);
   font-size: 0.9rem;
-  color: #f5f5f5;
+  color: #e5e7eb;
 }
 
-/* List / cards */
-
-.mt-list-header {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 0.5rem;
-}
-
-.mt-add-btn {
-  width: auto;
-}
-
-.mt-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.mt-card {
-  border-radius: 8px;
-  border: 1px solid #e1e1e1;
-  padding: 0.75rem 0.85rem;
-  background: #fff;
-}
-
-.mt-empty-state {
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 6px;
-  border: 1px dashed #ccc;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-/* Buttons (fallback if your global .btn isn’t present) */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  padding: 0.35rem 0.9rem;
-  border: 1px solid transparent;
-  font-size: 0.9rem;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: #e2b200;
-  border-color: #d09f00;
-  color: #222;
-}
-
-.btn-secondary {
-  background: #f5f5f5;
-  border-color: #ccc;
-  color: #222;
-}
-
-.btn-outline {
-  background: transparent;
-  border-color: #ccc;
-  color: #222;
+.mt-list-subtext {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #cbd5f5;
 }
 
 @media (max-width: 640px) {
-  .mt-profile {
+  .mt-page {
+    padding-inline: 1rem;
+  }
+
+  .mt-header {
+    align-items: flex-start;
+  }
+
+  .mt-section-header {
+    flex-direction: column;
     align-items: flex-start;
   }
 }
@@ -323,128 +298,91 @@ permalink: /account/
 
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
-  const signOutBtn = document.getElementById('mt-sign-out');
-  const authNoteEl = document.getElementById('mt-auth-note');
-
   function setLoggedOutState() {
-    const titleEl = document.getElementById('mt-display-name');
-    const emailEl = document.getElementById('mt-email');
-    const avatarInitial = document.getElementById('mt-avatar-initial');
-    const userHeader = document.getElementById('mt-user-header');
+    const subtitleEl = document.getElementById('mt-subtitle');
+    const avatarEl = document.getElementById('mt-avatar');
+    const authNoteEl = document.getElementById('mt-auth-note');
+    const authToggleBtn = document.getElementById('mt-auth-toggle');
 
-    avatarInitial.textContent = '✝';
-    titleEl.textContent = 'My Testimony';
-    emailEl.textContent = 'Please sign in to view and write your testimonies.';
+    avatarEl.textContent = '✝';
+    subtitleEl.textContent = 'Sign in or create an account to write and share your testimonies.';
+    authNoteEl.textContent =
+      'You are not signed in. Sign in or create an account to start sharing your story.';
 
-    if (authNoteEl) {
-      authNoteEl.innerHTML = `
-        You are not signed in.
-        <a href="/account/sign-in/">Sign in</a> or
-        <a href="/account/sign-up/">create an account</a> to start sharing.
-      `;
-    }
-
-    userHeader.innerHTML = '';
-
-    if (signOutBtn) {
-      signOutBtn.style.display = 'none';
+    if (authToggleBtn) {
+      authToggleBtn.textContent = 'Sign in';
+      authToggleBtn.onclick = () => {
+        window.location.href = '/account/sign-in/';
+      };
     }
   }
 
-  async function setLoggedInState(user) {
-    const titleEl = document.getElementById('mt-display-name');
-    const emailEl = document.getElementById('mt-email');
-    const avatarInitial = document.getElementById('mt-avatar-initial');
-    const userHeader = document.getElementById('mt-user-header');
+  function setLoggedInState(user) {
+    const subtitleEl = document.getElementById('mt-subtitle');
+    const avatarEl = document.getElementById('mt-avatar');
+    const authNoteEl = document.getElementById('mt-auth-note');
+    const authToggleBtn = document.getElementById('mt-auth-toggle');
 
     const email = user.email || '';
-    const initial = (email || user.id || '?').charAt(0).toUpperCase();
+    const displayName = (user.user_metadata && user.user_metadata.display_name) || '';
+    const nameOrEmail = displayName || email || 'Your SHK account';
 
-    let displayName = '';
+    subtitleEl.textContent = nameOrEmail;
+    authNoteEl.textContent = 'You are signed in. Your testimonies will live here as we build out the wall.';
 
-    try {
-      const { data: profileData, error: profileError } = await supabase
-        .from('user_account')
-        .select('display_name')
-        .eq('auth_user_id', user.id)
-        .maybeSingle();
-
-      if (!profileError && profileData && profileData.display_name) {
-        displayName = profileData.display_name;
-      }
-    } catch (e) {
-      console.warn('Could not load user profile', e);
+    // Avatar initial from display name or email
+    let initial = '✝';
+    if (displayName && displayName.trim()) {
+      initial = displayName.trim().charAt(0).toUpperCase();
+    } else if (email) {
+      initial = email.charAt(0).toUpperCase();
     }
+    avatarEl.textContent = initial;
 
-    avatarInitial.textContent = initial;
-    titleEl.textContent = 'My Testimony';
-    emailEl.textContent = displayName || email || 'Signed in';
-
-    userHeader.innerHTML = `
-      <strong>Account:</strong> ${displayName || email || user.id}
-    `;
-
-    if (authNoteEl) {
-      authNoteEl.textContent = '';
+    if (authToggleBtn) {
+      authToggleBtn.textContent = 'Sign out';
+      authToggleBtn.onclick = async () => {
+        try {
+          await supabase.auth.signOut();
+        } catch (e) {
+          console.error('Error signing out:', e);
+        }
+        window.location.href = '/';
+      };
     }
+  }
 
-    if (signOutBtn) {
-      signOutBtn.style.display = 'inline-flex';
-    }
+  function setupTabs() {
+    const tabs = Array.from(document.querySelectorAll('.mt-tab'));
+    if (!tabs.length) return;
 
-    // Later, when salvation data exists, you’ll hide the banner and show existing:
-    // document.getElementById('mt-salvation-banner').hidden = true;
-    // document.getElementById('mt-salvation-existing').hidden = false;
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+        // Later we’ll filter testimonies by tab.dataset.filter
+      });
+    });
   }
 
   async function initAccountPage() {
+    setupTabs();
+
+    const settingsBtn = document.getElementById('mt-settings-btn');
+    if (settingsBtn) {
+      settingsBtn.addEventListener('click', () => {
+        window.location.href = '/account/settings/';
+      });
+    }
+
     const { data, error } = await supabase.auth.getUser();
 
     if (error || !data || !data.user) {
       setLoggedOutState();
-    } else {
-      await setLoggedInState(data.user);
+      return;
     }
 
-    if (signOutBtn) {
-      signOutBtn.addEventListener('click', async () => {
-        await supabase.auth.signOut();
-        window.location.href = '/';
-      });
-    }
-
-    const addButtons = [
-      document.getElementById('mt-add-testimony'),
-      document.getElementById('mt-add-from-empty')
-    ];
-
-    addButtons.forEach(btn => {
-      if (!btn) return;
-      btn.addEventListener('click', () => {
-        window.location.href = '/testimony/new/';
-      });
-    });
-
-    // Tabs: UI-only placeholders for now; filtering will come once data is wired.
-    const tabs = Array.from(document.querySelectorAll('.mt-tab'));
-    let currentTab = 'all';
-
-    function activateTab(tabName) {
-      currentTab = tabName;
-      tabs.forEach(btn => {
-        btn.classList.toggle('is-active', btn.dataset.tab === tabName);
-      });
-    }
-
-    tabs.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tabName = btn.dataset.tab;
-        if (!tabName || tabName === currentTab) return;
-        activateTab(tabName);
-      });
-    });
-
-    activateTab('all');
+    setLoggedInState(data.user);
   }
 
   document.addEventListener('DOMContentLoaded', initAccountPage);

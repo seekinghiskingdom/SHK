@@ -4,9 +4,18 @@ title: Account settings
 permalink: /account/settings/
 ---
 
+<!-- Layout and copy assisted by AI (-AI) -->
 <section class="account-page settings-page account-bg-page">
 
-  <h1>Account settings</h1>
+  <header class="settings-header">
+    <div>
+      <h1>Account settings</h1>
+      <p class="settings-subtitle">
+        Manage your SHK profile, email, and password.
+      </p>
+    </div>
+    <a href="/account/" class="settings-back-link">← Back to my account</a>
+  </header>
 
   <!-- Signed-out notice -->
   <p id="settings-signed-out" style="display:none;">
@@ -16,32 +25,43 @@ permalink: /account/settings/
   <!-- Settings content (hidden until we know user) -->
   <div id="settings-content" style="display:none;">
 
-    <!-- Profile summary -->
+    <!-- Profile / display name -->
     <section class="settings-section">
       <h2>Profile</h2>
+      <p class="settings-note">
+        This is the name that may appear on your testimonies. Changing your email does not change this name.
+      </p>
+
       <div class="settings-profile">
-        <div class="settings-avatar" id="settings-avatar">
-          <span id="settings-avatar-initial">?</span>
-        </div>
+        <div class="settings-avatar" id="settings-avatar">✝</div>
         <div>
-          <p><strong>Email:</strong> <span id="settings-email"></span></p>
-          <p><strong>Display name:</strong> <span id="settings-display-name"></span></p>
-          <p class="settings-note">
-            Your display name is what will appear on your testimonies and profile.
+          <p class="settings-email">
+            Signed in as <span id="settings-email"></span>
           </p>
         </div>
       </div>
 
-      <form id="settings-displayname-form" class="account-form" style="margin-top:0.75rem; max-width:380px;">
+      <form id="settings-display-name-form" class="account-form">
         <label>
-          New display name
-          <input type="text" id="settings-new-display-name" maxlength="80">
+          Display name (optional)
+          <span
+            class="field-help-inline"
+            title="2–40 characters; first name or nickname. No emails, links, or offensive content."
+          >?</span>
+          <input
+            type="text"
+            id="settings-display-name"
+            autocomplete="name"
+            maxlength="80"
+          >
         </label>
-        <button type="submit">Update display name</button>
-        <p id="settings-displayname-message" class="account-message"></p>
+        <p class="field-help">
+          This is the name that may be shown next to your testimonies.
+        </p>
+        <button type="submit">Save display name</button>
+        <p id="settings-display-name-message" class="account-message"></p>
       </form>
     </section>
-
 
     <!-- Change email -->
     <section class="settings-section">
@@ -63,7 +83,7 @@ permalink: /account/settings/
     <section class="settings-section">
       <h2>Change password</h2>
       <p class="settings-note">
-        For security, please choose a strong password you do not use elsewhere.
+        Choose a new password for your SHK account.
       </p>
       <form id="settings-password-form" class="account-form">
         <label>
@@ -79,28 +99,48 @@ permalink: /account/settings/
       </form>
     </section>
 
-    <!-- Danger zone placeholder -->
-    <section class="settings-section danger">
-      <h2>Danger zone</h2>
-      <p class="settings-note">
-        Account deletion and advanced security options will be available in a future update.
-      </p>
-    </section>
-
   </div>
 </section>
 
 <style>
 .settings-page {
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.settings-subtitle {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.settings-back-link {
+  font-size: 0.9rem;
+  color: #facc15;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1px solid rgba(250, 204, 21, 0.7);
+  padding: 0.25rem 0.75rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.settings-back-link:hover {
+  background: rgba(250, 204, 21, 0.1);
 }
 
 .settings-section {
   margin-top: 1.5rem;
   padding-top: 0.75rem;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid rgba(229, 231, 235, 0.4);
 }
 
 .settings-section h2 {
@@ -108,33 +148,39 @@ permalink: /account/settings/
   margin-bottom: 0.5rem;
 }
 
+.settings-note {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
 .settings-profile {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .settings-avatar {
-  width: 56px;
-  height: 56px;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 999px;
-  background: #f4e6b0;
-  border: 2px solid #e0c66a;
+  background: rgba(222, 176, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #222;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
 }
 
-.settings-note {
+.settings-email {
+  margin: 0;
   font-size: 0.9rem;
-  color: #fafafa;
-  margin-top: 0.25rem;
+  color: #f9fafb;
 }
 
+/* Shared form styles (match other account forms) */
 .account-form {
   display: flex;
   flex-direction: column;
@@ -150,11 +196,20 @@ permalink: /account/settings/
 }
 
 .account-form input[type="email"],
-.account-form input[type="password"] {
-  padding: 0.4rem 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+.account-form input[type="password"],
+.account-form input[type="text"] {
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #9ca3af;
   font: inherit;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.account-form input:focus {
+  outline: none;
+  border-color: #b08900;
+  box-shadow: 0 0 0 1px rgba(176, 137, 0, 0.5);
 }
 
 .account-form button {
@@ -162,10 +217,11 @@ permalink: /account/settings/
   margin-top: 0.25rem;
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid #d09f00;
-  background: #e2b200;
-  color: #222;
-  font-size: 0.95rem;
+  border: 1px solid #b08900;
+  background: #f3c43a;
+  color: #111827;
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -173,18 +229,46 @@ permalink: /account/settings/
   font-size: 0.85rem;
   margin-top: 0.25rem;
   min-height: 1.1em;
+  color: #f9fafb;
 }
 
 .account-message.error {
-  color: #b91c1c;
+  color: #fca5a5;
 }
 
 .account-message.success {
-  color: #166534;
+  color: #bbf7d0;
 }
 
-.settings-section.danger {
-  border-top-color: #fca5a5;
+/* Field help */
+.field-help-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid #b08900;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: help;
+}
+
+.field-help {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  color: #e5e7eb;
+}
+
+@media (max-width: 640px) {
+  .settings-page {
+    padding-inline: 1rem;
+  }
+
+  .settings-header {
+    align-items: flex-start;
+  }
 }
 </style>
 
@@ -195,180 +279,178 @@ permalink: /account/settings/
 
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
-  function showSignedOut() {
-    document.getElementById('settings-signed-out').style.display = 'block';
-    document.getElementById('settings-content').style.display = 'none';
-  }
-
-  function showUser(user) {
-    const email = user.email || '';
-    const initial = (email || user.id || '?').charAt(0).toUpperCase();
-
-    document.getElementById('settings-avatar-initial').textContent = initial;
-    document.getElementById('settings-email').textContent = email;
-
-    document.getElementById('settings-signed-out').style.display = 'none';
-    document.getElementById('settings-content').style.display = 'block';
-  }
-
   async function initSettings() {
-    const { data, error } = await supabase.auth.getUser();
-    if (error || !data || !data.user) {
-      showSignedOut();
-      return;
-    }
+    const signedOutEl = document.getElementById('settings-signed-out');
+    const contentEl = document.getElementById('settings-content');
+    const emailSpan = document.getElementById('settings-email');
+    const avatarEl = document.getElementById('settings-avatar');
 
-    showUser(data.user);
-    const user = data.user;
+    const displayNameForm = document.getElementById('settings-display-name-form');
+    const displayNameInput = document.getElementById('settings-display-name');
+    const displayNameMsg = document.getElementById('settings-display-name-message');
 
-    // Fetch profile row
-    const displayNameSpan = document.getElementById('settings-display-name');
-
-    try {
-      const { data: profileData, error: profileError } = await supabase
-        .from('user_account')
-        .select('display_name')
-        .eq('auth_user_id', user.id)
-        .maybeSingle();
-
-    if (!profileError && profileData && profileData.display_name) {
-        displayNameSpan.textContent = profileData.display_name;
-    } else {
-        displayNameSpan.textContent = '';
-    }
-    } catch (e) {
-      console.warn('Could not load display name', e);
-      displayNameSpan.textContent = '';
-    }
-
-
-  const displayNameForm = document.getElementById('settings-displayname-form');
-  const newDisplayNameInput = document.getElementById('settings-new-display-name');
-  const displayNameMsg = document.getElementById('settings-displayname-message');
-
-  displayNameForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    displayNameMsg.textContent = '';
-    displayNameMsg.className = 'account-message';
-
-  const newName = newDisplayNameInput.value.trim();
-
-  if (!newName) {
-    displayNameMsg.textContent = 'Please enter a display name.';
-    displayNameMsg.classList.add('error');
-    return;
-  }
-
-  displayNameMsg.textContent = 'Updating display name...';
-
-  try {
-    // 1) Update your user_account row (RLS should allow auth.uid() = auth_user_id)
-    const { error: dbError } = await supabase
-      .from('user_account')
-      .update({ display_name: newName })
-      .eq('auth_user_id', user.id);
-
-    if (dbError) {
-      console.error('user_account update error:', dbError);
-      displayNameMsg.textContent = dbError.message || 'Unable to update display name.';
-      displayNameMsg.classList.add('error');
-      return;
-    }
-
-    // 2) Optionally keep auth metadata in sync
-    const { error: authError } = await supabase.auth.updateUser({
-      data: { display_name: newName }
-    });
-
-    if (authError) {
-      console.warn('auth.updateUser metadata error:', authError);
-    }
-
-    displayNameSpan.textContent = newName;
-    displayNameMsg.textContent = 'Display name updated.';
-    displayNameMsg.classList.add('success');
-    newDisplayNameInput.value = '';
-  } catch (err) {
-    console.error('Display name update failed:', err);
-    displayNameMsg.textContent = 'Unexpected error updating display name.';
-    displayNameMsg.classList.add('error');
-  }
-});
-
-    // Change email
     const emailForm = document.getElementById('settings-email-form');
-    const newEmailInput = document.getElementById('settings-new-email');
+    const emailInput = document.getElementById('settings-new-email');
     const emailMsg = document.getElementById('settings-email-message');
 
-    emailForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      emailMsg.textContent = '';
-      emailMsg.className = 'account-message';
-
-      const newEmail = newEmailInput.value.trim();
-      if (!newEmail) {
-        emailMsg.textContent = 'Please enter a new email.';
-        emailMsg.classList.add('error');
-        return;
-      }
-
-      emailMsg.textContent = 'Sending confirmation link...';
-
-      const { data, error } = await supabase.auth.updateUser({ email: newEmail });
-
-      if (error) {
-        console.error(error);
-        emailMsg.textContent = error.message || 'Unable to update email.';
-        emailMsg.classList.add('error');
-        return;
-      }
-
-      emailMsg.textContent = 'Check your new email for a confirmation link.';
-      emailMsg.classList.add('success');
-      emailForm.reset();
-    });
-
-    // Change password
     const passwordForm = document.getElementById('settings-password-form');
-    const newPasswordInput = document.getElementById('settings-new-password');
-    const confirmPasswordInput = document.getElementById('settings-confirm-password');
+    const pw1Input = document.getElementById('settings-new-password');
+    const pw2Input = document.getElementById('settings-confirm-password');
     const passwordMsg = document.getElementById('settings-password-message');
 
-    passwordForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      passwordMsg.textContent = '';
-      passwordMsg.className = 'account-message';
+    const { data, error } = await supabase.auth.getUser();
 
-      const pw1 = newPasswordInput.value;
-      const pw2 = confirmPasswordInput.value;
+    if (error || !data || !data.user) {
+      signedOutEl.style.display = 'block';
+      contentEl.style.display = 'none';
+      return;
+    }
 
-      if (!pw1 || !pw2) {
-        passwordMsg.textContent = 'Please fill in both password fields.';
-        passwordMsg.classList.add('error');
-        return;
-      }
+    const user = data.user;
+    signedOutEl.style.display = 'none';
+    contentEl.style.display = 'block';
 
-      if (pw1 !== pw2) {
-        passwordMsg.textContent = 'Passwords do not match.';
-        passwordMsg.classList.add('error');
-        return;
-      }
+    const email = user.email || '';
+    const displayName = (user.user_metadata && user.user_metadata.display_name) || '';
 
-      passwordMsg.textContent = 'Updating password...';
+    emailSpan.textContent = email;
 
-      const { data, error } = await supabase.auth.updateUser({ password: pw1 });
+    if (displayNameInput) {
+      displayNameInput.value = displayName;
+    }
 
-      if (error) {
-        console.error(error);
-        passwordMsg.textContent = error.message || 'Unable to update password.';
-        passwordMsg.classList.add('error');
-        return;
-      }
+    // Avatar initial
+    let initial = '✝';
+    if (displayName && displayName.trim()) {
+      initial = displayName.trim().charAt(0).toUpperCase();
+    } else if (email) {
+      initial = email.charAt(0).toUpperCase();
+    }
+    avatarEl.textContent = initial;
 
-      passwordMsg.textContent = 'Password updated successfully.';
-      passwordMsg.classList.add('success');
-      passwordForm.reset();
-    });
+    // Display name form
+    if (displayNameForm) {
+      displayNameForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        displayNameMsg.textContent = '';
+        displayNameMsg.className = 'account-message';
+
+        const newName = displayNameInput.value.trim();
+        if (newName && (newName.length < 2 || newName.length > 40)) {
+          displayNameMsg.textContent = 'Display name should be between 2 and 40 characters.';
+          displayNameMsg.classList.add('error');
+          return;
+        }
+
+        displayNameMsg.textContent = 'Saving display name…';
+
+        const { data, error } = await supabase.auth.updateUser({
+          data: {
+            display_name: newName || null
+          }
+        });
+
+        if (error) {
+          console.error('Display name update error:', error);
+          displayNameMsg.textContent = error.message || 'Unable to update display name.';
+          displayNameMsg.classList.add('error');
+          return;
+        }
+
+        // Update avatar initial too
+        let newInitial = '✝';
+        if (newName) {
+          newInitial = newName.charAt(0).toUpperCase();
+        } else if (email) {
+          newInitial = email.charAt(0).toUpperCase();
+        }
+        avatarEl.textContent = newInitial;
+
+        displayNameMsg.textContent = 'Display name updated.';
+        displayNameMsg.classList.add('success');
+      });
+    }
+
+    // Change email
+    if (emailForm) {
+      emailForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        emailMsg.textContent = '';
+        emailMsg.className = 'account-message';
+
+        const newEmail = emailInput.value.trim();
+        if (!newEmail) {
+          emailMsg.textContent = 'Please enter a new email.';
+          emailMsg.classList.add('error');
+          return;
+        }
+
+        emailMsg.textContent = 'Sending confirmation link…';
+
+        const { data, error } = await supabase.auth.updateUser({
+          email: newEmail
+        });
+
+        if (error) {
+          console.error('Email update error:', error);
+          emailMsg.textContent = error.message || 'Unable to start email change.';
+          emailMsg.classList.add('error');
+          return;
+        }
+
+        emailMsg.textContent =
+          'If the new email is available, we’ve sent a confirmation link. Follow it to finish changing your email.';
+        emailMsg.classList.add('success');
+        emailForm.reset();
+      });
+    }
+
+    // Change password
+    if (passwordForm) {
+      passwordForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        passwordMsg.textContent = '';
+        passwordMsg.className = 'account-message';
+
+        const pw1 = pw1Input.value;
+        const pw2 = pw2Input.value;
+
+        if (!pw1 || !pw2) {
+          passwordMsg.textContent = 'Please fill in both password fields.';
+          passwordMsg.classList.add('error');
+          return;
+        }
+
+        if (pw1 !== pw2) {
+          passwordMsg.textContent = 'Passwords do not match.';
+          passwordMsg.classList.add('error');
+          return;
+        }
+
+        if (pw1.length < 8) {
+          passwordMsg.textContent = 'Password must be at least 8 characters.';
+          passwordMsg.classList.add('error');
+          return;
+        }
+
+        passwordMsg.textContent = 'Updating password…';
+
+        const { data, error } = await supabase.auth.updateUser({
+          password: pw1
+        });
+
+        if (error) {
+          console.error('Password update error:', error);
+          passwordMsg.textContent = error.message || 'Unable to update password.';
+          passwordMsg.classList.add('error');
+          return;
+        }
+
+        passwordMsg.textContent = 'Password updated successfully.';
+        passwordMsg.classList.add('success');
+        passwordForm.reset();
+      });
+    }
   }
 
   document.addEventListener('DOMContentLoaded', initSettings);
