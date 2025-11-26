@@ -1,0 +1,81 @@
+---
+layout: default
+title: Create your SHK account
+permalink: /account/sign-up/
+---
+
+<section class="account-page">
+  <h1>Join Seeking His Kingdom</h1>
+
+  <form id="shk-signup-form" class="account-form">
+    <label>
+      Email
+      <input id="signup-email" type="email" name="email" autocomplete="email" required>
+    </label>
+
+    <label>
+      Password
+      <input id="signup-password" type="password" name="password" autocomplete="new-password" required minlength="8">
+    </label>
+
+    <button type="submit">Create account</button>
+
+    <p id="signup-message" class="account-message"></p>
+  </form>
+
+  <p class="account-alt">
+    Already have an account?
+    <a href="/account/sign-in/">Sign in</a>
+  </p>
+</section>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script>
+  // TODO: later we can move these into a shared env script per your backend-env contract.
+  const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  const form = document.getElementById('shk-signup-form');
+  const emailInput = document.getElementById('signup-email');
+  const passwordInput = document.getElementById('signup-password');
+  const messageEl = document.getElementById('signup-message');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    messageEl.textContent = '';
+    messageEl.className = 'account-message';
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
+
+    if (!email || !password) {
+      messageEl.textContent = 'Please enter an email and password.';
+      messageEl.classList.add('error');
+      return;
+    }
+
+    messageEl.textContent = 'Creating your account...';
+
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+      // optional: you can set emailRedirectTo, otherwise Supabase uses your Site URL / redirect config
+      // options: { emailRedirectTo: 'https://seekinghiskingdom.org/account/confirm/' },
+    });
+
+    if (error) {
+      console.error(error);
+      messageEl.textContent = error.message || 'Something went wrong. Please try again.';
+      messageEl.classList.add('error');
+      return;
+    }
+
+    // With "Confirm email" ON, Supabase sends a confirmation email and no session is returned.
+    messageEl.textContent =
+      'Account created! Please check your email to confirm your address before signing in.';
+    messageEl.classList.add('success');
+    form.reset();
+  });
+</script>
