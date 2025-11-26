@@ -4,47 +4,212 @@ title: Email confirmed
 permalink: /account/confirm/
 ---
 
+<!-- Layout and copy assisted by AI (-AI) -->
 <section class="account-page confirm-page account-bg-page">
+  <div class="signin-layout">
 
-  <h1>Email confirmed</h1>
+    <!-- LEFT: Confirmation state -->
+    <div class="signin-left">
+      <h1 class="signin-title">Your email is confirmed</h1>
+      <p class="signin-subtitle">
+        We’ve verified your email address. You’re ready to sign in and start using SHK.
+      </p>
 
-  <p id="confirm-loading">Checking your account status...</p>
+      <p id="confirm-loading" class="account-message">
+        Checking your account status...
+      </p>
 
-  <div id="confirm-signed-in" style="display:none;">
-    <p>
-      Your email has been confirmed and you are signed in as
-      <strong id="confirm-email"></strong>.
-    </p>
-    <p>
-      <a href="/account/" class="btn-primary">Go to my account</a>
-    </p>
-  </div>
+      <div id="confirm-signed-in" style="display:none;">
+        <p class="account-message success">
+          You are signed in as <strong id="confirm-email"></strong>.
+        </p>
+        <p style="margin-top:0.75rem;">
+          <a href="/account/" class="signin-btn-main">Go to my account</a>
+        </p>
+      </div>
 
-  <div id="confirm-signed-out" style="display:none;">
-    <p>Your email has been confirmed. You can now sign in to your account.</p>
-    <p>
-      <a href="/account/sign-in/" class="btn-primary">Sign in</a>
-    </p>
+      <div id="confirm-signed-out" style="display:none;">
+        <p class="account-message success">
+          Your email has been confirmed. You can now sign in to your account.
+        </p>
+        <p style="margin-top:0.75rem;">
+          <a href="/account/sign-in/" class="signin-btn-main">Sign in</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- RIGHT: Next steps / encouragement -->
+    <div class="signin-right">
+      <h2 class="signin-right-title">What’s next?</h2>
+      <p class="signin-right-subtitle">
+        Here are a few things you can do once you’re signed in.
+      </p>
+
+      <div class="signin-grid">
+        <article class="signin-card">
+          <h3 class="signin-card-title">Write your salvation story</h3>
+          <p class="signin-card-text">
+            Capture how Jesus saved you and what He brought you out of.
+          </p>
+        </article>
+        <article class="signin-card">
+          <h3 class="signin-card-title">Log answered prayers</h3>
+          <p class="signin-card-text">
+            Record when and how God answers, so you can look back and remember.
+          </p>
+        </article>
+        <article class="signin-card">
+          <h3 class="signin-card-title">Share testimonies wisely</h3>
+          <p class="signin-card-text">
+            Decide what to keep private and what to share publicly on the wall.
+          </p>
+        </article>
+        <article class="signin-card">
+          <h3 class="signin-card-title">Use SHK as a journal</h3>
+          <p class="signin-card-text">
+            Treat it as a space to process, pray, and write with the Lord.
+          </p>
+        </article>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <style>
 .confirm-page {
-  max-width: 720px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
+  padding: 2rem 1.25rem 3rem;
 }
-.btn-primary {
+
+.signin-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  min-height: 60vh;
+}
+
+/* Reuse sign-in styles */
+
+.signin-left {
+  flex: 1 1 0;
+  background: rgba(17, 24, 39, 0.94);
+  border-radius: 16px;
+  border: 1px solid rgba(249, 250, 251, 0.12);
+  padding: 1.5rem 1.5rem 1.75rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+  color: #f9fafb;
+}
+
+.signin-subtitle {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.signin-btn-main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4rem 0.9rem;
+  padding: 0.45rem 1.1rem;
   border-radius: 999px;
   border: 1px solid #d09f00;
   background: #e2b200;
-  color: #222;
-  text-decoration: none;
+  color: #111827;
   font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.account-message {
+  font-size: 0.9rem;
+  color: #f9fafb;
+}
+
+.account-message.error {
+  color: #fecaca;
+}
+
+.account-message.success {
+  color: #bbf7d0;
+}
+
+/* Right column */
+
+.signin-right {
+  flex: 1 1 0;
+  background: rgba(17, 24, 39, 0.88);
+  border-radius: 16px;
+  border: 1px solid rgba(249, 250, 251, 0.12);
+  padding: 1.5rem 1.5rem 1.75rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
+  color: #f9fafb;
+}
+
+.signin-right-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.signin-right-subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.signin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.signin-card {
+  border-radius: 12px;
+  border: 1px solid rgba(249, 250, 251, 0.16);
+  background: radial-gradient(circle at top left, rgba(226, 178, 0, 0.2), transparent 55%),
+              rgba(17, 24, 39, 0.96);
+  padding: 0.75rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+.signin-card-title {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.signin-card-text {
+  margin: 0;
+  color: #e5e7eb;
+}
+
+@media (max-width: 900px) {
+  .signin-layout {
+    flex-direction: column;
+  }
+
+  .signin-right {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .confirm-page {
+    padding-inline: 1rem;
+  }
+
+  .signin-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 </style>
 

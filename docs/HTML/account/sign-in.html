@@ -4,48 +4,306 @@ title: Sign in to SHK
 permalink: /account/sign-in/
 ---
 
-<section class="account-page reset-page account-bg-page">
+<!-- Layout and copy assisted by AI (-AI) -->
+<section class="account-page signin-page account-bg-page">
+  <div class="signin-layout">
 
-  <h1>Sign in to Seeking His Kingdom</h1>
+    <!-- LEFT: Sign-in form -->
+    <div class="signin-left">
+      <h1 class="signin-title">Sign in to Seeking His Kingdom</h1>
+      <p class="signin-subtitle">
+        Access your personal testimony hub and start sharing what God is doing in your life.
+      </p>
 
-  <form id="shk-signin-form" class="account-form">
-    <label>
-      Email
-      <input id="signin-email" type="email" name="email" autocomplete="email" required>
-    </label>
+      <form id="shk-signin-form" class="account-form">
+        <label>
+          Email
+          <input id="signin-email" type="email" name="email" autocomplete="email" required>
+        </label>
 
-    <label>
-      Password
-      <input id="signin-password" type="password" name="password" autocomplete="current-password" required>
-    </label>
+        <label>
+          Password
+          <input id="signin-password" type="password" name="password" autocomplete="current-password" required>
+        </label>
 
-    <button type="submit">Sign in</button>
+        <button type="submit" class="signin-btn-main">Sign in</button>
 
-    <p id="signin-message" class="account-message"></p>
-  </form>
+        <p id="signin-message" class="account-message"></p>
+      </form>
 
-  <p class="account-alt">
-    Don’t have an account?
-    <a href="/account/sign-up/">Create one</a>
-  </p>
+      <div class="signin-links">
+        <p>
+          Don’t have an account?
+          <a href="/account/sign-up/">Create one</a>
+        </p>
+        <p>
+          Forgot your password?
+          <button type="button" id="send-reset-link" class="link-button">
+            Send reset link
+          </button>
+        </p>
+      </div>
+    </div>
 
-  <p class="account-alt">
-    Forgot your password?
-    <a href="/account/reset-password/">Reset it</a>
-  </p>
+    <!-- RIGHT: Example testimonies (static for now) -->
+    <div class="signin-right">
+      <h2 class="signin-right-title">Stories from the Kingdom</h2>
+      <p class="signin-right-subtitle">
+        A glimpse of the kinds of testimonies you’ll be able to write and share.
+      </p>
+
+      <div class="signin-grid">
+        <article class="signin-card">
+          <h3 class="signin-card-title">From fear to peace</h3>
+          <p class="signin-card-text">
+            “God met me in the middle of my anxiety and gave me a peace I can’t explain.”
+          </p>
+        </article>
+        <article class="signin-card">
+          <h3 class="signin-card-title">Answered prayer</h3>
+          <p class="signin-card-text">
+            “We prayed for weeks for a breakthrough, and God opened a door no one expected.”
+          </p>
+        </article>
+        <article class="signin-card">
+          <h3 class="signin-card-title">Healing in community</h3>
+          <p class="signin-card-text">
+            “The Lord used a small group of believers to bring real healing to my heart.”
+          </p>
+        </article>
+        <article class="signin-card">
+          <h3 class="signin-card-title">New life in Christ</h3>
+          <p class="signin-card-text">
+            “When I surrendered to Jesus, everything changed—my desires, my direction, my hope.”
+          </p>
+        </article>
+      </div>
+    </div>
+
+  </div>
 </section>
+
+<style>
+/* Layout */
+
+.signin-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.signin-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  min-height: 70vh; /* pushes footer down */
+}
+
+/* Left column */
+
+.signin-left {
+  flex: 1 1 0;
+  background: rgba(17, 24, 39, 0.94);
+  border-radius: 16px;
+  border: 1px solid rgba(249, 250, 251, 0.12);
+  padding: 1.5rem 1.5rem 1.75rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+  color: #f9fafb;
+}
+
+.signin-subtitle {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+/* Form */
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 420px;
+}
+
+.account-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.account-form input[type="email"],
+.account-form input[type="password"] {
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #4b5563;
+  font: inherit;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.account-form input::placeholder {
+  color: #9ca3af;
+}
+
+.account-form input:focus {
+  outline: none;
+  border-color: #e2b200;
+  box-shadow: 0 0 0 1px rgba(226, 178, 0, 0.5);
+}
+
+.signin-btn-main {
+  align-self: flex-start;
+  margin-top: 0.4rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid #d09f00;
+  background: #e2b200;
+  color: #111827;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Messages and links */
+
+.account-message {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+  min-height: 1.1em;
+  color: #f9fafb;
+}
+
+.account-message.error {
+  color: #fecaca;
+}
+
+.account-message.success {
+  color: #bbf7d0;
+}
+
+.signin-links {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.signin-links a {
+  color: #e2b200;
+  text-decoration: underline;
+}
+
+.link-button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: #e2b200;
+  text-decoration: underline;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Right column: example testimonies */
+
+.signin-right {
+  flex: 1 1 0;
+  background: rgba(17, 24, 39, 0.88);
+  border-radius: 16px;
+  border: 1px solid rgba(249, 250, 251, 0.12);
+  padding: 1.5rem 1.5rem 1.75rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
+  color: #f9fafb;
+}
+
+.signin-right-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.signin-right-subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.signin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.signin-card {
+  border-radius: 12px;
+  border: 1px solid rgba(249, 250, 251, 0.16);
+  background: radial-gradient(circle at top left, rgba(226, 178, 0, 0.2), transparent 55%),
+              rgba(17, 24, 39, 0.96);
+  padding: 0.75rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+.signin-card-title {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.signin-card-text {
+  margin: 0;
+  color: #e5e7eb;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .signin-layout {
+    flex-direction: column;
+  }
+
+  .signin-right {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .signin-page {
+    padding-inline: 1rem;
+  }
+
+  .signin-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+</style>
 
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 <script>
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
-  const SUPABASE_ANON_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
 
-  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  if (!window.supabase) {
+    console.error('Supabase JS failed to load');
+  }
+
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
   const form = document.getElementById('shk-signin-form');
   const emailInput = document.getElementById('signin-email');
   const passwordInput = document.getElementById('signin-password');
   const messageEl = document.getElementById('signin-message');
+  const resetBtn = document.getElementById('send-reset-link');
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -63,16 +321,57 @@ permalink: /account/sign-in/
 
     messageEl.textContent = 'Signing you in...';
 
-    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
 
-    if (error) {
-      console.error(error);
-      messageEl.textContent = error.message || 'Unable to sign in. Please check your details.';
+      if (error) {
+        console.error('Supabase signIn error:', error);
+        messageEl.textContent = error.message || 'Unable to sign in. Please check your details.';
+        messageEl.classList.add('error');
+        return;
+      }
+
+      window.location.href = '/account/';
+    } catch (e) {
+      console.error('Network / fetch error:', e);
+      messageEl.textContent = 'Network error while contacting the server. Please try again.';
       messageEl.classList.add('error');
-      return;
     }
-
-    // At this point you have a session; for now just send them home.
-    window.location.href = '/account/';
   });
+
+  if (resetBtn) {
+    resetBtn.addEventListener('click', async () => {
+      const email = emailInput.value.trim();
+      messageEl.textContent = '';
+      messageEl.className = 'account-message';
+
+      if (!email) {
+        messageEl.textContent = 'Enter your email above, then click “Send reset link.”';
+        messageEl.classList.add('error');
+        return;
+      }
+
+      messageEl.textContent = 'Sending reset link...';
+
+      try {
+        const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+          redirectTo: 'https://seekinghiskingdom.org/account/reset-password/'
+        });
+
+        if (error) {
+          console.error('resetPasswordForEmail error:', error);
+          messageEl.textContent = error.message || 'Unable to send reset link.';
+          messageEl.classList.add('error');
+          return;
+        }
+
+        messageEl.textContent = 'Check your email for a link to reset your password.';
+        messageEl.classList.add('success');
+      } catch (e) {
+        console.error('Network error sending reset link:', e);
+        messageEl.textContent = 'Network error while sending reset link. Please try again.';
+        messageEl.classList.add('error');
+      }
+    });
+  }
 </script>
