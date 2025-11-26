@@ -1,0 +1,288 @@
+---
+layout: default
+title: Account settings
+permalink: /account/settings/
+---
+
+<section class="account-page settings-page">
+  <h1>Account settings</h1>
+
+  <!-- Signed-out notice -->
+  <p id="settings-signed-out" style="display:none;">
+    You are not signed in. Please <a href="/account/sign-in/">sign in</a> to manage your account.
+  </p>
+
+  <!-- Settings content (hidden until we know user) -->
+  <div id="settings-content" style="display:none;">
+
+    <!-- Profile summary -->
+    <section class="settings-section">
+      <h2>Profile</h2>
+      <div class="settings-profile">
+        <div class="settings-avatar" id="settings-avatar">
+          <span id="settings-avatar-initial">?</span>
+        </div>
+        <div>
+          <p><strong>Email:</strong> <span id="settings-email"></span></p>
+          <p class="settings-note">
+            Display name and profile picture customization coming soon.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Change email -->
+    <section class="settings-section">
+      <h2>Change email</h2>
+      <p class="settings-note">
+        Enter a new email address. We’ll send a confirmation link to the new address before updating it.
+      </p>
+      <form id="settings-email-form" class="account-form">
+        <label>
+          New email
+          <input type="email" id="settings-new-email" required autocomplete="email">
+        </label>
+        <button type="submit">Send confirmation link</button>
+        <p id="settings-email-message" class="account-message"></p>
+      </form>
+    </section>
+
+    <!-- Change password -->
+    <section class="settings-section">
+      <h2>Change password</h2>
+      <p class="settings-note">
+        For security, please choose a strong password you do not use elsewhere.
+      </p>
+      <form id="settings-password-form" class="account-form">
+        <label>
+          New password
+          <input type="password" id="settings-new-password" required minlength="8" autocomplete="new-password">
+        </label>
+        <label>
+          Confirm new password
+          <input type="password" id="settings-confirm-password" required minlength="8" autocomplete="new-password">
+        </label>
+        <button type="submit">Update password</button>
+        <p id="settings-password-message" class="account-message"></p>
+      </form>
+    </section>
+
+    <!-- Danger zone placeholder -->
+    <section class="settings-section danger">
+      <h2>Danger zone</h2>
+      <p class="settings-note">
+        Account deletion and advanced security options will be available in a future update.
+      </p>
+    </section>
+
+  </div>
+</section>
+
+<style>
+.settings-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.settings-section {
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.settings-section h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.settings-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.settings-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: #f4e6b0;
+  border: 2px solid #e0c66a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.settings-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 420px;
+}
+
+.account-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.account-form input[type="email"],
+.account-form input[type="password"] {
+  padding: 0.4rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font: inherit;
+}
+
+.account-form button {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #d09f00;
+  background: #e2b200;
+  color: #222;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.account-message {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  min-height: 1.1em;
+}
+
+.account-message.error {
+  color: #b91c1c;
+}
+
+.account-message.success {
+  color: #166534;
+}
+
+.settings-section.danger {
+  border-top-color: #fca5a5;
+}
+</style>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+  function showSignedOut() {
+    document.getElementById('settings-signed-out').style.display = 'block';
+    document.getElementById('settings-content').style.display = 'none';
+  }
+
+  function showUser(user) {
+    const email = user.email || '';
+    const initial = (email || user.id || '?').charAt(0).toUpperCase();
+
+    document.getElementById('settings-avatar-initial').textContent = initial;
+    document.getElementById('settings-email').textContent = email;
+
+    document.getElementById('settings-signed-out').style.display = 'none';
+    document.getElementById('settings-content').style.display = 'block';
+  }
+
+  async function initSettings() {
+    const { data, error } = await supabase.auth.getUser();
+    if (error || !data || !data.user) {
+      showSignedOut();
+      return;
+    }
+
+    showUser(data.user);
+
+    // Change email
+    const emailForm = document.getElementById('settings-email-form');
+    const newEmailInput = document.getElementById('settings-new-email');
+    const emailMsg = document.getElementById('settings-email-message');
+
+    emailForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      emailMsg.textContent = '';
+      emailMsg.className = 'account-message';
+
+      const newEmail = newEmailInput.value.trim();
+      if (!newEmail) {
+        emailMsg.textContent = 'Please enter a new email.';
+        emailMsg.classList.add('error');
+        return;
+      }
+
+      emailMsg.textContent = 'Sending confirmation link...';
+
+      const { data, error } = await supabase.auth.updateUser({ email: newEmail });
+
+      if (error) {
+        console.error(error);
+        emailMsg.textContent = error.message || 'Unable to update email.';
+        emailMsg.classList.add('error');
+        return;
+      }
+
+      emailMsg.textContent = 'Check your new email for a confirmation link.';
+      emailMsg.classList.add('success');
+      emailForm.reset();
+    });
+
+    // Change password
+    const passwordForm = document.getElementById('settings-password-form');
+    const newPasswordInput = document.getElementById('settings-new-password');
+    const confirmPasswordInput = document.getElementById('settings-confirm-password');
+    const passwordMsg = document.getElementById('settings-password-message');
+
+    passwordForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      passwordMsg.textContent = '';
+      passwordMsg.className = 'account-message';
+
+      const pw1 = newPasswordInput.value;
+      const pw2 = confirmPasswordInput.value;
+
+      if (!pw1 || !pw2) {
+        passwordMsg.textContent = 'Please fill in both password fields.';
+        passwordMsg.classList.add('error');
+        return;
+      }
+
+      if (pw1 !== pw2) {
+        passwordMsg.textContent = 'Passwords do not match.';
+        passwordMsg.classList.add('error');
+        return;
+      }
+
+      passwordMsg.textContent = 'Updating password...';
+
+      const { data, error } = await supabase.auth.updateUser({ password: pw1 });
+
+      if (error) {
+        console.error(error);
+        passwordMsg.textContent = error.message || 'Unable to update password.';
+        passwordMsg.classList.add('error');
+        return;
+      }
+
+      passwordMsg.textContent = 'Password updated successfully.';
+      passwordMsg.classList.add('success');
+      passwordForm.reset();
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initSettings);
+</script>

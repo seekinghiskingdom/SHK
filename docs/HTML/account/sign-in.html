@@ -1,0 +1,77 @@
+---
+layout: default
+title: Sign in to SHK
+permalink: /account/sign-in/
+---
+
+<section class="account-page">
+  <h1>Sign in to Seeking His Kingdom</h1>
+
+  <form id="shk-signin-form" class="account-form">
+    <label>
+      Email
+      <input id="signin-email" type="email" name="email" autocomplete="email" required>
+    </label>
+
+    <label>
+      Password
+      <input id="signin-password" type="password" name="password" autocomplete="current-password" required>
+    </label>
+
+    <button type="submit">Sign in</button>
+
+    <p id="signin-message" class="account-message"></p>
+  </form>
+
+  <p class="account-alt">
+    Don’t have an account?
+    <a href="/account/sign-up/">Create one</a>
+  </p>
+
+  <p class="account-alt">
+    Forgot your password?
+    <a href="/account/reset-password/">Reset it</a>
+  </p>
+</section>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = 'https://YOUR-PROJECT-REF.supabase.co';
+  const SUPABASE_ANON_KEY = 'YOUR_PUBLISHABLE_KEY_HERE';
+
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  const form = document.getElementById('shk-signin-form');
+  const emailInput = document.getElementById('signin-email');
+  const passwordInput = document.getElementById('signin-password');
+  const messageEl = document.getElementById('signin-message');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    messageEl.textContent = '';
+    messageEl.className = 'account-message';
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
+
+    if (!email || !password) {
+      messageEl.textContent = 'Please enter your email and password.';
+      messageEl.classList.add('error');
+      return;
+    }
+
+    messageEl.textContent = 'Signing you in...';
+
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+
+    if (error) {
+      console.error(error);
+      messageEl.textContent = error.message || 'Unable to sign in. Please check your details.';
+      messageEl.classList.add('error');
+      return;
+    }
+
+    // At this point you have a session; for now just send them home.
+    window.location.href = '/account/';
+  });
+</script>
