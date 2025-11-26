@@ -25,12 +25,23 @@ permalink: /account/settings/
         </div>
         <div>
           <p><strong>Email:</strong> <span id="settings-email"></span></p>
+          <p><strong>Display name:</strong> <span id="settings-display-name"></span></p>
           <p class="settings-note">
-            Display name and profile picture customization coming soon.
+            Your display name is what will appear on your testimonies and profile.
           </p>
         </div>
       </div>
+
+      <form id="settings-displayname-form" class="account-form" style="margin-top:0.75rem; max-width:380px;">
+        <label>
+          New display name
+          <input type="text" id="settings-new-display-name" maxlength="80">
+        </label>
+        <button type="submit">Update display name</button>
+        <p id="settings-displayname-message" class="account-message"></p>
+      </form>
     </section>
+
 
     <!-- Change email -->
     <section class="settings-section">
@@ -208,6 +219,81 @@ permalink: /account/settings/
     }
 
     showUser(data.user);
+    const user = data.user;
+
+    // Fetch profile row
+    const displayNameSpan = document.getElementById('settings-display-name');
+
+    try {
+      const { data: profileData, error: profileError } = await supabase
+        .from('user_account')
+        .select('display_name')
+        .eq('auth_user_id', user.id)
+        .maybeSingle();
+
+    if (!profileError && profileData && profileData.display_name) {
+        displayNameSpan.textContent = profileData.display_name;
+    } else {
+        displayNameSpan.textContent = '';
+    }
+    } catch (e) {
+      console.warn('Could not load display name', e);
+      displayNameSpan.textContent = '';
+    }
+
+
+  const displayNameForm = document.getElementById('settings-displayname-form');
+  const newDisplayNameInput = document.getElementById('settings-new-display-name');
+  const displayNameMsg = document.getElementById('settings-displayname-message');
+
+  displayNameForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    displayNameMsg.textContent = '';
+    displayNameMsg.className = 'account-message';
+
+  const newName = newDisplayNameInput.value.trim();
+
+  if (!newName) {
+    displayNameMsg.textContent = 'Please enter a display name.';
+    displayNameMsg.classList.add('error');
+    return;
+  }
+
+  displayNameMsg.textContent = 'Updating display name...';
+
+  try {
+    // 1) Update your user_account row (RLS should allow auth.uid() = auth_user_id)
+    const { error: dbError } = await supabase
+      .from('user_account')
+      .update({ display_name: newName })
+      .eq('auth_user_id', user.id);
+
+    if (dbError) {
+      console.error('user_account update error:', dbError);
+      displayNameMsg.textContent = dbError.message || 'Unable to update display name.';
+      displayNameMsg.classList.add('error');
+      return;
+    }
+
+    // 2) Optionally keep auth metadata in sync
+    const { error: authError } = await supabase.auth.updateUser({
+      data: { display_name: newName }
+    });
+
+    if (authError) {
+      console.warn('auth.updateUser metadata error:', authError);
+    }
+
+    displayNameSpan.textContent = newName;
+    displayNameMsg.textContent = 'Display name updated.';
+    displayNameMsg.classList.add('success');
+    newDisplayNameInput.value = '';
+  } catch (err) {
+    console.error('Display name update failed:', err);
+    displayNameMsg.textContent = 'Unexpected error updating display name.';
+    displayNameMsg.classList.add('error');
+  }
+});
 
     // Change email
     const emailForm = document.getElementById('settings-email-form');

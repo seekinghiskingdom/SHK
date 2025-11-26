@@ -17,6 +17,11 @@ permalink: /account/sign-up/
 
       <form id="shk-signup-form" class="account-form">
         <label>
+          Display name (optional)
+          <input id="signup-display-name" type="text" name="display_name" autocomplete="nickname" maxlength="80">
+        </label>
+
+        <label>
           Email
           <input id="signup-email" type="email" name="email" autocomplete="email" required>
         </label>
@@ -271,6 +276,7 @@ permalink: /account/sign-up/
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
   const form = document.getElementById('shk-signup-form');
+  const displayNameInput = document.getElementById('signup-display-name');
   const emailInput = document.getElementById('signup-email');
   const passwordInput = document.getElementById('signup-password');
   const messageEl = document.getElementById('signup-message');
@@ -290,15 +296,20 @@ permalink: /account/sign-up/
     }
 
     messageEl.textContent = 'Creating your account...';
+    const displayName = displayNameInput.value.trim();
 
     try {
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
         options: {
-          emailRedirectTo: 'https://seekinghiskingdom.org/account/confirm/'
-        }
-      });
+            emailRedirectTo: 'https://seekinghiskingdom.org/account/confirm/',
+            data: {
+                display_name: displayName || null
+            }
+          }
+        });
+
 
       if (error) {
         console.error('Supabase signUp error:', error);
