@@ -1951,3 +1951,80 @@ body.tool-app-body {
     margin-top: 0.35rem;
   }
 }
+
+.mt-header {
+  margin-bottom: 1.5rem;
+}
+
+.mt-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.mt-avatar {
+  width: 4.5rem;        /* ~2x bigger */
+  height: 4.5rem;
+  border-radius: 999px;
+  background: #111;
+  color: #f9f9f9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+
+.mt-avatar--has-image {
+  background-size: cover;
+  background-position: center;
+  color: transparent;   /* hide letter when an image is shown */
+}
+
+.mt-profile-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.mt-display-name {
+  font-size: 1.4rem;    /* larger display name */
+  margin: 0 0 0.25rem;
+}
+
+.mt-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.mt-auth-note {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.mt-profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+@media (min-width: 720px) {
+  .mt-profile-actions {
+    flex-direction: row;
+  }
+}
+
+.mt-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 0 0 0.75rem;
+}
+
+.mt-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}

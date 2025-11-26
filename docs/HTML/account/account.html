@@ -7,35 +7,40 @@ permalink: /account/
 <!-- Layout and copy assisted by AI (-AI) -->
 <section class="account-page account-bg-page mt-page" id="mt-page">
 
-  <header class="mt-header">
-    <div class="mt-header-main">
-      <div class="mt-avatar" id="mt-avatar">✝</div>
-      <div>
-        <h1 class="mt-title">My Testimony</h1>
-        <p class="mt-subtitle" id="mt-subtitle">
-          This is your story of how God is moving in your life.
-        </p>
-      </div>
+<header class="mt-header">
+  <div class="mt-profile-header">
+    <div class="mt-avatar" id="mt-avatar">
+      <span id="mt-avatar-initial">✝</span>
     </div>
 
-    <div class="mt-actions">
-      <button
-        class="mt-settings-btn"
-        type="button"
-        id="mt-settings-btn"
-      >
+    <div class="mt-profile-main">
+      <h1 class="mt-display-name" id="mt-display-name">
+        Your SHK account
+      </h1>
+      <p class="mt-subtitle" id="mt-subtitle">
+        This is your story of how God is moving in your life.
+      </p>
+      <p class="mt-auth-note" id="mt-auth-note">
+        You are not signed in yet.
+      </p>
+    </div>
+
+    <div class="mt-profile-actions">
+      <a href="/account/settings/" class="btn mt-settings-btn">
         Account settings
-      </button>
-
-      <button
-        class="mt-auth-btn"
-        type="button"
-        id="mt-auth-toggle"
-      >
-        Sign out
+      </a>
+      <button type="button" class="btn mt-auth-toggle" id="mt-auth-toggle">
+        Sign in
       </button>
     </div>
-  </header>
+  </div>
+
+  <hr class="mt-divider">
+
+  <!-- Smaller section header under the divider -->
+  <h2 class="mt-section-title">My Testimony</h2>
+</header>
+
 
   <p id="mt-auth-note" class="mt-auth-note">
     Checking your account…
@@ -325,49 +330,47 @@ permalink: /account/
 
 function setLoggedInState(user) {
   const subtitleEl = document.getElementById('mt-subtitle');
+  const displayNameEl = document.getElementById('mt-display-name');
   const avatarEl = document.getElementById('mt-avatar');
+  const avatarInitialEl = document.getElementById('mt-avatar-initial');
   const authNoteEl = document.getElementById('mt-auth-note');
   const authToggleBtn = document.getElementById('mt-auth-toggle');
 
   const email = user.email || '';
-  const displayName = (user.user_metadata && user.user_metadata.display_name) || '';
-  const avatarKey = user.user_metadata && user.user_metadata.avatar_key;
+  const displayName =
+    (user.user_metadata && user.user_metadata.display_name) || '';
+  const avatarId =
+    user.user_metadata && user.user_metadata.avatar_id; // e.g. "07", "14", etc.
+
   const nameOrEmail = displayName || email || 'Your SHK account';
 
-  subtitleEl.textContent = nameOrEmail;
-  authNoteEl.textContent =
-    'You are signed in. Your testimonies will live here as we build out the wall.';
+  if (displayNameEl) displayNameEl.textContent = nameOrEmail;
+  if (subtitleEl) {
+    subtitleEl.textContent =
+      'This is your story of how God is moving in your life.';
+  }
+  if (authNoteEl) authNoteEl.textContent = 'You are signed in.';
 
-  // Try to resolve a preset avatar image
-  let avatarSrc = null;
-  if (
-    avatarKey &&
-    window.SHK_PROFILE_AVATARS &&
-    Array.isArray(window.SHK_PROFILE_AVATARS)
-  ) {
-    const match = window.SHK_PROFILE_AVATARS.find((a) => a.key === avatarKey);
-    if (match) {
-      avatarSrc = match.src;
-    }
+  // Fallback initial (when no avatar image yet)
+  let initial = '✝';
+  if (displayName && displayName.trim()) {
+    initial = displayName.trim().charAt(0).toUpperCase();
+  } else if (email) {
+    initial = email.charAt(0).toUpperCase();
   }
 
-  if (avatarSrc) {
-    // Use the chosen profile image
-    avatarEl.textContent = '';
-    avatarEl.style.backgroundImage = `url('${avatarSrc}')`;
-    avatarEl.style.backgroundSize = 'cover';
-    avatarEl.style.backgroundPosition = 'center';
-    avatarEl.style.backgroundRepeat = 'no-repeat';
-  } else {
-    // Fallback: avatar initial from display name or email
-    let initial = '✝';
-    if (displayName && displayName.trim()) {
-      initial = displayName.trim().charAt(0).toUpperCase();
-    } else if (email) {
-      initial = email.charAt(0).toUpperCase();
+  if (avatarEl && avatarInitialEl) {
+    if (avatarId) {
+      const base = window.SHK_BASEURL || '';
+      const url = `${base}/img/profiles/profile-${avatarId}.png`;
+      avatarEl.style.backgroundImage = `url('${url}')`;
+      avatarEl.classList.add('mt-avatar--has-image');
+      avatarInitialEl.textContent = '';
+    } else {
+      avatarEl.style.backgroundImage = 'none';
+      avatarEl.classList.remove('mt-avatar--has-image');
+      avatarInitialEl.textContent = initial;
     }
-    avatarEl.style.backgroundImage = '';
-    avatarEl.textContent = initial;
   }
 
   if (authToggleBtn) {
@@ -382,7 +385,6 @@ function setLoggedInState(user) {
     };
   }
 }
-
 
   function setupTabs() {
     const tabs = Array.from(document.querySelectorAll('.mt-tab'));
