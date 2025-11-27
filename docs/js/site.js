@@ -207,3 +207,5 @@ window.SHK_PROFILE_AVATARS = Array.from({ length: 123 }, (_, idx) => {
     src: `${window.SHK_BASEURL || ''}/img/profiles/${id}.png`
   };
 });
+
+
