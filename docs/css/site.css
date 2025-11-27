@@ -1842,8 +1842,9 @@ body.tool-app-body {
 
 /* Slightly smaller logo so the header isn't as tall */
 .site-header .logo-link img.rounded-img {
-  width: 80px !important;
-  height: 80px !important;
+  width: 64px !important;
+  height: 64px !important;
+  object-fit: contain;
 }
 
 @media (max-width: 700px) {
@@ -2028,3 +2029,39 @@ body.tool-app-body {
   font-weight: 600;
   margin: 0 0 0.75rem;
 }
+
+/* Make nav bar a single strip that the gradient shows through */
+.site-header .nav-links {
+  display: flex;
+  align-items: stretch;
+  padding: 0;
+  background: transparent;       /* let gradient show */
+  border: none;
+}
+
+/* Each top-level tab is a vertical slice */
+.site-header .nav-item {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.site-header .nav-item:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Make the clickable area fill the slice */
+.site-header .nav-button.nav-parent {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.75rem;
+  background: transparent;
+  border-radius: 0;              /* blend into strip */
+}
+
+/* Keep dropdown and mobile behaviors as-is; you don't need to change their HTML */
