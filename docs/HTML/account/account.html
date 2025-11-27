@@ -45,11 +45,12 @@ permalink: /account/
 
   <!-- Personal salvation testimony card -->
   <section class="mt-section">
-    <h2 class="mt-section-title">Your salvation testimony</h2>
+    <h2 class="mt- And-title">My Testimony</h2>
 
     <div class="mt-salvation-card">
       <p class="mt-salvation-placeholder" id="mt-salvation-placeholder">
-        Your salvation testimony will live here. When you’re ready, you can write it out and update it over time.
+        Your salvation testimony will live here. <br> 
+        When you’re ready, you can write it out and update it over time.
       </p>
 
       <div class="mt-salvation-actions">
@@ -66,7 +67,7 @@ permalink: /account/
   <!-- Other testimonies filters -->
   <section class="mt-section">
     <div class="mt-section-header">
-      <h2 class="mt-section-title">Other testimonies</h2>
+      <h2 class="mt-section-title">Other Testimonies</h2>
       <!-- <button class="mt-add-testimony-btn" type="button">
         + Add testimony
       </button> -->
@@ -150,12 +151,14 @@ permalink: /account/
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
   border: 1px solid #e5e7eb;
-  background: rgba(0, 0, 0, 0.75);
-  color: #f9fafb;
+  border-color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
   font-size: 0.9rem;
   cursor: pointer;
 }
 
+.mt-settings-btn,
 .mt-auth-btn {
   border-color: #fbbf24;
   background: rgba(251, 191, 36, 0.1);
@@ -180,7 +183,7 @@ permalink: /account/
 
 .mt-section-title {
   margin: 0 0 0.6rem;
-  font-size: 1.05rem;
+  font-size: 1.5 Thank you rem;
 }
 
 .mt-section-header {
@@ -316,7 +319,7 @@ permalink: /account/
       'You are not signed in. Sign in or create an account to start sharing your story.';
 
     if (authToggleBtn) {
-      authToggleBtn.textContent = 'Sign in';
+      authToggleBtn.textContent = 'Sign In';
       authToggleBtn.onclick = () => {
         window.location.href = '/account/sign-in/';
       };
@@ -340,11 +343,11 @@ function setLoggedInState(user) {
   const nameOrEmail = displayName || email || 'Your SHK account';
 
   if (displayNameEl) displayNameEl.textContent = nameOrEmail;
-  if (subtitleEl) {
-    subtitleEl.textContent =
-      'This is your story of how God is moving in your life.';
-  }
-  if (authNoteEl) authNoteEl.textContent = 'You are signed in.';
+//   if (subtitleEl) {
+//     subtitleEl.textContent =
+//       'This is your story of how God is moving in your life.';
+//   }
+//   if (authNoteEl) authNoteEl.textContent = 'You are signed in.';
 
   // Fallback initial (when no avatar image yet)
   let initial = '✝';
@@ -374,7 +377,7 @@ function setLoggedInState(user) {
 
 
   if (authToggleBtn) {
-    authToggleBtn.textContent = 'Sign out';
+    authToggleBtn.textContent = 'Sign Out';
     authToggleBtn.onclick = async () => {
       try {
         await supabase.auth.signOut();
