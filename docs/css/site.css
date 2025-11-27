@@ -2065,4 +2065,90 @@ body.tool-app-body {
   border-radius: 0;              /* blend into strip */
 }
 
-/* Keep dropdown and mobile behaviors as-is; you don't need to change their HTML */
+/* Header account pill (avatar) */
+.site-account-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--text, #f9fafb);
+}
+
+.site-account-avatar {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(222, 176, 0, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.site-account-initial {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.site-account-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; /* JS turns this on when there is an avatar */
+}
+
+
+/* Mobile behavior for the new header */
+@media (max-width: 700px) {
+  .site-header .main-nav {
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .site-header .nav-toggle {
+    display: inline-block;    /* only show on small screens */
+    margin-left: 0;           /* override desktop margin-left:auto */
+  }
+
+  /* Account pill sits to the right of the hamburger on mobile */
+  .site-header .site-account-pill {
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+
+  /* Slide-down menu that doesn’t push the account pill onto a new row */
+  .site-header .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin-top: 0.5rem;
+    background-color: var(--panel);
+    padding: 0.5rem;
+    border-top: 1px solid #333;
+    z-index: 50;
+  }
+
+  .site-header.nav-open .nav-links {
+    display: flex;
+  }
+}
+
+/* Header nav buttons as rounded pills with a solid interior (no gradient behind them) */
+.site-header .nav-links .nav-button {
+  border-radius: 999px;
+  padding: 0.25rem 0.9rem;
+  border: 1px solid rgba(248, 250, 252, 0.25);
+  background-color: rgba(0, 0, 0, 0.8); /* solid/dark interior, gradient only around them */
+  color: #f9fafb;
+}
+
+.site-header .nav-links .nav-button:hover,
+.site-header .nav-links .nav-button.is-active {
+  border-color: #fbbf24;
+  background-color: rgba(0, 0, 0, 0.95);
+}
