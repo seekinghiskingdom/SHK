@@ -9,13 +9,17 @@ permalink: /account/
 
   <header class="mt-header">
     <div class="mt-header-main">
-      <div class="mt-avatar" id="mt-avatar">✝</div>
-      <div>
-        <h1 class="mt-title">My Testimony</h1>
-        <p class="mt-subtitle" id="mt-subtitle">
-          This is your story of how God is moving in your life.
-        </p>
+
+      <div class="mt-avatar" id="mt-avatar">
+        <span id="mt-avatar-initial">✝</span>
       </div>
+
+      <div>
+        <!-- <h1 class="mt-title">My Testimony</h1> -->
+        <p class="mt-display-name" id="mt-display-name"></p>
+
+      </div>
+
     </div>
 
     <div class="mt-actions">
@@ -37,9 +41,9 @@ permalink: /account/
     </div>
   </header>
 
-  <p id="mt-auth-note" class="mt-auth-note">
+  <!-- <p id="mt-auth-note" class="mt-auth-note">
     Checking your account…
-  </p>
+  </p> -->
 
   <div id="mt-public-profile" class="mt-public-profile" hidden>
     <p class="mt-public-profile-text">
@@ -58,7 +62,7 @@ permalink: /account/
 
   <!-- Personal salvation testimony card -->
   <section class="mt-section">
-    <h2 class="mt- And-title">My Testimony</h2>
+    <h2 class="mt-section-title">My Testimony</h2>
 
     <div class="mt-salvation-card">
       <p class="mt-salvation-placeholder" id="mt-salvation-placeholder">
@@ -130,8 +134,8 @@ permalink: /account/
 }
 
 .mt-avatar {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 999px;
   background: rgba(222, 176, 0, 0.9);
   display: flex;
@@ -141,6 +145,18 @@ permalink: /account/
   font-size: 1.1rem;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
 }
+
+.mt-display-name {
+  margin: 0.1rem 0 0;
+  font-size: 1.5rem;
+  color: #fefefe;
+}
+
+.mt-username {
+  font-size: 0.9rem;
+  color: #fefefe;
+}
+
 
 .mt-title {
   margin: 0;
@@ -166,7 +182,7 @@ permalink: /account/
   border: 1px solid #e5e7eb;
   border-color: #fbbf24;
   background: rgba(251, 191, 36, 0.1);
-  color: #fbbf24;
+  color: #fefefe;
   font-size: 0.9rem;
   cursor: pointer;
 }
@@ -175,7 +191,7 @@ permalink: /account/
 .mt-auth-btn {
   border-color: #fbbf24;
   background: rgba(251, 191, 36, 0.1);
-  color: #fbbf24;
+  color: #fefefe;
 }
 
 .mt-auth-note {
@@ -255,7 +271,7 @@ permalink: /account/
 }
 
 .mt-pill-outline {
-  border-color: rgba(249, 250, 251, 0.4);
+  border-color: #deb000;
   background: transparent;
 }
 
@@ -284,7 +300,7 @@ permalink: /account/
   flex: 0 0 auto;       /* do NOT stretch */
   padding: 0.25rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #deb000;
   background: rgba(222, 176, 0, 0.3);
   font-size: 0.85rem;
   cursor: pointer;
