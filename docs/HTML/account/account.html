@@ -334,8 +334,8 @@ function setLoggedInState(user) {
   const email = user.email || '';
   const displayName =
     (user.user_metadata && user.user_metadata.display_name) || '';
-  const avatarId =
-    user.user_metadata && user.user_metadata.avatar_id; // e.g. "07", "14", etc.
+  const avatarKey =
+    user.user_metadata && user.user_metadata.avatar_key; // e.g. "avatar-7"
 
   const nameOrEmail = displayName || email || 'Your SHK account';
 
@@ -355,9 +355,12 @@ function setLoggedInState(user) {
   }
 
   if (avatarEl && avatarInitialEl) {
-    if (avatarId) {
-      const base = window.SHK_BASEURL || '';
-      const url = `${base}/img/profiles/profile-${avatarId}.png`;
+    const url =
+      avatarKey && window.SHK_getAvatarUrlByKey
+        ? window.SHK_getAvatarUrlByKey(avatarKey)
+        : null;
+
+    if (url) {
       avatarEl.style.backgroundImage = `url('${url}')`;
       avatarEl.classList.add('mt-avatar--has-image');
       avatarInitialEl.textContent = '';
@@ -367,6 +370,8 @@ function setLoggedInState(user) {
       avatarInitialEl.textContent = initial;
     }
   }
+
+
 
   if (authToggleBtn) {
     authToggleBtn.textContent = 'Sign out';
