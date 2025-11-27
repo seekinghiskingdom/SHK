@@ -43,14 +43,26 @@ permalink: /account/
   </header>
 
   <!-- <p id="mt-auth-note" class="mt-auth-note">
-    Checking your account…
-  </p> -->
+    Checking your account...</p> -->
 
-  <div id="mt-public-profile" class="mt-public-profile" hidden>
+  <div class="mt-share-row">
+    <button
+      type="button"
+      class="mt-settings-btn mt-share-btn"
+      id="mt-share-btn"
+      hidden
+    >
+      Share your testimony
+    </button>
+  </div>
+
+  <div id="mt-missing-handle" class="mt-public-profile mt-public-profile--warning" hidden>
     <p class="mt-public-profile-text">
-      Your public profile: <a id="mt-public-profile-link" href="#"></a>
+      To get a public profile link, please choose a username on your
+      <a href="/account/settings/">account settings</a> page.
     </p>
   </div>
+
 
   <div id="mt-missing-handle" class="mt-public-profile mt-public-profile--warning" hidden>
     <p class="mt-public-profile-text">
@@ -202,8 +214,14 @@ permalink: /account/
 .mt-auth-note {
   margin-top: 0.75rem;
   font-size: 0.9rem;
-  color: #e5e7eb;
+  color: #000000;
 }
+.mt-share-row {
+  margin-top: 0.5rem;
+}
+
+
+
 
 .mt-public-profile {
   margin: 0.5rem 0 0.75rem;
@@ -406,29 +424,47 @@ function setLoggedInState(user) {
     user.user_metadata && user.user_metadata.avatar_key; // e.g. "avatar-7"
 
   const nameOrEmail = displayName || email || 'Your SHK account';
-  const publicProfileBox = document.getElementById('mt-public-profile');
-  const publicProfileLink = document.getElementById('mt-public-profile-link');
+  const shareBtn = document.getElementById('mt-share-btn');
   const missingHandleBox = document.getElementById('mt-missing-handle');
 
   if (displayNameEl) displayNameEl.textContent = nameOrEmail;
   if (usernameEl) usernameEl.textContent = handle ? `@${handle}` : '';
 
-  // Public profile link vs. "pick a username"
-  if (publicProfileBox && publicProfileLink && missingHandleBox) {
+
+  // "Share your testimony" button vs. "pick a username"
+  if (shareBtn && missingHandleBox) {
     if (handle) {
       const origin = window.location.origin || 'https://seekinghiskingdom.org';
       const url = `${origin}/u/?handle=${encodeURIComponent(handle)}`;
 
-      publicProfileLink.href = url;
-      publicProfileLink.textContent = url;
+      shareBtn.hidden = false;
 
-      publicProfileBox.hidden = false;
+      shareBtn.onclick = async () => {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(url);
+            const oldLabel = 'Share your testimony';
+            shareBtn.textContent = 'Link copied!';
+            setTimeout(() => {
+              shareBtn.textContent = oldLabel;
+            }, 2000);
+          } else {
+            window.prompt('Copy this link:', url);
+          }
+        } catch (err) {
+          console.error('Clipboard error:', err);
+          window.prompt('Copy this link:', url);
+        }
+      };
+
+      missingHandleBox.hidden = false ? false : false; // keep visible only if you want extra reminder
       missingHandleBox.hidden = true;
     } else {
-      publicProfileBox.hidden = true;
+      shareBtn.hidden = true;
       missingHandleBox.hidden = false;
     }
   }
+
 
   // Fallback initial (when no avatar image yet)
   let initial = '✝';
@@ -465,7 +501,7 @@ function setLoggedInState(user) {
       } catch (e) {
         console.error('Error signing out:', e);
       }
-      window.location.href = '/';
+      window.location.href = '/account/sign-in/';
     };
   }
 }
