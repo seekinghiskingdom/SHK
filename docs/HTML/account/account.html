@@ -45,16 +45,25 @@ permalink: /account/
   <!-- <p id="mt-auth-note" class="mt-auth-note">
     Checking your account...</p> -->
 
-  <div class="mt-share-row">
-    <button
-      type="button"
-      class="mt-settings-btn mt-share-btn"
-      id="mt-share-btn"
-      hidden
-    >
-      Share your Testimony!
-    </button>
-  </div>
+    <div class="mt-share-row">
+      <button
+        type="button"
+        class="mt-settings-btn mt-share-btn"
+        id="mt-share-btn"
+        hidden
+      >
+        Share your testimony
+      </button>
+
+      <button
+        type="button"
+        class="mt-settings-btn mt-share-btn"
+        id="mt-see-all-btn"
+      >
+        See all testimonies
+      </button>
+    </div>
+
 
   <div id="mt-missing-handle" class="mt-public-profile mt-public-profile--warning" hidden>
     <p class="mt-public-profile-text">
@@ -233,6 +242,8 @@ permalink: /account/
   margin-top: 0.5rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap; /* allows wrapping on very small screens */
 }
 
 /* Reuse mt-settings-btn styling but force it not to go full-width */
@@ -474,6 +485,7 @@ function setLoggedInState(user) {
 
   const nameOrEmail = displayName || email || 'Your SHK account';
   const shareBtn = document.getElementById('mt-share-btn');
+  const seeAllBtn = document.getElementById('mt-see-all-btn');
   const missingHandleBox = document.getElementById('mt-missing-handle');
 
   if (displayNameEl) displayNameEl.textContent = nameOrEmail;
@@ -513,6 +525,13 @@ function setLoggedInState(user) {
       missingHandleBox.hidden = false;
     }
   }
+  // "See all testimonies" always goes to the Testimony Wall
+  if (seeAllBtn) {
+    seeAllBtn.onclick = () => {
+      window.location.href = '/testimonies/'; // adjust to your final Testimony Wall URL
+    };
+  }
+
 
 
   // Fallback initial (when no avatar image yet)
