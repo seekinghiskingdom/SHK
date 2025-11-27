@@ -228,3 +228,54 @@ window.SHK_getAvatarUrlByKey = function (avatarKey) {
   return match ? match.src : null;
 };
 
+
+// 10) Header account pill: avatar when logged in, "Sign in" when logged out
+(() => {
+  const pill = document.querySelector('.site-account-pill');
+  if (!pill) return;
+
+  const labelEl   = pill.querySelector('.site-account-label');
+  const initialEl = document.getElementById('site-account-initial');
+  const imgEl     = document.getElementById('site-account-avatar-img');
+
+  // Default: signed-out look
+  if (labelEl)   labelEl.textContent = 'Sign in';
+  if (initialEl) initialEl.textContent = '✝';
+  if (imgEl)     imgEl.style.display = 'none';
+  pill.href = '/account/sign-in/';
+
+  // If Supabase isn't available on this page, stop here
+  if (!window.supabase || !window.supabase.createClient) return;
+
+  const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+  supabase.auth.getUser().then(({ data, error }) => {
+    if (error || !data || !data.user) return;  // stay in "Sign in" state
+
+    const user = data.user;
+    const avatarKey   = user.user_metadata && user.user_metadata.avatar_key;
+    const displayName = user.user_metadata && user.user_metadata.display_name;
+    const email       = user.email || '';
+
+    let initial = '✝';
+    if (displayName && displayName.trim())      initial = displayName.trim()[0].toUpperCase();
+    else if (email)                             initial = email[0].toUpperCase();
+
+    // Signed-in look: avatar only, link to account
+    pill.href = '/account/';
+    if (labelEl)   labelEl.textContent = '';  // or hide via CSS if you prefer
+    if (avatarKey && window.SHK_getAvatarUrlByKey) {
+      const url = window.SHK_getAvatarUrlByKey(avatarKey);
+      if (url && imgEl) {
+        imgEl.src = url;
+        imgEl.style.display = 'block';
+        if (initialEl) initialEl.textContent = '';
+      }
+    } else {
+      if (imgEl)     imgEl.style.display = 'none';
+      if (initialEl) initialEl.textContent = initial;
+    }
+  });
+})();
