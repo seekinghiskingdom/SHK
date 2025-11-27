@@ -1,0 +1,212 @@
+---
+layout: default
+title: Add a Testimony
+permalink: /testimony/add/
+---
+
+<!-- Layout and copy assisted by AI (-AI) -->
+<section class="mt-page account-bg-page mt-add-page">
+  <header class="mt-add-header">
+    <h1 class="mt-add-title">Add a testimony</h1>
+    <p class="mt-add-subtitle">
+      Share a prayer request, blessing, miracle, or general testimony so you can remember and others can be encouraged.
+    </p>
+  </header>
+
+  <form id="mt-add-testimony-form" class="mt-add-form">
+    <!-- 1) Type -->
+    <label class="mt-add-label">
+      Type of testimony
+      <select id="mt-add-type" name="type" required>
+        <option value="">Select one…</option>
+        <option value="prayer">Prayer request</option>
+        <option value="blessing">Blessing / provision</option>
+        <option value="miracle">Miracle / healing</option>
+        <option value="general">General testimony</option>
+      </select>
+    </label>
+
+    <!-- 2) Title/topic -->
+    <label class="mt-add-label">
+      Title or short summary
+      <input
+        type="text"
+        id="mt-add-title"
+        name="title"
+        maxlength="120"
+        placeholder="What is this testimony about?"
+        required
+      >
+    </label>
+
+    <!-- 3) Body -->
+    <label class="mt-add-label">
+      Testimony
+      <textarea
+        id="mt-add-body"
+        name="body"
+        rows="8"
+        placeholder="Write out the story, including what happened, how you were praying, and how God responded…"
+        required
+      ></textarea>
+    </label>
+
+    <!-- 4) Privacy / anonymity / location (scaffold) -->
+    <fieldset class="mt-add-fieldset">
+      <legend>Visibility</legend>
+      <label class="mt-add-checkbox">
+        <input type="checkbox" id="mt-add-private" name="is_private">
+        Keep this private (only visible to me for now)
+      </label>
+      <label class="mt-add-checkbox">
+        <input type="checkbox" id="mt-add-anon" name="is_anonymous">
+        Post anonymously (hide my name from others)
+      </label>
+    </fieldset>
+
+    <label class="mt-add-label">
+      Location (optional)
+      <input
+        type="text"
+        id="mt-add-location"
+        name="location"
+        maxlength="120"
+        placeholder="City / region (if you want to include it)"
+      >
+    </label>
+
+    <!-- 5) Submit -->
+    <button type="submit" class="mt-add-submit-btn">
+      Save testimony
+    </button>
+
+    <p id="mt-add-message" class="mt-add-message"></p>
+  </form>
+</section>
+
+<style>
+.mt-add-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.mt-add-header {
+  margin-bottom: 1.25rem;
+}
+
+.mt-add-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.7rem;
+  color: #fefefe;
+}
+
+.mt-add-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.mt-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.mt-add-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: #fefefe;
+}
+
+.mt-add-form input[type="text"],
+.mt-add-form select,
+.mt-add-form textarea {
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #9ca3af;
+  background: rgba(17, 24, 39, 0.9);
+  color: #f9fafb;
+  font: inherit;
+}
+
+.mt-add-form input::placeholder,
+.mt-add-form textarea::placeholder {
+  color: #6b7280;
+}
+
+.mt-add-form input:focus,
+.mt-add-form select:focus,
+.mt-add-form textarea:focus {
+  outline: none;
+  border-color: #deb000;
+  box-shadow: 0 0 0 1px rgba(222, 176, 0, 0.55);
+}
+
+.mt-add-fieldset {
+  border: 1px solid rgba(156, 163, 175, 0.7);
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem 0.5rem;
+}
+
+.mt-add-fieldset legend {
+  padding: 0 0.35rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.mt-add-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.mt-add-submit-btn {
+  align-self: flex-start;
+  margin-top: 0.4rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid #deb000;
+  background: #f3c43a;
+  color: #111827;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mt-add-message {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+  min-height: 1.1em;
+  color: #fefefe;
+}
+.mt-add-message.error { color: #fca5a5; }
+.mt-add-message.success { color: #bbf7d0; }
+
+@media (max-width: 640px) {
+  .mt-add-page {
+    padding-inline: 1rem;
+  }
+}
+</style>
+
+<script>
+  // Placeholder: front-end validation only for now.
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('mt-add-testimony-form');
+    const msgEl = document.getElementById('mt-add-message');
+
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      msgEl.textContent =
+        'Saving testimonies is coming soon. Your entry above is not yet stored anywhere – you may want to copy it before leaving this page.';
+      msgEl.className = 'mt-add-message error';
+    });
+  });
+</script>

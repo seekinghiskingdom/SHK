@@ -28,7 +28,7 @@ permalink: /account/
         type="button"
         id="mt-settings-btn"
       >
-        Account settings
+        Account Settings
       </button>
 
       <button
@@ -36,7 +36,7 @@ permalink: /account/
         type="button"
         id="mt-auth-toggle"
       >
-        Sign out
+        Sign Out
       </button>
     </div>
   </header>
@@ -95,46 +95,78 @@ permalink: /account/
           type="button"
           id="mt-write-salvation-btn"
         >
-          Write my salvation story
+          Write my Testimony!
         </button>
         <button
           class="mt-pill-button mt-pill-outline"
           type="button"
           id="mt-learn-salvation-btn"
         >
-          Learn more about salvation & testimonies
+          Learn more about salvation & testimonies!
         </button>
       </div>
     </div>
 
-    <div class="mt-salvation-card">
-      <!-- Help/placeholder content; later your actual testimony text can be rendered here too -->
-      <div class="mt-salvation-help" id="mt-salvation-help">
-        <p class="mt-salvation-placeholder" id="mt-salvation-placeholder">
-          When you’re ready, you can write out your Salvation Story and update it over time. <br>
-          Need help figuring out what your testimony is? Here are some questions to consider! <br> <br>
+  <div class="mt-salvation-card">
+    <!-- Saved testimony view -->
+    <div id="mt-salvation-view" class="mt-salvation-view" hidden></div>
 
-          <em>"What was your life like before accepting Christ?"</em> <br>
-          <em>“How did you come to know Jesus Christ as your Lord and Savior?”</em> <br>
-          <em>"What led you to make the decision to follow Him?"</em> <br>
-          <em>"Why do you believe He gives salvation?"</em> <br> <br>
+    <!-- Inline editor -->
+    <div id="mt-salvation-editor-wrap" class="mt-salvation-editor-wrap" hidden>
+      <textarea
+        id="mt-salvation-editor"
+        class="mt-salvation-editor"
+        rows="8"
+        placeholder="Write out how you came to know Jesus, what He has done in your life, and what He is doing today…"
+      ></textarea>
 
-          <em>"What has He done in your life since then?"</em> <br>
-          <em>"How has your faith grown and what challenges have you faced?"</em> <br>
-          <em>"What impact has your relationship with Jesus had on your life and those around you?"</em> <br>
-          <em>"How is He working in your life today?"</em> <br> <br>
-
-          <em>"What would you like others to know about your walk with Christ?"</em> <br>
-          <em>"What message would you like to share with others to strengthen their faith?"</em> <br>
-        </p>
+      <div class="mt-salvation-editor-actions">
+        <button
+          type="button"
+          class="mt-pill-button"
+          id="mt-salvation-save-btn"
+        >
+          Save testimony
+        </button>
+        <button
+          type="button"
+          class="mt-pill-button mt-pill-outline"
+          id="mt-salvation-cancel-btn"
+        >
+          Cancel
+        </button>
       </div>
     </div>
+
+    <!-- Help / questions (stays available always, via ? toggle) -->
+    <div class="mt-salvation-help" id="mt-salvation-help">
+      <p class="mt-salvation-placeholder" id="mt-salvation-placeholder">
+        When you’re ready, you can write out your Salvation Story and update it over time. <br>
+        Need help figuring out what your testimony is? Here are some questions to consider! <br> <br>
+
+        <em>"What was your life like before accepting Christ?"</em> <br>
+        <em>“How did you come to know Jesus Christ as your Lord and Savior?”</em> <br>
+        <em>"What led you to make the decision to follow Him?"</em> <br>
+        <em>"Why do you believe He gives salvation?"</em> <br> <br>
+
+        <em>"What has He done in your life since then?"</em> <br>
+        <em>"How has your faith grown and what challenges have you faced?"</em> <br>
+        <em>"What impact has your relationship with Jesus had on your life and those around you?"</em> <br>
+        <em>"How is He working in your life today?"</em> <br> <br>
+
+        <em>"What would you like others to know about your walk with Christ?"</em> <br>
+        <em>"What message would you like to share with others to strengthen their faith?"</em> <br>
+      </p>
+    </div>
+  </div>
+
+
   </section>
 
   <!-- Other testimonies filters -->
   <section class="mt-section">
     <div class="mt-section-header">
-      <h2 class="mt-section-title">Other Testimonies</h2>
+      <h2 class="mt-section-title">Recent Testimonies</h2>
       <!-- <button class="mt-add-testimony-btn" type="button">
         + Add testimony
       </button> -->
@@ -146,13 +178,13 @@ permalink: /account/
       <button class="mt-tab" data-filter="blessing" type="button">Blessings</button>
       <button class="mt-tab" data-filter="miracle" type="button">Miracles</button>
       <button class="mt-tab" data-filter="general" type="button">General</button>
-      <button class="mt-tab" data-filter="draft" type="button">Private drafts</button>
+      <button class="mt-tab" data-filter="draft" type="button">Private Drafts</button>
       <button class="mt-tab mt-tab-add" data-filter="+ testimony" type="button">+ Testimony</button>
     </div>
 
     <div class="mt-list-placeholder">
       <p>
-        This is where your prayers, blessings, miracles, and other testimonies will appear once we wire up the Testimony Wall.
+        This is where your recent prayers, blessings, miracles, and other general testimonies will appear!
       </p>
       <p class="mt-list-subtext">
         Share your first testimony by clicking the "+ Testimony" button above!
@@ -359,6 +391,43 @@ permalink: /account/
   gap: 0.5rem;
 }
 
+.mt-salvation-view {
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+  color: #f9fafb;
+  white-space: pre-wrap;
+}
+
+.mt-salvation-editor-wrap {
+  margin-bottom: 0.6rem;
+}
+
+.mt-salvation-editor {
+  width: 100%;
+  min-height: 7rem;
+  resize: vertical;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #9ca3af;
+  background: rgba(17, 24, 39, 0.9);
+  color: #f9fafb;
+  font: inherit;
+}
+
+.mt-salvation-editor:focus {
+  outline: none;
+  border-color: #deb000;
+  box-shadow: 0 0 0 1px rgba(222, 176, 0, 0.55);
+}
+
+.mt-salvation-editor-actions {
+  margin-top: 0.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+
 .mt-pill-button {
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
@@ -373,6 +442,8 @@ permalink: /account/
   border-color: #deb000;
   background: transparent;
 }
+
+
 
 .mt-add-testimony-btn {
   padding: 0.35rem 0.9rem;
@@ -557,7 +628,7 @@ permalink: /account/
     // "See all testimonies" always goes to the Testimony Wall
     if (seeAllBtn) {
       seeAllBtn.onclick = () => {
-        window.location.href = '/testimonies/';
+        window.location.href = '/testimony/wall/';
       };
     }
 
@@ -631,15 +702,23 @@ permalink: /account/
     if (writeBtn) {
       writeBtn.addEventListener('click', () => {
         // For now, send to Testimony Wall hub; later can go to a dedicated editor
-        window.location.href = '/testimonies/#write-salvation';
+        window.location.href = '/testimony/#write-salvation';
       });
     }
 
     if (learnBtn) {
       learnBtn.addEventListener('click', () => {
-        window.location.href = '/testimonies/#about-salvation-testimonies';
+        window.location.href = '/testimony/';
       });
     }
+
+    const addTab = document.querySelector('.mt-tab-add');
+    if (addTab) {
+      addTab.addEventListener('click', () => {
+        window.location.href = '/testimony/add/';
+      });
+    }
+
 
     if (helpToggle && helpPanel) {
       helpToggle.addEventListener('click', () => {
