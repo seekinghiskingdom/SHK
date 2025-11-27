@@ -2142,13 +2142,13 @@ body.tool-app-body {
 .site-header .nav-links .nav-button {
   border-radius: 999px;
   padding: 0.25rem 0.9rem;
-  border: 1px solid rgba(248, 250, 252, 0.25);
-  background-color: rgba(0, 0, 0, 0.8); /* solid/dark interior, gradient only around them */
-  color: #f9fafb;
+  border: 1px solid #deb000;
+  background-color: rgba(0, 0, 0, 0.1); /* solid/dark interior, gradient only around them */
+  color: #fefefe;
 }
 
 .site-header .nav-links .nav-button:hover,
 .site-header .nav-links .nav-button.is-active {
-  border-color: #fbbf24;
-  background-color: rgba(0, 0, 0, 0.95);
+  border-color: #deb000;
+  background-color: rgba(0, 0, 0, 0.1);
 }
