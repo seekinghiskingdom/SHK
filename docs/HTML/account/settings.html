@@ -352,8 +352,9 @@ permalink: /account/settings/
   font-weight: 600;
   cursor: pointer;
 }
-
 </style>
+
+
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 <script>
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
@@ -464,16 +465,28 @@ permalink: /account/settings/
       });
     }
 
-
     // Avatar picker
     const avatarGrid = document.getElementById('avatar-grid');
     const avatarSaveBtn = document.getElementById('avatar-save-btn');
     const avatarMsg = document.getElementById('avatar-message');
+    const role = user.user_metadata && user.user_metadata.role;
+    const isAdmin = role === 'admin';
 
     let selectedAvatarKey = avatarKey || null;
 
+    // If a non-admin somehow already has an admin-only avatar, clear it as the selection
+    if (!isAdmin && avatarKey && window.SHK_PROFILE_AVATARS) {
+      const currentAvatar = window.SHK_PROFILE_AVATARS.find(a => a.key === avatarKey);
+      if (currentAvatar && currentAvatar.adminOnly) {
+        selectedAvatarKey = null;
+      }
+    }
+
     if (avatarGrid && window.SHK_PROFILE_AVATARS && window.SHK_PROFILE_AVATARS.length) {
       window.SHK_PROFILE_AVATARS.forEach((avatar) => {
+        // Hide SHK-logo / reserved avatars from non-admin users
+        if (avatar.adminOnly && !isAdmin) return;
+
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'avatar-option';
@@ -505,6 +518,16 @@ permalink: /account/settings/
         avatarMsg.textContent = '';
         avatarMsg.className = 'account-message';
 
+        // Extra safety: block non-admin from saving an admin-only avatar
+        if (!isAdmin && selectedAvatarKey && window.SHK_PROFILE_AVATARS) {
+          const chosen = window.SHK_PROFILE_AVATARS.find(a => a.key === selectedAvatarKey);
+          if (chosen && chosen.adminOnly) {
+            avatarMsg.textContent = 'That avatar is reserved.';
+            avatarMsg.classList.add('error');
+            return;
+          }
+        }
+
         avatarMsg.textContent = 'Saving profile picture…';
 
         const { data: updated, error: avatarError } = await supabase.auth.updateUser({
@@ -524,6 +547,7 @@ permalink: /account/settings/
         avatarMsg.classList.add('success');
       });
     }
+
 
     // Change email
     if (emailForm) {

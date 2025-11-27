@@ -200,12 +200,25 @@
 })();
 
 // 9) User Profile Picture Selection (1–123)
+
+// Choose which numeric avatar files are admin-only (e.g. 121–123 = SHK logos)
+const SHK_ADMIN_ONLY_AVATAR_IDS = new Set([999, 998]); // adjust as needed
+
 window.SHK_PROFILE_AVATARS = Array.from({ length: 123 }, (_, idx) => {
   const id = idx + 1; // 1–123
   return {
-    key: `avatar-${id}`,              // logical key stored in user metadata
-    src: `${window.SHK_BASEURL || ''}/img/profiles/${id}.png`
+    key: `avatar-${id}`,                               // logical key stored in user metadata
+    src: `${window.SHK_BASEURL || ''}/img/profiles/${id}.png`,
+    adminOnly: SHK_ADMIN_ONLY_AVATAR_IDS.has(id)       // true only for reserved IDs
   };
+});
+// Add the two special SHK logos (998, 999)
+[998, 999].forEach((id) => {
+  window.SHK_PROFILE_AVATARS.push({
+    key: `avatar-${id}`,
+    src: `${window.SHK_BASEURL || ''}/img/profiles/${id}.png`,
+    adminOnly: true
+  });
 });
 
 // Helper: look up avatar URL by key, fall back gracefully
@@ -214,6 +227,4 @@ window.SHK_getAvatarUrlByKey = function (avatarKey) {
   const match = window.SHK_PROFILE_AVATARS.find(a => a.key === avatarKey);
   return match ? match.src : null;
 };
-
-
 
