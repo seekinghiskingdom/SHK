@@ -582,11 +582,19 @@ permalink: /account/
       (user.user_metadata && user.user_metadata.handle) || '';
     const avatarKey =
       user.user_metadata && user.user_metadata.avatar_key; // e.g. "avatar-7"
+    const salvationText =
+      (user.user_metadata && user.user_metadata.salvation_testimony) || '';
 
     const nameOrEmail = displayName || email || 'Your SHK account';
     const shareBtn = document.getElementById('mt-share-btn');
     const seeAllBtn = document.getElementById('mt-see-all-btn');
     const missingHandleBox = document.getElementById('mt-missing-handle');
+    const writeBtn = document.getElementById('mt-write-salvation-btn');
+
+    const salvationView = document.getElementById('mt-salvation-view');
+    const salvationEditorWrap = document.getElementById('mt-salvation-editor-wrap');
+    const salvationEditor = document.getElementById('mt-salvation-editor');
+    const salvationPlaceholder = document.getElementById('mt-salvation-placeholder');
 
     if (displayNameEl) displayNameEl.textContent = nameOrEmail;
     if (usernameEl) usernameEl.textContent = handle ? `@${handle}` : '';
@@ -630,6 +638,24 @@ permalink: /account/
       seeAllBtn.onclick = () => {
         window.location.href = '/testimony/wall/';
       };
+    }
+
+    // Initial state for salvation testimony view/editor
+    if (salvationEditor && salvationView && salvationEditorWrap && salvationPlaceholder) {
+      if (salvationText) {
+        salvationView.textContent = salvationText;
+        salvationView.hidden = false;
+        salvationEditorWrap.hidden = true;
+        salvationPlaceholder.hidden = true;
+        salvationEditor.value = salvationText;
+        if (writeBtn) writeBtn.textContent = 'Edit testimony';
+      } else {
+        salvationView.hidden = true;
+        salvationEditorWrap.hidden = true;
+        salvationPlaceholder.hidden = false;
+        salvationEditor.value = '';
+        if (writeBtn) writeBtn.textContent = 'Write my salvation story';
+      }
     }
 
     // Fallback initial (when no avatar image yet)
@@ -693,32 +719,98 @@ permalink: /account/
       });
     }
 
-    // Salvation buttons + help toggle
+    // Salvation buttons + help toggle + inline editor
     const writeBtn = document.getElementById('mt-write-salvation-btn');
     const learnBtn = document.getElementById('mt-learn-salvation-btn');
     const helpToggle = document.getElementById('mt-salvation-help-toggle');
     const helpPanel = document.getElementById('mt-salvation-help');
 
+    const salvationView = document.getElementById('mt-salvation-view');
+    const salvationEditorWrap = document.getElementById('mt-salvation-editor-wrap');
+    const salvationEditor = document.getElementById('mt-salvation-editor');
+    const salvationPlaceholder = document.getElementById('mt-salvation-placeholder');
+    const saveBtn = document.getElementById('mt-salvation-save-btn');
+    const cancelBtn = document.getElementById('mt-salvation-cancel-btn');
+
+    function openSalvationEditor() {
+      if (!salvationEditorWrap || !salvationEditor) return;
+      salvationEditorWrap.hidden = false;
+      if (salvationView) salvationView.hidden = true;
+      if (salvationPlaceholder) salvationPlaceholder.hidden = true;
+      salvationEditor.focus();
+    }
+
+    function closeSalvationEditor(persistToView) {
+      if (!salvationEditorWrap || !salvationEditor || !salvationView || !salvationPlaceholder) return;
+      salvationEditorWrap.hidden = true;
+
+      if (persistToView) {
+        const text = salvationEditor.value.trim();
+        if (text) {
+          salvationView.textContent = text;
+          salvationView.hidden = false;
+          salvationPlaceholder.hidden = true;
+        } else {
+          salvationView.hidden = true;
+          salvationPlaceholder.hidden = false;
+        }
+      }
+      // if !persistToView, leave view/placeholder as-is
+    }
+
     if (writeBtn) {
       writeBtn.addEventListener('click', () => {
-        // For now, send to Testimony Wall hub; later can go to a dedicated editor
-        window.location.href = '/testimony/#write-salvation';
+        openSalvationEditor();
+      });
+    }
+
+    if (cancelBtn) {
+      cancelBtn.addEventListener('click', () => {
+        // restore editor text from current view, then hide editor without changing view
+        if (salvationEditor && salvationView) {
+          salvationEditor.value = salvationView.textContent || '';
+        }
+        closeSalvationEditor(false);
+      });
+    }
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', async () => {
+        if (!salvationEditor) return;
+        const text = salvationEditor.value.trim();
+
+        let updateError = null;
+        try {
+          const { error } = await supabase.auth.updateUser({
+            data: {
+              salvation_testimony: text || null
+            }
+          });
+          updateError = error || null;
+        } catch (e) {
+          console.error('Error saving salvation testimony:', e);
+          updateError = e;
+        }
+
+        if (updateError) {
+          console.error('Salvation testimony save error:', updateError);
+          alert('We were not able to save your testimony just now. Please copy your text and try again.');
+          return;
+        }
+
+        closeSalvationEditor(true);
+        if (writeBtn) {
+          writeBtn.textContent = text ? 'Edit testimony' : 'Write my salvation story';
+        }
       });
     }
 
     if (learnBtn) {
       learnBtn.addEventListener('click', () => {
+        // Main testimony hub (you can add an anchor later if you want)
         window.location.href = '/testimony/';
       });
     }
-
-    const addTab = document.querySelector('.mt-tab-add');
-    if (addTab) {
-      addTab.addEventListener('click', () => {
-        window.location.href = '/testimony/add/';
-      });
-    }
-
 
     if (helpToggle && helpPanel) {
       helpToggle.addEventListener('click', () => {
@@ -729,6 +821,14 @@ permalink: /account/
           helpPanel.setAttribute('hidden', 'hidden');
         }
         helpToggle.setAttribute('aria-expanded', String(!currentlyHidden));
+      });
+    }
+
+    // + Testimony tab → Add Testimony page
+    const addTab = document.querySelector('.mt-tab-add');
+    if (addTab) {
+      addTab.addEventListener('click', () => {
+        window.location.href = '/testimony/add/';
       });
     }
 
