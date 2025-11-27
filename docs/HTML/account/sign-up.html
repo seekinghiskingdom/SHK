@@ -34,6 +34,21 @@ permalink: /account/sign-up/
         </label>
 
         <label>
+          Username
+          <input
+            type="text"
+            id="auth-signup-username"
+            required
+            inputmode="latin"
+            autocomplete="off"
+            pattern="^[a-z0-9_]{3,24}$"
+            maxlength="24"
+            placeholder="your_username"
+          >
+          <small>3–24 chars; lowercase letters, numbers, and underscores only (no spaces or special characters).</small>
+        </label>
+
+        <label>
           Email
           <input id="signup-email" type="email" name="email" autocomplete="email" required>
         </label>
@@ -53,7 +68,7 @@ permalink: /account/sign-up/
             minlength="8"
           >
           <p class="field-help">
-            At least 8 characters. Using a unique password helps keep your account secure.
+            Use at least 8 characters. Avoid reusing passwords from other sites.
           </p>
         </label>
 
@@ -226,6 +241,7 @@ permalink: /account/sign-up/
 
   const form = document.getElementById('shk-signup-form');
   const displayNameInput = document.getElementById('signup-display-name');
+  const usernameInput = document.getElementById('auth-signup-username');
   const emailInput = document.getElementById('signup-email');
   const passwordInput = document.getElementById('signup-password');
   const messageEl = document.getElementById('signup-message');
@@ -234,6 +250,19 @@ permalink: /account/sign-up/
     event.preventDefault();
     messageEl.textContent = '';
     messageEl.className = 'auth-message';
+
+    
+    const displayName = displayNameInput.value.trim();
+
+    const rawHandle = usernameInput.value.trim();
+    const handle = rawHandle.toLowerCase();
+    const handlePattern = /^[a-z0-9_]{3,24}$/;
+    if (!handlePattern.test(handle)) {
+      messageEl.textContent =
+        'Username must be 3–24 characters: lowercase letters, numbers, and underscores only (no spaces or special characters).';
+      messageEl.classList.add('error');
+      return;
+    }
 
     const email = emailInput.value.trim();
     const password = passwordInput.value;
@@ -245,7 +274,7 @@ permalink: /account/sign-up/
     }
 
     messageEl.textContent = 'Creating your account...';
-    const displayName = displayNameInput.value.trim();
+
 
     try {
       const { data, error } = await supabase.auth.signUp({
@@ -254,6 +283,7 @@ permalink: /account/sign-up/
         options: {
           emailRedirectTo: 'https://seekinghiskingdom.org/account/confirm/',
           data: {
+            handle: handle,
             display_name: displayName || null
           }
         }

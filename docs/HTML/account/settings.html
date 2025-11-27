@@ -58,7 +58,29 @@ permalink: /account/settings/
         <p class="field-help">
           This is the name that may be shown next to your testimonies.
         </p>
-        <button type="submit">Save display name</button>
+
+        
+        <label>
+          Username (public link)
+          <span
+            class="field-help-inline"
+            title="3–24 characters; lowercase letters, numbers, and underscores only."
+          >?</span>
+          <input
+            type="text"
+            id="settings-handle"
+            inputmode="latin"
+            autocomplete="off"
+            pattern="^[a-z0-9_]{3,24}$"
+            maxlength="24"
+            placeholder="your_username"
+          >
+        </label> 
+        <p class="field-help">
+          This creates a public link to your profile: https://seekinghiskingdom.org/u/your_username
+        </p>
+
+        <button type="submit">Save Profile</button>
         <p id="settings-display-name-message" class="account-message"></p>
       </form>
     </section>
@@ -348,6 +370,8 @@ permalink: /account/settings/
     const displayNameForm = document.getElementById('settings-display-name-form');
     const displayNameInput = document.getElementById('settings-display-name');
     const displayNameMsg = document.getElementById('settings-display-name-message');
+    const handleInput = document.getElementById('settings-handle');
+
 
     const emailForm = document.getElementById('settings-email-form');
     const emailInput = document.getElementById('settings-new-email');
@@ -372,12 +396,16 @@ permalink: /account/settings/
 
     const email = user.email || '';
     const displayName = (user.user_metadata && user.user_metadata.display_name) || '';
+    const handle = (user.user_metadata && user.user_metadata.handle) || '';
     const avatarKey = user.user_metadata && user.user_metadata.avatar_key;
 
     emailSpan.textContent = email;
 
     if (displayNameInput) {
       displayNameInput.value = displayName;
+    }
+    if (handleInput) {
+      handleInput.value = handle;
     }
 
     // Avatar initial (we’ll still show a letter here; avatar image is used on the account page later)
@@ -389,39 +417,53 @@ permalink: /account/settings/
     }
     avatarEl.textContent = initial;
 
-    // Display name form
+
+    // Display name + handle form
     if (displayNameForm) {
       displayNameForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         displayNameMsg.textContent = '';
         displayNameMsg.className = 'account-message';
 
-        const newName = displayNameInput.value.trim();
+        const newName = displayNameInput ? displayNameInput.value.trim() : '';
+        const rawHandle = handleInput ? handleInput.value.trim() : '';
+        const newHandle = rawHandle.toLowerCase();
+
         if (newName && (newName.length < 2 || newName.length > 40)) {
           displayNameMsg.textContent = 'Display name should be between 2 and 40 characters.';
           displayNameMsg.classList.add('error');
           return;
         }
 
-        displayNameMsg.textContent = 'Saving display name…';
-
-        const { data: updated, error: updateError } = await supabase.auth.updateUser({
-          data: {
-            display_name: newName || null
-          }
-        });
-
-        if (updateError) {
-          console.error('Display name update error:', updateError);
-          displayNameMsg.textContent = updateError.message || 'Unable to update display name.';
+        const handlePattern = /^[a-z0-9_]{3,24}$/;
+        if (newHandle && !handlePattern.test(newHandle)) {
+          displayNameMsg.textContent =
+            'Username must be 3–24 characters: lowercase letters, numbers, and underscores only.';
           displayNameMsg.classList.add('error');
           return;
         }
 
-        displayNameMsg.textContent = 'Display name updated.';
+        displayNameMsg.textContent = 'Saving profile…';
+
+        const { data: updated, error: updateError } = await supabase.auth.updateUser({
+          data: {
+            display_name: newName || null,
+            handle: newHandle || null
+          }
+        });
+
+        if (updateError) {
+          console.error('Display name/handle update error:', updateError);
+          displayNameMsg.textContent = updateError.message || 'Unable to update profile.';
+          displayNameMsg.classList.add('error');
+          return;
+        }
+
+        displayNameMsg.textContent = 'Profile updated.';
         displayNameMsg.classList.add('success');
       });
     }
+
 
     // Avatar picker
     const avatarGrid = document.getElementById('avatar-grid');
