@@ -110,7 +110,7 @@ permalink: /account/
       <button class="mt-tab" data-filter="miracle" type="button">Miracles</button>
       <button class="mt-tab" data-filter="general" type="button">General</button>
       <button class="mt-tab" data-filter="draft" type="button">Private drafts</button>
-      <button class="mt-tab" data-filter="+ testimony" type="button">+ Testimony</button>
+      <button class="mt-tab mt-tab-add" data-filter="+ testimony" type="button">+ Testimony</button>
     </div>
 
     <div class="mt-list-placeholder">
@@ -216,8 +216,20 @@ permalink: /account/
   font-size: 0.9rem;
   color: #000000;
 }
+
 .mt-share-row {
   margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Reuse mt-settings-btn styling but force it not to go full-width */
+.mt-share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: fit-content;
 }
 
 
@@ -246,6 +258,7 @@ permalink: /account/
   border: none;
   border-top: 1px solid rgba(229, 231, 235, 0.4);
 }
+
 
 .mt-section {
   margin-bottom: 1.75rem;
@@ -283,6 +296,7 @@ permalink: /account/
   gap: 0.5rem;
 }
 
+
 .mt-pill-button {
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
@@ -306,6 +320,16 @@ permalink: /account/
   color: #fefce8;
   font-size: 0.85rem;
   cursor: pointer;
+}
+
+/* Force non-full-width buttons */
+.mt-pill-button,
+.mt-add-testimony-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: fit-content;
 }
 
 /* Tabs row – horizontal pills, not full-width */
@@ -337,6 +361,19 @@ permalink: /account/
   border-color: #facc15;
   color: #fefce8;
 }
+
+.mt-tabs {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* Push "+ Testimony" to the far right */
+.mt-tabs .mt-tab-add {
+  margin-left: auto;
+}
+
 
 .mt-list-placeholder {
   margin-top: 0.8rem;
