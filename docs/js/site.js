@@ -199,13 +199,21 @@
   });
 })();
 
-// 9) User Profile Picture Selection
+// 9) User Profile Picture Selection (1–123)
 window.SHK_PROFILE_AVATARS = Array.from({ length: 123 }, (_, idx) => {
-  const id = idx + 1; // 1–90
+  const id = idx + 1; // 1–123
   return {
-    key: `avatar-${id}`, // logical key we store in metadata
+    key: `avatar-${id}`,              // logical key stored in user metadata
     src: `${window.SHK_BASEURL || ''}/img/profiles/${id}.png`
   };
 });
+
+// Helper: look up avatar URL by key, fall back gracefully
+window.SHK_getAvatarUrlByKey = function (avatarKey) {
+  if (!avatarKey || !window.SHK_PROFILE_AVATARS) return null;
+  const match = window.SHK_PROFILE_AVATARS.find(a => a.key === avatarKey);
+  return match ? match.src : null;
+};
+
 
 
