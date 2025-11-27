@@ -446,6 +446,7 @@ permalink: /account/settings/
 
         displayNameMsg.textContent = 'Saving profile…';
 
+        // 1) Update auth user metadata
         const { data: updated, error: updateError } = await supabase.auth.updateUser({
           data: {
             display_name: newName || null,
@@ -460,10 +461,39 @@ permalink: /account/settings/
           return;
         }
 
+        // 2) Upsert into public.profiles for public profile pages (only if handle is set)
+        if (newHandle) {
+          const avatarKey = user.user_metadata && user.user_metadata.avatar_key;
+          const role = (user.user_metadata && user.user_metadata.role) || 'user';
+
+          const { error: profileError } = await supabase
+            .from('profiles')
+            .upsert(
+              {
+                id: user.id,
+                handle: newHandle,
+                display_name: newName || null,
+                avatar_key: avatarKey || null,
+                role: role
+              },
+              { onConflict: 'id' }
+            );
+
+          if (profileError) {
+            console.error('profiles upsert error:', profileError);
+            // Most common is "handle already taken" (unique constraint)
+            displayNameMsg.textContent =
+              'Profile saved, but that username may already be taken. Please choose a different one.';
+            displayNameMsg.classList.add('error');
+            return;
+          }
+        }
+
         displayNameMsg.textContent = 'Profile updated.';
         displayNameMsg.classList.add('success');
       });
     }
+
 
     // Avatar picker
     const avatarGrid = document.getElementById('avatar-grid');
