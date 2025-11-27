@@ -18,7 +18,6 @@ permalink: /account/
         <!-- <h1 class="mt-title">My Salvation Testimony</h1> -->
         <p class="mt-display-name" id="mt-display-name"></p>
         <p class="mt-username" id="mt-username"></p>
-
       </div>
 
     </div>
@@ -45,33 +44,24 @@ permalink: /account/
   <!-- <p id="mt-auth-note" class="mt-auth-note">
     Checking your account...</p> -->
 
-    <div class="mt-share-row">
-      <button
-        type="button"
-        class="mt-settings-btn mt-share-btn"
-        id="mt-share-btn"
-        hidden
-      >
-        Share your testimony
-      </button>
+  <div class="mt-share-row">
+    <button
+      type="button"
+      class="mt-settings-btn mt-share-btn"
+      id="mt-share-btn"
+      hidden
+    >
+      Share your testimony
+    </button>
 
-      <button
-        type="button"
-        class="mt-settings-btn mt-share-btn"
-        id="mt-see-all-btn"
-      >
-        See all testimonies
-      </button>
-    </div>
-
-
-  <div id="mt-missing-handle" class="mt-public-profile mt-public-profile--warning" hidden>
-    <p class="mt-public-profile-text">
-      To get a public profile link, please choose a username on your
-      <a href="/account/settings/">account settings</a> page.
-    </p>
+    <button
+      type="button"
+      class="mt-settings-btn mt-share-btn"
+      id="mt-see-all-btn"
+    >
+      See all testimonies
+    </button>
   </div>
-
 
   <div id="mt-missing-handle" class="mt-public-profile mt-public-profile--warning" hidden>
     <p class="mt-public-profile-text">
@@ -84,41 +74,67 @@ permalink: /account/
 
   <!-- Personal salvation testimony card -->
   <section class="mt-section">
-    <h2 class="mt-section-title">My Salvation Testimony</h2>
-    <div class="mt-salvation-actions">
-        <button class="mt-pill-button" type="button">
+    <div class="mt-section-header mt-salvation-header">
+      <h2 class="mt-section-title">
+        My Salvation Testimony
+        <button
+          type="button"
+          class="mt-help-icon"
+          id="mt-salvation-help-toggle"
+          aria-label="Help with writing your salvation testimony"
+          aria-expanded="false"
+          aria-controls="mt-salvation-help"
+        >
+          ?
+        </button>
+      </h2>
+
+      <div class="mt-salvation-actions">
+        <button
+          class="mt-pill-button"
+          type="button"
+          id="mt-write-salvation-btn"
+        >
           Write my salvation story
         </button>
-        <button class="mt-pill-button mt-pill-outline" type="button">
+        <button
+          class="mt-pill-button mt-pill-outline"
+          type="button"
+          id="mt-learn-salvation-btn"
+        >
           Learn more about salvation & testimonies
         </button>
       </div>
+    </div>
 
     <div class="mt-salvation-card">
-      <p class="mt-salvation-placeholder" id="mt-salvation-placeholder">
-        When you’re ready, you can write out your Salvation Story and update it over time. <br>
-        Need help figuring out what your testimony is? Here are some questions to consider! <br> <br>
+      <!-- Help/placeholder content; later your actual testimony text can be rendered here too -->
+      <div class="mt-salvation-help" id="mt-salvation-help">
+        <p class="mt-salvation-placeholder" id="mt-salvation-placeholder">
+          When you’re ready, you can write out your Salvation Story and update it over time. <br>
+          Need help figuring out what your testimony is? Here are some questions to consider! <br> <br>
 
-        <em>"What was your life like before accepting Christ?"</em> <br>
-        <em>“How did you come to know Jesus Christ as your Lord and Savior?”</em> <br>
-        <em>"What led you to make the decision to follow Him?"</em> <br>
-        <em>"Why do you believe He gives salvation?"</em> <br> <br>
+          <em>"What was your life like before accepting Christ?"</em> <br>
+          <em>“How did you come to know Jesus Christ as your Lord and Savior?”</em> <br>
+          <em>"What led you to make the decision to follow Him?"</em> <br>
+          <em>"Why do you believe He gives salvation?"</em> <br> <br>
 
-        <em>"What has He done in your life since then?"</em> <br>
-        <em>"How has your faith grown and what challenges have you faced?"</em> <br>
-        <em>"What impact has your relationship with Jesus had on your life and those around you?"</em> <br>
-        <em>"How is He working in your life today?"</em> <br> <br>
+          <em>"What has He done in your life since then?"</em> <br>
+          <em>"How has your faith grown and what challenges have you faced?"</em> <br>
+          <em>"What impact has your relationship with Jesus had on your life and those around you?"</em> <br>
+          <em>"How is He working in your life today?"</em> <br> <br>
 
-        <em>"What would you like others to know about your walk with Christ?"</em> <br>
-        <em>"What message would you like to share with others to strengthen their faith?"</em> <br>
-      </p>
+          <em>"What would you like others to know about your walk with Christ?"</em> <br>
+          <em>"What message would you like to share with others to strengthen their faith?"</em> <br>
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- Other testimonies filters -->
   <section class="mt-section">
     <div class="mt-section-header">
-      <h2 class="mt-section-title">Recent Testimonies</h2>
+      <h2 class="mt-section-title">Other Testimonies</h2>
       <!-- <button class="mt-add-testimony-btn" type="button">
         + Add testimony
       </button> -->
@@ -136,7 +152,7 @@ permalink: /account/
 
     <div class="mt-list-placeholder">
       <p>
-        This is where your recent prayers, blessings, miracles, and other general testimonies will appear soon!
+        This is where your prayers, blessings, miracles, and other testimonies will appear once we wire up the Testimony Wall.
       </p>
       <p class="mt-list-subtext">
         Share your first testimony by clicking the "+ Testimony" button above!
@@ -194,7 +210,6 @@ permalink: /account/
   font-size: 1rem;
   color: #fefefe;
 }
-
 
 .mt-title {
   margin: 0;
@@ -255,9 +270,6 @@ permalink: /account/
   max-width: fit-content;
 }
 
-
-
-
 .mt-public-profile {
   margin: 0.5rem 0 0.75rem;
   font-size: 0.9rem;
@@ -275,13 +287,11 @@ permalink: /account/
   color: #fbbf24;
 }
 
-
 .mt-divider {
   margin: 1.4rem 0 1.1rem;
   border: none;
   border-top: 1px solid rgba(229, 231, 235, 0.4);
 }
-
 
 .mt-section {
   margin-bottom: 1.75rem;
@@ -299,12 +309,42 @@ permalink: /account/
   gap: 0.75rem;
 }
 
+/* Make salvation header line up title + buttons + help */
+.mt-salvation-header {
+  align-items: center;
+}
+
+.mt-help-icon {
+  margin-left: 0.5rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  border: 1px solid #deb000;
+  background: transparent;
+  color: #fefefe;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt-help-icon:hover,
+.mt-help-icon:focus-visible {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .mt-salvation-card {
   background: rgba(222, 176, 0, 0.3);
   border-radius: 16px;
   padding: 1.1rem 1.2rem 1rem;
   border: 1px solid rgba(249, 250, 251, 0.18);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+}
+
+.mt-salvation-help {
+  margin-top: 0.4rem;
 }
 
 .mt-salvation-placeholder {
@@ -318,7 +358,6 @@ permalink: /account/
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-
 
 .mt-pill-button {
   padding: 0.35rem 0.9rem;
@@ -367,7 +406,7 @@ permalink: /account/
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;       /* do NOT stretch */
+  flex: 0 0 auto;
   padding: 0.25rem 0.9rem;
   border-radius: 999px;
   border: 1px solid #deb000;
@@ -376,7 +415,7 @@ permalink: /account/
   cursor: pointer;
   color: #e5e7eb;
   white-space: nowrap;
-  width: auto;          /* override any global 100% */
+  width: auto;
 }
 
 .mt-tabs .mt-tab.is-active {
@@ -385,18 +424,10 @@ permalink: /account/
   color: #fefce8;
 }
 
-.mt-tabs {
-  margin-top: 0.8rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
 /* Push "+ Testimony" to the far right */
 .mt-tabs .mt-tab-add {
   margin-left: auto;
 }
-
 
 .mt-list-placeholder {
   margin-top: 0.8rem;
@@ -466,113 +497,107 @@ permalink: /account/
     }
   }
 
-function setLoggedInState(user) {
-//   const subtitleEl = document.getElementById('mt-subtitle');
-  const displayNameEl = document.getElementById('mt-display-name');
-  const usernameEl = document.getElementById('mt-username');
-  const avatarEl = document.getElementById('mt-avatar');
-  const avatarInitialEl = document.getElementById('mt-avatar-initial');
-//   const authNoteEl = document.getElementById('mt-auth-note');
-  const authToggleBtn = document.getElementById('mt-auth-toggle');
+  function setLoggedInState(user) {
+    const displayNameEl = document.getElementById('mt-display-name');
+    const usernameEl = document.getElementById('mt-username');
+    const avatarEl = document.getElementById('mt-avatar');
+    const avatarInitialEl = document.getElementById('mt-avatar-initial');
+    const authToggleBtn = document.getElementById('mt-auth-toggle');
 
-  const email = user.email || '';
-  const displayName =
-    (user.user_metadata && user.user_metadata.display_name) || '';
-  const handle =
-    (user.user_metadata && user.user_metadata.handle) || '';
-  const avatarKey =
-    user.user_metadata && user.user_metadata.avatar_key; // e.g. "avatar-7"
+    const email = user.email || '';
+    const displayName =
+      (user.user_metadata && user.user_metadata.display_name) || '';
+    const handle =
+      (user.user_metadata && user.user_metadata.handle) || '';
+    const avatarKey =
+      user.user_metadata && user.user_metadata.avatar_key; // e.g. "avatar-7"
 
-  const nameOrEmail = displayName || email || 'Your SHK account';
-  const shareBtn = document.getElementById('mt-share-btn');
-  const seeAllBtn = document.getElementById('mt-see-all-btn');
-  const missingHandleBox = document.getElementById('mt-missing-handle');
+    const nameOrEmail = displayName || email || 'Your SHK account';
+    const shareBtn = document.getElementById('mt-share-btn');
+    const seeAllBtn = document.getElementById('mt-see-all-btn');
+    const missingHandleBox = document.getElementById('mt-missing-handle');
 
-  if (displayNameEl) displayNameEl.textContent = nameOrEmail;
-  if (usernameEl) usernameEl.textContent = handle ? `@${handle}` : '';
+    if (displayNameEl) displayNameEl.textContent = nameOrEmail;
+    if (usernameEl) usernameEl.textContent = handle ? `@${handle}` : '';
 
+    // "Share your testimony" button vs. "pick a username"
+    if (shareBtn && missingHandleBox) {
+      if (handle) {
+        const origin = window.location.origin || 'https://seekinghiskingdom.org';
+        const url = `${origin}/u/?handle=${encodeURIComponent(handle)}`;
 
-  // "Share your testimony" button vs. "pick a username"
-  if (shareBtn && missingHandleBox) {
-    if (handle) {
-      const origin = window.location.origin || 'https://seekinghiskingdom.org';
-      const url = `${origin}/u/?handle=${encodeURIComponent(handle)}`;
+        shareBtn.hidden = false;
 
-      shareBtn.hidden = false;
-
-      shareBtn.onclick = async () => {
-        try {
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            await navigator.clipboard.writeText(url);
-            const oldLabel = 'Share your testimony';
-            shareBtn.textContent = 'Link copied!';
-            setTimeout(() => {
-              shareBtn.textContent = oldLabel;
-            }, 2000);
-          } else {
+        shareBtn.onclick = async () => {
+          try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              await navigator.clipboard.writeText(url);
+              const oldLabel = 'Share your testimony';
+              shareBtn.textContent = 'Link copied!';
+              setTimeout(() => {
+                shareBtn.textContent = oldLabel;
+              }, 2000);
+            } else {
+              window.prompt('Copy this link:', url);
+            }
+          } catch (err) {
+            console.error('Clipboard error:', err);
             window.prompt('Copy this link:', url);
           }
-        } catch (err) {
-          console.error('Clipboard error:', err);
-          window.prompt('Copy this link:', url);
-        }
-      };
+        };
 
-      missingHandleBox.hidden = false ? false : false; // keep visible only if you want extra reminder
-      missingHandleBox.hidden = true;
-    } else {
-      shareBtn.hidden = true;
-      missingHandleBox.hidden = false;
-    }
-  }
-  // "See all testimonies" always goes to the Testimony Wall
-  if (seeAllBtn) {
-    seeAllBtn.onclick = () => {
-      window.location.href = '/testimonies/'; // adjust to your final Testimony Wall URL
-    };
-  }
-
-
-
-  // Fallback initial (when no avatar image yet)
-  let initial = '✝';
-  if (displayName && displayName.trim()) {
-    initial = displayName.trim().charAt(0).toUpperCase();
-  } else if (email) {
-    initial = email.charAt(0).toUpperCase();
-  }
-
-  if (avatarEl && avatarInitialEl) {
-    const url =
-      avatarKey && window.SHK_getAvatarUrlByKey
-        ? window.SHK_getAvatarUrlByKey(avatarKey)
-        : null;
-
-    if (url) {
-      avatarEl.style.backgroundImage = `url('${url}')`;
-      avatarEl.classList.add('mt-avatar--has-image');
-      avatarInitialEl.textContent = '';
-    } else {
-      avatarEl.style.backgroundImage = 'none';
-      avatarEl.classList.remove('mt-avatar--has-image');
-      avatarInitialEl.textContent = initial;
-    }
-  }
-
-
-
-  if (authToggleBtn) {
-    authToggleBtn.textContent = 'Sign Out';
-    authToggleBtn.onclick = async () => {
-      try {
-        await supabase.auth.signOut();
-      } catch (e) {
-        console.error('Error signing out:', e);
+        // Hide the missing-handle box if we have a handle
+        missingHandleBox.hidden = true;
+      } else {
+        shareBtn.hidden = true;
+        missingHandleBox.hidden = false;
       }
-      window.location.href = '/account/sign-in/';
-    };
+    }
+
+    // "See all testimonies" always goes to the Testimony Wall
+    if (seeAllBtn) {
+      seeAllBtn.onclick = () => {
+        window.location.href = '/testimonies/';
+      };
+    }
+
+    // Fallback initial (when no avatar image yet)
+    let initial = '✝';
+    if (displayName && displayName.trim()) {
+      initial = displayName.trim().charAt(0).toUpperCase();
+    } else if (email) {
+      initial = email.charAt(0).toUpperCase();
+    }
+
+    if (avatarEl && avatarInitialEl) {
+      const url =
+        avatarKey && window.SHK_getAvatarUrlByKey
+          ? window.SHK_getAvatarUrlByKey(avatarKey)
+          : null;
+
+      if (url) {
+        avatarEl.style.backgroundImage = `url('${url}')`;
+        avatarEl.classList.add('mt-avatar--has-image');
+        avatarInitialEl.textContent = '';
+      } else {
+        avatarEl.style.backgroundImage = 'none';
+        avatarEl.classList.remove('mt-avatar--has-image');
+        avatarInitialEl.textContent = initial;
+      }
+    }
+
+    if (authToggleBtn) {
+      authToggleBtn.textContent = 'Sign Out';
+      authToggleBtn.onclick = async () => {
+        try {
+          await supabase.auth.signOut();
+        } catch (e) {
+          console.error('Error signing out:', e);
+        }
+        window.location.href = '/account/sign-in/';
+      };
+    }
   }
-}
 
   function setupTabs() {
     const tabs = Array.from(document.querySelectorAll('.mt-tab'));
@@ -594,6 +619,37 @@ function setLoggedInState(user) {
     if (settingsBtn) {
       settingsBtn.addEventListener('click', () => {
         window.location.href = '/account/settings/';
+      });
+    }
+
+    // Salvation buttons + help toggle
+    const writeBtn = document.getElementById('mt-write-salvation-btn');
+    const learnBtn = document.getElementById('mt-learn-salvation-btn');
+    const helpToggle = document.getElementById('mt-salvation-help-toggle');
+    const helpPanel = document.getElementById('mt-salvation-help');
+
+    if (writeBtn) {
+      writeBtn.addEventListener('click', () => {
+        // For now, send to Testimony Wall hub; later can go to a dedicated editor
+        window.location.href = '/testimonies/#write-salvation';
+      });
+    }
+
+    if (learnBtn) {
+      learnBtn.addEventListener('click', () => {
+        window.location.href = '/testimonies/#about-salvation-testimonies';
+      });
+    }
+
+    if (helpToggle && helpPanel) {
+      helpToggle.addEventListener('click', () => {
+        const currentlyHidden = helpPanel.hasAttribute('hidden');
+        if (currentlyHidden) {
+          helpPanel.removeAttribute('hidden');
+        } else {
+          helpPanel.setAttribute('hidden', 'hidden');
+        }
+        helpToggle.setAttribute('aria-expanded', String(!currentlyHidden));
       });
     }
 
