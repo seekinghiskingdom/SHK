@@ -17,6 +17,8 @@ permalink: /account/
       <div>
         <!-- <h1 class="mt-title">My Testimony</h1> -->
         <p class="mt-display-name" id="mt-display-name"></p>
+        <br>
+        <p class="mt-username" id="mt-username"></p>
 
       </div>
 
@@ -144,16 +146,19 @@ permalink: /account/
   font-weight: 700;
   font-size: 1.1rem;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .mt-display-name {
   margin: 0.1rem 0 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #fefefe;
 }
 
 .mt-username {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #fefefe;
 }
 
@@ -360,10 +365,20 @@ permalink: /account/
     const authNoteEl = document.getElementById('mt-auth-note');
     const authToggleBtn = document.getElementById('mt-auth-toggle');
 
-    avatarEl.textContent = '✝';
-    subtitleEl.textContent = 'Sign in or create an account to write and share your testimonies.';
-    authNoteEl.textContent =
-      'You are not signed in. Sign in or create an account to start sharing your story.';
+    if (avatarEl) {
+      avatarEl.style.backgroundImage = 'none';
+      avatarEl.classList.remove('mt-avatar--has-image');
+      const avatarInitialEl = document.getElementById('mt-avatar-initial');
+      if (avatarInitialEl) avatarInitialEl.textContent = '✝';
+    }
+    if (subtitleEl) {
+      subtitleEl.textContent =
+        'Sign in or create an account to write and share your testimonies.';
+    }
+    if (authNoteEl) {
+      authNoteEl.textContent =
+        'You are not signed in. Sign in or create an account to start sharing your story.';
+    }
 
     if (authToggleBtn) {
       authToggleBtn.textContent = 'Sign In';
@@ -376,6 +391,7 @@ permalink: /account/
 function setLoggedInState(user) {
 //   const subtitleEl = document.getElementById('mt-subtitle');
   const displayNameEl = document.getElementById('mt-display-name');
+  const usernameEl = document.getElementById('mt-username');
   const avatarEl = document.getElementById('mt-avatar');
   const avatarInitialEl = document.getElementById('mt-avatar-initial');
 //   const authNoteEl = document.getElementById('mt-auth-note');
@@ -395,6 +411,7 @@ function setLoggedInState(user) {
   const missingHandleBox = document.getElementById('mt-missing-handle');
 
   if (displayNameEl) displayNameEl.textContent = nameOrEmail;
+  if (usernameEl) usernameEl.textContent = handle ? `@${handle}` : '';
 
   // Public profile link vs. "pick a username"
   if (publicProfileBox && publicProfileLink && missingHandleBox) {
