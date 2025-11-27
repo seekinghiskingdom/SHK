@@ -1,56 +1,114 @@
 ---
 layout: default
-title: Profile
+title: Testimony
 permalink: /u/
 ---
 
-<section class="profile-page account-bg-page" id="profile-page">
-  <header class="profile-header">
-    <div class="profile-main">
-      <div class="profile-avatar" id="profile-avatar">
-        <span id="profile-avatar-initial">✝</span>
+<section class="account-page account-bg-page mt-page" id="mt-page">
+
+  <header class="mt-header">
+    <div class="mt-header-main">
+
+      <div class="mt-avatar" id="mt-avatar">
+        <span id="mt-avatar-initial">✝</span>
       </div>
+
       <div>
-        <p class="profile-display-name" id="profile-display-name"></p>
-        <p class="profile-username" id="profile-username"></p>
+        <p class="mt-display-name" id="mt-display-name"></p>
+        <p class="mt-username" id="mt-username"></p>
       </div>
+
+    </div>
+
+    <div class="mt-actions">
+      <button
+        class="mt-settings-btn"
+        type="button"
+        id="mt-follow-btn"
+      >
+        Follow this testimony
+      </button>
+
+      <button
+        class="mt-auth-btn"
+        type="button"
+        id="mt-my-testimony-btn"
+      >
+        See my testimony
+      </button>
     </div>
   </header>
 
-  <p id="profile-status" class="profile-status">
-    Loading profile…
+  <p id="mt-profile-status" class="mt-auth-note">
+    Loading testimony…
   </p>
 
-  <section class="profile-section" id="profile-testimonies">
-    <h2 class="profile-section-title">Public testimonies</h2>
-    <p class="profile-placeholder">
-      This is where this person’s public testimonies will appear once the Testimony Wall is wired in.
-    </p>
+  <div class="mt-share-row">
+    <button
+      type="button"
+      class="mt-settings-btn mt-share-btn"
+      id="mt-share-btn"
+      hidden
+    >
+      Share their testimony
+    </button>
+  </div>
+
+  <hr class="mt-divider">
+
+  <!-- Personal salvation testimony card (public view) -->
+  <section class="mt-section">
+    <h2 class="mt-section-title" id="mt-testimony-title">Testimony</h2>
+
+    <div class="mt-salvation-card">
+      <!-- No onboarding text/buttons here; just a container for their public salvation testimony -->
+      <div id="mt-salvation-content"></div>
+    </div>
   </section>
+
+  <!-- Other testimonies filters (public view) -->
+  <section class="mt-section">
+    <div class="mt-section-header">
+      <h2 class="mt-section-title">Other Testimonies</h2>
+    </div>
+
+    <div class="mt-tabs" role="tablist">
+      <button class="mt-tab is-active" data-filter="all" type="button">All</button>
+      <button class="mt-tab" data-filter="prayer" type="button">Prayers</button>
+      <button class="mt-tab" data-filter="blessing" type="button">Blessings</button>
+      <button class="mt-tab" data-filter="miracle" type="button">Miracles</button>
+      <button class="mt-tab" data-filter="general" type="button">General</button>
+      <!-- No "Private drafts" tab, no "+ Testimony" button -->
+    </div>
+
+    <!-- Empty container for that user's testimonies (no placeholder text) -->
+    <div id="mt-testimonies-list" class="mt-list-placeholder"></div>
+  </section>
+
 </section>
 
 <style>
-.profile-page {
+.mt-page {
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem 1.25rem 3rem;
 }
 
-.profile-header {
+.mt-header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   gap: 1.25rem;
-  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.profile-main {
+.mt-header-main {
   display: flex;
   align-items: center;
   gap: 0.9rem;
 }
 
-.profile-avatar {
+.mt-avatar {
   width: 5rem;
   height: 5rem;
   border-radius: 999px;
@@ -66,37 +124,201 @@ permalink: /u/
   background-repeat: no-repeat;
 }
 
-.profile-display-name {
+.mt-display-name {
   margin: 0 0 0.15rem;
   font-size: 2rem;
   color: #fefefe;
 }
 
-.profile-username {
+.mt-username {
   margin: 0;
   font-size: 1rem;
   color: #fefefe;
 }
 
-.profile-status {
-  margin: 0 0 1.25rem;
+.mt-title {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.mt-subtitle {
+  margin: 0.12rem 0 0;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.mt-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.mt-settings-btn,
+.mt-auth-btn {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  border-color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+  color: #fefefe;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.mt-auth-note {
+  margin-top: 0.75rem;
   font-size: 0.9rem;
   color: #e5e7eb;
 }
 
-.profile-section {
+.mt-share-row {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Short, left-aligned share button */
+.mt-share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: fit-content;
+}
+
+.mt-public-profile {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.9rem;
+}
+
+.mt-public-profile-text a {
+  text-decoration: underline;
+}
+
+.mt-public-profile--warning {
+  color: #fbbf24;
+}
+
+.mt-public-profile--warning a {
+  color: #fbbf24;
+}
+
+.mt-divider {
+  margin: 1.4rem 0 1.1rem;
+  border: none;
+  border-top: 1px solid rgba(229, 231, 235, 0.4);
+}
+
+.mt-section {
   margin-bottom: 1.75rem;
 }
 
-.profile-section-title {
+.mt-section-title {
   margin: 0 0 0.6rem;
   font-size: 1.5rem;
 }
 
-.profile-placeholder {
-  margin: 0;
+.mt-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mt-salvation-card {
+  background: rgba(222, 176, 0, 0.3);
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem 1rem;
+  border: 1px solid rgba(249, 250, 251, 0.18);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Empty now; content will be wired to real testimony later */
+#mt-salvation-content {
+  min-height: 3rem;
+}
+
+.mt-salvation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.mt-pill-button {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #facc15;
+  background: rgba(250, 204, 21, 0.15);
+  color: #fefce8;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.mt-pill-outline {
+  border-color: #deb000;
+  background: transparent;
+}
+
+/* Tabs row – horizontal pills, not full-width */
+.mt-tabs {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.mt-tabs .mt-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #deb000;
+  background: rgba(222, 176, 0, 0.3);
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #e5e7eb;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mt-tabs .mt-tab.is-active {
+  background: rgba(0, 0, 0, 0.7);
+  border-color: #facc15;
+  color: #fefce8;
+}
+
+.mt-list-placeholder {
+  margin-top: 0.8rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 12px;
+  border: 1px dashed rgba(229, 231, 235, 0.5);
+  background: rgba(222, 176, 0, 0.3);
   font-size: 0.9rem;
   color: #e5e7eb;
+  min-height: 3rem; /* gives some structure even when empty */
+}
+
+.mt-list-subtext {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #cbd5f5;
+}
+
+@media (max-width: 640px) {
+  .mt-page {
+    padding-inline: 1rem;
+  }
+
+  .mt-header {
+    align-items: flex-start;
+  }
+
+  .mt-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 </style>
 
@@ -122,24 +344,47 @@ permalink: /u/
     return null;
   }
 
+  function setupTabs() {
+    const tabs = Array.from(document.querySelectorAll('.mt-tab'));
+    if (!tabs.length) return;
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+        // Later we’ll filter testimonies by tab.dataset.filter
+      });
+    });
+  }
+
   function renderProfile(profile) {
-    const displayNameEl = document.getElementById('profile-display-name');
-    const usernameEl = document.getElementById('profile-username');
-    const avatarEl = document.getElementById('profile-avatar');
-    const avatarInitialEl = document.getElementById('profile-avatar-initial');
-    const statusEl = document.getElementById('profile-status');
+    const displayNameEl = document.getElementById('mt-display-name');
+    const usernameEl = document.getElementById('mt-username');
+    const avatarEl = document.getElementById('mt-avatar');
+    const avatarInitialEl = document.getElementById('mt-avatar-initial');
+    const statusEl = document.getElementById('mt-profile-status');
+    const titleEl = document.getElementById('mt-testimony-title');
+    const shareBtn = document.getElementById('mt-share-btn');
 
     const handle = profile.handle;
     const displayName = profile.display_name || '';
     const avatarKey = profile.avatar_key || null;
 
-    const nameOrHandle = displayName || handle || 'Profile';
+    const nameOrHandle = displayName || handle || 'Testimony';
 
     if (displayNameEl) displayNameEl.textContent = nameOrHandle;
     if (usernameEl) usernameEl.textContent = handle ? '@' + handle : '';
 
+    if (titleEl) {
+      const baseName = nameOrHandle;
+      const possessive = baseName.endsWith('s')
+        ? `${baseName}' testimony`
+        : `${baseName}'s testimony`;
+      titleEl.textContent = possessive;
+    }
+
     if (statusEl) {
-      statusEl.textContent = 'Public profile';
+      statusEl.textContent = 'Public testimony';
     }
 
     // Fallback initial
@@ -166,22 +411,66 @@ permalink: /u/
         avatarInitialEl.textContent = initial;
       }
     }
+
+    // Share their testimony: copy current URL
+    if (shareBtn) {
+      const url = window.location.href;
+      shareBtn.hidden = false;
+      shareBtn.onclick = async () => {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(url);
+            const oldLabel = 'Share their testimony';
+            shareBtn.textContent = 'Link copied!';
+            setTimeout(() => {
+              shareBtn.textContent = oldLabel;
+            }, 2000);
+          } else {
+            window.prompt('Copy this link:', url);
+          }
+        } catch (err) {
+          console.error('Clipboard error:', err);
+          window.prompt('Copy this link:', url);
+        }
+      };
+    }
   }
 
   function renderNotFound() {
-    const statusEl = document.getElementById('profile-status');
-    const displayNameEl = document.getElementById('profile-display-name');
-    const usernameEl = document.getElementById('profile-username');
+    const statusEl = document.getElementById('mt-profile-status');
+    const displayNameEl = document.getElementById('mt-display-name');
+    const usernameEl = document.getElementById('mt-username');
+    const titleEl = document.getElementById('mt-testimony-title');
 
     if (displayNameEl) displayNameEl.textContent = 'User not found';
     if (usernameEl) usernameEl.textContent = '';
+    if (titleEl) titleEl.textContent = 'Testimony';
     if (statusEl) {
       statusEl.textContent = 'We could not find a profile with that username.';
     }
   }
 
   async function initPublicProfile() {
-    const statusEl = document.getElementById('profile-status');
+    setupTabs();
+
+    const statusEl = document.getElementById('mt-profile-status');
+    const followBtn = document.getElementById('mt-follow-btn');
+    const myBtn = document.getElementById('mt-my-testimony-btn');
+
+    // Follow: for now, just send to sign-in (later can wire real follow logic)
+    if (followBtn) {
+      followBtn.onclick = () => {
+        window.location.href = '/account/sign-in/';
+      };
+    }
+
+    // See my testimony: always send to account page
+    if (myBtn) {
+      myBtn.onclick = () => {
+        window.location.href = '/account/';
+      };
+    }
+
     const handle = getHandleFromUrl();
 
     if (!handle) {
@@ -192,7 +481,7 @@ permalink: /u/
     }
 
     if (statusEl) {
-      statusEl.textContent = 'Loading profile for @"' + handle + '"…';
+      statusEl.textContent = 'Loading testimony for @' + handle + '…';
     }
 
     const { data, error } = await supabase
@@ -204,7 +493,7 @@ permalink: /u/
     if (error) {
       console.error('Error loading profile:', error);
       if (statusEl) {
-        statusEl.textContent = 'There was a problem loading this profile.';
+        statusEl.textContent = 'There was a problem loading this testimony.';
       }
       return;
     }
@@ -215,6 +504,8 @@ permalink: /u/
     }
 
     renderProfile(data);
+    // Later: load their salvation testimony + other testimonies here and
+    // inject into #mt-salvation-content and #mt-testimonies-list
   }
 
   document.addEventListener('DOMContentLoaded', initPublicProfile);
