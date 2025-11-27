@@ -41,6 +41,19 @@ permalink: /account/
     Checking your account…
   </p>
 
+  <div id="mt-public-profile" class="mt-public-profile" hidden>
+    <p class="mt-public-profile-text">
+      Your public profile: <a id="mt-public-profile-link" href="#"></a>
+    </p>
+  </div>
+
+  <div id="mt-missing-handle" class="mt-public-profile mt-public-profile--warning" hidden>
+    <p class="mt-public-profile-text">
+      To get a public profile link, please choose a username on your
+      <a href="/account/settings/">account settings</a> page.
+    </p>
+  </div>
+
   <hr class="mt-divider">
 
   <!-- Personal salvation testimony card -->
@@ -170,6 +183,24 @@ permalink: /account/
   font-size: 0.9rem;
   color: #e5e7eb;
 }
+
+.mt-public-profile {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.9rem;
+}
+
+.mt-public-profile-text a {
+  text-decoration: underline;
+}
+
+.mt-public-profile--warning {
+  color: #fbbf24;
+}
+
+.mt-public-profile--warning a {
+  color: #fbbf24;
+}
+
 
 .mt-divider {
   margin: 1.4rem 0 1.1rem;
@@ -327,27 +358,44 @@ permalink: /account/
   }
 
 function setLoggedInState(user) {
-  const subtitleEl = document.getElementById('mt-subtitle');
+//   const subtitleEl = document.getElementById('mt-subtitle');
   const displayNameEl = document.getElementById('mt-display-name');
   const avatarEl = document.getElementById('mt-avatar');
   const avatarInitialEl = document.getElementById('mt-avatar-initial');
-  const authNoteEl = document.getElementById('mt-auth-note');
+//   const authNoteEl = document.getElementById('mt-auth-note');
   const authToggleBtn = document.getElementById('mt-auth-toggle');
 
   const email = user.email || '';
   const displayName =
     (user.user_metadata && user.user_metadata.display_name) || '';
+  const handle =
+    (user.user_metadata && user.user_metadata.handle) || '';
   const avatarKey =
     user.user_metadata && user.user_metadata.avatar_key; // e.g. "avatar-7"
 
   const nameOrEmail = displayName || email || 'Your SHK account';
+  const publicProfileBox = document.getElementById('mt-public-profile');
+  const publicProfileLink = document.getElementById('mt-public-profile-link');
+  const missingHandleBox = document.getElementById('mt-missing-handle');
 
   if (displayNameEl) displayNameEl.textContent = nameOrEmail;
-//   if (subtitleEl) {
-//     subtitleEl.textContent =
-//       'This is your story of how God is moving in your life.';
-//   }
-//   if (authNoteEl) authNoteEl.textContent = 'You are signed in.';
+
+  // Public profile link vs. "pick a username"
+  if (publicProfileBox && publicProfileLink && missingHandleBox) {
+    if (handle) {
+      const origin = window.location.origin || 'https://seekinghiskingdom.org';
+      const url = `${origin}/u/?handle=${encodeURIComponent(handle)}`;
+
+      publicProfileLink.href = url;
+      publicProfileLink.textContent = url;
+
+      publicProfileBox.hidden = false;
+      missingHandleBox.hidden = true;
+    } else {
+      publicProfileBox.hidden = true;
+      missingHandleBox.hidden = false;
+    }
+  }
 
   // Fallback initial (when no avatar image yet)
   let initial = '✝';

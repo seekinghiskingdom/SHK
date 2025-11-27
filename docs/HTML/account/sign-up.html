@@ -257,6 +257,20 @@ permalink: /account/sign-up/
     const rawHandle = usernameInput.value.trim();
     const handle = rawHandle.toLowerCase();
     const handlePattern = /^[a-z0-9_]{3,24}$/;
+    const reservedUsernames = [
+      'admin', 'administrator', 'moderator', 'mod', 'support', 'staff',
+      'root', 'system', 'null', 'undefined', 'user', 'users',
+      'test', 'tests', 'testing', 'guest', 'info', 'contact',
+    ];
+    const reservedSuffixes = ['-shk', '-admin', '-mod', '-support'];
+    if (
+      reservedUsernames.includes(handle) ||
+      reservedSuffixes.some(suffix => handle.endsWith(suffix))
+    ) {
+      messageEl.textContent = 'That username is not allowed. Please choose a different one.';
+      messageEl.classList.add('error');
+      return;
+    }
     if (!handlePattern.test(handle)) {
       messageEl.textContent =
         'Username must be 3–24 characters: lowercase letters, numbers, and underscores only (no spaces or special characters).';
