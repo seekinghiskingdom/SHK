@@ -1,0 +1,221 @@
+---
+layout: default
+title: Profile
+permalink: /u/
+---
+
+<section class="profile-page account-bg-page" id="profile-page">
+  <header class="profile-header">
+    <div class="profile-main">
+      <div class="profile-avatar" id="profile-avatar">
+        <span id="profile-avatar-initial">✝</span>
+      </div>
+      <div>
+        <p class="profile-display-name" id="profile-display-name"></p>
+        <p class="profile-username" id="profile-username"></p>
+      </div>
+    </div>
+  </header>
+
+  <p id="profile-status" class="profile-status">
+    Loading profile…
+  </p>
+
+  <section class="profile-section" id="profile-testimonies">
+    <h2 class="profile-section-title">Public testimonies</h2>
+    <p class="profile-placeholder">
+      This is where this person’s public testimonies will appear once the Testimony Wall is wired in.
+    </p>
+  </section>
+</section>
+
+<style>
+.profile-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-main {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.profile-avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 999px;
+  background: rgba(222, 176, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile-display-name {
+  margin: 0 0 0.15rem;
+  font-size: 2rem;
+  color: #fefefe;
+}
+
+.profile-username {
+  margin: 0;
+  font-size: 1rem;
+  color: #fefefe;
+}
+
+.profile-status {
+  margin: 0 0 1.25rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.profile-section {
+  margin-bottom: 1.75rem;
+}
+
+.profile-section-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.5rem;
+}
+
+.profile-placeholder {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+</style>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+  function getHandleFromUrl() {
+    // Preferred: ?handle=someone
+    const params = new URLSearchParams(window.location.search);
+    const fromQuery = params.get('handle');
+    if (fromQuery) return fromQuery.toLowerCase();
+
+    // Future-friendly: /u/someone/ style
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    if (segments.length >= 2 && segments[0] === 'u') {
+      return segments[1].toLowerCase();
+    }
+
+    return null;
+  }
+
+  function renderProfile(profile) {
+    const displayNameEl = document.getElementById('profile-display-name');
+    const usernameEl = document.getElementById('profile-username');
+    const avatarEl = document.getElementById('profile-avatar');
+    const avatarInitialEl = document.getElementById('profile-avatar-initial');
+    const statusEl = document.getElementById('profile-status');
+
+    const handle = profile.handle;
+    const displayName = profile.display_name || '';
+    const avatarKey = profile.avatar_key || null;
+
+    const nameOrHandle = displayName || handle || 'Profile';
+
+    if (displayNameEl) displayNameEl.textContent = nameOrHandle;
+    if (usernameEl) usernameEl.textContent = handle ? '@' + handle : '';
+
+    if (statusEl) {
+      statusEl.textContent = 'Public profile';
+    }
+
+    // Fallback initial
+    let initial = '✝';
+    if (displayName && displayName.trim()) {
+      initial = displayName.trim().charAt(0).toUpperCase();
+    } else if (handle) {
+      initial = handle.charAt(0).toUpperCase();
+    }
+
+    if (avatarEl && avatarInitialEl) {
+      const url =
+        avatarKey && window.SHK_getAvatarUrlByKey
+          ? window.SHK_getAvatarUrlByKey(avatarKey)
+          : null;
+
+      if (url) {
+        avatarEl.style.backgroundImage = "url('" + url + "')";
+        avatarEl.classList.add('mt-avatar--has-image');
+        avatarInitialEl.textContent = '';
+      } else {
+        avatarEl.style.backgroundImage = 'none';
+        avatarEl.classList.remove('mt-avatar--has-image');
+        avatarInitialEl.textContent = initial;
+      }
+    }
+  }
+
+  function renderNotFound() {
+    const statusEl = document.getElementById('profile-status');
+    const displayNameEl = document.getElementById('profile-display-name');
+    const usernameEl = document.getElementById('profile-username');
+
+    if (displayNameEl) displayNameEl.textContent = 'User not found';
+    if (usernameEl) usernameEl.textContent = '';
+    if (statusEl) {
+      statusEl.textContent = 'We could not find a profile with that username.';
+    }
+  }
+
+  async function initPublicProfile() {
+    const statusEl = document.getElementById('profile-status');
+    const handle = getHandleFromUrl();
+
+    if (!handle) {
+      if (statusEl) {
+        statusEl.textContent = 'No username provided in the link.';
+      }
+      return;
+    }
+
+    if (statusEl) {
+      statusEl.textContent = 'Loading profile for @"' + handle + '"…';
+    }
+
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('id, handle, display_name, avatar_key')
+      .eq('handle', handle)
+      .maybeSingle();
+
+    if (error) {
+      console.error('Error loading profile:', error);
+      if (statusEl) {
+        statusEl.textContent = 'There was a problem loading this profile.';
+      }
+      return;
+    }
+
+    if (!data) {
+      renderNotFound();
+      return;
+    }
+
+    renderProfile(data);
+  }
+
+  document.addEventListener('DOMContentLoaded', initPublicProfile);
+</script>
