@@ -99,8 +99,7 @@ permalink: /admin/accounts/
     const emailEl = document.getElementById('admin-accounts-email');
     const roleEl = document.getElementById('admin-accounts-role');
 
-    if (!window.supabase) {
-      // Fall back: show a generic message rather than a blank page
+    if (!window.supabase || !window.supabase.createClient) {
       if (signedOutEl) {
         signedOutEl.style.display = 'block';
         signedOutEl.textContent =
@@ -108,6 +107,10 @@ permalink: /admin/accounts/
       }
       return;
     }
+
+    const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
     let userData;
     try {
@@ -128,7 +131,6 @@ permalink: /admin/accounts/
 
     if (emailEl) emailEl.textContent = email;
     if (roleEl) roleEl.textContent = role;
-
 
     // Fetch a simple list of profiles for admins/mods
     const tableBody = document.querySelector('#admin-accounts-table tbody');
@@ -170,10 +172,7 @@ permalink: /admin/accounts/
       }
     }
 
-    // Guard logic per ACC-P1.1 contract:
-    // - If no user: sign-in prompt (handled above)
-    // - If role === 'user': not authorised panel
-    // - If role === 'mod' or 'admin': show content
+    // Guard logic
     if (role === 'mod' || role === 'admin') {
       if (contentEl) contentEl.style.display = 'block';
     } else {
