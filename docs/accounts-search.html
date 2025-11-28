@@ -103,6 +103,16 @@ breadcrumbs:
     font-size: 0.85rem;
     white-space: nowrap;
   }
+
+  .acct-card-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid #b08900;
+    background: #f3c43a;
+    color: #111827;
+  }
+
 </style>
 
 <script>
@@ -153,11 +163,12 @@ breadcrumbs:
           }
         }
 
+
         const roleLabel = role === 'mod' ? 'Moderator'
                         : role === 'admin' ? 'Admin'
                         : '';
 
-        const profileUrl = `${base}/u/${encodeURIComponent(handle)}/`;
+        const profileUrl = `${base}/u/?handle=${encodeURIComponent(handle)}`;
 
         return `
           <article class="acct-card">
@@ -168,12 +179,19 @@ breadcrumbs:
               ${roleLabel ? `<p class="acct-card-role">${roleLabel}</p>` : ''}
             </div>
             <div class="acct-card-link">
-              <a href="${profileUrl}">View profile →</a>
+              <button
+                type="button"
+                class="btn acct-card-btn"
+                onclick="window.location.href='${profileUrl}'"
+              >
+                See profile →
+              </button>
             </div>
           </article>
         `;
       }).join('');
     }
+
 
     async function searchAccounts(query) {
       const q = (query || '').trim();
