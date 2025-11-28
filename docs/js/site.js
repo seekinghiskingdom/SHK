@@ -73,7 +73,6 @@
   });
 })();
 
-
 // 7) Left Nav CTA: automatic path links + collapse
 (() => {
   const navCta = document.getElementById('nav-cta');
@@ -85,7 +84,6 @@
   // default collapsed on all screens
   navCta.classList.add('nav-cta--collapsed');
   if (toggle) toggle.setAttribute('aria-expanded', 'false');
-
 
   // Build path segments from current URL
   const base = navCta.dataset.baseurl || '';
@@ -153,24 +151,23 @@
     row.className = 'nav-cta-prevnext';
 
     if (prevUrl) {
-        const aPrev = document.createElement('a');
-        aPrev.href = prevUrl;
-        aPrev.textContent = '← ' + prevLabel;
-        aPrev.className = 'btn nav-cta-link nav-cta-prev';
-        row.appendChild(aPrev);
+      const aPrev = document.createElement('a');
+      aPrev.href = prevUrl;
+      aPrev.textContent = '← ' + prevLabel;
+      aPrev.className = 'btn nav-cta-link nav-cta-prev';
+      row.appendChild(aPrev);
     }
 
     if (nextUrl) {
-        const aNext = document.createElement('a');
-        aNext.href = nextUrl;
-        aNext.textContent = nextLabel + ' →';
-        aNext.className = 'btn nav-cta-link nav-cta-next';
-        row.appendChild(aNext);
+      const aNext = document.createElement('a');
+      aNext.href = nextUrl;
+      aNext.textContent = nextLabel + ' →';
+      aNext.className = 'btn nav-cta-link nav-cta-next';
+      row.appendChild(aNext);
     }
 
     linksContainer.appendChild(row);
   }
-
 
   // Collapse / expand behavior (similar to Help CTA)
   if (toggle) {
@@ -180,7 +177,6 @@
     });
   }
 })();
-
 
 // 8) Testimony CTA collapse/expand
 (() => {
@@ -228,6 +224,18 @@ window.SHK_getAvatarUrlByKey = function (avatarKey) {
   return match ? match.src : null;
 };
 
+// Shared Supabase client helper (Phase 1.1)
+window.SHK_getSupabaseClient = function () {
+  if (!window.supabase || !window.supabase.createClient) return null;
+
+  if (!window.shkSupabase) {
+    const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+    window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  }
+
+  return window.shkSupabase;
+};
 
 // 10) Header account pill: avatar when logged in, "Sign in" when logged out
 (() => {
@@ -244,25 +252,25 @@ window.SHK_getAvatarUrlByKey = function (avatarKey) {
   if (imgEl)     imgEl.style.display = 'none';
   pill.href = '/account/sign-in/';
 
-//   If Supabase isn't available on this page, stop here
-  if (!window.supabase || !window.supabase.createClient) return;
-
-  if (!window.shkSupabase) {
-    const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
-    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
-    window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
-  }
-
-  const supabase = window.shkSupabase;
-
+  // If Supabase isn't available on this page, stop here
+  const supabase = window.SHK_getSupabaseClient();
+  if (!supabase) return;
 
   supabase.auth.getUser().then(({ data, error }) => {
     if (error || !data || !data.user) return;  // stay in "Sign in" state
 
     const user = data.user;
-    const avatarKey   = user.user_metadata && user.user_metadata.avatar_key;
-    const displayName = user.user_metadata && user.user_metadata.display_name;
+    const meta = user.user_metadata || {};
+
+    const avatarKey   = meta.avatar_key;
+    const displayName = meta.display_name;
+    const handle      = meta.handle || null;
+    const role        = meta.role || 'user';
     const email       = user.email || '';
+
+    // Expose global role/handle context for other pages (Phase 1.1)
+    window.SHK_ROLE   = role;
+    window.SHK_HANDLE = handle;
 
     let initial = '✝';
     if (displayName && displayName.trim())      initial = displayName.trim()[0].toUpperCase();

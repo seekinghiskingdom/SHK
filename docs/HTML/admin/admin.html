@@ -14,8 +14,7 @@ breadcrumbs:
   <h1>Admin Dashboard</h1>
   <p class="content-intro">
     Site moderation and management tools for admins and moderators.
-    Admins can configure global thresholds and behavior; moderators have a read-only view
-    and will use future review queues and tools.
+    Admins can configure global thresholds and behavior; moderators have a read-only view.
   </p>
 
   <hr class="hub-divider">
@@ -34,7 +33,7 @@ breadcrumbs:
 
       <form id="admin-settings-form" class="admin-settings-form">
         <div class="admin-settings-grid">
-          <!-- review_all -->
+          <!-- review_all_new_content -->
           <div class="admin-settings-field">
             <label class="admin-settings-inline">
               <input type="checkbox" id="cfg-review-all">
@@ -46,17 +45,17 @@ breadcrumbs:
             </p>
           </div>
 
-          <!-- reports_required_for_hide -->
+          <!-- reports_for_auto_hide -->
           <div class="admin-settings-field">
             <label for="cfg-reports-hide">Reports required to auto-hide a post</label>
             <input type="number" id="cfg-reports-hide" min="1" max="10" step="1">
             <p class="admin-settings-help">
               Number of unique user reports needed before a post is automatically hidden
-              pending review. Current default: 2.
+              pending review. Default is 2.
             </p>
           </div>
 
-          <!-- mod_can_final_accept -->
+          <!-- mod_can_final_approve -->
           <div class="admin-settings-field">
             <label class="admin-settings-inline">
               <input type="checkbox" id="cfg-mod-final-accept">
@@ -75,8 +74,8 @@ breadcrumbs:
               <span>Allow moderators to mark content as violation</span>
             </label>
             <p class="admin-settings-help">
-              When enabled, moderators can finalize a violation decision that counts toward
-              strikes. When disabled, only admins can apply strikes or permanent rejections.
+              When enabled, moderators can mark content as a violation that routes to admins
+              for strikes and penalties. When disabled, only admins can apply violation decisions.
             </p>
           </div>
 
@@ -93,22 +92,22 @@ breadcrumbs:
             </p>
           </div>
 
-          <!-- abuse_reports_threshold + window -->
+          <!-- strikes_for_ban + strikes_window_days -->
           <div class="admin-settings-field">
             <label for="cfg-abuse-threshold">Lifetime strikes for permanent ban</label>
             <input type="number" id="cfg-abuse-threshold" min="1" max="50" step="1">
             <p class="admin-settings-help">
               Lifetime violation count after which an account is marked for permanent ban
-              (subject to final admin review). Current plan: 7.
+              (subject to final admin review). Default is 7.
             </p>
 
             <label for="cfg-abuse-window" class="admin-settings-subfield-label">
-              Window (days) for “X violations in Y days” suspensions
+              Window (days) for “X violations in Y days” logic
             </label>
             <input type="number" id="cfg-abuse-window" min="1" max="365" step="1">
             <p class="admin-settings-help">
-              Supports time-window logic for temporary suspensions (for example, multiple
-              violations within 30 days). You can refine this behavior later.
+              Used for rolling-window checks (e.g., 3 violations in 30 days → short suspension).
+              Exact thresholds and durations are configured elsewhere but use this window.
             </p>
           </div>
         </div>
@@ -215,27 +214,22 @@ breadcrumbs:
 
     if (!gate || !main || !form) return;
 
-    // Default gate text
     gate.innerHTML = '<p>Checking your access…</p>';
 
-    if (!window.supabase || !window.supabase.createClient) {
+    // Shared Supabase client from site.js
+    const supabase = window.SHK_getSupabaseClient
+      ? window.SHK_getSupabaseClient()
+      : null;
+
+    if (!supabase) {
       gate.innerHTML = '<p>Unable to load admin tools (Supabase not available).</p>';
       return;
     }
 
-    // Singleton client: create once, reuse everywhere
-    if (!window.shkSupabase) {
-      const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
-      const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
-      window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
-    }
-
-    const supabase = window.shkSupabase;
-
     // 1) Check user and role
     const { data: userData, error: userError } = await supabase.auth.getUser();
     if (userError || !userData || !userData.user) {
-      // Anonymous users: redirect to sign-in per ACC-P1.1
+      // Anonymous users: redirect to sign-in
       window.location.href = "{{ '/account/sign-in/' | relative_url }}";
       return;
     }
@@ -258,17 +252,20 @@ breadcrumbs:
       return;
     }
 
-    // 2) Fetch config row
-    const { data: config, error: cfgError } = await supabase
-      .from('admin_config')
+    // 2) Fetch moderation settings (single row)
+    const { data: settingsRow, error: settingsError } = await supabase
+      .from('moderation_settings')
       .select('*')
       .limit(1)
       .single();
 
-    if (cfgError || !config) {
-      gate.innerHTML = '<p>Unable to load admin settings. Please try again later.</p>';
+    if (settingsError || !settingsRow) {
+      console.error('Error loading moderation_settings:', settingsError);
+      gate.innerHTML = '<p>Unable to load moderation settings. Please try again later.</p>';
       return;
     }
+
+    const settings = settingsRow;
 
     // Show main, hide gate
     gate.style.display = 'none';
@@ -290,14 +287,14 @@ breadcrumbs:
       return;
     }
 
-    // Populate current values
-    reviewAllEl.checked      = !!config.review_all;
-    reportsHideEl.value      = config.reports_required_for_hide ?? 2;
-    modFinalAcceptEl.checked = !!config.mod_can_final_accept;
-    modFinalRejectEl.checked = !!config.mod_can_final_reject;
-    sensitivityEl.checked    = !!config.sensitivity_toggle_enabled;
-    abuseThresholdEl.value   = config.abuse_reports_threshold ?? 7;
-    abuseWindowEl.value      = config.abuse_reports_window_days ?? 30;
+    // Populate current values from moderation_settings
+    reviewAllEl.checked      = !!settings.review_all_new_content;
+    reportsHideEl.value      = settings.reports_for_auto_hide ?? 2;
+    modFinalAcceptEl.checked = !!settings.mod_can_final_approve;
+    modFinalRejectEl.checked = !!settings.mod_can_final_reject;
+    sensitivityEl.checked    = !!settings.sensitivity_toggle_enabled;
+    abuseThresholdEl.value   = settings.strikes_for_ban ?? 7;
+    abuseWindowEl.value      = settings.strikes_window_days ?? 30;
 
     // Mods see read-only view; only admins can edit
     if (!isAdmin) {
@@ -323,21 +320,23 @@ breadcrumbs:
       if (statusEl) statusEl.textContent = 'Saving settings…';
 
       const payload = {
-        review_all:                 !!reviewAllEl.checked,
-        mod_can_final_accept:       !!modFinalAcceptEl.checked,
-        mod_can_final_reject:       !!modFinalRejectEl.checked,
-        reports_required_for_hide:  parseInt(reportsHideEl.value || '2', 10),
-        sensitivity_toggle_enabled: !!sensitivityEl.checked,
-        abuse_reports_threshold:    parseInt(abuseThresholdEl.value || '7', 10),
-        abuse_reports_window_days:  parseInt(abuseWindowEl.value || '30', 10)
+        review_all_new_content:       !!reviewAllEl.checked,
+        mod_can_final_approve:        !!modFinalAcceptEl.checked,
+        mod_can_final_reject:         !!modFinalRejectEl.checked,
+        reports_for_auto_hide:        parseInt(reportsHideEl.value || '2', 10),
+        sensitivity_toggle_enabled:   !!sensitivityEl.checked,
+        strikes_for_ban:              parseInt(abuseThresholdEl.value || '7', 10),
+        strikes_window_days:          parseInt(abuseWindowEl.value || '30', 10),
+        updated_at:                   new Date().toISOString()
       };
 
       const { error: updateError } = await supabase
-        .from('admin_config')
+        .from('moderation_settings')
         .update(payload)
-        .eq('id', config.id);
+        .eq('id', settings.id);
 
       if (updateError) {
+        console.error('Error updating moderation_settings:', updateError);
         if (statusEl) statusEl.textContent = 'Error saving settings. Please try again.';
         return;
       }
