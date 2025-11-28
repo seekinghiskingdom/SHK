@@ -62,6 +62,32 @@ permalink: /admin/accounts/
         <strong>Role:</strong> <span id="admin-accounts-role">—</span>
       </p>
     </section>
+
+    <section class="settings-section">
+      <h2>Accounts (read-only)</h2>
+      <p class="settings-note">
+        This table shows a basic snapshot of accounts for admins/mods.
+        Role/status changes still happen in Supabase for now.
+      </p>
+
+      <div class="table-scroll">
+        <table class="account-table" id="admin-accounts-table">
+          <thead>
+            <tr>
+              <th>Email</th>
+              <th>Handle</th>
+              <th>Role</th>
+              <th>Created</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="4">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
   </div>
 </section>
 
@@ -102,6 +128,47 @@ permalink: /admin/accounts/
 
     if (emailEl) emailEl.textContent = email;
     if (roleEl) roleEl.textContent = role;
+
+
+    // Fetch a simple list of profiles for admins/mods
+    const tableBody = document.querySelector('#admin-accounts-table tbody');
+    if (role === 'mod' || role === 'admin') {
+      if (tableBody) {
+        tableBody.innerHTML = '<tr><td colspan="4">Loading accounts…</td></tr>';
+      }
+
+      try {
+        const { data: profiles, error: profError } = await supabase
+          .from('profiles')
+          .select('email, handle, role, created_at')
+          .order('created_at', { ascending: false })
+          .limit(50);
+
+        if (profError || !profiles) {
+          if (tableBody) {
+            tableBody.innerHTML = '<tr><td colspan="4">Unable to load accounts.</td></tr>';
+          }
+        } else if (tableBody) {
+          if (!profiles.length) {
+            tableBody.innerHTML = '<tr><td colspan="4">No accounts found.</td></tr>';
+          } else {
+            tableBody.innerHTML = profiles.map(p => `
+              <tr>
+                <td>${p.email || ''}</td>
+                <td>${p.handle || ''}</td>
+                <td>${p.role || 'user'}</td>
+                <td>${p.created_at ? new Date(p.created_at).toLocaleDateString() : ''}</td>
+              </tr>
+            `).join('');
+          }
+        }
+      } catch (e) {
+        console.error('Error loading profiles for admin/accounts:', e);
+        if (tableBody) {
+          tableBody.innerHTML = '<tr><td colspan="4">Error loading accounts.</td></tr>';
+        }
+      }
+    }
 
     // Guard logic per ACC-P1.1 contract:
     // - If no user: sign-in prompt (handled above)
