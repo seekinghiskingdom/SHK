@@ -217,9 +217,27 @@ breadcrumbs:
     gate.innerHTML = '<p>Checking your access…</p>';
 
     // Shared Supabase client from site.js
-    const supabase = window.SHK_getSupabaseClient
-      ? window.SHK_getSupabaseClient()
-      : null;
+    // const supabase = window.SHK_getSupabaseClient
+    //   ? window.SHK_getSupabaseClient()
+    //   : null;
+
+    // Local helper: prefer global helper, but fall back to creating singleton here
+    function getSupabaseClient() {
+      if (window.SHK_getSupabaseClient) {
+        return window.SHK_getSupabaseClient();
+      }
+      if (!window.supabase || !window.supabase.createClient) return null;
+
+      if (!window.shkSupabase) {
+        const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+        const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+        window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+      }
+      return window.shkSupabase;
+    }
+
+    const supabase = getSupabaseClient();
+
 
     if (!supabase) {
       gate.innerHTML = '<p>Unable to load admin tools (Supabase not available).</p>';
