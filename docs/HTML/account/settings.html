@@ -64,14 +64,14 @@ permalink: /account/settings/
           Username (public link)
           <span
             class="field-help-inline"
-            title="3–24 characters; lowercase letters, numbers, and underscores only."
+            title="3–24 characters; lowercase letters, numbers, underscores, and hyphens only."
           >?</span>
           <input
             type="text"
             id="settings-handle"
             inputmode="latin"
             autocomplete="off"
-            pattern="^[a-z0-9_]{3,24}$"
+            pattern="^[a-z0-9_-]{3,24}$"
             maxlength="24"
             placeholder="your_username"
           >
@@ -436,10 +436,10 @@ permalink: /account/settings/
           return;
         }
 
-        const handlePattern = /^[a-z0-9_]{3,24}$/;
+        const handlePattern = /^[a-z0-9_-]{3,24}$/;
         if (newHandle && !handlePattern.test(newHandle)) {
           displayNameMsg.textContent =
-            'Username must be 3–24 characters: lowercase letters, numbers, and underscores only.';
+            'Username must be 3–24 characters: lowercase letters, numbers, underscores, and hyphens only.';
           displayNameMsg.classList.add('error');
           return;
         }

@@ -1,0 +1,77 @@
+---
+layout: default
+title: Admin Dashboard
+permalink: /admin/
+noindex: true
+breadcrumbs:
+  - label: "Home"
+    href: "/"
+  - label: "Admin"
+    href: "/admin/"
+---
+
+<section class="content-page account-bg-page">
+  <h1>Admin Dashboard</h1>
+  <p class="content-intro">
+    Site moderation and management tools for admins and moderators.
+  </p>
+
+  <hr class="hub-divider">
+
+  <div id="admin-gate">
+    <!-- JS will swap this based on role -->
+    <p>Checking your access…</p>
+  </div>
+
+  <div id="admin-main" style="display:none;">
+    <!-- v1: simple tiles/links; we’ll flesh these out next -->
+    <div class="hub-grid">
+      <a href="#reports" class="hub-tile">
+        <h2>Reports &amp; Moderation</h2>
+        <p>Review reported testimonies and accounts.</p>
+      </a>
+      <a href="#settings" class="hub-tile">
+        <h2>Admin Settings</h2>
+        <p>View and adjust moderation configuration.</p>
+      </a>
+      <a href="#users" class="hub-tile">
+        <h2>Users &amp; Roles</h2>
+        <p>See admin/mod accounts and role details.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  (async () => {
+    // TODO: replace with your existing Supabase client bootstrap if centralized
+    if (!window.supabase || !window.supabase.createClient) return;
+
+    const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+    const gate = document.getElementById('admin-gate');
+    const main = document.getElementById('admin-main');
+
+    const { data, error } = await supabase.auth.getUser();
+    if (error || !data || !data.user) {
+      if (gate) gate.innerHTML = '<p>You must be signed in to access admin tools.</p>';
+      return;
+    }
+
+    const role = data.user.user_metadata && data.user.user_metadata.role;
+
+    if (role === 'admin' || role === 'mod') {
+      if (gate) gate.style.display = 'none';
+      if (main) main.style.display = '';
+    } else {
+      if (gate) {
+        gate.innerHTML = `
+          <p>You don’t have permission to access this page.</p>
+          <p>If you believe this is an error, please contact the SHK team.</p>
+        `;
+      }
+    }
+  })();
+</script>

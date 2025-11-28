@@ -42,11 +42,11 @@ permalink: /account/sign-up/
             required
             inputmode="latin"
             autocomplete="off"
-            pattern="^[a-z0-9_]{3,24}$"
+            pattern="^[a-z0-9_-]{3,24}$"
             maxlength="24"
             placeholder="your_username"
           >
-          <small>3–24 chars; lowercase letters, numbers, and underscores only (no spaces or special characters).</small>
+          <small>3–24 chars; lowercase letters, numbers, underscores, and hyphens only (no spaces or special characters).</small>
         </label>
 
         <label>
@@ -258,7 +258,7 @@ permalink: /account/sign-up/
 
     const rawHandle = usernameInput.value.trim();
     const handle = rawHandle.toLowerCase();
-    const handlePattern = /^[a-z0-9_]{3,24}$/;
+    const handlePattern = /^[a-z0-9_-]{3,24}$/;
     const reservedUsernames = [
       'admin', 'administrator', 'moderator', 'mod', 'support', 'staff',
       'root', 'system', 'null', 'undefined', 'user', 'users',
@@ -275,7 +275,7 @@ permalink: /account/sign-up/
     }
     if (!handlePattern.test(handle)) {
       messageEl.textContent =
-        'Username must be 3–24 characters: lowercase letters, numbers, and underscores only (no spaces or special characters).';
+        'Username must be 3–24 characters: lowercase letters, numbers, underscores, and hyphens only (no spaces or special characters).';
       messageEl.classList.add('error');
       return;
     }
