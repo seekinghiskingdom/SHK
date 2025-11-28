@@ -12,13 +12,13 @@ permalink: /admin/accounts/
         This area will eventually let trusted admins and moderators look up accounts, roles, and basic flags.
       </p>
     </div>
-    <a href="/admin/" class="settings-back-link">← Back to admin dashboard</a>
+    <a href="{{ '/admin/' | relative_url }}" class="settings-back-link">← Back to admin dashboard</a>
   </header>
 
-  <!-- Signed-out state -->
+  <!-- Signed-out state (fallback if JS fails) -->
   <p id="admin-accounts-signed-out" style="display:none;">
     You are not signed in. Please
-    <a href="/account/sign-in/">sign in</a>
+    <a href="{{ '/account/sign-in/' | relative_url }}">sign in</a>
     with an admin or moderator account to access this page.
   </p>
 
@@ -28,7 +28,7 @@ permalink: /admin/accounts/
     <p>
       This page is only available to trusted admins and moderators.
       If you think this is an error, please contact the SHK team using the
-      form or email on the <a href="/about/">About &amp; Contact</a> page.
+      form or email on the <a href="{{ '/about/' | relative_url }}">About &amp; Contact</a> page.
     </p>
   </div>
 
@@ -74,7 +74,7 @@ permalink: /admin/accounts/
         <table class="account-table" id="admin-accounts-table">
           <thead>
             <tr>
-              <th>Email</th>
+              <th>Email</</th>
               <th>Handle</th>
               <th>Role</th>
               <th>Created</th>
@@ -86,11 +86,8 @@ permalink: /admin/accounts/
         </table>
       </div>
     </section>
-
-
   </div>
 </section>
-
 
 <script>
   document.addEventListener('DOMContentLoaded', async () => {
@@ -132,18 +129,24 @@ permalink: /admin/accounts/
     try {
       const { data, error } = await supabase.auth.getUser();
       if (error || !data || !data.user) {
-        if (signedOutEl) signedOutEl.style.display = 'block';
+        // Anonymous users: redirect to sign-in per ACC-P1.1
+        window.location.href = "{{ '/account/sign-in/' | relative_url }}";
         return;
       }
       userData = data.user;
     } catch (e) {
       console.error('Error fetching user for admin/accounts:', e);
-      if (signedOutEl) signedOutEl.style.display = 'block';
+      window.location.href = "{{ '/account/sign-in/' | relative_url }}";
       return;
     }
 
     const email = userData.email || '(no email)';
-    const role = (userData.user_metadata && userData.user_metadata.role) || 'user';
+    const roleFromMeta =
+      (userData.user_metadata && userData.user_metadata.role) || 'user';
+    const role =
+      (typeof window !== 'undefined' && window.SHK_ROLE)
+        ? window.SHK_ROLE
+        : roleFromMeta;
 
     if (emailEl) emailEl.textContent = email;
     if (roleEl) roleEl.textContent = role;
