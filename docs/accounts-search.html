@@ -1,0 +1,230 @@
+---
+layout: default
+title: Find People
+permalink: /accounts/search/
+breadcrumbs:
+  - label: "Home"
+    href: "/"
+  - label: "Accounts"
+    href: "/accounts/search/"
+---
+
+<section class="content-page account-bg-page">
+  <header class="settings-header">
+    <div>
+      <h1>Find people on SHK</h1>
+      <p class="settings-subtitle">
+        Search for public accounts by handle or display name. Only active accounts are shown.
+      </p>
+    </div>
+  </header>
+
+  <section class="settings-section">
+    <label for="acct-search-input" class="settings-label">
+      Search accounts
+    </label>
+    <input
+      type="search"
+      id="acct-search-input"
+      class="settings-input"
+      placeholder="Search by handle or display name…"
+      autocomplete="off"
+    />
+    <p class="settings-note" id="acct-search-status">
+      Type at least 2 characters to search.
+    </p>
+  </section>
+
+  <section class="settings-section">
+    <h2>Results</h2>
+    <div id="acct-search-results" class="account-search-results">
+      <p>No search yet.</p>
+    </div>
+  </section>
+</section>
+
+<style>
+  .account-search-results {
+    margin-top: 0.75rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .acct-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.75rem;
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  .acct-card-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+
+  .acct-card-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .acct-card-main {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .acct-card-name {
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .acct-card-handle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+
+  .acct-card-role {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+
+  .acct-card-link {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const input    = document.getElementById('acct-search-input');
+    const statusEl = document.getElementById('acct-search-status');
+    const results  = document.getElementById('acct-search-results');
+
+    function getSupabaseClient() {
+      if (window.SHK_getSupabaseClient) return window.SHK_getSupabaseClient();
+      if (!window.supabase || !window.supabase.createClient) return null;
+      if (!window.shkSupabase) {
+        const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+        const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+        window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+      }
+      return window.shkSupabase;
+    }
+
+    const supabase = getSupabaseClient();
+    if (!supabase) {
+      if (statusEl) statusEl.textContent = 'Search is currently unavailable.';
+      return;
+    }
+
+    function renderProfiles(list) {
+      if (!results) return;
+      if (!list || !list.length) {
+        results.innerHTML = '<p>No matching accounts found.</p>';
+        return;
+      }
+
+      const base = window.SHK_BASEURL || '';
+      results.innerHTML = list.map(p => {
+        const handle = p.handle || '';
+        const displayName = p.display_name || handle || '(no name)';
+        const first = displayName.trim().charAt(0).toUpperCase() || '✝';
+        const role = p.role || 'user';
+
+        let avatarHtml = `<span class="acct-card-avatar">${first}</span>`;
+        if (p.avatar_key && window.SHK_getAvatarUrlByKey) {
+          const url = window.SHK_getAvatarUrlByKey(p.avatar_key);
+          if (url) {
+            avatarHtml = `
+              <span class="acct-card-avatar">
+                <img src="${url}" alt="">
+              </span>`;
+          }
+        }
+
+        const roleLabel = role === 'mod' ? 'Moderator'
+                        : role === 'admin' ? 'Admin'
+                        : '';
+
+        const profileUrl = `${base}/u/${encodeURIComponent(handle)}/`;
+
+        return `
+          <article class="acct-card">
+            ${avatarHtml}
+            <div class="acct-card-main">
+              <p class="acct-card-name">${displayName}</p>
+              <p class="acct-card-handle">@${handle || 'unknown'}</p>
+              ${roleLabel ? `<p class="acct-card-role">${roleLabel}</p>` : ''}
+            </div>
+            <div class="acct-card-link">
+              <a href="${profileUrl}">View profile →</a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    async function searchAccounts(query) {
+      const q = (query || '').trim();
+      if (!statusEl || !results) return;
+
+      if (q.length < 2) {
+        statusEl.textContent = 'Type at least 2 characters to search.';
+        results.innerHTML = '<p>No search yet.</p>';
+        return;
+      }
+
+      statusEl.textContent = 'Searching…';
+      results.innerHTML = '<p>Loading…</p>';
+
+      try {
+        let req = supabase
+          .from('profiles')
+          .select('handle, display_name, avatar_key, role, account_status')
+          .eq('account_status', 'active')
+          .in('role', ['user', 'mod', 'admin'])
+          .order('created_at', { ascending: false })
+          .limit(25);
+
+        req = req.or(
+          `handle.ilike.%${q}%,display_name.ilike.%${q}%`
+        );
+
+        const { data, error } = await req;
+        if (error) {
+          console.error('Error searching accounts:', error);
+          statusEl.textContent = 'Error searching accounts. Please try again.';
+          results.innerHTML = '<p>There was an error loading results.</p>';
+          return;
+        }
+
+        renderProfiles(data || []);
+        statusEl.textContent = `Showing ${data ? data.length : 0} result(s).`;
+      } catch (e) {
+        console.error('Error searching accounts:', e);
+        statusEl.textContent = 'Error searching accounts. Please try again.';
+        results.innerHTML = '<p>There was an error loading results.</p>';
+      }
+    }
+
+    if (input) {
+      let timeoutId = null;
+      input.addEventListener('input', () => {
+        const value = input.value;
+        if (timeoutId) clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => searchAccounts(value), 250);
+      });
+    }
+  });
+</script>
