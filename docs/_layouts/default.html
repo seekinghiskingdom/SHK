@@ -30,11 +30,15 @@
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta property="og:type" content="website">
 
+  <!-- Supabase JS (global) -->
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
   <!-- Shared JS config and core Bible helper -->
   <script>
     window.SHK_BASEURL = '{{ site.baseurl }}';
   </script>
   <script src="{{ site.baseurl }}/assets/js/scripture-core.js" defer></script>
+
   <!-- Main site JS (only once) -->
   <script src="{{ site.baseurl }}/js/site.js" defer></script>
 </head>
