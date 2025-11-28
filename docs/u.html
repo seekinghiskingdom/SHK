@@ -322,12 +322,20 @@ permalink: /u/
 }
 </style>
 
-<!-- <script src="https://unpkg.com/@supabase/supabase-js@2"></script> -->
 <script>
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
 
-  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  function getSupabaseClient() {
+    if (!window.supabase || !window.supabase.createClient) return null;
+    if (!window.shkSupabase) {
+      window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+    }
+    return window.shkSupabase;
+  }
+
+  const supabase = getSupabaseClient();
+
 
   function getHandleFromUrl() {
     // Preferred: ?handle=someone

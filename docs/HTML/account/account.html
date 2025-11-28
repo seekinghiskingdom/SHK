@@ -532,12 +532,20 @@ permalink: /account/
 }
 </style>
 
-<!-- <script src="https://unpkg.com/@supabase/supabase-js@2"></script> -->
+
 <script>
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
 
-  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  // Shared client (singleton)
+  let supabase = null;
+  function getSupabaseClient() {
+    if (!window.supabase || !window.supabase.createClient) return null;
+    if (!window.shkSupabase) {
+      window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+    }
+    return window.shkSupabase;
+  }
 
   function setLoggedOutState() {
     const subtitleEl = document.getElementById('mt-subtitle');
@@ -687,7 +695,9 @@ permalink: /account/
       authToggleBtn.textContent = 'Sign Out';
       authToggleBtn.onclick = async () => {
         try {
-          await supabase.auth.signOut();
+          if (supabase) {
+            await supabase.auth.signOut();
+          }
         } catch (e) {
           console.error('Error signing out:', e);
         }
@@ -710,6 +720,12 @@ permalink: /account/
   }
 
   async function initAccountPage() {
+    supabase = getSupabaseClient();
+    if (!supabase) {
+      setLoggedOutState();
+      return;
+    }
+
     setupTabs();
 
     const settingsBtn = document.getElementById('mt-settings-btn');
@@ -776,7 +792,7 @@ permalink: /account/
 
     if (saveBtn) {
       saveBtn.addEventListener('click', async () => {
-        if (!salvationEditor) return;
+        if (!salvationEditor || !supabase) return;
         const text = salvationEditor.value.trim();
 
         let updateError = null;

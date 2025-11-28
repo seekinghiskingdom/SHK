@@ -244,12 +244,17 @@ window.SHK_getAvatarUrlByKey = function (avatarKey) {
   if (imgEl)     imgEl.style.display = 'none';
   pill.href = '/account/sign-in/';
 
-  // If Supabase isn't available on this page, stop here
+//   If Supabase isn't available on this page, stop here
   if (!window.supabase || !window.supabase.createClient) return;
 
-  const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
-  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
-  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  if (!window.shkSupabase) {
+    const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+    window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  }
+
+  const supabase = window.shkSupabase;
+
 
   supabase.auth.getUser().then(({ data, error }) => {
     if (error || !data || !data.user) return;  // stay in "Sign in" state

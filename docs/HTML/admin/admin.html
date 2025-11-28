@@ -221,9 +221,15 @@ breadcrumbs:
       return;
     }
 
-    const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
-    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
-    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+    // Singleton client: create once, reuse everywhere
+    if (!window.shkSupabase) {
+      const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+      const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+      window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+    }
+
+    const supabase = window.shkSupabase;
+
 
     // 1) Check user and role
     const { data: userData, error: userError } = await supabase.auth.getUser();

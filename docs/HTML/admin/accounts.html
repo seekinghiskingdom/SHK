@@ -91,6 +91,7 @@ permalink: /admin/accounts/
   </div>
 </section>
 
+
 <script>
   document.addEventListener('DOMContentLoaded', async () => {
     const signedOutEl = document.getElementById('admin-accounts-signed-out');
@@ -99,6 +100,7 @@ permalink: /admin/accounts/
     const emailEl = document.getElementById('admin-accounts-email');
     const roleEl = document.getElementById('admin-accounts-role');
 
+    // 1) Supabase availability + shared client
     if (!window.supabase || !window.supabase.createClient) {
       if (signedOutEl) {
         signedOutEl.style.display = 'block';
@@ -108,10 +110,24 @@ permalink: /admin/accounts/
       return;
     }
 
-    const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
-    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
-    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+    // Reuse singleton client if site.js already created it, otherwise create it here
+    if (!window.shkSupabase) {
+      const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
+      const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+      window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+    }
 
+    const supabase = window.shkSupabase;
+    if (!supabase) {
+      if (signedOutEl) {
+        signedOutEl.style.display = 'block';
+        signedOutEl.textContent =
+          'Unable to load admin tools (Supabase client not available).';
+      }
+      return;
+    }
+
+    // 2) Check current user
     let userData;
     try {
       const { data, error } = await supabase.auth.getUser();
@@ -132,7 +148,7 @@ permalink: /admin/accounts/
     if (emailEl) emailEl.textContent = email;
     if (roleEl) roleEl.textContent = role;
 
-    // Fetch a simple list of profiles for admins/mods
+    // 3) Load profiles table for mods/admins
     const tableBody = document.querySelector('#admin-accounts-table tbody');
     if (role === 'mod' || role === 'admin') {
       if (tableBody) {
@@ -172,7 +188,7 @@ permalink: /admin/accounts/
       }
     }
 
-    // Guard logic
+    // 4) Guard logic: show correct panel
     if (role === 'mod' || role === 'admin') {
       if (contentEl) contentEl.style.display = 'block';
     } else {

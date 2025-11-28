@@ -355,12 +355,17 @@ permalink: /account/settings/
 </style>
 
 
-<!-- <script src="https://unpkg.com/@supabase/supabase-js@2"></script> -->
 <script>
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
 
-  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  function getSupabaseClient() {
+    if (!window.supabase || !window.supabase.createClient) return null;
+    if (!window.shkSupabase) {
+      window.shkSupabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+    }
+    return window.shkSupabase;
+  }
 
   async function initSettings() {
     const signedOutEl = document.getElementById('settings-signed-out');
@@ -373,7 +378,6 @@ permalink: /account/settings/
     const displayNameMsg = document.getElementById('settings-display-name-message');
     const handleInput = document.getElementById('settings-handle');
 
-
     const emailForm = document.getElementById('settings-email-form');
     const emailInput = document.getElementById('settings-new-email');
     const emailMsg = document.getElementById('settings-email-message');
@@ -383,24 +387,31 @@ permalink: /account/settings/
     const pw2Input = document.getElementById('settings-confirm-password');
     const passwordMsg = document.getElementById('settings-password-message');
 
+    const supabase = getSupabaseClient();
+    if (!supabase) {
+      if (signedOutEl) signedOutEl.style.display = 'block';
+      if (contentEl) contentEl.style.display = 'none';
+      return;
+    }
+
     const { data, error } = await supabase.auth.getUser();
 
     if (error || !data || !data.user) {
-      signedOutEl.style.display = 'block';
-      contentEl.style.display = 'none';
+      if (signedOutEl) signedOutEl.style.display = 'block';
+      if (contentEl) contentEl.style.display = 'none';
       return;
     }
 
     const user = data.user;
-    signedOutEl.style.display = 'none';
-    contentEl.style.display = 'block';
+    if (signedOutEl) signedOutEl.style.display = 'none';
+    if (contentEl) contentEl.style.display = 'block';
 
     const email = user.email || '';
     const displayName = (user.user_metadata && user.user_metadata.display_name) || '';
     const handle = (user.user_metadata && user.user_metadata.handle) || '';
     const avatarKey = user.user_metadata && user.user_metadata.avatar_key;
 
-    emailSpan.textContent = email;
+    if (emailSpan) emailSpan.textContent = email;
 
     if (displayNameInput) {
       displayNameInput.value = displayName;
@@ -409,45 +420,51 @@ permalink: /account/settings/
       handleInput.value = handle;
     }
 
-    // Avatar initial (we’ll still show a letter here; avatar image is used on the account page later)
+    // Avatar initial (settings page uses letter; account page uses full avatar image)
     let initial = '✝';
     if (displayName && displayName.trim()) {
       initial = displayName.trim().charAt(0).toUpperCase();
     } else if (email) {
       initial = email.charAt(0).toUpperCase();
     }
-    avatarEl.textContent = initial;
-
+    if (avatarEl) avatarEl.textContent = initial;
 
     // Display name + handle form
     if (displayNameForm) {
+      displayNameMsg.className = 'account-message';
       displayNameForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        displayNameMsg.textContent = '';
-        displayNameMsg.className = 'account-message';
+        if (displayNameMsg) {
+          displayNameMsg.textContent = '';
+          displayNameMsg.className = 'account-message';
+        }
 
         const newName = displayNameInput ? displayNameInput.value.trim() : '';
         const rawHandle = handleInput ? handleInput.value.trim() : '';
         const newHandle = rawHandle.toLowerCase();
 
         if (newName && (newName.length < 2 || newName.length > 40)) {
-          displayNameMsg.textContent = 'Display name should be between 2 and 40 characters.';
-          displayNameMsg.classList.add('error');
+          if (displayNameMsg) {
+            displayNameMsg.textContent = 'Display name should be between 2 and 40 characters.';
+            displayNameMsg.classList.add('error');
+          }
           return;
         }
 
         const handlePattern = /^[a-z0-9_-]{3,24}$/;
         if (newHandle && !handlePattern.test(newHandle)) {
-          displayNameMsg.textContent =
-            'Username must be 3–24 characters: lowercase letters, numbers, underscores, and hyphens only.';
-          displayNameMsg.classList.add('error');
+          if (displayNameMsg) {
+            displayNameMsg.textContent =
+              'Username must be 3–24 characters: lowercase letters, numbers, underscores, and hyphens only.';
+            displayNameMsg.classList.add('error');
+          }
           return;
         }
 
-        displayNameMsg.textContent = 'Saving profile…';
+        if (displayNameMsg) displayNameMsg.textContent = 'Saving profile…';
 
         // 1) Update auth user metadata
-        const { data: updated, error: updateError } = await supabase.auth.updateUser({
+        const { error: updateError } = await supabase.auth.updateUser({
           data: {
             display_name: newName || null,
             handle: newHandle || null
@@ -456,14 +473,16 @@ permalink: /account/settings/
 
         if (updateError) {
           console.error('Display name/handle update error:', updateError);
-          displayNameMsg.textContent = updateError.message || 'Unable to update profile.';
-          displayNameMsg.classList.add('error');
+          if (displayNameMsg) {
+            displayNameMsg.textContent = updateError.message || 'Unable to update profile.';
+            displayNameMsg.classList.add('error');
+          }
           return;
         }
 
         // 2) Upsert into public.profiles for public profile pages (only if handle is set)
         if (newHandle) {
-          const avatarKey = user.user_metadata && user.user_metadata.avatar_key;
+          const currentAvatarKey = user.user_metadata && user.user_metadata.avatar_key;
           const role = (user.user_metadata && user.user_metadata.role) || 'user';
 
           const { error: profileError } = await supabase
@@ -473,7 +492,7 @@ permalink: /account/settings/
                 id: user.id,
                 handle: newHandle,
                 display_name: newName || null,
-                avatar_key: avatarKey || null,
+                avatar_key: currentAvatarKey || null,
                 role: role
               },
               { onConflict: 'id' }
@@ -481,19 +500,21 @@ permalink: /account/settings/
 
           if (profileError) {
             console.error('profiles upsert error:', profileError);
-            // Most common is "handle already taken" (unique constraint)
-            displayNameMsg.textContent =
-              'Profile saved, but that username may already be taken. Please choose a different one.';
-            displayNameMsg.classList.add('error');
+            if (displayNameMsg) {
+              displayNameMsg.textContent =
+                'Profile saved, but that username may already be taken. Please choose a different one.';
+              displayNameMsg.classList.add('error');
+            }
             return;
           }
         }
 
-        displayNameMsg.textContent = 'Profile updated.';
-        displayNameMsg.classList.add('success');
+        if (displayNameMsg) {
+          displayNameMsg.textContent = 'Profile updated.';
+          displayNameMsg.classList.add('success');
+        }
       });
     }
-
 
     // Avatar picker
     const avatarGrid = document.getElementById('avatar-grid');
@@ -545,22 +566,26 @@ permalink: /account/settings/
 
     if (avatarSaveBtn) {
       avatarSaveBtn.addEventListener('click', async () => {
-        avatarMsg.textContent = '';
-        avatarMsg.className = 'account-message';
+        if (avatarMsg) {
+          avatarMsg.textContent = '';
+          avatarMsg.className = 'account-message';
+        }
 
         // Extra safety: block non-admin from saving an admin-only avatar
         if (!isAdmin && selectedAvatarKey && window.SHK_PROFILE_AVATARS) {
           const chosen = window.SHK_PROFILE_AVATARS.find(a => a.key === selectedAvatarKey);
           if (chosen && chosen.adminOnly) {
-            avatarMsg.textContent = 'That avatar is reserved.';
-            avatarMsg.classList.add('error');
+            if (avatarMsg) {
+              avatarMsg.textContent = 'That avatar is reserved.';
+              avatarMsg.classList.add('error');
+            }
             return;
           }
         }
 
-        avatarMsg.textContent = 'Saving profile picture…';
+        if (avatarMsg) avatarMsg.textContent = 'Saving profile picture…';
 
-        const { data: updated, error: avatarError } = await supabase.auth.updateUser({
+        const { error: avatarError } = await supabase.auth.updateUser({
           data: {
             avatar_key: selectedAvatarKey || null
           }
@@ -568,47 +593,58 @@ permalink: /account/settings/
 
         if (avatarError) {
           console.error('Avatar update error:', avatarError);
-          avatarMsg.textContent = avatarError.message || 'Unable to update profile picture.';
-          avatarMsg.classList.add('error');
+          if (avatarMsg) {
+            avatarMsg.textContent = avatarError.message || 'Unable to update profile picture.';
+            avatarMsg.classList.add('error');
+          }
           return;
         }
 
-        avatarMsg.textContent = 'Profile picture updated.';
-        avatarMsg.classList.add('success');
+        if (avatarMsg) {
+          avatarMsg.textContent = 'Profile picture updated.';
+          avatarMsg.classList.add('success');
+        }
       });
     }
-
 
     // Change email
     if (emailForm) {
       emailForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        emailMsg.textContent = '';
-        emailMsg.className = 'account-message';
+        if (emailMsg) {
+          emailMsg.textContent = '';
+          emailMsg.className = 'account-message';
+        }
 
         const newEmail = emailInput.value.trim();
         if (!newEmail) {
-          emailMsg.textContent = 'Please enter a new email.';
-          emailMsg.classList.add('error');
+          if (emailMsg) {
+            emailMsg.textContent = 'Please enter a new email.';
+            emailMsg.classList.add('error');
+          }
           return;
         }
 
-        emailMsg.textContent = 'Sending confirmation link…';
+        if (emailMsg) emailMsg.textContent = 'Sending confirmation link…';
 
-        const { data: emailUpdated, error: emailError } = await supabase.auth.updateUser({
+        const { error: emailError } = await supabase.auth.updateUser({
           email: newEmail
         });
 
         if (emailError) {
           console.error('Email update error:', emailError);
-          emailMsg.textContent = emailError.message || 'Unable to start email change.';
-          emailMsg.classList.add('error');
+          if (emailMsg) {
+            emailMsg.textContent = emailError.message || 'Unable to start email change.';
+            emailMsg.classList.add('error');
+          }
           return;
         }
 
-        emailMsg.textContent =
-          'If the new email is available, we’ve sent a confirmation link. Follow it to finish changing your email.';
-        emailMsg.classList.add('success');
+        if (emailMsg) {
+          emailMsg.textContent =
+            'If the new email is available, we’ve sent a confirmation link. Follow it to finish changing your email.';
+          emailMsg.classList.add('success');
+        }
         emailForm.reset();
       });
     }
@@ -617,45 +653,57 @@ permalink: /account/settings/
     if (passwordForm) {
       passwordForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        passwordMsg.textContent = '';
-        passwordMsg.className = 'account-message';
+        if (passwordMsg) {
+          passwordMsg.textContent = '';
+          passwordMsg.className = 'account-message';
+        }
 
         const pw1 = pw1Input.value;
         const pw2 = pw2Input.value;
 
         if (!pw1 || !pw2) {
-          passwordMsg.textContent = 'Please fill in both password fields.';
-          passwordMsg.classList.add('error');
+          if (passwordMsg) {
+            passwordMsg.textContent = 'Please fill in both password fields.';
+            passwordMsg.classList.add('error');
+          }
           return;
         }
 
         if (pw1 !== pw2) {
-          passwordMsg.textContent = 'Passwords do not match.';
-          passwordMsg.classList.add('error');
+          if (passwordMsg) {
+            passwordMsg.textContent = 'Passwords do not match.';
+            passwordMsg.classList.add('error');
+          }
           return;
         }
 
         if (pw1.length < 8) {
-          passwordMsg.textContent = 'Password must be at least 8 characters.';
-          passwordMsg.classList.add('error');
+          if (passwordMsg) {
+            passwordMsg.textContent = 'Password must be at least 8 characters.';
+            passwordMsg.classList.add('error');
+          }
           return;
         }
 
-        passwordMsg.textContent = 'Updating password…';
+        if (passwordMsg) passwordMsg.textContent = 'Updating password…';
 
-        const { data: pwUpdated, error: pwError } = await supabase.auth.updateUser({
+        const { error: pwError } = await supabase.auth.updateUser({
           password: pw1
         });
 
         if (pwError) {
           console.error('Password update error:', pwError);
-          passwordMsg.textContent = pwError.message || 'Unable to update password.';
-          passwordMsg.classList.add('error');
+          if (passwordMsg) {
+            passwordMsg.textContent = pwError.message || 'Unable to update password.';
+            passwordMsg.classList.add('error');
+          }
           return;
         }
 
-        passwordMsg.textContent = 'Password updated successfully.';
-        passwordMsg.classList.add('success');
+        if (passwordMsg) {
+          passwordMsg.textContent = 'Password updated successfully.';
+          passwordMsg.classList.add('success');
+        }
         passwordForm.reset();
       });
     }
@@ -663,3 +711,5 @@ permalink: /account/settings/
 
   document.addEventListener('DOMContentLoaded', initSettings);
 </script>
+
+
