@@ -11,6 +11,12 @@ __pycache__/
 build/
 dist/
 
+# Jekyll build folders
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
 # Environment folders
 .env/
 .venv/

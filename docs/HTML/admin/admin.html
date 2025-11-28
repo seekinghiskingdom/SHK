@@ -19,59 +19,318 @@ breadcrumbs:
   <hr class="hub-divider">
 
   <div id="admin-gate">
-    <!-- JS will swap this based on role -->
     <p>Checking your access…</p>
   </div>
 
   <div id="admin-main" style="display:none;">
-    <!-- v1: simple tiles/links; we’ll flesh these out next -->
-    <div class="hub-grid">
-      <a href="#reports" class="hub-tile">
-        <h2>Reports &amp; Moderation</h2>
-        <p>Review reported testimonies and accounts.</p>
-      </a>
-      <a href="#settings" class="hub-tile">
-        <h2>Admin Settings</h2>
-        <p>View and adjust moderation configuration.</p>
-      </a>
-      <a href="#users" class="hub-tile">
-        <h2>Users &amp; Roles</h2>
-        <p>See admin/mod accounts and role details.</p>
-      </a>
-    </div>
+    <section class="admin-panel">
+      <h2>Global moderation settings</h2>
+      <p class="admin-intro">
+        These settings control how reporting and moderation behave across the site.
+        Changes apply immediately for all users.
+      </p>
+
+      <form id="admin-settings-form" class="admin-settings-form">
+        <div class="admin-settings-grid">
+          <!-- review_all -->
+          <div class="admin-settings-field">
+            <label class="admin-settings-inline">
+              <input type="checkbox" id="cfg-review-all">
+              <span>Require review for all new posts</span>
+            </label>
+            <p class="admin-settings-help">
+              When enabled, all new testimonies or similar posts enter the review queue
+              before they can appear publicly. Useful for launch or “lockdown” mode.
+            </p>
+          </div>
+
+          <!-- reports_required_for_hide -->
+          <div class="admin-settings-field">
+            <label for="cfg-reports-hide">Reports required to auto-hide a post</label>
+            <input type="number" id="cfg-reports-hide" min="1" max="10" step="1">
+            <p class="admin-settings-help">
+              Number of unique user reports needed before a post is automatically hidden
+              pending review. Current default: 2.
+            </p>
+          </div>
+
+          <!-- mod_can_final_accept -->
+          <div class="admin-settings-field">
+            <label class="admin-settings-inline">
+              <input type="checkbox" id="cfg-mod-final-accept">
+              <span>Allow moderators to fully restore content</span>
+            </label>
+            <p class="admin-settings-help">
+              When enabled, moderators can approve flagged content so it returns to public
+              view without an admin re-check. When disabled, admins must give final approval.
+            </p>
+          </div>
+
+          <!-- mod_can_final_reject -->
+          <div class="admin-settings-field">
+            <label class="admin-settings-inline">
+              <input type="checkbox" id="cfg-mod-final-reject">
+              <span>Allow moderators to mark content as violation</span>
+            </label>
+            <p class="admin-settings-help">
+              When enabled, moderators can finalize a violation decision that counts toward
+              strikes. When disabled, only admins can apply strikes or permanent rejections.
+            </p>
+          </div>
+
+          <!-- sensitivity_toggle_enabled -->
+          <div class="admin-settings-field">
+            <label class="admin-settings-inline">
+              <input type="checkbox" id="cfg-sensitivity-toggle">
+              <span>Enable sensitive-content filtering</span>
+            </label>
+            <p class="admin-settings-help">
+              When enabled, users can choose to hide stories marked as sensitive (for example,
+              involving trauma, abuse, or similar topics). Content may still exist, but can be
+              hidden for users who opt out.
+            </p>
+          </div>
+
+          <!-- abuse_reports_threshold + window -->
+          <div class="admin-settings-field">
+            <label for="cfg-abuse-threshold">Lifetime strikes for permanent ban</label>
+            <input type="number" id="cfg-abuse-threshold" min="1" max="50" step="1">
+            <p class="admin-settings-help">
+              Lifetime violation count after which an account is marked for permanent ban
+              (subject to final admin review). Current plan: 7.
+            </p>
+
+            <label for="cfg-abuse-window" class="admin-settings-subfield-label">
+              Window (days) for “X violations in Y days” suspensions
+            </label>
+            <input type="number" id="cfg-abuse-window" min="1" max="365" step="1">
+            <p class="admin-settings-help">
+              Supports time-window logic for temporary suspensions (for example, multiple
+              violations within 30 days). You can refine this behavior later.
+            </p>
+          </div>
+        </div>
+
+        <button type="submit" id="admin-settings-save">Save settings</button>
+        <p id="admin-settings-status" class="admin-settings-status"></p>
+      </form>
+
+      <p class="admin-note">
+        Moderation queues, account strike views, and other tools will appear here as they
+        are implemented in later phases.
+      </p>
+    </section>
   </div>
 </section>
 
+<style>
+  .admin-panel {
+    max-width: 900px;
+    margin: 1.5rem auto 3rem;
+    background: var(--panel);
+    padding: 1.5rem 1.75rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  }
+
+  .admin-panel h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .admin-intro,
+  .admin-note {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 1.25rem;
+  }
+
+  .admin-settings-form {
+    margin-top: 0.5rem;
+  }
+
+  .admin-settings-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 1.25rem 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .admin-settings-field {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 0.75rem;
+    padding: 0.8rem 0.9rem;
+  }
+
+  .admin-settings-inline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+
+  .admin-settings-field label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .admin-settings-subfield-label {
+    margin-top: 0.6rem;
+  }
+
+  .admin-settings-field input[type="number"] {
+    width: 100%;
+    max-width: 120px;
+    margin-top: 0.2rem;
+  }
+
+  .admin-settings-help {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 0.35rem;
+  }
+
+  .admin-settings-status {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    min-height: 1.1em;
+  }
+
+  @media (max-width: 900px) {
+    .admin-settings-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>
+
 <script>
   (async () => {
-    // TODO: replace with your existing Supabase client bootstrap if centralized
-    if (!window.supabase || !window.supabase.createClient) return;
+    const gate = document.getElementById('admin-gate');
+    const main = document.getElementById('admin-main');
+    const form = document.getElementById('admin-settings-form');
+    const statusEl = document.getElementById('admin-settings-status');
+
+    if (!gate || !main || !form) return;
+
+    // Default gate text
+    gate.innerHTML = '<p>Checking your access…</p>';
+
+    if (!window.supabase || !window.supabase.createClient) {
+      gate.innerHTML = '<p>Unable to load admin tools (Supabase not available).</p>';
+      return;
+    }
 
     const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
     const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
     const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
-    const gate = document.getElementById('admin-gate');
-    const main = document.getElementById('admin-main');
-
-    const { data, error } = await supabase.auth.getUser();
-    if (error || !data || !data.user) {
-      if (gate) gate.innerHTML = '<p>You must be signed in to access admin tools.</p>';
+    // 1) Check user and role
+    const { data: userData, error: userError } = await supabase.auth.getUser();
+    if (userError || !userData || !userData.user) {
+      gate.innerHTML = '<p>You must be signed in to access admin tools.</p>';
       return;
     }
 
-    const role = data.user.user_metadata && data.user.user_metadata.role;
+    const user = userData.user;
+    const meta = user.user_metadata || {};
+    const role = meta.role || 'user';
+    const isAdmin = role === 'admin';
+    const isMod = role === 'mod';
 
-    if (role === 'admin' || role === 'mod') {
-      if (gate) gate.style.display = 'none';
-      if (main) main.style.display = '';
-    } else {
-      if (gate) {
-        gate.innerHTML = `
-          <p>You don’t have permission to access this page.</p>
-          <p>If you believe this is an error, please contact the SHK team.</p>
-        `;
-      }
+    if (!isAdmin && !isMod) {
+      gate.innerHTML = `
+        <p>You don’t have permission to access this page.</p>
+        <p>If you believe this is an error, please contact the SHK team.</p>
+      `;
+      return;
     }
+
+    // 2) Fetch config row
+    const { data: config, error: cfgError } = await supabase
+      .from('admin_config')
+      .select('*')
+      .limit(1)
+      .single();
+
+    if (cfgError || !config) {
+      gate.innerHTML = '<p>Unable to load admin settings. Please try again later.</p>';
+      return;
+    }
+
+    // Show main, hide gate
+    gate.style.display = 'none';
+    main.style.display = '';
+
+    // 3) Wire up form fields
+    const reviewAllEl        = document.getElementById('cfg-review-all');
+    const reportsHideEl      = document.getElementById('cfg-reports-hide');
+    const modFinalAcceptEl   = document.getElementById('cfg-mod-final-accept');
+    const modFinalRejectEl   = document.getElementById('cfg-mod-final-reject');
+    const sensitivityEl      = document.getElementById('cfg-sensitivity-toggle');
+    const abuseThresholdEl   = document.getElementById('cfg-abuse-threshold');
+    const abuseWindowEl      = document.getElementById('cfg-abuse-window');
+    const saveBtn            = document.getElementById('admin-settings-save');
+
+    if (!reviewAllEl || !reportsHideEl || !modFinalAcceptEl ||
+        !modFinalRejectEl || !sensitivityEl || !abuseThresholdEl || !abuseWindowEl) {
+      if (statusEl) statusEl.textContent = 'Admin settings form is missing required fields.';
+      return;
+    }
+
+    // Populate current values
+    reviewAllEl.checked      = !!config.review_all;
+    reportsHideEl.value      = config.reports_required_for_hide ?? 2;
+    modFinalAcceptEl.checked = !!config.mod_can_final_accept;
+    modFinalRejectEl.checked = !!config.mod_can_final_reject;
+    sensitivityEl.checked    = !!config.sensitivity_toggle_enabled;
+    abuseThresholdEl.value   = config.abuse_reports_threshold ?? 7;
+    abuseWindowEl.value      = config.abuse_reports_window_days ?? 30;
+
+    // Mods see read-only view; only admins can edit
+    if (!isAdmin) {
+      [
+        reviewAllEl,
+        reportsHideEl,
+        modFinalAcceptEl,
+        modFinalRejectEl,
+        sensitivityEl,
+        abuseThresholdEl,
+        abuseWindowEl
+      ].forEach(el => el.disabled = true);
+      if (saveBtn) saveBtn.disabled = true;
+      if (statusEl) statusEl.textContent = 'Read-only view (admins can change these settings).';
+      return;
+    }
+
+    // 4) Save handler (admins only)
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      if (!isAdmin) return;
+
+      if (statusEl) statusEl.textContent = 'Saving settings…';
+
+      const payload = {
+        review_all:               !!reviewAllEl.checked,
+        mod_can_final_accept:     !!modFinalAcceptEl.checked,
+        mod_can_final_reject:     !!modFinalRejectEl.checked,
+        reports_required_for_hide: parseInt(reportsHideEl.value || '2', 10),
+        sensitivity_toggle_enabled: !!sensitivityEl.checked,
+        abuse_reports_threshold:    parseInt(abuseThresholdEl.value || '7', 10),
+        abuse_reports_window_days:  parseInt(abuseWindowEl.value || '30', 10)
+      };
+
+      const { error: updateError } = await supabase
+        .from('admin_config')
+        .update(payload)
+        .eq('id', config.id);
+
+      if (updateError) {
+        if (statusEl) statusEl.textContent = 'Error saving settings. Please try again.';
+        return;
+      }
+
+      if (statusEl) statusEl.textContent = 'Settings updated.';
+    });
   })();
 </script>
