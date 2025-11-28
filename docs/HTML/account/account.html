@@ -24,6 +24,14 @@ permalink: /account/
 
     <div class="mt-actions">
       <button
+        class="mt-auth-btn"
+        type="button"
+        id="mt-auth-toggle"
+      >
+        Sign Out
+      </button>
+
+      <button
         class="mt-settings-btn"
         type="button"
         id="mt-settings-btn"
@@ -31,14 +39,18 @@ permalink: /account/
         Account Settings
       </button>
 
+      <!-- New: admin-only button (hidden by default, shown via JS) -->
       <button
-        class="mt-auth-btn"
+        class="mt-settings-btn"
         type="button"
-        id="mt-auth-toggle"
+        id="mt-admin-btn"
+        style="display:none;"
       >
-        Sign Out
+        Admin Dashboard
       </button>
     </div>
+
+
   </header>
 
   <!-- <p id="mt-auth-note" class="mt-auth-note">
@@ -552,6 +564,7 @@ permalink: /account/
     const avatarEl = document.getElementById('mt-avatar');
     const authNoteEl = document.getElementById('mt-auth-note');
     const authToggleBtn = document.getElementById('mt-auth-toggle');
+    const adminBtn = document.getElementById('mt-admin-btn');
 
     if (avatarEl) {
       avatarEl.style.backgroundImage = 'none';
@@ -574,6 +587,11 @@ permalink: /account/
         window.location.href = '/account/sign-in/';
       };
     }
+
+    if (adminBtn) {
+      adminBtn.style.display = 'none';
+    }
+
   }
 
   function setLoggedInState(user) {
@@ -582,6 +600,7 @@ permalink: /account/
     const avatarEl = document.getElementById('mt-avatar');
     const avatarInitialEl = document.getElementById('mt-avatar-initial');
     const authToggleBtn = document.getElementById('mt-auth-toggle');
+    const adminBtn = document.getElementById('mt-admin-btn');   // NEW
 
     const email = user.email || '';
     const displayName =
@@ -592,6 +611,8 @@ permalink: /account/
       user.user_metadata && user.user_metadata.avatar_key; // e.g. "avatar-7"
     const salvationText =
       (user.user_metadata && user.user_metadata.salvation_testimony) || '';
+    const role =
+      (user.user_metadata && user.user_metadata.role) || 'user';  // e.g. "admin" or "user"
 
     const nameOrEmail = displayName || email || 'Your SHK account';
     const shareBtn = document.getElementById('mt-share-btn');
@@ -704,7 +725,20 @@ permalink: /account/
         window.location.href = '/account/sign-in/';
       };
     }
+
+    // NEW: show Admin dashboard button for mod/admin only
+    if (adminBtn) {
+      if (role === 'admin' || role === 'mod') {
+        adminBtn.style.display = 'inline-flex';
+        adminBtn.onclick = () => {
+          window.location.href = '/admin/';
+        };
+      } else {
+        adminBtn.style.display = 'none';
+      }
+    }
   }
+  
 
   function setupTabs() {
     const tabs = Array.from(document.querySelectorAll('.mt-tab'));

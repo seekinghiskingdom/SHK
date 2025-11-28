@@ -14,6 +14,8 @@ breadcrumbs:
   <h1>Admin Dashboard</h1>
   <p class="content-intro">
     Site moderation and management tools for admins and moderators.
+    Admins can configure global thresholds and behavior; moderators have a read-only view
+    and will use future review queues and tools.
   </p>
 
   <hr class="hub-divider">
@@ -230,17 +232,21 @@ breadcrumbs:
 
     const supabase = window.shkSupabase;
 
-
     // 1) Check user and role
     const { data: userData, error: userError } = await supabase.auth.getUser();
     if (userError || !userData || !userData.user) {
-      gate.innerHTML = '<p>You must be signed in to access admin tools.</p>';
+      // Anonymous users: redirect to sign-in per ACC-P1.1
+      window.location.href = "{{ '/account/sign-in/' | relative_url }}";
       return;
     }
 
     const user = userData.user;
     const meta = user.user_metadata || {};
-    const role = meta.role || 'user';
+    const roleFromMeta = meta.role || 'user';
+    const role = (typeof window !== 'undefined' && window.SHK_ROLE)
+      ? window.SHK_ROLE
+      : roleFromMeta;
+
     const isAdmin = role === 'admin';
     const isMod = role === 'mod';
 
@@ -303,7 +309,7 @@ breadcrumbs:
         sensitivityEl,
         abuseThresholdEl,
         abuseWindowEl
-      ].forEach(el => el.disabled = true);
+      ].forEach(el => { el.disabled = true; });
       if (saveBtn) saveBtn.disabled = true;
       if (statusEl) statusEl.textContent = 'Read-only view (admins can change these settings).';
       return;
@@ -317,10 +323,10 @@ breadcrumbs:
       if (statusEl) statusEl.textContent = 'Saving settings…';
 
       const payload = {
-        review_all:               !!reviewAllEl.checked,
-        mod_can_final_accept:     !!modFinalAcceptEl.checked,
-        mod_can_final_reject:     !!modFinalRejectEl.checked,
-        reports_required_for_hide: parseInt(reportsHideEl.value || '2', 10),
+        review_all:                 !!reviewAllEl.checked,
+        mod_can_final_accept:       !!modFinalAcceptEl.checked,
+        mod_can_final_reject:       !!modFinalRejectEl.checked,
+        reports_required_for_hide:  parseInt(reportsHideEl.value || '2', 10),
         sensitivity_toggle_enabled: !!sensitivityEl.checked,
         abuse_reports_threshold:    parseInt(abuseThresholdEl.value || '7', 10),
         abuse_reports_window_days:  parseInt(abuseWindowEl.value || '30', 10)
