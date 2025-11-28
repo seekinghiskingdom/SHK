@@ -1,0 +1,116 @@
+---
+layout: default
+title: Admin – Accounts
+permalink: /admin/accounts/
+---
+
+<section class="account-page account-bg-page admin-page">
+  <header class="settings-header">
+    <div>
+      <h1>Admin · Accounts & roles</h1>
+      <p class="settings-subtitle">
+        This area will eventually let trusted admins and moderators look up accounts, roles, and basic flags.
+      </p>
+    </div>
+    <a href="/admin/" class="settings-back-link">← Back to admin dashboard</a>
+  </header>
+
+  <!-- Signed-out state -->
+  <p id="admin-accounts-signed-out" style="display:none;">
+    You are not signed in. Please
+    <a href="/account/sign-in/">sign in</a>
+    with an admin or moderator account to access this page.
+  </p>
+
+  <!-- Not authorised (normal user) -->
+  <div id="admin-accounts-unauthorized" style="display:none;">
+    <h2>Not authorised</h2>
+    <p>
+      This page is only available to trusted admins and moderators.
+      If you think this is an error, please contact the SHK team using the
+      form or email on the <a href="/about/">About &amp; Contact</a> page.
+    </p>
+  </div>
+
+  <!-- Main content for mods/admins -->
+  <div id="admin-accounts-content" style="display:none;">
+    <section class="settings-section">
+      <h2>Accounts &amp; roles (Phase 1.1 scaffold)</h2>
+      <p class="settings-note">
+        For v1.1 this page is a placeholder. Actual lookup and management tools
+        will be added in later moderation phases once the Testimony module and
+        community tools are online.
+      </p>
+      <ul>
+        <li>View basic profile info (handle, display name, role, created_at).</li>
+        <li>See soft-ban or moderation flags for specific accounts.</li>
+        <li>Adjust roles (<code>user</code>, <code>mod</code>, <code>admin</code>) and account status with audit logging.</li>
+      </ul>
+      <p class="settings-note">
+        Until then, roles and flags continue to be managed directly via the Supabase dashboard,
+        according to the moderation and role-management contracts.
+      </p>
+    </section>
+
+    <section class="settings-section">
+      <h2>Current session</h2>
+      <p class="settings-note">
+        You are signed in as:
+      </p>
+      <p>
+        <strong>Email:</strong> <span id="admin-accounts-email">—</span><br>
+        <strong>Role:</strong> <span id="admin-accounts-role">—</span>
+      </p>
+    </section>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    const signedOutEl = document.getElementById('admin-accounts-signed-out');
+    const unauthorizedEl = document.getElementById('admin-accounts-unauthorized');
+    const contentEl = document.getElementById('admin-accounts-content');
+    const emailEl = document.getElementById('admin-accounts-email');
+    const roleEl = document.getElementById('admin-accounts-role');
+
+    if (!window.supabase) {
+      // Fall back: show a generic message rather than a blank page
+      if (signedOutEl) {
+        signedOutEl.style.display = 'block';
+        signedOutEl.textContent =
+          'We could not load the admin tools because Supabase is not available on this page.';
+      }
+      return;
+    }
+
+    let userData;
+    try {
+      const { data, error } = await supabase.auth.getUser();
+      if (error || !data || !data.user) {
+        if (signedOutEl) signedOutEl.style.display = 'block';
+        return;
+      }
+      userData = data.user;
+    } catch (e) {
+      console.error('Error fetching user for admin/accounts:', e);
+      if (signedOutEl) signedOutEl.style.display = 'block';
+      return;
+    }
+
+    const email = userData.email || '(no email)';
+    const role = (userData.user_metadata && userData.user_metadata.role) || 'user';
+
+    if (emailEl) emailEl.textContent = email;
+    if (roleEl) roleEl.textContent = role;
+
+    // Guard logic per ACC-P1.1 contract:
+    // - If no user: sign-in prompt (handled above)
+    // - If role === 'user': not authorised panel
+    // - If role === 'mod' or 'admin': show content
+    if (role === 'mod' || role === 'admin') {
+      if (contentEl) contentEl.style.display = 'block';
+    } else {
+      if (unauthorizedEl) unauthorizedEl.style.display = 'block';
+    }
+  });
+</script>
