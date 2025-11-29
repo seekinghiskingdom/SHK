@@ -1832,9 +1832,9 @@ body.tool-app-body {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top,
-    rgba(222, 176, 0, 0.55) 0%,
-    rgba(222, 176, 0, 0.18) 45%,
-    rgba(222, 176, 0, 0) 100%
+    rgba(251, 191, 36, 0.3) 0%,
+    rgba(251, 191, 36, 0.18) 45%,
+    rgba(251, 191, 36, 0) 100%
   );
   border-bottom: 1px solid var(--accent);
   pointer-events: none;
