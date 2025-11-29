@@ -378,6 +378,7 @@ permalink: /account/settings/
 }
 </style>
 
+
 <script>
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
@@ -437,9 +438,12 @@ permalink: /account/settings/
     const handle = meta.handle || '';
     const avatarKey = meta.avatar_key || null;
     const role = meta.role || 'user';
-    const hideSensitive = typeof meta.hide_sensitive === 'boolean'
-      ? meta.hide_sensitive
-      : true; // default: hide sensitive
+
+    // Canonical flag: show_sensitive (default TRUE)
+    // Checkbox is phrased as "Hide sensitive..." so it is the inverse
+    const showSensitive = (typeof meta.show_sensitive === 'boolean')
+      ? meta.show_sensitive
+      : true; // default: show sensitive content
 
     if (emailSpan) emailSpan.textContent = email;
 
@@ -450,7 +454,7 @@ permalink: /account/settings/
       handleInput.value = handle;
     }
     if (hideSensitiveInput) {
-      hideSensitiveInput.checked = !!hideSensitive;
+      hideSensitiveInput.checked = !showSensitive; // checked = hide
     }
 
     // Avatar initial (settings page uses letter/icon)
@@ -463,6 +467,35 @@ permalink: /account/settings/
     if (avatarEl) {
       avatarEl.textContent = initial;
     }
+
+    // --- Unsaved-changes tracking for profile section ---
+    let hasUnsavedProfileChanges = false;
+
+    const markProfileDirty = () => {
+      hasUnsavedProfileChanges = true;
+    };
+
+    [displayNameInput, handleInput, hideSensitiveInput].forEach((el) => {
+      if (!el) return;
+      const evt = el.type === 'checkbox' ? 'change' : 'input';
+      el.addEventListener(evt, markProfileDirty);
+    });
+
+    const backLink = document.querySelector('.settings-back-link');
+    if (backLink) {
+      backLink.addEventListener('click', (e) => {
+        if (!hasUnsavedProfileChanges) return;
+        const leave = window.confirm('You have unsaved profile changes. Leave without saving?');
+        if (!leave) e.preventDefault();
+      });
+    }
+
+    window.addEventListener('beforeunload', (e) => {
+      if (!hasUnsavedProfileChanges) return;
+      e.preventDefault();
+      e.returnValue = '';
+    });
+    // --- End unsaved-changes tracking ---
 
     // Profile form (display name, handle, sensitivity flag)
     if (displayNameForm) {
@@ -478,7 +511,9 @@ permalink: /account/settings/
         const newName = displayNameInput ? displayNameInput.value.trim() : '';
         const rawHandle = handleInput ? handleInput.value.trim() : '';
         const newHandle = rawHandle.toLowerCase();
-        const newHideSensitive = hideSensitiveInput ? !!hideSensitiveInput.checked : true;
+        const newHideSensitive = hideSensitiveInput ? !!hideSensitiveInput.checked : false;
+        // Checkbox = hide → show_sensitive is the inverse
+        const newShowSensitive = !newHideSensitive;
 
         if (newName && (newName.length < 2 || newName.length > 40)) {
           if (displayNameMsg) {
@@ -505,7 +540,7 @@ permalink: /account/settings/
           data: {
             display_name: newName || null,
             handle: newHandle || null,
-            hide_sensitive: newHideSensitive
+            show_sensitive: newShowSensitive
           }
         });
 
@@ -518,10 +553,18 @@ permalink: /account/settings/
           return;
         }
 
-        // 2) Upsert into public.profiles for public profile pages (only if handle is set)
-        if (newHandle) {
-          const currentAvatarKey = (user.user_metadata && user.user_metadata.avatar_key) || null;
-          const effectiveRole = (user.user_metadata && user.user_metadata.role) || 'user';
+        // 2) Upsert into public.profiles for public profile pages
+        //    If no handle, remove any existing public profile row
+        if (!newHandle) {
+          await supabase
+            .from('profiles')
+            .delete()
+            .eq('id', user.id);
+        } else {
+          const currentAvatarKey =
+            (user.user_metadata && user.user_metadata.avatar_key) || null;
+          const effectiveRole =
+            (user.user_metadata && user.user_metadata.role) || 'user';
 
           const { error: profileError } = await supabase
             .from('profiles')
@@ -531,7 +574,8 @@ permalink: /account/settings/
                 handle: newHandle,
                 display_name: newName || null,
                 avatar_key: currentAvatarKey,
-                role: effectiveRole
+                role: effectiveRole,
+                show_sensitive: newShowSensitive
               },
               { onConflict: 'id' }
             );
@@ -546,6 +590,8 @@ permalink: /account/settings/
             return;
           }
         }
+
+        hasUnsavedProfileChanges = false;
 
         if (displayNameMsg) {
           displayNameMsg.textContent = 'Profile updated.';
