@@ -765,17 +765,15 @@ permalink: /account/
     if (displayNameEl) displayNameEl.textContent = nameOrEmail;
     if (usernameEl) usernameEl.textContent = handle ? `@${handle}` : '';
 
-    // "Share your testimony" button vs. "pick a username" and visibility
+    // "Share your testimony" button (always available if handle exists)
     if (shareBtn && missingHandleBox) {
       if (handle) {
         const origin = window.location.origin || 'https://seekinghiskingdom.org';
         const url = `${origin}/u/?handle=${encodeURIComponent(handle)}`;
 
-        const canShare = !!(salvationText && salvationVisibility === 'public');
-        shareBtn.hidden = !canShare;
+        shareBtn.hidden = false;
 
         shareBtn.onclick = async () => {
-          if (!canShare) return;
           try {
             if (navigator.clipboard && navigator.clipboard.writeText) {
               await navigator.clipboard.writeText(url);
@@ -799,6 +797,7 @@ permalink: /account/
         missingHandleBox.hidden = false;
       }
     }
+
 
     if (seeAllBtn) {
       seeAllBtn.onclick = () => {

@@ -59,7 +59,6 @@ permalink: /account/settings/
           This is the name that may be shown next to your testimonies.
         </p>
 
-        
         <label>
           Username (public link)
           <span
@@ -75,9 +74,17 @@ permalink: /account/settings/
             maxlength="24"
             placeholder="your_username"
           >
-        </label> 
+        </label>
         <p class="field-help">
           This creates a public link to your profile: https://seekinghiskingdom.org/u/your_username
+        </p>
+
+        <label class="checkbox-label">
+          <input type="checkbox" id="settings-hide-sensitive">
+          Hide testimonies that may contain sensitive or heavy content
+        </label>
+        <p class="field-help">
+          When enabled, certain testimonies marked as sensitive (trauma, abuse, addiction, etc.) may be hidden or blurred in some views.
         </p>
 
         <button type="submit">Save Profile</button>
@@ -99,7 +106,6 @@ permalink: /account/settings/
       </button>
       <p id="avatar-message" class="account-message"></p>
     </section>
-
 
     <!-- Change email -->
     <section class="settings-section">
@@ -218,7 +224,7 @@ permalink: /account/settings/
   color: #f9fafb;
 }
 
-/* Shared form styles (match other account forms) */
+/* Shared form styles */
 .account-form {
   display: flex;
   flex-direction: column;
@@ -299,6 +305,19 @@ permalink: /account/settings/
   color: #e5e7eb;
 }
 
+/* Checkbox label */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+
 @media (max-width: 640px) {
   .settings-page {
     padding-inline: 1rem;
@@ -309,13 +328,18 @@ permalink: /account/settings/
   }
 }
 
-/* Preset avatar grid */
+/* Preset avatar grid (short, scrollable) */
 .avatar-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
   gap: 0.6rem;
   max-width: 360px;
   margin-top: 0.4rem;
+  max-height: 220px;
+  padding: 0.4rem;
+  overflow-y: auto;
+  border-radius: 0.75rem;
+  background: rgba(15, 23, 42, 0.85);
 }
 
 .avatar-option {
@@ -354,7 +378,6 @@ permalink: /account/settings/
 }
 </style>
 
-
 <script>
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
@@ -377,6 +400,7 @@ permalink: /account/settings/
     const displayNameInput = document.getElementById('settings-display-name');
     const displayNameMsg = document.getElementById('settings-display-name-message');
     const handleInput = document.getElementById('settings-handle');
+    const hideSensitiveInput = document.getElementById('settings-hide-sensitive');
 
     const emailForm = document.getElementById('settings-email-form');
     const emailInput = document.getElementById('settings-new-email');
@@ -403,13 +427,19 @@ permalink: /account/settings/
     }
 
     const user = data.user;
+
     if (signedOutEl) signedOutEl.style.display = 'none';
     if (contentEl) contentEl.style.display = 'block';
 
     const email = user.email || '';
-    const displayName = (user.user_metadata && user.user_metadata.display_name) || '';
-    const handle = (user.user_metadata && user.user_metadata.handle) || '';
-    const avatarKey = user.user_metadata && user.user_metadata.avatar_key;
+    const meta = user.user_metadata || {};
+    const displayName = meta.display_name || '';
+    const handle = meta.handle || '';
+    const avatarKey = meta.avatar_key || null;
+    const role = meta.role || 'user';
+    const hideSensitive = typeof meta.hide_sensitive === 'boolean'
+      ? meta.hide_sensitive
+      : true; // default: hide sensitive
 
     if (emailSpan) emailSpan.textContent = email;
 
@@ -419,19 +449,25 @@ permalink: /account/settings/
     if (handleInput) {
       handleInput.value = handle;
     }
+    if (hideSensitiveInput) {
+      hideSensitiveInput.checked = !!hideSensitive;
+    }
 
-    // Avatar initial (settings page uses letter; account page uses full avatar image)
+    // Avatar initial (settings page uses letter/icon)
     let initial = '✝';
     if (displayName && displayName.trim()) {
       initial = displayName.trim().charAt(0).toUpperCase();
     } else if (email) {
       initial = email.charAt(0).toUpperCase();
     }
-    if (avatarEl) avatarEl.textContent = initial;
+    if (avatarEl) {
+      avatarEl.textContent = initial;
+    }
 
-    // Display name + handle form
+    // Profile form (display name, handle, sensitivity flag)
     if (displayNameForm) {
-      displayNameMsg.className = 'account-message';
+      if (displayNameMsg) displayNameMsg.className = 'account-message';
+
       displayNameForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         if (displayNameMsg) {
@@ -442,6 +478,7 @@ permalink: /account/settings/
         const newName = displayNameInput ? displayNameInput.value.trim() : '';
         const rawHandle = handleInput ? handleInput.value.trim() : '';
         const newHandle = rawHandle.toLowerCase();
+        const newHideSensitive = hideSensitiveInput ? !!hideSensitiveInput.checked : true;
 
         if (newName && (newName.length < 2 || newName.length > 40)) {
           if (displayNameMsg) {
@@ -467,7 +504,8 @@ permalink: /account/settings/
         const { error: updateError } = await supabase.auth.updateUser({
           data: {
             display_name: newName || null,
-            handle: newHandle || null
+            handle: newHandle || null,
+            hide_sensitive: newHideSensitive
           }
         });
 
@@ -482,8 +520,8 @@ permalink: /account/settings/
 
         // 2) Upsert into public.profiles for public profile pages (only if handle is set)
         if (newHandle) {
-          const currentAvatarKey = user.user_metadata && user.user_metadata.avatar_key;
-          const role = (user.user_metadata && user.user_metadata.role) || 'user';
+          const currentAvatarKey = (user.user_metadata && user.user_metadata.avatar_key) || null;
+          const effectiveRole = (user.user_metadata && user.user_metadata.role) || 'user';
 
           const { error: profileError } = await supabase
             .from('profiles')
@@ -492,8 +530,8 @@ permalink: /account/settings/
                 id: user.id,
                 handle: newHandle,
                 display_name: newName || null,
-                avatar_key: currentAvatarKey || null,
-                role: role
+                avatar_key: currentAvatarKey,
+                role: effectiveRole
               },
               { onConflict: 'id' }
             );
@@ -520,7 +558,6 @@ permalink: /account/settings/
     const avatarGrid = document.getElementById('avatar-grid');
     const avatarSaveBtn = document.getElementById('avatar-save-btn');
     const avatarMsg = document.getElementById('avatar-message');
-    const role = user.user_metadata && user.user_metadata.role;
     const isAdmin = role === 'admin';
 
     let selectedAvatarKey = avatarKey || null;
@@ -535,7 +572,7 @@ permalink: /account/settings/
 
     if (avatarGrid && window.SHK_PROFILE_AVATARS && window.SHK_PROFILE_AVATARS.length) {
       window.SHK_PROFILE_AVATARS.forEach((avatar) => {
-        // Hide SHK-logo / reserved avatars from non-admin users
+        // Hide reserved avatars from non-admin users
         if (avatar.adminOnly && !isAdmin) return;
 
         const btn = document.createElement('button');
@@ -598,6 +635,20 @@ permalink: /account/settings/
             avatarMsg.classList.add('error');
           }
           return;
+        }
+
+        // Also update profiles.avatar_key so public pages see it
+        try {
+          const { error: profileAvatarError } = await supabase
+            .from('profiles')
+            .update({ avatar_key: selectedAvatarKey || null })
+            .eq('id', user.id);
+
+          if (profileAvatarError) {
+            console.error('profiles avatar update error:', profileAvatarError);
+          }
+        } catch (e) {
+          console.error('Unexpected profiles avatar update error:', e);
         }
 
         if (avatarMsg) {
@@ -711,5 +762,3 @@ permalink: /account/settings/
 
   document.addEventListener('DOMContentLoaded', initSettings);
 </script>
-
-
