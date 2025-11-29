@@ -52,6 +52,13 @@ permalink: /u/
     >
       Share their testimony
     </button>
+    <button
+      type="button"
+      class="mt-settings-btn mt-share-btn"
+      id="mt-see-all-btn"
+    >
+      See all testimonies
+    </button>
   </div>
 
   <hr class="mt-divider">
@@ -81,7 +88,7 @@ permalink: /u/
       <!-- No "Private drafts" tab, no "+ Testimony" button -->
     </div>
 
-    <!-- Empty container for that user's testimonies (no placeholder text) -->
+    <!-- Empty container for that user's testimonies (no placeholder text for now) -->
     <div id="mt-testimonies-list" class="mt-list-placeholder"></div>
   </section>
 
@@ -136,17 +143,6 @@ permalink: /u/
   color: #fefefe;
 }
 
-.mt-title {
-  margin: 0;
-  font-size: 1.45rem;
-}
-
-.mt-subtitle {
-  margin: 0.12rem 0 0;
-  font-size: 0.95rem;
-  color: #e5e7eb;
-}
-
 .mt-actions {
   display: flex;
   gap: 0.6rem;
@@ -175,32 +171,17 @@ permalink: /u/
   margin-top: 0.5rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-/* Short, left-aligned share button */
+/* Short, left-aligned share + see-all buttons */
 .mt-share-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: auto;
   max-width: fit-content;
-}
-
-.mt-public-profile {
-  margin: 0.5rem 0 0.75rem;
-  font-size: 0.9rem;
-}
-
-.mt-public-profile-text a {
-  text-decoration: underline;
-}
-
-.mt-public-profile--warning {
-  color: #fbbf24;
-}
-
-.mt-public-profile--warning a {
-  color: #fbbf24;
 }
 
 .mt-divider {
@@ -233,33 +214,14 @@ permalink: /u/
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
 }
 
-/* Empty now; content will be wired to real testimony later */
+/* Salvation testimony content */
 #mt-salvation-content {
   min-height: 3rem;
+  font-size: 0.95rem;
+  color: #f9fafb;
+  white-space: pre-wrap;
 }
 
-.mt-salvation-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.mt-pill-button {
-  padding: 0.35rem 0.9rem;
-  border-radius: 999px;
-  border: 1px solid #facc15;
-  background: rgba(250, 204, 21, 0.15);
-  color: #fefce8;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-
-.mt-pill-outline {
-  border-color: #deb000;
-  background: transparent;
-}
-
-/* Tabs row – horizontal pills, not full-width */
 .mt-tabs {
   margin-top: 0.8rem;
   display: flex;
@@ -297,7 +259,7 @@ permalink: /u/
   background: rgba(222, 176, 0, 0.3);
   font-size: 0.9rem;
   color: #e5e7eb;
-  min-height: 3rem; /* gives some structure even when empty */
+  min-height: 3rem;
 }
 
 .mt-list-subtext {
@@ -336,7 +298,6 @@ permalink: /u/
 
   const supabase = getSupabaseClient();
 
-
   function getHandleFromUrl() {
     // Preferred: ?handle=someone
     const params = new URLSearchParams(window.location.search);
@@ -373,10 +334,13 @@ permalink: /u/
     const statusEl = document.getElementById('mt-profile-status');
     const titleEl = document.getElementById('mt-testimony-title');
     const shareBtn = document.getElementById('mt-share-btn');
+    const salvationContentEl = document.getElementById('mt-salvation-content');
 
     const handle = profile.handle;
     const displayName = profile.display_name || '';
     const avatarKey = profile.avatar_key || null;
+    const salvationText = (profile.salvation_testimony || '').trim();
+    const salvationVisibility = profile.salvation_visibility || 'private';
 
     const nameOrHandle = displayName || handle || 'Testimony';
 
@@ -392,7 +356,20 @@ permalink: /u/
     }
 
     if (statusEl) {
-      statusEl.textContent = 'Public testimony';
+      if (salvationText && salvationVisibility === 'public') {
+        statusEl.textContent = 'Public salvation testimony';
+      } else {
+        statusEl.textContent = 'This testimony is currently private. Please check back later to see if the user has updated the story of their salvation here!';
+      }
+    }
+
+    if (salvationContentEl) {
+      if (salvationText && salvationVisibility === 'public') {
+        salvationContentEl.textContent = salvationText;
+      } else {
+        salvationContentEl.textContent =
+          'This testimony is currently private. Please check back later to see if the user has updated the story of their salvation here!';
+      }
     }
 
     // Fallback initial
@@ -449,12 +426,16 @@ permalink: /u/
     const displayNameEl = document.getElementById('mt-display-name');
     const usernameEl = document.getElementById('mt-username');
     const titleEl = document.getElementById('mt-testimony-title');
+    const salvationContentEl = document.getElementById('mt-salvation-content');
 
     if (displayNameEl) displayNameEl.textContent = 'User not found';
     if (usernameEl) usernameEl.textContent = '';
     if (titleEl) titleEl.textContent = 'Testimony';
     if (statusEl) {
       statusEl.textContent = 'We could not find a profile with that username.';
+    }
+    if (salvationContentEl) {
+      salvationContentEl.textContent = '';
     }
   }
 
@@ -464,6 +445,7 @@ permalink: /u/
     const statusEl = document.getElementById('mt-profile-status');
     const followBtn = document.getElementById('mt-follow-btn');
     const myBtn = document.getElementById('mt-my-testimony-btn');
+    const seeAllBtn = document.getElementById('mt-see-all-btn');
 
     // Follow: for now, just send to sign-in (later can wire real follow logic)
     if (followBtn) {
@@ -476,6 +458,12 @@ permalink: /u/
     if (myBtn) {
       myBtn.onclick = () => {
         window.location.href = '/account/';
+      };
+    }
+
+    if (seeAllBtn) {
+      seeAllBtn.onclick = () => {
+        window.location.href = '/testimony/wall/';
       };
     }
 
@@ -494,7 +482,7 @@ permalink: /u/
 
     const { data, error } = await supabase
       .from('profiles')
-      .select('id, handle, display_name, avatar_key')
+      .select('id, handle, display_name, avatar_key, salvation_testimony, salvation_visibility')
       .eq('handle', handle)
       .maybeSingle();
 
@@ -512,8 +500,7 @@ permalink: /u/
     }
 
     renderProfile(data);
-    // Later: load their salvation testimony + other testimonies here and
-    // inject into #mt-salvation-content and #mt-testimonies-list
+    // Later: load their other testimonies into #mt-testimonies-list
   }
 
   document.addEventListener('DOMContentLoaded', initPublicProfile);

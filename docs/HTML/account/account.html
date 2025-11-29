@@ -15,7 +15,6 @@ permalink: /account/
       </div>
 
       <div>
-        <!-- <h1 class="mt-title">My Salvation Testimony</h1> -->
         <p class="mt-display-name" id="mt-display-name"></p>
         <p class="mt-username" id="mt-username"></p>
       </div>
@@ -39,7 +38,7 @@ permalink: /account/
         Account Settings
       </button>
 
-      <!-- New: admin-only button (hidden by default, shown via JS) -->
+      <!-- Admin-only button (hidden by default, shown via JS) -->
       <button
         class="mt-settings-btn"
         type="button"
@@ -49,12 +48,7 @@ permalink: /account/
         Admin Dashboard
       </button>
     </div>
-
-
   </header>
-
-  <!-- <p id="mt-auth-note" class="mt-auth-note">
-    Checking your account...</p> -->
 
   <div class="mt-share-row">
     <button
@@ -99,6 +93,13 @@ permalink: /account/
         >
           ?
         </button>
+        <span
+          class="mt-salvation-status-pill"
+          id="mt-salvation-status"
+          hidden
+        >
+          Private
+        </span>
       </h2>
 
       <div class="mt-salvation-actions">
@@ -119,69 +120,143 @@ permalink: /account/
       </div>
     </div>
 
-  <div class="mt-salvation-card">
-    <!-- Saved testimony view -->
-    <div id="mt-salvation-view" class="mt-salvation-view" hidden></div>
+    <div class="mt-salvation-card">
+      <!-- Saved testimony view -->
+      <div id="mt-salvation-view" class="mt-salvation-view" hidden></div>
 
-    <!-- Inline editor -->
-    <div id="mt-salvation-editor-wrap" class="mt-salvation-editor-wrap" hidden>
-      <textarea
-        id="mt-salvation-editor"
-        class="mt-salvation-editor"
-        rows="8"
-        placeholder="Write out how you came to know Jesus, what He has done in your life, and what He is doing today…"
-      ></textarea>
+      <!-- Inline editor -->
+      <div id="mt-salvation-editor-wrap" class="mt-salvation-editor-wrap" hidden>
+        <textarea
+          id="mt-salvation-editor"
+          class="mt-salvation-editor"
+          rows="8"
+          placeholder="Write out how you came to know Jesus, what He has done in your life, and what He is doing today…"
+        ></textarea>
 
-      <div class="mt-salvation-editor-actions">
-        <button
-          type="button"
-          class="mt-pill-button"
-          id="mt-salvation-save-btn"
-        >
-          Save testimony
-        </button>
-        <button
-          type="button"
-          class="mt-pill-button mt-pill-outline"
-          id="mt-salvation-cancel-btn"
-        >
-          Cancel
-        </button>
+        <div class="mt-salvation-editor-meta">
+          <div class="mt-salvation-editor-row">
+            <span class="mt-salvation-meta-label">Visibility:</span>
+            <label class="mt-radio-label">
+              <input
+                type="radio"
+                name="mt-salvation-visibility"
+                id="mt-salvation-vis-private"
+                value="private"
+                checked
+              >
+              Private
+            </label>
+            <label class="mt-radio-label">
+              <input
+                type="radio"
+                name="mt-salvation-visibility"
+                id="mt-salvation-vis-public"
+                value="public"
+              >
+              Public
+            </label>
+          </div>
+
+          <div class="mt-salvation-editor-row">
+            <span class="mt-salvation-meta-label">
+              Share update to Salvation Testimony Wall?
+            </span>
+            <label class="mt-radio-label">
+              <input
+                type="radio"
+                name="mt-salvation-share"
+                id="mt-salvation-share-no"
+                value="no"
+                checked
+              >
+              No
+            </label>
+            <label class="mt-radio-label">
+              <input
+                type="radio"
+                name="mt-salvation-share"
+                id="mt-salvation-share-yes"
+                value="yes"
+              >
+              Yes
+            </label>
+          </div>
+
+          <p class="mt-salvation-hint">
+            Short, 1–3 paragraph story (max 2000 characters, plain text with line breaks).
+          </p>
+        </div>
+
+        <div class="mt-salvation-editor-actions">
+          <button
+            type="button"
+            class="mt-pill-button"
+            id="mt-salvation-save-btn"
+          >
+            Save testimony
+          </button>
+          <button
+            type="button"
+            class="mt-pill-button mt-pill-outline"
+            id="mt-salvation-cancel-btn"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+
+      <!-- Help / questions (stays available always, via ? toggle) -->
+      <div class="mt-salvation-help" id="mt-salvation-help">
+        <p class="mt-salvation-placeholder" id="mt-salvation-placeholder">
+          <h1>Do you know what your testimony is?</h1>
+
+          <strong>What is this testimony for?</strong><br>
+          This is your short Salvation / Life testimony—how Jesus saved you and what that means in your life. Think of it as a clear, simple story you could share with someone in a few minutes: what life was like before, how you came to trust Christ, and how He is at work in you now.<br><br>
+
+          <strong>How long should it be?</strong><br>
+          Aim for a short, focused story (about 1–3 paragraphs, max 2000 characters). You don’t need every detail—just enough context for someone to understand what God has done and what changed. You can always update this later as you grow.<br><br>
+
+          <strong>Tips as you write:</strong><br>
+          – Keep Jesus at the center more than yourself.<br>
+          – Be honest, but avoid unnecessary graphic detail about sin, abuse, or violence.<br>
+          – Be careful with other people’s privacy (no full names or identifying details without their consent).<br>
+          – It’s okay if your story doesn’t feel “dramatic.” Salvation is always a miracle, whether it looks quiet or big on the outside.<br>
+          – If you’re still figuring out what you believe, you can share honestly where you are now and what you’re seeking.<br><br>
+
+          <strong>Content boundaries (what is not allowed):</strong><br>
+          To protect everyone who reads and shares here, testimonies must not include:<br>
+          – Profanity or explicit sexual content.<br>
+          – Hateful or demeaning language toward any person or group.<br>
+          – Slander, attacks, or shaming specific people, churches, or ministries by name.<br>
+          – Political campaigning, rants, or partisan arguments.<br>
+          – Detailed how-to descriptions of self-harm, abuse, or illegal activity.<br>
+          These kinds of content may be blocked or removed even if you try to keep the testimony private.<br><br>
+
+          <strong>About moderation and safety checks:</strong><br>
+          All salvation testimonies run through automatic profanity/sensitivity checks. Sometimes it may be strict or make mistakes, but its goal is to keep this space safe and Christ-honoring.<br>
+          – If your testimony is flagged, it will <em>not</em> be saved, and you’ll be asked to edit it.<br>
+          – In some cases, moderators may also review or temporarily restrict content that seems unsafe, harmful, or clearly outside these guidelines.<br>
+          – Repeated or intentional violations can affect your ability to post publicly or use parts of the site.<br><br>
+
+          When you’re ready, you can write out your Salvation Story and update it over time. Need help figuring out what your testimony is? Consider questions like:<br>
+          – “What was your life like before accepting Christ?”<br>
+          – “How did you come to know Jesus Christ as your Lord and Savior?”<br>
+          – “What led you to make the decision to follow Him?”<br>
+          – “What has He done in your life since then?”<br>
+          – “How has your faith grown and what challenges have you faced?”<br>
+          – “What impact has your relationship with Jesus had on your life and those around you?”<br>
+          – “What would you like others to know about your walk with Christ?”<br>
+
+          <strong>Please refer to our Terms of Use, User Content, Community Guidelines, Disclaimers & Saftey, Privacy, and other relevant policies for more information on content standards and expectations.</strong>
+        </p>
       </div>
     </div>
-
-    <!-- Help / questions (stays available always, via ? toggle) -->
-    <div class="mt-salvation-help" id="mt-salvation-help">
-      <p class="mt-salvation-placeholder" id="mt-salvation-placeholder">
-        When you’re ready, you can write out your Salvation Story and update it over time. <br>
-        Need help figuring out what your testimony is? Here are some questions to consider! <br> <br>
-
-        <em>"What was your life like before accepting Christ?"</em> <br>
-        <em>“How did you come to know Jesus Christ as your Lord and Savior?”</em> <br>
-        <em>"What led you to make the decision to follow Him?"</em> <br>
-        <em>"Why do you believe He gives salvation?"</em> <br> <br>
-
-        <em>"What has He done in your life since then?"</em> <br>
-        <em>"How has your faith grown and what challenges have you faced?"</em> <br>
-        <em>"What impact has your relationship with Jesus had on your life and those around you?"</em> <br>
-        <em>"How is He working in your life today?"</em> <br> <br>
-
-        <em>"What would you like others to know about your walk with Christ?"</em> <br>
-        <em>"What message would you like to share with others to strengthen their faith?"</em> <br>
-      </p>
-    </div>
-  </div>
-
-
   </section>
 
   <!-- Other testimonies filters -->
   <section class="mt-section">
     <div class="mt-section-header">
       <h2 class="mt-section-title">Recent Testimonies</h2>
-      <!-- <button class="mt-add-testimony-btn" type="button">
-        + Add testimony
-      </button> -->
     </div>
 
     <div class="mt-tabs" role="tablist">
@@ -255,17 +330,6 @@ permalink: /account/
   color: #fefefe;
 }
 
-.mt-title {
-  margin: 0;
-  font-size: 1.45rem;
-}
-
-.mt-subtitle {
-  margin: 0.12rem 0 0;
-  font-size: 0.95rem;
-  color: #e5e7eb;
-}
-
 .mt-actions {
   display: flex;
   gap: 0.6rem;
@@ -284,13 +348,6 @@ permalink: /account/
   cursor: pointer;
 }
 
-.mt-settings-btn,
-.mt-auth-btn {
-  border-color: #fbbf24;
-  background: rgba(251, 191, 36, 0.1);
-  color: #fefefe;
-}
-
 .mt-auth-note {
   margin-top: 0.75rem;
   font-size: 0.9rem;
@@ -302,7 +359,7 @@ permalink: /account/
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  flex-wrap: wrap; /* allows wrapping on very small screens */
+  flex-wrap: wrap;
 }
 
 /* Reuse mt-settings-btn styling but force it not to go full-width */
@@ -379,6 +436,28 @@ permalink: /account/
   background: rgba(0, 0, 0, 0.4);
 }
 
+.mt-salvation-status-pill {
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  border: 1px solid #9ca3af;
+  background: rgba(17, 24, 39, 0.8);
+  color: #e5e7eb;
+}
+
+.mt-salvation-status-pill--public {
+  border-color: #22c55e;
+  background: rgba(22, 163, 74, 0.15);
+  color: #bbf7d0;
+}
+
+.mt-salvation-status-pill--private {
+  border-color: #6b7280;
+  background: rgba(107, 114, 128, 0.3);
+  color: #e5e7eb;
+}
+
 .mt-salvation-card {
   background: rgba(222, 176, 0, 0.3);
   border-radius: 16px;
@@ -432,13 +511,44 @@ permalink: /account/
   box-shadow: 0 0 0 1px rgba(222, 176, 0, 0.55);
 }
 
+.mt-salvation-editor-meta {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.mt-salvation-editor-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.mt-salvation-meta-label {
+  font-weight: 500;
+}
+
+.mt-radio-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.mt-salvation-hint {
+  margin: 0.2rem 0 0;
+  font-size: 0.75rem;
+  color: #d1d5db;
+}
+
 .mt-salvation-editor-actions {
   margin-top: 0.45rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
 }
-
 
 .mt-pill-button {
   padding: 0.35rem 0.9rem;
@@ -454,8 +564,6 @@ permalink: /account/
   border-color: #deb000;
   background: transparent;
 }
-
-
 
 .mt-add-testimony-btn {
   padding: 0.35rem 0.9rem;
@@ -544,13 +652,16 @@ permalink: /account/
 }
 </style>
 
-
 <script>
   const SUPABASE_URL = 'https://vubmekxghtydatmofsit.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7BqkY9_i_wMhcupuThXibw_SHoGJox9';
+  const SALVATION_MAX_CHARS = 2000;
 
   // Shared client (singleton)
   let supabase = null;
+  let currentUser = null;
+  let currentProfile = null;
+
   function getSupabaseClient() {
     if (!window.supabase || !window.supabase.createClient) return null;
     if (!window.shkSupabase) {
@@ -591,28 +702,27 @@ permalink: /account/
     if (adminBtn) {
       adminBtn.style.display = 'none';
     }
-
   }
 
-  function setLoggedInState(user) {
+  function setLoggedInState(user, profile) {
     const displayNameEl = document.getElementById('mt-display-name');
     const usernameEl = document.getElementById('mt-username');
     const avatarEl = document.getElementById('mt-avatar');
     const avatarInitialEl = document.getElementById('mt-avatar-initial');
     const authToggleBtn = document.getElementById('mt-auth-toggle');
-    const adminBtn = document.getElementById('mt-admin-btn');   // NEW
+    const adminBtn = document.getElementById('mt-admin-btn');
 
     const email = user.email || '';
-    const displayName =
-      (user.user_metadata && user.user_metadata.display_name) || '';
-    const handle =
-      (user.user_metadata && user.user_metadata.handle) || '';
-    const avatarKey =
-      user.user_metadata && user.user_metadata.avatar_key; // e.g. "avatar-7"
-    const salvationText =
-      (user.user_metadata && user.user_metadata.salvation_testimony) || '';
-    const role =
-      (user.user_metadata && user.user_metadata.role) || 'user';  // e.g. "admin" or "user"
+    const meta = user.user_metadata || {};
+    const displayName = meta.display_name || '';
+    const handle = meta.handle || '';
+    const avatarKey = meta.avatar_key;
+    const role = meta.role || 'user';
+
+    const salvationTextMeta = meta.salvation_testimony || '';
+    const salvationTextProfile = profile && profile.salvation_testimony || '';
+    const salvationText = (salvationTextProfile || salvationTextMeta || '').trim();
+    const salvationVisibility = (profile && profile.salvation_visibility) || 'private';
 
     const nameOrEmail = displayName || email || 'Your SHK account';
     const shareBtn = document.getElementById('mt-share-btn');
@@ -624,19 +734,26 @@ permalink: /account/
     const salvationEditorWrap = document.getElementById('mt-salvation-editor-wrap');
     const salvationEditor = document.getElementById('mt-salvation-editor');
     const salvationPlaceholder = document.getElementById('mt-salvation-placeholder');
+    const salvationStatus = document.getElementById('mt-salvation-status');
+    const visPublic = document.getElementById('mt-salvation-vis-public');
+    const visPrivate = document.getElementById('mt-salvation-vis-private');
+    const shareYes = document.getElementById('mt-salvation-share-yes');
+    const shareNo = document.getElementById('mt-salvation-share-no');
 
     if (displayNameEl) displayNameEl.textContent = nameOrEmail;
     if (usernameEl) usernameEl.textContent = handle ? `@${handle}` : '';
 
-    // "Share your testimony" button vs. "pick a username"
+    // "Share your testimony" button vs. "pick a username" and visibility
     if (shareBtn && missingHandleBox) {
       if (handle) {
         const origin = window.location.origin || 'https://seekinghiskingdom.org';
         const url = `${origin}/u/?handle=${encodeURIComponent(handle)}`;
 
-        shareBtn.hidden = false;
+        const canShare = !!(salvationText && salvationVisibility === 'public');
+        shareBtn.hidden = !canShare;
 
         shareBtn.onclick = async () => {
+          if (!canShare) return;
           try {
             if (navigator.clipboard && navigator.clipboard.writeText) {
               await navigator.clipboard.writeText(url);
@@ -654,7 +771,6 @@ permalink: /account/
           }
         };
 
-        // Hide the missing-handle box if we have a handle
         missingHandleBox.hidden = true;
       } else {
         shareBtn.hidden = true;
@@ -662,7 +778,6 @@ permalink: /account/
       }
     }
 
-    // "See all testimonies" always goes to the Testimony Wall
     if (seeAllBtn) {
       seeAllBtn.onclick = () => {
         window.location.href = '/testimony/wall/';
@@ -674,17 +789,48 @@ permalink: /account/
       if (salvationText) {
         salvationView.textContent = salvationText;
         salvationView.hidden = false;
-        salvationEditorWrap.hidden = true;
         salvationPlaceholder.hidden = true;
         salvationEditor.value = salvationText;
-        if (writeBtn) writeBtn.textContent = 'Edit Testimony';
+        if (writeBtn) writeBtn.textContent = 'Edit testimony';
       } else {
         salvationView.hidden = true;
-        salvationEditorWrap.hidden = true;
         salvationPlaceholder.hidden = false;
         salvationEditor.value = '';
-        if (writeBtn) writeBtn.textContent = 'Write Testimony!';
+        if (writeBtn) writeBtn.textContent = 'Write my Testimony!';
       }
+    }
+
+    // Visibility pill
+    if (salvationStatus) {
+      if (salvationText) {
+        salvationStatus.hidden = false;
+        salvationStatus.textContent = salvationVisibility === 'public' ? 'Public' : 'Private';
+        salvationStatus.classList.remove('mt-salvation-status-pill--public', 'mt-salvation-status-pill--private');
+        salvationStatus.classList.add(
+          salvationVisibility === 'public'
+            ? 'mt-salvation-status-pill--public'
+            : 'mt-salvation-status-pill--private'
+        );
+      } else {
+        salvationStatus.hidden = true;
+      }
+    }
+
+    // Visibility radio defaults
+    if (visPublic && visPrivate) {
+      if (salvationVisibility === 'public') {
+        visPublic.checked = true;
+        visPrivate.checked = false;
+      } else {
+        visPublic.checked = false;
+        visPrivate.checked = true;
+      }
+    }
+
+    // Share radios default: always "No" when entering edit
+    if (shareYes && shareNo) {
+      shareNo.checked = true;
+      shareYes.checked = false;
     }
 
     // Fallback initial (when no avatar image yet)
@@ -697,8 +843,8 @@ permalink: /account/
 
     if (avatarEl && avatarInitialEl) {
       const url =
-        avatarKey && window.SHK_getAvatarUrlByKey
-          ? window.SHK_getAvatarUrlByKey(avatarKey)
+        meta.avatar_key && window.SHK_getAvatarUrlByKey
+          ? window.SHK_getAvatarUrlByKey(meta.avatar_key)
           : null;
 
       if (url) {
@@ -726,7 +872,7 @@ permalink: /account/
       };
     }
 
-    // NEW: show Admin dashboard button for mod/admin only
+    // Admin dashboard availability
     if (adminBtn) {
       if (role === 'admin' || role === 'mod') {
         adminBtn.style.display = 'inline-flex';
@@ -738,7 +884,6 @@ permalink: /account/
       }
     }
   }
-  
 
   function setupTabs() {
     const tabs = Array.from(document.querySelectorAll('.mt-tab'));
@@ -781,12 +926,20 @@ permalink: /account/
     const salvationPlaceholder = document.getElementById('mt-salvation-placeholder');
     const saveBtn = document.getElementById('mt-salvation-save-btn');
     const cancelBtn = document.getElementById('mt-salvation-cancel-btn');
+    const visPublic = document.getElementById('mt-salvation-vis-public');
+    const visPrivate = document.getElementById('mt-salvation-vis-private');
+    const shareYes = document.getElementById('mt-salvation-share-yes');
+    const shareNo = document.getElementById('mt-salvation-share-no');
 
     function openSalvationEditor() {
       if (!salvationEditorWrap || !salvationEditor) return;
       salvationEditorWrap.hidden = false;
       if (salvationView) salvationView.hidden = true;
       if (salvationPlaceholder) salvationPlaceholder.hidden = true;
+      if (shareNo && shareYes) {
+        shareNo.checked = true;
+        shareYes.checked = false;
+      }
       salvationEditor.focus();
     }
 
@@ -805,7 +958,32 @@ permalink: /account/
           salvationPlaceholder.hidden = false;
         }
       }
-      // if !persistToView, leave view/placeholder as-is
+    }
+
+    function syncShareWithVisibility() {
+      if (!shareYes || !shareNo || !visPublic || !visPrivate) return;
+      if (visPrivate.checked) {
+        shareYes.checked = false;
+        shareYes.disabled = true;
+        shareNo.checked = true;
+      } else {
+        shareYes.disabled = false;
+      }
+    }
+
+    if (salvationEditor) {
+      salvationEditor.addEventListener('input', () => {
+        const val = salvationEditor.value || '';
+        if (val.length > SALVATION_MAX_CHARS) {
+          salvationEditor.value = val.slice(0, SALVATION_MAX_CHARS);
+        }
+      });
+    }
+
+    if (visPublic && visPrivate) {
+      visPublic.addEventListener('change', syncShareWithVisibility);
+      visPrivate.addEventListener('change', syncShareWithVisibility);
+      syncShareWithVisibility();
     }
 
     if (writeBtn) {
@@ -816,7 +994,6 @@ permalink: /account/
 
     if (cancelBtn) {
       cancelBtn.addEventListener('click', () => {
-        // restore editor text from current view, then hide editor without changing view
         if (salvationEditor && salvationView) {
           salvationEditor.value = salvationView.textContent || '';
         }
@@ -826,38 +1003,117 @@ permalink: /account/
 
     if (saveBtn) {
       saveBtn.addEventListener('click', async () => {
-        if (!salvationEditor || !supabase) return;
-        const text = salvationEditor.value.trim();
+        if (!salvationEditor || !supabase || !currentUser) return;
+        const rawText = salvationEditor.value || '';
+        const text = rawText.trim();
 
-        let updateError = null;
+        if (text.length > SALVATION_MAX_CHARS) {
+          alert('Your salvation testimony is too long. Please keep it within 2000 characters.');
+          return;
+        }
+
+        const visPublicEl = document.getElementById('mt-salvation-vis-public');
+        const visPrivateEl = document.getElementById('mt-salvation-vis-private');
+        const shareYesEl = document.getElementById('mt-salvation-share-yes');
+        const shareNoEl = document.getElementById('mt-salvation-share-no');
+
+        let visibility = 'private';
+        if (visPublicEl && visPublicEl.checked) {
+          visibility = 'public';
+        }
+
+        let shareToWall = false;
+        if (visibility === 'public' && shareYesEl && shareYesEl.checked && !(shareYesEl.disabled)) {
+          shareToWall = true;
+        }
+
+        const confirmMsg =
+          'You are about to save your salvation testimony.\n\n' +
+          'Visibility: ' + (visibility === 'public' ? 'Public' : 'Private') + '\n' +
+          'Share to Salvation Wall: ' + (shareToWall ? 'Yes' : 'No') + '\n\n' +
+          'Continue?';
+
+        if (!window.confirm(confirmMsg)) return;
+
+        // Optional moderation hook (backend logic to be wired via SHK_checkContent)
+        if (window.SHK_checkContent) {
+          try {
+            const result = await window.SHK_checkContent(text, { context: 'salvation_testimony' });
+            if (!result || result.ok === false) {
+              const msg = (result && result.message)
+                ? result.message
+                : 'Your testimony could not be saved because some content appears unsafe or inappropriate. Please edit and try again.';
+              alert(msg);
+              return;
+            }
+          } catch (e) {
+            console.error('Salvation testimony moderation error:', e);
+            alert('We could not validate your testimony just now. Please try again in a moment.');
+            return;
+          }
+        }
+
+        let profileUpdateError = null;
+        let authUpdateError = null;
+
+        try {
+          const updates = {
+            salvation_testimony: text || null,
+            salvation_visibility: visibility
+          };
+          // Optional: record share time for Wall logic later
+          if (shareToWall) {
+            updates.salvation_last_shared_to_wall_at = new Date().toISOString();
+          }
+
+          const { error } = await supabase
+            .from('profiles')
+            .update(updates)
+            .eq('id', currentUser.id);
+
+          profileUpdateError = error || null;
+        } catch (e) {
+          console.error('Error saving salvation testimony to profiles:', e);
+          profileUpdateError = e;
+        }
+
         try {
           const { error } = await supabase.auth.updateUser({
             data: {
               salvation_testimony: text || null
             }
           });
-          updateError = error || null;
+          authUpdateError = error || null;
         } catch (e) {
-          console.error('Error saving salvation testimony:', e);
-          updateError = e;
+          console.error('Error saving salvation testimony to auth metadata:', e);
+          authUpdateError = e;
         }
 
-        if (updateError) {
-          console.error('Salvation testimony save error:', updateError);
+        if (profileUpdateError || authUpdateError) {
+          console.error('Salvation testimony save error:', profileUpdateError || authUpdateError);
           alert('We were not able to save your testimony just now. Please copy your text and try again.');
           return;
         }
 
-        closeSalvationEditor(true);
-        if (writeBtn) {
-          writeBtn.textContent = text ? 'Edit testimony' : 'Write my salvation story';
+        if (!currentProfile) {
+          currentProfile = { id: currentUser.id };
         }
+        currentProfile.salvation_testimony = text || null;
+        currentProfile.salvation_visibility = visibility;
+
+        setLoggedInState(currentUser, currentProfile);
+        closeSalvationEditor(true);
+
+        alert(
+          'Your salvation testimony has been saved.\n' +
+          'Visibility: ' + (visibility === 'public' ? 'Public' : 'Private') + '\n' +
+          'Shared to Salvation Wall: ' + (shareToWall ? 'Yes' : 'No')
+        );
       });
     }
 
     if (learnBtn) {
       learnBtn.addEventListener('click', () => {
-        // Main testimony hub (you can add an anchor later if you want)
         window.location.href = '/testimony/';
       });
     }
@@ -889,7 +1145,28 @@ permalink: /account/
       return;
     }
 
-    setLoggedInState(data.user);
+    currentUser = data.user;
+
+    // Load profile row (including salvation fields)
+    let profile = null;
+    try {
+      const { data: profileRow, error: profileError } = await supabase
+        .from('profiles')
+        .select('id, handle, display_name, avatar_key, salvation_testimony, salvation_visibility')
+        .eq('id', currentUser.id)
+        .maybeSingle();
+
+      if (profileError) {
+        console.error('Error loading profile for account page:', profileError);
+      } else {
+        profile = profileRow || null;
+      }
+    } catch (e) {
+      console.error('Unexpected error loading profile for account page:', e);
+    }
+
+    currentProfile = profile;
+    setLoggedInState(currentUser, currentProfile);
   }
 
   document.addEventListener('DOMContentLoaded', initAccountPage);
