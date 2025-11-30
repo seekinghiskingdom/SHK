@@ -7,6 +7,66 @@
   --dark-gold:#b8860b;
   --accent: #ffd86b;
   --deb: #deb000;
+
+  --lgr: #aaaaa0;
+}
+
+:root {
+  /* 1) Neutral bases (backgrounds + panels) */
+  --bg-light-page:        #aaaaa0;
+  --bg-dark-page:         #505049;
+  --bg-surface:     #d9d5cc;
+  --bg-surface-alt: #c3beb3;
+
+  --border-subtle:  #cfcac0;
+
+  --panel:        #1C1B17;
+  --panel-trans-light:    rgba(50,10,10, 0.1);
+  --panel-trans-strong:    rgba(50,10,10, 0.3);
+
+  --shadow:        0 8px 24px rgba(0, 0, 0, 0.12);  /* general purpose */
+  --shadow-soft:   0 4px 12px rgba(0, 0, 0, 0.08);  /* default card / tile */
+  --shadow-strong: 0 12px 32px rgba(0, 0, 0, 0.18); /* modals, floating panels */
+
+
+  /* 2) Text */
+  --text-light:     #f3f1eb;
+  --text-dark:      #1C1B17;
+  --text-muted:     #64645a;
+  --text-on-gold:   #1C1B17;
+
+  /* 3) Brand golds */     /* Hue:=45-55; All spectrum: ...*/
+  --brand-saint:       #c8af7a; /* c1b195, c8af7a */
+  --brand-light:       #e0d1a6; /* me: fad976; chat: f3ebd2, f5eed6 */
+  --brand-cross:       #e3c573; /*e7c35a, e5c467, e3c573 (e6c882 & debf77?); init dropper: c69d65, b68e54, d4bc90, debf77*/
+
+  --brand-gold:        #e6c864; /* e6c864(easy rgb)=e5c467; chat: c1b195/e3c576, c8af7a/e7c35a */
+  --brand-gold-trans-btn: rgba(230, 200, 100, 0.1);
+  --brand-gold-trans-card: rgba(230, 200, 100, 0.3);
+
+  --brand-pop:         #fadc00; /*C8A028/deb000/fac800/fadc00; can get to brand-gold in same hex hue/spectrum, it might be good to keep that for color theory (TBD)?*/
+  --brand-strong:      #fac800; /*C8A028/deb000/fac800/fadc00; can get to brand-gold in same hex hue/spectrum, it might be good to keep that for color theory (TBD)?*/
+  --brand-dark:        #c8a028; /*C8A028/deb000/fac800/fadc00; can get to brand-gold in same hex hue/spectrum, it might be good to keep that for color theory (TBD)?*/
+
+
+  /* 4) Accents */
+  --acc-link:          #7b8fc9; /* TBD */
+  --acc-verse:         #c9d6f0; /* TBD */
+  --acc-red-letters:   #880000;
+
+  --acc-green:         #3c3c14;
+  --acc-olive:         #645a28;
+  --acc-earth:         #af8c37;
+  --acc-tan:           #aa8246;
+  --acc-brown:         #64461e;
+
+  /* 5) State colors */
+  --state-success: #4c8b5f;
+  --state-warning: #e0a63b;
+  --state-danger:  #c2543f;
+
+  /* 6) Interaction */
+  --focus-ring:   #7b8fc9; /* purpose? TBD */
 }
 
 /* ========== Base Styles ========== */
@@ -16,13 +76,13 @@
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--bg-light-page);
+  color: var(--text-light);
   font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
 }
 
 a {
-  color: var(--accent);
+  color: var(--brand-pop);
 }
 
 html {
@@ -38,12 +98,12 @@ html {
 }
 
 .highlight-gold {
-  color: var(--gold);
+  color: var(--brand-gold);
   font-weight: 600;
 }
 
 .highlight-link {
-  color: var(--gold);
+  color: var(--brand-gold);
   text-decoration: none;
   font-weight: 600;
 }
@@ -111,7 +171,7 @@ button:focus {
 .nav-button,
 .btn,
 button {
-  background-color: var(--gold);
+  background-color: var(--brand-gold);
   color: white;
   padding: 10px 15px;
   border: none;
@@ -126,14 +186,14 @@ button {
 .nav-button:hover,
 .btn:hover,
 button:hover {
-  background-color: #b8860b;
+  background-color: var(--brand-dark);
 }
 
 
 /* ========== Buttons (Nav + Regular) ========== */
 .current-button,
 button {
-  background-color: var(--dark-gold);
+  background-color: var(--brand-dark);
   color: white;
   padding: 10px 15px;
   border: none;
@@ -148,7 +208,7 @@ button {
 /* Hover effect */
 .current-button:hover,
 button:hover {
-  background-color: #684c07; /* dark goldenrod */
+  background-color: var(--brand-dark); /* dark goldenrod */
 }
 
 /* Optional: remove focus outline */
@@ -169,42 +229,42 @@ button:focus {
 .controls label {
   display: block;
   font-size: 12px;
-  color: var(--muted);
+  color: var(--text-muted);
   margin-bottom: 4px;
 }
 
 select,
 button {
-  background: var(--panel);
-  color: var(--text);
-  border: 1px solid #2a2f3a;
+  background: var(--panel-trans-strong);
+  color: var(--text-light);
+  border: 1px solid var(--brand-pop);
   border-radius: 8px;
   padding: 8px;
 }
 
 button {
-  border-color: var(--gold);
+  border-color: var(--brand-gold);
 }
 
 /* ========== Results Styling ========== */
 .results .verse {
-  background: var(--panel);
+  background: var(--panel-trans-strong);
   padding: 12px 14px;
   border-radius: 12px;
   margin: 10px 0;
-  border: 1px solid #222631;
+  border: 1px solid var(--panel-trans-strong);
 }
 
 .ref {
   font-weight: 600;
-  color: var(--accent);
+  color: var(--brand-pop);
 }
 
 .pill {
   display: inline-block;
-  background: #1e2230;
-  border: 1px solid #2a2f3a;
-  color: var(--text);
+  background: var(--panel-trans-strong);
+  border: 1px solid var(--brand-pop);
+  color: var(--text-light);
   padding: 2px 8px;
   border-radius: 999px;
   margin: 6px 6px 0 0;
@@ -212,21 +272,21 @@ button {
 }
 
 .arrow {
-  color: var(--gold);
+  color: var(--brand-gold);
   font-weight: 700;
   margin: 0 4px;
 }
 
 mark.input {
   background: transparent;
-  color: var(--gold);
+  color: var(--brand-gold);
   font-weight: 700;
   text-decoration: underline;
 }
 
 mark.output {
   background: transparent;
-  color: #f6e08f;
+  color: var(--brand-gold);
   font-weight: 700;
   text-decoration: underline;
 }
@@ -234,7 +294,7 @@ mark.output {
 /* ========== Footer ========== */
 .footer {
   margin: 24px 0;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 /* ========== Responsive Design ========== */
@@ -261,7 +321,7 @@ mark.output {
 /* Horizontal Gold Line */
 hr {
   border: none;
-  border-top: 2px solid var(--gold);
+  border-top: 2px solid var(--brand-gold);
   margin: 20px 0;
 }
 
@@ -284,14 +344,14 @@ hr {
 .controls {
   display: flex;
   flex-direction: column;
-  background-color: #2b2b2b; /* dark gray box */
+  background-color: var(--panel-trans-strong); /* dark gray box */
   padding: 15px;
-  border: 1px solid #444;
+  border: var(--brand-pop);
   border-radius: 8px;
   gap: 15px;
   width: 100%;
   box-sizing: border-box;
-  color: white; /* make text readable */
+  color: var(--text-light); /* make text readable */
 }
 
 .controls div {
@@ -303,7 +363,7 @@ hr {
 label {
   font-weight: bold;
   margin-bottom: 5px;
-  color: #f5f5f5;
+  color: var(--text-light);
 }
 
 select {
@@ -311,23 +371,23 @@ select {
   padding: 10px;
   font-size: 14px;
   border-radius: 4px;
-  border: 1px solid #777;
-  background-color: #3a3a3a;
-  color: white;
+  border: 1px solid var(--brand-pop);
+  background-color: var(--panel-trans-strong);
+  color: var(--text-light);
   box-sizing: border-box;
 }
 
 select:focus {
   outline: none;
-  border-color: var(--gold);
+  border-color: var(--brand-gold);
 }
 
 button {
   width: 100%;
   padding: 12px;
-  background-color: var(--gold);
+  background-color: var(--brand-gold);
   border: none;
-  color: black;
+  color: var(--text-on-gold);
   font-size: 15px;
   font-weight: bold;
   border-radius: 5px;
@@ -337,41 +397,41 @@ button {
 }
 
 button:hover {
-  background-color: var(--dark-gold);
-  color: white;
+  background-color: var(--brand-dark);
+  color: var(--text-on-gold);
 }
 
 .results {
   flex: 1;
-  border: 1px solid #ddd;
+  border: 1px solid var(--brand-pop);
   box-sizing: border-box;
-  background-color: #f8f8f8;
+  background-color: var(--panel);
   width: 100%;
   padding: 10px;
   min-height: 600px;   /* sets a taller minimum height */
   overflow-y: auto;    /* allows scrolling if content exceeds height */
-  background: var(--panel); /* optional, matches your theme */
+  background: var(--panel-trans-strong); /* optional, matches your theme */
   border-radius: 12px;
 }
 
 /* Footer */
 .footer {
-  background-color: #3a3a3a; /* slightly lighter than the controls box (#2b2b2b) */
-  color: #f0f0f0;
+  background-color: var(--panel-trans-strong); /* slightly lighter than the controls box (#2b2b2b) */
+  color: var(--text-light);
   padding: 15px 20px;
-  border-top: 1px solid #555; /* even lighter separator line */
+  border-top: 1px solid var(--brand-pop); /* even lighter separator line */
   text-align: center;
   border-radius: 0 0 8px 8px;
 }
 
 .footer a {
-  color: var(--gold);
+  color: var(--brand-gold);
   text-decoration: none;
   font-weight: bold;
 }
 
 .footer a:hover {
-  color: var(--dark-gold);
+  color: var(--brand-dark);
   text-decoration: underline;
 }
 
@@ -416,9 +476,9 @@ button:hover {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--panel-trans-strong);
     padding: 0.5rem;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--brand-pop);
   }
 
   #menu-toggle:checked + .menu-icon + .nav-links {
@@ -463,19 +523,19 @@ button:hover {
   border-radius: 12px;
   padding: 2rem;
   width: 45%; /* Half-width with some gap */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  box-shadow: var(--shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tile:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  box-shadow: var(--shadow);
 }
 
 /* Left tile: About */
 .tile-left {
-  background-color: #FFD966; /* Soft, warm yellow */
-  color: #333;
+  background-color: var(--brand-gold); /* Soft, warm yellow */
+  color: var(--text-on-gold);
   flex-direction: column;
   text-align: left; /* Left-align text */
   justify-content: flex-start;
@@ -484,8 +544,8 @@ button:hover {
 
 /* Right tile: PPS */
 .tile-right {
-  background-color: #2c2c2c; /* Dark grey */
-  color: white;
+  background-color: var(--panel-trans-strong); /* Dark grey */
+  color: var(--text-light);
   justify-content: flex-start;
 }
 
@@ -534,6 +594,9 @@ button:hover {
 }
 
 
+
+
+
 /* Hunter's CSS Style Additions */
 
 /* ================= Hub and Collection Pages ================= */
@@ -555,14 +618,14 @@ button:hover {
 .hub-page p.hub-intro {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  color: var(--text);
+  color: var(--text-light);
   max-width: 60rem;
 }
 
 /* Gold divider under the title */
 .hub-divider {
   border: none;
-  border-top: 2px solid var(--gold);
+  border-top: 2px solid var(--brand-gold);
   margin: 0.75rem 0 1.5rem;
 }
 
@@ -579,16 +642,16 @@ button:hover {
   text-decoration: none;
   border-radius: 0.75rem;
   padding: 1.25rem;
-  background: var(--gold);
+  background: var(--brand-gold);
   color: inherit;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--shadow);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .hub-tile:hover,
 .hub-tile:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--shadow);
 }
 
 /* Title + description inside each tile */
@@ -600,7 +663,7 @@ button:hover {
 .hub-tile p {
   margin: 0;
   font-size: 0.95rem;
-  color: var(--panel);
+  color: var(--panel-trans-strong);
 }
 
 
@@ -620,7 +683,7 @@ button:hover {
 .collection-page p.collection-intro {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  color: var(--text);
+  color: var(--text-light);
   max-width: 60rem;
 }
 
@@ -646,16 +709,16 @@ button:hover {
   text-decoration: none;
   border-radius: 0.75rem;
   padding: 0.9rem 1.1rem;
-  background: var(--gold);
+  background: var(--brand-gold);
   color: inherit;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--shadow);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 .collection-item:hover,
 .collection-item:focus-visible {
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--shadow);
 }
 
 .collection-item h3 {
@@ -666,7 +729,7 @@ button:hover {
 .collection-item p {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--panel);
+  color: var(--panel-trans-strong);
 }
 
 /* Bottom nav for collection pages */
@@ -691,7 +754,7 @@ button:hover {
 .content-page p.content-intro {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  color: var(--text);
+  color: var(--text-light);
   max-width: 60rem;
 }
 
@@ -737,7 +800,7 @@ button:hover {
   margin-left: auto;          /* pushes it to the far right */
   background: transparent;
   border: none;
-  color: var(--text);
+  color: var(--text-light);
   font-size: 1.6rem;
   padding: 0.15rem 0.4rem;    /* small, square-ish icon */
   line-height: 1;
@@ -760,9 +823,9 @@ button:hover {
     flex-direction: column;
     width: 100%;
     margin-top: 0.5rem;
-    background-color: var(--panel);
+    background-color: var(--panel-trans-strong);
     padding: 0.5rem;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--brand-pop);
   }
 
   .site-header.nav-open .nav-links {
@@ -819,7 +882,7 @@ body {
 
 /* Verse block */
 .home-verse-section {
-  background: rgba(23, 26, 33, 0.96); /* var(--panel) with slight alpha is fine too */
+  background: var(--panel-trans-strong);
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   margin: 0 auto 1.5rem;
@@ -828,7 +891,7 @@ body {
 
 /* Daily tile wrapper already contains .tile; just ensure the tile is solid */
 .home-daily-tool-section .tile-daily {
-  background: var(--panel);
+  background: var(--panel-trans-strong);
   border-radius: 12px;
 }
 
@@ -848,16 +911,16 @@ body {
 
 /* Make Essentials tile match Daily visual style */
 .tile-essentials {
-  background: var(--panel);
+  background: var(--panel-trans-strong);
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow: var(--shadow);
   padding: 1.5rem;
 }
 
 
 /* Home hub grid panel */
 .home-hub-section {
-  background: rgba(23, 26, 33, 0.96);
+  background: var(--panel-trans-strong);
   border-radius: 12px;
   padding: 1.5rem 1.75rem 2rem;
   margin: 0 auto;
@@ -905,9 +968,9 @@ body {
 
 /* Make both tiles solid, same style, and fill the column */
 .home-feature-row .tile {
-  background: var(--panel);
+  background: var(--panel-trans-strong);
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow: var(--shadow);
   padding: 1.5rem;
   height: 100%;
   display: flex;
@@ -979,8 +1042,8 @@ body {
   left: 0;
   margin-top: 0.25rem;
   padding: 0.75rem 1rem;
-  background: var(--panel);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  background: var(--panel-trans-strong);
+  box-shadow: var(--shadow);
   border-radius: 0.75rem;
   z-index: 1000;
 }
@@ -998,13 +1061,13 @@ body {
   border-radius: 0.5rem;
   text-decoration: none;
   font-size: 0.9rem;
-  color: var(--text);
-  background: rgba(0, 0, 0, 0.15);
+  color: var(--text-light);
+  background: var(--panel-trans-strong);
 }
 
 .nav-dropdown-item:hover,
 .nav-dropdown-item:focus-visible {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--panel-trans-strong);
 }
 
 /* Desktop: show dropdown on hover */
@@ -1047,8 +1110,8 @@ body {
 .btn,
 button,
 .nav-dropdown-item {
-  background-color: var(--gold);
-  color: white;
+  background-color: var(--brand-gold);
+  color: var(--text-on-gold);
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
@@ -1065,13 +1128,13 @@ button,
 button:hover,
 .nav-dropdown-item:hover,
 .nav-dropdown-item:focus-visible {
-  background-color: var(--dark-gold);
-  color: white;
+  background-color: var(--brand-dark);
+  color: var(--text-on-gold);
 }
 
 /* Override older dropdown background so gold wins */
 .site-header .nav-dropdown-item {
-  background-color: var(--gold);
+  background-color: var(--brand-gold);
 }
 
 /* Remove gap between parent tab and dropdown to avoid hover "fall-off" */
@@ -1103,9 +1166,9 @@ button:hover,
 
 /* Make both tiles solid, same style */
 .home-feature-row .tile {
-  background: var(--panel);
+  background: var(--panel-trans-strong);
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--shadow);
   padding: 1.5rem;
   height: 100%;
   display: flex;
@@ -1232,9 +1295,9 @@ button:hover,
 /* Make tiles fill the grid cell and look like solid panels */
 .home-feature-row .tile {
   width: 100%;  /* override global 45% width */
-  background: var(--panel);
+  background: var(--panel-trans-strong);
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--shadow);
   padding: 1.5rem;
   height: 100%;
   box-sizing: border-box;
@@ -1272,7 +1335,7 @@ button:hover,
 .footer-social-link {
   font-size: 0.85rem;
   text-decoration: none;
-  color: var(--accent);
+  color: var(--brand-pop);
 }
 
 .footer-social-link:hover {
@@ -1325,7 +1388,7 @@ footer.container,
     justify-content: center;
     background: transparent;
     border: none;
-    color: var(--text);
+    color: var(--text-light);
     font-size: 0.85rem;
     padding: 0.35rem 0.5rem;
     cursor: pointer;
@@ -1376,7 +1439,7 @@ footer.container,
 .site-title-short {
   padding: 0.05rem 0.4rem;
   border-radius: 999px;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--brand-gold);
 }
 
 
@@ -1414,7 +1477,7 @@ footer.container,
     padding: 0.25rem 0.5rem;
     background: transparent;
     border: none;
-    color: var(--text);
+    color: var(--text-light);
     font-size: 0.85rem;
     cursor: pointer;
   }
@@ -1498,7 +1561,7 @@ footer.container,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: var(--text);
+    color: var(--text-light);
     font-size: 0.9rem;
   }
 
@@ -1522,22 +1585,22 @@ footer.container,
 
 /* Thin yellow line under the whole header */
 /* .site-header {
-  border-bottom: 1px solid var(--accent);
+  border-bottom: 1px solid var(--brand-pop);
 } */
 
 /* Yellow outline around the header tabs container (row of tabs) */
 .site-header .nav-links {
-  border: 1px solid var(--accent);      /* yellow around container */
+  border: 1px solid var(--brand-pop);      /* yellow around container */
   border-radius: 0.75rem;
   padding: 0.25rem 0.5rem;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--panel-trans-strong);
   box-sizing: border-box;
 }
 
 /* Black accents around yellow buttons (tabs + dropdown tiles) */
 .nav-button,
 .nav-dropdown-item {
-  border: 1px solid #000;               /* thin black outline */
+  border: 1px solid var(--panel);               /* thin black outline */
   box-sizing: border-box;
 }
 
@@ -1546,12 +1609,12 @@ footer.container,
 .nav-button:focus-visible,
 .nav-dropdown-item:hover,
 .nav-dropdown-item:focus-visible {
-  box-shadow: 0 0 0 1px #000;
+  box-shadow: var(--shadow);
 }
 
 /* Yellow outline around black dropdown containers (desktop) */
 .nav-dropdown {
-  border: 1px solid var(--accent);      /* yellow around dropdown panel */
+  border: 1px solid var(--brand-pop);      /* yellow around dropdown panel */
   border-radius: 0.75rem;
   box-sizing: border-box;
 }
@@ -1559,7 +1622,7 @@ footer.container,
 /* Mobile: same yellow outline on the inline dropdown panel */
 @media (max-width: 700px) {
   .nav-item .nav-dropdown {
-    border: 1px solid var(--accent);
+    border: 1px solid var(--brand-pop);
     border-radius: 0.75rem;
     box-sizing: border-box;
   }
@@ -1571,7 +1634,7 @@ footer.container,
 /* Content and wording assisted by AI (-AI) */
 
 body.tool-app-body {
-  background: #020617; /* same dark navy you’re using elsewhere */
+  background: var(--panel-trans-strong); /* same dark navy you’re using elsewhere */
 }
 
 .tool-app-container {
@@ -1600,9 +1663,9 @@ body.tool-app-body {
 .testimony-cta,
 .nav-cta,
 .help-cta {
-  background: var(--panel);
+  background: var(--panel-trans-strong);
   border-radius: 0.75rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+  box-shadow: var(--shadow);
   padding: 0.75rem 1rem 0.75rem 0.75rem;
   max-width: min(480px, 100% - 2rem);
   position: relative;
@@ -1619,8 +1682,8 @@ body.tool-app-body {
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 999px;
-  border: 2px solid var(--accent);
-  background: #000;
+  border: 2px solid var(--brand-pop);
+  background: var(--panel-trans-strong);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1634,13 +1697,13 @@ body.tool-app-body {
 .help-cta-cross {
   font-size: 1.35rem;
   line-height: 1;
-  color: var(--accent);
+  color: var(--brand-pop);
 }
 
 /* Help panel content */
 .help-cta-label {
   margin: 0 0 0.4rem;
-  color: var(--text);
+  color: var(--text-light);
 }
 
 .help-cta-actions {
@@ -1658,13 +1721,13 @@ body.tool-app-body {
 
 .help-cta-btn.secondary {
   background-color: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  color: var(--brand-pop);
+  border: 1px solid var(--brand-pop);
 }
 
 .help-cta-btn.secondary:hover {
-  background-color: var(--accent);
-  color: #000;
+  background-color: var(--brand-pop);
+  color: var(--text-on-gold);
 }
 
 /* Nav CTA links container (breadcrumbs + prev/next) */
@@ -1700,7 +1763,7 @@ body.tool-app-body {
 
 .testimony-cta-label {
   margin: 0 0 0.4rem;
-  color: var(--text);
+  color: var(--text-light);
 }
 
 .testimony-cta-actions {
@@ -1719,19 +1782,19 @@ body.tool-app-body {
 
 .testimony-cta-btn.secondary {
   background-color: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  color: var(--brand-pop);
+  border: 1px solid var(--brand-pop);
 }
 
 .testimony-cta-btn.secondary:hover {
-  background-color: var(--accent);
-  color: #000;
+  background-color: var(--brand-pop);
+  color: var(--text-on-gold);
 }
 
 .testimony-cta-note {
   margin: 0;
   font-size: 0.8rem;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 /* Collapsed states: only show the circle, hide the panel body */
@@ -1791,19 +1854,19 @@ body.tool-app-body {
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 999px;
-  border: 2px solid var(--accent);
-  background: #000;
+  border: 2px solid var(--brand-pop);
+  background: var(--panel-trans-strong);
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+  box-shadow: var(--shadow);
 }
 
 .bible-cta-icon {
   font-size: 1.5rem;
   line-height: 1;
-  color: var(--accent);
+  color: var(--brand-pop);
 }
 
 /* Slightly tuck on mobile */
@@ -1836,7 +1899,7 @@ body.tool-app-body {
     rgba(251, 191, 36, 0.18) 45%,
     rgba(251, 191, 36, 0) 100%
   );
-  border-bottom: 1px solid var(--accent);
+  border-bottom: 1px solid var(--brand-pop);
   pointer-events: none;
   z-index: -1;
 }
@@ -1857,10 +1920,10 @@ body.tool-app-body {
 
 /* Make the tab row sit in a dark bar over the gradient */
 .site-header .nav-links {
-  border: 1px solid var(--accent);
+  border: 1px solid var(--brand-pop);
   border-radius: 0.75rem;
   padding: 0.25rem 0.5rem;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--panel-trans-strong);
   box-sizing: border-box;
 }
 
@@ -1871,19 +1934,19 @@ body.tool-app-body {
   gap: 0.35rem;
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid var(--accent);
-  color: var(--accent);
+  background: var(--panel-trans-strong);
+  border: 1px solid var(--brand-pop);
+  color: var(--brand-pop);
   text-decoration: none;
   font-size: 0.9rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
+  box-shadow: var(--shadow);
   white-space: nowrap;
 }
 
 .site-header .site-account-pill:hover,
 .site-header .site-account-pill:focus-visible {
-  background: rgba(0, 0, 0, 1);
-  color: var(--accent);
+  background: var(--panel-trans-strong);
+  color: var(--brand-pop);
 }
 
 /* Circular avatar inside the pill */
@@ -1895,8 +1958,8 @@ body.tool-app-body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(222, 176, 0, 0.9);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  background: var(--brand-gold-trans-card);
+  box-shadow: var(--shadow);
 }
 
 .site-account-initial {
@@ -1989,9 +2052,9 @@ body.tool-app-body {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: var(--panel);
+    background-color: var(--panel-trans-strong);
     padding: 0.5rem;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--panel);
   }
 
   .site-header.nav-open .nav-links {
@@ -2016,8 +2079,8 @@ body.tool-app-body {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 999px;
-  background: #111;
-  color: #f9f9f9;
+  background: var(--panel);
+  color: var(--text-light);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2068,7 +2131,7 @@ body.tool-app-body {
 
 .mt-divider {
   border: none;
-  border-top: 1px solid rgba(5);
+  border-top: 1px solid var(--panel);
   margin: 0 0 0.75rem;
 }
 
@@ -2082,15 +2145,15 @@ body.tool-app-body {
 .site-header .nav-links .nav-button {
   border-radius: 999px;
   padding: 0.25rem 0.9rem;
-  border: 1px solid #deb000;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #fefefe;
+  border: var(--brand-pop);
+  background-color: var(--panel-trans-strong);
+  color: var(--text-light);
 }
 
 .site-header .nav-links .nav-button:hover,
 .site-header .nav-links .nav-button.is-active {
-  border-color: #deb000;
-  background-color: rgba(0, 0, 0, 0.1);
+  border-color: var(--brand-pop);
+  background-color: var(--panel-trans-strong);
 }
 
 
@@ -2103,21 +2166,21 @@ body.tool-app-body {
   padding: 0.25rem 0.75rem;
   margin-right: 0.5rem;
   border-radius: 999px;
-  border: 1px solid var(--accent);
-  background: rgba(0, 0, 0, 0.9);
-  color: var(--accent);
+  border: 1px solid var(--brand-pop);
+  background: var(--panel-trans-strong);
+  color: var(--brand-pop);
   font-size: 0.85rem;
   text-decoration: none;
   white-space: nowrap;
   gap: 0.4rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
+  box-shadow: var(--shadow);
   opacity: 0.9;
   transition: background 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
 }
 
 .site-header-search-link:hover,
 .site-header-search-link:focus-visible {
-  background: rgba(0, 0, 0, 1);
+  background: var(--panel-trans-strong);
   opacity: 1;
   transform: translateY(-1px);
 }
