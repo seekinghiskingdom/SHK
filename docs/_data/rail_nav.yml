@@ -1,0 +1,394 @@
+# _data/rail_nav.yml
+# v0: seeded from sitemap-rail.xml, curated for navigation
+# - "icon" is a token; we’ll map it to actual SVG/emoji in the rail.
+# - "keywords" is for the rail search (title + a few synonyms).
+
+sections:
+  - id: home
+    label: Home
+    icon: home
+    url: "/"
+    keywords: ["home", "start", "welcome"]
+    children: []
+
+  - id: daily
+    label: Daily
+    icon: calendar
+    url: "/daily/"
+    keywords: ["daily", "verse", "proverb", "game", "trivia"]
+    children:
+      - id: daily-overview
+        label: Daily Overview
+        url: "/daily/"
+        keywords: ["overview", "daily home"]
+      - id: daily-verse
+        label: Daily Verse
+        url: "/daily/verse/"
+        keywords: ["verse"]
+      - id: daily-proverb
+        label: Daily Proverb
+        url: "/daily/proverb/"
+        keywords: ["proverb", "wisdom"]
+      - id: daily-game
+        label: Daily Game
+        url: "/daily/game/"
+        keywords: ["game", "biblele", "trivia"]
+      - id: daily-trivia
+        label: Daily Trivia
+        url: "/daily/trivia/"
+        keywords: ["trivia", "quiz"]
+
+  - id: bible
+    label: Bible
+    icon: bible
+    url: "/literature/bible/"
+    keywords: ["bible", "scripture", "languages", "strongs", "translations"]
+    children:
+      - id: bible-overview
+        label: Bible Overview
+        url: "/literature/bible/"
+        keywords: ["overview", "summary"]
+      - id: bible-languages
+        label: Bible Languages
+        url: "/literature/bible/languages/"
+        keywords: ["languages", "greek", "hebrew", "aramaic"]
+      - id: bible-languages-greek
+        label: Greek
+        url: "/literature/bible/languages/greek/"
+        keywords: ["greek", "koine"]
+      - id: bible-languages-hebrew
+        label: Hebrew
+        url: "/literature/bible/languages/hebrew/"
+        keywords: ["hebrew"]
+      - id: bible-languages-aramaic
+        label: Aramaic
+        url: "/literature/bible/languages/aramaic/"
+        keywords: ["aramaic"]
+      - id: bible-strongs
+        label: Strong’s Index
+        url: "/literature/bible/strongs/"
+        keywords: ["strongs", "lexicon"]
+      - id: bible-strongs-greek
+        label: Strong’s Greek
+        url: "/literature/bible/strongs/greek/"
+        keywords: ["strongs", "greek", "lexicon"]
+      - id: bible-strongs-hebrew
+        label: Strong’s Hebrew
+        url: "/literature/bible/strongs/hebrew/"
+        keywords: ["strongs", "hebrew", "lexicon"]
+      - id: bible-translations
+        label: Translations Overview
+        url: "/literature/bible/translations/"
+        keywords: ["translations", "versions"]
+      - id: bible-translations-en
+        label: English Translations
+        url: "/literature/bible/translations/en/"
+        keywords: ["english", "translations"]
+      - id: bible-translations-grc
+        label: Greek Texts
+        url: "/literature/bible/translations/grc/"
+        keywords: ["greek", "texts"]
+      - id: bible-translations-he
+        label: Hebrew Texts
+        url: "/literature/bible/translations/he/"
+        keywords: ["hebrew", "tanakh"]
+      # Note: individual translation pages like /asv/, /kjv/ etc. can be added here later if you want them in the rail.
+
+  - id: tools-games
+    label: Tools & Games
+    icon: tools
+    url: "/tools-games/"
+    keywords: ["tools", "games", "pps", "scs", "biblele"]
+    children:
+      - id: tools-games-overview
+        label: Tools & Games Overview
+        url: "/tools-games/"
+        keywords: ["overview"]
+      - id: tools-games-games
+        label: All Games
+        url: "/tools-games/games/"
+        keywords: ["games"]
+      - id: tools-games-games-daily
+        label: BibleLE & Daily Games
+        url: "/tools-games/games/biblele/"
+        keywords: ["biblele", "daily game"]
+      - id: tools-games-games-trivia
+        label: Trivia Games
+        url: "/tools-games/games/trivia/"
+        keywords: ["trivia", "quiz"]
+      - id: tools-games-games-word
+        label: Word Games
+        url: "/tools-games/games/word/"
+        keywords: ["word", "puzzle"]
+      - id: tools-games-games-group
+        label: Group Games
+        url: "/tools-games/games/group/"
+        keywords: ["group", "party", "small group"]
+      - id: tools-games-games-escape
+        label: Escape / Puzzle Games
+        url: "/tools-games/games/escape/"
+        keywords: ["escape", "puzzle"]
+      - id: tools-games-tools
+        label: All Tools
+        url: "/tools-games/tools/"
+        keywords: ["tools", "study tools"]
+      - id: tools-games-tools-bible-viewer
+        label: Bible Viewer
+        url: "/tools-games/tools/bible-viewer/"
+        keywords: ["bible viewer", "reader"]
+      - id: tools-games-tools-infinite-bible
+        label: Infinite Bible
+        url: "/tools-games/tools/infinite-bible/"
+        keywords: ["infinite bible", "notes"]
+      - id: tools-games-tools-infinite-bible-bible
+        label: Infinite Bible – Bible Mode
+        url: "/tools-games/tools/infinite-bible/bible/"
+        keywords: ["bible mode"]
+      - id: tools-games-tools-infinite-bible-notes
+        label: Infinite Bible – Notes Mode
+        url: "/tools-games/tools/infinite-bible/notes/"
+        keywords: ["notes mode"]
+      - id: tools-games-tools-pps
+        label: Proverb Pair Search (PPS)
+        url: "/tools-games/tools/pps/"
+        keywords: ["pps", "proverb pair search"]
+      - id: tools-games-tools-pps-bubble
+        label: PPS Bubble View
+        url: "/tools-games/tools/pps/bubble/"
+        keywords: ["pps", "bubble"]
+      - id: tools-games-tools-scs
+        label: Strong’s Concordance Search (SCS)
+        url: "/tools-games/tools/scs/"
+        keywords: ["scs", "strongs search"]
+      - id: tools-games-tools-study
+        label: Study Tools
+        url: "/tools-games/tools/study/"
+        keywords: ["study"]
+      - id: tools-games-tools-find-community
+        label: Find Community Tool
+        url: "/tools-games/tools/find-community/"
+        keywords: ["find community"]
+      - id: tools-games-tools-map-tool
+        label: Map Tool
+        url: "/tools-games/tools/map-tool/"
+        keywords: ["map"]
+      - id: tools-games-tools-ministry
+        label: Ministry Tools
+        url: "/tools-games/tools/ministry/"
+        keywords: ["ministry"]
+      - id: tools-games-tools-blessings-jar
+        label: Blessings Jar (old)
+        url: "/tools-games/tools/blessings-jar-old/"
+        keywords: ["blessings jar"]
+
+  - id: testimonies
+    label: Testimonies
+    icon: testimony
+    url: "/testimony/"
+    keywords: ["testimony", "stories", "wall"]
+    children:
+      - id: testimony-overview
+        label: Testimony Overview
+        url: "/testimony/"
+        keywords: ["overview"]
+      - id: testimony-add
+        label: Add Testimony
+        url: "/testimony/add/"
+        keywords: ["add", "submit"]
+      - id: testimony-wall
+        label: Testimony Wall
+        url: "/testimony/wall/"
+        keywords: ["wall", "all testimonies"]
+
+  - id: help
+    label: Help
+    icon: help
+    url: "/help/"
+    keywords: ["help", "support", "faq", "feedback"]
+    children:
+      - id: help-overview
+        label: Help Overview
+        url: "/help/"
+        keywords: ["overview"]
+      - id: help-start-here
+        label: Start Here
+        url: "/help/start-here/"
+        keywords: ["start", "new"]
+      - id: help-contact
+        label: Contact
+        url: "/help/contact/"
+        keywords: ["contact", "email"]
+      - id: help-crisis
+        label: Crisis & Immediate Help
+        url: "/help/crisis/"
+        keywords: ["crisis", "emergency"]
+      - id: help-faqs
+        label: FAQs
+        url: "/help/faqs/"
+        keywords: ["faq", "questions"]
+      - id: help-guides
+        label: Guides
+        url: "/help/guides/"
+        keywords: ["guides", "how to"]
+      - id: help-feedback
+        label: Feedback
+        url: "/help/feedback/"
+        keywords: ["feedback"]
+      - id: help-find-community
+        label: Find Community
+        url: "/help/find-community/"
+        keywords: ["community", "find"]
+      - id: help-prayer-testimony
+        label: Prayer & Testimony Requests
+        url: "/help/prayer-testimony/"
+        keywords: ["prayer", "testimony"]
+      - id: help-technical
+        label: Technical Help
+        url: "/help/technical/"
+        keywords: ["technical", "bug"]
+
+  - id: community
+    label: Community
+    icon: community
+    url: "/community/"
+    keywords: ["community", "fellowship", "discipleship", "worship"]
+    children:
+      - id: community-overview
+        label: Community Overview
+        url: "/community/"
+        keywords: ["overview"]
+      - id: community-blessings
+        label: Blessings
+        url: "/community/blessings/"
+        keywords: ["blessings"]
+      - id: community-connect
+        label: Connect
+        url: "/community/connect/"
+        keywords: ["connect"]
+      - id: community-discipleship
+        label: Discipleship
+        url: "/community/discipleship/"
+        keywords: ["discipleship"]
+      - id: community-fellowship
+        label: Fellowship
+        url: "/community/fellowship/"
+        keywords: ["fellowship"]
+      - id: community-find-community
+        label: Find Community
+        url: "/community/find-community/"
+        keywords: ["community", "find"]
+      - id: community-prayer
+        label: Prayer
+        url: "/community/prayer/"
+        keywords: ["prayer"]
+      - id: community-worship
+        label: Worship
+        url: "/community/worship/"
+        keywords: ["worship"]
+
+  - id: literature
+    label: Literature
+    icon: book
+    url: "/literature/"
+    keywords: ["literature", "books", "studies", "historical"]
+    children:
+      - id: literature-overview
+        label: Literature Overview
+        url: "/literature/"
+        keywords: ["overview"]
+      - id: literature-articles
+        label: Articles
+        url: "/literature/articles/"
+        keywords: ["articles"]
+      - id: literature-books
+        label: Books
+        url: "/literature/books/"
+        keywords: ["books"]
+      - id: literature-children
+        label: Children’s Resources
+        url: "/literature/children/"
+        keywords: ["children"]
+      - id: literature-commentaries
+        label: Commentaries
+        url: "/literature/commentaries/"
+        keywords: ["commentary"]
+      - id: literature-devotionals
+        label: Devotionals
+        url: "/literature/devotionals/"
+        keywords: ["devotional"]
+      - id: literature-studies
+        label: Bible Studies
+        url: "/literature/studies/"
+        keywords: ["studies"]
+      - id: literature-historical
+        label: Historical Writings
+        url: "/literature/historical/"
+        keywords: ["historical", "fathers", "creeds"]
+        children:
+          - id: literature-historical-creeds
+            label: Creeds
+            url: "/literature/historical/creeds/"
+            keywords: ["creeds"]
+          - id: literature-historical-creeds-apostles
+            label: Apostles’ Creed
+            url: "/literature/historical/creeds/apostles/"
+            keywords: ["apostles creed"]
+          - id: literature-historical-creeds-nicene
+            label: Nicene Creed
+            url: "/literature/historical/creeds/nicene/"
+            keywords: ["nicene creed"]
+          - id: literature-historical-creeds-chalcedonian
+            label: Chalcedonian Creed
+            url: "/literature/historical/creeds/chalcedonian/"
+            keywords: ["chalcedonian creed"]
+          - id: literature-historical-creeds-athanasian
+            label: Athanasian Creed
+            url: "/literature/historical/creeds/athanasian/"
+            keywords: ["athanasian creed"]
+          - id: literature-historical-devotion
+            label: Historical Devotions
+            url: "/literature/historical/devotion/"
+            keywords: ["devotion"]
+          - id: literature-historical-fathers
+            label: Church Fathers
+            url: "/literature/historical/fathers/"
+            keywords: ["fathers"]
+          - id: literature-historical-other
+            label: Other Historical Texts
+            url: "/literature/historical/other/"
+            keywords: ["historical", "other"]
+      - id: literature-index
+        label: Literature Index
+        url: "/literature/index/"
+        keywords: ["index"]
+      - id: literature-misc
+        label: Miscellaneous
+        url: "/literature/misc/"
+        keywords: ["misc"]
+
+  - id: resources
+    label: Resources
+    icon: resources
+    url: "/resources/"
+    keywords: ["resources", "ministries", "online", "free bible"]
+    children:
+      - id: resources-overview
+        label: Resources Overview
+        url: "/resources/"
+        keywords: ["overview"]
+      - id: resources-free-bible
+        label: Free Bible
+        url: "/resources/free-bible/"
+        keywords: ["free bible"]
+      - id: resources-faq
+        label: Resources FAQ
+        url: "/resources/faq/"
+        keywords: ["faq"]
+      - id: resources-children
+        label: Children’s Resources
+        url: "/resources/children/"
+        keywords: ["children"]
+      - id: resources-ministries
+        label: Ministries Directory
+        url: "/resources/ministries/"
+        keywords:

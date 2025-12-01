@@ -119,8 +119,8 @@ html {
 }
 
 body {
-  background: var(--bg-light-page);   /* can be overridden by page-specific classes */
-  color: var(--text-dark);            /* main text color for light backgrounds */
+  background: var(--bg-dark-page);   /* can be overridden by page-specific classes */
+  color: var(--text-light);            /* main text color for light backgrounds */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
