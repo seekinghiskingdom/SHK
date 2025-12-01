@@ -277,60 +277,60 @@ window.SHK_getSupabaseClient = function () {
 
 
 // 10) Header account pill: avatar when logged in, "Sign in" when logged out
-(() => {
-  const pill = document.querySelector('.site-header-account-pill');
-  if (!pill) return;
+// (() => {
+//   const pill = document.querySelector('.site-header-account-pill');
+//   if (!pill) return;
 
-  const labelEl   = pill.querySelector('.site-header-account-label');
-  const initialEl = document.getElementById('site-account-initial');
-  const imgEl     = document.getElementById('site-account-avatar-img');
+//   const labelEl   = pill.querySelector('.site-header-account-label');
+//   const initialEl = document.getElementById('site-account-initial');
+//   const imgEl     = document.getElementById('site-account-avatar-img');
 
-  const base = window.SHK_BASEURL || '';
+//   const base = window.SHK_BASEURL || '';
 
-  // Default: signed-out look
-  if (labelEl)   labelEl.textContent = 'Sign in';
-  if (initialEl) initialEl.textContent = '✝';
-  if (imgEl)     imgEl.style.display = 'none';
-  pill.href = `${base}/account/sign-in/`;
+//   // Default: signed-out look
+//   if (labelEl)   labelEl.textContent = 'Sign in';
+//   if (initialEl) initialEl.textContent = '✝';
+//   if (imgEl)     imgEl.style.display = 'none';
+//   pill.href = `${base}/account/sign-in/`;
 
-  const supabase = window.SHK_getSupabaseClient();
-  if (!supabase) return;
+//   const supabase = window.SHK_getSupabaseClient();
+//   if (!supabase) return;
 
-  supabase.auth.getUser().then(({ data, error }) => {
-    if (error || !data || !data.user) return;
+//   supabase.auth.getUser().then(({ data, error }) => {
+//     if (error || !data || !data.user) return;
 
-    const user = data.user;
-    const meta = user.user_metadata || {};
+//     const user = data.user;
+//     const meta = user.user_metadata || {};
 
-    const avatarKey   = meta.avatar_key;
-    const displayName = meta.display_name;
-    const handle      = meta.handle || null;
-    const role        = meta.role || 'user';
-    const email       = user.email || '';
+//     const avatarKey   = meta.avatar_key;
+//     const displayName = meta.display_name;
+//     const handle      = meta.handle || null;
+//     const role        = meta.role || 'user';
+//     const email       = user.email || '';
 
-    window.SHK_ROLE   = role;
-    window.SHK_HANDLE = handle;
+//     window.SHK_ROLE   = role;
+//     window.SHK_HANDLE = handle;
 
-    let initial = '✝';
-    if (displayName && displayName.trim()) initial = displayName.trim()[0].toUpperCase();
-    else if (email)                         initial = email[0].toUpperCase();
+//     let initial = '✝';
+//     if (displayName && displayName.trim()) initial = displayName.trim()[0].toUpperCase();
+//     else if (email)                         initial = email[0].toUpperCase();
 
-    pill.href = `${base}/account/`;
-    if (labelEl)   labelEl.textContent = '';
+//     pill.href = `${base}/account/`;
+//     if (labelEl)   labelEl.textContent = '';
 
-    if (avatarKey && window.SHK_getAvatarUrlByKey) {
-      const url = window.SHK_getAvatarUrlByKey(avatarKey);
-      if (url && imgEl) {
-        imgEl.src = url;
-        imgEl.style.display = 'block';
-        if (initialEl) initialEl.textContent = '';
-      }
-    } else {
-      if (imgEl)     imgEl.style.display = 'none';
-      if (initialEl) initialEl.textContent = initial;
-    }
-  });
-})();
+//     if (avatarKey && window.SHK_getAvatarUrlByKey) {
+//       const url = window.SHK_getAvatarUrlByKey(avatarKey);
+//       if (url && imgEl) {
+//         imgEl.src = url;
+//         imgEl.style.display = 'block';
+//         if (initialEl) initialEl.textContent = '';
+//       }
+//     } else {
+//       if (imgEl)     imgEl.style.display = 'none';
+//       if (initialEl) initialEl.textContent = initial;
+//     }
+//   });
+// })();
 
 
 
