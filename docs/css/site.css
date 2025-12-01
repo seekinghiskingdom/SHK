@@ -548,18 +548,318 @@ button:focus-visible {
 
 
 /* 5. Layout & Chrome */
-/* 5.1 Page Shell (main .page, .page-section, containers) */
+/* 5.1 Page Shell (main .page, .page-section, containers) ========================================================================== */ 
+.page-shell {
+  min-height: 100vh;
+  background: var(--bg-light-page);
+  color: var(--text-dark);
+}
 
-/* 5.2 Site Header */
-/* 5.2.1 Header Shell (.site-header, logo area) */
-/* 5.2.2 Primary Nav (desktop links, nav buttons) */
+/* Generic vertical sections with optional alternating background */
+.page-section {
+  padding: 2rem 1.25rem;
+}
+
+.page-section-alt {
+  padding: 2rem 1.25rem;
+  background: var(--bg-surface-alt);
+}
+
+/* Inner content width wrapper */
+.page-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 5.2 Site Header ========================================================================== */
+
+/* 5.2.1 Header Shell (.site-header-bar, .site-header-inner) */
+
+.site-header-bar {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  box-shadow: var(--shadow-soft);
+}
+
+.site-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Logo / brand area */
+
+.site-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.site-header-logo-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 20%, var(--brand-light), var(--brand-cross));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+/* 5.2.2 Primary Nav (desktop) */
+
+.site-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: 1.5rem;
+  flex: 1 1 auto;
+}
+
+.site-header-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-header-link {
+  font-size: 0.9rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  color: var(--text-light);
+}
+
+.site-header-link:hover {
+  background: rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.site-header-link.is-active {
+  background: var(--brand-gold-trans-btn);
+  color: var(--brand-light);
+}
+
 /* 5.2.3 Mobile Nav / Hamburger */
+
+.site-header-toggle {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.5rem;
+  padding: 0.25rem 0.4rem;
+  line-height: 1;
+  display: none; /* hidden on desktop */
+}
+
+/* Mobile menu panel */
+
+.site-header-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem 0.75rem;
+  background: var(--bg-dark);
+}
+
+.site-header-menu.is-open {
+  display: flex;
+}
+
 /* 5.2.4 Search in Header */
+
+.site-header-search {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.site-header-search input[type="search"] {
+  max-width: 180px;
+}
+
 /* 5.2.5 Account Pill / Auth Controls */
 
-/* 5.3 Secondary Navigation / Tabs (if any shared patterns) */
-/* 5.4 Site Footer (global footer styles) */
-/* 5.5 Shared Hero / Banner Layouts */
+.site-header-account {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.75rem;
+}
+
+.account-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+.account-pill img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive behavior */
+
+@media (max-width: 768px) {
+  .site-header-inner {
+    flex-wrap: wrap;
+  }
+
+  .site-header-nav {
+    display: none;
+  }
+
+  .site-header-toggle {
+    display: inline-flex;
+  }
+
+  .site-header-menu {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+
+/* 5.3 Secondary Navigation / Tabs ========================================================================== */
+
+.tabs {
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 1rem;
+}
+
+.tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tabs-link {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.tabs-link:hover {
+  background: rgba(0, 0, 0, 0.03);
+  text-decoration: none;
+}
+
+.tabs-link.is-active {
+  background: var(--brand-gold-trans-btn);
+  color: var(--text-dark);
+}
+
+
+/* 5.4 Site Footer ========================================================================== */
+
+.site-footer {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  padding: 1.5rem 1rem 1.75rem;
+  margin-top: 2rem;
+}
+
+.site-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.site-footer-brand {
+  max-width: 320px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.site-footer-brand-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-light);
+}
+
+.site-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.site-footer-link {
+  color: var(--text-muted);
+}
+
+.site-footer-link:hover {
+  color: var(--brand-light);
+  text-decoration: none;
+}
+
+.site-footer-meta {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .site-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* 5.5 Shared Hero / Banner Layouts ========================================================================== */
+
+.page-hero {
+  padding: 2.5rem 1.25rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.4)
+  ), var(--bg-dark);
+  color: var(--text-light);
+}
+
+.page-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-hero-title {
+  font-size: 1.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-hero-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.page-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
 
 
 /* 6. Feature & Page Modules */
@@ -569,6 +869,182 @@ button:focus-visible {
 /* 6.1.2 Home Feature Rows (tiles, daily teaser, etc.) */
 
 /* 6.2 Hubs & Collections */
+
+/* 6.2.1 === Generic hub layout (for Resources, Community, etc.) === */
+/* Whole hub page content */
+.hub-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Title + intro spacing */
+.hub-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hub-page p.hub-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  max-width: 60rem;
+}
+
+/* Gold divider under the title */
+.hub-divider {
+  border: none;
+  border-top: 2px solid var(--brand-gold);
+  margin: 0.75rem 0 1.5rem;
+}
+
+/* Grid that arranges tiles nicely */
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card style for hub tiles (does NOT touch home tiles) */
+.hub-tile {
+  display: block;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  background: var(--brand-gold);
+  color: inherit;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hub-tile:hover,
+.hub-tile:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* Title + description inside each tile */
+.hub-tile h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.hub-tile p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--panel-trans-strong);
+}
+
+
+
+/* 6.2.2=== Collection pages: list-style cards === */
+
+.collection-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.collection-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.collection-page p.collection-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  max-width: 60rem;
+}
+
+/* Optional section headings inside a collection */
+.collection-section {
+  margin-bottom: 1.75rem;
+}
+
+.collection-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+/* Vertical list of long, skinny "tiles" */
+.collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Each item is a long card spanning the width */
+.collection-item {
+  display: block;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--brand-gold);
+  color: inherit;
+  box-shadow: var(--shadow);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.collection-item:hover,
+.collection-item:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.collection-item h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.collection-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--panel-trans-strong);
+}
+
+/* Bottom nav for collection pages */
+.collection-nav {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+
+/* 6.2.3 === Generic content pages === */
+
+.content-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.content-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.content-page p.content-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  max-width: 60rem;
+}
+
+/* Main body text area */
+.content-body {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Optional: smaller subheadings inside body */
+.content-body h2,
+.content-body h3 {
+  margin-top: 1.5rem;
+}
+
+/* Bottom nav for simple pages */
+.content-nav {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+
 /* 6.2.1 Tools Hub */
 /* 6.2.2 Testimony Hub */
 /* 6.2.3 Daily Hub (archive of daily tools) */
@@ -1073,180 +1549,6 @@ select:focus {
 
 /* ================= Hub and Collection Pages ================= */
 
-/* === Generic hub layout (for Resources, Community, etc.) === */
-
-/* Whole hub page content */
-.hub-page {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
-}
-
-/* Title + intro spacing */
-.hub-page h1 {
-  margin-bottom: 0.25rem;
-}
-
-.hub-page p.hub-intro {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: var(--text-light);
-  max-width: 60rem;
-}
-
-/* Gold divider under the title */
-/* .hub-divider {
-  border: none;
-  border-top: 2px solid var(--brand-gold);
-  margin: 0.75rem 0 1.5rem;
-} */
-
-/* Grid that arranges tiles nicely */
-.hub-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-/* Card style for hub tiles (does NOT touch home tiles) */
-.hub-tile {
-  display: block;
-  text-decoration: none;
-  border-radius: 0.75rem;
-  padding: 1.25rem;
-  background: var(--brand-gold);
-  color: inherit;
-  box-shadow: var(--shadow);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.hub-tile:hover,
-.hub-tile:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
-}
-
-/* Title + description inside each tile */
-.hub-tile h2 {
-  margin: 0 0 0.4rem;
-  font-size: 1.1rem;
-}
-
-.hub-tile p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--panel-trans-strong);
-}
-
-
-
-/* === Collection pages: list-style cards === */
-
-.collection-page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
-}
-
-.collection-page h1 {
-  margin-bottom: 0.25rem;
-}
-
-.collection-page p.collection-intro {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: var(--text-light);
-  max-width: 60rem;
-}
-
-/* Optional section headings inside a collection */
-.collection-section {
-  margin-bottom: 1.75rem;
-}
-
-.collection-section h2 {
-  margin-bottom: 0.75rem;
-}
-
-/* Vertical list of long, skinny "tiles" */
-.collection-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-/* Each item is a long card spanning the width */
-.collection-item {
-  display: block;
-  text-decoration: none;
-  border-radius: 0.75rem;
-  padding: 0.9rem 1.1rem;
-  background: var(--brand-gold);
-  color: inherit;
-  box-shadow: var(--shadow);
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
-}
-
-.collection-item:hover,
-.collection-item:focus-visible {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow);
-}
-
-.collection-item h3 {
-  margin: 0 0 0.25rem;
-  font-size: 1rem;
-}
-
-.collection-item p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--panel-trans-strong);
-}
-
-/* Bottom nav for collection pages */
-.collection-nav {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-
-/* === Generic content pages === */
-
-.content-page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
-}
-
-.content-page h1 {
-  margin-bottom: 0.25rem;
-}
-
-.content-page p.content-intro {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: var(--text-light);
-  max-width: 60rem;
-}
-
-/* Main body text area */
-.content-body {
-  margin-top: 1.5rem;
-  line-height: 1.6;
-}
-
-/* Optional: smaller subheadings inside body */
-.content-body h2,
-.content-body h3 {
-  margin-top: 1.5rem;
-}
-
-/* Bottom nav for simple pages */
-.content-nav {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
 
 /* ======================
    Header: hamburger nav
@@ -1307,17 +1609,7 @@ select:focus {
 
 
 
-/* Global background image layer for all pages */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: url("/img/SHK-Path.webp") center/cover no-repeat;
-  filter: blur(6px);
-  transform: scale(1.05);   /* avoid blur edges */
-  z-index: -1;              /* behind all content */
-  opacity: 0.35;            /* tone it down */
-}
+
 
 body {
   position: relative;       /* ensure stacking context above ::before */
@@ -1334,16 +1626,7 @@ body {
 /* Shared blurred background for account-related pages */
 /* Content and wording assisted by AI (-AI) */
 
-.account-bg-page::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: url("/img/SHK-Path.webp") center/cover no-repeat;
-  filter: blur(6px);
-  transform: scale(1.05);
-  z-index: -1;
-  opacity: 0.35;
-}
+
 
 /* Make sure account pages sit above the blur and have padding */
 .account-bg-page {
