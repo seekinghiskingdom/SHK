@@ -165,6 +165,13 @@ blockquote {
   color: var(--text-muted);
 }
 
+/* Horizontal Gold Line */
+hr {
+  border: none;
+  border-top: 2px solid var(--brand-gold);
+  margin: 20px 0;
+}
+
 
 /* 2.4 Links (a, a:hover, a:focus-visible) */
 a {
@@ -212,6 +219,15 @@ svg {
   display: inline-block;
   max-width: none;
 }
+
+/* Rounded Image Class */
+.rounded-img {
+  border-radius: 50%; 
+  width: 100px;  /* set width and height */
+  height: 100px;
+  object-fit: cover; /* ensures the image fills the circle */
+}
+
 
 
 /* 2.7 Form Primitives (input, select, textarea, base button) */
@@ -285,6 +301,21 @@ button:focus-visible {
 .text-muted  { color: var(--text-muted); }
 .text-verse  { color: var(--acc-verse); }
 .text-link   { color: var(--acc-link); }
+
+
+.highlight-gold {
+  color: var(--brand-gold);
+  font-weight: 600;
+}
+
+.highlight-link {
+  color: var(--brand-gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+.highlight-link:hover {
+  text-decoration: underline;
+}
 
 
 /* 3.3 Visibility / Accessibility */
@@ -545,1857 +576,41 @@ button:focus-visible {
   gap: 0.5rem;
 }
 
+/* 4.6.1 Bible Home CTA */
+/* ================= Bottom-left Bible quick link CTA ================= */
 
-
-/* 5. Layout & Chrome */
-/* 5.1 Page Shell (main .page, .page-section, containers) ========================================================================== */ 
-.page-shell {
-  min-height: 100vh;
-  background: var(--bg-light-page);
-  color: var(--text-dark);
-}
-
-/* Generic vertical sections with optional alternating background */
-.page-section {
-  padding: 2rem 1.25rem;
-}
-
-.page-section-alt {
-  padding: 2rem 1.25rem;
-  background: var(--bg-surface-alt);
-}
-
-/* Inner content width wrapper */
-.page-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* 5.2 Site Header ========================================================================== */
-
-/* 5.2.1 Header Shell (.site-header-bar, .site-header-inner) */
-
-.site-header-bar {
-  background: var(--bg-dark);
-  color: var(--text-light);
-  box-shadow: var(--shadow-soft);
-}
-
-.site-header-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-/* Logo / brand area */
-
-.site-header-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
-.site-header-logo-mark {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 20%, var(--brand-light), var(--brand-cross));
+.bible-cta {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 999;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 999px;
+  border: 2px solid var(--brand-pop);
+  background: var(--panel-trans-strong);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-light);
-  font-size: 0.85rem;
-}
-
-/* 5.2.2 Primary Nav (desktop) */
-
-.site-header-nav {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-left: 1.5rem;
-  flex: 1 1 auto;
-}
-
-.site-header-links {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.site-header-link {
-  font-size: 0.9rem;
-  padding: 0.35rem 0.55rem;
-  border-radius: 999px;
-  color: var(--text-light);
-}
-
-.site-header-link:hover {
-  background: rgba(0, 0, 0, 0.25);
   text-decoration: none;
+  box-shadow: var(--shadow);
 }
 
-.site-header-link.is-active {
-  background: var(--brand-gold-trans-btn);
-  color: var(--brand-light);
-}
-
-/* 5.2.3 Mobile Nav / Hamburger */
-
-.site-header-toggle {
-  margin-left: auto;
-  background: transparent;
-  border: none;
-  color: var(--text-light);
+.bible-cta-icon {
   font-size: 1.5rem;
-  padding: 0.25rem 0.4rem;
   line-height: 1;
-  display: none; /* hidden on desktop */
-}
-
-/* Mobile menu panel */
-
-.site-header-menu {
-  display: none;
-  flex-direction: column;
-  gap: 0.4rem;
-  padding: 0.4rem 1rem 0.75rem;
-  background: var(--bg-dark);
-}
-
-.site-header-menu.is-open {
-  display: flex;
-}
-
-/* 5.2.4 Search in Header */
-
-.site-header-search {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.site-header-search input[type="search"] {
-  max-width: 180px;
-}
-
-/* 5.2.5 Account Pill / Auth Controls */
-
-.site-header-account {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: 0.75rem;
-}
-
-.account-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.35);
-  color: var(--text-light);
-  font-size: 0.85rem;
-}
-
-.account-pill img {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Responsive behavior */
-
-@media (max-width: 768px) {
-  .site-header-inner {
-    flex-wrap: wrap;
-  }
-
-  .site-header-nav {
-    display: none;
-  }
-
-  .site-header-toggle {
-    display: inline-flex;
-  }
-
-  .site-header-menu {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-  }
-}
-
-
-/* 5.3 Secondary Navigation / Tabs ========================================================================== */
-
-.tabs {
-  border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 1rem;
-}
-
-.tabs-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tabs-link {
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.tabs-link:hover {
-  background: rgba(0, 0, 0, 0.03);
-  text-decoration: none;
-}
-
-.tabs-link.is-active {
-  background: var(--brand-gold-trans-btn);
-  color: var(--text-dark);
-}
-
-
-/* 5.4 Site Footer ========================================================================== */
-
-.site-footer {
-  background: var(--bg-dark);
-  color: var(--text-light);
-  padding: 1.5rem 1rem 1.75rem;
-  margin-top: 2rem;
-}
-
-.site-footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.site-footer-brand {
-  max-width: 320px;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.site-footer-brand-title {
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-  color: var(--text-light);
-}
-
-.site-footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.5rem;
-  font-size: 0.9rem;
-}
-
-.site-footer-link {
-  color: var(--text-muted);
-}
-
-.site-footer-link:hover {
-  color: var(--brand-light);
-  text-decoration: none;
-}
-
-.site-footer-meta {
-  margin-top: 1rem;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-@media (max-width: 768px) {
-  .site-footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-
-/* 5.5 Shared Hero / Banner Layouts ========================================================================== */
-
-.page-hero {
-  padding: 2.5rem 1.25rem 2rem;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.4)
-  ), var(--bg-dark);
-  color: var(--text-light);
-}
-
-.page-hero-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.page-hero-title {
-  font-size: 1.9rem;
-  margin-bottom: 0.25rem;
-}
-
-.page-hero-subtitle {
-  font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
-}
-
-.page-hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-
-/* 6. Feature & Page Modules */
-
-/* 6.1 Home / Landing Page */
-/* 6.1.1 Home Hero (intro copy, hero CTA) */
-/* 6.1.2 Home Feature Rows (tiles, daily teaser, etc.) */
-
-/* 6.2 Hubs & Collections */
-
-/* 6.2.1 === Generic hub layout (for Resources, Community, etc.) === */
-/* Whole hub page content */
-.hub-page {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
-}
-
-/* Title + intro spacing */
-.hub-page h1 {
-  margin-bottom: 0.25rem;
-}
-
-.hub-page p.hub-intro {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: var(--text-light);
-  max-width: 60rem;
-}
-
-/* Gold divider under the title */
-.hub-divider {
-  border: none;
-  border-top: 2px solid var(--brand-gold);
-  margin: 0.75rem 0 1.5rem;
-}
-
-/* Grid that arranges tiles nicely */
-.hub-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-/* Card style for hub tiles (does NOT touch home tiles) */
-.hub-tile {
-  display: block;
-  text-decoration: none;
-  border-radius: 0.75rem;
-  padding: 1.25rem;
-  background: var(--brand-gold);
-  color: inherit;
-  box-shadow: var(--shadow);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.hub-tile:hover,
-.hub-tile:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
-}
-
-/* Title + description inside each tile */
-.hub-tile h2 {
-  margin: 0 0 0.4rem;
-  font-size: 1.1rem;
-}
-
-.hub-tile p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--panel-trans-strong);
-}
-
-
-
-/* 6.2.2=== Collection pages: list-style cards === */
-
-.collection-page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
-}
-
-.collection-page h1 {
-  margin-bottom: 0.25rem;
-}
-
-.collection-page p.collection-intro {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: var(--text-light);
-  max-width: 60rem;
-}
-
-/* Optional section headings inside a collection */
-.collection-section {
-  margin-bottom: 1.75rem;
-}
-
-.collection-section h2 {
-  margin-bottom: 0.75rem;
-}
-
-/* Vertical list of long, skinny "tiles" */
-.collection-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-/* Each item is a long card spanning the width */
-.collection-item {
-  display: block;
-  text-decoration: none;
-  border-radius: 0.75rem;
-  padding: 0.9rem 1.1rem;
-  background: var(--brand-gold);
-  color: inherit;
-  box-shadow: var(--shadow);
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
-}
-
-.collection-item:hover,
-.collection-item:focus-visible {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow);
-}
-
-.collection-item h3 {
-  margin: 0 0 0.25rem;
-  font-size: 1rem;
-}
-
-.collection-item p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--panel-trans-strong);
-}
-
-/* Bottom nav for collection pages */
-.collection-nav {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-
-/* 6.2.3 === Generic content pages === */
-
-.content-page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
-}
-
-.content-page h1 {
-  margin-bottom: 0.25rem;
-}
-
-.content-page p.content-intro {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: var(--text-light);
-  max-width: 60rem;
-}
-
-/* Main body text area */
-.content-body {
-  margin-top: 1.5rem;
-  line-height: 1.6;
-}
-
-/* Optional: smaller subheadings inside body */
-.content-body h2,
-.content-body h3 {
-  margin-top: 1.5rem;
-}
-
-/* Bottom nav for simple pages */
-.content-nav {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-
-/* 6.2.1 Tools Hub */
-/* 6.2.2 Testimony Hub */
-/* 6.2.3 Daily Hub (archive of daily tools) */
-
-/* 6.3 Account & Profile */
-/* 6.3.1 Account Settings Pages */
-/* 6.3.2 Testimony Editor / My Testimonies */
-
-/* 6.4 Testimony Wall (public wall, filters, cards) */
-
-/* 6.5 Daily Tools */
-/* 6.5.1 Daily Overview Page */
-/* 6.5.2 Individual Daily Feature Blocks (BibleLE, Trivia, etc.) */
-
-/* 6.6 Bible Tools & Viewer */
-/* 6.6.1 Bible Viewer CTA Blocks */
-/* 6.6.2 Bible Tools-Specific Layouts (if shared) */
-
-/* 6.7 Games */
-/* 6.7.1 Game List / Hub */
-/* 6.7.2 Shared Game UI Elements */
-
-
-/* 7. Legacy, Overrides, and Temporary Rules */
-/* 7.1 Legacy Styles (pre-refactor, marked for cleanup) */
-/* 7.2 Temporary Overrides / Hotfixes */
-/* 7.3 Deprecated Selectors (to be removed once unused) */
-
-
-
-.container {
-  max-width: none;     /* remove the fixed max width */
-  margin: 0;           /* remove auto centering */
-  padding: 16px 16px 16px 40px; /* optional: add left padding */
-  text-align: left;    /* ensure content is left-aligned */
-}
-
-.highlight-gold {
-  color: var(--brand-gold);
-  font-weight: 600;
-}
-
-.highlight-link {
-  color: var(--brand-gold);
-  text-decoration: none;
-  font-weight: 600;
-}
-.highlight-link:hover {
-  text-decoration: underline;
-}
-
-
-/* ========== Header & Navigation ========== */
-header h1 {
-  margin: 0;
-}
-
-header.container {
-  padding-top: 0.0rem;
-  padding-bottom: 0.0rem;
-}
-
-header.container h1 {
-  font-size: 1.2rem;
-  line-height: 1.2; /* tighter spacing */
-  margin: 0 0.5rem;
-}
-
-header.container img.rounded-img {
-  width: 40px;       /* make width and height equal */
-  height: 40px;
-  border-radius: 50%; /* makes it perfectly circular */
-  object-fit: cover;  /* ensures the image fills the circle without distortion */
-}
-
-
-nav {
-  display: flex;
-  align-items: center;          /* vertical alignment */
-  justify-content: flex-start;  /* left-align everything */
-  gap: 15px;                    /* space between items */
-  margin: 20px 0;
-}
-
-nav h1 {
-  margin: 0;
-  font-size: 1.8em;
-}
-
-nav img {
-  height: 80px;
-  margin-right: 12px;
-  vertical-align: middle;
-}
-
-/* Optional: remove focus outline */
-.nav-button:focus{
-  outline: none;
-}
-
-.nav-button{
-  background-color: var(--brand-gold);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.nav-button:hover{
-  background-color: var(--brand-dark);
-}
-
-
-/* ========== Buttons (Nav + Regular) ========== */
-.current-button{
-  background-color: var(--brand-dark);
-  color: var(--text-light);
-  padding: 10px 15px;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-/* Hover effect */
-.current-button:hover{
-  background-color: var(--brand-dark); /* dark goldenrod */
-}
-
-/* Optional: remove focus outline */
-.current-button:focus{
-  outline: none;
-}
-
-/* ========== Controls ========== */
-.controls {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr auto auto;
-  gap: 12px;
-  align-items: end;
-  margin: 16px 0;
-}
-
-.controls label {
-  display: block;
-  font-size: 12px;
-  color: var(--text-muted);
-  margin-bottom: 4px;
-}
-
-select{
-  background: var(--panel-trans-strong);
-  color: var(--text-light);
-  border: 1px solid var(--brand-pop);
-  border-radius: 8px;
-  padding: 8px;
-}
-
-/* ========== Results Styling ========== */
-.results .verse {
-  background: var(--panel-trans-strong);
-  padding: 12px 14px;
-  border-radius: 12px;
-  margin: 10px 0;
-  border: 1px solid var(--panel-trans-strong);
-}
-
-.ref {
-  font-weight: 600;
   color: var(--brand-pop);
 }
 
-.pill {
-  display: inline-block;
-  background: var(--panel-trans-strong);
-  border: 1px solid var(--brand-pop);
-  color: var(--text-light);
-  padding: 2px 8px;
-  border-radius: 999px;
-  margin: 6px 6px 0 0;
-  font-size: 12px;
-}
-
-.arrow {
-  color: var(--brand-gold);
-  font-weight: 700;
-  margin: 0 4px;
-}
-
-mark.input {
-  background: transparent;
-  color: var(--brand-gold);
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-mark.output {
-  background: transparent;
-  color: var(--brand-gold);
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-/* ========== Footer ========== */
-.footer {
-  margin: 24px 0;
-  color: var(--text-muted);
-}
-
-/* ========== Responsive Design ========== */
+/* Slightly tuck on mobile */
 @media (max-width: 700px) {
-  .controls {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(0, auto);
+  .bible-cta {
+    left: 0.75rem;
+    bottom: 0.75rem;
   }
-
-  nav {
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  nav img {
-    height: 60px;
-  }
-
-  nav h1 {
-    font-size: 1.4em;
-  }
-}
-
-/* Horizontal Gold Line */
-hr {
-  border: none;
-  border-top: 2px solid var(--brand-gold);
-  margin: 20px 0;
-}
-
-/* Deleted template formatting here*/
-
-
-/* Rounded Image Class */
-.rounded-img {
-  border-radius: 50%; 
-  width: 100px;  /* set width and height */
-  height: 100px;
-  object-fit: cover; /* ensures the image fills the circle */
-}
-
-
-.controls-box {
-  flex: 0 0 250px; /* left panel width */
-}
-
-.controls {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--panel-trans-strong); /* dark gray box */
-  padding: 15px;
-  border: var(--brand-pop);
-  border-radius: 8px;
-  gap: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  color: var(--text-light); /* make text readable */
-}
-
-.controls div {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: var(--text-light);
-}
-
-select {
-  width: 100%;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 4px;
-  border: 1px solid var(--brand-pop);
-  background-color: var(--panel-trans-strong);
-  color: var(--text-light);
-  box-sizing: border-box;
-}
-
-select:focus {
-  outline: none;
-  border-color: var(--brand-gold);
-}
-
-
-
-.results {
-  flex: 1;
-  border: 1px solid var(--brand-pop);
-  box-sizing: border-box;
-  background-color: var(--panel);
-  width: 100%;
-  padding: 10px;
-  min-height: 600px;   /* sets a taller minimum height */
-  overflow-y: auto;    /* allows scrolling if content exceeds height */
-  background: var(--panel-trans-strong); /* optional, matches your theme */
-  border-radius: 12px;
-}
-
-/* Footer */
-.footer {
-  background-color: var(--panel-trans-strong); /* slightly lighter than the controls box (#2b2b2b) */
-  color: var(--text-light);
-  padding: 15px 20px;
-  border-top: 1px solid var(--brand-pop); /* even lighter separator line */
-  text-align: center;
-  border-radius: 0 0 8px 8px;
-}
-
-.footer a {
-  color: var(--brand-gold);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer a:hover {
-  color: var(--brand-dark);
-  text-decoration: underline;
-}
-
-
-/* Navbar Layout */
-.navbar {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-header h1 {
-  font-size: 1.4rem;
-  margin-left: 0.5rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 0.5rem;
-}
-
-/* Hide the menu toggle checkbox */
-#menu-toggle {
-  display: none;
-}
-
-/* Hamburger icon styling */
-.menu-icon {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  user-select: none;
-}
-
-/* Responsive behavior */
-@media (max-width: 700px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: var(--panel-trans-strong);
-    padding: 0.5rem;
-    border-top: 1px solid var(--brand-pop);
-  }
-
-  #menu-toggle:checked + .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-header img.rounded-img {
-    width: 32px;
-    height: 32px;
-  }
-
-  .nav-header h1 {
-    font-size: 1.1rem;
-  }
-}
-
-.rounded-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Home page tiles container */
-.home-tiles {
-  display: flex;
-  gap: 2rem;
-  margin-top: 3rem;
-  justify-content: center;
-  flex-wrap: wrap; /* Responsive stacking */
-}
-
-/* Tile base style */
-.tile {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  border-radius: 12px;
-  padding: 2rem;
-  width: 45%; /* Half-width with some gap */
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.tile:hover {
-  transform: scale(1.03);
-  box-shadow: var(--shadow);
-}
-
-/* Left tile: About */
-.tile-left {
-  background-color: var(--brand-gold); /* Soft, warm yellow */
-  color: var(--text-on-gold);
-  flex-direction: column;
-  text-align: left; /* Left-align text */
-  justify-content: flex-start;
-  padding-left: 2rem; /* Add padding for left alignment */
-}
-
-/* Right tile: PPS */
-.tile-right {
-  background-color: var(--panel-trans-strong); /* Dark grey */
-  color: var(--text-light);
-  justify-content: flex-start;
-}
-
-.tile-right .tile-content {
-  margin-left: 1.5rem;
-}
-
-/* Tile image for PPS */
-.tile-image {
-  width: 120px;
-  border-radius: 8px;
-}
-
-/* Tile content text */
-.tile-content h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-}
-
-.tile-content p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin: 0;
-}
-
-/* Responsive: stack tiles on small screens */
-@media (max-width: 768px) {
-  .tile {
-    width: 90%;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .tile-left {
-    padding-left: 1.5rem;
-  }
-
-  .tile-right .tile-content {
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-
-  .tile-image {
-    width: 100px;
-  }
-}
-
-
-
-
-
-/* Hunter's CSS Style Additions */
-
-/* ================= Hub and Collection Pages ================= */
-
-
-/* ======================
-   Header: hamburger nav
-   ====================== */
-
-/* Desktop baseline for the new header structure */
-.site-header .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.site-header .nav-links {
-  display: flex;
-  gap: 0.5rem;
-}
-
-/* Hamburger button – override global button styles */
-.site-header .nav-toggle {
-  display: none;              /* hidden on desktop */
-  margin-left: auto;          /* pushes it to the far right */
-  background: transparent;
-  border: none;
-  color: var(--text-light);
-  font-size: 1.6rem;
-  padding: 0.15rem 0.4rem;    /* small, square-ish icon */
-  line-height: 1;
-  width: auto;                /* kills the full-width button behavior */
-  cursor: pointer;
-}
-
-/* Mobile behavior for the new header */
-@media (max-width: 700px) {
-  .site-header .main-nav {
-    flex-wrap: wrap;
-  }
-
-  .site-header .nav-toggle {
-    display: inline-block;    /* only show on small screens */
-  }
-
-  .site-header .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 0.5rem;
-    background-color: var(--panel-trans-strong);
-    padding: 0.5rem;
-    border-top: 1px solid var(--brand-pop);
-  }
-
-  .site-header.nav-open .nav-links {
-    display: flex;
-  }
-}
-
-
-
-
-
-body {
-  position: relative;       /* ensure stacking context above ::before */
-}
-
-
-
-/* Make main home sections sit on solid panels over the blur */
-.home-page {
-  position: relative;
-  padding: 1.5rem 1rem 3rem;
-}
-
-/* Shared blurred background for account-related pages */
-/* Content and wording assisted by AI (-AI) */
-
-
-
-/* Make sure account pages sit above the blur and have padding */
-.account-bg-page {
-  position: relative;
-}
-
-
-
-/* Verse block */
-.home-verse-section {
-  background: var(--panel-trans-strong);
-  border-radius: 12px;
-  padding: 1.25rem 1.5rem;
-  margin: 0 auto 1.5rem;
-  max-width: 1000px;
-}
-
-/* Daily tile wrapper already contains .tile; just ensure the tile is solid */
-.home-daily-tool-section .tile-daily {
-  background: var(--panel-trans-strong);
-  border-radius: 12px;
-}
-
-/* Row that holds Daily Tools + Essentials */
-.home-feature-row {
-  max-width: 1100px;
-  margin: 0 auto 2rem;   /* ⬅ this also creates space above Explore SHK */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-/* Each tile column */
-.home-feature-row .feature-tile {
-  flex: 1 1 280px;       /* 2 columns on desktop, stack on narrow screens */
-}
-
-/* Make Essentials tile match Daily visual style */
-.tile-essentials {
-  background: var(--panel-trans-strong);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
-}
-
-
-/* Home hub grid panel */
-.home-hub-section {
-  background: var(--panel-trans-strong);
-  border-radius: 12px;
-  padding: 1.5rem 1.75rem 2rem;
-  margin: 0 auto;
-  max-width: 1100px;
-}
-
-.home-hub-heading,
-.home-hub-intro {
-  margin-top: 0;
-}
-
-
-
-.daily-tools-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.daily-tools-link:hover {
-  text-decoration: underline;
-}
-
-.daily-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
-}
-
-
-/* Row that holds Daily Tools + Essentials */
-.home-feature-row {
-  max-width: 1100px;
-  margin: 0 auto 2rem;      /* space above Explore SHK */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: stretch;      /* both tiles same height in the row */
-}
-
-/* Each column (Daily / Essentials) */
-.home-feature-row .feature-tile {
-  flex: 1 1 320px;           /* side-by-side on desktop, stack on narrow */
-}
-
-/* Make both tiles solid, same style, and fill the column */
-.home-feature-row .tile {
-  background: var(--panel-trans-strong);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
-  height: 100%;
-  display: flex;
-}
-
-.home-feature-row .tile-content {
-  width: 100%;
-}
-
-/* Buttons row inside the tiles */
-.home-feature-row .daily-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
-}
-
-/* Mobile: stack them cleanly */
-@media (max-width: 700px) {
-  .home-feature-row {
-    flex-direction: column;
-  }
-}
-
-
-
-
-/* Full name on desktop, SHK on mobile */
-.site-title-short {
-  display: none;
-}
-
-@media (max-width: 700px) {
-  .site-title-full {
-    display: none;
-  }
-  .site-title-short {
-    display: inline;
-  }
-
-  .site-title {
-    font-size: 1.1rem;
-  }
-}
-
-
-/* Hub tiles should fill the grid cell, not be 45% wide */
-.hub-tile {
-  width: 100%;
-}
-
-/* ========== Nav dropdown / mega-menu ========== */
-.nav-links {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.nav-item {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-/* Dropdown panel (desktop default = hidden) */
-.nav-dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin-top: 0.25rem;
-  padding: 0.75rem 1rem;
-  background: var(--panel-trans-strong);
-  box-shadow: var(--shadow);
-  border-radius: 0.75rem;
-  z-index: 1000;
-}
-
-/* Grid of "tiles" inside the dropdown */
-.nav-dropdown-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
-  gap: 0.5rem;
-}
-
-.nav-dropdown-item {
-  display: block;
-  padding: 0.4rem 0.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: var(--text-light);
-  background: var(--panel-trans-strong);
-}
-
-.nav-dropdown-item:hover,
-.nav-dropdown-item:focus-visible {
-  background: var(--panel-trans-strong);
-}
-
-/* Desktop: show dropdown on hover */
-@media (min-width: 701px) {
-  .has-submenu:hover > .nav-dropdown {
-    display: block;
-  }
-}
-
-/* Mobile: dropdown becomes inline, opened via click */
-@media (max-width: 700px) {
-  .nav-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-dropdown {
-    position: static;
-    margin-top: 0.25rem;
-    box-shadow: none;
-    width: 100%;
-  }
-
-  .nav-dropdown-grid {
-    grid-template-columns: 1fr; /* stack items on mobile */
-  }
-
-  .nav-item .nav-dropdown {
-    display: none;
-  }
-
-  .nav-item.submenu-open .nav-dropdown {
-    display: block;
-  }
-}
-
-
-/* Make dropdown items use the same gold button style */
-.nav-button
-.nav-dropdown-item {
-  background-color: var(--brand-gold);
-  color: var(--text-on-gold);
-  padding: 10px 15px;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  display: inline-block;
-}
-
-.nav-button:hover
-.nav-dropdown-item:hover,
-.nav-dropdown-item:focus-visible {
-  background-color: var(--brand-dark);
-  color: var(--text-on-gold);
-}
-
-/* Override older dropdown background so gold wins */
-.site-header .nav-dropdown-item {
-  background-color: var(--brand-gold);
-}
-
-/* Remove gap between parent tab and dropdown to avoid hover "fall-off" */
-.site-header .nav-dropdown {
-  margin-top: 0;      /* was 0.25rem */
-  top: 100%;          /* keep it directly under the tab */
-  /* padding-top: 0.75rem;  internal space, no gap between elements */
-}
-
-
-/* === Home feature row: Daily Tools + Essentials === */
-.home-feature-row {
-  width: 100%;
-  margin: 0 0 2rem;
-  padding: 0 1.5rem;
-  box-sizing: border-box;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: stretch;
-}
-
-/* Two columns on desktop, each fills roughly half the width */
-.home-feature-row .feature-tile {
-  flex: 1 1 350px;
-  display: flex;
-}
-
-/* Make both tiles solid, same style */
-.home-feature-row .tile {
-  background: var(--panel-trans-strong);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
-  height: 100%;
-  display: flex;
-  box-sizing: border-box;
-}
-
-.home-feature-row .tile-content {
-  width: 100%;
-}
-
-/* Buttons row inside these feature tiles */
-.home-feature-row .daily-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
-}
-
-/* Mobile: stack the two feature tiles vertically */
-@media (max-width: 700px) {
-  .home-feature-row {
-    flex-direction: column;
-    padding: 0 1rem;
-  }
-}
-
-/* Mobile header layout: logo | title | hamburger */
-@media (max-width: 700px) {
-  .site-header .main-nav {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    column-gap: 0.5rem;
-    width: 100%;
-  }
-
-  .site-header .logo-link {
-    justify-self: start;
-  }
-
-  .site-header .site-title {
-    justify-self: center;
-    text-align: center;
-    margin: 0;
-  }
-
-  .site-header .nav-toggle {
-    justify-self: end;
-    margin-left: 0; /* override any flex-based margin-left:auto */
-  }
-
-  /* Make the expanded menu sit on its own full-width row */
-  .site-header .nav-links {
-    grid-column: 1 / -1;
-  }
-}
-
-/* Mobile: show a little caret for items with submenus */
-@media (max-width: 700px) {
-  .site-header .nav-parent {
-    position: relative;
-    padding-right: 1.5rem;  /* room for caret */
-    width: 100%;
-    text-align: left;
-  }
-
-  .site-header .nav-parent::after {
-    content: "▾";
-    position: absolute;
-    right: 0.6rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.8rem;
-  }
-}
-
-/* Desktop header layout: logo | title | nav */
-@media (min-width: 701px) {
-  .site-header .main-nav {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    column-gap: 0.75rem;
-    width: 100%;
-  }
-
-  .site-header .logo-link {
-    justify-self: start;
-  }
-
-  .site-header .site-title {
-    justify-self: center;
-    text-align: center;
-    margin: 0;
-  }
-
-  .site-header .nav-toggle {
-    display: none;      /* hide hamburger on desktop */
-  }
-
-  .site-header .nav-links {
-    justify-self: end;
-    display: flex;
-    gap: 0.5rem;
-  }
-}
-
-/* Home feature row: Daily Tools + Essentials */
-.home-feature-row {
-  max-width: 1100px;
-  margin: 0 auto 2rem;
-  padding: 0 1.5rem;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-
-/* Each feature tile cell */
-.home-feature-row .feature-tile {
-  height: 100%;
-}
-
-/* Make tiles fill the grid cell and look like solid panels */
-.home-feature-row .tile {
-  width: 100%;  /* override global 45% width */
-  background: var(--panel-trans-strong);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.home-feature-row .tile-content {
-  width: 100%;
-}
-
-/* Buttons row inside these feature tiles */
-.home-feature-row .daily-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
-}
-
-/* Mobile: stack the two feature tiles */
-@media (max-width: 700px) {
-  .home-feature-row {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-  }
-}
-
-
-.footer-social {
-  margin-top: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-.footer-social-link {
-  font-size: 0.85rem;
-  text-decoration: none;
-  color: var(--brand-pop);
-}
-
-.footer-social-link:hover {
-  text-decoration: underline;
-}
-
-/* Center footer content instead of using the generic .container flex layout */
-footer.container,
-.container.footer {
-  display: flex;
-  flex-direction: column;   /* stack text + social links */
-  align-items: center;      /* center horizontally */
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 24px auto;
-  padding: 15px 20px;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;       /* keep text centered */
-}
-
-
-
-
-/* Mobile nav: full-width rows and a separate submenu toggle button */
-@media (max-width: 700px) {
-  .site-header .nav-links {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .site-header .nav-item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-  }
-
-  .site-header .nav-button {
-    flex: 1;
-    width: 100%;
-    text-align: left;
-    justify-content: flex-start;
-    display: inline-flex;
-  }
-
-  .site-header .submenu-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: none;
-    color: var(--text-light);
-    font-size: 0.85rem;
-    padding: 0.35rem 0.5rem;
-    cursor: pointer;
-  }
-}
-
-/* Desktop: hide the little toggle button; hover handles dropdowns */
-@media (min-width: 701px) {
-  .site-header .submenu-toggle {
-    display: none;
-  }
-}
-
-/* Logo wordmark styling */
-.site-title {
-  font-family: "Cinzel", serif;
-  font-weight: 600;
-  letter-spacing: 0.14em;   /* stretch it horizontally */
-  text-transform: uppercase;
-  font-size: 1.4rem;
-}
-
-/* Full name vs SHK swap still applies */
-.site-title-full {
-  display: inline;
-}
-
-.site-title-short {
-  display: none;
-}
-
-/* Mobile: smaller, use SHK but still styled */
-@media (max-width: 700px) {
-  .site-title {
-    font-size: 1.1rem;
-    letter-spacing: 0.18em;
-  }
-
-  .site-title-full {
-    display: none;
-  }
-
-  .site-title-short {
-    display: inline;
-  }
-}
-
-.site-title-short {
-  padding: 0.05rem 0.4rem;
-  border-radius: 999px;
-  border: 1px solid var(--brand-gold);
-}
-
-
-/* === Mobile nav fix: full-width rows, small caret, no extra black bar === */
-@media (max-width: 700px) {
-  /* Stack nav items, but each item is one row */
-  .site-header .nav-links {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .site-header .nav-item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-  }
-
-  /* Main tab button: full row, label area */
-  .site-header .nav-button {
-    flex: 1 1 auto;
-    width: auto;                   /* override any global width:100% on button */
-    display: inline-flex;
-    justify-content: flex-start;
-    text-align: left;
-  }
-
-  /* Small caret button: stays beside, not as its own full-width bar */
-  .site-header .submenu-toggle {
-    flex: 0 0 auto;
-    width: auto;                   /* don't stretch to full width */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.25rem 0.5rem;
-    background: transparent;
-    border: none;
-    color: var(--text-light);
-    font-size: 0.85rem;
-    cursor: pointer;
-  }
-
-  /* Turn off the old pseudo-element caret on the parent */
-  .site-header .nav-parent::after {
-    content: none;
-  }
-}
-
-
-/* Bigger logo image + title in header */
-
-/* Desktop */
-@media (min-width: 701px) {
-  .site-header .rounded-img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .site-header .site-title {
-    font-size: 2rem;      /* was ~1.4rem */
-    letter-spacing: 0.175em;
-  }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  .site-header .rounded-img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .site-header .site-title {
-    font-size: 2rem;    /* bump SHK size too */
-    letter-spacing: 0.175em;
-  }
-}
-
-/* Desktop logo size */
-@media (min-width: 701px) {
-  .site-header .logo-link img.rounded-img {
-    width: 150px !important;
-    height: 150px !important;
-  }
-}
-
-/* Mobile logo size */
-@media (max-width: 700px) {
-  .site-header .logo-link img.rounded-img {
-    width: 75px !important;
-    height: 75px !important;
-  }
-}
-
-/* Fix mobile submenu arrow so it sits on the tab, not as a black bar */
-@media (max-width: 700px) {
-  /* Make each nav row a positioning context */
-  .site-header .nav-item {
-    position: relative;
-  }
-
-  /* Give space on the right side of the yellow tab for the arrow */
-  .site-header .nav-item.has-submenu > .nav-button {
-    padding-right: 2rem;
-  }
-
-  /* Submenu toggle: float on top-right of the yellow tab, no own row, no button styling */
-  .site-header .nav-item.has-submenu > .submenu-toggle {
-    position: absolute;
-    top: 50%;
-    right: 0.75rem;
-    transform: translateY(-50%);
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    width: auto !important;
-    height: auto !important;
-    padding: 0;
-    margin: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    font-size: 0.9rem;
-  }
-
-  /* Ensure no extra caret from old ::after rules */
-  .site-header .nav-parent::after {
-    content: none !important;
-  }
-}
-
-/* Right-align dropdowns for the last nav items so they don't go off-screen */
-@media (min-width: 701px) {
-  .site-header .nav-item.has-submenu:last-child .nav-dropdown,
-  .site-header .nav-item.has-submenu:nth-last-child(2) .nav-dropdown,
-  .site-header .nav-item.has-submenu:nth-last-child(3) .nav-dropdown {
-    left: auto;
-    right: 0;
-  }
-}
-
-/* ========== Nav outlines, highlights, and Nav CTA ========== */
-
-/* Thin yellow line under the whole header */
-/* .site-header {
-  border-bottom: 1px solid var(--brand-pop);
-} */
-
-/* Yellow outline around the header tabs container (row of tabs) */
-.site-header .nav-links {
-  border: 1px solid var(--brand-pop);      /* yellow around container */
-  border-radius: 0.75rem;
-  padding: 0.25rem 0.5rem;
-  background: var(--panel-trans-strong);
-  box-sizing: border-box;
-}
-
-/* Black accents around yellow buttons (tabs + dropdown tiles) */
-.nav-button,
-.nav-dropdown-item {
-  border: 1px solid var(--panel);               /* thin black outline */
-  box-sizing: border-box;
-}
-
-/* Optional: subtle hover emphasis */
-.nav-button:hover,
-.nav-button:focus-visible,
-.nav-dropdown-item:hover,
-.nav-dropdown-item:focus-visible {
-  box-shadow: var(--shadow);
-}
-
-/* Yellow outline around black dropdown containers (desktop) */
-.nav-dropdown {
-  border: 1px solid var(--brand-pop);      /* yellow around dropdown panel */
-  border-radius: 0.75rem;
-  box-sizing: border-box;
 }
-
-/* Mobile: same yellow outline on the inline dropdown panel */
-@media (max-width: 700px) {
-  .nav-item .nav-dropdown {
-    border: 1px solid var(--brand-pop);
-    border-radius: 0.75rem;
-    box-sizing: border-box;
-  }
-}
-
-
-
-/* Tool app layout base styles (for app-like tools such as Infinite Bible) */
-/* Content and wording assisted by AI (-AI) */
-
-body.tool-app-body {
-  background: var(--panel-trans-strong); /* same dark navy you’re using elsewhere */
-}
-
-.tool-app-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
-}
-
-
 
+/* 4.6.2 Right CTA */
 /* ================= Floating CTA stack (Testimony / Nav / Help) ================= */
 
 /* Wrapper that pins the three CTAs on the right, stacked vertically */
@@ -2595,43 +810,36 @@ body.tool-app-body {
   }
 }
 
-/* ================= Bottom-left Bible quick link CTA ================= */
 
-.bible-cta {
-  position: fixed;
-  left: 1rem;
-  bottom: 1rem;
-  z-index: 999;
-  width: 2.8rem;
-  height: 2.8rem;
-  border-radius: 999px;
-  border: 2px solid var(--brand-pop);
-  background: var(--panel-trans-strong);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  box-shadow: var(--shadow);
+
+
+
+/* 5. Layout & Chrome */
+/* 5.1 Page Shell (main .page, .page-section, containers) ========================================================================== */ 
+.page-shell {
+  min-height: 100vh;
+  background: var(--bg-light-page);
+  color: var(--text-dark);
 }
 
-.bible-cta-icon {
-  font-size: 1.5rem;
-  line-height: 1;
-  color: var(--brand-pop);
+/* Generic vertical sections with optional alternating background */
+.page-section {
+  padding: 2rem 1.25rem;
 }
 
-/* Slightly tuck on mobile */
-@media (max-width: 700px) {
-  .bible-cta {
-    left: 0.75rem;
-    bottom: 0.75rem;
-  }
+.page-section-alt {
+  padding: 2rem 1.25rem;
+  background: var(--bg-surface-alt);
 }
 
+/* Inner content width wrapper */
+.page-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-/* ==== SHK header revamp: gradient bar + account pill ==== */
+/* 5.2 Site Header ========================================================================== */
 
-/* Sticky, slimmer header with gold-to-clear gradient */
 .site-header {
   position: sticky;
   top: 0;
@@ -2640,7 +848,6 @@ body.tool-app-body {
   padding-bottom: 0.25rem;
 }
 
-/* Gradient background that starts gold at the nav line and fades upward */
 .site-header::before {
   content: "";
   position: absolute;
@@ -2655,7 +862,6 @@ body.tool-app-body {
   z-index: -1;
 }
 
-/* Slightly smaller logo so the header isn't as tall */
 .site-header .logo-link img.rounded-img {
   width: 64px !important;
   height: 64px !important;
@@ -2669,149 +875,560 @@ body.tool-app-body {
   }
 }
 
-/* Make the tab row sit in a dark bar over the gradient */
-.site-header .nav-links {
-  border: 1px solid var(--brand-pop);
-  border-radius: 0.75rem;
-  padding: 0.25rem 0.5rem;
-  background: var(--panel-trans-strong);
-  box-sizing: border-box;
+
+/* 5.2.1 Header Shell (.site-header-bar, .site-header-inner) */
+
+.site-header-bar {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  box-shadow: var(--shadow-soft);
 }
 
-/* Header account pill (avatar) */
-.site-header .site-account-pill {
-  display: inline-flex;
+.site-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.35rem 0.9rem;
-  border-radius: 999px;
-  background: var(--panel-trans-strong);
-  border: 1px solid var(--brand-pop);
-  color: var(--brand-pop);
-  text-decoration: none;
+  gap: 1rem;
+}
+
+/* Logo / brand area */
+
+.site-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   font-size: 0.9rem;
-  box-shadow: var(--shadow);
-  white-space: nowrap;
 }
 
-.site-header .site-account-pill:hover,
-.site-header .site-account-pill:focus-visible {
-  background: var(--panel-trans-strong);
-  color: var(--brand-pop);
-}
-
-/* Circular avatar inside the pill */
-.site-account-avatar {
-  width: 2.4rem;
-  height: 2.4rem;
+.site-header-logo-mark {
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  overflow: hidden;
+  background: radial-gradient(circle at 30% 20%, var(--brand-light), var(--brand-cross));
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--brand-gold-trans-card);
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+/* 5.2.2 Primary Nav (desktop) */
+
+/* .site-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: 1.5rem;
+  flex: 1 1 auto;
+}
+
+.site-header-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-header-link {
+  font-size: 0.9rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  color: var(--text-light);
+}
+
+.site-header-link:hover {
+  background: rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.site-header-link.is-active {
+  background: var(--brand-gold-trans-btn);
+  color: var(--brand-light);
+} */
+
+/* 5.2.3 Mobile Nav / Hamburger */
+
+/* .site-header-toggle {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.5rem;
+  padding: 0.25rem 0.4rem;
+  line-height: 1;
+  display: none;
+} */
+
+/* Mobile menu panel */
+/* 
+.site-header-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem 0.75rem;
+  background: var(--bg-dark);
+}
+
+.site-header-menu.is-open {
+  display: flex;
+} */
+
+/* 5.2.4 Search in Header */
+
+/* .site-header-search {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.site-header-search input[type="search"] {
+  max-width: 180px;
+} */
+
+/* 5.2.5 Account Pill / Auth Controls */
+
+/* .site-header-account {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.75rem;
+}
+
+.account-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+.account-pill img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+} */
+
+/* Responsive behavior */
+
+/* @media (max-width: 768px) {
+  .site-header-inner {
+    flex-wrap: wrap;
+  }
+
+  .site-header-nav {
+    display: none;
+  }
+
+  .site-header-toggle {
+    display: inline-flex;
+  }
+
+  .site-header-menu {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+} */
+
+
+/* 5.3 Secondary Navigation / Tabs ========================================================================== */
+
+/* .tabs {
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 1rem;
+}
+
+.tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tabs-link {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.tabs-link:hover {
+  background: rgba(0, 0, 0, 0.03);
+  text-decoration: none;
+}
+
+.tabs-link.is-active {
+  background: var(--brand-gold-trans-btn);
+  color: var(--text-dark);
+}
+ */
+
+/* 5.4 Site Footer ========================================================================== */
+
+.site-footer {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  padding: 1.5rem 1rem 1.75rem;
+  margin-top: 2rem;
+}
+
+.site-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.site-footer-brand {
+  max-width: 320px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.site-footer-brand-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-light);
+}
+
+.site-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.site-footer-link {
+  color: var(--text-muted);
+}
+
+.site-footer-link:hover {
+  color: var(--brand-light);
+  text-decoration: none;
+}
+
+.site-footer-meta {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .site-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Old footer styles (to be refactored) */
+/* Footer */
+.footer {
+  background-color: var(--panel-trans-strong); /* slightly lighter than the controls box (#2b2b2b) */
+  color: var(--text-light);
+  padding: 15px 20px;
+  border-top: 1px solid var(--brand-pop); /* even lighter separator line */
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.footer a {
+  color: var(--brand-gold);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: var(--brand-dark);
+  text-decoration: underline;
+}
+
+
+/* ========== Footer ========== */
+.footer {
+  margin: 24px 0;
+  color: var(--text-muted);
+}
+
+
+
+.footer-social {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.footer-social-link {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--brand-pop);
+}
+
+.footer-social-link:hover {
+  text-decoration: underline;
+}
+
+/* Center footer content instead of using the generic .container flex layout */
+footer.container,
+.container.footer {
+  display: flex;
+  flex-direction: column;   /* stack text + social links */
+  align-items: center;      /* center horizontally */
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 24px auto;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;       /* keep text centered */
+}
+
+
+
+/* 5.5 Shared Hero / Banner Layouts ========================================================================== */
+
+.page-hero {
+  padding: 2.5rem 1.25rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.4)
+  ), var(--bg-dark);
+  color: var(--text-light);
+}
+
+.page-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-hero-title {
+  font-size: 1.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-hero-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.page-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+
+/* 6. Feature & Page Modules */
+
+/* 6.1 Home / Landing Page */
+/* Home page wrapper */
+.home-page {
+  position: relative;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Verse block */
+.home-verse-section {
+  background: var(--panel-trans-strong);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 0 auto 1.5rem;
+  max-width: 1000px;
+}
+
+/* 6.1.1 Home Hero (intro copy, hero CTA) */
+/* 6.1.2 Home Feature Rows (tiles, daily teaser, etc.) */
+
+/* 6.2 Hubs & Collections */
+
+/* 6.2.1 === Generic hub layout (for Resources, Community, etc.) === */
+/* Whole hub page content */
+.hub-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Title + intro spacing */
+.hub-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hub-page p.hub-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  max-width: 60rem;
+}
+
+/* Gold divider under the title */
+.hub-divider {
+  border: none;
+  border-top: 2px solid var(--brand-gold);
+  margin: 0.75rem 0 1.5rem;
+}
+
+/* Grid that arranges tiles nicely */
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card style for hub tiles (does NOT touch home tiles) */
+.hub-tile {
+  display: block;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  background: var(--brand-gold);
+  color: inherit;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hub-tile:hover,
+.hub-tile:focus-visible {
+  transform: translateY(-2px);
   box-shadow: var(--shadow);
 }
 
-.site-account-initial {
-  font-weight: 700;
+/* Title + description inside each tile */
+.hub-tile h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.hub-tile p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--panel-trans-strong);
+}
+
+
+
+/* 6.2.2=== Collection pages: list-style cards === */
+
+.collection-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.collection-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.collection-page p.collection-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  max-width: 60rem;
+}
+
+/* Optional section headings inside a collection */
+.collection-section {
+  margin-bottom: 1.75rem;
+}
+
+.collection-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+/* Vertical list of long, skinny "tiles" */
+.collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Each item is a long card spanning the width */
+.collection-item {
+  display: block;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--brand-gold);
+  color: inherit;
+  box-shadow: var(--shadow);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.collection-item:hover,
+.collection-item:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.collection-item h3 {
+  margin: 0 0 0.25rem;
   font-size: 1rem;
 }
 
-.site-account-avatar-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none; /* JS turns this on when there is an avatar */
+.collection-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--panel-trans-strong);
 }
 
-/* On very small screens, hide "Account" label to save space */
-@media (max-width: 480px) {
-  .site-account-label {
-    display: none;
-  }
+/* Bottom nav for collection pages */
+.collection-nav {
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
-/* Desktop: logo | title | nav tabs | account */
-@media (min-width: 701px) {
-  .site-header .main-nav {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    align-items: center;
-    column-gap: 0.75rem;
-    width: 100%;
-  }
 
-  .site-header .logo-link {
-    justify-self: start;
-  }
+/* 6.2.3 === Generic content pages === */
 
-  .site-header .site-title {
-    justify-self: center;
-    margin: 0;
-  }
-
-  .site-header .nav-links {
-    justify-self: end;
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-  }
-
-  .site-header .nav-toggle {
-    display: none;
-  }
-
-  .site-header .site-account-pill {
-    justify-self: end;
-  }
+.content-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
 }
 
-/* Mobile: logo | title | hamburger | account on top row, nav dropdown below */
-@media (max-width: 700px) {
-  .site-header .main-nav {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto; /* logo | title | burger | account */
-    align-items: center;
-    column-gap: 0.5rem;
-    width: 100%;
-  }
-
-  .site-header .logo-link {
-    justify-self: start;
-  }
-
-  .site-header .site-title {
-    justify-self: center;
-    text-align: center;
-    margin: 0;
-  }
-
-  .site-header .nav-toggle {
-    justify-self: end;
-    display: inline-block;
-  }
-
-  .site-header .site-account-pill {
-    justify-self: end;
-  }
-
-  /* Nav links as a dropdown below */
-  .site-header .nav-links {
-    grid-column: 1 / -1;
-    margin-top: 0.4rem;
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--panel-trans-strong);
-    padding: 0.5rem;
-    border-top: 1px solid var(--panel);
-  }
-
-  .site-header.nav-open .nav-links {
-    display: flex;
-  }
+.content-page h1 {
+  margin-bottom: 0.25rem;
 }
+
+.content-page p.content-intro {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  max-width: 60rem;
+}
+
+/* Main body text area */
+.content-body {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Optional: smaller subheadings inside body */
+.content-body h2,
+.content-body h3 {
+  margin-top: 1.5rem;
+}
+
+/* Bottom nav for simple pages */
+.content-nav {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+
+/* 6.3 Account & Profile */
 
 /* ===== My Testimony header/profile styles (unchanged) ===== */
 
@@ -2892,65 +1509,197 @@ body.tool-app-body {
   margin: 0 0 0.75rem;
 }
 
-/* Header nav buttons as rounded pills */
-.site-header .nav-links .nav-button {
+/* 6.3.1 Account Settings Pages */
+/* 6.3.2 Testimony Editor / My Testimonies */
+
+/* 6.4 Testimony Wall (public wall, filters, cards) */
+
+/* 6.5 Daily Tools */
+/* 6.5.1 Daily Overview/Home Page */
+/* 6.5.2 Individual Daily Feature Blocks (BibleLE, Trivia, etc.) */
+
+/* 6.6 Bible Tools & Viewer */
+/* 6.6.1 Bible Viewer CTA Blocks */
+/* 6.6.2 Bible Tools-Specific Layouts (if shared) */
+
+/* 6.7 Games */
+/* 6.7.1 Game List / Hub */
+/* 6.7.2 Shared Game UI Elements */
+
+/* 6.8 Tools */
+/* 6.8.1 Tool List / Hub */
+/* 6.8.2 Shared Tool UI Elements */
+
+/* 6.8.3 Specific Tool Layouts */
+
+/* ========== Controls ========== */
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto auto;
+  gap: 12px;
+  align-items: end;
+  margin: 16px 0;
+}
+
+.controls label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+select{
+  background: var(--panel-trans-strong);
+  color: var(--text-light);
+  border: 1px solid var(--brand-pop);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* ========== Results Styling ========== */
+.results .verse {
+  background: var(--panel-trans-strong);
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin: 10px 0;
+  border: 1px solid var(--panel-trans-strong);
+}
+
+.ref {
+  font-weight: 600;
+  color: var(--brand-pop);
+}
+
+.pill {
+  display: inline-block;
+  background: var(--panel-trans-strong);
+  border: 1px solid var(--brand-pop);
+  color: var(--text-light);
+  padding: 2px 8px;
   border-radius: 999px;
-  padding: 0.25rem 0.9rem;
+  margin: 6px 6px 0 0;
+  font-size: 12px;
+}
+
+.arrow {
+  color: var(--brand-gold);
+  font-weight: 700;
+  margin: 0 4px;
+}
+
+mark.input {
+  background: transparent;
+  color: var(--brand-gold);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+mark.output {
+  background: transparent;
+  color: var(--brand-gold);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.controls-box {
+  flex: 0 0 250px; /* left panel width */
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--panel-trans-strong); /* dark gray box */
+  padding: 15px;
   border: var(--brand-pop);
-  background-color: var(--panel-trans-strong);
+  border-radius: 8px;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--text-light); /* make text readable */
+}
+
+.controls div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
   color: var(--text-light);
 }
 
-.site-header .nav-links .nav-button:hover,
-.site-header .nav-links .nav-button.is-active {
-  border-color: var(--brand-pop);
-  background-color: var(--panel-trans-strong);
-}
-
-
-
-/* Search icon for header (magnifying glass) */
-.site-header-search-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.25rem 0.75rem;
-  margin-right: 0.5rem;
-  border-radius: 999px;
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
   border: 1px solid var(--brand-pop);
-  background: var(--panel-trans-strong);
-  color: var(--brand-pop);
-  font-size: 0.85rem;
-  text-decoration: none;
-  white-space: nowrap;
-  gap: 0.4rem;
-  box-shadow: var(--shadow);
-  opacity: 0.9;
-  transition: background 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+  background-color: var(--panel-trans-strong);
+  color: var(--text-light);
+  box-sizing: border-box;
 }
 
-.site-header-search-link:hover,
-.site-header-search-link:focus-visible {
-  background: var(--panel-trans-strong);
-  opacity: 1;
-  transform: translateY(-1px);
+select:focus {
+  outline: none;
+  border-color: var(--brand-gold);
 }
 
-.site-header-search-icon::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 2px;
-  border-radius: 999px;
-  background: currentColor;
-  right: -4px;
-  bottom: -1px;
-  transform: rotate(45deg);
+.results {
+  flex: 1;
+  border: 1px solid var(--brand-pop);
+  box-sizing: border-box;
+  background-color: var(--panel);
+  width: 100%;
+  padding: 10px;
+  min-height: 600px;   /* sets a taller minimum height */
+  overflow-y: auto;    /* allows scrolling if content exceeds height */
+  background: var(--panel-trans-strong); /* optional, matches your theme */
+  border-radius: 12px;
 }
 
-@media (min-width: 701px) {
-  .site-header .main-nav {
-    flex-wrap: nowrap;
-  }
+/* Tool app layout base styles (for app-like tools such as Infinite Bible) */
+/* Content and wording assisted by AI (-AI) */
+
+body.tool-app-body {
+  background: var(--panel-trans-strong); /* same dark navy you’re using elsewhere */
 }
+
+.tool-app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+
+
+
+/* 7. Legacy, Overrides, and Temporary Rules */
+/* 7.1 Legacy Styles (pre-refactor, marked for cleanup) */
+.container {
+  max-width: none;     /* remove the fixed max width */
+  margin: 0;           /* remove auto centering */
+  padding: 16px 16px 16px 40px; /* optional: add left padding */
+  text-align: left;    /* ensure content is left-aligned */
+}
+
+/* 7.2 Temporary Overrides / Hotfixes */
+/* 7.3 Deprecated Selectors (to be removed once unused) */
+
+
+
+
+
+
+
+
+
+
+
 
