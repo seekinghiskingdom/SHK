@@ -31,18 +31,56 @@
   if (main) main.setAttribute('tabindex', '-1');
 })();
 
-// 4) Header hamburger toggle – controls .site-header.nav-open
+// 4) Header nav drawer (hamburger + overlay)
 (() => {
-  const header = document.querySelector('.site-header');
-  const toggle = document.querySelector('.nav-toggle');
+  const toggle  = document.querySelector('[data-nav-toggle]');
+  const overlay = document.querySelector('[data-nav-overlay]');
+  if (!toggle || !overlay) return;
 
-  if (!header || !toggle) return;
+  const drawer      = overlay.querySelector('.site-nav-drawer');
+  const closeButtons = overlay.querySelectorAll('[data-nav-close]');
 
+  function openNav() {
+    overlay.hidden = false;
+    document.body.classList.add('site-nav-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeNav() {
+    overlay.hidden = true;
+    document.body.classList.remove('site-nav-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  // Hamburger toggle
   toggle.addEventListener('click', () => {
-    const isOpen = header.classList.toggle('nav-open');
-    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    if (overlay.hidden) {
+      openNav();
+    } else {
+      closeNav();
+    }
+  });
+
+  // Any X / close button inside the drawer
+  closeButtons.forEach(btn => {
+    btn.addEventListener('click', closeNav);
+  });
+
+  // Click on dim background closes drawer
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      closeNav();
+    }
+  });
+
+  // Esc key closes drawer
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !overlay.hidden) {
+      closeNav();
+    }
   });
 })();
+
 
 // 5) Mobile: toggle submenus via the small ▾ button, keep parent link navigable
 (() => {
