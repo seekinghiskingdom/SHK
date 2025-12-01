@@ -893,181 +893,226 @@ button:focus-visible {
   gap: 1rem;
 }
 
-/* Logo / brand area */
+/* === Header layout: logo / center tabs / right utilities === */
 
 .site-header-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 0.9rem;
-}
-
-.site-header-logo-mark {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 20%, var(--brand-light), var(--brand-cross));
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--text-light);
-  font-size: 0.85rem;
-}
-
-/* 5.2.2 Primary Nav (desktop) */
-
-/* .site-header-nav {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-left: 1.5rem;
-  flex: 1 1 auto;
-}
-
-.site-header-links {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.site-header-link {
-  font-size: 0.9rem;
-  padding: 0.35rem 0.55rem;
-  border-radius: 999px;
-  color: var(--text-light);
-}
-
-.site-header-link:hover {
-  background: rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
 
-.site-header-link.is-active {
+.site-header-wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.site-header-wordmark-full {
+  font-size: 0.85rem;
+}
+
+.site-header-wordmark-short {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+/* On small screens, hide the long wordmark */
+@media (max-width: 700px) {
+  .site-header-wordmark-full {
+    display: none;
+  }
+}
+
+/* Center tabs */
+.site-header-nav-primary {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.site-header-nav-link {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  border: 1px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header-nav-link:hover,
+.site-header-nav-link:focus-visible {
+  border-color: var(--brand-gold);
   background: var(--brand-gold-trans-btn);
-  color: var(--brand-light);
-} */
+  text-decoration: none;
+}
 
-/* 5.2.3 Mobile Nav / Hamburger */
-
-/* .site-header-toggle {
+/* Right utilities */
+.site-header-utilities {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
   margin-left: auto;
+}
+
+.site-header-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid var(--brand-gold);
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.site-header-icon-btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.site-header-account-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--brand-gold);
+  color: var(--text-light);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.site-header-account-avatar {
+  position: relative;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  background: var(--panel-trans-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.site-account-initial {
+  font-size: 0.95rem;
+}
+
+.site-account-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Drawer overlay (desktop + mobile) */
+.site-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 850;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.site-nav-drawer {
+  width: min(320px, 80%);
+  background: var(--bg-dark);
+  color: var(--text-light);
+  box-shadow: var(--shadow-strong);
+  padding: 1rem 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.site-nav-close {
+  align-self: flex-end;
   background: transparent;
   border: none;
   color: var(--text-light);
   font-size: 1.5rem;
-  padding: 0.25rem 0.4rem;
   line-height: 1;
-  display: none;
-} */
-
-/* Mobile menu panel */
-/* 
-.site-header-menu {
-  display: none;
-  flex-direction: column;
-  gap: 0.4rem;
-  padding: 0.4rem 1rem 0.75rem;
-  background: var(--bg-dark);
 }
 
-.site-header-menu.is-open {
-  display: flex;
-} */
-
-/* 5.2.4 Search in Header */
-
-/* .site-header-search {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
+.site-nav-drawer-section + .site-nav-drawer-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.75rem;
 }
 
-.site-header-search input[type="search"] {
-  max-width: 180px;
-} */
-
-/* 5.2.5 Account Pill / Auth Controls */
-
-/* .site-header-account {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: 0.75rem;
-}
-
-.account-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.35);
-  color: var(--text-light);
-  font-size: 0.85rem;
-}
-
-.account-pill img {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  object-fit: cover;
-} */
-
-/* Responsive behavior */
-
-/* @media (max-width: 768px) {
-  .site-header-inner {
-    flex-wrap: wrap;
-  }
-
-  .site-header-nav {
-    display: none;
-  }
-
-  .site-header-toggle {
-    display: inline-flex;
-  }
-
-  .site-header-menu {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-  }
-} */
-
-
-/* 5.3 Secondary Navigation / Tabs ========================================================================== */
-
-/* .tabs {
-  border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 1rem;
-}
-
-.tabs-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tabs-link {
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
+.site-nav-drawer-title {
   font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.4rem;
   color: var(--text-muted);
 }
 
-.tabs-link:hover {
-  background: rgba(0, 0, 0, 0.03);
+.site-nav-drawer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav-drawer-list li + li {
+  margin-top: 0.35rem;
+}
+
+.site-nav-drawer-list a {
+  display: block;
+  padding: 0.3rem 0.1rem;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.site-nav-drawer-list a:hover,
+.site-nav-drawer-list a:focus-visible {
+  color: var(--brand-light);
   text-decoration: none;
 }
 
-.tabs-link.is-active {
-  background: var(--brand-gold-trans-btn);
-  color: var(--text-dark);
+/* When nav is open, prevent body scroll if desired */
+body.site-nav-open {
+  overflow: hidden;
 }
- */
+
+/* Responsive behaviour */
+@media (max-width: 900px) {
+  .site-header-nav-primary {
+    display: none; /* rely on drawer on smaller screens */
+  }
+
+  .site-header-utilities {
+    margin-left: auto; /* logo left, utilities right */
+  }
+}
+
+@media (max-width: 700px) {
+  .site-header-inner {
+    padding-inline: 0.75rem;
+  }
+
+  .site-header .logo-link img.rounded-img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .site-header-account-label {
+    display: none; /* icon-only account pill on small screens */
+  }
+}
+
 
 /* 5.4 Site Footer ========================================================================== */
 

@@ -1,290 +1,143 @@
-<header class="container site-header">
-  <nav class="main-nav">
-    <!-- Logo -->
-    <a href="{{ '/' | relative_url }}" class="logo-link">
-      <img
-        src="{{ '/img/SHK-Cross.webp' | relative_url }}"
-        alt="Seeking His Kingdom"
-        class="rounded-img"
-      />
-    </a>
+<header class="site-header">
+  <div class="site-header-bar">
+    <div class="site-header-inner">
 
-    <!-- Title: full on desktop, SHK on mobile -->
-    <h1 class="site-title">
-      <span class="site-title-full">SHK</span>
-      <span class="site-title-short">SHK</span>
-    </h1>
+      <!-- Left: logo + wordmark -->
+      <a href="{{ '/' | relative_url }}" class="logo-link site-header-logo">
+        <img
+          src="{{ '/img/SHK-Cross.webp' | relative_url }}"
+          alt="Seeking His Kingdom"
+          class="rounded-img"
+        />
+        <span class="site-header-wordmark">
+          <span class="site-header-wordmark-full">Seeking His Kingdom</span>
+          <span class="site-header-wordmark-short">SHK</span>
+        </span>
+      </a>
 
-    <!-- Mobile hamburger -->
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-      ☰
-    </button>
+      <!-- Center: primary tabs (desktop-first) -->
+      <nav class="site-header-nav-primary" aria-label="Primary">
+        <a href="{{ '/daily/'         | relative_url }}" class="site-header-nav-link">Daily</a>
+        <a href="{{ '/bible/'         | relative_url }}" class="site-header-nav-link">Bible</a>
+        <a href="{{ '/tools-games/'   | relative_url }}" class="site-header-nav-link">Tools &amp; Games</a>
+        <a href="{{ '/literature/'    | relative_url }}" class="site-header-nav-link">Literature</a>
+        <a href="{{ '/testimonies/'   | relative_url }}" class="site-header-nav-link">Testimonies</a>
+        <a href="{{ '/about/'         | relative_url }}" class="site-header-nav-link">About</a>
+      </nav>
 
-    <!-- Main nav -->
-    <div id="primary-nav" class="nav-links">
-      <!-- Tools & Games (has dropdown) -->
-      <div class="nav-item has-submenu">
-        <a href="{{ '/tools-games/' | relative_url }}" class="nav-button nav-parent">
-          Tools &amp; Games
-        </a>
-        <button
-          class="submenu-toggle"
-          aria-label="Toggle Tools & Games menu"
-          aria-expanded="false"
-        >
-          ▾
+      <!-- Right: search, account, hamburger -->
+      <div class="site-header-utilities">
+        <button class="site-header-icon-btn site-header-search-btn" type="button" aria-label="Search">
+          <span class="site-header-icon">🔍</span>
         </button>
-        <div class="nav-dropdown">
-          <div class="nav-dropdown-grid">
-            <a href="{{ '/tools-games/tools/' | relative_url }}" class="nav-dropdown-item">
-              Tools
-            </a>
-            <a href="{{ '/tools-games/games/' | relative_url }}" class="nav-dropdown-item">
-              Games
-            </a>
-          </div>
-        </div>
+
+        <a href="{{ '/account/' | relative_url }}" class="site-header-account-pill">
+          <span class="site-header-account-avatar">
+            <span id="site-account-initial" class="site-account-initial">✝</span>
+            <img
+              id="site-account-avatar-img"
+              class="site-account-avatar-img"
+              src=""
+              alt="Your profile picture"
+              style="display:none;"
+            />
+          </span>
+          <span class="site-header-account-label">Account</span>
+        </a>
+
+        <button
+          class="site-header-icon-btn site-header-menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span class="site-header-icon">☰</span>
+        </button>
       </div>
 
-      <!-- Literature (has dropdown) -->
-      <div class="nav-item has-submenu">
-        <a href="{{ '/literature/' | relative_url }}" class="nav-button nav-parent">
-          Literature
-        </a>
-        <button
-          class="submenu-toggle"
-          aria-label="Toggle Literature menu"
-          aria-expanded="false"
-        >
-          ▾
-        </button>
-        <div class="nav-dropdown">
-          <div class="nav-dropdown-grid">
-            <a href="{{ '/literature/bible/' | relative_url }}" class="nav-dropdown-item">
-              Bible
-            </a>
-            <a href="{{ '/literature/bible/languages/' | relative_url }}" class="nav-dropdown-item">
-              Biblical Languages
-            </a>
-            <a href="{{ '/literature/bible/strongs/' | relative_url }}" class="nav-dropdown-item">
-              Strong's Concordance
-            </a>
-            <a href="{{ '/literature/historical/' | relative_url }}" class="nav-dropdown-item">
-              Historical Writings
-            </a>
-            <a href="{{ '/literature/historical/creeds/' | relative_url }}" class="nav-dropdown-item">
-              Creeds
-            </a>
-            <a href="{{ '/literature/index/' | relative_url }}" class="nav-dropdown-item">
-              Literature Index
-            </a>
-          </div>
-        </div>
+    </div>
+  </div>
+
+  <!-- Overlay + slide-out nav (desktop + mobile) -->
+  <div class="site-nav-overlay" data-nav-overlay hidden>
+    <div
+      class="site-nav-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Site navigation"
+    >
+      <button
+        class="site-nav-close"
+        type="button"
+        aria-label="Close navigation"
+        data-nav-close
+      >
+        ×
+      </button>
+
+      <div class="site-nav-drawer-section">
+        <h2 class="site-nav-drawer-title">Navigate</h2>
+        <ul class="site-nav-drawer-list">
+          <li><a href="{{ '/daily/'       | relative_url }}">Daily Overview</a></li>
+          <li><a href="{{ '/bible/'       | relative_url }}">Bible Tools</a></li>
+          <li><a href="{{ '/tools-games/' | relative_url }}">Tools &amp; Games</a></li>
+          <li><a href="{{ '/literature/'  | relative_url }}">Literature &amp; Articles</a></li>
+          <li><a href="{{ '/testimonies/' | relative_url }}">Testimonies</a></li>
+          <li><a href="{{ '/community/'   | relative_url }}">Community</a></li>
+          <li><a href="{{ '/about/'       | relative_url }}">About SHK</a></li>
+        </ul>
       </div>
 
-      <!-- Resources (has dropdown) -->
-      <div class="nav-item has-submenu">
-        <a href="{{ '/resources/' | relative_url }}" class="nav-button nav-parent">
-          Resources
-        </a>
-        <button
-          class="submenu-toggle"
-          aria-label="Toggle Resources menu"
-          aria-expanded="false"
-        >
-          ▾
-        </button>
-        <div class="nav-dropdown">
-          <div class="nav-dropdown-grid">
-            <a href="{{ '/resources/ministries/' | relative_url }}" class="nav-dropdown-item">
-              Ministries
-            </a>
-            <a href="{{ '/resources/online/' | relative_url }}" class="nav-dropdown-item">
-              Online Resources
-            </a>
-            <a href="{{ '/resources/faq/' | relative_url }}" class="nav-dropdown-item">
-              FAQs
-            </a>
-            <a href="{{ '/resources/online/shk/' | relative_url }}" class="nav-dropdown-item">
-              SHK
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testimony (has dropdown) -->
-      <div class="nav-item has-submenu">
-        <a href="{{ '/testimony/' | relative_url }}" class="nav-button nav-parent">
-          Testimony
-        </a>
-        <button
-          class="submenu-toggle"
-          aria-label="Toggle Testimony menu"
-          aria-expanded="false"
-        >
-          ▾
-        </button>
-        <div class="nav-dropdown">
-          <div class="nav-dropdown-grid">
-            <a href="{{ '/testimony/' | relative_url }}" class="nav-dropdown-item">
-              Testimony Home &amp; Info
-            </a>
-            <a href="{{ '/dev/testimony/wall/' | relative_url }}" class="nav-dropdown-item">
-              View the "Testimony Wall"
-            </a>
-            <a href="{{ '/account/' | relative_url }}" class="nav-dropdown-item">
-              See your Testimony (account)
-            </a>
-            <a href="{{ '/help/prayer-testimony/' | relative_url }}" class="nav-dropdown-item">
-              Share prayers or testimonies
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Community (has dropdown) -->
-      <div class="nav-item has-submenu">
-        <a href="{{ '/community/' | relative_url }}" class="nav-button nav-parent">
-          Community
-        </a>
-        <button
-          class="submenu-toggle"
-          aria-label="Toggle Community menu"
-          aria-expanded="false"
-        >
-          ▾
-        </button>
-        <div class="nav-dropdown">
-          <div class="nav-dropdown-grid">
-            <a href="{{ '/about/socials/' | relative_url }}" class="nav-dropdown-item">
-              Connect &amp; Socials
-            </a>
-            <a href="{{ '/community/find-community/' | relative_url }}" class="nav-dropdown-item">
-              Find a Church/Community
-            </a>
-            <a href="{{ '/community/prayer/' | relative_url }}" class="nav-dropdown-item">
-              Prayer
-            </a>
-            <a href="{{ '/community/worship/' | relative_url }}" class="nav-dropdown-item">
-              Worship
-            </a>
-            <a href="{{ '/community/fellowship/' | relative_url }}" class="nav-dropdown-item">
-              Fellowship
-            </a>
-            <a href="{{ '/community/discipleship/' | relative_url }}" class="nav-dropdown-item">
-              Discipleship
-            </a>
-            <a href="{{ '/testimony/' | relative_url }}" class="nav-dropdown-item">
-              Testimony
-            </a>
-            <a href="{{ '/community/blessings/' | relative_url }}" class="nav-dropdown-item">
-              Blessings
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Serving (has dropdown) -->
-      <div class="nav-item has-submenu">
-        <a href="{{ '/serving/' | relative_url }}" class="nav-button nav-parent">
-          Serving
-        </a>
-        <button
-          class="submenu-toggle"
-          aria-label="Toggle Serving menu"
-          aria-expanded="false"
-        >
-          ▾
-        </button>
-        <div class="nav-dropdown">
-          <div class="nav-dropdown-grid">
-            <a href="{{ '/serving/community-service/' | relative_url }}" class="nav-dropdown-item">
-              Community Service
-            </a>
-            <a href="{{ '/serving/missions/' | relative_url }}" class="nav-dropdown-item">
-              Missions
-            </a>
-            <a href="{{ '/serving/evangelism/' | relative_url }}" class="nav-dropdown-item">
-              Evangelism
-            </a>
-            <a href="{{ '/serving/care-support/' | relative_url }}" class="nav-dropdown-item">
-              Care &amp; Support
-            </a>
-            <a href="{{ '/serving/training-resources/' | relative_url }}" class="nav-dropdown-item">
-              Training &amp; Resources
-            </a>
-            <a href="{{ '/serving/giving/' | relative_url }}" class="nav-dropdown-item">
-              Giving
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- About (has dropdown) -->
-      <div class="nav-item has-submenu">
-        <a href="{{ '/about/' | relative_url }}" class="nav-button nav-parent">
-          About
-        </a>
-        <button
-          class="submenu-toggle"
-          aria-label="Toggle About menu"
-          aria-expanded="false"
-        >
-          ▾
-        </button>
-        <div class="nav-dropdown">
-          <div class="nav-dropdown-grid">
-            <a href="{{ '/about/' | relative_url }}" class="nav-dropdown-item">
-              About Us
-            </a>
-            <a href="{{ '/about/mission/' | relative_url }}" class="nav-dropdown-item">
-              Our Mission
-            </a>
-            <a href="{{ '/about/beliefs/' | relative_url }}" class="nav-dropdown-item">
-              Beliefs
-            </a>
-            <a href="{{ '/about/team/' | relative_url }}" class="nav-dropdown-item">
-              Team
-            </a>
-            <a href="{{ '/about/legal/' | relative_url }}" class="nav-dropdown-item">
-              Legal &amp; Attributions
-            </a>
-            <a href="{{ '/about/privacy/' | relative_url }}" class="nav-dropdown-item">
-              Privacy Policy
-            </a>
-            <a href="{{ '/about/faq/' | relative_url }}" class="nav-dropdown-item">
-              FAQs
-            </a>
-          </div>
-        </div>
+      <div class="site-nav-drawer-section">
+        <h2 class="site-nav-drawer-title">Your account</h2>
+        <ul class="site-nav-drawer-list">
+          <li><a href="{{ '/account/' | relative_url }}">Account home</a></li>
+          <li><a href="{{ '/account/testimony/' | relative_url }}">My testimony</a></li>
+        </ul>
       </div>
     </div>
+  </div>
 
-    <a
-      href="{{ '/account/search/' | relative_url }}"
-      class="site-header-search-link"
-      aria-label="Search people"
-    >
-      <span class="site-header-search-icon" aria-hidden="true"></span>
-      <span class="site-header-search-label">Search</span>
-    </a>
+  <script>
+    (function () {
+      const toggle = document.querySelector('[data-nav-toggle]');
+      const overlay = document.querySelector('[data-nav-overlay]');
+      if (!toggle || !overlay) return;
 
+      const drawer = overlay.querySelector('.site-nav-drawer');
+      const closeBtn = overlay.querySelector('[data-nav-close]');
 
+      function openNav() {
+        overlay.hidden = false;
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('site-nav-open');
+      }
 
-    <!-- Account pill with avatar (top-right) -->
-    <a href="{{ '/account/' | relative_url }}" class="site-account-pill" aria-label="Your account">
-      <span class="site-account-avatar">
-        <span id="site-account-initial" class="site-account-initial">✝</span>
-        <img
-          id="site-account-avatar-img"
-          class="site-account-avatar-img"
-          src=""
-          alt="Your profile picture"
-          style="display:none;"
-        >
-      </span>
-      <span class="site-account-label">Account</span>
-    </a>
-  </nav>
+      function closeNav() {
+        overlay.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('site-nav-open');
+      }
+
+      toggle.addEventListener('click', function () {
+        if (overlay.hidden) {
+          openNav();
+        } else {
+          closeNav();
+        }
+      });
+
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) {
+          closeNav();
+        }
+      });
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closeNav);
+      }
+    })();
+  </script>
 </header>
 <hr>
