@@ -1114,6 +1114,234 @@ body.site-nav-open {
 }
 
 
+/* 5.3 Site Rail (desktop left nav) ======================================== */
+
+.site-rail {
+  position: fixed;
+  top: 80px; /* roughly below header; adjust if needed */
+  bottom: 0;
+  left: 0;
+  width: 3.25rem;
+  background: rgba(17, 14, 11, 0.9);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0.25rem;
+  gap: 0.5rem;
+  z-index: 750;
+}
+
+.site-rail-toggle {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--brand-gold);
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--text-light);
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-rail-toggle:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.site-rail-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.site-rail-icon-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.site-rail-icon-circle {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-rail-icon-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+/* Backdrop + panel */
+
+.site-rail-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 740;
+}
+
+.site-rail-panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 3.25rem; /* sits just to the right of the rail */
+  width: min(320px, 75vw);
+  background: var(--bg-dark);
+  color: var(--text-light);
+  box-shadow: var(--shadow-strong);
+  z-index: 760;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-rail-panel-inner {
+  padding: 0.75rem 0.9rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 100%;
+}
+
+.site-rail-panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-rail-panel-title {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.site-rail-panel-close {
+  border: none;
+  background: transparent;
+  color: var(--text-light);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Search box */
+
+.site-rail-search {
+  margin-top: 0.25rem;
+}
+
+.site-rail-search-input {
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.site-rail-search-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Group + links */
+
+.site-rail-groups {
+  margin-top: 0.35rem;
+  padding-right: 0.2rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.site-rail-group {
+  border-radius: 0.5rem;
+  margin-bottom: 0.4rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.site-rail-group-header {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border: none;
+  background: transparent;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-rail-group-label {
+  font-weight: 600;
+}
+
+.site-rail-links {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.4rem 0.5rem;
+  display: none; /* hidden until expanded */
+}
+
+.site-rail-group.site-rail-group--open .site-rail-links {
+  display: block;
+}
+
+.site-rail-link {
+  margin: 0.1rem 0;
+}
+
+.site-rail-link a {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.15rem 0.2rem;
+}
+
+.site-rail-link a:hover,
+.site-rail-link a:focus-visible {
+  color: var(--brand-light);
+}
+
+/* Grandchildren slightly indented */
+.site-rail-link-grandchild a {
+  padding-left: 0.8rem;
+  font-size: 0.85rem;
+}
+
+/* Respect [hidden] attribute for backdrop/panel */
+.site-rail-backdrop[hidden],
+.site-rail-panel[hidden] {
+  display: none;
+}
+
+/* Desktop only for now */
+@media (max-width: 900px) {
+  .site-rail,
+  .site-rail-backdrop,
+  .site-rail-panel {
+    display: none !important;
+  }
+}
+
+body.site-rail-open {
+  overflow: hidden;
+}
+
+
 /* 5.4 Site Footer ========================================================================== */
 
 .site-footer {

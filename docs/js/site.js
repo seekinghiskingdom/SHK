@@ -83,20 +83,20 @@
 
 
 // 5) Mobile: toggle submenus via the small ▾ button, keep parent link navigable
-(() => {
-  const toggles = document.querySelectorAll('.nav-item.has-submenu .submenu-toggle');
-  if (!toggles.length) return;
+// (() => {
+//   const toggles = document.querySelectorAll('.nav-item.has-submenu .submenu-toggle');
+//   if (!toggles.length) return;
 
-  toggles.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const item = btn.closest('.nav-item');
-      if (!item) return;
-      const isOpen = item.classList.toggle('submenu-open');
-      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-  });
-})();
+//   toggles.forEach(btn => {
+//     btn.addEventListener('click', (e) => {
+//       e.preventDefault();
+//       const item = btn.closest('.nav-item');
+//       if (!item) return;
+//       const isOpen = item.classList.toggle('submenu-open');
+//       btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+//     });
+//   });
+// })();
 
 // 6) Help CTA collapse/expand (cross button)
 (() => {
@@ -275,27 +275,29 @@ window.SHK_getSupabaseClient = function () {
   return window.shkSupabase;
 };
 
+
 // 10) Header account pill: avatar when logged in, "Sign in" when logged out
 (() => {
-  const pill = document.querySelector('.site-account-pill');
+  const pill = document.querySelector('.site-header-account-pill');
   if (!pill) return;
 
-  const labelEl   = pill.querySelector('.site-account-label');
+  const labelEl   = pill.querySelector('.site-header-account-label');
   const initialEl = document.getElementById('site-account-initial');
   const imgEl     = document.getElementById('site-account-avatar-img');
+
+  const base = window.SHK_BASEURL || '';
 
   // Default: signed-out look
   if (labelEl)   labelEl.textContent = 'Sign in';
   if (initialEl) initialEl.textContent = '✝';
   if (imgEl)     imgEl.style.display = 'none';
-  pill.href = '/account/sign-in/';
+  pill.href = `${base}/account/sign-in/`;
 
-  // If Supabase isn't available on this page, stop here
   const supabase = window.SHK_getSupabaseClient();
   if (!supabase) return;
 
   supabase.auth.getUser().then(({ data, error }) => {
-    if (error || !data || !data.user) return;  // stay in "Sign in" state
+    if (error || !data || !data.user) return;
 
     const user = data.user;
     const meta = user.user_metadata || {};
@@ -306,17 +308,16 @@ window.SHK_getSupabaseClient = function () {
     const role        = meta.role || 'user';
     const email       = user.email || '';
 
-    // Expose global role/handle context for other pages (Phase 1.1)
     window.SHK_ROLE   = role;
     window.SHK_HANDLE = handle;
 
     let initial = '✝';
-    if (displayName && displayName.trim())      initial = displayName.trim()[0].toUpperCase();
-    else if (email)                             initial = email[0].toUpperCase();
+    if (displayName && displayName.trim()) initial = displayName.trim()[0].toUpperCase();
+    else if (email)                         initial = email[0].toUpperCase();
 
-    // Signed-in look: avatar only, link to account
-    pill.href = '/account/';
-    if (labelEl)   labelEl.textContent = '';  // or hide via CSS if you prefer
+    pill.href = `${base}/account/`;
+    if (labelEl)   labelEl.textContent = '';
+
     if (avatarKey && window.SHK_getAvatarUrlByKey) {
       const url = window.SHK_getAvatarUrlByKey(avatarKey);
       if (url && imgEl) {
@@ -330,3 +331,115 @@ window.SHK_getSupabaseClient = function () {
     }
   });
 })();
+
+
+
+// 11) Site left rail (desktop nav + search)
+(() => {
+  const rail      = document.querySelector('.site-rail');
+  const panel     = document.querySelector('[data-rail-panel]');
+  const backdrop  = document.querySelector('[data-rail-backdrop]');
+  if (!rail || !panel || !backdrop) return;
+
+  const toggle        = rail.querySelector('.site-rail-toggle');
+  const iconButtons   = rail.querySelectorAll('.site-rail-icon-btn');
+  const groupElems    = panel.querySelectorAll('.site-rail-group');
+  const groupHeaders  = panel.querySelectorAll('.site-rail-group-header');
+  const searchInput   = panel.querySelector('#site-rail-search-input');
+  const allLinks      = panel.querySelectorAll('.site-rail-link');
+
+  function openPanel() {
+    panel.hidden = false;
+    backdrop.hidden = false;
+    document.body.classList.add('site-rail-open');
+  }
+
+  function closePanel() {
+    panel.hidden = true;
+    backdrop.hidden = true;
+    document.body.classList.remove('site-rail-open');
+  }
+
+  // Menu button at top of rail
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      if (panel.hidden) {
+        openPanel();
+      } else {
+        closePanel();
+      }
+    });
+  }
+
+  // Clicking an icon: open panel + open that section's group
+  iconButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-rail-section');
+      if (!id) return;
+
+      openPanel();
+
+      groupElems.forEach(group => {
+        const match = group.getAttribute('data-rail-group') === id;
+        group.classList.toggle('site-rail-group--open', match);
+      });
+
+      const active = panel.querySelector(`.site-rail-group[data-rail-group="${id}"]`);
+      if (active) active.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    });
+  });
+
+  // Expand/collapse groups inside panel
+  groupHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const group = header.closest('.site-rail-group');
+      if (!group) return;
+      const isOpen = group.classList.toggle('site-rail-group--open');
+      // Optional: close others when one opens
+      if (isOpen) {
+        groupElems.forEach(g => {
+          if (g !== group) g.classList.remove('site-rail-group--open');
+        });
+      }
+    });
+  });
+
+  // Backdrop click closes
+  backdrop.addEventListener('click', closePanel);
+
+  // Escape closes
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !panel.hidden) {
+      closePanel();
+    }
+  });
+
+  // Simple client-side search over label + keywords
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.trim().toLowerCase();
+
+      if (!q) {
+        // Show everything
+        groupElems.forEach(g => g.style.display = '');
+        allLinks.forEach(li => li.style.display = '');
+        return;
+      }
+
+      groupElems.forEach(group => {
+        let anyVisible = false;
+        const links = group.querySelectorAll('.site-rail-link');
+
+        links.forEach(li => {
+          const haystack = (li.dataset.search || '').toLowerCase();
+          const match = haystack.includes(q);
+          li.style.display = match ? '' : 'none';
+          if (match) anyVisible = true;
+        });
+
+        group.style.display = anyVisible ? '' : 'none';
+      });
+    });
+  }
+})();
+
