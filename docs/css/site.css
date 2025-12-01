@@ -599,86 +599,6 @@ button:focus-visible {
 
 
 
-/* ignore below, refactoring into above sections */
-:root {
-  /* 1) Neutral bases (backgrounds + panels) */
-  --bg-light-page:        #aaaaa0;
-  --bg-dark-page:         #505049;
-  --bg-surface:     #d9d5cc;
-  --bg-surface-alt: #c3beb3;
-
-  --border-subtle:  #cfcac0;
-
-  --panel:        #1C1B17;
-  --panel-trans-light:    rgba(50,10,10, 0.1);
-  --panel-trans-strong:    rgba(50,10,10, 0.3);
-
-  --shadow:        0 8px 24px rgba(0, 0, 0, 0.12);  /* general purpose */
-  --shadow-soft:   0 4px 12px rgba(0, 0, 0, 0.08);  /* default card / tile */
-  --shadow-strong: 0 12px 32px rgba(0, 0, 0, 0.18); /* modals, floating panels */
-
-
-  /* 2) Text */
-  --text-light:     #f3f1eb;
-  --text-dark:      #1C1B17;
-  --text-muted:     #64645a;
-  --text-on-gold:   #1C1B17;
-
-  /* 3) Brand golds */     /* Hue:=45-55; All spectrum: ...*/
-  --brand-saint:       #c8af7a; /* c1b195, c8af7a */
-  --brand-light:       #e0d1a6; /* me: fad976; chat: f3ebd2, f5eed6 */
-  --brand-cross:       #e3c573; /*e7c35a, e5c467, e3c573 (e6c882 & debf77?); init dropper: c69d65, b68e54, d4bc90, debf77*/
-
-  --brand-gold:        #e6c864; /* e6c864(easy rgb)=e5c467; chat: c1b195/e3c576, c8af7a/e7c35a */
-  --brand-gold-trans-btn: rgba(230, 200, 100, 0.1);
-  --brand-gold-trans-card: rgba(230, 200, 100, 0.3);
-
-  --brand-pop:         #fadc00; /*C8A028/deb000/fac800/fadc00; can get to brand-gold in same hex hue/spectrum, it might be good to keep that for color theory (TBD)?*/
-  --brand-strong:      #fac800; /*C8A028/deb000/fac800/fadc00; can get to brand-gold in same hex hue/spectrum, it might be good to keep that for color theory (TBD)?*/
-  --brand-dark:        #c8a028; /*C8A028/deb000/fac800/fadc00; can get to brand-gold in same hex hue/spectrum, it might be good to keep that for color theory (TBD)?*/
-
-
-  /* 4) Accents */
-  --acc-link:          #7b8fc9; /* TBD */
-  --acc-verse:         #c9d6f0; /* TBD */
-  --acc-red-letters:   #880000;
-
-  --acc-green:         #3c3c14;
-  --acc-olive:         #645a28;
-  --acc-earth:         #af8c37;
-  --acc-tan:           #aa8246;
-  --acc-brown:         #64461e;
-
-  /* 5) State colors */
-  --state-success: #4c8b5f;
-  --state-warning: #e0a63b;
-  --state-danger:  #c2543f;
-
-  /* 6) Interaction */
-  --focus-ring:   #7b8fc9; /* purpose? TBD */
-}
-
-/* ========== Base Styles ========== */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: var(--bg-dark-page);
-  color: var(--text-light);
-  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
-}
-
-a {
-  color: var(--brand-pop);
-}
-
-html {
-  overflow-y: scroll; /* always reserve scrollbar width */
-}
-
-
 .container {
   max-width: none;     /* remove the fixed max width */
   margin: 0;           /* remove auto centering */
@@ -717,13 +637,6 @@ header.container h1 {
   margin: 0 0.5rem;
 }
 
-/* nav a.nav-button,
-nav a.current-button {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  font-size: 0.9rem;
-} */
-
 header.container img.rounded-img {
   width: 40px;       /* make width and height equal */
   height: 40px;
@@ -752,14 +665,11 @@ nav img {
 }
 
 /* Optional: remove focus outline */
-.nav-button:focus,
-button:focus {
+.nav-button:focus{
   outline: none;
 }
 
-.nav-button,
-.btn,
-button {
+.nav-button{
   background-color: var(--brand-gold);
   color: white;
   padding: 10px 15px;
@@ -772,16 +682,13 @@ button {
   transition: background-color 0.2s;
 }
 
-.nav-button:hover,
-.btn:hover,
-button:hover {
+.nav-button:hover{
   background-color: var(--brand-dark);
 }
 
 
 /* ========== Buttons (Nav + Regular) ========== */
-.current-button,
-button {
+.current-button{
   background-color: var(--brand-dark);
   color: var(--text-light);
   padding: 10px 15px;
@@ -795,14 +702,12 @@ button {
 }
 
 /* Hover effect */
-.current-button:hover,
-button:hover {
+.current-button:hover{
   background-color: var(--brand-dark); /* dark goldenrod */
 }
 
 /* Optional: remove focus outline */
-.current-button:focus,
-button:focus {
+.current-button:focus{
   outline: none;
 }
 
@@ -822,17 +727,12 @@ button:focus {
   margin-bottom: 4px;
 }
 
-select,
-button {
+select{
   background: var(--panel-trans-strong);
   color: var(--text-light);
   border: 1px solid var(--brand-pop);
   border-radius: 8px;
   padding: 8px;
-}
-
-button {
-  border-color: var(--brand-gold);
 }
 
 /* ========== Results Styling ========== */
@@ -971,24 +871,7 @@ select:focus {
   border-color: var(--brand-gold);
 }
 
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: var(--brand-gold);
-  border: none;
-  color: var(--text-on-gold);
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  box-sizing: border-box;
-  transition: background-color 0.3s ease;
-}
 
-button:hover {
-  background-color: var(--brand-dark);
-  color: var(--text-on-gold);
-}
 
 .results {
   flex: 1;
@@ -1695,9 +1578,7 @@ body {
 
 
 /* Make dropdown items use the same gold button style */
-.nav-button,
-.btn,
-button,
+.nav-button
 .nav-dropdown-item {
   background-color: var(--brand-gold);
   color: var(--text-on-gold);
@@ -1712,9 +1593,7 @@ button,
   display: inline-block;
 }
 
-.nav-button:hover,
-.btn:hover,
-button:hover,
+.nav-button:hover
 .nav-dropdown-item:hover,
 .nav-dropdown-item:focus-visible {
   background-color: var(--brand-dark);
