@@ -336,56 +336,62 @@ window.SHK_getSupabaseClient = function () {
 
 // 11) Site left rail (desktop nav + search)
 (() => {
-  const rail      = document.querySelector('.site-rail');
-  const panel     = document.querySelector('[data-rail-panel]');
-  const backdrop  = document.querySelector('[data-rail-backdrop]');
-  if (!rail || !panel || !backdrop) return;
+  const rail = document.querySelector('.site-rail');
+  if (!rail) return;
 
-  const toggle        = rail.querySelector('.site-rail-toggle');
-  const iconButtons   = rail.querySelectorAll('.site-rail-icon-btn');
-  const groupElems    = panel.querySelectorAll('.site-rail-group');
-  const groupHeaders  = panel.querySelectorAll('.site-rail-group-header');
-  const searchInput   = panel.querySelector('#site-rail-search-input');
-  const allLinks      = panel.querySelectorAll('.site-rail-link');
+  const toggle       = rail.querySelector('.site-rail-toggle');
+  const iconButtons  = rail.querySelectorAll('.site-rail-icon-btn');
+  const groupElems   = rail.querySelectorAll('.site-rail-group');
+  const groupHeaders = rail.querySelectorAll('.site-rail-group-header');
+  const searchInput  = rail.querySelector('#site-rail-search-input');
+  const allLinks     = rail.querySelectorAll('.site-rail-link');
+  const panelClose   = rail.querySelector('.site-rail-panel-close');
 
-  function openPanel() {
-    panel.hidden = false;
-    backdrop.hidden = false;
-    document.body.classList.add('site-rail-open');
+  function isOpen() {
+    return rail.classList.contains('site-rail--open');
   }
 
-  function closePanel() {
-    panel.hidden = true;
-    backdrop.hidden = true;
-    document.body.classList.remove('site-rail-open');
+  function openRail() {
+    rail.classList.add('site-rail--open');
   }
 
-  // Menu button at top of rail
+  function closeRail() {
+    rail.classList.remove('site-rail--open');
+  }
+
+  // Top ☰ button
   if (toggle) {
     toggle.addEventListener('click', () => {
-      if (panel.hidden) {
-        openPanel();
+      if (isOpen()) {
+        closeRail();
       } else {
-        closePanel();
+        openRail();
       }
     });
   }
 
-  // Clicking an icon: open panel + open that section's group
+  // Close button in panel header
+  if (panelClose) {
+    panelClose.addEventListener('click', closeRail);
+  }
+
+  // Clicking an icon: open rail + open that section's group
   iconButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       const id = btn.getAttribute('data-rail-section');
       if (!id) return;
 
-      openPanel();
+      openRail();
 
       groupElems.forEach(group => {
         const match = group.getAttribute('data-rail-group') === id;
         group.classList.toggle('site-rail-group--open', match);
       });
 
-      const active = panel.querySelector(`.site-rail-group[data-rail-group="${id}"]`);
-      if (active) active.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      const active = rail.querySelector(`.site-rail-group[data-rail-group="${id}"]`);
+      if (active) {
+        active.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      }
     });
   });
 
@@ -394,23 +400,24 @@ window.SHK_getSupabaseClient = function () {
     header.addEventListener('click', () => {
       const group = header.closest('.site-rail-group');
       if (!group) return;
-      const isOpen = group.classList.toggle('site-rail-group--open');
-      // Optional: close others when one opens
-      if (isOpen) {
+
+      const willOpen = !group.classList.contains('site-rail-group--open');
+
+      // optional: only one open at a time
+      if (willOpen) {
         groupElems.forEach(g => {
           if (g !== group) g.classList.remove('site-rail-group--open');
         });
       }
+
+      group.classList.toggle('site-rail-group--open', willOpen);
     });
   });
 
-  // Backdrop click closes
-  backdrop.addEventListener('click', closePanel);
-
-  // Escape closes
+  // Esc key closes
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !panel.hidden) {
-      closePanel();
+    if (e.key === 'Escape' && isOpen()) {
+      closeRail();
     }
   });
 
@@ -442,4 +449,3 @@ window.SHK_getSupabaseClient = function () {
     });
   }
 })();
-
