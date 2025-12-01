@@ -40,7 +40,7 @@
   --brand-gold-trans-card: rgba(230, 200, 100, 0.3); /* highlighted card bg */
 
   /* 4) Accents */
-  --acc-link:             #7b8fc9; /* link color, focus ring base */
+  --acc-link:             #fadc00; /* link color, focus ring base; 7b8fc9 */
   --acc-verse:            #c9d6f0; /* verse refs, gentle highlights */
   --acc-red-letters:      #880000; /* red-letter text */
 
