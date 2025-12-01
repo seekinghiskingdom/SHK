@@ -879,7 +879,12 @@ button:focus-visible {
 /* 5.2.1 Header Shell (.site-header-bar, .site-header-inner) */
 
 .site-header-bar {
-  background: var(--bg-dark);
+  /* background: var(--bg-dark); */
+  background: linear-gradient(to top,
+    rgba(251, 191, 36, 1.0) 0%,
+    rgba(251, 191, 36, 0.5) 50%,
+    rgba(251, 191, 36, 0) 100%
+  );
   color: var(--text-light);
   box-shadow: var(--shadow-soft);
 }
