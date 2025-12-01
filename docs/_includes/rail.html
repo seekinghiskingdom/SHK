@@ -1,7 +1,7 @@
 <nav class="site-rail" aria-label="Site navigation rail">
   <div class="site-rail-inner">
 
-    <div class="site-rail-icon-column">
+    <div class="site-rail-top">
       <button
         class="site-rail-toggle"
         type="button"
@@ -10,14 +10,28 @@
         ☰
       </button>
 
-      <ul class="site-rail-icons">
-        {% for section in site.data.rail_nav.sections %}
-          <li>
-            <button
-              class="site-rail-icon-btn"
-              type="button"
-              data-rail-section="{{ section.id }}"
-              aria-label="{{ section.label }}"
+      <div class="site-rail-search">
+        <input
+          type="search"
+          id="site-rail-search-input"
+          class="site-rail-search-input"
+          placeholder="Search pages…"
+          aria-label="Search site navigation"
+        />
+      </div>
+    </div>
+
+    <div class="site-rail-sections">
+      {% for section in site.data.rail_nav.sections %}
+        <section
+          class="site-rail-section"
+          data-rail-section="{{ section.id }}"
+        >
+          <div class="site-rail-section-main">
+            <a
+              href="{{ section.url | relative_url }}"
+              class="site-rail-section-link"
+              data-search="{{ section.label }} {% if section.keywords %}{{ section.keywords | join: ' ' }}{% endif %}"
             >
               <span class="site-rail-icon-circle">
                 <span class="site-rail-icon-text">
@@ -39,88 +53,52 @@
                   {% endcase %}
                 </span>
               </span>
-            </button>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+              <span class="site-rail-section-label">
+                {{ section.label }}
+              </span>
+            </a>
 
-    <div class="site-rail-panel">
-      <div class="site-rail-panel-inner">
-        <div class="site-rail-panel-top">
-          <h2 class="site-rail-panel-title">Navigate</h2>
-          <button
-            class="site-rail-panel-close"
-            type="button"
-            aria-label="Close navigation panel"
-          >
-            ×
-          </button>
-        </div>
-
-        <div class="site-rail-search">
-          <input
-            type="search"
-            id="site-rail-search-input"
-            class="site-rail-search-input"
-            placeholder="Search pages…"
-            aria-label="Search site navigation"
-          />
-        </div>
-
-        <div class="site-rail-groups">
-          {% for section in site.data.rail_nav.sections %}
-            <section
-              class="site-rail-group"
-              data-rail-group="{{ section.id }}"
-            >
+            {% assign has_children = section.children | size | minus: 0 %}
+            {% if has_children > 0 %}
               <button
-                class="site-rail-group-header"
+                class="site-rail-section-toggle"
                 type="button"
+                aria-label="Toggle {{ section.label }} links"
               >
-                <span class="site-rail-group-label">{{ section.label }}</span>
+                ▾
               </button>
+            {% endif %}
+          </div>
 
-              <ul class="site-rail-links">
-                <!-- Section home -->
+          {% if has_children > 0 %}
+            <ul class="site-rail-links">
+              {% for child in section.children %}
                 <li
                   class="site-rail-link"
-                  data-search="{{ section.label }} {% if section.keywords %}{{ section.keywords | join: ' ' }}{% endif %}"
+                  data-search="{{ child.label }} {% if child.keywords %}{{ child.keywords | join: ' ' }}{% endif %}"
                 >
-                  <a href="{{ section.url | relative_url }}">
-                    {{ section.label }} home
+                  <a href="{{ child.url | relative_url }}">
+                    {{ child.label }}
                   </a>
                 </li>
 
-                <!-- Direct children -->
-                {% for child in section.children %}
-                  <li
-                    class="site-rail-link"
-                    data-search="{{ child.label }} {% if child.keywords %}{{ child.keywords | join: ' ' }}{% endif %}"
-                  >
-                    <a href="{{ child.url | relative_url }}">
-                      {{ child.label }}
-                    </a>
-                  </li>
-
-                  {% if child.children %}
-                    {% for grand in child.children %}
-                      <li
-                        class="site-rail-link site-rail-link-grandchild"
-                        data-search="{{ grand.label }} {% if grand.keywords %}{{ grand.keywords | join: ' ' }}{% endif %}"
-                      >
-                        <a href="{{ grand.url | relative_url }}">
-                          {{ grand.label }}
-                        </a>
-                      </li>
-                    {% endfor %}
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            </section>
-          {% endfor %}
-        </div>
-      </div>
+                {% if child.children %}
+                  {% for grand in child.children %}
+                    <li
+                      class="site-rail-link site-rail-link-grandchild"
+                      data-search="{{ grand.label }} {% if grand.keywords %}{{ grand.keywords | join: ' ' }}{% endif %}"
+                    >
+                      <a href="{{ grand.url | relative_url }}">
+                        {{ grand.label }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </section>
+      {% endfor %}
     </div>
 
   </div>

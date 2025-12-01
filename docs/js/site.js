@@ -339,13 +339,12 @@ window.SHK_getSupabaseClient = function () {
   const rail = document.querySelector('.site-rail');
   if (!rail) return;
 
-  const toggle       = rail.querySelector('.site-rail-toggle');
-  const iconButtons  = rail.querySelectorAll('.site-rail-icon-btn');
-  const groupElems   = rail.querySelectorAll('.site-rail-group');
-  const groupHeaders = rail.querySelectorAll('.site-rail-group-header');
-  const searchInput  = rail.querySelector('#site-rail-search-input');
-  const allLinks     = rail.querySelectorAll('.site-rail-link');
-  const panelClose   = rail.querySelector('.site-rail-panel-close');
+  const toggle        = rail.querySelector('.site-rail-toggle');
+  const sectionElems  = rail.querySelectorAll('.site-rail-section');
+  const sectionLinks  = rail.querySelectorAll('.site-rail-section-link');
+  const sectionToggles= rail.querySelectorAll('.site-rail-section-toggle');
+  const searchInput   = rail.querySelector('#site-rail-search-input');
+  const allLinks      = rail.querySelectorAll('.site-rail-link');
 
   function isOpen() {
     return rail.classList.contains('site-rail--open');
@@ -359,7 +358,7 @@ window.SHK_getSupabaseClient = function () {
     rail.classList.remove('site-rail--open');
   }
 
-  // Top ☰ button
+  // Top ☰ button: open/close whole rail
   if (toggle) {
     toggle.addEventListener('click', () => {
       if (isOpen()) {
@@ -370,51 +369,46 @@ window.SHK_getSupabaseClient = function () {
     });
   }
 
-  // Close button in panel header
-  if (panelClose) {
-    panelClose.addEventListener('click', closeRail);
-  }
+  // Click on section row (icon + label)
+  sectionLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const section = link.closest('.site-rail-section');
+      if (!section) return;
 
-  // Clicking an icon: open rail + open that section's group
-  iconButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const id = btn.getAttribute('data-rail-section');
-      if (!id) return;
-
-      openRail();
-
-      groupElems.forEach(group => {
-        const match = group.getAttribute('data-rail-group') === id;
-        group.classList.toggle('site-rail-group--open', match);
-      });
-
-      const active = rail.querySelector(`.site-rail-group[data-rail-group="${id}"]`);
-      if (active) {
-        active.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      // If rail is collapsed, first click opens + expands, without navigating
+      if (!isOpen()) {
+        e.preventDefault();
+        openRail();
+        sectionElems.forEach(s => {
+          s.classList.toggle('site-rail-section--open', s === section);
+        });
+        return;
       }
+      // If already open, allow normal navigation
     });
   });
 
-  // Expand/collapse groups inside panel
-  groupHeaders.forEach(header => {
-    header.addEventListener('click', () => {
-      const group = header.closest('.site-rail-group');
-      if (!group) return;
+  // Click on arrow: just toggle children, no navigation
+  sectionToggles.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const section = btn.closest('.site-rail-section');
+      if (!section) return;
 
-      const willOpen = !group.classList.contains('site-rail-group--open');
+      if (!isOpen()) openRail();
 
-      // optional: only one open at a time
+      const willOpen = !section.classList.contains('site-rail-section--open');
       if (willOpen) {
-        groupElems.forEach(g => {
-          if (g !== group) g.classList.remove('site-rail-group--open');
+        // optional: only one open at a time
+        sectionElems.forEach(s => {
+          if (s !== section) s.classList.remove('site-rail-section--open');
         });
       }
-
-      group.classList.toggle('site-rail-group--open', willOpen);
+      section.classList.toggle('site-rail-section--open', willOpen);
     });
   });
 
-  // Esc key closes
+  // Esc closes rail
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && isOpen()) {
       closeRail();
@@ -427,16 +421,27 @@ window.SHK_getSupabaseClient = function () {
       const q = searchInput.value.trim().toLowerCase();
 
       if (!q) {
-        // Show everything
-        groupElems.forEach(g => g.style.display = '');
-        allLinks.forEach(li => li.style.display = '');
+        // Reset: show everything
+        sectionElems.forEach(sec => {
+          sec.style.display = '';
+          sec.classList.remove('site-rail-section--open');
+          const links = sec.querySelectorAll('.site-rail-link');
+          links.forEach(li => li.style.display = '');
+        });
         return;
       }
 
-      groupElems.forEach(group => {
-        let anyVisible = false;
-        const links = group.querySelectorAll('.site-rail-link');
+      // Ensure rail is open when searching
+      if (!isOpen()) openRail();
 
+      sectionElems.forEach(sec => {
+        let anyVisible = false;
+
+        const mainLink = sec.querySelector('.site-rail-section-link');
+        const mainHaystack = (mainLink && mainLink.dataset.search ? mainLink.dataset.search : '').toLowerCase();
+        const mainMatch = mainHaystack.includes(q);
+
+        const links = sec.querySelectorAll('.site-rail-link');
         links.forEach(li => {
           const haystack = (li.dataset.search || '').toLowerCase();
           const match = haystack.includes(q);
@@ -444,7 +449,10 @@ window.SHK_getSupabaseClient = function () {
           if (match) anyVisible = true;
         });
 
-        group.style.display = anyVisible ? '' : 'none';
+        if (mainMatch) anyVisible = true;
+
+        sec.style.display = anyVisible ? '' : 'none';
+        sec.classList.toggle('site-rail-section--open', anyVisible);
       });
     });
   }

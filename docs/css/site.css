@@ -840,7 +840,7 @@ button:focus-visible {
 
 /* 5.2 Site Header ========================================================================== */
 
-.site-header {
+/* .site-header {
   position: sticky;
   top: 0;
   z-index: 800;
@@ -873,7 +873,7 @@ button:focus-visible {
     width: 56px !important;
     height: 56px !important;
   }
-}
+} */
 
 
 /* 5.2.1 Header Shell (.site-header-bar, .site-header-inner) */
@@ -1118,14 +1118,15 @@ body.site-nav-open {
   }
 }
 
+
 /* 5.3 Site Rail (desktop left nav) ======================================== */
 
 .site-rail {
   position: fixed;
-  top: 80px; /* roughly below header; adjust if needed */
+  top: 80px; /* adjust to match header height */
   bottom: 0;
   left: 0;
-  width: 3.25rem; /* collapsed width (icons only) */
+  width: 3.25rem; /* collapsed: icons only */
   background: rgba(17, 14, 11, 0.9);
   border-right: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 750;
@@ -1134,26 +1135,27 @@ body.site-nav-open {
 }
 
 .site-rail--open {
-  width: 15rem; /* expanded width showing labels + groups */
+  width: 16rem; /* expanded: icons + labels + children */
 }
 
 .site-rail-inner {
   height: 100%;
   display: flex;
+  flex-direction: column;
 }
 
-/* Left column: toggle + icons */
+/* Top: toggle + search */
 
-.site-rail-icon-column {
-  flex: 0 0 3.25rem;
+.site-rail-top {
+  padding: 0.5rem 0.35rem 0.25rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0.5rem 0.25rem;
-  gap: 0.5rem;
+  gap: 0.4rem;
+  align-items: stretch;
 }
 
 .site-rail-toggle {
+  align-self: center;
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 999px;
@@ -1171,23 +1173,68 @@ body.site-nav-open {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.site-rail-icons {
-  list-style: none;
-  margin: 0;
-  padding: 0.25rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+.site-rail-search {
+  display: none; /* hidden when collapsed */
 }
 
-.site-rail-icon-btn {
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
+.site-rail--open .site-rail-search {
+  display: block;
+}
+
+.site-rail-search-input {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.site-rail-search-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Sections */
+
+.site-rail-sections {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding: 0.25rem 0.25rem 0.75rem;
+}
+
+.site-rail-section {
+  border-radius: 0.5rem;
+  margin-bottom: 0.25rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.site-rail-section-main {
+  display: flex;
+  align-items: center;
+}
+
+/* Main section row: icon + label */
+
+.site-rail-section-link {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.site-rail-section-link:hover,
+.site-rail-section-link:focus-visible {
+  color: var(--brand-light);
 }
 
 .site-rail-icon-circle {
+  flex: 0 0 2.25rem;
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 999px;
@@ -1203,112 +1250,44 @@ body.site-nav-open {
   color: var(--text-light);
 }
 
-/* Right side: expanded panel (search + groups) */
+/* Section label only visible when expanded */
 
-.site-rail-panel {
-  flex: 1 1 auto;
-  display: none; /* hidden when collapsed */
-  border-left: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(0, 0, 0, 0.5);
+.site-rail-section-label {
+  display: none;
+  white-space: nowrap;
 }
 
-.site-rail--open .site-rail-panel {
-  display: flex;
-  flex-direction: column;
+.site-rail--open .site-rail-section-label {
+  display: inline;
 }
 
-.site-rail-panel-inner {
-  padding: 0.75rem 0.9rem 1.1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  height: 100%;
-}
+/* Arrow toggle */
 
-.site-rail-panel-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site-rail-panel-title {
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-  margin: 0;
-  color: var(--text-muted);
-}
-
-.site-rail-panel-close {
+.site-rail-section-toggle {
+  display: none;
   border: none;
   background: transparent;
   color: var(--text-light);
-  font-size: 1.4rem;
-  line-height: 1;
+  font-size: 0.85rem;
+  padding: 0 0.35rem;
   cursor: pointer;
 }
 
-/* Search box */
-
-.site-rail-search {
-  margin-top: 0.25rem;
-}
-
-.site-rail-search-input {
-  width: 100%;
-  padding: 0.3rem 0.5rem;
-  border-radius: 999px;
-  border: 1px solid var(--border-subtle);
-  background: rgba(0, 0, 0, 0.35);
-  color: var(--text-light);
-  font-size: 0.9rem;
-}
-
-.site-rail-search-input::placeholder {
-  color: var(--text-muted);
-}
-
-/* Groups + links */
-
-.site-rail-groups {
-  margin-top: 0.35rem;
-  padding-right: 0.2rem;
-  overflow-y: auto;
-  scrollbar-width: thin;
-}
-
-.site-rail-group {
-  border-radius: 0.5rem;
-  margin-bottom: 0.4rem;
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.site-rail-group-header {
-  width: 100%;
-  padding: 0.35rem 0.5rem;
-  border: none;
-  background: transparent;
-  color: var(--text-light);
-  font-size: 0.9rem;
-  text-align: left;
-  display: flex;
+.site-rail--open .site-rail-section-toggle {
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
 }
 
-.site-rail-group-label {
-  font-weight: 600;
-}
+/* Children list */
 
 .site-rail-links {
   list-style: none;
   margin: 0;
-  padding: 0 0 0.4rem 0.5rem;
-  display: none; /* hidden until expanded */
+  padding: 0 0 0.35rem 3rem; /* indent under icon */
+  display: none;
 }
 
-.site-rail-group.site-rail-group--open .site-rail-links {
+.site-rail-section--open .site-rail-links {
   display: block;
 }
 
@@ -1318,7 +1297,7 @@ body.site-nav-open {
 
 .site-rail-link a {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-light);
   text-decoration: none;
   padding: 0.15rem 0.2rem;
@@ -1329,13 +1308,15 @@ body.site-nav-open {
   color: var(--brand-light);
 }
 
-/* Grandchildren slightly indented */
+/* Grandchildren slightly more indented */
+
 .site-rail-link-grandchild a {
-  padding-left: 0.8rem;
-  font-size: 0.85rem;
+  padding-left: 0.6rem;
+  font-size: 0.8rem;
 }
 
 /* Desktop only for now */
+
 @media (max-width: 900px) {
   .site-rail {
     display: none;
