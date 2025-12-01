@@ -36,8 +36,8 @@
   --brand-strong:         #fac800; /* primary CTA / strong emphasis */
   --brand-dark:           #c8a028; /* hover/active shade, outlines */
 
-  --brand-gold-trans-btn:  rgba(230, 200, 100, 0.1); /* subtle button hover bg */
-  --brand-gold-trans-card: rgba(230, 200, 100, 0.3); /* highlighted card bg */
+  --brand-gold-trans-btn:  #fac800;/*rgba(230, 200, 100, 0.1);  subtle button hover bg */
+  --brand-gold-trans-card: #fac800;/*rgba(230, 200, 100, 0.3);  highlighted card bg */
 
   /* 4) Accents */
   --acc-link:             #fadc00; /* link color, focus ring base; 7b8fc9 */
