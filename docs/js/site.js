@@ -31,55 +31,55 @@
   if (main) main.setAttribute('tabindex', '-1');
 })();
 
-// 4) Header nav drawer (hamburger + overlay)
-(() => {
-  const toggle  = document.querySelector('[data-nav-toggle]');
-  const overlay = document.querySelector('[data-nav-overlay]');
-  if (!toggle || !overlay) return;
+// // 4) Header nav drawer (hamburger + overlay)
+// (() => {
+//   const toggle  = document.querySelector('[data-nav-toggle]');
+//   const overlay = document.querySelector('[data-nav-overlay]');
+//   if (!toggle || !overlay) return;
 
-  const drawer      = overlay.querySelector('.site-nav-drawer');
-  const closeButtons = overlay.querySelectorAll('[data-nav-close]');
+//   const drawer      = overlay.querySelector('.site-nav-drawer');
+//   const closeButtons = overlay.querySelectorAll('[data-nav-close]');
 
-  function openNav() {
-    overlay.hidden = false;
-    document.body.classList.add('site-nav-open');
-    toggle.setAttribute('aria-expanded', 'true');
-  }
+//   function openNav() {
+//     overlay.hidden = false;
+//     document.body.classList.add('site-nav-open');
+//     toggle.setAttribute('aria-expanded', 'true');
+//   }
 
-  function closeNav() {
-    overlay.hidden = true;
-    document.body.classList.remove('site-nav-open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }
+//   function closeNav() {
+//     overlay.hidden = true;
+//     document.body.classList.remove('site-nav-open');
+//     toggle.setAttribute('aria-expanded', 'false');
+//   }
 
-  // Hamburger toggle
-  toggle.addEventListener('click', () => {
-    if (overlay.hidden) {
-      openNav();
-    } else {
-      closeNav();
-    }
-  });
+//   // Hamburger toggle
+//   toggle.addEventListener('click', () => {
+//     if (overlay.hidden) {
+//       openNav();
+//     } else {
+//       closeNav();
+//     }
+//   });
 
-  // Any X / close button inside the drawer
-  closeButtons.forEach(btn => {
-    btn.addEventListener('click', closeNav);
-  });
+//   // Any X / close button inside the drawer
+//   closeButtons.forEach(btn => {
+//     btn.addEventListener('click', closeNav);
+//   });
 
-  // Click on dim background closes drawer
-  overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) {
-      closeNav();
-    }
-  });
+//   // Click on dim background closes drawer
+//   overlay.addEventListener('click', (e) => {
+//     if (e.target === overlay) {
+//       closeNav();
+//     }
+//   });
 
-  // Esc key closes drawer
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !overlay.hidden) {
-      closeNav();
-    }
-  });
-})();
+//   // Esc key closes drawer
+//   document.addEventListener('keydown', (e) => {
+//     if (e.key === 'Escape' && !overlay.hidden) {
+//       closeNav();
+//     }
+//   });
+// })();
 
 
 // 5) Mobile: toggle submenus via the small ▾ button, keep parent link navigable
