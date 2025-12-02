@@ -840,6 +840,7 @@ button:focus-visible {
   margin: 0 auto;
 }
 
+
 /* 5.2 Site Header ========================================================================== */
 
 .site-header {
@@ -850,38 +851,16 @@ button:focus-visible {
   padding-bottom: 0.25rem;
 }
 
-/* .site-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top,
-    rgba(251, 191, 36, 0.3) 0%,
-    rgba(251, 191, 36, 0.18) 45%,
-    rgba(251, 191, 36, 0) 100%
-  );
-  border-bottom: 1px solid var(--brand-pop);
-  pointer-events: none;
-  z-index: -1;
-} */
-
 .site-header .logo-link img.rounded-img {
   width: 64px !important;
   height: 64px !important;
   object-fit: contain;
 }
 
-@media (max-width: 700px) {
-  .site-header .logo-link img.rounded-img {
-    width: 56px !important;
-    height: 56px !important;
-  }
-}
-
-
 /* 5.2.1 Header Shell (.site-header-bar, .site-header-inner) */
 
 .site-header-bar {
-  /* background: var(--bg-dark); */
+  position: relative; /* anchor for mobile absolute elements */
   background: linear-gradient(to top,
     rgba(251, 191, 36, 1.0) 0%,
     rgba(251, 191, 36, 0.5) 50%,
@@ -937,6 +916,7 @@ button:focus-visible {
 }
 
 /* Center tabs */
+
 .site-header-nav-primary {
   flex: 1 1 auto;
   display: flex;
@@ -962,7 +942,16 @@ button:focus-visible {
   text-decoration: none;
 }
 
+/* Active header tab */
+
+.site-header-nav-link.is-active {
+  border-color: var(--brand-gold);
+  background: var(--brand-gold-trans-card);
+  color: var(--text-on-gold);
+}
+
 /* Right utilities */
+
 .site-header-utilities {
   display: flex;
   align-items: center;
@@ -986,6 +975,8 @@ button:focus-visible {
 .site-header-icon-btn:hover {
   background: rgba(0, 0, 0, 0.5);
 }
+
+/* Account pill (desktop + mobile) */
 
 .site-header-account-pill {
   display: inline-flex;
@@ -1023,6 +1014,7 @@ button:focus-visible {
 }
 
 /* Drawer overlay (desktop + mobile) */
+
 .site-nav-overlay {
   position: fixed;
   inset: 0;
@@ -1090,53 +1082,38 @@ button:focus-visible {
 }
 
 /* When nav is open, prevent body scroll if desired */
+
 body.site-nav-open {
   overflow: hidden;
 }
 
 /* Responsive behaviour */
+
+/* Hide center tabs on tablet/phone, keep utilities on right */
 @media (max-width: 900px) {
   .site-header-nav-primary {
-    display: none; /* rely on drawer on smaller screens */
+    display: none;
   }
 
   .site-header-utilities {
-    margin-left: auto; /* logo left, utilities right */
+    margin-left: auto;
   }
 }
 
+/* Mobile layout: account left, logo centered, search + menu right */
 @media (max-width: 700px) {
-  .site-header-inner {
-    padding-inline: 0.75rem;
-  }
-
   .site-header .logo-link img.rounded-img {
     width: 48px !important;
     height: 48px !important;
   }
 
-  .site-header-account-label {
-    display: none; /* icon-only account pill on small screens */
-  }
-}
-
-@media (max-width: 700px) {
   .site-header-inner {
-    padding-inline: 0.75rem;
-    justify-content: center; /* logo centered */
+    max-width: 100%;
+    padding-inline: 3rem; /* space for left + right controls */
+    justify-content: center;
   }
 
-  /* Make header bar the positioning context for the account pill */
-  .site-header-bar {
-    position: relative;
-  }
-
-  .site-header .logo-link img.rounded-img {
-    width: 48px !important;
-    height: 48px !important;
-  }
-
-  /* Account pill: top-left, overlaid */
+  /* Account pill pinned on the left */
   .site-header-account-pill {
     position: absolute;
     left: 0.75rem;
@@ -1144,18 +1121,26 @@ body.site-nav-open {
     transform: translateY(-50%);
   }
 
-  /* Hide “Account” text on very small screens */
+  /* Hide “Account” text label on small screens */
   .site-header-account-label {
     display: none;
   }
 
-  /* Utilities (search + menu) stay on the right */
+  /* Utilities (search + menu) pinned on the right */
   .site-header-utilities {
-    margin-left: auto;  /* already present globally, safe to keep */
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0;
     gap: 0.25rem;
   }
-}
 
+  .site-header-utilities .site-header-icon-btn {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+}
 
 
 /* 5.3 Site Rail (desktop left nav) ======================================== */
