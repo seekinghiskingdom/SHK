@@ -360,7 +360,7 @@ button:focus-visible {
 
 /* Primary CTA */
 .btn-primary {
-  background-color: var(--brand-strong);
+  background-color: var(--brand-pop);
   color: var(--text-light);
 }
 
@@ -371,8 +371,8 @@ button:focus-visible {
 /* Secondary (outlined) */
 .btn-secondary {
   background-color: transparent;
-  color: var(--brand-gold);
-  border-color: var(--brand-gold);
+  color: var(--brand-pop);
+  border-color: var(--brand-pop);
 }
 
 .btn-secondary:hover {
@@ -427,8 +427,8 @@ button:focus-visible {
 
 /* Variant for “featured” cards (e.g., key CTAs, featured testimony) */
 .card-featured {
-  background: var(--brand-gold-trans-card);
-  border-color: var(--brand-gold);
+  background: var(--brand-pop);
+  border-color: var(--brand-pop);
 }
 
 /* Simple hover elevation */
@@ -568,7 +568,7 @@ button:focus-visible {
 
 .cta-block-text {
   margin-bottom: 0.75rem;
-  color: var(--text-muted);
+  color: var(--text-on-gold);
 }
 
 .cta-block-actions {
@@ -956,7 +956,7 @@ button:focus-visible {
 
 .site-header-nav-link:hover,
 .site-header-nav-link:focus-visible {
-  border-color: var(--brand-gold);
+  border-color: var(--panel);
   background: var(--brand-gold-trans-btn);
   text-decoration: none;
 }
@@ -1442,13 +1442,13 @@ body.site-nav-open {
   background-color: var(--panel-trans-strong); /* slightly lighter than the controls box (#2b2b2b) */
   color: var(--text-light);
   padding: 15px 20px;
-  border-top: 1px solid var(--brand-pop); /* even lighter separator line */
+  border-top: 1px solid var(--brand-gold); /* even lighter separator line */
   text-align: center;
   border-radius: 0 0 8px 8px;
 }
 
 .footer a {
-  color: var(--brand-gold);
+  color: var(--brand-pop);
   text-decoration: none;
   font-weight: bold;
 }
@@ -1462,7 +1462,7 @@ body.site-nav-open {
 /* ========== Footer ========== */
 .footer {
   margin: 24px 0;
-  color: var(--text-muted);
+  color: var(--text-light);
 }
 
 
