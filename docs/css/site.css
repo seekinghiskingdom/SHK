@@ -18,7 +18,8 @@
   /* legacy panel colors (can be phased out later or repurposed) */
   --panel:                #1C1B17;
   --panel-trans-light:    #1C1B17;/*rgba(50, 10, 10, 0.1);*/
-  --panel-trans-strong:   #1C1B17;/*rgba(50, 10, 10, 0.3);*/
+  --panel-trans:          #060605;/*rgba(50, 10, 10, 0.3);*/
+  --panel-trans-strong:   rgba(0, 0, 0, 0.7);
 
   /* 2) Text */
   --text-light:           #f3f1eb; /* text on dark backgrounds */
@@ -361,7 +362,7 @@ button:focus-visible {
 /* Primary CTA */
 .btn-primary {
   background-color: var(--brand-pop);
-  color: var(--text-light);
+  color: var(--text-on-gold);
 }
 
 .btn-primary:hover {
@@ -1540,7 +1541,6 @@ footer.container,
 /* 6. Feature & Page Modules */
 
 /* 6.1 Home / Landing Page */
-/* 6.1 Home / Landing Page */
 
 /* Home wrapper: no solid background (let the bg layer show through) */
 .home-page.page-shell {
@@ -1556,17 +1556,17 @@ footer.container,
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("/img/home-path-bg.webp"); /* TODO: update to your actual path image */
+  background-image: url("/img/shk-path-png.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   filter: blur(0px); /* adjust if you want more blur in CSS instead of the image */
 }
 
-/* Constrain inner content to the same width as other pages */
+/* Constrain inner content to a centered column */
 .home-hero-inner,
 .home-tiles-inner {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -1577,27 +1577,27 @@ footer.container,
 
 .home-hero-card {
   max-width: 700px;
-  margin-left: 0;         /* left-aligned under main content column */
-  background: rgba(28, 27, 23, 0.82); /* dark semi-translucent */
+  margin: 0 auto 1.75rem;     /* CENTER the hero card */
+  background: var(--panel-trans-strong);
   color: var(--text-light);
   border-radius: 14px;
   padding: 1.75rem 1.5rem 1.6rem;
   box-shadow: var(--shadow-strong);
 }
 
-/* On wider screens, nudge the hero card to align visually with main content,
-   given the rail width + header layout */
-@media (min-width: 900px) {
+/* No left-push on wider screens anymore */
+
+/* @media (min-width: 900px) {
   .home-hero-card {
     margin-left: 2.5rem;
   }
-}
+} */
 
 .home-hero-title {
   margin: 0 0 0.5rem;
   font-size: 2rem;
   line-height: 1.25;
-  color: var(--text-light);
+  color: var(--brand-gold);
   font-family: "Cinzel", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
 }
@@ -1613,10 +1613,6 @@ footer.container,
   flex-wrap: wrap;
   align-items: center;
   gap: 0.6rem 1rem;
-}
-
-.home-hero-btn {
-  /* already styled via .btn.btn-primary */
 }
 
 .home-hero-link {
@@ -1635,17 +1631,17 @@ footer.container,
   margin-bottom: 1.5rem;
 }
 
-/* Grid: two primary tiles side by side on desktop */
+/* STACK tiles vertically (Daily, Testimony, Involvement) */
 .home-tiles-primary {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-/* Secondary tile sits below, aligned to the left */
+/* Secondary tile just acts as tile #3 below the first two */
 .home-tiles-secondary {
-  max-width: 420px;
+  max-width: none;
 }
 
 /* Base tile style */
@@ -1654,7 +1650,7 @@ footer.container,
   text-decoration: none;
   border-radius: 12px;
   padding: 1.25rem 1.25rem 1.15rem;
-  background: rgba(28, 27, 23, 0.78); /* slightly lighter than hero card */
+  background: var(--panel-trans-strong);
   color: var(--text-light);
   box-shadow: var(--shadow-soft);
   transition: transform 0.12s ease, box-shadow 0.12s ease,
@@ -1662,12 +1658,8 @@ footer.container,
   border: 1px solid rgba(250, 200, 0, 0.18); /* subtle gold edge */
 }
 
-.home-tile-primary {
-  /* same base styling for now; reserved for future differentiation */
-}
-
 .home-tile-secondary {
-  background: rgba(28, 27, 23, 0.7);
+  background: var(--panel-trans-strong);
 }
 
 /* Hover/focus elevation */
@@ -1699,23 +1691,17 @@ footer.container,
   color: var(--text-verse);
 }
 
-/* Responsive: stack tiles on mobile */
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .home-hero-card {
-    margin-left: 0;
-  }
-
-  .home-tiles-primary {
-    grid-template-columns: 1fr;
-  }
-
-  .home-tiles-secondary {
-    max-width: none;
+  .home-page.page-shell {
+    padding: 1.25rem 0.75rem 2.5rem;
   }
 }
 
 /* 6.1.1 Home Hero (intro copy, hero CTA) */
 /* 6.1.2 Home Feature Rows (tiles, daily teaser, etc.) */
+
+
 
 /* 6.2 Hubs & Collections */
 
