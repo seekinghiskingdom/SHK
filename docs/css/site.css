@@ -17,8 +17,8 @@
 
   /* legacy panel colors (can be phased out later or repurposed) */
   --panel:                #1C1B17;
-  --panel-trans-light:    #1C1B17;/*rgba(50, 10, 10, 0.1);*/
-  --panel-trans:          #060605;/*rgba(50, 10, 10, 0.3);*/
+  --panel-trans-light:    rgba(0, 0, 0, 0.1);
+  --panel-trans:          rgba(0, 0, 0, 0.3);
   --panel-trans-strong:   rgba(0, 0, 0, 0.7);
 
   /* 2) Text */
@@ -1166,8 +1166,8 @@ body.site-nav-open {
   bottom: 0;
   left: 0;
   width: 3.25rem; /* collapsed: icons only */
-  background: rgba(17, 14, 11, 0.9);
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--panel-trans-strong);
+  border-right: var(--brand-pop);
   z-index: 750;
   overflow: hidden;
   transition: width 0.2s ease;
@@ -1199,7 +1199,7 @@ body.site-nav-open {
   height: 2.25rem;
   border-radius: 999px;
   border: 1px solid var(--brand-gold);
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--panel-trans-strong);
   color: var(--text-light);
   font-size: 1.1rem;
   display: inline-flex;
@@ -1209,7 +1209,7 @@ body.site-nav-open {
 }
 
 .site-rail-toggle:hover {
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--panel-trans-strong);
 }
 
 .site-rail-search {
@@ -1225,7 +1225,7 @@ body.site-nav-open {
   padding: 0.25rem 0.5rem;
   border-radius: 999px;
   border: 1px solid var(--border-subtle);
-  background: rgba(0, 0, 0, 0.35);
+  background: var(--panel-trans-strong);
   color: var(--text-light);
   font-size: 0.9rem;
 }
@@ -1246,7 +1246,7 @@ body.site-nav-open {
 .site-rail-section {
   border-radius: 0.5rem;
   margin-bottom: 0.25rem;
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--panel-trans-strong);
 }
 
 .site-rail-section-main {
@@ -1277,8 +1277,8 @@ body.site-nav-open {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(0, 0, 0, 0.5);
+  border: var(--brand-pop);
+  background: var(--panel-trans-strong);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1501,6 +1501,21 @@ footer.container,
   text-align: center;       /* keep text centered */
 }
 
+.footer-verse {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--text-verse);
+}
+
+.footer-verse-ref {
+  display: inline-block;
+  margin-left: 0.25rem;
+  color: var(--brand-gold);
+  font-weight: 600;
+}
+
+
 
 
 /* 5.5 Shared Hero / Banner Layouts ========================================================================== */
@@ -1509,8 +1524,8 @@ footer.container,
   padding: 2.5rem 1.25rem 2rem;
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.4)
+    var(--panel-trans),
+    var(--panel-trans)
   ), var(--bg-dark);
   color: var(--text-light);
 }
@@ -1560,7 +1575,7 @@ footer.container,
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  filter: blur(0px); /* adjust if you want more blur in CSS instead of the image */
+  filter: blur(4px); /* 0px = no blur */
 }
 
 /* Constrain inner content to a centered column */
@@ -1583,6 +1598,7 @@ footer.container,
   border-radius: 14px;
   padding: 1.75rem 1.5rem 1.6rem;
   box-shadow: var(--shadow-strong);
+  text-align: center;
 }
 
 /* No left-push on wider screens anymore */
@@ -1613,6 +1629,7 @@ footer.container,
   flex-wrap: wrap;
   align-items: center;
   gap: 0.6rem 1rem;
+  justify-content: center;
 }
 
 .home-hero-link {
