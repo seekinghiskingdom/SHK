@@ -840,7 +840,7 @@ button:focus-visible {
 
 /* 5.2 Site Header ========================================================================== */
 
-/* .site-header {
+.site-header {
   position: sticky;
   top: 0;
   z-index: 800;
@@ -848,7 +848,7 @@ button:focus-visible {
   padding-bottom: 0.25rem;
 }
 
-.site-header::before {
+/* .site-header::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -860,7 +860,7 @@ button:focus-visible {
   border-bottom: 1px solid var(--brand-pop);
   pointer-events: none;
   z-index: -1;
-}
+} */
 
 .site-header .logo-link img.rounded-img {
   width: 64px !important;
@@ -873,7 +873,7 @@ button:focus-visible {
     width: 56px !important;
     height: 56px !important;
   }
-} */
+}
 
 
 /* 5.2.1 Header Shell (.site-header-bar, .site-header-inner) */
