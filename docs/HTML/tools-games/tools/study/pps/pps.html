@@ -11,9 +11,9 @@ permalink: /tools-games/tools/pps/
     --pps-panel: #020617;
     --pps-border: rgba(148, 163, 184, 0.4);
     --pps-border-soft: rgba(148, 163, 184, 0.25);
-    --pps-text: #e5e7eb;
+    --pps-text: var(--text-light);
     --pps-text-soft: #cbd5f5;
-    --pps-text-muted: #9ca3af;
+    --pps-text-muted: var(--text-light);
     --pps-accent: #eab308;
     --pps-accent-soft: rgba(234, 179, 8, 0.14);
     --pps-danger: #f97373;
@@ -87,7 +87,7 @@ permalink: /tools-games/tools/pps/
     font-size: clamp(1.8rem, 3vw, 2.1rem);
     font-weight: 650;
     letter-spacing: -0.03em;
-    color: #f9fafb;
+    color: var(--text-light);
     margin-bottom: 6px;
   }
 
@@ -368,7 +368,7 @@ permalink: /tools-games/tools/pps/
 
   .pps-select option {
     background: #020617;
-    color: #e5e7eb;
+    color: var(--text-light);
   }
 
   .pps-group {
@@ -702,7 +702,7 @@ permalink: /tools-games/tools/pps/
 
   .pps-ref-main {
     font-size: 0.86rem;
-    color: #e5e7eb;
+    color: var(--text-light);
   }
 
   .pps-ref-sub {
@@ -750,7 +750,7 @@ permalink: /tools-games/tools/pps/
 
   .pps-side-main {
     font-size: 0.84rem;
-    color: #e5e7eb;
+    color: var(--text-light);
     font-weight: 500;
   }
 
@@ -1992,7 +1992,7 @@ permalink: /tools-games/tools/pps/
         label.setAttribute("text-anchor", "middle");
         label.setAttribute("dominant-baseline", "middle");
         label.setAttribute("font-size", "10");
-        label.setAttribute("fill", "#e5e7eb");
+        label.setAttribute("fill", "var(--text-light)");
         label.textContent = node.label;
 
         labelsGroup.appendChild(label);

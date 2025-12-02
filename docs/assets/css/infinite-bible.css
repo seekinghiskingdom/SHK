@@ -117,7 +117,7 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.7rem;
-  color: #9ca3af;
+  color: var(--text-light);
 }
 
 .infinite-bible-app .ib-meta-value {
@@ -349,7 +349,7 @@
 .infinite-bible-app .ib-sidebar-mode-hint {
   margin: 0;
   font-size: 0.8rem;
-  color: #9ca3af;
+  color: var(--text-light);
 }
 
 .infinite-bible-app .ib-sidebar-body {
@@ -374,7 +374,7 @@
 }
 
 .infinite-bible-app .ib-sidebar-section-muted .ib-sidebar-text {
-  color: #9ca3af;
+  color: var(--text-light);
 }
 
 /* Sidebar controls (mode + view) */
@@ -513,7 +513,7 @@
   text-transform: uppercase;
   letter-spacing: 0.13em;
   font-size: 0.7rem;
-  color: #9ca3af;
+  color: var(--text-light);
 }
 
 .infinite-bible-app .ib-canvas-meta-value {

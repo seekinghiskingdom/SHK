@@ -356,7 +356,7 @@ permalink: /account/
   width: 5rem;
   height: 5rem;
   border-radius: 999px;
-  background: rgba(222, 176, 0, 0.9);
+  background: var(--brand-gold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,13 +371,13 @@ permalink: /account/
 .mt-display-name {
   margin: 0 0 0.15rem;
   font-size: 2rem;
-  color: #fefefe;
+  color: var(--text-light);
 }
 
 .mt-username {
   margin: 0;
   font-size: 1rem;
-  color: #fefefe;
+  color: var(--text-light);
 }
 
 .mt-actions {
@@ -390,10 +390,10 @@ permalink: /account/
 .mt-auth-btn {
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid #e5e7eb;
-  border-color: #fbbf24;
+  border: 1px solid var(--text-light);
+  border-color: var(--text-light);
   background: rgba(251, 191, 36, 0.1);
-  color: #fefefe;
+  color: var(--text-light);
   font-size: 0.9rem;
   cursor: pointer;
 }
@@ -401,7 +401,7 @@ permalink: /account/
 .mt-auth-note {
   margin-top: 0.75rem;
   font-size: 0.9rem;
-  color: #000000;
+  color: var(--text-dark);
 }
 
 .mt-share-row {
@@ -431,17 +431,17 @@ permalink: /account/
 }
 
 .mt-public-profile--warning {
-  color: #fbbf24;
+  color: var(--text-light);
 }
 
 .mt-public-profile--warning a {
-  color: #fbbf24;
+  color: var(--text-light);
 }
 
 .mt-divider {
   margin: 1.4rem 0 1.1rem;
   border: none;
-  border-top: 1px solid rgba(229, 231, 235, 0.4);
+  border-top: 1px solid var(--brand-gold);
 }
 
 .mt-section {
@@ -470,9 +470,9 @@ permalink: /account/
   width: 1.4rem;
   height: 1.4rem;
   border-radius: 999px;
-  border: 1px solid #deb000;
+  border: 1px solid var(--brand-gold);
   background: rgba(251, 191, 36, 0.1);
-  color: #fefefe;
+  color: var(--text-light);
   font-size: 0.8rem;
   font-weight: 700;
   cursor: pointer;
@@ -491,9 +491,9 @@ permalink: /account/
   padding: 0.1rem 0.55rem;
   border-radius: 999px;
   font-size: 0.75rem;
-  border: 1px solid #9ca3af;
+  border: 1px solid var(--text-light);
   background: rgba(17, 24, 39, 0.8);
-  color: #e5e7eb;
+  color: var(--text-light);
 }
 
 .mt-salvation-status-pill--public {
@@ -503,9 +503,9 @@ permalink: /account/
 }
 
 .mt-salvation-status-pill--private {
-  border-color: #6b7280;
+  border-color: var(--text-light);
   background: rgba(107, 114, 128, 0.3);
-  color: #e5e7eb;
+  color: var(--text-light);
 }
 
 /* Inline help panel under the header */
@@ -517,7 +517,7 @@ permalink: /account/
   background: rgba(15, 23, 42, 0.92);
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.7);
   font-size: 0.85rem;
-  color: #e5e7eb;
+  color: var(--text-light);
 }
 
 .mt-salvation-help-body {
@@ -536,7 +536,7 @@ permalink: /account/
 .mt-salvation-placeholder {
   margin: 0 0 0.8rem;
   font-size: 0.95rem;
-  color: #f9fafb;
+  color: var(--text-light);
 }
 
 .mt-salvation-actions {
@@ -548,7 +548,7 @@ permalink: /account/
 .mt-salvation-view {
   margin: 0 0 0.8rem;
   font-size: 0.95rem;
-  color: #f9fafb;
+  color: var(--text-light);
   white-space: pre-wrap;
 }
 
@@ -562,22 +562,22 @@ permalink: /account/
   resize: vertical;
   padding: 0.45rem 0.6rem;
   border-radius: 8px;
-  border: 1px solid #9ca3af;
+  border: 1px solid var(--text-light);
   background: rgba(17, 24, 39, 0.9);
-  color: #f9fafb;
+  color: var(--text-light);
   font: inherit;
 }
 
 .mt-salvation-editor:focus {
   outline: none;
-  border-color: #deb000;
+  border-color: var(--brand-gold);
   box-shadow: 0 0 0 1px rgba(222, 176, 0, 0.55);
 }
 
 .mt-salvation-editor-meta {
   margin-top: 0.5rem;
   font-size: 0.8rem;
-  color: #e5e7eb;
+  color: var(--text-light);
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -603,7 +603,7 @@ permalink: /account/
 .mt-salvation-hint {
   margin: 0.2rem 0 0;
   font-size: 0.75rem;
-  color: #d1d5db;
+  color: var(--text-light);
 }
 
 .mt-salvation-editor-actions {
@@ -616,24 +616,24 @@ permalink: /account/
 .mt-pill-button {
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid #fbbf24;
+  border: 1px solid var(--text-light);
   background: rgba(251, 191, 36, 0.1);
-  color: #fefce8;
+  color: var(--text-light);
   font-size: 0.85rem;
   cursor: pointer;
 }
 
 .mt-pill-outline {
-  border-color: #deb000;
+  border-color: var(--brand-gold);
   background: transparent;
 }
 
 .mt-add-testimony-btn {
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid #fbbf24;
+  border: 1px solid var(--text-light);
   background: rgba(251, 191, 36, 0.1);
-  color: #fefce8;
+  color: var(--text-light);
   font-size: 0.85rem;
   cursor: pointer;
 }
@@ -663,19 +663,19 @@ permalink: /account/
   flex: 0 0 auto;
   padding: 0.25rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid #deb000;
+  border: 1px solid var(--brand-gold);
   background: rgba(251, 191, 36, 0.1);
   font-size: 0.85rem;
   cursor: pointer;
-  color: #e5e7eb;
+  color: var(--text-light);
   white-space: nowrap;
   width: auto;
 }
 
 .mt-tabs .mt-tab.is-active {
   background: rgba(0, 0, 0, 0.7);
-  border-color: #fbbf24;
-  color: #fefce8;
+  border-color: var(--text-light);
+  color: var(--text-light);
 }
 
 /* Push "+ Testimony" to the far right */
@@ -687,10 +687,10 @@ permalink: /account/
   margin-top: 0.8rem;
   /* padding: 0.85rem 0.95rem;
   border-radius: 12px; */
-  /* border: 1px dashed #fbbf24; */
+  /* border: 1px dashed var(--text-light); */
   background: rgba(251, 191, 36, 0.3);
   font-size: 0.9rem;
-  color: #fefefe;
+  color: var(--text-light);
   border-radius: 16px;
   padding: 1.1rem 1.2rem 1rem;
   border: 1px solid rgba(249, 250, 251, 0.18);
@@ -700,7 +700,7 @@ permalink: /account/
 .mt-list-subtext {
   margin-top: 0.4rem;
   font-size: 0.8rem;
-  color: #fefefe;
+  color: var(--text-light);
 }
 
 @media (max-width: 640px) {
