@@ -3,31 +3,94 @@ layout: default
 title: Home
 ---
 
-<main class="home-page page-shell">
+<div class="home-page page-shell">
 
-  <section class="page-section">
-    <div class="page-inner">
+  <!-- Hero: welcome + main CTA -->
+  <section class="home-hero">
+    <div class="home-hero-inner">
+      <div class="home-hero-card">
+        <h1 class="home-hero-title">
+          Welcome to the Kingdom
+        </h1>
 
-      <!-- Verse section (preserved) -->
-      <section class="home-verse-section">
-        <div class="home-verse">
-          <p class="home-verse-text">
-            “But rather <a href="{{ '/about/' | relative_url }}">seek ye the kingdom of God</a>;
-            and all these things shall be added unto you.” - Luke 12:31 (KJV)
-          </p>
-        </div>
-      </section>
-
-      <!-- Placeholder area for future home content -->
-      <!--
-      <section class="home-intro-section">
-        <p>
-          More home content will go here later (tools, hubs, CTAs, etc.).
+        <p class="home-hero-tagline">
+          Helping you seek His Kingdom—one day, one step at a time. -AI
         </p>
-      </section>
-      -->
+
+        <div class="home-hero-actions">
+          <a
+            href="{{ '/daily/' | relative_url }}"
+            class="btn btn-primary home-hero-btn"
+          >
+            Start today’s journey
+          </a>
+
+          <a
+            href="{{ '/help/start-here/' | relative_url }}"
+            class="home-hero-link"
+          >
+            New here? Where do I start? →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tiles: Daily + Testimony (primary) + Involvement (secondary) -->
+  <section class="home-tiles">
+    <div class="home-tiles-inner">
+
+      <!-- Primary row: Daily + Testimony -->
+      <div class="home-tiles-primary">
+        <!-- Daily tile -->
+        <a
+          href="{{ '/daily/' | relative_url }}"
+          class="home-tile home-tile-primary"
+        >
+          <div class="home-tile-icon" aria-hidden="true">📅</div>
+          <h2 class="home-tile-title">
+            Don’t forget the daily journey!
+          </h2>
+          <p class="home-tile-text">
+            See today’s verse, prompts, and tools to keep seeking His Kingdom
+            in the middle of your day.
+          </p>
+        </a>
+
+        <!-- Testimony tile -->
+        <a
+          href="{{ '/testimony/wall/' | relative_url }}"
+          class="home-tile home-tile-primary"
+        >
+          <div class="home-tile-icon" aria-hidden="true">💬</div>
+          <h2 class="home-tile-title">
+            See what God has done today!
+          </h2>
+          <p class="home-tile-text">
+            Read and share testimonies of what God is doing, and be encouraged
+            by others’ stories.
+          </p>
+        </a>
+      </div>
+
+      <!-- Secondary row: Involvement -->
+      <div class="home-tiles-secondary">
+        <a
+          href="{{ '/about/involvement/' | relative_url }}"
+          class="home-tile home-tile-secondary"
+        >
+          <div class="home-tile-icon" aria-hidden="true">👥</div>
+          <h2 class="home-tile-title">
+            Want to join the Kingdom?
+          </h2>
+          <p class="home-tile-text">
+            Get connected through community, feedback, and socials, and help
+            shape where SHK goes next.
+          </p>
+        </a>
+      </div>
 
     </div>
   </section>
 
-</main>
+</div>

@@ -1540,19 +1540,178 @@ footer.container,
 /* 6. Feature & Page Modules */
 
 /* 6.1 Home / Landing Page */
-/* Home page wrapper */
-.home-page {
+/* 6.1 Home / Landing Page */
+
+/* Home wrapper: no solid background (let the bg layer show through) */
+.home-page.page-shell {
   position: relative;
-  padding: 1.5rem 1rem 3rem;
+  min-height: 100vh;
+  padding: 1.75rem 1rem 3rem;
+  background: transparent;
 }
 
-/* Verse block */
-.home-verse-section {
-  background: var(--panel-trans-strong);
+/* Fixed blurred path background for the home page only */
+.home-page.page-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/img/home-path-bg.webp"); /* TODO: update to your actual path image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(0px); /* adjust if you want more blur in CSS instead of the image */
+}
+
+/* Constrain inner content to the same width as other pages */
+.home-hero-inner,
+.home-tiles-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Hero section */
+.home-hero {
+  margin-bottom: 1.75rem;
+}
+
+.home-hero-card {
+  max-width: 700px;
+  margin-left: 0;         /* left-aligned under main content column */
+  background: rgba(28, 27, 23, 0.82); /* dark semi-translucent */
+  color: var(--text-light);
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem 1.6rem;
+  box-shadow: var(--shadow-strong);
+}
+
+/* On wider screens, nudge the hero card to align visually with main content,
+   given the rail width + header layout */
+@media (min-width: 900px) {
+  .home-hero-card {
+    margin-left: 2.5rem;
+  }
+}
+
+.home-hero-title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: var(--text-light);
+  font-family: "Cinzel", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+.home-hero-tagline {
+  margin: 0 0 1.1rem;
+  font-size: 0.98rem;
+  color: var(--text-verse);
+}
+
+.home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+}
+
+.home-hero-btn {
+  /* already styled via .btn.btn-primary */
+}
+
+.home-hero-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--acc-link);
+}
+
+.home-hero-link:hover {
+  text-decoration: underline;
+}
+
+/* Tiles section */
+.home-tiles {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid: two primary tiles side by side on desktop */
+.home-tiles-primary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Secondary tile sits below, aligned to the left */
+.home-tiles-secondary {
+  max-width: 420px;
+}
+
+/* Base tile style */
+.home-tile {
+  display: block;
+  text-decoration: none;
   border-radius: 12px;
-  padding: 1.25rem 1.5rem;
-  margin: 0 auto 1.5rem;
-  max-width: 1000px;
+  padding: 1.25rem 1.25rem 1.15rem;
+  background: rgba(28, 27, 23, 0.78); /* slightly lighter than hero card */
+  color: var(--text-light);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.12s ease, box-shadow 0.12s ease,
+              background-color 0.12s ease, border-color 0.12s ease;
+  border: 1px solid rgba(250, 200, 0, 0.18); /* subtle gold edge */
+}
+
+.home-tile-primary {
+  /* same base styling for now; reserved for future differentiation */
+}
+
+.home-tile-secondary {
+  background: rgba(28, 27, 23, 0.7);
+}
+
+/* Hover/focus elevation */
+.home-tile:hover,
+.home-tile:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+  border-color: var(--brand-pop);
+  text-decoration: none;
+}
+
+/* Icon + text layout */
+.home-tile-icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-light); /* can be swapped to var(--brand-pop) later */
+}
+
+.home-tile-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  color: var(--text-light);
+}
+
+.home-tile-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-verse);
+}
+
+/* Responsive: stack tiles on mobile */
+@media (max-width: 768px) {
+  .home-hero-card {
+    margin-left: 0;
+  }
+
+  .home-tiles-primary {
+    grid-template-columns: 1fr;
+  }
+
+  .home-tiles-secondary {
+    max-width: none;
+  }
 }
 
 /* 6.1.1 Home Hero (intro copy, hero CTA) */
