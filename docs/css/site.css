@@ -35,6 +35,7 @@
   --brand-pop:            #fadc00; /* small high-impact highlights */
   --brand-strong:         #fac800; /* primary CTA / strong emphasis */
   --brand-dark:           #c8a028; /* hover/active shade, outlines */
+  --brand-deb:              #deb000; /* DEB gold variant */
 
   --brand-gold-trans-btn:  #fac800;/*rgba(230, 200, 100, 0.1);  subtle button hover bg */
   --brand-gold-trans-card: #fac800;/*rgba(230, 200, 100, 0.3);  highlighted card bg */
@@ -1118,6 +1119,43 @@ body.site-nav-open {
   }
 }
 
+@media (max-width: 700px) {
+  .site-header-inner {
+    padding-inline: 0.75rem;
+    justify-content: center; /* logo centered */
+  }
+
+  /* Make header bar the positioning context for the account pill */
+  .site-header-bar {
+    position: relative;
+  }
+
+  .site-header .logo-link img.rounded-img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  /* Account pill: top-left, overlaid */
+  .site-header-account-pill {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Hide “Account” text on very small screens */
+  .site-header-account-label {
+    display: none;
+  }
+
+  /* Utilities (search + menu) stay on the right */
+  .site-header-utilities {
+    margin-left: auto;  /* already present globally, safe to keep */
+    gap: 0.25rem;
+  }
+}
+
+
 
 /* 5.3 Site Rail (desktop left nav) ======================================== */
 
@@ -1315,6 +1353,18 @@ body.site-nav-open {
   font-size: 0.8rem;
 }
 
+/* Current page section highlight */
+.site-rail-section.is-current .site-rail-section-link {
+  background: var(--brand-gold-trans-card);
+  color: var(--text-on-gold);
+}
+
+.site-rail-section.is-current .site-rail-icon-circle {
+  border-color: var(--brand-gold);
+  background: var(--brand-gold-trans-btn);
+}
+
+
 /* Desktop only for now */
 
 @media (max-width: 900px) {
@@ -1322,6 +1372,8 @@ body.site-nav-open {
     display: none;
   }
 }
+
+
 
 
 /* 5.4 Site Footer ========================================================================== */

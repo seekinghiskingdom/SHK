@@ -346,6 +346,24 @@ window.SHK_getSupabaseClient = function () {
   const searchInput   = rail.querySelector('#site-rail-search-input');
   const allLinks      = rail.querySelectorAll('.site-rail-link');
 
+  // Mark current section based on URL
+  const here = location.pathname.replace(/index\.html$/, '');
+  sectionElems.forEach(sec => {
+    const link = sec.querySelector('.site-rail-section-link');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (!href) return;
+
+    const path = new URL(href, location.origin).pathname.replace(/index\.html$/, '');
+    const isExact   = here === path;
+    const isSection = !isExact && here.startsWith(path) && path !== '/' && path !== '';
+
+    if (isExact || isSection) {
+      sec.classList.add('is-current');
+    }
+  });
+
+
   function isOpen() {
     return rail.classList.contains('site-rail--open');
   }
