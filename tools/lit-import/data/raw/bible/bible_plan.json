@@ -402,26 +402,6 @@
       "status": "planned"
     },
     {
-    "id": "bible.grc.grcf35",
-    "code": "grcf35",
-    "title": "Family 35 Greek New Testament",
-    "language": "grc",
-    "group": "v1_extra_orig_B1",
-    "tier": "extra-B1",
-    "section": "bible/orig/greek-alt",
-    "status": "planned"
-    },
-    {
-    "id": "bible.grc.grcsbl",
-    "code": "grcsbl",
-    "title": "SBL Greek New Testament",
-    "language": "grc",
-    "group": "v1_extra_orig_B1",
-    "tier": "extra-B1",
-    "section": "bible/orig/greek-critical",
-    "status": "planned"
-    },
-    {
       "id": "bible.grc.grcbyz",
       "code": "grcbyz",
       "title": "Byzantine Greek NT",

@@ -897,6 +897,8 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
+  font-family: "Cinzel", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
 }
 
 .site-header-wordmark-full {

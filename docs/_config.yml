@@ -4,8 +4,6 @@ baseurl: ""   # Change this to "/SHK" when testing and "" to deploy
 url: https://www.seekinghiskingdom.org
 permalink: pretty
 timezone: America/Chicago
-source: docs
-permalink: pretty
 
 # Keep non-site stuff out of the build
 exclude:
@@ -15,3 +13,7 @@ exclude:
   - LICENSE
   - Gemfile
   - Gemfile.lock
+  - data/
+  - data/**
+  - dev/
+  - dev/**
