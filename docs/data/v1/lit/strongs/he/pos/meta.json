@@ -1,0 +1,25 @@
+{
+  "id": "strongs.pos.he",
+  "language": "he",
+  "kind": "pos_sidecar",
+  "source": {
+    "provider": "Open Scriptures Hebrew Bible Project",
+    "title": "Open Scriptures Hebrew Lexicon (POS catalogs)",
+    "url": "https://github.com/openscriptures/HebrewLexicon",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution_required": true,
+    "attribution_text": "Open Scriptures Hebrew Lexicon (Open Scriptures Hebrew Bible Project), CC BY 4.0. POS sidecar derived from PartsOfSpeech.xml + BDBPartsOfSpeech.xml and aligned to HebrewStrong.xml; converted and normalized into JSON/JSONL for indexing.",
+    "inputs": [
+      { "type": "xml", "file": "tools/lit-import/data/raw/strongs/he/HebrewStrong.xml" },
+      { "type": "xml", "file": "tools/lit-import/data/raw/strongs/he/PartsOfSpeech.xml" },
+      { "type": "xml", "file": "tools/lit-import/data/raw/strongs/he/BDBPartsOfSpeech.xml" },
+      { "type": "script", "file": "tools/lit-import/import_scripts/build_he_pos_sidecar.py" }
+    ],
+    "outputs": [
+      { "type": "jsonl", "file": "docs/data/v1/lit/strongs/he/pos/pos.jsonl" },
+      { "type": "json", "file": "docs/data/v1/lit/strongs/he/pos/catalog.json" },
+      { "type": "json", "file": "docs/data/v1/lit/strongs/he/pos/_build_report.json" }
+    ]
+  }
+}

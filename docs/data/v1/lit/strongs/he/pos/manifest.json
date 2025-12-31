@@ -1,0 +1,15 @@
+{
+  "id": "strongs.hebrew.pos",
+  "language": "he",
+  "title": "Strong's Hebrew POS sidecar (Open Scriptures Hebrew Lexicon)",
+  "source": "Derived from Open Scriptures Hebrew Lexicon POS catalogs (PartsOfSpeech.xml, BDBPartsOfSpeech.xml) and HebrewStrong.xml.",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution_required": true,
+  "attribution_name": "Open Scriptures Hebrew Bible Project",
+  "attribution_url": "https://github.com/openscriptures/HebrewLexicon",
+  "input_format": "jsonl",
+  "input_file": "pos.jsonl",
+  "join_key": "id",
+  "status": "present"
+}

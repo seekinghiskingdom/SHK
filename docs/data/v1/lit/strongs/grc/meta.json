@@ -3,13 +3,15 @@
   "language": "grc",
   "kind": "lexicon",
   "source": {
-    "file": "tools\\lit-import\\data\\raw\\strongs\\grc\\strongsgreek.xml",
-    "format": "xml-strongs-greek",
-    "license_note": "Strong's text is public domain; XML encoding credited in prologue.",
-    "provider": "Open Scriptures",
-    "url": "https://github.com/openscriptures/strongs",
+    "provider": "morphgnt/strongs-dictionary-xml",
+    "title": "Strong's Greek Dictionary in XML with real Greek (Ulrik Sandborg-Petersen)",
+    "url": "https://github.com/morphgnt/strongs-dictionary-xml",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "file": "tools/lit-import/data/raw/strongs/grc/strongsgreek.xml",
     "raw_dir": "tools/lit-import/data/raw/strongs/grc"
   },
+
   "counts": {
     "entries": 5624
   }

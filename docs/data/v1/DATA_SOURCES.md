@@ -20,18 +20,28 @@ For each translation:
 
 Only plain-text chapter files are deployed in `docs/data/v1/lit/bible/...`; the original tagged USFM/XML is kept under `tools/lit-import/data/raw/` for reproducible rebuilds.
 
+
 ## Strong’s lexicon
 
-Strong’s data under `lit/strongs/` is derived from public-domain or permissively licensed Strong’s dictionaries, imported via `tools/lit-import`. In v1, the data is based on the Open Scriptures Strong’s project:
+Strong’s data under `lit/strongs/` is imported via `tools/lit-import` and normalized into JSONL for use by Strong’s-aware tools (e.g., SCS / concordance). The v1 sources are:
 
-- GitHub: https://github.com/openscriptures/strongs
+* **Greek Strong’s (G####):** MorphGNT “Strong’s Greek Dictionary in XML with real Greek” (Ulrik Sandborg-Petersen), **CC0 1.0**
+
+  * GitHub: [https://github.com/morphgnt/strongs-dictionary-xml](https://github.com/morphgnt/strongs-dictionary-xml)
+  * License: [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+
+* **Hebrew Strong’s (H####):** Open Scriptures Hebrew Lexicon (Open Scriptures Hebrew Bible Project), **CC BY 4.0**
+
+  * GitHub: [https://github.com/openscriptures/HebrewLexicon](https://github.com/openscriptures/HebrewLexicon)
+  * License: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
 
 Exact source and license information is recorded in:
 
-- `lit/strongs/grc/meta.json` – Greek Strong’s provenance and license.
-- `lit/strongs/he/meta.json` – Hebrew Strong’s provenance and license.
+* `lit/strongs/grc/meta.json` – Greek Strong’s provenance and license.
+* `lit/strongs/he/meta.json` – Hebrew Strong’s provenance and license.
 
-These lexicon files are used by Strong’s-aware tools (e.g., concordance) and are not required for normal Bible text display.
+These lexicon files power Strong’s-aware features (lookup, concordance, index pages) and are not required for basic Bible text display.
+
 
 ## Historical texts
 

@@ -1,0 +1,17 @@
+{
+  "id": "strongs.hebrew",
+  "language": "he",
+  "title": "Strong's Hebrew lexicon (Open Scriptures Hebrew Lexicon)",
+  "source": "Open Scriptures Hebrew Lexicon XML (Strong's Hebrew dictionary text is public domain; this XML encoding is CC BY 4.0).",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution_required": true,
+  "attribution_name": "Open Scriptures Hebrew Bible Project",
+  "attribution_url": "https://github.com/openscriptures/HebrewLexicon",
+  "input_format": "xml",
+  "input_file": "HebrewStrong.xml",
+  "entry_tag": "entry",
+  "entry_id_attr": "id",
+  "id_prefix": "H",
+  "status": "present"
+}

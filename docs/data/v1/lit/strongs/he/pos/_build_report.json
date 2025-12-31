@@ -1,0 +1,12 @@
+{
+  "entries_with_pos": 8674,
+  "catalog_size": 135,
+  "multi_pos_entries": 168,
+  "unknown_pos_codes_count": 0,
+  "unknown_pos_codes_top": [],
+  "outputs": {
+    "pos_jsonl": "docs/data/v1/lit/strongs/he/pos/pos.jsonl",
+    "catalog_json": "docs/data/v1/lit/strongs/he/pos/catalog.json",
+    "report_json": "docs/data/v1/lit/strongs/he/pos/_build_report.json"
+  }
+}

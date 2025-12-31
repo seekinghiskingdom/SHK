@@ -1,0 +1,542 @@
+{
+  ",f": {
+    "label": "And Feminine",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "?": {
+    "label": "?",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "1pl": {
+    "label": "1st Person Plural",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "1s": {
+    "label": "1st Person Singular",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "2 f": {
+    "label": "2nd Person Feminine",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "2 m": {
+    "label": "2nd Person Masculine",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "2 s": {
+    "label": "2nd Person Singular",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "2mpl": {
+    "label": "2nd Person Masculine Plural",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "2ms": {
+    "label": "2nd Person Masculine Singular",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "3 pl": {
+    "label": "3rd Person Plural",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "3mpl": {
+    "label": "3rd Person Masculine Plural",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "3pl": {
+    "label": "3rd Person Plural",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "3s": {
+    "label": "3rd Person Singular",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "a": {
+    "label": "Adjective",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "abs": {
+    "label": "Abstract",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "abst": {
+    "label": "Abstract",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "abstr": {
+    "label": "Abstract",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "acc": {
+    "label": "Accusative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "adj": {
+    "label": "Adjective",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "adv": {
+    "label": "Adverb",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "a-f": {
+    "label": "Adjective Feminine",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "a-gent": {
+    "label": "Gentilic Adjective",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "a-m": {
+    "label": "Adjective Masculine",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "appell": {
+    "label": "Appellation",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "arbor": {
+    "label": "Arbor",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "as an exclam": {
+    "label": "As An Exclamation",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "coll": {
+    "label": "Collective",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "comm": {
+    "label": "Common",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "conj": {
+    "label": "Conjunction",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "cstr": {
+    "label": "Construct",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "d": {
+    "label": "Demonstrative Pronoun",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "da": {
+    "label": "Definite Article",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "deae": {
+    "label": "Deity",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "definite article": {
+    "label": "Definite Article",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "dei": {
+    "label": "Deity",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "demonstr": {
+    "label": "Demonstrative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "denom": {
+    "label": "Denominative",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "div": {
+    "label": "Divine",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "divin": {
+    "label": "Divinity",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "dp": {
+    "label": "Demonstrative Particle",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "du": {
+    "label": "Dual",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "Dual": {
+    "label": "Dual",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "emph": {
+    "label": "Emphatic",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "enclitic part": {
+    "label": "Enclitic Particle",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "epith": {
+    "label": "Epithet",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "exclam": {
+    "label": "Exclamatory",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "exhortation": {
+    "label": "Exhortation",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "f": {
+    "label": "Feminine",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "fem": {
+    "label": "Feminine",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "fl": {
+    "label": "Flumen",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "flum": {
+    "label": "Flumen",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "font": {
+    "label": "Fountain",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "gent": {
+    "label": "Genitive",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "Haph": {
+    "label": "Hophal",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "Hiph": {
+    "label": "Hiphil",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "Hithp": {
+    "label": "Hithpael",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "Hithpe": {
+    "label": "Hithpael",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "Hoph": {
+    "label": "Hophal",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "hypoth": {
+    "label": "Hypothetical",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "i": {
+    "label": "Interrogative Pronoun",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "indecl": {
+    "label": "Indeclinable",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "indef": {
+    "label": "Indefinite",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "inj": {
+    "label": "Interjection",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "intens": {
+    "label": "Intense",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "interj": {
+    "label": "Interjection",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "interr": {
+    "label": "Interrogative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "Interrog": {
+    "label": "Interrogative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "interrog": {
+    "label": "Interrogative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "intrans": {
+    "label": "Intransitive",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "loc": {
+    "label": "Locative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "m": {
+    "label": "Masculine",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "mark of accus": {
+    "label": "Mark Of Accusative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "masc": {
+    "label": "Masculine",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "mens": {
+    "label": "Month",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "mont": {
+    "label": "Mountain",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "n": {
+    "label": "Noun",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "n-f": {
+    "label": "Noun Feminine",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "Niph": {
+    "label": "Niphal",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "nm": {
+    "label": "Noun Masculine",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "n-m": {
+    "label": "Noun Masculine",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "n-m-loc": {
+    "label": "Noun Masculine Location",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "nom": {
+    "label": "Nominative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "noun": {
+    "label": "Noun",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "np": {
+    "label": "Negative Particle",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "n-pr": {
+    "label": "Proper Name",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "n-pr-f": {
+    "label": "Proper Name Feminine",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "n-pr-loc": {
+    "label": "Proper Name Location",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "n-pr-m": {
+    "label": "Proper Name Masculine",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "num": {
+    "label": "Number",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "of entreaty": {
+    "label": "Of Entreaty",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "of negation": {
+    "label": "Of Negation",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "of relation": {
+    "label": "Of Relation",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "of the 3rd ps": {
+    "label": "Of The 3Rd Person Singular",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "of time": {
+    "label": "Of Time",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "ord": {
+    "label": "Ordinal",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "ordin": {
+    "label": "Ordinal",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "p": {
+    "label": "Personal Pronoun",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "part": {
+    "label": "Particle",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "particle of negation": {
+    "label": "Particle Of Negation",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "patr": {
+    "label": "Particle",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "pers": {
+    "label": "Person",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "Pi": {
+    "label": "Piel",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "pl": {
+    "label": "Plural",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "pr": {
+    "label": "Proper",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "prep": {
+    "label": "Preposition",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "pron": {
+    "label": "Pronoun",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "pt": {
+    "label": "Participle",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "Pu": {
+    "label": "Pual",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "putei": {
+    "label": "Well",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "Qal": {
+    "label": "Qal",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "quadril": {
+    "label": "Quadril",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "r": {
+    "label": "Relative Pronoun",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "rel": {
+    "label": "Relative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "relative": {
+    "label": "Relative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "rpt": {
+    "label": "Relative Particle",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "rup": {
+    "label": "Cliff",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "sing": {
+    "label": "Singular",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "subst": {
+    "label": "Substantive",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "terr": {
+    "label": "Territory",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "trib": {
+    "label": "Tribe",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "unit": {
+    "label": "Unit",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "urb": {
+    "label": "City",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "v": {
+    "label": "Verb",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "vb": {
+    "label": "Verb",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "verb": {
+    "label": "Verb",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "verb substantive": {
+    "label": "Verb Substantive",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "verbal": {
+    "label": "Verbal",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "voluntative": {
+    "label": "Voluntative",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "x": {
+    "label": "Indefinite Pronoun",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "Pe": {
+    "label": "Piel",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "Po‛el": {
+    "label": "Pual",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "prt": {
+    "label": "Particle",
+    "source_file": "PartsOfSpeech.xml"
+  },
+  "Pt": {
+    "label": "Particle",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "sq": {
+    "label": "Sq",
+    "source_file": "BDBPartsOfSpeech.xml"
+  },
+  "sg": {
+    "label": "Singular",
+    "source_file": "PartsOfSpeech.xml"
+  }
+}
